@@ -1,0 +1,108 @@
+# ============================================================
+# Piece of Pie Playbook — Event Configuration
+# ============================================================
+# Fill in the values below to customize this playbook for
+# your specific event. These variables are referenced as
+# {{variable_name}} throughout the /docs and /templates files.
+#
+# Keep this file as the single source of truth for event details.
+# ============================================================
+
+# --- Core Identity ---
+event_name: "Piece of Pie Hackathon"
+season_name: "Season 1"
+community_name: "Your Community Name"
+tagline: "Build consistently. Share publicly. Ship real products."
+
+# --- Key Dates ---
+# Use ISO 8601 format: YYYY-MM-DD
+enrollment_start: "YYYY-MM-DD"
+enrollment_end: "YYYY-MM-DD"
+build_start: "YYYY-MM-DD"
+build_end: "YYYY-MM-DD"
+final_presentation_start: "YYYY-MM-DD"
+final_presentation_end: "YYYY-MM-DD"
+payout_start: "YYYY-MM-DD"
+payout_end: "YYYY-MM-DD"
+
+# Computed for convenience — fill in manually
+event_duration_weeks: 12
+
+# --- Reward Pools ---
+# Use the name of your native token or currency (e.g. ADA, ETH, USD, USDC)
+reward_currency: "ADA"
+
+# Builder track — equal split among qualified builders
+builder_prize_pool: 10000
+
+# Optional sponsor track — equal split, for ecosystem-specific builds
+# Set to 0 or remove if not used
+sponsored_track_prize_pool: 20000
+sponsored_track_name: "Cardano Pie"
+sponsored_track_sponsor: "Cardano Foundation"
+
+# Real User track — equal split, requires at least one paying user
+real_user_prize_pool: 2000
+
+# Feedback track — proportional by credit, no builder project required
+feedback_prize_pool: 1000
+
+# Admin allocation — separate from participant pools
+admin_allocation: 3000
+
+# --- Administration ---
+admin_names:
+  - "Admin Name 1"
+  - "Admin Name 2"
+
+# --- Community Links ---
+website_url: "https://your-community-website.com"
+registration_form_url: "https://forms.example.com/your-registration-form"
+discord_url: "https://discord.gg/your-server"
+discord_feedback_channel_url: "https://discord.gg/your-feedback-channel"
+discord_discussion_channel_url: "https://discord.gg/your-discussion-channel"
+github_org_url: "https://github.com/your-org"
+twitter_handle: "@yourcommunity"
+
+# --- Sponsors ---
+sponsor_names:
+  - "Sponsor One"
+  - "Sponsor Two"
+
+# Optional: bonus opportunity for a sponsored track (e.g., VC pitch)
+sponsored_track_bonus: "Qualified projects get an opportunity to pitch to {{vc_fund_name}}"
+vc_fund_name: ""
+
+# --- Rules and Requirements ---
+
+# Weekly progress updates
+weekly_update_requirement: true
+weekly_update_platform: "X (Twitter)"  # Platform where updates are posted
+weekly_update_hashtags:
+  - "#yourevent"
+  - "#yourcommunity"
+weekly_update_mention: "@yourcommunity"
+
+# Final presentation
+final_demo_required: true
+final_presentation_components:
+  - "live demo of the product"
+  - "official public repository link"
+  - "links to all required weekly updates"
+  - "deployed public product link"
+
+# Repository rules
+repo_must_start_empty: true
+repo_must_be_public: true
+
+# Feedback track
+max_feedback_credits_per_participant: 15
+feedback_must_be_recorded: true
+feedback_platform_recommendation: "Zoom"
+
+# --- Optional Features ---
+# Set to true to enable in your docs
+has_sponsored_track: true
+has_real_user_track: true
+has_feedback_track: true
+has_vc_pitch_opportunity: false
