@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dev Blog with 11ty or Next.js - 11ty Blog 2026</title>
+
+  <!-- Open Graph Meta Tags for social media sharing -->
+<meta property="og:image" content="/images/og/11ty-blog-OG-default.jpg">
+<meta property="og:title" content="Dev Blog with 11ty or Next.js">
+<meta property="og:description" content="Newman&#39;s New Stuff">
+<meta property="og:type" content="website">
+<meta property="og:url" content="/posts/2026-01-27-dev-blog-with-11ty-or-nextjs/">
+
+  <!-- RSS Feed Link -->
+  <!-- This lets browsers and feed readers discover your RSS feed automatically -->
+  <!-- Users can subscribe to your blog to get notified of new posts -->
+  <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="11ty Blog 2026 RSS Feed">
+  
+  <!-- Minimal inline CSS for clean, readable layout -->
+  <style>
+    /* Basic reset and layout */
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      color: #333;
+    }
+    
+    /* Header styles */
+    header {
+      border-bottom: 2px solid #333;
+      margin-bottom: 40px;
+      padding-bottom: 20px;
+    }
+    
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+    
+    nav {
+      margin-top: 10px;
+    }
+    
+    nav a {
+      margin-right: 20px;
+      color: #0066cc;
+      text-decoration: none;
+    }
+    
+    nav a:hover {
+      text-decoration: underline;
+    }
+    
+    /* Main content area */
+    main {
+      min-height: 400px;
+    }
+    
+    /* Footer styles */
+    footer {
+      margin-top: 60px;
+      padding-top: 20px;
+      border-top: 1px solid #ccc;
+      color: #666;
+      font-size: 0.9em;
+    }
+    
+    /* Link styles */
+    a {
+      color: #0066cc;
+    }
+    
+    a:hover {
+      color: #004499;
+    }
+    
+    /* Code blocks */
+    pre {
+      background: #f4f4f4;
+      padding: 15px;
+      overflow-x: auto;
+      border-radius: 5px;
+    }
+    
+    code {
+      background: #f4f4f4;
+      padding: 2px 6px;
+      border-radius: 3px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header with site title and navigation -->
+  <header>
+    <h1><a href="/" style="color: inherit; text-decoration: none;">Newman's New Stuff</a></h1>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/posts/">All Posts</a>
+      <a href="/feed/feed.xml">RSS Feed</a>
+    </nav>
+  </header>
+  
+  <!-- Main content area - this is where child templates insert content -->
+  <!-- The "content" block is what child templates will fill in -->
+  <main>
+    
+
+<article>
+  
+  <section>
+    <h1>Dev Blog with 11ty or Next.js</h1>
+    <p>
+      <time datetime="Mon Jan 26 2026 19:00:00 GMT-0500 (Eastern Standard Time)">January 26, 2026</time>
+      
+      
+      
+        &nbsp;·&nbsp;
+        
+          
+          
+            <a href="/tags/blog/">#blog</a>
+          
+        
+      
+    </p>
+  </section>
+  
+  
+  <div>
+    <h2>Why a Dev Blog at All? 🛠️</h2>
+<p>I’m building an app — and thank the gods and the AIs that help us do this 🙏 — and somewhere along the way it clicked:</p>
+<p>I want to document the <em>experience</em> of building it.</p>
+<p>The highs and lows.<br>
+The trials and tribulations.<br>
+The wins, the losses.<br>
+The smiles… and yes, occasionally the cries.</p>
+<p>Not as a generic blog.<br>
+Not as “thought leadership.”</p>
+<p>But as part of the project itself — a dev log that tells the story of <em>this thing</em> I’m making.</p>
+<hr>
+<h2>The Fork in the Road 🤔</h2>
+<p>My first instinct was simple:</p>
+<blockquote>
+<p>“I’m already using Next.js — I’ll just drop a <code>blog/</code> folder in there and call it a day.”</p>
+</blockquote>
+<p>Then I remembered how quickly <strong>11ty (Eleventy)</strong> can grab Markdown, images, and just <em>get out of the way</em>. That got me thinking:<br>
+Should this dev blog be <strong>part of the app</strong>, or <strong>alongside it</strong>?</p>
+<p>So I asked the AI for a clean comparison.</p>
+<hr>
+<h2>Plan: 11ty vs Next.js for a Simple Dev Blog 🧭</h2>
+<p><strong>Goal:</strong><br>
+A fully separate, Markdown-based dev blog with images.<br>
+A separate build step is totally fine.</p>
+<p>Here’s the breakdown.</p>
+<hr>
+<h2>Option 1: 11ty (Eleventy) ⚡</h2>
+<ul>
+<li>Simple static site generator, ideal for Markdown-first blogs</li>
+<li>Fully decoupled — lives in its own folder</li>
+<li>Markdown + images work out of the box</li>
+<li>Excellent plugin ecosystem (RSS, syntax highlighting, etc.)</li>
+<li>Outputs pure HTML — boring in the best way</li>
+<li>Separate, fast build (<code>npm run build</code> inside the blog folder)</li>
+</ul>
+<hr>
+<h2>Option 2: Next.js Blog (MDX / Contentlayer) 🧩</h2>
+<ul>
+<li>More complex to set up for a <em>fully separate</em> blog</li>
+<li>Tightly coupled to the app (routing, config, build)</li>
+<li>Markdown + images are possible, but image handling adds complexity</li>
+<li>RSS requires manual setup</li>
+<li>One build step if integrated — but more moving parts</li>
+</ul>
+<hr>
+<h2>Pros &amp; Cons at a Glance 📊</h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>11ty (Eleventy)</th>
+<th>Next.js Blog (MDX)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Separation</strong></td>
+<td>Fully separate</td>
+<td>Tightly coupled</td>
+</tr>
+<tr>
+<td><strong>Simplicity</strong></td>
+<td>Very simple</td>
+<td>More complex</td>
+</tr>
+<tr>
+<td><strong>Markdown + Images</strong></td>
+<td>Native support</td>
+<td>Needs configuration</td>
+</tr>
+<tr>
+<td><strong>RSS</strong></td>
+<td>Plugins available</td>
+<td>Manual setup</td>
+</tr>
+<tr>
+<td><strong>Reliability</strong></td>
+<td>Extremely high</td>
+<td>More dependencies</td>
+</tr>
+<tr>
+<td><strong>Build</strong></td>
+<td>Separate, fast</td>
+<td>Integrated, slower</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2>Further Considerations 🧠</h2>
+<ul>
+<li><strong>11ty</strong> shines when you want something boring, reliable, and easy to maintain.</li>
+<li><strong>Next.js</strong> shines when the blog <em>is the app</em> — which isn’t my goal here.</li>
+</ul>
+<hr>
+<h2>Recommendation ✅</h2>
+<p>For this dev blog:</p>
+<blockquote>
+<p><strong>Use 11ty in a subfolder.</strong></p>
+</blockquote>
+<p>It keeps the blog:</p>
+<ul>
+<li>simple</li>
+<li>decoupled</li>
+<li>Markdown-native</li>
+<li>resistant to framework churn</li>
+</ul>
+<p>The app can evolve.<br>
+The dev blog can quietly do its job and tell the story.</p>
+<p>And honestly?<br>
+That separation feels right.</p>
+
+  </div>
+</article>
+
+
+<p style="margin-top: 40px;">
+  <a href="/posts/">← Back to all posts</a>
+</p>
+
+
+  </main>
+  
+  <!-- Footer with build date -->
+  <footer>
+    <p>Built with <a href="https://www.11ty.dev/">Eleventy</a> &mdash; Last updated: January 26, 2026</p>
+  </footer>
+</body>
+</html>

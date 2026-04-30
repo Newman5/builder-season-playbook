@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to 11ty Blog 2026 - 11ty Blog 2026</title>
+
+  <!-- Open Graph Meta Tags for social media sharing -->
+<meta property="og:image" content="/images/og/11ty-blog-OG-default.jpg">
+<meta property="og:title" content="Welcome to 11ty Blog 2026">
+<meta property="og:description" content="Newman&#39;s New Stuff">
+<meta property="og:type" content="website">
+<meta property="og:url" content="/posts/2026-01-01-welcome/">
+
+  <!-- RSS Feed Link -->
+  <!-- This lets browsers and feed readers discover your RSS feed automatically -->
+  <!-- Users can subscribe to your blog to get notified of new posts -->
+  <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="11ty Blog 2026 RSS Feed">
+  
+  <!-- Minimal inline CSS for clean, readable layout -->
+  <style>
+    /* Basic reset and layout */
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      color: #333;
+    }
+    
+    /* Header styles */
+    header {
+      border-bottom: 2px solid #333;
+      margin-bottom: 40px;
+      padding-bottom: 20px;
+    }
+    
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+    
+    nav {
+      margin-top: 10px;
+    }
+    
+    nav a {
+      margin-right: 20px;
+      color: #0066cc;
+      text-decoration: none;
+    }
+    
+    nav a:hover {
+      text-decoration: underline;
+    }
+    
+    /* Main content area */
+    main {
+      min-height: 400px;
+    }
+    
+    /* Footer styles */
+    footer {
+      margin-top: 60px;
+      padding-top: 20px;
+      border-top: 1px solid #ccc;
+      color: #666;
+      font-size: 0.9em;
+    }
+    
+    /* Link styles */
+    a {
+      color: #0066cc;
+    }
+    
+    a:hover {
+      color: #004499;
+    }
+    
+    /* Code blocks */
+    pre {
+      background: #f4f4f4;
+      padding: 15px;
+      overflow-x: auto;
+      border-radius: 5px;
+    }
+    
+    code {
+      background: #f4f4f4;
+      padding: 2px 6px;
+      border-radius: 3px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header with site title and navigation -->
+  <header>
+    <h1><a href="/" style="color: inherit; text-decoration: none;">Newman's New Stuff</a></h1>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/posts/">All Posts</a>
+      <a href="/feed/feed.xml">RSS Feed</a>
+    </nav>
+  </header>
+  
+  <!-- Main content area - this is where child templates insert content -->
+  <!-- The "content" block is what child templates will fill in -->
+  <main>
+    
+
+<article>
+  
+  <section>
+    <h1>Welcome to 11ty Blog 2026</h1>
+    <p>
+      <time datetime="Wed Dec 31 2025 19:00:00 GMT-0500 (Eastern Standard Time)">December 31, 2025</time>
+      
+      
+      
+        &nbsp;·&nbsp;
+        
+          
+          
+            <a href="/tags/welcome/">#welcome</a>
+          
+        
+          
+          
+            <a href="/tags/tutorial/">#tutorial</a>
+          
+        
+          
+          
+            <a href="/tags/meta/">#meta</a>
+          
+        
+      
+    </p>
+  </section>
+  
+  
+  <div>
+    <p>Welcome to your new 11ty blog! This is a learning-focused blog starter that includes helpful bash scripts to make blogging easier and teach you bash scripting along the way.</p>
+<h2>Features</h2>
+<p>This blog includes:</p>
+<ul>
+<li><strong>Simple Bash Scripts</strong>: Create posts, manage drafts, check for broken links</li>
+<li><strong>Link Blog Support</strong>: Special template for sharing interesting links with commentary</li>
+<li><strong>Blog Statistics</strong>: Track your writing habits and output</li>
+<li><strong>Beginner-Friendly Code</strong>: Every script is heavily commented for learning</li>
+<li><strong>Modern Static Site</strong>: Built with 11ty (Eleventy), one of the best static site generators</li>
+</ul>
+<h2>Quick Start</h2>
+<p>Try these commands to get started:</p>
+<pre><code class="language-bash"># Create your first post
+./blog-cli.sh new &quot;My First Post&quot;
+
+# Create a link post
+./blog-cli.sh link https://example.com &quot;Check this out!&quot;
+
+# See all available commands
+./blog-cli.sh
+
+# View your blog statistics
+./blog-cli.sh stats
+</code></pre>
+<h2>Learning Bash Scripting</h2>
+<p>All the scripts in the <code>scripts/</code> directory are written with beginners in mind. They use simple, clear patterns and include extensive comments.</p>
+<p>Start by reading these files in order:</p>
+<ol>
+<li><code>blog-cli.sh</code> - The main command router (simplest)</li>
+<li><code>scripts/new-post.sh</code> - Creates blog posts (shows core patterns)</li>
+<li><code>scripts/list-drafts.sh</code> - Lists drafts (shows loops and text processing)</li>
+</ol>
+<p>Then explore the others as you get comfortable!</p>
+<h2>Writing in Markdown</h2>
+<p>This blog uses Markdown for writing. Here are some examples:</p>
+<p><strong>Bold text</strong> with <code>**Bold text**</code>
+<em>Italic text</em> with <code>*Italic text*</code></p>
+<h3>Headings</h3>
+<p>Use # for headings (more # = smaller heading)</p>
+<h3>Links</h3>
+<p><a href="https://example.com">Link text</a></p>
+<h3>Lists</h3>
+<ul>
+<li>Item one</li>
+<li>Item two</li>
+<li>Item three</li>
+</ul>
+<h3>Code</h3>
+<p>Inline <code>code</code> with backticks, or code blocks with triple backticks:</p>
+<pre><code class="language-javascript">console.log(&quot;Hello, world!&quot;);
+</code></pre>
+<h2>Next Steps</h2>
+<ol>
+<li>Read the README.md for full documentation</li>
+<li>Create your first post</li>
+<li>Explore and modify the scripts</li>
+<li>Make this blog your own!</li>
+</ol>
+<p>Happy blogging and happy learning! 🚀</p>
+
+  </div>
+</article>
+
+
+<p style="margin-top: 40px;">
+  <a href="/posts/">← Back to all posts</a>
+</p>
+
+
+  </main>
+  
+  <!-- Footer with build date -->
+  <footer>
+    <p>Built with <a href="https://www.11ty.dev/">Eleventy</a> &mdash; Last updated: December 31, 2025</p>
+  </footer>
+</body>
+</html>
