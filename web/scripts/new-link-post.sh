@@ -9,6 +9,10 @@
 # 3. Create a markdown file with front matter including the link
 # 4. Open it in your editor
 
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+WEB_DIR="$(cd "${SCRIPT_DIR}/.." && pwd)"
+cd "${WEB_DIR}"
+
 # ============================================
 # GET THE URL AND DESCRIPTION
 # ============================================

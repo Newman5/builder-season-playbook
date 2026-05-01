@@ -8,6 +8,10 @@
 # 2. Find the matching draft file
 # 3. Open it in your editor
 
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+WEB_DIR="$(cd "${SCRIPT_DIR}/.." && pwd)"
+cd "${WEB_DIR}"
+
 # ============================================
 # GET THE SLUG
 # ============================================

@@ -10,7 +10,8 @@
     "start": "eleventy --serve",
     "prebuild": "npm run build:data",
     "build": "eleventy",
-    "build-ghpages": "npm run build:data && SITE_PATH_PREFIX=/builder-season-playbook npx @11ty/eleventy"
+    "build-ghpages": "npm run build:data && SITE_PATH_PREFIX=/builder-season-playbook npx @11ty/eleventy",
+    "blog": "./blog-menu.sh"
   },
   "keywords": [
     "blog",

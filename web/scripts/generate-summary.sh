@@ -10,6 +10,10 @@
 # 4. Include tag statistics for the month
 # 5. Save as a new post with today's date
 
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+WEB_DIR="$(cd "${SCRIPT_DIR}/.." && pwd)"
+cd "${WEB_DIR}"
+
 # ============================================
 # GET THE MONTH PARAMETER
 # ============================================

@@ -10,6 +10,10 @@
 # 4. Show top tags with counts
 # 5. List the 5 most recent posts
 
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+WEB_DIR="$(cd "${SCRIPT_DIR}/.." && pwd)"
+cd "${WEB_DIR}"
+
 echo ""
 echo "Blog Statistics"
 echo "==============="

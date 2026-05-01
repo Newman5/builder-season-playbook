@@ -10,6 +10,10 @@
 # 4. Move the file to src/posts/ with today's date in filename
 # 5. Confirm the publication
 
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+WEB_DIR="$(cd "${SCRIPT_DIR}/.." && pwd)"
+cd "${WEB_DIR}"
+
 # ============================================
 # GET THE SLUG
 # ============================================

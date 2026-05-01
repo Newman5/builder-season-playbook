@@ -9,6 +9,10 @@
 # 3. Report which links are broken
 # 4. Show a summary at the end
 
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+WEB_DIR="$(cd "${SCRIPT_DIR}/.." && pwd)"
+cd "${WEB_DIR}"
+
 echo ""
 echo "Checking Links in Blog Posts"
 echo "============================="
