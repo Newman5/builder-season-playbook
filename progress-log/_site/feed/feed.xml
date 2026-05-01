@@ -18,6 +18,11 @@
     <content type="html">&lt;p&gt;I registered for the hackathon today and created the repo and made an annoucement post on X&lt;/p&gt;
 &lt;p&gt;Cool day ... and I got my progress log working ... I think.&lt;/p&gt;
 &lt;p&gt;It works but I still need to clean up some stuff.  Cheers!&lt;/p&gt;
+&lt;p&gt;todo:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;make blog-menu work in the most simple way - change to npm&lt;/li&gt;
+&lt;li&gt;make npm scripts to acces the blog / logging&lt;/li&gt;
+&lt;/ul&gt;
 </content>
   </entry>
 </feed>

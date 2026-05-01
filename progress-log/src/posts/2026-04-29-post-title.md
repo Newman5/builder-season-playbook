@@ -12,3 +12,7 @@ I registered for the hackathon today and created the repo and made an annoucemen
 Cool day ... and I got my progress log working ... I think.
 
 It works but I still need to clean up some stuff.  Cheers!
+
+todo:
+- make blog-menu work in the most simple way - change to npm
+- make npm scripts to acces the blog / logging 
