@@ -1,0 +1,80 @@
+---
+pagination:
+  data: builders
+  size: 1
+  alias: builder
+permalink: "/builders/{{ builder.id }}/index.html"
+eleventyComputed:
+  title: "{{ builder.name }}"
+---
+
+{% extends "base.njk" %}
+
+{% set record = activity | activityForBuilder(builder.id) %}
+
+{% block title %}{{ builder.name }}{% endblock %}
+
+{% block content %}
+<section class="hero">
+  <p class="eyebrow">Builder Detail</p>
+  <h2 style="margin-top: 0;">{{ builder.name }}</h2>
+  <p>
+    {% if builder.projectUrl %}
+      <a href="{{ builder.projectUrl }}">{{ builder.projectName or "Project link" }}</a>
+    {% else %}
+      {{ builder.projectName or "Project link not listed yet." }}
+    {% endif %}
+  </p>
+</section>
+
+<section class="split">
+  <article class="table-card">
+    <h2>Profile</h2>
+    <ul class="clean">
+      <li><strong>GitHub:</strong> <a href="https://github.com/{{ builder.github }}">@{{ builder.github }}</a></li>
+      {% if builder.x %}
+        <li><strong>X:</strong> <a href="https://x.com/{{ builder.x }}">@{{ builder.x }}</a></li>
+      {% endif %}
+      {% if builder.repoUrl %}
+        <li><strong>Tracked repo:</strong> <a href="{{ builder.repoUrl }}">{{ builder.repoUrl }}</a></li>
+      {% endif %}
+      {% if builder.pies and builder.pies.length %}
+        <li><strong>Pies:</strong> {{ builder.pies | join(", ") }}</li>
+      {% endif %}
+      {% if builder.notes %}
+        <li><strong>Notes:</strong> {{ builder.notes }}</li>
+      {% endif %}
+    </ul>
+  </article>
+
+  <article class="table-card">
+    <h2>Activity</h2>
+    <p><strong>Commits this week:</strong> {{ record.commitsThisWeek if record else 0 }}</p>
+    <p><strong>Last activity:</strong>
+      {% if record and record.lastActivityAt %}
+        {{ record.lastActivityAt | readableDateTime }}
+      {% elseif record and record.error %}
+        {{ record.error }}
+      {% else %}
+        No recent activity detected
+      {% endif %}
+    </p>
+  </article>
+</section>
+
+<section class="table-card" style="margin-top: 24px;">
+  <h2>Recent Commits</h2>
+  {% if record and record.recentCommits and record.recentCommits.length %}
+    <ul class="clean">
+      {% for commit in record.recentCommits %}
+        <li>
+          <a href="{{ commit.url }}">{{ commit.message }}</a><br>
+          <span class="muted">{{ commit.repo }} · {{ commit.committedAt | readableDateTime }}</span>
+        </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p class="muted">No recent commits captured for this builder in the current snapshot.</p>
+  {% endif %}
+</section>
+{% endblock %}

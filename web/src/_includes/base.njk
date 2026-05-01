@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}Builder Season Playbook{% endblock %}</title>
+
+  <meta property="og:image" content="{{ (og_image or '/images/og/11ty-blog-OG-default.jpg') | withBase }}">
+  <meta property="og:title" content="{{ title or 'Builder Season Playbook' }}">
+  <meta property="og:description" content="{{ description or 'Open web dashboard and progress log for Builder Season.' }}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ page.url | withBase }}">
+
+  <link rel="alternate" href="{{ '/feed/feed.xml' | withBase }}" type="application/atom+xml" title="Builder Season Playbook RSS Feed">
+
+  <style>
+    :root {
+      --bg: #f6f2e8;
+      --surface: #fffdf8;
+      --text: #1f1a17;
+      --muted: #6b625b;
+      --border: #d8ccb8;
+      --accent: #a44722;
+      --accent-dark: #6f2d12;
+      --card: #fffaf0;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.6;
+      margin: 0;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(164, 71, 34, 0.16), transparent 28%),
+        linear-gradient(180deg, #f9f5ee 0%, var(--bg) 100%);
+    }
+
+    .shell {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+
+    header {
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 32px;
+      padding-bottom: 18px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: clamp(2rem, 4vw, 3.25rem);
+    }
+
+    header p {
+      margin: 8px 0 0;
+      color: var(--muted);
+      max-width: 48rem;
+    }
+
+    nav {
+      margin-top: 16px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    nav a {
+      color: var(--accent-dark);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      min-height: 60vh;
+    }
+
+    footer {
+      margin-top: 60px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.9em;
+    }
+
+    a {
+      color: var(--accent);
+    }
+
+    a:hover {
+      color: var(--accent-dark);
+    }
+
+    pre {
+      background: #f0e7d8;
+      padding: 15px;
+      overflow-x: auto;
+      border-radius: 5px;
+    }
+
+    code {
+      background: #f0e7d8;
+      padding: 2px 6px;
+      border-radius: 3px;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 18px;
+    }
+
+    .card,
+    .table-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 18px;
+      box-shadow: 0 10px 30px rgba(53, 39, 29, 0.05);
+    }
+
+    .card h2,
+    .table-card h2,
+    .table-card h3 {
+      margin-top: 0;
+    }
+
+    .eyebrow {
+      font-size: 0.78rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin: 0 0 8px;
+    }
+
+    .stat {
+      font-size: 2rem;
+      font-weight: 700;
+      margin: 0;
+    }
+
+    .button-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 24px;
+    }
+
+    .button {
+      display: inline-block;
+      background: var(--accent);
+      color: #fffdf8;
+      padding: 10px 16px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .button.secondary {
+      background: transparent;
+      color: var(--accent-dark);
+      border: 1px solid var(--border);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th,
+    td {
+      text-align: left;
+      padding: 12px 10px;
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+    }
+
+    ul.clean {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    ul.clean li + li {
+      margin-top: 12px;
+    }
+
+    .muted {
+      color: var(--muted);
+    }
+
+    .hero {
+      padding: 28px;
+      background: linear-gradient(135deg, rgba(164, 71, 34, 0.14), rgba(255, 250, 240, 0.92));
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      margin-bottom: 28px;
+    }
+
+    .split {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 20px;
+      align-items: start;
+    }
+
+    @media (max-width: 760px) {
+      .shell {
+        padding: 18px;
+      }
+
+      .split {
+        grid-template-columns: 1fr;
+      }
+
+      table,
+      thead,
+      tbody,
+      th,
+      td,
+      tr {
+        display: block;
+      }
+
+      thead {
+        display: none;
+      }
+
+      td {
+        padding: 8px 0;
+      }
+
+      td::before {
+        content: attr(data-label);
+        display: block;
+        font-size: 0.78rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--muted);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <header>
+      <h1><a href="{{ '/' | withBase }}" style="color: inherit; text-decoration: none;">Builder Season Playbook</a></h1>
+      <p>Open web dashboard and progress log for tracking builder activity, weekly momentum, and public evidence.</p>
+      <nav>
+        <a href="{{ '/' | withBase }}">Home</a>
+        <a href="{{ '/dashboard/' | withBase }}">Dashboard</a>
+        <a href="{{ '/progress-log/' | withBase }}">Progress Log</a>
+        <a href="{{ '/posts/' | withBase }}">Archive</a>
+        <a href="{{ '/data/' | withBase }}">Data</a>
+        <a href="{{ '/feed/feed.xml' | withBase }}">RSS Feed</a>
+      </nav>
+    </header>
+
+    <main>
+      {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+      <p>Built with <a href="https://www.11ty.dev/">Eleventy</a> · Last updated: {{ page.date | readableDate }}</p>
+    </footer>
+  </div>
+</body>
+</html>

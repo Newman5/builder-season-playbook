@@ -1,0 +1,26 @@
+---
+title: All Posts
+permalink: /posts/
+---
+
+{% extends "base.njk" %}
+
+{% block title %}Progress Log Archive{% endblock %}
+
+{% block content %}
+<section class="table-card">
+  <p class="eyebrow">Archive</p>
+  <h2>All Progress Posts</h2>
+  <ul class="clean">
+  {% for post in collections.posts %}
+    <li>
+      <time datetime="{{ post.data.date | isoDate }}" class="muted">
+        {{ post.data.date | readableDate }}
+      </time>
+      ·
+      <a href="{{ post.url | withBase }}">{{ post.data.title }}</a>
+    </li>
+  {% endfor %}
+  </ul>
+</section>
+{% endblock %}

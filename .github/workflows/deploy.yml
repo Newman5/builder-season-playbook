@@ -18,9 +18,11 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      ELEVENTY_SITE_URL: https://newman5.github.io/builder-season-playbook/
     defaults:
       run:
-        working-directory: progress-log
+        working-directory: web
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -30,7 +32,7 @@ jobs:
         with:
           node-version: "20"
           cache: npm
-          cache-dependency-path: progress-log/package-lock.json
+          cache-dependency-path: web/package-lock.json
 
       - name: Install dependencies
         run: npm ci
@@ -44,7 +46,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: progress-log/_site
+          path: web/_site
 
   deploy:
     environment:

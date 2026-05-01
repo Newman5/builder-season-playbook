@@ -1,0 +1,27 @@
+# Manual builder registry for the public dashboard and activity scripts.
+# Set ignore: true to keep an entry in the file without publishing it.
+
+repos:
+  - id: mhizta
+    name: Mhizta
+    github: Mhizta-gab
+    project_name: Book Worm AI
+    repo_url: https://github.com/Mhizta-gab/Book-Worm-AI
+    pies:
+      - builders
+
+  - id: murmurations
+    name: Murmurations
+    github: murmurations-ai
+    project_name: Flyway
+    repo_url: https://github.com/murmurations-ai/flyway
+    pies:
+      - builders
+
+  - id: dammy
+    name: Dammy
+    github: Dammy7942
+    project_name: Accordiax
+    repo_url: https://github.com/Dammy7942/accordiax
+    pies:
+      - builders

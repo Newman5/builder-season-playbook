@@ -1,0 +1,41 @@
+[
+  {
+    "id": "mhizta",
+    "name": "Mhizta",
+    "github": "Mhizta-gab",
+    "x": null,
+    "projectName": "Book Worm AI",
+    "projectUrl": null,
+    "repoUrl": "https://github.com/Mhizta-gab/Book-Worm-AI",
+    "pies": [
+      "builders"
+    ],
+    "notes": null
+  },
+  {
+    "id": "murmurations",
+    "name": "Murmurations",
+    "github": "murmurations-ai",
+    "x": null,
+    "projectName": "Flyway",
+    "projectUrl": null,
+    "repoUrl": "https://github.com/murmurations-ai/flyway",
+    "pies": [
+      "builders"
+    ],
+    "notes": null
+  },
+  {
+    "id": "dammy",
+    "name": "Dammy",
+    "github": "Dammy7942",
+    "x": null,
+    "projectName": "Accordiax",
+    "projectUrl": null,
+    "repoUrl": "https://github.com/Dammy7942/accordiax",
+    "pies": [
+      "builders"
+    ],
+    "notes": null
+  }
+]

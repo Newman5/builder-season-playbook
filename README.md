@@ -41,6 +41,7 @@ Full walkthrough: [`docs/setup-guide.md`](docs/setup-guide.md)
 /templates      ← Reusable rule and doc templates
 /automations    ← Optional scripts for tracking and coordination
 /assets         ← Logos, diagrams, images
+/web            ← Published Eleventy site and dashboard
 /examples       ← Reference implementations
 /archive        ← Historical event snapshots
 ```
@@ -71,3 +72,29 @@ Full walkthrough: [`docs/setup-guide.md`](docs/setup-guide.md)
 Issues, suggestions, and forks are welcome. This playbook is meant to be improved through real use.
 
 If you run an event using this template, consider opening an issue or PR to share what you learned.
+
+## Website Dashboard
+
+The published web surface now lives in `web/` and is built with Eleventy.
+
+Key routes:
+
+- `/` landing page
+- `/dashboard/` GitHub Activity Dashboard
+- `/progress-log/` project progress log
+- `/builders/{id}/` builder detail pages
+- `/data/` published JSON links
+
+Builder registrations are maintained in `config/repos.yml`.
+
+Useful commands from `web/`:
+
+```bash
+npm ci
+npm run build:data
+npm run build
+```
+
+`npm run build:data` normalizes `config/repos.yml` into `web/src/_data/builders.json` and refreshes `web/src/_data/activity.json`.
+
+The activity updater prefers `GH_ACTIVITY_TOKEN` and falls back to `GITHUB_TOKEN`. Phase 1 counts all public commits on each tracked repo during the current UTC week.

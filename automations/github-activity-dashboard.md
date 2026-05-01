@@ -23,8 +23,9 @@ This MVP should stay intentionally simple.
 The site has two main data files:
 
 ```txt
-builders.json   # manually maintained list of hackathon builders
-activity.json   # generated snapshot of recent GitHub activity
+config/repos.yml  # manually maintained builder registry
+builders.json     # normalized site data generated from the registry
+activity.json     # generated snapshot of recent GitHub activity
 ```
 
 The static site reads these files and displays:
@@ -70,28 +71,23 @@ This keeps the system open, inspectable, forkable, and easy to adapt for future 
 
 ## Data Model
 
-### builders.json
+### config/repos.yml
 
-This file is manually maintained by the hackathon organizers.
+This YAML file is manually maintained by the hackathon organizers.
 
 Example:
 
-```json
-[
-  {
-    "id": "alice",
-    "name": "Alice Example",
-    "github": "alice-dev",
-    "x": "alicebuilds",
-    "projectName": "Open Wallet Tool",
-    "projectUrl": "https://example.com",
-    "repoUrls": [
-      "https://github.com/alice-dev/open-wallet-tool"
-    ],
-    "pies": ["builders", "feedback"],
-    "notes": "Registered builder. Tracking one main repo."
-  }
-]
+```yml
+repos:
+  - id: alice
+    name: Alice Example
+    github: alice-dev
+    x: alicebuilds
+    project_name: Open Wallet Tool
+    project_url: https://example.com
+    repo_url: https://github.com/alice-dev/open-wallet-tool
+    pies: [builders, feedback]
+    notes: Registered builder. Tracking one main repo.
 ```
 
 ### Field Notes
@@ -104,11 +100,11 @@ Example:
 | `x`           | No        | X/Twitter handle, without @                                   |
 | `projectName` | No        | Name of the builder's project                                 |
 | `projectUrl`  | No        | Website, demo, or project page                                |
-| `repoUrls`    | No        | Repositories explicitly associated with the hackathon project |
+| `repo_url`    | Yes       | Single tracked repository for Phase 1 commit counting         |
 | `pies`        | No        | Pies the builder may be participating in                      |
 | `notes`       | No        | Admin notes or public display notes, depending on use         |
 
-Important rule: Midnight is not part of the Cardano Pie.
+Important rule: Phase 1 tracks one repo per builder and counts all public commits on that repo during the current UTC week.
 
 ---
 
@@ -241,11 +237,12 @@ The first version can use the GitHub REST API.
 
 The collection script should:
 
-1. Read `builders.json`
-2. For each builder, identify repos to check
-3. Fetch recent commits from those repos
-4. Count commits in the current hackathon week
-5. Write `activity.json`
+1. Read `config/repos.yml`
+2. Normalize it into `builders.json`
+3. For each builder, identify the tracked repo
+4. Fetch recent commits from that repo
+5. Count commits in the current hackathon week
+6. Write `activity.json`
 
 
 ---

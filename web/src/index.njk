@@ -1,0 +1,29 @@
+{% extends "base.njk" %}
+
+{% block title %}Builder Season Playbook{% endblock %}
+
+{% block content %}
+<section class="hero split">
+  <div>
+    <p class="eyebrow">Builder Season Surface</p>
+    <h2 style="margin-top: 0;">One public site for weekly momentum and long-form progress.</h2>
+    <p>
+      This site combines a lightweight GitHub activity dashboard with the project progress log.
+      It is meant to stay transparent, inspectable, and easy to fork.
+    </p>
+    <div class="button-row">
+      <a class="button" href="{{ '/dashboard/' | withBase }}">Open Dashboard</a>
+      <a class="button secondary" href="{{ '/progress-log/' | withBase }}">Read Progress Log</a>
+    </div>
+  </div>
+  <div class="card">
+    <p class="eyebrow">What You’ll Find</p>
+    <ul class="clean">
+      <li>Weekly builder activity summaries</li>
+      <li>Per-builder detail pages with recent commits</li>
+      <li>Raw published JSON for reuse and inspection</li>
+      <li>Progress posts and archive pages</li>
+    </ul>
+  </div>
+</section>
+{% endblock %}

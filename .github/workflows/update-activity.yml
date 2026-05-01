@@ -1,0 +1,49 @@
+name: Update GitHub Activity
+
+on:
+  schedule:
+    - cron: "13 12 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-activity:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: web
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+          cache-dependency-path: web/package-lock.json
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Generate registry and activity data
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_ACTIVITY_TOKEN: ${{ secrets.GH_ACTIVITY_TOKEN }}
+        run: npm run build:data
+
+      - name: Commit updated data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add src/_data/builders.json src/_data/activity.json
+          if git diff --cached --quiet; then
+            echo "No activity data changes to commit."
+            exit 0
+          fi
+          git commit -m "Update builder activity data"
+          git push

@@ -1,0 +1,31 @@
+{
+  "name": "builder-season-playbook-web",
+  "version": "1.0.0",
+  "description": "Eleventy site for the Builder Season Playbook",
+  "type": "module",
+  "main": "eleventy.config.js",
+  "scripts": {
+    "build:data": "./scripts/builders-json.sh && ./scripts/generate-activity.sh",
+    "prestart": "npm run build:data",
+    "start": "eleventy --serve",
+    "prebuild": "npm run build:data",
+    "build": "eleventy",
+    "build-ghpages": "npm run build:data && SITE_PATH_PREFIX=/builder-season-playbook npx @11ty/eleventy"
+  },
+  "keywords": [
+    "blog",
+    "11ty",
+    "eleventy",
+    "bash",
+    "static-site",
+    "learning"
+  ],
+  "author": "Newman5",
+  "license": "MIT",
+  "dependencies": {
+    "@11ty/eleventy": "^3.1.2"
+  },
+  "devDependencies": {
+    "@11ty/eleventy-plugin-rss": "^2.0.4"
+  }
+}

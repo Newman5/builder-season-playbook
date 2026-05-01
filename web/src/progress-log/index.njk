@@ -1,0 +1,38 @@
+---
+title: Progress Log
+permalink: /progress-log/
+---
+
+{% extends "base.njk" %}
+
+{% block title %}Progress Log{% endblock %}
+
+{% block content %}
+<section class="hero">
+  <p class="eyebrow">Build Notes</p>
+  <h2 style="margin-top: 0;">Progress log and working notes</h2>
+  <p>The current blog home lives here now. It stays separate from the dashboard while still sharing the same Eleventy site and feed.</p>
+</section>
+
+<section class="table-card">
+  <h2>Recent Posts</h2>
+  {% for post in collections.posts | head(10) %}
+    <article style="margin-bottom: 28px;">
+      <h3 style="margin-bottom: 6px;">
+        <a href="{{ post.url | withBase }}">{{ post.data.title }}</a>
+      </h3>
+      <p class="muted" style="margin: 6px 0;">
+        <time datetime="{{ post.data.date | isoDate }}">{{ post.data.date | readableDate }}</time>
+      </p>
+      <p>
+        {{ post.templateContent | excerpt }}
+        <a href="{{ post.url | withBase }}">Read more →</a>
+      </p>
+    </article>
+  {% endfor %}
+
+  <div class="button-row">
+    <a class="button secondary" href="{{ '/posts/' | withBase }}">Browse Full Archive</a>
+  </div>
+</section>
+{% endblock %}

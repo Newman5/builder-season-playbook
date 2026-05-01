@@ -1,0 +1,29 @@
+---
+title: Data
+permalink: /data/
+---
+
+{% extends "base.njk" %}
+
+{% block title %}Data{% endblock %}
+
+{% block content %}
+<section class="hero">
+  <p class="eyebrow">Raw Data</p>
+  <h2 style="margin-top: 0;">Published JSON used by the site</h2>
+  <p>This page links to the normalized builder registry and the generated GitHub activity snapshot.</p>
+</section>
+
+<section class="card-grid">
+  <article class="card">
+    <h2>Builder Registry</h2>
+    <p>Normalized JSON generated from <code>config/repos.yml</code>.</p>
+    <a class="button secondary" href="{{ '/data/builders.json' | withBase }}">Open builders.json</a>
+  </article>
+  <article class="card">
+    <h2>Activity Snapshot</h2>
+    <p>Generated GitHub activity data for the current UTC week.</p>
+    <a class="button secondary" href="{{ '/data/activity.json' | withBase }}">Open activity.json</a>
+  </article>
+</section>
+{% endblock %}

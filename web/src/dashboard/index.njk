@@ -1,0 +1,108 @@
+---
+title: GitHub Activity Dashboard
+permalink: /dashboard/
+---
+
+{% extends "base.njk" %}
+
+{% set summary = builders | activitySummary(activity) %}
+{% set commitFeed = activity | flattenRecentCommits %}
+
+{% block title %}GitHub Activity Dashboard{% endblock %}
+
+{% block content %}
+<section class="hero">
+  <p class="eyebrow">Dashboard</p>
+  <h2 style="margin-top: 0;">Weekly public GitHub activity across tracked builder repos</h2>
+  <p>This Phase 1 view counts all public commits on each tracked repository during the current UTC week.</p>
+</section>
+
+<section class="card-grid" style="margin-bottom: 24px;">
+  <article class="card">
+    <p class="eyebrow">Total Builders</p>
+    <p class="stat">{{ summary.totalBuilders }}</p>
+  </article>
+  <article class="card">
+    <p class="eyebrow">Active This Week</p>
+    <p class="stat">{{ summary.activeThisWeek }}</p>
+  </article>
+  <article class="card">
+    <p class="eyebrow">Commits This Week</p>
+    <p class="stat">{{ summary.totalCommitsThisWeek }}</p>
+  </article>
+  <article class="card">
+    <p class="eyebrow">Last Updated</p>
+    <p style="margin: 0;">{{ summary.lastUpdated | readableDateTime }}</p>
+  </article>
+</section>
+
+<section class="table-card" style="margin-bottom: 24px;">
+  <h2>Builders</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Builder</th>
+        <th>Project</th>
+        <th>Repo</th>
+        <th>Commits</th>
+        <th>Last Activity</th>
+        <th>Details</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for builder in builders %}
+        {% set record = activity | activityForBuilder(builder.id) %}
+        <tr>
+          <td data-label="Builder">
+            <strong>{{ builder.name }}</strong><br>
+            <span class="muted">@{{ builder.github }}</span>
+          </td>
+          <td data-label="Project">
+            {% if builder.projectUrl %}
+              <a href="{{ builder.projectUrl }}">{{ builder.projectName or "Project Link" }}</a>
+            {% else %}
+              {{ builder.projectName or "Not listed" }}
+            {% endif %}
+          </td>
+          <td data-label="Repo">
+            {% if builder.repoUrl %}
+              <a href="{{ builder.repoUrl }}">Tracked repo</a>
+            {% else %}
+              <span class="muted">Missing</span>
+            {% endif %}
+          </td>
+          <td data-label="Commits">{{ record.commitsThisWeek if record else 0 }}</td>
+          <td data-label="Last Activity">
+            {% if record and record.lastActivityAt %}
+              {{ record.lastActivityAt | readableDateTime }}
+            {% elseif record and record.error %}
+              <span class="muted">{{ record.error }}</span>
+            {% else %}
+              <span class="muted">No recent activity</span>
+            {% endif %}
+          </td>
+          <td data-label="Details"><a href="{{ ('/builders/' ~ builder.id ~ '/') | withBase }}">View builder</a></td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</section>
+
+<section class="table-card">
+  <h2>Recent Commits</h2>
+  {% if commitFeed.length %}
+    <ul class="clean">
+      {% for commit in commitFeed | head(12) %}
+        <li>
+          <strong><a href="{{ ('/builders/' ~ commit.builderId ~ '/') | withBase }}">{{ commit.builderName }}</a></strong>
+          committed to <a href="{{ commit.url }}">{{ commit.repo }}</a><br>
+          <span>{{ commit.message }}</span><br>
+          <span class="muted">{{ commit.committedAt | readableDateTime }}</span>
+        </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p class="muted">No commits captured for the current snapshot.</p>
+  {% endif %}
+</section>
+{% endblock %}

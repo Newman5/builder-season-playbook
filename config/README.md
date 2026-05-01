@@ -33,3 +33,24 @@ Edit this file to customize the playbook for your event. Values defined here cor
 This file uses YAML. YAML is whitespace-sensitive. Keep indentation consistent.
 
 If you prefer JSON, you can rename this file to `event.json` and reformat accordingly.
+
+## repos.yml
+
+`repos.yml` is the manual registry for the website dashboard.
+
+Each entry in `repos:` should describe one builder and one tracked repository for Phase 1. The generator scripts normalize this YAML into website data files under `web/src/_data/`.
+
+Suggested fields:
+
+- `id`
+- `name`
+- `github`
+- `project_name`
+- `project_url`
+- `repo_url`
+- `x`
+- `pies`
+- `notes`
+- `ignore`
+
+Use `ignore: true` when you want to keep an entry in the registry without publishing it on the site or including it in activity generation.
