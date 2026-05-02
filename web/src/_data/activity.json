@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-02T04:15:06Z",
+  "generatedAt": "2026-05-02T12:33:46Z",
   "weekStart": "2026-04-27T00:00:00Z",
   "weekEnd": "2026-05-03T23:59:59Z",
   "builders": [
@@ -309,9 +309,15 @@
     {
       "id": "newman5",
       "name": "Newman",
-      "lastActivityAt": "2026-05-01T23:06:50Z",
-      "commitsThisWeek": 10,
+      "lastActivityAt": "2026-05-02T04:18:24Z",
+      "commitsThisWeek": 11,
       "recentCommits": [
+        {
+          "repo": "Newman5/builder-season-playbook",
+          "message": "A manual way around the paid X.com API ... not sure it's worth it",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/1015d3d9b6b0638285a80961ba82096221026220",
+          "committedAt": "2026-05-02T04:18:24Z"
+        },
         {
           "repo": "Newman5/builder-season-playbook",
           "message": "fixing the blogging menu, making a short post",
@@ -335,12 +341,6 @@
           "message": "first shot at getting the deploy.yml for github pages",
           "url": "https://github.com/Newman5/builder-season-playbook/commit/032b0af0d512aa9d61c370e14d6969d07cd62c90",
           "committedAt": "2026-05-01T02:55:56Z"
-        },
-        {
-          "repo": "Newman5/builder-season-playbook",
-          "message": "create a starter post in the progress log",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/5b0d304ff396d34f8f628266c8e9270cca9cb87f",
-          "committedAt": "2026-05-01T02:51:05Z"
         }
       ],
       "error": null
