@@ -6,6 +6,7 @@
   "main": "eleventy.config.js",
   "scripts": {
     "build:data": "./scripts/builders-json.sh && ./scripts/generate-activity.sh",
+    "build:data:x": "./scripts/builders-json.sh && ./scripts/generate-x-posts.sh",
     "prestart": "npm run build:data",
     "start": "eleventy --serve",
     "prebuild": "npm run build:data",

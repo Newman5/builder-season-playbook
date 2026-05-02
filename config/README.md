@@ -54,3 +54,37 @@ Suggested fields:
 - `ignore`
 
 Use `ignore: true` when you want to keep an entry in the registry without publishing it on the site or including it in activity generation.
+
+For X tracking, you can also add:
+
+- `x`
+- `x_required_hashtags`
+- `x_required_mention`
+- `x_ignore`
+
+Per-builder X rules override the defaults in `event.yml`.
+
+## Builder X Update Files
+
+Builders can submit qualifying X update evidence as per-builder YAML files in `submissions/x-updates/`.
+
+Suggested file path:
+
+- `submissions/x-updates/{builder-id}.yml`
+
+Suggested file shape:
+
+- `builder_id`
+- optional `x_handle`
+- `posts`
+
+Suggested post fields:
+
+- `url`
+- `created_at`
+- optional `hashtags`
+- optional `mention_present`
+- optional `text`
+- optional `note`
+
+The website computes week coverage from submitted `created_at` values, `config/event.yml`, and `config/repos.yml`.

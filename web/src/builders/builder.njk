@@ -11,6 +11,9 @@ eleventyComputed:
 {% extends "base.njk" %}
 
 {% set record = activity | activityForBuilder(builder.id) %}
+{% set xPostRecord = xPosts | xPostSummaryForBuilder(builder.id) %}
+{% set xWeekRecord = xWeeks | xWeeksForBuilder(builder.id) %}
+{% set builderXPosts = xPosts | xPostsForBuilder(builder.id) %}
 
 {% block title %}{{ builder.name }}{% endblock %}
 
@@ -75,6 +78,47 @@ eleventyComputed:
     </ul>
   {% else %}
     <p class="muted">No recent commits captured for this builder in the current snapshot.</p>
+  {% endif %}
+</section>
+
+<section class="table-card" style="margin-top: 24px;">
+  <h2>X Weekly Updates</h2>
+  {% if xWeekRecord and not xWeeks.configError %}
+    <p><strong>Qualified weeks:</strong> {{ xWeekRecord.qualifiedWeeks }}/{{ xWeeks.eventDurationWeeks }}</p>
+    <p><strong>Missing weeks:</strong>
+      {% if xWeekRecord.missingWeeks and xWeekRecord.missingWeeks.length %}
+        {{ xWeekRecord.missingWeeks | join(", ") }}
+      {% else %}
+        None
+      {% endif %}
+    </p>
+  {% elseif xWeeks.configError %}
+    <p class="muted">Verifier configuration error: {{ xWeeks.configError }}</p>
+  {% else %}
+    <p class="muted">No weekly X verifier record is available for this builder yet.</p>
+  {% endif %}
+
+  {% if xPostRecord and xPostRecord.error %}
+    <p class="muted">Submission status: {{ xPostRecord.error }}</p>
+  {% endif %}
+
+  {% if builderXPosts and builderXPosts.length %}
+    <ul class="clean">
+      {% for post in builderXPosts %}
+        <li>
+          <a href="{{ post.postUrl }}">X post</a><br>
+          <span class="muted">{{ post.createdAt | readableDateTime }}</span>
+          {% if post.note %}
+            <br><span>{{ post.note }}</span>
+          {% endif %}
+          {% if post.qualifies != true and post.validationError %}
+            <br><span class="muted">Does not qualify: {{ post.validationError }}</span>
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p class="muted">No builder-submitted X posts have been added for this builder yet.</p>
   {% endif %}
 </section>
 {% endblock %}

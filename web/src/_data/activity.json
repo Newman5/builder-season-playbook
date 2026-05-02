@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-01T22:21:58Z",
+  "generatedAt": "2026-05-02T04:15:06Z",
   "weekStart": "2026-04-27T00:00:00Z",
   "weekEnd": "2026-05-03T23:59:59Z",
   "builders": [
@@ -10,6 +10,212 @@
       "commitsThisWeek": 0,
       "recentCommits": [],
       "error": "EMPTY_REPO_OR_NO_COMMITS"
+    },
+    {
+      "id": "ianonjuguna",
+      "name": "Ian",
+      "lastActivityAt": null,
+      "commitsThisWeek": 0,
+      "recentCommits": [],
+      "error": "EMPTY_REPO_OR_NO_COMMITS"
+    },
+    {
+      "id": "dammy",
+      "name": "Dammy",
+      "lastActivityAt": "2026-04-29T13:51:05Z",
+      "commitsThisWeek": 3,
+      "recentCommits": [
+        {
+          "repo": "Dammy7942/accordiax",
+          "message": "Update the README file",
+          "url": "https://github.com/Dammy7942/accordiax/commit/57c4ada716a656c653826e103fbbfa088de0e2ca",
+          "committedAt": "2026-04-29T13:51:05Z"
+        },
+        {
+          "repo": "Dammy7942/accordiax",
+          "message": "Initial build setup",
+          "url": "https://github.com/Dammy7942/accordiax/commit/13b2997c1192b87c930786e114658ee808a12206",
+          "committedAt": "2026-04-29T13:21:24Z"
+        },
+        {
+          "repo": "Dammy7942/accordiax",
+          "message": "Initial commit from Create Next App",
+          "url": "https://github.com/Dammy7942/accordiax/commit/d486044e6e4c139c2a586c0193a173642dc4324b",
+          "committedAt": "2026-04-29T10:30:41Z"
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "johnny5i",
+      "name": "Johnny5i",
+      "lastActivityAt": "2026-04-23T08:17:18Z",
+      "commitsThisWeek": 0,
+      "recentCommits": [],
+      "error": null
+    },
+    {
+      "id": "gidhub",
+      "name": "GIDHUB",
+      "lastActivityAt": "2026-04-29T01:19:16Z",
+      "commitsThisWeek": 3,
+      "recentCommits": [
+        {
+          "repo": "0xGIDHUB/tixano",
+          "message": "Designed the create event form",
+          "url": "https://github.com/0xGIDHUB/tixano/commit/86dbfd6e7d01b5f2287c82f15ad56609af097ce8",
+          "committedAt": "2026-04-29T01:19:16Z"
+        },
+        {
+          "repo": "0xGIDHUB/tixano",
+          "message": "Updated the logo and font",
+          "url": "https://github.com/0xGIDHUB/tixano/commit/75e0f0a564d424554a924cbd64a9d2d8c7b37724",
+          "committedAt": "2026-04-28T19:44:47Z"
+        },
+        {
+          "repo": "0xGIDHUB/tixano",
+          "message": "Landing page and Wallet Connection Added",
+          "url": "https://github.com/0xGIDHUB/tixano/commit/c188dad9e0e453e979a1a24663abf3958b60f9d1",
+          "committedAt": "2026-04-27T14:15:35Z"
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "pmcorcoran",
+      "name": "PM Corcoran",
+      "lastActivityAt": "2026-04-29T23:52:26Z",
+      "commitsThisWeek": 5,
+      "recentCommits": [
+        {
+          "repo": "pmcorcoran/ada-battles",
+          "message": "add tests & update ticket contract",
+          "url": "https://github.com/pmcorcoran/ada-battles/commit/13d2d9d3b0d2e35d20df703f6aace907f5482388",
+          "committedAt": "2026-04-29T23:52:26Z"
+        },
+        {
+          "repo": "pmcorcoran/ada-battles",
+          "message": "update VISION.md",
+          "url": "https://github.com/pmcorcoran/ada-battles/commit/7409e421c2c584a89c3a26e6b3cdfc538cb9bfdc",
+          "committedAt": "2026-04-29T23:51:27Z"
+        },
+        {
+          "repo": "pmcorcoran/ada-battles",
+          "message": "add 3 ticket max mint to ticket_minting_contract",
+          "url": "https://github.com/pmcorcoran/ada-battles/commit/14416adc1b50d27a0aaea71f5d79d7f66db6f50c",
+          "committedAt": "2026-04-29T18:48:01Z"
+        },
+        {
+          "repo": "pmcorcoran/ada-battles",
+          "message": "Fix ticket mint contract",
+          "url": "https://github.com/pmcorcoran/ada-battles/commit/aec65c5855b3f08b5c51ac0ac0e26d04324fc65b",
+          "committedAt": "2026-04-28T19:24:16Z"
+        },
+        {
+          "repo": "pmcorcoran/ada-battles",
+          "message": "add ticket minting contract",
+          "url": "https://github.com/pmcorcoran/ada-battles/commit/6446eb4c49d5cb5aab3ed76acd29778ac64509fd",
+          "committedAt": "2026-04-28T19:16:57Z"
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "harrie",
+      "name": "Harrie",
+      "lastActivityAt": "2026-04-23T18:28:00Z",
+      "commitsThisWeek": 0,
+      "recentCommits": [],
+      "error": null
+    },
+    {
+      "id": "lewis",
+      "name": "Lewis",
+      "lastActivityAt": null,
+      "commitsThisWeek": 0,
+      "recentCommits": [],
+      "error": "EMPTY_REPO_OR_NO_COMMITS"
+    },
+    {
+      "id": "armanabid",
+      "name": "Arman",
+      "lastActivityAt": null,
+      "commitsThisWeek": 0,
+      "recentCommits": [],
+      "error": "EMPTY_REPO_OR_NO_COMMITS"
+    },
+    {
+      "id": "workshopmaybe",
+      "name": "Workshop Maybe",
+      "lastActivityAt": "2026-04-27T13:22:10Z",
+      "commitsThisWeek": 3,
+      "recentCommits": [
+        {
+          "repo": "workshop-maybe/working-with-me",
+          "message": "Server-side gateway proxy + session helpers (#70)\n\n* feat: implement AC-1, AC-8 — add server-only session cookie helpers\n\nAdd lib/session.ts exporting getSession/setSession/clearSession backed\nby Next 15 async cookies(). Cookie 'andamio-session' is httpOnly,\nSameSite=Lax, Secure in production, and JSON-encodes { jwt, stakeAddress }.\ngetSession returns null when the cookie is missing or malformed.\n\nCo-Authored-By: Claude Opus 4.7 <noreply@anthropic.com>\n\n* feat: implement AC-2, AC-4, AC-7 — add gatewayFetch helper\n\nAdd lib/gateway/server.ts with gatewayFetch(path, init?) that validates\nagainst the existing allowlist (returns a 404 Response if disallowed),\nprepends env.ANDAMIO_GATEWAY_URL, injects X-API-Key from env, and\noptionally sets Authorization: Bearer <jwt> when init.jwt is provided.\nThe upstream Response is returned untouched.\n\nCo-Authored-By: Claude Opus 4.7 <noreply@anthropic.com>\n\n* feat: implement AC-3 — add catch-all gateway proxy route\n\nAdd app/api/gateway/[...path]/route.ts exposing GET/POST/PUT/DELETE\nhandlers. Each handler awaits Next 15's params Promise, reconstructs\nthe upstream path with the inbound search string preserved, returns 404\nfor any (method, path) outside the allowlist, pulls the JWT from\ngetSession when present, and streams the upstream Response back via\ngatewayFetch. The inbound Authorization header is never forwarded —\nthe outbound Bearer token comes only from the server-side session.\n\nCo-Authored-By: Claude Opus 4.7 <noreply@anthropic.com>\n\n* test: implement AC-5 — verify allowlist enforcement and X-API-Key injection\n\nAdd lib/gateway/server.test.ts (bun:test) covering: 404 on disallowed\nmethod/path, X-API-Key injection on allowed requests, Authorization\npresent-when-jwt and absent-when-not, body+method passthrough, and\nencoded-slash rejection (defers to allowlist hardening). Excluding\n*.test.ts from tsc keeps `bun run typecheck` green without adding\n@types/bun. Run with: bun test.\n\nCo-Authored-By: Claude Opus 4.7 <noreply@anthropic.com>\n\n* fix: defer env import in gatewayFetch so build collects page data\n\nlib/env.ts parses process.env at module load via zod, so any transitive\nimport chain reaching it during `next build`'s \"Collecting page data\"\nstep fails when ANDAMIO_API_KEY/ANDAMIO_GATEWAY_URL aren't set in the\nbuild environment. Moving the env access behind a lazy `await import()`\nkeeps the validation strict at request time without modifying lib/env.ts\n(which is read-only per spec antiRequirements). The route module no\nlonger evaluates env.ts during build collection.\n\nAll 8 existing gatewayFetch tests still pass.\n\nCo-Authored-By: Claude Opus 4.7 <noreply@anthropic.com>\n\n---------\n\nCo-authored-by: Claude Opus 4.7 <noreply@anthropic.com>",
+          "url": "https://github.com/workshop-maybe/working-with-me/commit/acd5aa51975ba970e81bbaa5594e4e4573c60fd8",
+          "committedAt": "2026-04-27T13:22:10Z"
+        },
+        {
+          "repo": "workshop-maybe/working-with-me",
+          "message": "UI primitives polish: JSDoc contracts + Label dot a11y (#69)\n\n* docs(SignalWave): document currentColor contract on SignalWaveProps\n\nAdd JSDoc above SignalWaveProps explaining that color flows via the\ninherited CSS color property (currentColor) and that a color prop is\nintentionally absent. Implements AC-1.\n\nCo-Authored-By: Claude Opus 4.7 <noreply@anthropic.com>\n\n* docs(Button): cite app/globals.css as focus-visible foundation\n\nExtend the existing Button JSDoc to explicitly name app/globals.css as\nthe foundation file owning the :focus-visible outline contract, citing\nthe actual generic selector that exists there. Variant-suffix and\nserver-component notes are preserved unchanged. Implements AC-2.\n\nCo-Authored-By: Claude Opus 4.7 <noreply@anthropic.com>\n\n* fix(Label): mark decorative dot as aria-hidden\n\nThe leading 6px signal dot is purely decorative; without aria-hidden it\nrisks a stray bullet/punctuation announcement from screen readers. Add\naria-hidden=\\\"true\\\" to the dot span so only the eyebrow {children} is\nspoken. Implements AC-3.\n\nCo-Authored-By: Claude Opus 4.7 <noreply@anthropic.com>\n\n---------\n\nCo-authored-by: Claude Opus 4.7 <noreply@anthropic.com>",
+          "url": "https://github.com/workshop-maybe/working-with-me/commit/9a07996b51e678fc9cbbbcf1f74cb920015fcc43",
+          "committedAt": "2026-04-27T13:04:52Z"
+        },
+        {
+          "repo": "workshop-maybe/working-with-me",
+          "message": "chore: migrate from pnpm to bun\n\nReplace pnpm-lock.yaml with bun.lock and drop the packageManager field\nso the agency engineer's lockfile-based package manager auto-detection\npicks bun. The user is the sole contributor at this point — switching\nthe lockfile in place is cheaper than installing pnpm in the daemon's\nPATH or teaching agency to read packageManager hints.\n\nVerified: bun install resolves all deps; bun run build passes.",
+          "url": "https://github.com/workshop-maybe/working-with-me/commit/73b7c012f31b40a253734366d3d0a3ff5be76dcb",
+          "committedAt": "2026-04-27T12:27:25Z"
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "kanyuku",
+      "name": "Kanyuku",
+      "lastActivityAt": "2026-04-29T08:45:16Z",
+      "commitsThisWeek": 1,
+      "recentCommits": [
+        {
+          "repo": "kanyuku/weave-Pass",
+          "message": "Initial commit",
+          "url": "https://github.com/kanyuku/weave-Pass/commit/935eb13a788a0bf7c4c9e2f17b5d36f05411b1a8",
+          "committedAt": "2026-04-29T08:45:16Z"
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "gamechanger",
+      "name": "GameChanger Finance",
+      "lastActivityAt": null,
+      "commitsThisWeek": 0,
+      "recentCommits": [],
+      "error": "EMPTY_REPO_OR_NO_COMMITS"
+    },
+    {
+      "id": "yungslaiz",
+      "name": "YungSlaiz",
+      "lastActivityAt": "2025-11-24T15:49:34Z",
+      "commitsThisWeek": 0,
+      "recentCommits": [],
+      "error": null
+    },
+    {
+      "id": "maxalexweber",
+      "name": "Max Alex Weber",
+      "lastActivityAt": "2026-04-30T21:33:58Z",
+      "commitsThisWeek": 1,
+      "recentCommits": [
+        {
+          "repo": "maxalexweber1/CHAINFEED",
+          "message": "feat: implement price service with best price, TWAP, and arbitrage opportunities actions\n\n- Added `price-service.cds` defining entities and actions for price retrieval.\n- Implemented `price-service.ts` to handle business logic for fetching best prices, TWAP calculations, and arbitrage opportunities.\n- Introduced `server.ts` to bootstrap the CAP server and mount x402 middleware for payment gating.\n- Created ambient type definitions for `@odatano/core` in `odatano.d.ts`.\n- Developed x402 payment processing logic including decoding, validation, nonce management, and settlement in `x402` directory.\n- Added error handling for x402 payment processing in `errors.ts`.\n- Implemented nonce claiming and checking in `nonces.ts` to prevent replay attacks.\n- Created payment requirements building logic in `requirements.ts`.\n- Added transaction settlement logic in `settle.ts` to confirm payment on the Cardano blockchain.\n- Validated payment against requirements in `validate.ts`.\n- Configured TypeScript settings in `tsconfig.json` for the project.\n\nCo-authored-by: Copilot <copilot@github.com>",
+          "url": "https://github.com/maxalexweber1/CHAINFEED/commit/bf8762b7a48240a9bdf28ea6b5cc08d85cbf5a83",
+          "committedAt": "2026-04-30T21:33:58Z"
+        }
+      ],
+      "error": null
     },
     {
       "id": "murmurations",
@@ -51,31 +257,132 @@
       "error": null
     },
     {
-      "id": "dammy",
-      "name": "Dammy",
-      "lastActivityAt": "2026-04-29T13:51:05Z",
-      "commitsThisWeek": 3,
+      "id": "blockprint",
+      "name": "BlockPrint",
+      "lastActivityAt": "2026-04-28T09:23:24Z",
+      "commitsThisWeek": 2,
       "recentCommits": [
         {
-          "repo": "Dammy7942/accordiax",
-          "message": "Update the README file",
-          "url": "https://github.com/Dammy7942/accordiax/commit/57c4ada716a656c653826e103fbbfa088de0e2ca",
-          "committedAt": "2026-04-29T13:51:05Z"
+          "repo": "BlockPrintio/GigsGig",
+          "message": "chore: integrate utxos google login",
+          "url": "https://github.com/BlockPrintio/GigsGig/commit/11e67ea95bde5753b075f7e06a1c8df86ff11fb2",
+          "committedAt": "2026-04-28T09:23:24Z"
         },
         {
-          "repo": "Dammy7942/accordiax",
-          "message": "Initial build setup",
-          "url": "https://github.com/Dammy7942/accordiax/commit/13b2997c1192b87c930786e114658ee808a12206",
-          "committedAt": "2026-04-29T13:21:24Z"
-        },
-        {
-          "repo": "Dammy7942/accordiax",
-          "message": "Initial commit from Create Next App",
-          "url": "https://github.com/Dammy7942/accordiax/commit/d486044e6e4c139c2a586c0193a173642dc4324b",
-          "committedAt": "2026-04-29T10:30:41Z"
+          "repo": "BlockPrintio/GigsGig",
+          "message": "initial commit",
+          "url": "https://github.com/BlockPrintio/GigsGig/commit/1000c5ce233ec3ba57e2174e893f877a9df71f75",
+          "committedAt": "2026-04-27T23:02:12Z"
         }
       ],
       "error": null
+    },
+    {
+      "id": "trike",
+      "name": "3rike Mobility",
+      "lastActivityAt": "2026-04-28T10:40:53Z",
+      "commitsThisWeek": 2,
+      "recentCommits": [
+        {
+          "repo": "3rike12/3rike-Mobility_",
+          "message": "feat: initialize frontend project with core architecture, driver dashboard pages, and UI component library",
+          "url": "https://github.com/3rike12/3rike-Mobility_/commit/5086ecbf88d79cf772772a25052d5772c6a6300e",
+          "committedAt": "2026-04-28T10:40:53Z"
+        },
+        {
+          "repo": "3rike12/3rike-Mobility_",
+          "message": "Initial commit",
+          "url": "https://github.com/3rike12/3rike-Mobility_/commit/8325543122664e550c2ca42480bad991eff86273",
+          "committedAt": "2026-04-28T09:27:01Z"
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "mobrai",
+      "name": "MOBR AI",
+      "lastActivityAt": null,
+      "commitsThisWeek": 0,
+      "recentCommits": [],
+      "error": "EMPTY_REPO_OR_NO_COMMITS"
+    },
+    {
+      "id": "newman5",
+      "name": "Newman",
+      "lastActivityAt": "2026-05-01T23:06:50Z",
+      "commitsThisWeek": 10,
+      "recentCommits": [
+        {
+          "repo": "Newman5/builder-season-playbook",
+          "message": "fixing the blogging menu, making a short post",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/e7133fbaaf75c08f45783e80637e5d40d13dde9d",
+          "committedAt": "2026-05-01T23:06:50Z"
+        },
+        {
+          "repo": "Newman5/builder-season-playbook",
+          "message": "new web structure with Dashboard and hosting on github pages",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/9699c26db159fa9791c38228a1701a5b0db3331d",
+          "committedAt": "2026-05-01T19:31:29Z"
+        },
+        {
+          "repo": "Newman5/builder-season-playbook",
+          "message": "fixing deploy.yml -",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/28231c41ccd286bdf41a835041eadbda9bef724e",
+          "committedAt": "2026-05-01T03:32:36Z"
+        },
+        {
+          "repo": "Newman5/builder-season-playbook",
+          "message": "first shot at getting the deploy.yml for github pages",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/032b0af0d512aa9d61c370e14d6969d07cd62c90",
+          "committedAt": "2026-05-01T02:55:56Z"
+        },
+        {
+          "repo": "Newman5/builder-season-playbook",
+          "message": "create a starter post in the progress log",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/5b0d304ff396d34f8f628266c8e9270cca9cb87f",
+          "committedAt": "2026-05-01T02:51:05Z"
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "minustenex",
+      "name": "Minustenex",
+      "lastActivityAt": null,
+      "commitsThisWeek": 0,
+      "recentCommits": [],
+      "error": "EMPTY_REPO_OR_NO_COMMITS"
+    },
+    {
+      "id": "devfreeguy",
+      "name": "Dev Free Guy",
+      "lastActivityAt": null,
+      "commitsThisWeek": 0,
+      "recentCommits": [],
+      "error": "EMPTY_REPO_OR_NO_COMMITS"
+    },
+    {
+      "id": "haulink",
+      "name": "Haulink",
+      "lastActivityAt": "2026-05-01T14:59:15Z",
+      "commitsThisWeek": 1,
+      "recentCommits": [
+        {
+          "repo": "FoladDTechie/Haulink",
+          "message": "Initial commit",
+          "url": "https://github.com/FoladDTechie/Haulink/commit/9dfcbb198c1577901e16854e5abc3319ab95b561",
+          "committedAt": "2026-05-01T14:59:15Z"
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "opa007i",
+      "name": "Opa",
+      "lastActivityAt": null,
+      "commitsThisWeek": 0,
+      "recentCommits": [],
+      "error": "EMPTY_REPO_OR_NO_COMMITS"
     }
   ]
 }

@@ -1,5 +1,5 @@
 ---
-title: GitHub Activity Dashboard
+title: Builder Activity Dashboard
 permalink: /dashboard/
 ---
 
@@ -7,8 +7,9 @@ permalink: /dashboard/
 
 {% set summary = builders | activitySummary(activity) %}
 {% set commitFeed = activity | flattenRecentCommits %}
+{% set xSummary = builders | xSummary(xPosts, xWeeks) %}
 
-{% block title %}GitHub Activity Dashboard{% endblock %}
+{% block title %}Builder Activity Dashboard{% endblock %}
 
 {% block content %}
 <section class="hero">
@@ -86,6 +87,116 @@ permalink: /dashboard/
       {% endfor %}
     </tbody>
   </table>
+</section>
+
+<section class="hero">
+  <p class="eyebrow">X Weekly Updates</p>
+  <h2 style="margin-top: 0;">Manual X evidence and week-by-week coverage</h2>
+  <p>Builders can submit weekly X post evidence as YAML files under <code>submissions/x-updates/</code>. The site computes weekly coverage from submitted timestamps and the event schedule.</p>
+</section>
+
+<section class="card-grid" style="margin-bottom: 24px;">
+  <article class="card">
+    <p class="eyebrow">Builders With Handles</p>
+    <p class="stat">{{ xSummary.withHandles }}</p>
+  </article>
+  <article class="card">
+    <p class="eyebrow">Submission Files</p>
+    <p class="stat">{{ xSummary.withSubmissionFiles }}</p>
+  </article>
+  <article class="card">
+    <p class="eyebrow">Qualifying Posts</p>
+    <p class="stat">{{ xSummary.qualifyingPosts }}</p>
+  </article>
+  <article class="card">
+    <p class="eyebrow">Builders With Coverage</p>
+    <p class="stat">{{ xSummary.buildersWithCoverage }}</p>
+  </article>
+</section>
+
+<section class="table-card" style="margin-bottom: 24px;">
+  <h2>X Weekly Coverage</h2>
+  {% if xSummary.configError %}
+    <p class="muted">X verifier configuration error: {{ xSummary.configError }}</p>
+  {% else %}
+    <table>
+      <thead>
+        <tr>
+          <th>Builder</th>
+          <th>X</th>
+          <th>Submitted Posts</th>
+          <th>Qualified Weeks</th>
+          <th>Missing Weeks</th>
+          <th>Details</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for builder in builders %}
+          {% set postRecord = xPosts | xPostSummaryForBuilder(builder.id) %}
+          {% set weekRecord = xWeeks | xWeeksForBuilder(builder.id) %}
+          <tr>
+            <td data-label="Builder">
+              <strong>{{ builder.name }}</strong>
+            </td>
+            <td data-label="X">
+              {% if builder.x %}
+                <a href="https://x.com/{{ builder.x }}">@{{ builder.x }}</a>
+              {% else %}
+                <span class="muted">Not listed</span>
+              {% endif %}
+            </td>
+            <td data-label="Submitted Posts">
+              {% if postRecord %}
+                {{ postRecord.submittedCount }}
+                {% if postRecord.error %}
+                  <br><span class="muted">{{ postRecord.error }}</span>
+                {% endif %}
+              {% else %}
+                <span class="muted">None</span>
+              {% endif %}
+            </td>
+            <td data-label="Qualified Weeks">
+              {% if weekRecord %}
+                {{ weekRecord.qualifiedWeeks }}/{{ xWeeks.eventDurationWeeks }}
+              {% else %}
+                <span class="muted">Unavailable</span>
+              {% endif %}
+            </td>
+            <td data-label="Missing Weeks">
+              {% if weekRecord and weekRecord.missingWeeks and weekRecord.missingWeeks.length %}
+                {{ weekRecord.missingWeeks | join(", ") }}
+              {% elseif weekRecord %}
+                None
+              {% else %}
+                <span class="muted">Unavailable</span>
+              {% endif %}
+            </td>
+            <td data-label="Details"><a href="{{ ('/builders/' ~ builder.id ~ '/') | withBase }}">View builder</a></td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  {% endif %}
+</section>
+
+<section class="table-card">
+  <h2>Submitted X Posts</h2>
+  {% if xPosts.posts and xPosts.posts.length %}
+    <ul class="clean">
+      {% for post in xPosts.posts | head(12) %}
+        <li>
+          <strong><a href="{{ ('/builders/' ~ post.builderId ~ '/') | withBase }}">{{ post.builderId }}</a></strong>
+          shared <a href="{{ post.postUrl }}">an X post</a><br>
+          <span class="muted">{{ post.createdAt | readableDateTime }}</span>
+          {% if post.qualifies != true and post.validationError %}
+            <br><span class="muted">Does not qualify: {{ post.validationError }}</span>
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p class="muted">No builder-submitted X posts have been added yet.</p>
+  {% endif %}
 </section>
 
 <section class="table-card">

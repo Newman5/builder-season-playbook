@@ -5,23 +5,206 @@ repos:
   - id: mhizta
     name: Mhizta
     github: Mhizta-gab
-    project_name: Book Worm AI
+    x: mhiztagab1
+    project_name: Book-Worm AI
     repo_url: https://github.com/Mhizta-gab/Book-Worm-AI
     pies:
       - builders
 
-  - id: murmurations
-    name: Murmurations
-    github: murmurations-ai
-    project_name: Flyway
-    repo_url: https://github.com/murmurations-ai/flyway
+  - id: ianonjuguna
+    name: Ian
+    github: IanoNjuguna
+    x: 0xxxIaN0
+    project_name: Doba World
+    repo_url: https://github.com/IanoNjuguna/bookish-worm
     pies:
       - builders
 
   - id: dammy
     name: Dammy
     github: Dammy7942
+    x: Kamarudeen22205
     project_name: Accordiax
     repo_url: https://github.com/Dammy7942/accordiax
+    pies:
+      - builders
+
+  - id: johnny5i
+    name: Johnny5i
+    github: bytewizard42i
+    x: realjohnny5i
+    project_name: FlavorOfPie-ToBeDetermined
+    repo_url: https://github.com/bytewizard42i/FlavorOfPie-ToBeDetermined_Gimbalabs-johnny5i
+    pies:
+      - builders
+
+  - id: gidhub
+    name: GIDHUB
+    github: 0xGIDHUB
+    x: 0xGIDHUB
+    project_name: Tixano
+    repo_url: https://github.com/0xGIDHUB/tixano
+    pies:
+      - builders
+
+  - id: pmcorcoran
+    name: PM Corcoran
+    github: pmcorcoran
+    x: Adafan430292
+    project_name: ada battles
+    repo_url: https://github.com/pmcorcoran/ada-battles
+    pies:
+      - builders
+
+  - id: harrie
+    name: Harrie
+    github: IamHarrie-Labs
+    x: IamHarrie
+    project_name: Beni — AI Agent Wallet Guardrails on Cardano
+    repo_url: https://github.com/IamHarrie-Labs/beni
+    pies:
+      - builders
+
+  - id: lewis
+    name: Lewis
+    github: lewis-nduati
+    x: everydaylewis
+    project_name: TRACOM-CREDENTIALS
+    repo_url: https://github.com/lewis-nduati/Tracom-credentials.git
+    pies:
+      - builders
+
+  - id: armanabid
+    name: Arman
+    github: ArmanAbid
+    x:
+    project_name: ChainTask
+    repo_url: https://github.com/ArmanAbid/ChainTask
+    pies:
+      - builders
+
+  - id: workshopmaybe
+    name: Workshop Maybe
+    github: workshop-maybe
+    x:
+    project_name: Working with Me
+    repo_url: https://github.com/workshop-maybe/working-with-me
+    pies:
+      - builders
+
+  - id: kanyuku
+    name: Kanyuku
+    github: kanyuku
+    x:
+    project_name: Weave Pass
+    repo_url: https://github.com/kanyuku/weave-Pass
+    pies:
+      - builders
+
+  - id: gamechanger
+    name: GameChanger Finance
+    github: GameChangerFinance
+    x:
+    project_name: NeonSoup
+    repo_url: https://github.com/GameChangerFinance/NeonSoup
+    pies:
+      - builders
+
+  - id: yungslaiz
+    name: YungSlaiz
+    github: YungSlaiz53
+    x:
+    project_name: Next.Ai Protocol
+    repo_url: https://github.com/YungSlaiz53/GNXT
+    pies:
+      - builders
+
+  - id: maxalexweber
+    name: Max Alex Weber
+    github: maxalexweber1
+    x: maxalexweber
+    project_name: ChainFeed
+    repo_url: https://github.com/maxalexweber1/CHAINFEED
+    pies:
+      - builders
+
+  - id: murmurations
+    name: Murmurations
+    github: murmurations-ai
+    x: Xeeban
+    project_name: Murmurations.ai
+    repo_url: https://github.com/murmurations-ai/flyway
+    pies:
+      - builders
+
+  - id: blockprint
+    name: BlockPrint
+    github: BlockPrintio
+    x: blockprint0
+    project_name: GigsGig
+    repo_url: https://github.com/BlockPrintio/GigsGig
+    pies:
+      - builders
+
+  - id: trike
+    name: 3rike Mobility
+    github: 3rike12
+    x: real_winni3
+    project_name: 3rike Mobility
+    repo_url: https://github.com/3rike12/3rike-Mobility_
+    pies:
+      - builders
+
+  - id: mobrai
+    name: MOBR AI
+    github: mobr-ai
+    x:
+    project_name: Cardano Analytics Platform (CAP) powered by LLM
+    repo_url: https://github.com/mobr-ai/cap-pie
+    pies:
+      - builders
+
+  - id: newman5
+    name: Newman
+    github: Newman5
+    x: newman5
+    project_name: Builder Season Playbook
+    repo_url: https://github.com/Newman5/builder-season-playbook
+    pies:
+      - builders
+
+  - id: minustenex
+    name: Minustenex
+    github: agentic-architecture-research
+    x: minustenexdev
+    project_name: modular-agentic-harness marketplace
+    repo_url: https://github.com/agentic-architecture-research/modular-agent-harness
+    pies:
+      - builders
+
+  - id: devfreeguy
+    name: Dev Free Guy
+    github: devfreeguy
+    x: devfreeguy
+    project_name: SkillSwap
+    repo_url: https://github.com/devfreeguy/skill-swap
+    pies:
+      - builders
+
+  - id: haulink
+    name: Haulink
+    github: FoladDTechie
+    x: Haulink_
+    project_name: Haulink
+    repo_url: https://github.com/FoladDTechie/Haulink
+    pies:
+      - builders
+
+  - id: opa007i
+    name: Opa
+    github: opa1
+    x: Opa007i
+    project_name: The Quest
+    repo_url: https://github.com/opa1/the-quest
     pies:
       - builders

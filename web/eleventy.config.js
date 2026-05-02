@@ -138,6 +138,42 @@ export default function (eleventyConfig) {
     };
   });
 
+  eleventyConfig.addFilter("xPostsForBuilder", (xPosts, builderId) => {
+    const posts = xPosts?.posts || [];
+    return posts
+      .filter((entry) => entry.builderId === builderId)
+      .sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
+  });
+
+  eleventyConfig.addFilter("xWeeksForBuilder", (xWeeks, builderId) => {
+    const records = xWeeks?.builders || [];
+    return records.find((entry) => entry.id === builderId) || null;
+  });
+
+  eleventyConfig.addFilter("xPostSummaryForBuilder", (xPosts, builderId) => {
+    const records = xPosts?.builders || [];
+    return records.find((entry) => entry.id === builderId) || null;
+  });
+
+  eleventyConfig.addFilter("xSummary", (builders, xPosts, xWeeks) => {
+    const registry = Array.isArray(builders) ? builders : [];
+    const weekRecords = xWeeks?.builders || [];
+    const posts = xPosts?.posts || [];
+
+    return {
+      totalBuilders: registry.length,
+      withHandles: registry.filter((entry) => !!entry.x && entry.xIgnore !== true).length,
+      withSubmissionFiles: (xPosts?.builders || []).filter(
+        (entry) => entry.error !== "NO_SUBMISSION_FILE" && entry.error !== "NO_X_HANDLE" && entry.error !== "X_IGNORED"
+      ).length,
+      buildersWithCoverage: weekRecords.filter((entry) => entry.qualifiedWeeks > 0).length,
+      submittedPosts: posts.length,
+      qualifyingPosts: posts.filter((entry) => entry.qualifies === true).length,
+      lastUpdated: xPosts?.generatedAt || null,
+      configError: xWeeks?.configError || xPosts?.configError || null,
+    };
+  });
+
   eleventyConfig.addCollection("posts", function (collectionApi) {
     return collectionApi
       .getFilteredByGlob("src/posts/*.md")

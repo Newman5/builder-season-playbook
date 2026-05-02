@@ -1,0 +1,2554 @@
+{
+  "generatedAt": "2026-05-02T04:10:22Z",
+  "buildStart": "2026-04-19",
+  "eventDurationWeeks": 12,
+  "configError": null,
+  "weeks": [
+    {
+      "index": 1,
+      "start": "2026-04-19T00:00:00Z",
+      "end": "2026-04-25T23:59:59Z"
+    },
+    {
+      "index": 2,
+      "start": "2026-04-26T00:00:00Z",
+      "end": "2026-05-02T23:59:59Z"
+    },
+    {
+      "index": 3,
+      "start": "2026-05-03T00:00:00Z",
+      "end": "2026-05-09T23:59:59Z"
+    },
+    {
+      "index": 4,
+      "start": "2026-05-10T00:00:00Z",
+      "end": "2026-05-16T23:59:59Z"
+    },
+    {
+      "index": 5,
+      "start": "2026-05-17T00:00:00Z",
+      "end": "2026-05-23T23:59:59Z"
+    },
+    {
+      "index": 6,
+      "start": "2026-05-24T00:00:00Z",
+      "end": "2026-05-30T23:59:59Z"
+    },
+    {
+      "index": 7,
+      "start": "2026-05-31T00:00:00Z",
+      "end": "2026-06-06T23:59:59Z"
+    },
+    {
+      "index": 8,
+      "start": "2026-06-07T00:00:00Z",
+      "end": "2026-06-13T23:59:59Z"
+    },
+    {
+      "index": 9,
+      "start": "2026-06-14T00:00:00Z",
+      "end": "2026-06-20T23:59:59Z"
+    },
+    {
+      "index": 10,
+      "start": "2026-06-21T00:00:00Z",
+      "end": "2026-06-27T23:59:59Z"
+    },
+    {
+      "index": 11,
+      "start": "2026-06-28T00:00:00Z",
+      "end": "2026-07-04T23:59:59Z"
+    },
+    {
+      "index": 12,
+      "start": "2026-07-05T00:00:00Z",
+      "end": "2026-07-11T23:59:59Z"
+    }
+  ],
+  "builders": [
+    {
+      "id": "mhizta",
+      "name": "Mhizta",
+      "xHandle": "mhiztagab1",
+      "xIgnored": false,
+      "allWeeksCovered": false,
+      "qualifiedWeeks": 0,
+      "missingWeeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "weeks": [
+        {
+          "index": 1,
+          "start": "2026-04-19T00:00:00Z",
+          "end": "2026-04-25T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 2,
+          "start": "2026-04-26T00:00:00Z",
+          "end": "2026-05-02T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 3,
+          "start": "2026-05-03T00:00:00Z",
+          "end": "2026-05-09T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 4,
+          "start": "2026-05-10T00:00:00Z",
+          "end": "2026-05-16T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 5,
+          "start": "2026-05-17T00:00:00Z",
+          "end": "2026-05-23T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 6,
+          "start": "2026-05-24T00:00:00Z",
+          "end": "2026-05-30T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 7,
+          "start": "2026-05-31T00:00:00Z",
+          "end": "2026-06-06T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 8,
+          "start": "2026-06-07T00:00:00Z",
+          "end": "2026-06-13T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 9,
+          "start": "2026-06-14T00:00:00Z",
+          "end": "2026-06-20T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 10,
+          "start": "2026-06-21T00:00:00Z",
+          "end": "2026-06-27T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 11,
+          "start": "2026-06-28T00:00:00Z",
+          "end": "2026-07-04T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 12,
+          "start": "2026-07-05T00:00:00Z",
+          "end": "2026-07-11T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        }
+      ]
+    },
+    {
+      "id": "ianonjuguna",
+      "name": "Ian",
+      "xHandle": "0xxxIaN0",
+      "xIgnored": false,
+      "allWeeksCovered": false,
+      "qualifiedWeeks": 0,
+      "missingWeeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "weeks": [
+        {
+          "index": 1,
+          "start": "2026-04-19T00:00:00Z",
+          "end": "2026-04-25T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 2,
+          "start": "2026-04-26T00:00:00Z",
+          "end": "2026-05-02T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 3,
+          "start": "2026-05-03T00:00:00Z",
+          "end": "2026-05-09T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 4,
+          "start": "2026-05-10T00:00:00Z",
+          "end": "2026-05-16T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 5,
+          "start": "2026-05-17T00:00:00Z",
+          "end": "2026-05-23T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 6,
+          "start": "2026-05-24T00:00:00Z",
+          "end": "2026-05-30T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 7,
+          "start": "2026-05-31T00:00:00Z",
+          "end": "2026-06-06T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 8,
+          "start": "2026-06-07T00:00:00Z",
+          "end": "2026-06-13T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 9,
+          "start": "2026-06-14T00:00:00Z",
+          "end": "2026-06-20T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 10,
+          "start": "2026-06-21T00:00:00Z",
+          "end": "2026-06-27T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 11,
+          "start": "2026-06-28T00:00:00Z",
+          "end": "2026-07-04T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 12,
+          "start": "2026-07-05T00:00:00Z",
+          "end": "2026-07-11T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        }
+      ]
+    },
+    {
+      "id": "dammy",
+      "name": "Dammy",
+      "xHandle": "Kamarudeen22205",
+      "xIgnored": false,
+      "allWeeksCovered": false,
+      "qualifiedWeeks": 0,
+      "missingWeeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "weeks": [
+        {
+          "index": 1,
+          "start": "2026-04-19T00:00:00Z",
+          "end": "2026-04-25T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 2,
+          "start": "2026-04-26T00:00:00Z",
+          "end": "2026-05-02T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 3,
+          "start": "2026-05-03T00:00:00Z",
+          "end": "2026-05-09T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 4,
+          "start": "2026-05-10T00:00:00Z",
+          "end": "2026-05-16T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 5,
+          "start": "2026-05-17T00:00:00Z",
+          "end": "2026-05-23T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 6,
+          "start": "2026-05-24T00:00:00Z",
+          "end": "2026-05-30T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 7,
+          "start": "2026-05-31T00:00:00Z",
+          "end": "2026-06-06T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 8,
+          "start": "2026-06-07T00:00:00Z",
+          "end": "2026-06-13T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 9,
+          "start": "2026-06-14T00:00:00Z",
+          "end": "2026-06-20T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 10,
+          "start": "2026-06-21T00:00:00Z",
+          "end": "2026-06-27T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 11,
+          "start": "2026-06-28T00:00:00Z",
+          "end": "2026-07-04T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 12,
+          "start": "2026-07-05T00:00:00Z",
+          "end": "2026-07-11T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        }
+      ]
+    },
+    {
+      "id": "johnny5i",
+      "name": "Johnny5i",
+      "xHandle": "realjohnny5i",
+      "xIgnored": false,
+      "allWeeksCovered": false,
+      "qualifiedWeeks": 0,
+      "missingWeeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "weeks": [
+        {
+          "index": 1,
+          "start": "2026-04-19T00:00:00Z",
+          "end": "2026-04-25T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 2,
+          "start": "2026-04-26T00:00:00Z",
+          "end": "2026-05-02T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 3,
+          "start": "2026-05-03T00:00:00Z",
+          "end": "2026-05-09T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 4,
+          "start": "2026-05-10T00:00:00Z",
+          "end": "2026-05-16T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 5,
+          "start": "2026-05-17T00:00:00Z",
+          "end": "2026-05-23T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 6,
+          "start": "2026-05-24T00:00:00Z",
+          "end": "2026-05-30T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 7,
+          "start": "2026-05-31T00:00:00Z",
+          "end": "2026-06-06T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 8,
+          "start": "2026-06-07T00:00:00Z",
+          "end": "2026-06-13T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 9,
+          "start": "2026-06-14T00:00:00Z",
+          "end": "2026-06-20T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 10,
+          "start": "2026-06-21T00:00:00Z",
+          "end": "2026-06-27T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 11,
+          "start": "2026-06-28T00:00:00Z",
+          "end": "2026-07-04T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 12,
+          "start": "2026-07-05T00:00:00Z",
+          "end": "2026-07-11T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        }
+      ]
+    },
+    {
+      "id": "gidhub",
+      "name": "GIDHUB",
+      "xHandle": "0xGIDHUB",
+      "xIgnored": false,
+      "allWeeksCovered": false,
+      "qualifiedWeeks": 0,
+      "missingWeeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "weeks": [
+        {
+          "index": 1,
+          "start": "2026-04-19T00:00:00Z",
+          "end": "2026-04-25T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 2,
+          "start": "2026-04-26T00:00:00Z",
+          "end": "2026-05-02T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 3,
+          "start": "2026-05-03T00:00:00Z",
+          "end": "2026-05-09T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 4,
+          "start": "2026-05-10T00:00:00Z",
+          "end": "2026-05-16T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 5,
+          "start": "2026-05-17T00:00:00Z",
+          "end": "2026-05-23T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 6,
+          "start": "2026-05-24T00:00:00Z",
+          "end": "2026-05-30T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 7,
+          "start": "2026-05-31T00:00:00Z",
+          "end": "2026-06-06T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 8,
+          "start": "2026-06-07T00:00:00Z",
+          "end": "2026-06-13T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 9,
+          "start": "2026-06-14T00:00:00Z",
+          "end": "2026-06-20T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 10,
+          "start": "2026-06-21T00:00:00Z",
+          "end": "2026-06-27T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 11,
+          "start": "2026-06-28T00:00:00Z",
+          "end": "2026-07-04T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 12,
+          "start": "2026-07-05T00:00:00Z",
+          "end": "2026-07-11T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        }
+      ]
+    },
+    {
+      "id": "pmcorcoran",
+      "name": "PM Corcoran",
+      "xHandle": "Adafan430292",
+      "xIgnored": false,
+      "allWeeksCovered": false,
+      "qualifiedWeeks": 0,
+      "missingWeeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "weeks": [
+        {
+          "index": 1,
+          "start": "2026-04-19T00:00:00Z",
+          "end": "2026-04-25T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 2,
+          "start": "2026-04-26T00:00:00Z",
+          "end": "2026-05-02T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 3,
+          "start": "2026-05-03T00:00:00Z",
+          "end": "2026-05-09T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 4,
+          "start": "2026-05-10T00:00:00Z",
+          "end": "2026-05-16T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 5,
+          "start": "2026-05-17T00:00:00Z",
+          "end": "2026-05-23T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 6,
+          "start": "2026-05-24T00:00:00Z",
+          "end": "2026-05-30T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 7,
+          "start": "2026-05-31T00:00:00Z",
+          "end": "2026-06-06T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 8,
+          "start": "2026-06-07T00:00:00Z",
+          "end": "2026-06-13T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 9,
+          "start": "2026-06-14T00:00:00Z",
+          "end": "2026-06-20T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 10,
+          "start": "2026-06-21T00:00:00Z",
+          "end": "2026-06-27T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 11,
+          "start": "2026-06-28T00:00:00Z",
+          "end": "2026-07-04T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 12,
+          "start": "2026-07-05T00:00:00Z",
+          "end": "2026-07-11T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        }
+      ]
+    },
+    {
+      "id": "harrie",
+      "name": "Harrie",
+      "xHandle": "IamHarrie",
+      "xIgnored": false,
+      "allWeeksCovered": false,
+      "qualifiedWeeks": 0,
+      "missingWeeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "weeks": [
+        {
+          "index": 1,
+          "start": "2026-04-19T00:00:00Z",
+          "end": "2026-04-25T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 2,
+          "start": "2026-04-26T00:00:00Z",
+          "end": "2026-05-02T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 3,
+          "start": "2026-05-03T00:00:00Z",
+          "end": "2026-05-09T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 4,
+          "start": "2026-05-10T00:00:00Z",
+          "end": "2026-05-16T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 5,
+          "start": "2026-05-17T00:00:00Z",
+          "end": "2026-05-23T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 6,
+          "start": "2026-05-24T00:00:00Z",
+          "end": "2026-05-30T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 7,
+          "start": "2026-05-31T00:00:00Z",
+          "end": "2026-06-06T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 8,
+          "start": "2026-06-07T00:00:00Z",
+          "end": "2026-06-13T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 9,
+          "start": "2026-06-14T00:00:00Z",
+          "end": "2026-06-20T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 10,
+          "start": "2026-06-21T00:00:00Z",
+          "end": "2026-06-27T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 11,
+          "start": "2026-06-28T00:00:00Z",
+          "end": "2026-07-04T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 12,
+          "start": "2026-07-05T00:00:00Z",
+          "end": "2026-07-11T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        }
+      ]
+    },
+    {
+      "id": "lewis",
+      "name": "Lewis",
+      "xHandle": "everydaylewis",
+      "xIgnored": false,
+      "allWeeksCovered": false,
+      "qualifiedWeeks": 0,
+      "missingWeeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "weeks": [
+        {
+          "index": 1,
+          "start": "2026-04-19T00:00:00Z",
+          "end": "2026-04-25T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 2,
+          "start": "2026-04-26T00:00:00Z",
+          "end": "2026-05-02T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 3,
+          "start": "2026-05-03T00:00:00Z",
+          "end": "2026-05-09T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 4,
+          "start": "2026-05-10T00:00:00Z",
+          "end": "2026-05-16T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 5,
+          "start": "2026-05-17T00:00:00Z",
+          "end": "2026-05-23T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 6,
+          "start": "2026-05-24T00:00:00Z",
+          "end": "2026-05-30T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 7,
+          "start": "2026-05-31T00:00:00Z",
+          "end": "2026-06-06T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 8,
+          "start": "2026-06-07T00:00:00Z",
+          "end": "2026-06-13T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 9,
+          "start": "2026-06-14T00:00:00Z",
+          "end": "2026-06-20T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 10,
+          "start": "2026-06-21T00:00:00Z",
+          "end": "2026-06-27T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 11,
+          "start": "2026-06-28T00:00:00Z",
+          "end": "2026-07-04T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 12,
+          "start": "2026-07-05T00:00:00Z",
+          "end": "2026-07-11T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        }
+      ]
+    },
+    {
+      "id": "armanabid",
+      "name": "Arman",
+      "xHandle": null,
+      "xIgnored": false,
+      "allWeeksCovered": false,
+      "qualifiedWeeks": 0,
+      "missingWeeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "weeks": [
+        {
+          "index": 1,
+          "start": "2026-04-19T00:00:00Z",
+          "end": "2026-04-25T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 2,
+          "start": "2026-04-26T00:00:00Z",
+          "end": "2026-05-02T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 3,
+          "start": "2026-05-03T00:00:00Z",
+          "end": "2026-05-09T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 4,
+          "start": "2026-05-10T00:00:00Z",
+          "end": "2026-05-16T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 5,
+          "start": "2026-05-17T00:00:00Z",
+          "end": "2026-05-23T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 6,
+          "start": "2026-05-24T00:00:00Z",
+          "end": "2026-05-30T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 7,
+          "start": "2026-05-31T00:00:00Z",
+          "end": "2026-06-06T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 8,
+          "start": "2026-06-07T00:00:00Z",
+          "end": "2026-06-13T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 9,
+          "start": "2026-06-14T00:00:00Z",
+          "end": "2026-06-20T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 10,
+          "start": "2026-06-21T00:00:00Z",
+          "end": "2026-06-27T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 11,
+          "start": "2026-06-28T00:00:00Z",
+          "end": "2026-07-04T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 12,
+          "start": "2026-07-05T00:00:00Z",
+          "end": "2026-07-11T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        }
+      ]
+    },
+    {
+      "id": "workshopmaybe",
+      "name": "Workshop Maybe",
+      "xHandle": null,
+      "xIgnored": false,
+      "allWeeksCovered": false,
+      "qualifiedWeeks": 0,
+      "missingWeeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "weeks": [
+        {
+          "index": 1,
+          "start": "2026-04-19T00:00:00Z",
+          "end": "2026-04-25T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 2,
+          "start": "2026-04-26T00:00:00Z",
+          "end": "2026-05-02T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 3,
+          "start": "2026-05-03T00:00:00Z",
+          "end": "2026-05-09T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 4,
+          "start": "2026-05-10T00:00:00Z",
+          "end": "2026-05-16T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 5,
+          "start": "2026-05-17T00:00:00Z",
+          "end": "2026-05-23T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 6,
+          "start": "2026-05-24T00:00:00Z",
+          "end": "2026-05-30T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 7,
+          "start": "2026-05-31T00:00:00Z",
+          "end": "2026-06-06T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 8,
+          "start": "2026-06-07T00:00:00Z",
+          "end": "2026-06-13T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 9,
+          "start": "2026-06-14T00:00:00Z",
+          "end": "2026-06-20T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 10,
+          "start": "2026-06-21T00:00:00Z",
+          "end": "2026-06-27T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 11,
+          "start": "2026-06-28T00:00:00Z",
+          "end": "2026-07-04T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 12,
+          "start": "2026-07-05T00:00:00Z",
+          "end": "2026-07-11T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        }
+      ]
+    },
+    {
+      "id": "kanyuku",
+      "name": "Kanyuku",
+      "xHandle": null,
+      "xIgnored": false,
+      "allWeeksCovered": false,
+      "qualifiedWeeks": 0,
+      "missingWeeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "weeks": [
+        {
+          "index": 1,
+          "start": "2026-04-19T00:00:00Z",
+          "end": "2026-04-25T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 2,
+          "start": "2026-04-26T00:00:00Z",
+          "end": "2026-05-02T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 3,
+          "start": "2026-05-03T00:00:00Z",
+          "end": "2026-05-09T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 4,
+          "start": "2026-05-10T00:00:00Z",
+          "end": "2026-05-16T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 5,
+          "start": "2026-05-17T00:00:00Z",
+          "end": "2026-05-23T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 6,
+          "start": "2026-05-24T00:00:00Z",
+          "end": "2026-05-30T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 7,
+          "start": "2026-05-31T00:00:00Z",
+          "end": "2026-06-06T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 8,
+          "start": "2026-06-07T00:00:00Z",
+          "end": "2026-06-13T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 9,
+          "start": "2026-06-14T00:00:00Z",
+          "end": "2026-06-20T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 10,
+          "start": "2026-06-21T00:00:00Z",
+          "end": "2026-06-27T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 11,
+          "start": "2026-06-28T00:00:00Z",
+          "end": "2026-07-04T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 12,
+          "start": "2026-07-05T00:00:00Z",
+          "end": "2026-07-11T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        }
+      ]
+    },
+    {
+      "id": "gamechanger",
+      "name": "GameChanger Finance",
+      "xHandle": null,
+      "xIgnored": false,
+      "allWeeksCovered": false,
+      "qualifiedWeeks": 0,
+      "missingWeeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "weeks": [
+        {
+          "index": 1,
+          "start": "2026-04-19T00:00:00Z",
+          "end": "2026-04-25T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 2,
+          "start": "2026-04-26T00:00:00Z",
+          "end": "2026-05-02T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 3,
+          "start": "2026-05-03T00:00:00Z",
+          "end": "2026-05-09T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 4,
+          "start": "2026-05-10T00:00:00Z",
+          "end": "2026-05-16T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 5,
+          "start": "2026-05-17T00:00:00Z",
+          "end": "2026-05-23T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 6,
+          "start": "2026-05-24T00:00:00Z",
+          "end": "2026-05-30T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 7,
+          "start": "2026-05-31T00:00:00Z",
+          "end": "2026-06-06T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 8,
+          "start": "2026-06-07T00:00:00Z",
+          "end": "2026-06-13T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 9,
+          "start": "2026-06-14T00:00:00Z",
+          "end": "2026-06-20T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 10,
+          "start": "2026-06-21T00:00:00Z",
+          "end": "2026-06-27T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 11,
+          "start": "2026-06-28T00:00:00Z",
+          "end": "2026-07-04T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 12,
+          "start": "2026-07-05T00:00:00Z",
+          "end": "2026-07-11T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        }
+      ]
+    },
+    {
+      "id": "yungslaiz",
+      "name": "YungSlaiz",
+      "xHandle": null,
+      "xIgnored": false,
+      "allWeeksCovered": false,
+      "qualifiedWeeks": 0,
+      "missingWeeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "weeks": [
+        {
+          "index": 1,
+          "start": "2026-04-19T00:00:00Z",
+          "end": "2026-04-25T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 2,
+          "start": "2026-04-26T00:00:00Z",
+          "end": "2026-05-02T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 3,
+          "start": "2026-05-03T00:00:00Z",
+          "end": "2026-05-09T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 4,
+          "start": "2026-05-10T00:00:00Z",
+          "end": "2026-05-16T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 5,
+          "start": "2026-05-17T00:00:00Z",
+          "end": "2026-05-23T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 6,
+          "start": "2026-05-24T00:00:00Z",
+          "end": "2026-05-30T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 7,
+          "start": "2026-05-31T00:00:00Z",
+          "end": "2026-06-06T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 8,
+          "start": "2026-06-07T00:00:00Z",
+          "end": "2026-06-13T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 9,
+          "start": "2026-06-14T00:00:00Z",
+          "end": "2026-06-20T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 10,
+          "start": "2026-06-21T00:00:00Z",
+          "end": "2026-06-27T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 11,
+          "start": "2026-06-28T00:00:00Z",
+          "end": "2026-07-04T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 12,
+          "start": "2026-07-05T00:00:00Z",
+          "end": "2026-07-11T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        }
+      ]
+    },
+    {
+      "id": "maxalexweber",
+      "name": "Max Alex Weber",
+      "xHandle": "maxalexweber",
+      "xIgnored": false,
+      "allWeeksCovered": false,
+      "qualifiedWeeks": 0,
+      "missingWeeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "weeks": [
+        {
+          "index": 1,
+          "start": "2026-04-19T00:00:00Z",
+          "end": "2026-04-25T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 2,
+          "start": "2026-04-26T00:00:00Z",
+          "end": "2026-05-02T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 3,
+          "start": "2026-05-03T00:00:00Z",
+          "end": "2026-05-09T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 4,
+          "start": "2026-05-10T00:00:00Z",
+          "end": "2026-05-16T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 5,
+          "start": "2026-05-17T00:00:00Z",
+          "end": "2026-05-23T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 6,
+          "start": "2026-05-24T00:00:00Z",
+          "end": "2026-05-30T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 7,
+          "start": "2026-05-31T00:00:00Z",
+          "end": "2026-06-06T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 8,
+          "start": "2026-06-07T00:00:00Z",
+          "end": "2026-06-13T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 9,
+          "start": "2026-06-14T00:00:00Z",
+          "end": "2026-06-20T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 10,
+          "start": "2026-06-21T00:00:00Z",
+          "end": "2026-06-27T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 11,
+          "start": "2026-06-28T00:00:00Z",
+          "end": "2026-07-04T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 12,
+          "start": "2026-07-05T00:00:00Z",
+          "end": "2026-07-11T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        }
+      ]
+    },
+    {
+      "id": "murmurations",
+      "name": "Murmurations",
+      "xHandle": "Xeeban",
+      "xIgnored": false,
+      "allWeeksCovered": false,
+      "qualifiedWeeks": 0,
+      "missingWeeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "weeks": [
+        {
+          "index": 1,
+          "start": "2026-04-19T00:00:00Z",
+          "end": "2026-04-25T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 2,
+          "start": "2026-04-26T00:00:00Z",
+          "end": "2026-05-02T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 3,
+          "start": "2026-05-03T00:00:00Z",
+          "end": "2026-05-09T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 4,
+          "start": "2026-05-10T00:00:00Z",
+          "end": "2026-05-16T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 5,
+          "start": "2026-05-17T00:00:00Z",
+          "end": "2026-05-23T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 6,
+          "start": "2026-05-24T00:00:00Z",
+          "end": "2026-05-30T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 7,
+          "start": "2026-05-31T00:00:00Z",
+          "end": "2026-06-06T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 8,
+          "start": "2026-06-07T00:00:00Z",
+          "end": "2026-06-13T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 9,
+          "start": "2026-06-14T00:00:00Z",
+          "end": "2026-06-20T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 10,
+          "start": "2026-06-21T00:00:00Z",
+          "end": "2026-06-27T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 11,
+          "start": "2026-06-28T00:00:00Z",
+          "end": "2026-07-04T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 12,
+          "start": "2026-07-05T00:00:00Z",
+          "end": "2026-07-11T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        }
+      ]
+    },
+    {
+      "id": "blockprint",
+      "name": "BlockPrint",
+      "xHandle": "blockprint0",
+      "xIgnored": false,
+      "allWeeksCovered": false,
+      "qualifiedWeeks": 0,
+      "missingWeeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "weeks": [
+        {
+          "index": 1,
+          "start": "2026-04-19T00:00:00Z",
+          "end": "2026-04-25T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 2,
+          "start": "2026-04-26T00:00:00Z",
+          "end": "2026-05-02T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 3,
+          "start": "2026-05-03T00:00:00Z",
+          "end": "2026-05-09T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 4,
+          "start": "2026-05-10T00:00:00Z",
+          "end": "2026-05-16T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 5,
+          "start": "2026-05-17T00:00:00Z",
+          "end": "2026-05-23T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 6,
+          "start": "2026-05-24T00:00:00Z",
+          "end": "2026-05-30T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 7,
+          "start": "2026-05-31T00:00:00Z",
+          "end": "2026-06-06T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 8,
+          "start": "2026-06-07T00:00:00Z",
+          "end": "2026-06-13T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 9,
+          "start": "2026-06-14T00:00:00Z",
+          "end": "2026-06-20T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 10,
+          "start": "2026-06-21T00:00:00Z",
+          "end": "2026-06-27T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 11,
+          "start": "2026-06-28T00:00:00Z",
+          "end": "2026-07-04T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 12,
+          "start": "2026-07-05T00:00:00Z",
+          "end": "2026-07-11T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        }
+      ]
+    },
+    {
+      "id": "trike",
+      "name": "3rike Mobility",
+      "xHandle": "real_winni3",
+      "xIgnored": false,
+      "allWeeksCovered": false,
+      "qualifiedWeeks": 0,
+      "missingWeeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "weeks": [
+        {
+          "index": 1,
+          "start": "2026-04-19T00:00:00Z",
+          "end": "2026-04-25T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 2,
+          "start": "2026-04-26T00:00:00Z",
+          "end": "2026-05-02T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 3,
+          "start": "2026-05-03T00:00:00Z",
+          "end": "2026-05-09T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 4,
+          "start": "2026-05-10T00:00:00Z",
+          "end": "2026-05-16T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 5,
+          "start": "2026-05-17T00:00:00Z",
+          "end": "2026-05-23T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 6,
+          "start": "2026-05-24T00:00:00Z",
+          "end": "2026-05-30T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 7,
+          "start": "2026-05-31T00:00:00Z",
+          "end": "2026-06-06T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 8,
+          "start": "2026-06-07T00:00:00Z",
+          "end": "2026-06-13T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 9,
+          "start": "2026-06-14T00:00:00Z",
+          "end": "2026-06-20T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 10,
+          "start": "2026-06-21T00:00:00Z",
+          "end": "2026-06-27T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 11,
+          "start": "2026-06-28T00:00:00Z",
+          "end": "2026-07-04T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 12,
+          "start": "2026-07-05T00:00:00Z",
+          "end": "2026-07-11T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        }
+      ]
+    },
+    {
+      "id": "mobrai",
+      "name": "MOBR AI",
+      "xHandle": null,
+      "xIgnored": false,
+      "allWeeksCovered": false,
+      "qualifiedWeeks": 0,
+      "missingWeeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "weeks": [
+        {
+          "index": 1,
+          "start": "2026-04-19T00:00:00Z",
+          "end": "2026-04-25T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 2,
+          "start": "2026-04-26T00:00:00Z",
+          "end": "2026-05-02T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 3,
+          "start": "2026-05-03T00:00:00Z",
+          "end": "2026-05-09T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 4,
+          "start": "2026-05-10T00:00:00Z",
+          "end": "2026-05-16T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 5,
+          "start": "2026-05-17T00:00:00Z",
+          "end": "2026-05-23T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 6,
+          "start": "2026-05-24T00:00:00Z",
+          "end": "2026-05-30T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 7,
+          "start": "2026-05-31T00:00:00Z",
+          "end": "2026-06-06T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 8,
+          "start": "2026-06-07T00:00:00Z",
+          "end": "2026-06-13T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 9,
+          "start": "2026-06-14T00:00:00Z",
+          "end": "2026-06-20T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 10,
+          "start": "2026-06-21T00:00:00Z",
+          "end": "2026-06-27T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 11,
+          "start": "2026-06-28T00:00:00Z",
+          "end": "2026-07-04T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 12,
+          "start": "2026-07-05T00:00:00Z",
+          "end": "2026-07-11T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        }
+      ]
+    },
+    {
+      "id": "newman5",
+      "name": "Newman",
+      "xHandle": "newman5",
+      "xIgnored": false,
+      "allWeeksCovered": false,
+      "qualifiedWeeks": 0,
+      "missingWeeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "weeks": [
+        {
+          "index": 1,
+          "start": "2026-04-19T00:00:00Z",
+          "end": "2026-04-25T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 2,
+          "start": "2026-04-26T00:00:00Z",
+          "end": "2026-05-02T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 3,
+          "start": "2026-05-03T00:00:00Z",
+          "end": "2026-05-09T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 4,
+          "start": "2026-05-10T00:00:00Z",
+          "end": "2026-05-16T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 5,
+          "start": "2026-05-17T00:00:00Z",
+          "end": "2026-05-23T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 6,
+          "start": "2026-05-24T00:00:00Z",
+          "end": "2026-05-30T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 7,
+          "start": "2026-05-31T00:00:00Z",
+          "end": "2026-06-06T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 8,
+          "start": "2026-06-07T00:00:00Z",
+          "end": "2026-06-13T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 9,
+          "start": "2026-06-14T00:00:00Z",
+          "end": "2026-06-20T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 10,
+          "start": "2026-06-21T00:00:00Z",
+          "end": "2026-06-27T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 11,
+          "start": "2026-06-28T00:00:00Z",
+          "end": "2026-07-04T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 12,
+          "start": "2026-07-05T00:00:00Z",
+          "end": "2026-07-11T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        }
+      ]
+    },
+    {
+      "id": "minustenex",
+      "name": "Minustenex",
+      "xHandle": "minustenexdev",
+      "xIgnored": false,
+      "allWeeksCovered": false,
+      "qualifiedWeeks": 0,
+      "missingWeeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "weeks": [
+        {
+          "index": 1,
+          "start": "2026-04-19T00:00:00Z",
+          "end": "2026-04-25T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 2,
+          "start": "2026-04-26T00:00:00Z",
+          "end": "2026-05-02T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 3,
+          "start": "2026-05-03T00:00:00Z",
+          "end": "2026-05-09T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 4,
+          "start": "2026-05-10T00:00:00Z",
+          "end": "2026-05-16T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 5,
+          "start": "2026-05-17T00:00:00Z",
+          "end": "2026-05-23T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 6,
+          "start": "2026-05-24T00:00:00Z",
+          "end": "2026-05-30T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 7,
+          "start": "2026-05-31T00:00:00Z",
+          "end": "2026-06-06T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 8,
+          "start": "2026-06-07T00:00:00Z",
+          "end": "2026-06-13T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 9,
+          "start": "2026-06-14T00:00:00Z",
+          "end": "2026-06-20T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 10,
+          "start": "2026-06-21T00:00:00Z",
+          "end": "2026-06-27T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 11,
+          "start": "2026-06-28T00:00:00Z",
+          "end": "2026-07-04T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 12,
+          "start": "2026-07-05T00:00:00Z",
+          "end": "2026-07-11T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        }
+      ]
+    },
+    {
+      "id": "devfreeguy",
+      "name": "Dev Free Guy",
+      "xHandle": "devfreeguy",
+      "xIgnored": false,
+      "allWeeksCovered": false,
+      "qualifiedWeeks": 0,
+      "missingWeeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "weeks": [
+        {
+          "index": 1,
+          "start": "2026-04-19T00:00:00Z",
+          "end": "2026-04-25T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 2,
+          "start": "2026-04-26T00:00:00Z",
+          "end": "2026-05-02T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 3,
+          "start": "2026-05-03T00:00:00Z",
+          "end": "2026-05-09T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 4,
+          "start": "2026-05-10T00:00:00Z",
+          "end": "2026-05-16T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 5,
+          "start": "2026-05-17T00:00:00Z",
+          "end": "2026-05-23T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 6,
+          "start": "2026-05-24T00:00:00Z",
+          "end": "2026-05-30T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 7,
+          "start": "2026-05-31T00:00:00Z",
+          "end": "2026-06-06T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 8,
+          "start": "2026-06-07T00:00:00Z",
+          "end": "2026-06-13T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 9,
+          "start": "2026-06-14T00:00:00Z",
+          "end": "2026-06-20T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 10,
+          "start": "2026-06-21T00:00:00Z",
+          "end": "2026-06-27T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 11,
+          "start": "2026-06-28T00:00:00Z",
+          "end": "2026-07-04T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 12,
+          "start": "2026-07-05T00:00:00Z",
+          "end": "2026-07-11T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        }
+      ]
+    },
+    {
+      "id": "haulink",
+      "name": "Haulink",
+      "xHandle": "Haulink_",
+      "xIgnored": false,
+      "allWeeksCovered": false,
+      "qualifiedWeeks": 0,
+      "missingWeeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "weeks": [
+        {
+          "index": 1,
+          "start": "2026-04-19T00:00:00Z",
+          "end": "2026-04-25T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 2,
+          "start": "2026-04-26T00:00:00Z",
+          "end": "2026-05-02T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 3,
+          "start": "2026-05-03T00:00:00Z",
+          "end": "2026-05-09T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 4,
+          "start": "2026-05-10T00:00:00Z",
+          "end": "2026-05-16T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 5,
+          "start": "2026-05-17T00:00:00Z",
+          "end": "2026-05-23T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 6,
+          "start": "2026-05-24T00:00:00Z",
+          "end": "2026-05-30T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 7,
+          "start": "2026-05-31T00:00:00Z",
+          "end": "2026-06-06T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 8,
+          "start": "2026-06-07T00:00:00Z",
+          "end": "2026-06-13T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 9,
+          "start": "2026-06-14T00:00:00Z",
+          "end": "2026-06-20T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 10,
+          "start": "2026-06-21T00:00:00Z",
+          "end": "2026-06-27T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 11,
+          "start": "2026-06-28T00:00:00Z",
+          "end": "2026-07-04T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 12,
+          "start": "2026-07-05T00:00:00Z",
+          "end": "2026-07-11T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        }
+      ]
+    },
+    {
+      "id": "opa007i",
+      "name": "Opa",
+      "xHandle": "Opa007i",
+      "xIgnored": false,
+      "allWeeksCovered": false,
+      "qualifiedWeeks": 0,
+      "missingWeeks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "weeks": [
+        {
+          "index": 1,
+          "start": "2026-04-19T00:00:00Z",
+          "end": "2026-04-25T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 2,
+          "start": "2026-04-26T00:00:00Z",
+          "end": "2026-05-02T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 3,
+          "start": "2026-05-03T00:00:00Z",
+          "end": "2026-05-09T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 4,
+          "start": "2026-05-10T00:00:00Z",
+          "end": "2026-05-16T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 5,
+          "start": "2026-05-17T00:00:00Z",
+          "end": "2026-05-23T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 6,
+          "start": "2026-05-24T00:00:00Z",
+          "end": "2026-05-30T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 7,
+          "start": "2026-05-31T00:00:00Z",
+          "end": "2026-06-06T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 8,
+          "start": "2026-06-07T00:00:00Z",
+          "end": "2026-06-13T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 9,
+          "start": "2026-06-14T00:00:00Z",
+          "end": "2026-06-20T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 10,
+          "start": "2026-06-21T00:00:00Z",
+          "end": "2026-06-27T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 11,
+          "start": "2026-06-28T00:00:00Z",
+          "end": "2026-07-04T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        },
+        {
+          "index": 12,
+          "start": "2026-07-05T00:00:00Z",
+          "end": "2026-07-11T23:59:59Z",
+          "qualifies": false,
+          "posts": []
+        }
+      ]
+    }
+  ]
+}

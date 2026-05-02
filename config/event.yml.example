@@ -11,19 +11,19 @@
 # --- Core Identity ---
 event_name: "Piece of Pie Hackathon"
 season_name: "Season 1"
-community_name: "Gimbalabs"
+community_name: "Your Community Name"
 tagline: "Build consistently. Share publicly. Ship real products."
 
 # --- Key Dates ---
 # Use ISO 8601 format: YYYY-MM-DD
-enrollment_start: "2026-04-12"
-enrollment_end: "2026-05-03"
-build_start: "2026-04-19"
-build_end: "2026-07-19"
-final_presentation_start: "2026-07-19"
-final_presentation_end: "2026-07-12"
-payout_start: "2026-07-19"
-payout_end: "2026-07-26"
+enrollment_start: "YYYY-MM-DD"
+enrollment_end: "YYYY-MM-DD"
+build_start: "YYYY-MM-DD"
+build_end: "YYYY-MM-DD"
+final_presentation_start: "YYYY-MM-DD"
+final_presentation_end: "YYYY-MM-DD"
+payout_start: "YYYY-MM-DD"
+payout_end: "YYYY-MM-DD"
 
 # Computed for convenience — fill in manually
 event_duration_weeks: 12
@@ -52,8 +52,8 @@ admin_allocation: 3000
 
 # --- Administration ---
 admin_names:
-  - "Newman"
-  - "GullaZero"
+  - "Admin Name 1"
+  - "Admin Name 2"
 
 # --- Community Links ---
 website_url: "https://your-community-website.com"
@@ -66,8 +66,8 @@ twitter_handle: "@yourcommunity"
 
 # --- Sponsors ---
 sponsor_names:
-  - "Cardano Foundation"
-  - "Gimbalabs"
+  - "Sponsor One"
+  - "Sponsor Two"
 
 # Optional: bonus opportunity for a sponsored track (e.g., VC pitch)
 sponsored_track_bonus: "Qualified projects get an opportunity to pitch to {{vc_fund_name}}"
@@ -79,10 +79,10 @@ vc_fund_name: ""
 weekly_update_requirement: true
 weekly_update_platform: "X (Twitter)"  # Platform where updates are posted
 weekly_update_hashtags:
-  - "#pieceofpie"
-  - "#hackathon"
-weekly_update_mention: "@gimbalabs"
-   
+  - "#yourevent"
+  - "#yourcommunity"
+weekly_update_mention: "@yourcommunity"
+
 # Final presentation
 final_demo_required: true
 final_presentation_components:

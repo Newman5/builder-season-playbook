@@ -1,0 +1,11 @@
+builder_id: newman5
+x_handle: newman5
+posts:
+  - url: https://x.com/newman5/status/1234567890
+    created_at: 2026-04-21T14:30:00Z
+    hashtags:
+      - "#pieceofpie"
+      - "#hackathon"
+    mention_present: true
+    text: "Week 1 update #pieceofpie #hackathon @gimbalabs"
+    note: Registered and shared repo link

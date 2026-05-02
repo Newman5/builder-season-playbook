@@ -98,3 +98,10 @@ npm run build
 `npm run build:data` normalizes `config/repos.yml` into `web/src/_data/builders.json` and refreshes `web/src/_data/activity.json`.
 
 The activity updater prefers `GH_ACTIVITY_TOKEN` and falls back to `GITHUB_TOKEN`. Phase 1 counts all public commits on each tracked repo during the current UTC week.
+
+For X weekly update tracking:
+
+- add X handles and optional per-builder X rules to `config/repos.yml`
+- add per-builder evidence files under `submissions/x-updates/`
+- run `npm run build:data:x` from `web/` to refresh the X archive and weekly verifier JSON
+- no live X API access is required
