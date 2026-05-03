@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-02T12:33:46Z",
+  "generatedAt": "2026-05-03T12:33:27Z",
   "weekStart": "2026-04-27T00:00:00Z",
   "weekEnd": "2026-05-03T23:59:59Z",
   "builders": [
@@ -22,9 +22,27 @@
     {
       "id": "dammy",
       "name": "Dammy",
-      "lastActivityAt": "2026-04-29T13:51:05Z",
-      "commitsThisWeek": 3,
+      "lastActivityAt": "2026-05-03T06:38:43Z",
+      "commitsThisWeek": 6,
       "recentCommits": [
+        {
+          "repo": "Dammy7942/accordiax",
+          "message": "fixed magic link redirect to point to the live URL on production instead of local host for develoment",
+          "url": "https://github.com/Dammy7942/accordiax/commit/efb687196926308a8ba6ac186796a91520db3d41",
+          "committedAt": "2026-05-03T06:38:43Z"
+        },
+        {
+          "repo": "Dammy7942/accordiax",
+          "message": "fix typescript error from the login page that caused fail deployment",
+          "url": "https://github.com/Dammy7942/accordiax/commit/2684f165c32c4214a82b5645cf085517d04e649f",
+          "committedAt": "2026-05-02T20:18:25Z"
+        },
+        {
+          "repo": "Dammy7942/accordiax",
+          "message": "Built a complete user flow for the app",
+          "url": "https://github.com/Dammy7942/accordiax/commit/4ba2e3e769428435d08900e44be3aca7bd9df002",
+          "committedAt": "2026-05-02T13:19:06Z"
+        },
         {
           "repo": "Dammy7942/accordiax",
           "message": "Update the README file",
@@ -36,12 +54,6 @@
           "message": "Initial build setup",
           "url": "https://github.com/Dammy7942/accordiax/commit/13b2997c1192b87c930786e114658ee808a12206",
           "committedAt": "2026-04-29T13:21:24Z"
-        },
-        {
-          "repo": "Dammy7942/accordiax",
-          "message": "Initial commit from Create Next App",
-          "url": "https://github.com/Dammy7942/accordiax/commit/d486044e6e4c139c2a586c0193a173642dc4324b",
-          "committedAt": "2026-04-29T10:30:41Z"
         }
       ],
       "error": null
@@ -139,10 +151,23 @@
     {
       "id": "armanabid",
       "name": "Arman",
-      "lastActivityAt": null,
-      "commitsThisWeek": 0,
-      "recentCommits": [],
-      "error": "EMPTY_REPO_OR_NO_COMMITS"
+      "lastActivityAt": "2026-05-03T08:14:24Z",
+      "commitsThisWeek": 2,
+      "recentCommits": [
+        {
+          "repo": "ArmanAbid/ChainTask",
+          "message": "first commit",
+          "url": "https://github.com/ArmanAbid/ChainTask/commit/d8f5d84fe643b699924d7af14f3ab60d5f23506b",
+          "committedAt": "2026-05-03T08:14:24Z"
+        },
+        {
+          "repo": "ArmanAbid/ChainTask",
+          "message": "first commit",
+          "url": "https://github.com/ArmanAbid/ChainTask/commit/933087ba91bdb932231a52fac31160669ad12616",
+          "committedAt": "2026-05-03T08:04:38Z"
+        }
+      ],
+      "error": null
     },
     {
       "id": "workshopmaybe",
@@ -189,10 +214,23 @@
     {
       "id": "gamechanger",
       "name": "GameChanger Finance",
-      "lastActivityAt": null,
-      "commitsThisWeek": 0,
-      "recentCommits": [],
-      "error": "EMPTY_REPO_OR_NO_COMMITS"
+      "lastActivityAt": "2026-05-02T20:02:57Z",
+      "commitsThisWeek": 2,
+      "recentCommits": [
+        {
+          "repo": "GameChangerFinance/NeonSoup",
+          "message": "docs: updated",
+          "url": "https://github.com/GameChangerFinance/NeonSoup/commit/bb70b6c866324b32ef27d602f432f80ff0fdddd1",
+          "committedAt": "2026-05-02T20:02:57Z"
+        },
+        {
+          "repo": "GameChangerFinance/NeonSoup",
+          "message": "initial commit",
+          "url": "https://github.com/GameChangerFinance/NeonSoup/commit/e316caa712cbd1d4cd400d4b7cf1f8d06f420b8d",
+          "committedAt": "2026-05-01T04:07:24Z"
+        }
+      ],
+      "error": null
     },
     {
       "id": "yungslaiz",
@@ -309,9 +347,15 @@
     {
       "id": "newman5",
       "name": "Newman",
-      "lastActivityAt": "2026-05-02T04:18:24Z",
-      "commitsThisWeek": 11,
+      "lastActivityAt": "2026-05-02T12:33:53Z",
+      "commitsThisWeek": 12,
       "recentCommits": [
+        {
+          "repo": "Newman5/builder-season-playbook",
+          "message": "Update builder activity data",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/3b4088bce9df6a8332eb59942804b23818cfcd14",
+          "committedAt": "2026-05-02T12:33:53Z"
+        },
         {
           "repo": "Newman5/builder-season-playbook",
           "message": "A manual way around the paid X.com API ... not sure it's worth it",
@@ -335,12 +379,6 @@
           "message": "fixing deploy.yml -",
           "url": "https://github.com/Newman5/builder-season-playbook/commit/28231c41ccd286bdf41a835041eadbda9bef724e",
           "committedAt": "2026-05-01T03:32:36Z"
-        },
-        {
-          "repo": "Newman5/builder-season-playbook",
-          "message": "first shot at getting the deploy.yml for github pages",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/032b0af0d512aa9d61c370e14d6969d07cd62c90",
-          "committedAt": "2026-05-01T02:55:56Z"
         }
       ],
       "error": null
