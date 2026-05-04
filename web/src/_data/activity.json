@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-05-03T12:33:27Z",
-  "weekStart": "2026-04-27T00:00:00Z",
-  "weekEnd": "2026-05-03T23:59:59Z",
+  "generatedAt": "2026-05-04T12:52:00Z",
+  "weekStart": "2026-05-04T00:00:00Z",
+  "weekEnd": "2026-05-10T23:59:59Z",
   "builders": [
     {
       "id": "mhizta",
@@ -23,39 +23,8 @@
       "id": "dammy",
       "name": "Dammy",
       "lastActivityAt": "2026-05-03T06:38:43Z",
-      "commitsThisWeek": 6,
-      "recentCommits": [
-        {
-          "repo": "Dammy7942/accordiax",
-          "message": "fixed magic link redirect to point to the live URL on production instead of local host for develoment",
-          "url": "https://github.com/Dammy7942/accordiax/commit/efb687196926308a8ba6ac186796a91520db3d41",
-          "committedAt": "2026-05-03T06:38:43Z"
-        },
-        {
-          "repo": "Dammy7942/accordiax",
-          "message": "fix typescript error from the login page that caused fail deployment",
-          "url": "https://github.com/Dammy7942/accordiax/commit/2684f165c32c4214a82b5645cf085517d04e649f",
-          "committedAt": "2026-05-02T20:18:25Z"
-        },
-        {
-          "repo": "Dammy7942/accordiax",
-          "message": "Built a complete user flow for the app",
-          "url": "https://github.com/Dammy7942/accordiax/commit/4ba2e3e769428435d08900e44be3aca7bd9df002",
-          "committedAt": "2026-05-02T13:19:06Z"
-        },
-        {
-          "repo": "Dammy7942/accordiax",
-          "message": "Update the README file",
-          "url": "https://github.com/Dammy7942/accordiax/commit/57c4ada716a656c653826e103fbbfa088de0e2ca",
-          "committedAt": "2026-04-29T13:51:05Z"
-        },
-        {
-          "repo": "Dammy7942/accordiax",
-          "message": "Initial build setup",
-          "url": "https://github.com/Dammy7942/accordiax/commit/13b2997c1192b87c930786e114658ee808a12206",
-          "committedAt": "2026-04-29T13:21:24Z"
-        }
-      ],
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
@@ -69,67 +38,17 @@
     {
       "id": "gidhub",
       "name": "GIDHUB",
-      "lastActivityAt": "2026-04-29T01:19:16Z",
-      "commitsThisWeek": 3,
-      "recentCommits": [
-        {
-          "repo": "0xGIDHUB/tixano",
-          "message": "Designed the create event form",
-          "url": "https://github.com/0xGIDHUB/tixano/commit/86dbfd6e7d01b5f2287c82f15ad56609af097ce8",
-          "committedAt": "2026-04-29T01:19:16Z"
-        },
-        {
-          "repo": "0xGIDHUB/tixano",
-          "message": "Updated the logo and font",
-          "url": "https://github.com/0xGIDHUB/tixano/commit/75e0f0a564d424554a924cbd64a9d2d8c7b37724",
-          "committedAt": "2026-04-28T19:44:47Z"
-        },
-        {
-          "repo": "0xGIDHUB/tixano",
-          "message": "Landing page and Wallet Connection Added",
-          "url": "https://github.com/0xGIDHUB/tixano/commit/c188dad9e0e453e979a1a24663abf3958b60f9d1",
-          "committedAt": "2026-04-27T14:15:35Z"
-        }
-      ],
+      "lastActivityAt": "2026-04-30T19:57:09Z",
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
       "id": "pmcorcoran",
       "name": "PM Corcoran",
       "lastActivityAt": "2026-04-29T23:52:26Z",
-      "commitsThisWeek": 5,
-      "recentCommits": [
-        {
-          "repo": "pmcorcoran/ada-battles",
-          "message": "add tests & update ticket contract",
-          "url": "https://github.com/pmcorcoran/ada-battles/commit/13d2d9d3b0d2e35d20df703f6aace907f5482388",
-          "committedAt": "2026-04-29T23:52:26Z"
-        },
-        {
-          "repo": "pmcorcoran/ada-battles",
-          "message": "update VISION.md",
-          "url": "https://github.com/pmcorcoran/ada-battles/commit/7409e421c2c584a89c3a26e6b3cdfc538cb9bfdc",
-          "committedAt": "2026-04-29T23:51:27Z"
-        },
-        {
-          "repo": "pmcorcoran/ada-battles",
-          "message": "add 3 ticket max mint to ticket_minting_contract",
-          "url": "https://github.com/pmcorcoran/ada-battles/commit/14416adc1b50d27a0aaea71f5d79d7f66db6f50c",
-          "committedAt": "2026-04-29T18:48:01Z"
-        },
-        {
-          "repo": "pmcorcoran/ada-battles",
-          "message": "Fix ticket mint contract",
-          "url": "https://github.com/pmcorcoran/ada-battles/commit/aec65c5855b3f08b5c51ac0ac0e26d04324fc65b",
-          "committedAt": "2026-04-28T19:24:16Z"
-        },
-        {
-          "repo": "pmcorcoran/ada-battles",
-          "message": "add ticket minting contract",
-          "url": "https://github.com/pmcorcoran/ada-battles/commit/6446eb4c49d5cb5aab3ed76acd29778ac64509fd",
-          "committedAt": "2026-04-28T19:16:57Z"
-        }
-      ],
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
@@ -151,85 +70,33 @@
     {
       "id": "armanabid",
       "name": "Arman",
-      "lastActivityAt": "2026-05-03T08:14:24Z",
-      "commitsThisWeek": 2,
-      "recentCommits": [
-        {
-          "repo": "ArmanAbid/ChainTask",
-          "message": "first commit",
-          "url": "https://github.com/ArmanAbid/ChainTask/commit/d8f5d84fe643b699924d7af14f3ab60d5f23506b",
-          "committedAt": "2026-05-03T08:14:24Z"
-        },
-        {
-          "repo": "ArmanAbid/ChainTask",
-          "message": "first commit",
-          "url": "https://github.com/ArmanAbid/ChainTask/commit/933087ba91bdb932231a52fac31160669ad12616",
-          "committedAt": "2026-05-03T08:04:38Z"
-        }
-      ],
+      "lastActivityAt": "2026-05-03T12:38:53Z",
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
       "id": "workshopmaybe",
       "name": "Workshop Maybe",
       "lastActivityAt": "2026-04-27T13:22:10Z",
-      "commitsThisWeek": 3,
-      "recentCommits": [
-        {
-          "repo": "workshop-maybe/working-with-me",
-          "message": "Server-side gateway proxy + session helpers (#70)\n\n* feat: implement AC-1, AC-8 — add server-only session cookie helpers\n\nAdd lib/session.ts exporting getSession/setSession/clearSession backed\nby Next 15 async cookies(). Cookie 'andamio-session' is httpOnly,\nSameSite=Lax, Secure in production, and JSON-encodes { jwt, stakeAddress }.\ngetSession returns null when the cookie is missing or malformed.\n\nCo-Authored-By: Claude Opus 4.7 <noreply@anthropic.com>\n\n* feat: implement AC-2, AC-4, AC-7 — add gatewayFetch helper\n\nAdd lib/gateway/server.ts with gatewayFetch(path, init?) that validates\nagainst the existing allowlist (returns a 404 Response if disallowed),\nprepends env.ANDAMIO_GATEWAY_URL, injects X-API-Key from env, and\noptionally sets Authorization: Bearer <jwt> when init.jwt is provided.\nThe upstream Response is returned untouched.\n\nCo-Authored-By: Claude Opus 4.7 <noreply@anthropic.com>\n\n* feat: implement AC-3 — add catch-all gateway proxy route\n\nAdd app/api/gateway/[...path]/route.ts exposing GET/POST/PUT/DELETE\nhandlers. Each handler awaits Next 15's params Promise, reconstructs\nthe upstream path with the inbound search string preserved, returns 404\nfor any (method, path) outside the allowlist, pulls the JWT from\ngetSession when present, and streams the upstream Response back via\ngatewayFetch. The inbound Authorization header is never forwarded —\nthe outbound Bearer token comes only from the server-side session.\n\nCo-Authored-By: Claude Opus 4.7 <noreply@anthropic.com>\n\n* test: implement AC-5 — verify allowlist enforcement and X-API-Key injection\n\nAdd lib/gateway/server.test.ts (bun:test) covering: 404 on disallowed\nmethod/path, X-API-Key injection on allowed requests, Authorization\npresent-when-jwt and absent-when-not, body+method passthrough, and\nencoded-slash rejection (defers to allowlist hardening). Excluding\n*.test.ts from tsc keeps `bun run typecheck` green without adding\n@types/bun. Run with: bun test.\n\nCo-Authored-By: Claude Opus 4.7 <noreply@anthropic.com>\n\n* fix: defer env import in gatewayFetch so build collects page data\n\nlib/env.ts parses process.env at module load via zod, so any transitive\nimport chain reaching it during `next build`'s \"Collecting page data\"\nstep fails when ANDAMIO_API_KEY/ANDAMIO_GATEWAY_URL aren't set in the\nbuild environment. Moving the env access behind a lazy `await import()`\nkeeps the validation strict at request time without modifying lib/env.ts\n(which is read-only per spec antiRequirements). The route module no\nlonger evaluates env.ts during build collection.\n\nAll 8 existing gatewayFetch tests still pass.\n\nCo-Authored-By: Claude Opus 4.7 <noreply@anthropic.com>\n\n---------\n\nCo-authored-by: Claude Opus 4.7 <noreply@anthropic.com>",
-          "url": "https://github.com/workshop-maybe/working-with-me/commit/acd5aa51975ba970e81bbaa5594e4e4573c60fd8",
-          "committedAt": "2026-04-27T13:22:10Z"
-        },
-        {
-          "repo": "workshop-maybe/working-with-me",
-          "message": "UI primitives polish: JSDoc contracts + Label dot a11y (#69)\n\n* docs(SignalWave): document currentColor contract on SignalWaveProps\n\nAdd JSDoc above SignalWaveProps explaining that color flows via the\ninherited CSS color property (currentColor) and that a color prop is\nintentionally absent. Implements AC-1.\n\nCo-Authored-By: Claude Opus 4.7 <noreply@anthropic.com>\n\n* docs(Button): cite app/globals.css as focus-visible foundation\n\nExtend the existing Button JSDoc to explicitly name app/globals.css as\nthe foundation file owning the :focus-visible outline contract, citing\nthe actual generic selector that exists there. Variant-suffix and\nserver-component notes are preserved unchanged. Implements AC-2.\n\nCo-Authored-By: Claude Opus 4.7 <noreply@anthropic.com>\n\n* fix(Label): mark decorative dot as aria-hidden\n\nThe leading 6px signal dot is purely decorative; without aria-hidden it\nrisks a stray bullet/punctuation announcement from screen readers. Add\naria-hidden=\\\"true\\\" to the dot span so only the eyebrow {children} is\nspoken. Implements AC-3.\n\nCo-Authored-By: Claude Opus 4.7 <noreply@anthropic.com>\n\n---------\n\nCo-authored-by: Claude Opus 4.7 <noreply@anthropic.com>",
-          "url": "https://github.com/workshop-maybe/working-with-me/commit/9a07996b51e678fc9cbbbcf1f74cb920015fcc43",
-          "committedAt": "2026-04-27T13:04:52Z"
-        },
-        {
-          "repo": "workshop-maybe/working-with-me",
-          "message": "chore: migrate from pnpm to bun\n\nReplace pnpm-lock.yaml with bun.lock and drop the packageManager field\nso the agency engineer's lockfile-based package manager auto-detection\npicks bun. The user is the sole contributor at this point — switching\nthe lockfile in place is cheaper than installing pnpm in the daemon's\nPATH or teaching agency to read packageManager hints.\n\nVerified: bun install resolves all deps; bun run build passes.",
-          "url": "https://github.com/workshop-maybe/working-with-me/commit/73b7c012f31b40a253734366d3d0a3ff5be76dcb",
-          "committedAt": "2026-04-27T12:27:25Z"
-        }
-      ],
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
       "id": "kanyuku",
       "name": "Kanyuku",
       "lastActivityAt": "2026-04-29T08:45:16Z",
-      "commitsThisWeek": 1,
-      "recentCommits": [
-        {
-          "repo": "kanyuku/weave-Pass",
-          "message": "Initial commit",
-          "url": "https://github.com/kanyuku/weave-Pass/commit/935eb13a788a0bf7c4c9e2f17b5d36f05411b1a8",
-          "committedAt": "2026-04-29T08:45:16Z"
-        }
-      ],
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
       "id": "gamechanger",
       "name": "GameChanger Finance",
       "lastActivityAt": "2026-05-02T20:02:57Z",
-      "commitsThisWeek": 2,
-      "recentCommits": [
-        {
-          "repo": "GameChangerFinance/NeonSoup",
-          "message": "docs: updated",
-          "url": "https://github.com/GameChangerFinance/NeonSoup/commit/bb70b6c866324b32ef27d602f432f80ff0fdddd1",
-          "committedAt": "2026-05-02T20:02:57Z"
-        },
-        {
-          "repo": "GameChangerFinance/NeonSoup",
-          "message": "initial commit",
-          "url": "https://github.com/GameChangerFinance/NeonSoup/commit/e316caa712cbd1d4cd400d4b7cf1f8d06f420b8d",
-          "committedAt": "2026-05-01T04:07:24Z"
-        }
-      ],
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
@@ -243,97 +110,33 @@
     {
       "id": "maxalexweber",
       "name": "Max Alex Weber",
-      "lastActivityAt": "2026-04-30T21:33:58Z",
-      "commitsThisWeek": 1,
-      "recentCommits": [
-        {
-          "repo": "maxalexweber1/CHAINFEED",
-          "message": "feat: implement price service with best price, TWAP, and arbitrage opportunities actions\n\n- Added `price-service.cds` defining entities and actions for price retrieval.\n- Implemented `price-service.ts` to handle business logic for fetching best prices, TWAP calculations, and arbitrage opportunities.\n- Introduced `server.ts` to bootstrap the CAP server and mount x402 middleware for payment gating.\n- Created ambient type definitions for `@odatano/core` in `odatano.d.ts`.\n- Developed x402 payment processing logic including decoding, validation, nonce management, and settlement in `x402` directory.\n- Added error handling for x402 payment processing in `errors.ts`.\n- Implemented nonce claiming and checking in `nonces.ts` to prevent replay attacks.\n- Created payment requirements building logic in `requirements.ts`.\n- Added transaction settlement logic in `settle.ts` to confirm payment on the Cardano blockchain.\n- Validated payment against requirements in `validate.ts`.\n- Configured TypeScript settings in `tsconfig.json` for the project.\n\nCo-authored-by: Copilot <copilot@github.com>",
-          "url": "https://github.com/maxalexweber1/CHAINFEED/commit/bf8762b7a48240a9bdf28ea6b5cc08d85cbf5a83",
-          "committedAt": "2026-04-30T21:33:58Z"
-        }
-      ],
+      "lastActivityAt": "2026-05-03T18:51:36Z",
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
       "id": "murmurations",
       "name": "Murmurations",
       "lastActivityAt": "2026-05-01T14:41:29Z",
-      "commitsThisWeek": 5,
-      "recentCommits": [
-        {
-          "repo": "murmurations-ai/flyway",
-          "message": "docs: add project README",
-          "url": "https://github.com/murmurations-ai/flyway/commit/12fe19cd5dbcc594b34f2a03ec93a1627fd0ba15",
-          "committedAt": "2026-05-01T14:41:29Z"
-        },
-        {
-          "repo": "murmurations-ai/flyway",
-          "message": "research: amend for runtime-agnostic scope (Source clarification)\n\nOriginal synthesis paper assumed every flyway participant runs the\nmurmurations-harness. Source clarified this is too narrow — a\n\"murmuration\" is any agent swarm controlled by a Source, and flyway\nmust support participants from any runtime: harness, Claude Code,\nCursor, OpenClaw, raw GitHub, and tools yet to exist.\n\nSynthesis paper changes:\n\n- Abstract reframed: flyway is \"a protocol that lets n independent\n  AI-agent murmurations collaborate\" rather than \"the layer above\n  any single murmuration running the harness.\"\n- §1.1 expanded with concrete examples of valid murmuration\n  operationalizations (harness, Claude Code, Cursor, OpenClaw, raw\n  GitHub).\n- §1.2 adds a fourth invariant: runtime independence.\n- §6 rewritten as a three-layer stack (protocol / reference impl /\n  client integrations). The \"five harness packages\" architecture is\n  now one of five client integrations.\n- New §6.1 (three-layer stack diagram), §6.5 (participation modes:\n  persistent / interactive / async / ephemeral), §6.6 (minimum\n  viable client requirements).\n- §6.9 (revised MVP) shifts from \"two harness installations\" to \"one\n  harness + one Claude Code session\" to demonstrate cross-runtime.\n- §11 (recommendations) reorganized around runtime-agnostic\n  architecture; per-runtime UX recommendations added (harness adapter,\n  Claude Code skill, MCP server, CLI, chat-client adapter pattern).\n- §13 (\"what flyway is not\") adds: not harness-specific, not a\n  runtime, no daemon required.\n- §14 (one-paragraph summary) reframed for runtime independence.\n\nADR-0001 changes:\n\n- Context expanded: defines \"murmuration\" runtime-agnostically;\n  enumerates valid operationalizations.\n- Decision restructured: flyway as a protocol + reference impl +\n  family of client integrations.\n- \"What flyway is not\" clarified: not harness-specific, not a runtime.\n- Consequences add a new positive (runtime independence as feature)\n  and a new negative (runtime-agnostic design is more upfront work).\n\nThree research strands (federation-protocols-survey,\ngovernance-models-survey, harness-primitives-audit) are unchanged —\nthey're snapshots of what those research strands found at 2026-04-27\nand remain valid as inputs. The synthesis is what got revised.",
-          "url": "https://github.com/murmurations-ai/flyway/commit/78c4e852d6352453ec09b55a768a53e99138c30a",
-          "committedAt": "2026-04-28T00:22:04Z"
-        },
-        {
-          "repo": "murmurations-ai/flyway",
-          "message": "research: deep-dive paper on multi-murmuration collaboration\n\nSynthesizes three parallel research strands into a recommended shape for\nflyway:\n\n- federation-protocols-survey.md (~6,800 words) — ActivityPub, AT Protocol,\n  Matrix, IPFS, Solid, OpenID Federation, Nostr, DIDComm, Holochain,\n  Murmurations.network, Web of Trust patterns, Git federation. Closest\n  fits: Git + AT Protocol identity + OpenID Federation entity statements.\n- governance-models-survey.md (~5,000 words) — S3 (and its inter-circle\n  patterns, where it falls short for multi-Source case), Holacracy,\n  Ostrom's design principles, cooperative federations (Mondragon, US\n  food coops, platform coops), open-source governance (Apache, Debian,\n  Django, Linux kernel), DAOs, conflict-resolution frameworks (Theory U\n  Case Clinic, mediation/arbitration). Headline finding: S3 is the right\n  vocabulary but flyway needs to extend it for the multi-Source case;\n  \"no joint action\" must be a first-class outcome when consent fails.\n- harness-primitives-audit.md (~3,500 words) — existing primitives in\n  murmurations-harness and where flyway plugs in. Recommendation:\n  parallel `@murmurations-ai/*` package set composing with the harness's\n  CollaborationProvider, GovernancePlugin, Spirit skills, and extension\n  tool interfaces. No harness fork. 3 small additive ADRs.\n\nSynthesis paper (2026-04-27-multi-murmuration-collaboration.md, ~9,000\nwords):\n\n- Repo-as-source-of-truth via GitHub; one writer per object.\n- did:web identity rooted in each murmuration's repo.\n- Signed entity statements borrowed from OpenID Federation.\n- Per-pair engagement agreements with pluggable decision rules\n  (s3-consent default; lazy-consent, dual-source-sign,\n  weighted-vote-bounded, apache-vote also shipped).\n- 25 collaboration primitives across discovery, identity, recognition,\n  engagement, project mode, syndicate mode, conflict, and signals.\n- Six-step escalation ladder ending in clean exit when consent fails.\n- Goals as governed entities with explicit lifecycles.\n- Syndicates as optional persistent multi-murmuration structures.\n- MVP: mirrored cross-murmuration directives, end-to-end between two\n  real murmurations.\n\nThe load-bearing invariant across every protocol and governance\ntradition surveyed is operator agency: every Source retains unilateral\nauthority over what their murmuration accepts, what it forwards, whom\nit recognizes, and when it exits. Anything that violates that has\nstopped being federation.\n\nFive questions deferred to follow-on ADRs: identity rotation, schema\nevolution, threat model when a Source is captured, cost attribution,\nand whether flyway needs an off-GitHub transport.",
-          "url": "https://github.com/murmurations-ai/flyway/commit/7c3e7b9f9a2a0b09d31aabd9110995d313f207b6",
-          "committedAt": "2026-04-28T00:00:54Z"
-        },
-        {
-          "repo": "murmurations-ai/flyway",
-          "message": "docs: MIT license + ADR-0002 (TypeScript as implementation language)\n\nLicense: MIT, copyright 2026 murmurations.ai — matches the harness so operators\nrunning both projects don't have to think about license compatibility.\n\nADR-0002: TypeScript on the same toolchain as the harness (Node 22+, pnpm,\nESM, full strict + noUncheckedIndexedAccess + exactOptionalPropertyTypes,\nVitest, ESLint flat config + Prettier). One toolchain across the\nmurmurations-ai/* family. Defers repo layout (mono vs single package) and\nprotocol-format choices to later ADRs.",
-          "url": "https://github.com/murmurations-ai/flyway/commit/71dd300352e837751e3971bcf19b077a549da834",
-          "committedAt": "2026-04-27T19:00:00Z"
-        },
-        {
-          "repo": "murmurations-ai/flyway",
-          "message": "chore: scaffold ADR log + ADR-0001 (project framing & scope)\n\nEstablishes the project's identity before any code lands:\n\n- flyway is a coordination layer for AI-agent murmurations — a shared\n  migration corridor that independent murmurations may use to discover\n  one another, exchange signals/directives across boundaries, and run\n  cross-murmuration governance rounds when participants consent.\n- Peer coordination only — no central authority above murmurations.\n- Not a hard dependency of the harness. The harness continues to ship\n  as a single-murmuration runtime with no flyway involvement.\n\nIncludes:\n\n- docs/adr/README.md  — ADR log conventions (MADR template + pre-flight\n  check rule mirrored from murmurations-ai/murmurations-harness#228 to\n  prevent the kind of ADR-numbering collision that hit the harness on\n  2026-04-26).\n- docs/adr/template.md  — MADR-inspired template for new ADRs.\n- docs/adr/0001-project-framing-and-scope.md  — opening framing ADR.\n- .gitignore  — secrets, OS noise, build artifacts.\n\nNo README at project root yet — deferring until the actual primitives\nare designed and the project has a concrete elevator pitch beyond ADR-0001.",
-          "url": "https://github.com/murmurations-ai/flyway/commit/063230b641f9f3ea10ec7036410e8cb818785e92",
-          "committedAt": "2026-04-27T18:57:13Z"
-        }
-      ],
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
       "id": "blockprint",
       "name": "BlockPrint",
       "lastActivityAt": "2026-04-28T09:23:24Z",
-      "commitsThisWeek": 2,
-      "recentCommits": [
-        {
-          "repo": "BlockPrintio/GigsGig",
-          "message": "chore: integrate utxos google login",
-          "url": "https://github.com/BlockPrintio/GigsGig/commit/11e67ea95bde5753b075f7e06a1c8df86ff11fb2",
-          "committedAt": "2026-04-28T09:23:24Z"
-        },
-        {
-          "repo": "BlockPrintio/GigsGig",
-          "message": "initial commit",
-          "url": "https://github.com/BlockPrintio/GigsGig/commit/1000c5ce233ec3ba57e2174e893f877a9df71f75",
-          "committedAt": "2026-04-27T23:02:12Z"
-        }
-      ],
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
       "id": "trike",
       "name": "3rike Mobility",
       "lastActivityAt": "2026-04-28T10:40:53Z",
-      "commitsThisWeek": 2,
-      "recentCommits": [
-        {
-          "repo": "3rike12/3rike-Mobility_",
-          "message": "feat: initialize frontend project with core architecture, driver dashboard pages, and UI component library",
-          "url": "https://github.com/3rike12/3rike-Mobility_/commit/5086ecbf88d79cf772772a25052d5772c6a6300e",
-          "committedAt": "2026-04-28T10:40:53Z"
-        },
-        {
-          "repo": "3rike12/3rike-Mobility_",
-          "message": "Initial commit",
-          "url": "https://github.com/3rike12/3rike-Mobility_/commit/8325543122664e550c2ca42480bad991eff86273",
-          "committedAt": "2026-04-28T09:27:01Z"
-        }
-      ],
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
@@ -347,40 +150,9 @@
     {
       "id": "newman5",
       "name": "Newman",
-      "lastActivityAt": "2026-05-02T12:33:53Z",
-      "commitsThisWeek": 12,
-      "recentCommits": [
-        {
-          "repo": "Newman5/builder-season-playbook",
-          "message": "Update builder activity data",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/3b4088bce9df6a8332eb59942804b23818cfcd14",
-          "committedAt": "2026-05-02T12:33:53Z"
-        },
-        {
-          "repo": "Newman5/builder-season-playbook",
-          "message": "A manual way around the paid X.com API ... not sure it's worth it",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/1015d3d9b6b0638285a80961ba82096221026220",
-          "committedAt": "2026-05-02T04:18:24Z"
-        },
-        {
-          "repo": "Newman5/builder-season-playbook",
-          "message": "fixing the blogging menu, making a short post",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/e7133fbaaf75c08f45783e80637e5d40d13dde9d",
-          "committedAt": "2026-05-01T23:06:50Z"
-        },
-        {
-          "repo": "Newman5/builder-season-playbook",
-          "message": "new web structure with Dashboard and hosting on github pages",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/9699c26db159fa9791c38228a1701a5b0db3331d",
-          "committedAt": "2026-05-01T19:31:29Z"
-        },
-        {
-          "repo": "Newman5/builder-season-playbook",
-          "message": "fixing deploy.yml -",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/28231c41ccd286bdf41a835041eadbda9bef724e",
-          "committedAt": "2026-05-01T03:32:36Z"
-        }
-      ],
+      "lastActivityAt": "2026-05-03T12:33:32Z",
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
@@ -403,15 +175,8 @@
       "id": "haulink",
       "name": "Haulink",
       "lastActivityAt": "2026-05-01T14:59:15Z",
-      "commitsThisWeek": 1,
-      "recentCommits": [
-        {
-          "repo": "FoladDTechie/Haulink",
-          "message": "Initial commit",
-          "url": "https://github.com/FoladDTechie/Haulink/commit/9dfcbb198c1577901e16854e5abc3319ab95b561",
-          "committedAt": "2026-05-01T14:59:15Z"
-        }
-      ],
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
