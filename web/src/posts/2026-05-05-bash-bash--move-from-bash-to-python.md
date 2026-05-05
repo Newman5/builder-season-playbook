@@ -7,7 +7,7 @@ layout: post.njk
 og_image: /images/og/11ty-blog-OG-default.jpg
 ---
 
-I wanted to make sure I was using the right tooling and I think Python fits here.  I'm using a script to take yml data - that I manually input and that ooutputs JSON for the 11ty to build the frontend... but why?  Why not just use the yaml?  Im pretty sure 11ty can use it.  
+I wanted to make sure I was using the right tooling and I think Python fits here.  I'm using a script to take yml data - that I manually input and that outputs JSON for the 11ty to build the frontend... but why?  Why not just use the yaml?  Im pretty sure 11ty can use yml as well as JSON.  
 
 I think it's part of the iterative process to go back and rebuild when I 'see' it better.  And, it underlines the data model first building method that I've seen some folks use.  ... and that's what I'll do tomorrow.
 

@@ -14,15 +14,13 @@ WEB_DIR="$(cd "${SCRIPT_DIR}/.." && pwd)"
 REPO_ROOT="$(cd "${WEB_DIR}/.." && pwd)"
 
 # Input and output data files.
-BUILDERS_FILE="${WEB_DIR}/src/_data/builders.json"
 OUTPUT_FILE="${WEB_DIR}/src/_data/activity.json"
 
 # Use a GitHub token if one exists.
 # Prefer GH_ACTIVITY_TOKEN, otherwise fall back to GITHUB_TOKEN.
 TOKEN="${GH_ACTIVITY_TOKEN:-${GITHUB_TOKEN:-}}"
 
-# Generate or refresh builders.json before collecting activity.
-python3 "${SCRIPT_DIR}/builders_json.py"
+BUILDERS_FILE="$(mktemp)"
 
 # Current UTC timestamp.
 now_iso="$(date -u +"%Y-%m-%dT%H:%M:%SZ")"
@@ -43,9 +41,12 @@ tmp_records="$(mktemp)"
 
 # Delete the temp file when the script exits.
 cleanup() {
-  rm -f "${tmp_records}"
+  rm -f "${tmp_records}" "${BUILDERS_FILE}"
 }
 trap cleanup EXIT
+
+# Normalize builder config into a temporary JSON snapshot for this run.
+node "${SCRIPT_DIR}/builders.mjs" > "${BUILDERS_FILE}"
 
 # Convert many possible GitHub repo formats into owner/repo.
 # Examples:

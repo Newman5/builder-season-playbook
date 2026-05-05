@@ -11,7 +11,7 @@ permalink: /data/
 <section class="hero">
   <p class="eyebrow">Raw Data</p>
   <h2 style="margin-top: 0;">Published JSON used by the site</h2>
-  <p>This page links to the normalized builder registry, the generated GitHub activity snapshot, and the X weekly update archive and verifier outputs.</p>
+  <p>This page links to the normalized builder registry, the generated GitHub activity snapshot, and the computed X search metadata used for manual weekly review.</p>
 </section>
 
 <section class="card-grid">
@@ -26,14 +26,9 @@ permalink: /data/
     <a class="button secondary" href="{{ '/data/activity.json' | withBase }}">Open activity.json</a>
   </article>
   <article class="card">
-    <h2>X Post Archive</h2>
-    <p>Builder-submitted X posts normalized from YAML evidence files.</p>
-    <a class="button secondary" href="{{ '/data/x-posts.json' | withBase }}">Open x-posts.json</a>
-  </article>
-  <article class="card">
-    <h2>X Weekly Verifier</h2>
-    <p>Per-builder weekly pass/fail results computed from submitted X evidence.</p>
-    <a class="button secondary" href="{{ '/data/x-weeks.json' | withBase }}">Open x-weeks.json</a>
+    <h2>X Search Metadata</h2>
+    <p>Computed week windows and live-search URLs built from <code>config/event.yml</code> and <code>config/repos.yml</code>.</p>
+    <a class="button secondary" href="{{ '/data/x-search.json' | withBase }}">Open x-search.json</a>
   </article>
 </section>
 {% endblock %}

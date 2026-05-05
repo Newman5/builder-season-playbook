@@ -91,20 +91,19 @@ Useful commands from `web/`:
 
 ```bash
 npm ci
-python3 -m pip install -r requirements.txt
 npm run build:data
 npm run build
 ```
 
-`npm run build:data` normalizes `config/repos.yml` into `web/src/_data/builders.json` and refreshes `web/src/_data/activity.json`.
+`config/repos.yml` is the manual source of truth for builders. Eleventy reads it directly and publishes the normalized registry at `/data/builders.json`. `config/event.yml` drives the computed X search links for each hackathon week. `npm run build:data` refreshes the cached GitHub snapshot in `web/src/_data/activity.json`.
 
-Builder normalization now runs through `python3` + `PyYAML`. The separate X submission pipeline still contains inline Ruby for now, so `npm run build:data:x` continues to require Ruby until that follow-on migration happens.
+X review is now manual-search based. The dashboard generates X live-search links from the configured hashtags, mention, builder handles, and weekly date windows, so there is no X API dependency and no separate X data build step.
 
 The activity updater prefers `GH_ACTIVITY_TOKEN` and falls back to `GITHUB_TOKEN`. Phase 1 counts all public commits on each tracked repo during the current UTC week.
 
 For X weekly update tracking:
 
 - add X handles and optional per-builder X rules to `config/repos.yml`
-- add per-builder evidence files under `submissions/x-updates/`
-- run `npm run build:data:x` from `web/` to refresh the X archive and weekly verifier JSON
+- set `weekly_update_hashtags`, `weekly_update_mention`, `build_start`, and `event_duration_weeks` in `config/event.yml`
+- use the dashboard and builder pages to open per-week live-search links on X
 - no live X API access is required

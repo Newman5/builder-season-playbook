@@ -38,7 +38,7 @@ If you prefer JSON, you can rename this file to `event.json` and reformat accord
 
 `repos.yml` is the manual registry for the website dashboard.
 
-Each entry in `repos:` should describe one builder and one tracked repository for Phase 1. The generator scripts normalize this YAML into website data files under `web/src/_data/`.
+Each entry in `repos:` should describe one builder and one tracked repository for Phase 1. Eleventy reads this YAML directly and normalizes it for the website dashboard.
 
 Suggested fields:
 
@@ -66,25 +66,14 @@ Per-builder X rules override the defaults in `event.yml`.
 
 ## Builder X Update Files
 
-Builders can submit qualifying X update evidence as per-builder YAML files in `submissions/x-updates/`.
+The website now generates X live-search links directly from `config/event.yml` and `config/repos.yml`.
 
-Suggested file path:
+Use these fields to shape the search queries:
 
-- `submissions/x-updates/{builder-id}.yml`
+- `weekly_update_hashtags` in `event.yml`
+- `weekly_update_mention` in `event.yml`
+- `build_start` in `event.yml`
+- `event_duration_weeks` in `event.yml`
+- `x`, `x_required_hashtags`, and `x_required_mention` in `repos.yml`
 
-Suggested file shape:
-
-- `builder_id`
-- optional `x_handle`
-- `posts`
-
-Suggested post fields:
-
-- `url`
-- `created_at`
-- optional `hashtags`
-- optional `mention_present`
-- optional `text`
-- optional `note`
-
-The website computes week coverage from submitted `created_at` values, `config/event.yml`, and `config/repos.yml`.
+The dashboard and builder pages will expose per-week search URLs for manual review.

@@ -5,14 +5,13 @@
   "type": "module",
   "main": "eleventy.config.js",
   "scripts": {
-    "build:data": "python3 ./scripts/builders_json.py && ./scripts/generate-activity.sh",
-    "build:data:x": "python3 ./scripts/builders_json.py && ./scripts/generate-x-posts.sh",
+    "build:data": "./scripts/generate-activity.sh",
     "prestart": "npm run build:data",
     "start": "eleventy --serve",
     "prebuild": "npm run build:data",
     "build": "eleventy",
     "build-ghpages": "npm run build:data && SITE_PATH_PREFIX=/builder-season-playbook npx @11ty/eleventy",
-    "blog": "./blog-menu.sh"
+    "blog": "bash ./blog-menu.sh"
   },
   "keywords": [
     "blog",
@@ -25,7 +24,8 @@
   "author": "Newman5",
   "license": "MIT",
   "dependencies": {
-    "@11ty/eleventy": "^3.1.2"
+    "@11ty/eleventy": "^3.1.2",
+    "js-yaml": "^4.1.1"
   },
   "devDependencies": {
     "@11ty/eleventy-plugin-rss": "^2.0.4"

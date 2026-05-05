@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-05T04:01:01Z",
+  "generatedAt": "2026-05-05T16:13:41Z",
   "weekStart": "2026-05-04T00:00:00Z",
   "weekEnd": "2026-05-10T23:59:59Z",
   "builders": [
@@ -14,10 +14,35 @@
     {
       "id": "ianonjuguna",
       "name": "Ian",
-      "lastActivityAt": null,
-      "commitsThisWeek": 0,
-      "recentCommits": [],
-      "error": "EMPTY_REPO_OR_NO_COMMITS"
+      "lastActivityAt": "2026-05-05T15:06:45Z",
+      "commitsThisWeek": 4,
+      "recentCommits": [
+        {
+          "repo": "IanoNjuguna/bookish-worm",
+          "message": "Revert \"modularise the dapp's functions\"\n\nThis reverts commit e259d552496962d7e31fbdb155084ca02c49a1b9.",
+          "url": "https://github.com/IanoNjuguna/bookish-worm/commit/e0ecbefd881e5a99dd70929d720bc2c8cb1059af",
+          "committedAt": "2026-05-05T15:06:45Z"
+        },
+        {
+          "repo": "IanoNjuguna/bookish-worm",
+          "message": "modularise the dapp's functions",
+          "url": "https://github.com/IanoNjuguna/bookish-worm/commit/e259d552496962d7e31fbdb155084ca02c49a1b9",
+          "committedAt": "2026-05-05T14:09:06Z"
+        },
+        {
+          "repo": "IanoNjuguna/bookish-worm",
+          "message": "configure root",
+          "url": "https://github.com/IanoNjuguna/bookish-worm/commit/1bb7e90e10f782ff5d4c2b358fbc76c66ff3e670",
+          "committedAt": "2026-05-05T13:04:00Z"
+        },
+        {
+          "repo": "IanoNjuguna/bookish-worm",
+          "message": "create landing page for https://doba.world",
+          "url": "https://github.com/IanoNjuguna/bookish-worm/commit/9f770e3d62283f354d5ac10cf906267318f8aa01",
+          "committedAt": "2026-05-05T12:37:24Z"
+        }
+      ],
+      "error": null
     },
     {
       "id": "dammy",
@@ -38,9 +63,15 @@
     {
       "id": "gidhub",
       "name": "GIDHUB",
-      "lastActivityAt": "2026-05-05T01:35:25Z",
-      "commitsThisWeek": 2,
+      "lastActivityAt": "2026-05-05T08:28:45Z",
+      "commitsThisWeek": 3,
       "recentCommits": [
+        {
+          "repo": "0xGIDHUB/tixano",
+          "message": "Fixed up some bugs",
+          "url": "https://github.com/0xGIDHUB/tixano/commit/58057d742502ea19479b048ece9ab9ad031e3631",
+          "committedAt": "2026-05-05T08:28:45Z"
+        },
         {
           "repo": "0xGIDHUB/tixano",
           "message": "Added safeguard to the cardano network",
@@ -163,9 +194,15 @@
     {
       "id": "newman5",
       "name": "Newman",
-      "lastActivityAt": "2026-05-04T12:52:15Z",
-      "commitsThisWeek": 1,
+      "lastActivityAt": "2026-05-05T12:42:49Z",
+      "commitsThisWeek": 2,
       "recentCommits": [
+        {
+          "repo": "Newman5/builder-season-playbook",
+          "message": "Update builder activity data",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/5e16622bda1ed1995106922a4ffaa2b5e07abe05",
+          "committedAt": "2026-05-05T12:42:49Z"
+        },
         {
           "repo": "Newman5/builder-season-playbook",
           "message": "Update builder activity data",

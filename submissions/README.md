@@ -1,25 +1,11 @@
-# X Update Submissions
+# X Update Review
 
-Builders can submit weekly X update evidence as per-builder YAML files.
+The X workflow is now manual-search based instead of submission-file based.
 
-Recommended path pattern:
+Use:
 
-- `submissions/x-updates/{builder-id}.yml`
+- `config/event.yml` for event-wide hashtags, mention, and week windows
+- `config/repos.yml` for builder X handles and any per-builder search overrides
+- the dashboard at `/dashboard/` and builder pages at `/builders/{id}/` to open weekly live-search URLs
 
-Example:
-
-```yml
-builder_id: newman5
-x_handle: newman5
-posts:
-  - url: https://x.com/newman5/status/1234567890
-    created_at: 2026-04-21T14:30:00Z
-    hashtags:
-      - "#yourevent"
-      - "#yourcommunity"
-    mention_present: true
-    text: "Week 1 update #yourevent #yourcommunity @yourcommunity"
-    note: Registered and shared repo link
-```
-
-The app computes qualifying weeks from `created_at`, `config/event.yml`, and `config/repos.yml`.
+This keeps X review lightweight and avoids X API costs.

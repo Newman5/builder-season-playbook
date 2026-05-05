@@ -7,7 +7,7 @@ permalink: /dashboard/
 
 {% set summary = builders | activitySummary(activity) %}
 {% set commitFeed = activity | flattenRecentCommits %}
-{% set xSummary = builders | xSummary(xPosts, xWeeks) %}
+{% set xSummary = builders | xSearchSummary(xSearch) %}
 
 {% block title %}Builder Activity Dashboard{% endblock %}
 
@@ -91,8 +91,8 @@ permalink: /dashboard/
 
 <section class="hero">
   <p class="eyebrow">X Weekly Updates</p>
-  <h2 style="margin-top: 0;">Manual X evidence and week-by-week coverage</h2>
-  <p>Builders can submit weekly X post evidence as YAML files under <code>submissions/x-updates/</code>. The site computes weekly coverage from submitted timestamps and the event schedule.</p>
+  <h2 style="margin-top: 0;">Manual X search links by week</h2>
+  <p>This dashboard generates X live-search links from <code>config/repos.yml</code> and <code>config/event.yml</code>. Use them to manually review each builder's public weekly updates without paying for the X API.</p>
 </section>
 
 <section class="card-grid" style="margin-bottom: 24px;">
@@ -101,102 +101,82 @@ permalink: /dashboard/
     <p class="stat">{{ xSummary.withHandles }}</p>
   </article>
   <article class="card">
-    <p class="eyebrow">Submission Files</p>
-    <p class="stat">{{ xSummary.withSubmissionFiles }}</p>
+    <p class="eyebrow">Hackathon Weeks</p>
+    <p class="stat">{{ xSummary.weeks }}</p>
   </article>
   <article class="card">
-    <p class="eyebrow">Qualifying Posts</p>
-    <p class="stat">{{ xSummary.qualifyingPosts }}</p>
+    <p class="eyebrow">Current Week</p>
+    <p class="stat">{{ xSummary.currentWeekIndex or "Off Cycle" }}</p>
   </article>
   <article class="card">
-    <p class="eyebrow">Builders With Coverage</p>
-    <p class="stat">{{ xSummary.buildersWithCoverage }}</p>
+    <p class="eyebrow">Default Mention</p>
+    <p style="margin: 0;">{{ xSearch.weeklyUpdateMention or "None" }}</p>
   </article>
 </section>
 
 <section class="table-card" style="margin-bottom: 24px;">
-  <h2>X Weekly Coverage</h2>
+  <h2>Weekly Global Searches</h2>
   {% if xSummary.configError %}
-    <p class="muted">X verifier configuration error: {{ xSummary.configError }}</p>
+    <p class="muted">X search configuration error: {{ xSummary.configError }}</p>
   {% else %}
-    <table>
-      <thead>
-        <tr>
-          <th>Builder</th>
-          <th>X</th>
-          <th>Submitted Posts</th>
-          <th>Qualified Weeks</th>
-          <th>Missing Weeks</th>
-          <th>Details</th>
-        </tr>
-      </thead>
-      <tbody>
-        {% for builder in builders %}
-          {% set postRecord = xPosts | xPostSummaryForBuilder(builder.id) %}
-          {% set weekRecord = xWeeks | xWeeksForBuilder(builder.id) %}
-          <tr>
-            <td data-label="Builder">
-              <strong>{{ builder.name }}</strong>
-            </td>
-            <td data-label="X">
-              {% if builder.x %}
-                <a href="https://x.com/{{ builder.x }}">@{{ builder.x }}</a>
-              {% else %}
-                <span class="muted">Not listed</span>
-              {% endif %}
-            </td>
-            <td data-label="Submitted Posts">
-              {% if postRecord %}
-                {{ postRecord.submittedCount }}
-                {% if postRecord.error %}
-                  <br><span class="muted">{{ postRecord.error }}</span>
-                {% endif %}
-              {% else %}
-                <span class="muted">None</span>
-              {% endif %}
-            </td>
-            <td data-label="Qualified Weeks">
-              {% if weekRecord %}
-                {{ weekRecord.qualifiedWeeks }}/{{ xWeeks.eventDurationWeeks }}
-              {% else %}
-                <span class="muted">Unavailable</span>
-              {% endif %}
-            </td>
-            <td data-label="Missing Weeks">
-              {% if weekRecord and weekRecord.missingWeeks and weekRecord.missingWeeks.length %}
-                {{ weekRecord.missingWeeks | join(", ") }}
-              {% elseif weekRecord %}
-                None
-              {% else %}
-                <span class="muted">Unavailable</span>
-              {% endif %}
-            </td>
-            <td data-label="Details"><a href="{{ ('/builders/' ~ builder.id ~ '/') | withBase }}">View builder</a></td>
-          </tr>
-        {% endfor %}
-      </tbody>
-    </table>
-  {% endif %}
-</section>
-
-<section class="table-card">
-  <h2>Submitted X Posts</h2>
-  {% if xPosts.posts and xPosts.posts.length %}
     <ul class="clean">
-      {% for post in xPosts.posts | head(12) %}
+      {% for week in xSearch.weeks %}
         <li>
-          <strong><a href="{{ ('/builders/' ~ post.builderId ~ '/') | withBase }}">{{ post.builderId }}</a></strong>
-          shared <a href="{{ post.postUrl }}">an X post</a><br>
-          <span class="muted">{{ post.createdAt | readableDateTime }}</span>
-          {% if post.qualifies != true and post.validationError %}
-            <br><span class="muted">Does not qualify: {{ post.validationError }}</span>
-          {% endif %}
+          <strong>{{ week.label }}</strong> · {{ week.dateRangeLabel }}<br>
+          <a href="{{ week.searchUrl }}">Open live search</a>
         </li>
       {% endfor %}
     </ul>
-  {% else %}
-    <p class="muted">No builder-submitted X posts have been added yet.</p>
   {% endif %}
+</section>
+
+<section class="table-card" style="margin-bottom: 24px;">
+  <h2>Builder X Searches</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Builder</th>
+        <th>X</th>
+        <th>All Weeks</th>
+        <th>Weekly Links</th>
+        <th>Details</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for builder in builders %}
+        {% set builderSearch = xSearch | xSearchForBuilder(builder.id) %}
+        <tr>
+          <td data-label="Builder"><strong>{{ builder.name }}</strong></td>
+          <td data-label="X">
+            {% if builder.x %}
+              <a href="https://x.com/{{ builder.x }}">@{{ builder.x }}</a>
+            {% else %}
+              <span class="muted">Not listed</span>
+            {% endif %}
+          </td>
+          <td data-label="All Weeks">
+            {% if builderSearch and builderSearch.searchUrl %}
+              <a href="{{ builderSearch.searchUrl }}">Open search</a>
+            {% else %}
+              <span class="muted">No handle</span>
+            {% endif %}
+          </td>
+          <td data-label="Weekly Links">
+            {% if builderSearch and builderSearch.weeks.length %}
+              {% for week in builderSearch.weeks %}
+                {% if week.searchUrl %}
+                  <a href="{{ week.searchUrl }}">{{ week.label }}</a>{% if not loop.last %}, {% endif %}
+                {% endif %}
+              {% endfor %}
+            {% else %}
+              <span class="muted">Unavailable</span>
+            {% endif %}
+          </td>
+          <td data-label="Details"><a href="{{ ('/builders/' ~ builder.id ~ '/') | withBase }}">View builder</a></td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
 </section>
 
 <section class="table-card">

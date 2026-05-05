@@ -270,7 +270,7 @@ GitHub Action runs daily
 → dashboard updates
 ```
 
-Current implementation note: builder normalization now runs through a small Python script using `PyYAML`, while some other supporting scripts may still use shell or Ruby until later cleanup.
+Current implementation note: builder normalization now comes directly from `config/repos.yml` through a shared Node loader, while some other supporting scripts may still use shell or Ruby until later cleanup.
 
 ---
 

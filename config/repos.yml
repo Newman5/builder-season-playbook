@@ -75,18 +75,18 @@ repos:
       - builders
 
   - id: armanabid
-    name: Arman
+    name: Abid
     github: ArmanAbid
-    x:
+    x: _armanabid
     project_name: ChainTask
     repo_url: https://github.com/ArmanAbid/ChainTask
     pies:
       - builders
 
   - id: workshopmaybe
-    name: Workshop Maybe
+    name: James
     github: workshop-maybe
-    x:
+    x: jamesdunseith
     project_name: Working with Me
     repo_url: https://github.com/workshop-maybe/working-with-me
     pies:
@@ -95,7 +95,7 @@ repos:
   - id: kanyuku
     name: Kanyuku
     github: kanyuku
-    x:
+    x: pierrepeach002
     project_name: Weave Pass
     repo_url: https://github.com/kanyuku/weave-Pass
     pies:
@@ -104,7 +104,7 @@ repos:
   - id: gamechanger
     name: GameChanger Finance
     github: GameChangerFinance
-    x:
+    x: GameChangerOk
     project_name: NeonSoup
     repo_url: https://github.com/GameChangerFinance/NeonSoup
     pies:
@@ -113,7 +113,7 @@ repos:
   - id: yungslaiz
     name: YungSlaiz
     github: YungSlaiz53
-    x:
+    x: ogleksb
     project_name: Next.Ai Protocol
     repo_url: https://github.com/YungSlaiz53/GNXT
     pies:
@@ -158,7 +158,7 @@ repos:
   - id: mobrai
     name: MOBR AI
     github: mobr-ai
-    x:
+    x: mobrsys
     project_name: Cardano Analytics Platform (CAP) powered by LLM
     repo_url: https://github.com/mobr-ai/cap-pie
     pies:
