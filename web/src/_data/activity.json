@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-04T12:52:00Z",
+  "generatedAt": "2026-05-05T12:42:37Z",
   "weekStart": "2026-05-04T00:00:00Z",
   "weekEnd": "2026-05-10T23:59:59Z",
   "builders": [
@@ -14,10 +14,41 @@
     {
       "id": "ianonjuguna",
       "name": "Ian",
-      "lastActivityAt": null,
-      "commitsThisWeek": 0,
-      "recentCommits": [],
-      "error": "EMPTY_REPO_OR_NO_COMMITS"
+      "lastActivityAt": "2026-05-05T12:11:50Z",
+      "commitsThisWeek": 6,
+      "recentCommits": [
+        {
+          "repo": "IanoNjuguna/bookish-worm",
+          "message": "downgrade vite to v7 to resolve peer dependency conflict",
+          "url": "https://github.com/IanoNjuguna/bookish-worm/commit/a8c85e81b66acec353e136bfd04c6eca20d61b1b",
+          "committedAt": "2026-05-05T12:11:50Z"
+        },
+        {
+          "repo": "IanoNjuguna/bookish-worm",
+          "message": "create landing page for doba.world",
+          "url": "https://github.com/IanoNjuguna/bookish-worm/commit/aa0c78c34f283bb41e762c632a705992e8d044fd",
+          "committedAt": "2026-05-05T12:01:41Z"
+        },
+        {
+          "repo": "IanoNjuguna/bookish-worm",
+          "message": "Merge commit '404177b1f3b4e082c4ef94ae7c0dbec3e3019384' as 'landing-page'",
+          "url": "https://github.com/IanoNjuguna/bookish-worm/commit/86dc991da98838f2ad16e375901b37b3d498239d",
+          "committedAt": "2026-05-04T20:26:26Z"
+        },
+        {
+          "repo": "IanoNjuguna/bookish-worm",
+          "message": "Squashed 'landing-page/' content from commit 1ac094d\n\ngit-subtree-dir: landing-page\ngit-subtree-split: 1ac094d6f81e135b4254a0f69097cd7afb855874",
+          "url": "https://github.com/IanoNjuguna/bookish-worm/commit/404177b1f3b4e082c4ef94ae7c0dbec3e3019384",
+          "committedAt": "2026-05-04T20:26:26Z"
+        },
+        {
+          "repo": "IanoNjuguna/bookish-worm",
+          "message": "Save work before adding subtree",
+          "url": "https://github.com/IanoNjuguna/bookish-worm/commit/c94c170b79f302d3835c75c182fbe0e95a42f2d5",
+          "committedAt": "2026-05-04T20:26:08Z"
+        }
+      ],
+      "error": null
     },
     {
       "id": "dammy",
@@ -38,9 +69,28 @@
     {
       "id": "gidhub",
       "name": "GIDHUB",
-      "lastActivityAt": "2026-04-30T19:57:09Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-05-05T08:28:45Z",
+      "commitsThisWeek": 3,
+      "recentCommits": [
+        {
+          "repo": "0xGIDHUB/tixano",
+          "message": "Fixed up some bugs",
+          "url": "https://github.com/0xGIDHUB/tixano/commit/58057d742502ea19479b048ece9ab9ad031e3631",
+          "committedAt": "2026-05-05T08:28:45Z"
+        },
+        {
+          "repo": "0xGIDHUB/tixano",
+          "message": "Added safeguard to the cardano network",
+          "url": "https://github.com/0xGIDHUB/tixano/commit/89badd6b41a0257efff20e26c3ebebf2acacb573",
+          "committedAt": "2026-05-05T01:35:25Z"
+        },
+        {
+          "repo": "0xGIDHUB/tixano",
+          "message": "Create Events Functionality Added!",
+          "url": "https://github.com/0xGIDHUB/tixano/commit/09d90cbcd04627237676cb0606cb4cf26851adfe",
+          "committedAt": "2026-05-04T22:19:22Z"
+        }
+      ],
       "error": null
     },
     {
@@ -150,9 +200,16 @@
     {
       "id": "newman5",
       "name": "Newman",
-      "lastActivityAt": "2026-05-03T12:33:32Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-05-04T12:52:15Z",
+      "commitsThisWeek": 1,
+      "recentCommits": [
+        {
+          "repo": "Newman5/builder-season-playbook",
+          "message": "Update builder activity data",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/18519d309efa0c5f758dee577b56ca774fd5c262",
+          "committedAt": "2026-05-04T12:52:15Z"
+        }
+      ],
       "error": null
     },
     {
