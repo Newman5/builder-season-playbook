@@ -33,12 +33,12 @@ ELEVENTY_SITE_URL="https://your-site.example.com/" npm run build
 - `config/event.yml` defines the weekly X search rules and date windows.
 - `src/_data/builders.js` reads and normalizes `config/repos.yml` directly at Eleventy build time.
 - `src/_data/xSearch.js` computes per-week and per-builder X live-search links directly at Eleventy build time.
-- `./scripts/generate-activity.sh` fetches public GitHub commit activity and writes `src/_data/activity.json`.
+- `./scripts/generate-activity.mjs` fetches public GitHub commit activity and writes `src/_data/activity.json`.
 - Eleventy publishes the normalized builder registry at `/data/builders.json`, the cached GitHub snapshot at `/data/activity.json`, and the computed X search metadata at `/data/x-search.json`.
 
 ## Tokens
 
-`generate-activity.sh` prefers `GH_ACTIVITY_TOKEN` and falls back to `GITHUB_TOKEN`.
+`generate-activity.mjs` prefers `GH_ACTIVITY_TOKEN` and falls back to `GITHUB_TOKEN`.
 
 ## Notes
 

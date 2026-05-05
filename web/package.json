@@ -5,7 +5,7 @@
   "type": "module",
   "main": "eleventy.config.js",
   "scripts": {
-    "build:data": "./scripts/generate-activity.sh",
+    "build:data": "node ./scripts/generate-activity.mjs",
     "prestart": "npm run build:data",
     "start": "eleventy --serve",
     "prebuild": "npm run build:data",
@@ -17,7 +17,7 @@
     "blog",
     "11ty",
     "eleventy",
-    "bash",
+    "node",
     "static-site",
     "learning"
   ],
