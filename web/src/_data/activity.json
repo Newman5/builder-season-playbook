@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-04T12:52:00Z",
+  "generatedAt": "2026-05-05T04:01:01Z",
   "weekStart": "2026-05-04T00:00:00Z",
   "weekEnd": "2026-05-10T23:59:59Z",
   "builders": [
@@ -38,9 +38,22 @@
     {
       "id": "gidhub",
       "name": "GIDHUB",
-      "lastActivityAt": "2026-04-30T19:57:09Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-05-05T01:35:25Z",
+      "commitsThisWeek": 2,
+      "recentCommits": [
+        {
+          "repo": "0xGIDHUB/tixano",
+          "message": "Added safeguard to the cardano network",
+          "url": "https://github.com/0xGIDHUB/tixano/commit/89badd6b41a0257efff20e26c3ebebf2acacb573",
+          "committedAt": "2026-05-05T01:35:25Z"
+        },
+        {
+          "repo": "0xGIDHUB/tixano",
+          "message": "Create Events Functionality Added!",
+          "url": "https://github.com/0xGIDHUB/tixano/commit/09d90cbcd04627237676cb0606cb4cf26851adfe",
+          "committedAt": "2026-05-04T22:19:22Z"
+        }
+      ],
       "error": null
     },
     {
@@ -150,9 +163,16 @@
     {
       "id": "newman5",
       "name": "Newman",
-      "lastActivityAt": "2026-05-03T12:33:32Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-05-04T12:52:15Z",
+      "commitsThisWeek": 1,
+      "recentCommits": [
+        {
+          "repo": "Newman5/builder-season-playbook",
+          "message": "Update builder activity data",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/18519d309efa0c5f758dee577b56ca774fd5c262",
+          "committedAt": "2026-05-04T12:52:15Z"
+        }
+      ],
       "error": null
     },
     {

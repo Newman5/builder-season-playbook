@@ -22,7 +22,7 @@ OUTPUT_FILE="${WEB_DIR}/src/_data/activity.json"
 TOKEN="${GH_ACTIVITY_TOKEN:-${GITHUB_TOKEN:-}}"
 
 # Generate or refresh builders.json before collecting activity.
-"${SCRIPT_DIR}/builders-json.sh"
+python3 "${SCRIPT_DIR}/builders_json.py"
 
 # Current UTC timestamp.
 now_iso="$(date -u +"%Y-%m-%dT%H:%M:%SZ")"

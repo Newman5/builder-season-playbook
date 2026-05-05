@@ -91,11 +91,14 @@ Useful commands from `web/`:
 
 ```bash
 npm ci
+python3 -m pip install -r requirements.txt
 npm run build:data
 npm run build
 ```
 
 `npm run build:data` normalizes `config/repos.yml` into `web/src/_data/builders.json` and refreshes `web/src/_data/activity.json`.
+
+Builder normalization now runs through `python3` + `PyYAML`. The separate X submission pipeline still contains inline Ruby for now, so `npm run build:data:x` continues to require Ruby until that follow-on migration happens.
 
 The activity updater prefers `GH_ACTIVITY_TOKEN` and falls back to `GITHUB_TOKEN`. Phase 1 counts all public commits on each tracked repo during the current UTC week.
 

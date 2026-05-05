@@ -10,7 +10,7 @@ SUBMISSIONS_DIR="${REPO_ROOT}/submissions/x-updates"
 OUTPUT_POSTS_FILE="${WEB_DIR}/src/_data/x-posts.json"
 OUTPUT_WEEKS_FILE="${WEB_DIR}/src/_data/x-weeks.json"
 
-"${SCRIPT_DIR}/builders-json.sh"
+python3 "${SCRIPT_DIR}/builders_json.py"
 
 tmp_event="$(mktemp)"
 tmp_submission_list="$(mktemp)"

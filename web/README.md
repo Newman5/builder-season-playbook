@@ -16,6 +16,7 @@ From this directory:
 
 ```bash
 npm ci
+python3 -m pip install -r requirements.txt
 npm run build:data
 npm start
 ```
@@ -30,7 +31,7 @@ ELEVENTY_SITE_URL="https://your-site.example.com/" npm run build
 ## Data flow
 
 - `config/repos.yml` is the manual builder registry.
-- `./scripts/builders-json.sh` normalizes the YAML registry into `src/_data/builders.json`.
+- `python3 ./scripts/builders_json.py` normalizes the YAML registry into `src/_data/builders.json`.
 - `./scripts/generate-activity.sh` fetches public GitHub commit activity and writes `src/_data/activity.json`.
 - `./scripts/generate-x-posts.sh` ingests builder-submitted YAML files from `submissions/x-updates/` and generates both `src/_data/x-posts.json` and `src/_data/x-weeks.json`.
 - Eleventy reads those `_data` files and also publishes them at `/data/builders.json` and `/data/activity.json`.
@@ -43,5 +44,7 @@ ELEVENTY_SITE_URL="https://your-site.example.com/" npm run build
 
 - The deploy workflow builds this directory for GitHub Pages with the repo path prefix.
 - The scheduled activity workflow refreshes the generated JSON and commits it back to `main`.
+- Builder normalization now requires `python3` plus the pinned dependency in `requirements.txt`.
+- `generate-x-posts.sh` still contains inline Ruby in this phase, so `npm run build:data:x` still requires Ruby.
 - X update tracking is manual-YAML based, not live API based.
 - Existing post-management scripts still work from this directory because the source content remains under `src/`.

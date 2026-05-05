@@ -270,6 +270,8 @@ GitHub Action runs daily
 → dashboard updates
 ```
 
+Current implementation note: builder normalization now runs through a small Python script using `PyYAML`, while some other supporting scripts may still use shell or Ruby until later cleanup.
+
 ---
 
 ## What This Dashboard Should Not Do Yet
