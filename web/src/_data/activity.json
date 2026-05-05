@@ -85,6 +85,28 @@
           "committedAt": "2026-05-04T22:19:22Z"
         }
       ],
+      "lastActivityAt": "2026-05-05T08:28:45Z",
+      "commitsThisWeek": 3,
+      "recentCommits": [
+        {
+          "repo": "0xGIDHUB/tixano",
+          "message": "Fixed up some bugs",
+          "url": "https://github.com/0xGIDHUB/tixano/commit/58057d742502ea19479b048ece9ab9ad031e3631",
+          "committedAt": "2026-05-05T08:28:45Z"
+        },
+        {
+          "repo": "0xGIDHUB/tixano",
+          "message": "Added safeguard to the cardano network",
+          "url": "https://github.com/0xGIDHUB/tixano/commit/89badd6b41a0257efff20e26c3ebebf2acacb573",
+          "committedAt": "2026-05-05T01:35:25Z"
+        },
+        {
+          "repo": "0xGIDHUB/tixano",
+          "message": "Create Events Functionality Added!",
+          "url": "https://github.com/0xGIDHUB/tixano/commit/09d90cbcd04627237676cb0606cb4cf26851adfe",
+          "committedAt": "2026-05-04T22:19:22Z"
+        }
+      ],
       "error": null
     },
     {
