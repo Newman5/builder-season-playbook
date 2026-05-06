@@ -8,6 +8,7 @@
     "build:data": "node ./scripts/generate-activity.mjs",
     "prestart": "npm run build:data",
     "start": "eleventy --serve",
+    "11ty": "eleventy --serve",
     "prebuild": "npm run build:data",
     "build": "eleventy",
     "build-ghpages": "npm run build:data && SITE_PATH_PREFIX=/builder-season-playbook npx @11ty/eleventy",

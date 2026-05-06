@@ -24,3 +24,83 @@ What is normalization?
 When to use Bash, Python, or Node?
 is there a way to have a "don't hit the API" flag?
 The problem of builders starting in different weeks.  Could each builder have a "start week" attribute?  
+
+
+## Reference
+xSearch = {
+  buildStart,
+  eventDurationWeeks,
+  weeklyUpdateHashtags,
+  weeklyUpdateMention,
+  configError,
+  currentWeekIndex,
+  weeks: [
+    {
+      index,
+      startDate,
+      endDateExclusive,
+      label,
+      dateRangeLabel,
+      searchUrl
+    }
+  ],
+  builders: [
+    {
+      id,
+      name,
+      xHandle,
+      searchUrl,
+      weeks: [
+        {
+          index,
+          startDate,
+          endDateExclusive,
+          label,
+          dateRangeLabel,
+          searchUrl
+        }
+      ]
+    }
+  ]
+}
+
+
+activity = {
+  generatedAt,
+  weekStart,
+  weekEnd,
+  builders: [
+    {
+      id,
+      name,
+      lastActivityAt,
+      commitsThisWeek,
+      recentCommits: [
+        {
+          repo,
+          message,
+          url,
+          committedAt
+        }
+      ],
+      error
+    }
+  ]
+}
+
+builders = [
+  {
+    id,
+    name,
+    github,
+    x,
+    xRequiredHashtags,
+    xRequiredMention,
+    xIgnore,
+    projectName,
+    projectUrl,
+    repoUrl,
+    pies,
+    notes
+  }
+]
