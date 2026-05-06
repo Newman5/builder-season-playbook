@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-05T16:13:41Z",
+  "generatedAt": "2026-05-06T12:55:39Z",
   "weekStart": "2026-05-04T00:00:00Z",
   "weekEnd": "2026-05-10T23:59:59Z",
   "builders": [
@@ -14,9 +14,21 @@
     {
       "id": "ianonjuguna",
       "name": "Ian",
-      "lastActivityAt": "2026-05-05T15:06:45Z",
-      "commitsThisWeek": 4,
+      "lastActivityAt": "2026-05-05T17:28:36Z",
+      "commitsThisWeek": 6,
       "recentCommits": [
+        {
+          "repo": "IanoNjuguna/bookish-worm",
+          "message": "refine call to action",
+          "url": "https://github.com/IanoNjuguna/bookish-worm/commit/d43d64103adc0acd90d0aad871790eb288fb7925",
+          "committedAt": "2026-05-05T17:28:36Z"
+        },
+        {
+          "repo": "IanoNjuguna/bookish-worm",
+          "message": "update copy: one statement is enough",
+          "url": "https://github.com/IanoNjuguna/bookish-worm/commit/b6bed37c95f182811347a16c35a83e198634f46d",
+          "committedAt": "2026-05-05T17:27:35Z"
+        },
         {
           "repo": "IanoNjuguna/bookish-worm",
           "message": "Revert \"modularise the dapp's functions\"\n\nThis reverts commit e259d552496962d7e31fbdb155084ca02c49a1b9.",
@@ -34,12 +46,6 @@
           "message": "configure root",
           "url": "https://github.com/IanoNjuguna/bookish-worm/commit/1bb7e90e10f782ff5d4c2b358fbc76c66ff3e670",
           "committedAt": "2026-05-05T13:04:00Z"
-        },
-        {
-          "repo": "IanoNjuguna/bookish-worm",
-          "message": "create landing page for https://doba.world",
-          "url": "https://github.com/IanoNjuguna/bookish-worm/commit/9f770e3d62283f354d5ac10cf906267318f8aa01",
-          "committedAt": "2026-05-05T12:37:24Z"
         }
       ],
       "error": null
@@ -47,9 +53,28 @@
     {
       "id": "dammy",
       "name": "Dammy",
-      "lastActivityAt": "2026-05-03T06:38:43Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-05-05T20:24:52Z",
+      "commitsThisWeek": 3,
+      "recentCommits": [
+        {
+          "repo": "Dammy7942/accordiax",
+          "message": "Add pending offers for students and offer history for consultants to complete agreement flow.",
+          "url": "https://github.com/Dammy7942/accordiax/commit/ad64890a763f95298d0ac9381c5a9ff25ea6eac4",
+          "committedAt": "2026-05-05T20:24:52Z"
+        },
+        {
+          "repo": "Dammy7942/accordiax",
+          "message": "Add role switcher to dashboards, enable seamless toggling between student/consultant roles",
+          "url": "https://github.com/Dammy7942/accordiax/commit/307a6d2bf79332e7b9dd71f5502ae587d9fdcf0a",
+          "committedAt": "2026-05-05T19:55:14Z"
+        },
+        {
+          "repo": "Dammy7942/accordiax",
+          "message": "Add students' request modal, consultants offer modal, profile completion, role safety redirect, consultant name storage, and dashboard UI improvements.",
+          "url": "https://github.com/Dammy7942/accordiax/commit/efe5507bcdf8c0a08d4d11c024e80b7067d4481e",
+          "committedAt": "2026-05-05T16:49:06Z"
+        }
+      ],
       "error": null
     },
     {
@@ -85,36 +110,21 @@
           "committedAt": "2026-05-04T22:19:22Z"
         }
       ],
-      "lastActivityAt": "2026-05-05T08:28:45Z",
-      "commitsThisWeek": 3,
-      "recentCommits": [
-        {
-          "repo": "0xGIDHUB/tixano",
-          "message": "Fixed up some bugs",
-          "url": "https://github.com/0xGIDHUB/tixano/commit/58057d742502ea19479b048ece9ab9ad031e3631",
-          "committedAt": "2026-05-05T08:28:45Z"
-        },
-        {
-          "repo": "0xGIDHUB/tixano",
-          "message": "Added safeguard to the cardano network",
-          "url": "https://github.com/0xGIDHUB/tixano/commit/89badd6b41a0257efff20e26c3ebebf2acacb573",
-          "committedAt": "2026-05-05T01:35:25Z"
-        },
-        {
-          "repo": "0xGIDHUB/tixano",
-          "message": "Create Events Functionality Added!",
-          "url": "https://github.com/0xGIDHUB/tixano/commit/09d90cbcd04627237676cb0606cb4cf26851adfe",
-          "committedAt": "2026-05-04T22:19:22Z"
-        }
-      ],
       "error": null
     },
     {
       "id": "pmcorcoran",
       "name": "PM Corcoran",
-      "lastActivityAt": "2026-04-29T23:52:26Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-05-06T00:53:03Z",
+      "commitsThisWeek": 1,
+      "recentCommits": [
+        {
+          "repo": "pmcorcoran/ada-battles",
+          "message": "added 95% complete hydra referee contract",
+          "url": "https://github.com/pmcorcoran/ada-battles/commit/f0007aef3e3dd69b74d6ffec79e58a484b2b0c23",
+          "committedAt": "2026-05-06T00:53:03Z"
+        }
+      ],
       "error": null
     },
     {
@@ -135,7 +145,7 @@
     },
     {
       "id": "armanabid",
-      "name": "Arman",
+      "name": "Abid",
       "lastActivityAt": "2026-05-03T12:38:53Z",
       "commitsThisWeek": 0,
       "recentCommits": [],
@@ -143,7 +153,7 @@
     },
     {
       "id": "workshopmaybe",
-      "name": "Workshop Maybe",
+      "name": "James",
       "lastActivityAt": "2026-04-27T13:22:10Z",
       "commitsThisWeek": 0,
       "recentCommits": [],
@@ -176,9 +186,16 @@
     {
       "id": "maxalexweber",
       "name": "Max Alex Weber",
-      "lastActivityAt": "2026-05-03T18:51:36Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-05-05T20:17:42Z",
+      "commitsThisWeek": 1,
+      "recentCommits": [
+        {
+          "repo": "maxalexweber1/CHAINFEED",
+          "message": "feat: add FluidTokens Lending V3 decoders and finance logic\n\n- Implemented datum decoders for PoolDatum, LoanDatum, and ConfigDatum in fluidtokens-decoder.ts.\n- Added finance calculations for perpetual and installment loans in fluidtokens-finance.ts.\n- Introduced health monitoring for loans and pools in fluidtokens-health.ts, including liquidation eligibility and repayment status.\n- Enhanced type definitions and interfaces for better type safety",
+          "url": "https://github.com/maxalexweber1/CHAINFEED/commit/7a048bc9a1e9913fb52b628ecdcf2d4e9957d917",
+          "committedAt": "2026-05-05T20:17:42Z"
+        }
+      ],
       "error": null
     },
     {
@@ -216,9 +233,27 @@
     {
       "id": "newman5",
       "name": "Newman",
-      "lastActivityAt": "2026-05-05T12:42:49Z",
-      "commitsThisWeek": 2,
+      "lastActivityAt": "2026-05-05T16:53:33Z",
+      "commitsThisWeek": 7,
       "recentCommits": [
+        {
+          "repo": "Newman5/builder-season-playbook",
+          "message": "Merge branch 'main' of https://github.com/Newman5/builder-season-playbook",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/01a28476940015ae07d85be88da7693cd4881a00",
+          "committedAt": "2026-05-05T16:53:33Z"
+        },
+        {
+          "repo": "Newman5/builder-season-playbook",
+          "message": "move completely to node and remove the bash",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/25c6b35819506a404ac0f53f811ad4ce69261e6c",
+          "committedAt": "2026-05-05T16:51:32Z"
+        },
+        {
+          "repo": "Newman5/builder-season-playbook",
+          "message": "cut out the x automations, replace Python normalizer with node, start on today's blog",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/8f26a3a906fb76327060df844b043c19a9fb46c9",
+          "committedAt": "2026-05-05T16:41:41Z"
+        },
         {
           "repo": "Newman5/builder-season-playbook",
           "message": "Update builder activity data",
@@ -227,9 +262,9 @@
         },
         {
           "repo": "Newman5/builder-season-playbook",
-          "message": "Update builder activity data",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/18519d309efa0c5f758dee577b56ca774fd5c262",
-          "committedAt": "2026-05-04T12:52:15Z"
+          "message": "shift to python and new progress log",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/c38aa8789b894085c5df13021bf1be1d9af65a9f",
+          "committedAt": "2026-05-05T04:20:20Z"
         }
       ],
       "error": null
@@ -245,10 +280,23 @@
     {
       "id": "devfreeguy",
       "name": "Dev Free Guy",
-      "lastActivityAt": null,
-      "commitsThisWeek": 0,
-      "recentCommits": [],
-      "error": "EMPTY_REPO_OR_NO_COMMITS"
+      "lastActivityAt": "2026-05-05T18:14:18Z",
+      "commitsThisWeek": 2,
+      "recentCommits": [
+        {
+          "repo": "devfreeguy/skill-swap",
+          "message": "feat: init landing page with auth, animations, and mobile nav",
+          "url": "https://github.com/devfreeguy/skill-swap/commit/864945c58aa0633df885e3f7b9ff050275e375c8",
+          "committedAt": "2026-05-05T18:14:18Z"
+        },
+        {
+          "repo": "devfreeguy/skill-swap",
+          "message": "Initial commit from Create Next App",
+          "url": "https://github.com/devfreeguy/skill-swap/commit/bfd9f7d5457178d38550f6d9547992d426d78c8f",
+          "committedAt": "2026-05-04T13:52:59Z"
+        }
+      ],
+      "error": null
     },
     {
       "id": "haulink",
