@@ -33,13 +33,13 @@ repos:
     name: Johnny5i
     github: bytewizard42i
     x: realjohnny5i
-    project_name: FlavorOfPie-ToBeDetermined
-    repo_url: https://github.com/bytewizard42i/FlavorOfPie-ToBeDetermined_Gimbalabs-johnny5i
+    project_name: BlindOracle-Gimbalabs_hackathon
+    repo_url: https://github.com/bytewizard42i/BlindOracle-Gimbalabs_hackathon
     pies:
       - builders
 
   - id: gidhub
-    name: GIDHUB
+    name: Gideon
     github: 0xGIDHUB
     x: 0xGIDHUB
     project_name: Tixano
@@ -48,7 +48,7 @@ repos:
       - builders
 
   - id: pmcorcoran
-    name: PM Corcoran
+    name: Paul Corcoran
     github: pmcorcoran
     x: Adafan430292
     project_name: ada battles
@@ -102,7 +102,7 @@ repos:
       - builders
 
   - id: gamechanger
-    name: GameChanger Finance
+    name: Adriano
     github: GameChangerFinance
     x: GameChangerOk
     project_name: NeonSoup
@@ -111,7 +111,7 @@ repos:
       - builders
 
   - id: yungslaiz
-    name: YungSlaiz
+    name: Blessed David
     github: YungSlaiz53
     x: ogleksb
     project_name: Next.Ai Protocol
@@ -120,7 +120,7 @@ repos:
       - builders
 
   - id: maxalexweber
-    name: Max Alex Weber
+    name: Maximilian
     github: maxalexweber1
     x: maxalexweber
     project_name: ChainFeed
@@ -129,7 +129,7 @@ repos:
       - builders
 
   - id: murmurations
-    name: Murmurations
+    name: Nori
     github: murmurations-ai
     x: Xeeban
     project_name: Murmurations.ai
@@ -147,7 +147,7 @@ repos:
       - builders
 
   - id: trike
-    name: 3rike Mobility
+    name: Anita
     github: 3rike12
     x: real_winni3
     project_name: 3rike Mobility
@@ -156,7 +156,7 @@ repos:
       - builders
 
   - id: mobrai
-    name: MOBR AI
+    name: Marcio
     github: mobr-ai
     x: mobrsys
     project_name: Cardano Analytics Platform (CAP) powered by LLM
@@ -174,7 +174,7 @@ repos:
       - builders
 
   - id: minustenex
-    name: Minustenex
+    name: Harsha
     github: agentic-architecture-research
     x: minustenexdev
     project_name: modular-agentic-harness marketplace
@@ -183,7 +183,7 @@ repos:
       - builders
 
   - id: devfreeguy
-    name: Dev Free Guy
+    name: Daniel
     github: devfreeguy
     x: devfreeguy
     project_name: SkillSwap
@@ -192,7 +192,7 @@ repos:
       - builders
 
   - id: haulink
-    name: Haulink
+    name: Abdulazeez
     github: FoladDTechie
     x: Haulink_
     project_name: Haulink
@@ -206,5 +206,61 @@ repos:
     x: Opa007i
     project_name: The Quest
     repo_url: https://github.com/opa1/the-quest
+    pies:
+      - builders
+      
+  - id: jakessevi
+    name: Jakes Sevi
+    github: Sevijakes10
+    x: JakesSevi9
+    project_name: glowing-carnival
+    repo_url: https://github.com/Sevijakes10/glowing-carnival
+    pies:
+      - builders
+
+  - id: giorgiozanon
+    name: Giorgio
+    github: adakondacoin
+    x: ZannaKonda
+    project_name: Geocaching Game
+    repo_url: https://github.com/adakondacoin/GeoCaching-game
+    notes: "@zanna-o-lator"
+    pies:
+      - builders
+
+  - id: muhammedyuguda
+    name: Muhammed
+    github: Yuguda999
+    x: yugudap
+    project_name: DevMemory - AI Coding Context Continuity Layer
+    repo_url: https://github.com/Yuguda999/devmemory
+    pies:
+      - builders
+
+
+  - id: juanitajaramillo
+    name: Juanita
+    github: JuanitaJaramill
+    x: CInsigthLab
+    project_name: Cardano Insights Lab (CIL)
+    repo_url: https://github.com/JuanitaJaramill/cardano-insights-lab
+    pies:
+      - builders
+
+  - id: kamalaliyu
+    name: Kamal Aliyu
+    github: Alkamal01
+    x: cedufy
+    project_name: CogiKids
+    repo_url: https://github.com/Alkamal01/cogikids
+    pies:
+      - builders
+
+  - id: alfreditodole
+    name: Alfred Itodole
+    github: sirxalfred
+    x: DavidTimi_1
+    project_name: Mosaic Cardano
+    repo_url: https://github.com/sirxalfred/mosaic-cardano
     pies:
       - builders
