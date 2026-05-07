@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-06T12:55:39Z",
+  "generatedAt": "2026-05-07T12:55:49Z",
   "weekStart": "2026-05-04T00:00:00Z",
   "weekEnd": "2026-05-10T23:59:59Z",
   "builders": [
@@ -87,7 +87,7 @@
     },
     {
       "id": "gidhub",
-      "name": "GIDHUB",
+      "name": "Gideon",
       "lastActivityAt": "2026-05-05T08:28:45Z",
       "commitsThisWeek": 3,
       "recentCommits": [
@@ -114,7 +114,7 @@
     },
     {
       "id": "pmcorcoran",
-      "name": "PM Corcoran",
+      "name": "Paul Corcoran",
       "lastActivityAt": "2026-05-06T00:53:03Z",
       "commitsThisWeek": 1,
       "recentCommits": [
@@ -169,7 +169,7 @@
     },
     {
       "id": "gamechanger",
-      "name": "GameChanger Finance",
+      "name": "Adriano",
       "lastActivityAt": "2026-05-02T20:02:57Z",
       "commitsThisWeek": 0,
       "recentCommits": [],
@@ -177,7 +177,7 @@
     },
     {
       "id": "yungslaiz",
-      "name": "YungSlaiz",
+      "name": "Blessed David",
       "lastActivityAt": "2025-11-24T15:49:34Z",
       "commitsThisWeek": 0,
       "recentCommits": [],
@@ -185,10 +185,22 @@
     },
     {
       "id": "maxalexweber",
-      "name": "Max Alex Weber",
-      "lastActivityAt": "2026-05-05T20:17:42Z",
-      "commitsThisWeek": 1,
+      "name": "Maximilian",
+      "lastActivityAt": "2026-05-07T05:29:49Z",
+      "commitsThisWeek": 3,
       "recentCommits": [
+        {
+          "repo": "maxalexweber1/CHAINFEED",
+          "message": "fix: update blockfrostApiKey placeholders in package.json for security",
+          "url": "https://github.com/maxalexweber1/CHAINFEED/commit/a5ae55f54e7c6559cdda11248d40e993bb24a25d",
+          "committedAt": "2026-05-07T05:29:49Z"
+        },
+        {
+          "repo": "maxalexweber1/CHAINFEED",
+          "message": "feat: update dependencies, enhance fluid tokens health computation, and add Dolos data node configuration",
+          "url": "https://github.com/maxalexweber1/CHAINFEED/commit/a44d67f00d5ba322ec011a885519881a994c199a",
+          "committedAt": "2026-05-06T20:54:53Z"
+        },
         {
           "repo": "maxalexweber1/CHAINFEED",
           "message": "feat: add FluidTokens Lending V3 decoders and finance logic\n\n- Implemented datum decoders for PoolDatum, LoanDatum, and ConfigDatum in fluidtokens-decoder.ts.\n- Added finance calculations for perpetual and installment loans in fluidtokens-finance.ts.\n- Introduced health monitoring for loans and pools in fluidtokens-health.ts, including liquidation eligibility and repayment status.\n- Enhanced type definitions and interfaces for better type safety",
@@ -200,7 +212,7 @@
     },
     {
       "id": "murmurations",
-      "name": "Murmurations",
+      "name": "Nori",
       "lastActivityAt": "2026-05-01T14:41:29Z",
       "commitsThisWeek": 0,
       "recentCommits": [],
@@ -216,7 +228,7 @@
     },
     {
       "id": "trike",
-      "name": "3rike Mobility",
+      "name": "Anita",
       "lastActivityAt": "2026-04-28T10:40:53Z",
       "commitsThisWeek": 0,
       "recentCommits": [],
@@ -224,7 +236,7 @@
     },
     {
       "id": "mobrai",
-      "name": "MOBR AI",
+      "name": "Marcio",
       "lastActivityAt": null,
       "commitsThisWeek": 0,
       "recentCommits": [],
@@ -233,45 +245,45 @@
     {
       "id": "newman5",
       "name": "Newman",
-      "lastActivityAt": "2026-05-05T16:53:33Z",
-      "commitsThisWeek": 7,
+      "lastActivityAt": "2026-05-07T03:21:21Z",
+      "commitsThisWeek": 12,
       "recentCommits": [
         {
           "repo": "Newman5/builder-season-playbook",
+          "message": "a blog and updates to the repos.yml",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/a5ae0a5d7eb61d97b703b87b04a92488d71429a1",
+          "committedAt": "2026-05-07T03:21:21Z"
+        },
+        {
+          "repo": "Newman5/builder-season-playbook",
+          "message": "Tech stack for this repo",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/4c1100b4b2c27e47ec098608359e11fa16f47e1c",
+          "committedAt": "2026-05-06T21:34:40Z"
+        },
+        {
+          "repo": "Newman5/builder-season-playbook",
           "message": "Merge branch 'main' of https://github.com/Newman5/builder-season-playbook",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/01a28476940015ae07d85be88da7693cd4881a00",
-          "committedAt": "2026-05-05T16:53:33Z"
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/545cd0a3f51564d1aeaf629cd69e2e04a66cd64e",
+          "committedAt": "2026-05-06T21:20:03Z"
         },
         {
           "repo": "Newman5/builder-season-playbook",
-          "message": "move completely to node and remove the bash",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/25c6b35819506a404ac0f53f811ad4ce69261e6c",
-          "committedAt": "2026-05-05T16:51:32Z"
-        },
-        {
-          "repo": "Newman5/builder-season-playbook",
-          "message": "cut out the x automations, replace Python normalizer with node, start on today's blog",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/8f26a3a906fb76327060df844b043c19a9fb46c9",
-          "committedAt": "2026-05-05T16:41:41Z"
+          "message": "update blog and a new script to serve site locally but not rebuild and hit the API",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/f605c506631d44c40de8354d785135cc34b81c06",
+          "committedAt": "2026-05-06T21:20:00Z"
         },
         {
           "repo": "Newman5/builder-season-playbook",
           "message": "Update builder activity data",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/5e16622bda1ed1995106922a4ffaa2b5e07abe05",
-          "committedAt": "2026-05-05T12:42:49Z"
-        },
-        {
-          "repo": "Newman5/builder-season-playbook",
-          "message": "shift to python and new progress log",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/c38aa8789b894085c5df13021bf1be1d9af65a9f",
-          "committedAt": "2026-05-05T04:20:20Z"
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/3b8b523dc5e3b16d2f35f2a1ba388edd6fc11de1",
+          "committedAt": "2026-05-06T12:55:50Z"
         }
       ],
       "error": null
     },
     {
       "id": "minustenex",
-      "name": "Minustenex",
+      "name": "Harsha",
       "lastActivityAt": null,
       "commitsThisWeek": 0,
       "recentCommits": [],
@@ -279,7 +291,7 @@
     },
     {
       "id": "devfreeguy",
-      "name": "Dev Free Guy",
+      "name": "Daniel",
       "lastActivityAt": "2026-05-05T18:14:18Z",
       "commitsThisWeek": 2,
       "recentCommits": [
@@ -300,7 +312,7 @@
     },
     {
       "id": "haulink",
-      "name": "Haulink",
+      "name": "Abdulazeez",
       "lastActivityAt": "2026-05-01T14:59:15Z",
       "commitsThisWeek": 0,
       "recentCommits": [],
@@ -313,6 +325,54 @@
       "commitsThisWeek": 0,
       "recentCommits": [],
       "error": "EMPTY_REPO_OR_NO_COMMITS"
+    },
+    {
+      "id": "jakessevi",
+      "name": "Jakes Sevi",
+      "lastActivityAt": null,
+      "commitsThisWeek": 0,
+      "recentCommits": [],
+      "error": "EMPTY_REPO_OR_NO_COMMITS"
+    },
+    {
+      "id": "giorgiozanon",
+      "name": "Giorgio",
+      "lastActivityAt": "2026-05-02T13:22:49Z",
+      "commitsThisWeek": 0,
+      "recentCommits": [],
+      "error": null
+    },
+    {
+      "id": "muhammedyuguda",
+      "name": "Muhammed",
+      "lastActivityAt": null,
+      "commitsThisWeek": 0,
+      "recentCommits": [],
+      "error": "EMPTY_REPO_OR_NO_COMMITS"
+    },
+    {
+      "id": "juanitajaramillo",
+      "name": "Juanita",
+      "lastActivityAt": "2026-05-03T07:30:32Z",
+      "commitsThisWeek": 0,
+      "recentCommits": [],
+      "error": null
+    },
+    {
+      "id": "kamalaliyu",
+      "name": "Kamal Aliyu",
+      "lastActivityAt": null,
+      "commitsThisWeek": 0,
+      "recentCommits": [],
+      "error": "REPO_NOT_FOUND"
+    },
+    {
+      "id": "alfreditodole",
+      "name": "Alfred Itodole",
+      "lastActivityAt": "2026-05-03T11:04:49Z",
+      "commitsThisWeek": 0,
+      "recentCommits": [],
+      "error": null
     }
   ]
 }
