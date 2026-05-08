@@ -7,7 +7,7 @@ repos:
     github: Mhizta-gab
     x: mhiztagab1
     project_name: Book-Worm AI
-    repo_url: https://github.com/Mhizta-gab/Book-Worm-AI
+    repo_url: https://github.com/Mhizta-gab/bookworm-ai
     pies:
       - builders
 
@@ -178,7 +178,7 @@ repos:
     github: agentic-architecture-research
     x: minustenexdev
     project_name: modular-agentic-harness marketplace
-    repo_url: https://github.com/agentic-architecture-research/modular-agent-harness
+    repo_url: https://github.com/agentic-architecture-research/plugin-harness
     pies:
       - builders
 
