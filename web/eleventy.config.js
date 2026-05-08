@@ -150,7 +150,7 @@ export default function (eleventyConfig) {
       totalBuilders: registry.length,
       withHandles: registry.filter((entry) => !!entry.x && entry.xIgnore !== true).length,
       weeks: xSearch?.weeks?.length || 0,
-      currentWeekIndex: xSearch?.currentWeekIndex || null,
+      currentAdminWeekIndex: xSearch?.currentAdminWeekIndex || null,
       configError: xSearch?.configError || null,
     };
   });

@@ -50,6 +50,7 @@ eleventyComputed:
 
   <article class="table-card">
     <h2>Activity</h2>
+    <p class="muted">GitHub activity uses the current UTC week. Builder update timing below uses the hackathon admin-week calendar.</p>
     <p><strong>Commits this week:</strong> {{ record.commitsThisWeek if record else 0 }}</p>
     <p><strong>Last activity:</strong>
       {% if record and record.lastActivityAt %}
@@ -84,11 +85,28 @@ eleventyComputed:
   {% if xSearch.configError %}
     <p class="muted">X search configuration error: {{ xSearch.configError }}</p>
   {% elseif builderSearch and builderSearch.xHandle %}
+    <p><strong>Builder Week 1 update:</strong>
+      {% if builderSearch.firstUpdateWeekEnd %}
+        Week ending {{ builderSearch.firstUpdateWeekEnd }}
+        {% if builderSearch.firstAdminWeekIndex %}
+          (Admin Week {{ builderSearch.firstAdminWeekIndex }})
+        {% endif %}
+      {% else %}
+        Not set
+      {% endif %}
+    </p>
+    <p><strong>Final presentation week:</strong>
+      {% if builderSearch.finalPresentationWeekEnd %}
+        Week ending {{ builderSearch.finalPresentationWeekEnd }}
+      {% else %}
+        Not set
+      {% endif %}
+    </p>
     <p><strong>All weeks:</strong> <a href="{{ builderSearch.searchUrl }}">Open live search for @{{ builderSearch.xHandle }}</a></p>
     <ul class="clean">
       {% for week in builderSearch.weeks %}
         <li>
-          <strong>{{ week.label }}</strong> · {{ week.dateRangeLabel }}<br>
+          <strong>{{ week.label }}</strong> · {{ week.dateRangeLabel }}{% if week.builderWeekLabel %} · {{ week.builderWeekLabel }}{% endif %}<br>
           <a href="{{ week.searchUrl }}">Open weekly search</a>
         </li>
       {% endfor %}

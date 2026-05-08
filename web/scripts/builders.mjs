@@ -3,6 +3,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 import yaml from "js-yaml";
+import { loadEvent } from "./event.mjs";
 
 const SCRIPT_DIR = path.dirname(fileURLToPath(import.meta.url));
 const WEB_DIR = path.dirname(SCRIPT_DIR);
@@ -24,6 +25,7 @@ function slugifyBuilder(builderName) {
 export function loadBuilders() {
   const raw = yaml.load(fs.readFileSync(CONFIG_FILE, "utf8")) || {};
   const repos = Array.isArray(raw.repos) ? raw.repos : [];
+  const event = loadEvent();
 
   return repos
     .filter((entry) => entry?.ignore !== true)
@@ -46,6 +48,11 @@ export function loadBuilders() {
         name: entry.name || builderName || builderId,
         github: entry.github || owner,
         x: entry.x || null,
+        firstUpdateWeekEnd:
+          entry.first_update_week_end ||
+          entry.firstUpdateWeekEnd ||
+          event.defaultBuilderWeek1End ||
+          null,
         xRequiredHashtags:
           entry.x_required_hashtags || entry.xRequiredHashtags || [],
         xRequiredMention:

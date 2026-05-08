@@ -19,6 +19,16 @@ function displayRange(startDate, endDateExclusive) {
   return `${fmt.format(start)} to ${fmt.format(end)}`;
 }
 
+function inclusiveEndDate(endDateExclusive) {
+  return addDays(endDateExclusive, -1);
+}
+
+function weekDiff(startDate, endDate) {
+  const start = new Date(`${startDate}T00:00:00Z`);
+  const end = new Date(`${endDate}T00:00:00Z`);
+  return Math.round((end.getTime() - start.getTime()) / DAY_MS / 7);
+}
+
 function buildSearchUrl({ hashtags, mention, handle, since, until }) {
   const terms = [];
 
@@ -61,13 +71,14 @@ export default function () {
     };
   }
 
-  const weeks = Array.from({ length: event.eventDurationWeeks }, (_, index) => {
-    const startDate = addDays(event.buildStart, index * 7);
+  const weeks = Array.from({ length: event.adminDurationWeeks }, (_, index) => {
+    const startDate = addDays(event.adminWeek1Start, index * 7);
     const endDateExclusive = addDays(startDate, 7);
     return {
       index: index + 1,
       startDate,
       endDateExclusive,
+      endDateInclusive: inclusiveEndDate(endDateExclusive),
       label: `Week ${index + 1}`,
       dateRangeLabel: displayRange(startDate, endDateExclusive),
       searchUrl: buildSearchUrl({
@@ -88,7 +99,7 @@ export default function () {
 
   return {
     ...event,
-    currentWeekIndex: currentWeek?.index || null,
+    currentAdminWeekIndex: currentWeek?.index || null,
     weeks,
     builders: activeBuilders.map((builder) => {
       const hashtags =
@@ -96,22 +107,49 @@ export default function () {
           ? builder.xRequiredHashtags
           : event.weeklyUpdateHashtags;
       const mention = builder.xRequiredMention || event.weeklyUpdateMention;
+      const firstUpdateWeekEnd = builder.firstUpdateWeekEnd || null;
+      const firstUpdateWeekStart = firstUpdateWeekEnd
+        ? addDays(firstUpdateWeekEnd, -6)
+        : null;
+      const firstAdminWeekIndex =
+        firstUpdateWeekStart && firstUpdateWeekStart >= event.adminWeek1Start
+          ? weekDiff(event.adminWeek1Start, firstUpdateWeekStart) + 1
+          : null;
+      const finalPresentationWeekEnd = firstUpdateWeekEnd
+        ? addDays(
+            firstUpdateWeekEnd,
+            (event.builderUpdateDurationWeeks - 1) * 7
+          )
+        : null;
 
       return {
         id: builder.id,
         name: builder.name,
         xHandle: builder.x || null,
+        firstUpdateWeekStart,
+        firstUpdateWeekEnd,
+        firstAdminWeekIndex,
+        builderUpdateDurationWeeks: event.builderUpdateDurationWeeks,
+        finalPresentationWeekEnd,
         searchUrl: builder.x
           ? buildSearchUrl({
               hashtags,
               mention,
               handle: builder.x,
-              since: event.buildStart,
+              since: event.adminWeek1Start,
               until: weeks.at(-1).endDateExclusive,
             })
           : null,
         weeks: weeks.map((week) => ({
           ...week,
+          builderWeekIndex:
+            firstAdminWeekIndex && week.index >= firstAdminWeekIndex
+              ? week.index - firstAdminWeekIndex + 1
+              : null,
+          builderWeekLabel:
+            firstAdminWeekIndex && week.index >= firstAdminWeekIndex
+              ? `Builder Week ${week.index - firstAdminWeekIndex + 1}`
+              : null,
           searchUrl: builder.x
             ? buildSearchUrl({
                 hashtags,

@@ -28,17 +28,20 @@ The problem of builders starting in different weeks.  Could each builder have a 
 
 ## Reference
 xSearch = {
-  buildStart,
-  eventDurationWeeks,
+  adminWeek1Start,
+  adminDurationWeeks,
+  builderUpdateDurationWeeks,
+  defaultBuilderWeek1End,
   weeklyUpdateHashtags,
   weeklyUpdateMention,
   configError,
-  currentWeekIndex,
+  currentAdminWeekIndex,
   weeks: [
     {
       index,
       startDate,
       endDateExclusive,
+      endDateInclusive,
       label,
       dateRangeLabel,
       searchUrl
@@ -49,12 +52,18 @@ xSearch = {
       id,
       name,
       xHandle,
+      firstUpdateWeekStart,
+      firstUpdateWeekEnd,
+      firstAdminWeekIndex,
+      finalPresentationWeekEnd,
       searchUrl,
       weeks: [
         {
           index,
           startDate,
           endDateExclusive,
+          builderWeekIndex,
+          builderWeekLabel,
           label,
           dateRangeLabel,
           searchUrl

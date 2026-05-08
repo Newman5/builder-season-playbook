@@ -15,7 +15,7 @@ permalink: /dashboard/
 <section class="hero">
   <p class="eyebrow">Dashboard</p>
   <h2 style="margin-top: 0;">Weekly public GitHub activity across tracked builder repos</h2>
-  <p>This Phase 1 view counts all public commits on each tracked repository during the current UTC week.</p>
+  <p>This Phase 1 view counts all public commits on each tracked repository during the current UTC week. It is separate from the admin hackathon week numbering used in the X updates section below.</p>
 </section>
 
 <section class="card-grid" style="margin-bottom: 24px;">
@@ -92,7 +92,7 @@ permalink: /dashboard/
 <section class="hero">
   <p class="eyebrow">X Weekly Updates</p>
   <h2 style="margin-top: 0;">Manual X search links by week</h2>
-  <p>This dashboard generates X live-search links from <code>config/repos.yml</code> and <code>config/event.yml</code>. Use them to manually review each builder's public weekly updates without paying for the X API.</p>
+  <p>This dashboard generates X live-search links from <code>config/repos.yml</code> and <code>config/event.yml</code>. Admin weeks always run Monday to Sunday, so Hackathon Week 1 is Apr 13 to Apr 19, 2026. A builder's Week 1 update can happen in a later admin week; the builder schedule below shows that offset without changing the admin week labels.</p>
 </section>
 
 <section class="card-grid" style="margin-bottom: 24px;">
@@ -105,8 +105,8 @@ permalink: /dashboard/
     <p class="stat">{{ xSummary.weeks }}</p>
   </article>
   <article class="card">
-    <p class="eyebrow">Current Week</p>
-    <p class="stat">{{ xSummary.currentWeekIndex or "Off Cycle" }}</p>
+    <p class="eyebrow">Current Admin Week</p>
+    <p class="stat">{{ xSummary.currentAdminWeekIndex or "Off Cycle" }}</p>
   </article>
   <article class="card">
     <p class="eyebrow">Default Mention</p>
@@ -119,6 +119,7 @@ permalink: /dashboard/
   {% if xSummary.configError %}
     <p class="muted">X search configuration error: {{ xSummary.configError }}</p>
   {% else %}
+    <p class="muted">Admin week numbers are the canonical labels used by the dashboard and the search links below.</p>
     <ul class="clean">
       {% for week in xSearch.weeks %}
         <li>
@@ -137,6 +138,8 @@ permalink: /dashboard/
       <tr>
         <th>Builder</th>
         <th>X</th>
+        <th>Builder Week 1</th>
+        <th>Final Presentation Week</th>
         <th>All Weeks</th>
         <th>Weekly Links</th>
         <th>Details</th>
@@ -154,6 +157,23 @@ permalink: /dashboard/
               <span class="muted">Not listed</span>
             {% endif %}
           </td>
+          <td data-label="Builder Week 1">
+            {% if builderSearch and builderSearch.firstUpdateWeekEnd %}
+              Week ending {{ builderSearch.firstUpdateWeekEnd }}
+              {% if builderSearch.firstAdminWeekIndex %}
+                <br><span class="muted">Admin Week {{ builderSearch.firstAdminWeekIndex }}</span>
+              {% endif %}
+            {% else %}
+              <span class="muted">Not set</span>
+            {% endif %}
+          </td>
+          <td data-label="Final Presentation Week">
+            {% if builderSearch and builderSearch.finalPresentationWeekEnd %}
+              Week ending {{ builderSearch.finalPresentationWeekEnd }}
+            {% else %}
+              <span class="muted">Not set</span>
+            {% endif %}
+          </td>
           <td data-label="All Weeks">
             {% if builderSearch and builderSearch.searchUrl %}
               <a href="{{ builderSearch.searchUrl }}">Open search</a>
@@ -165,7 +185,7 @@ permalink: /dashboard/
             {% if builderSearch and builderSearch.weeks.length %}
               {% for week in builderSearch.weeks %}
                 {% if week.searchUrl %}
-                  <a href="{{ week.searchUrl }}">{{ week.label }}</a>{% if not loop.last %}, {% endif %}
+                  <a href="{{ week.searchUrl }}">{{ week.label }}</a>{% if week.builderWeekLabel %} <span class="muted">({{ week.builderWeekLabel }})</span>{% endif %}{% if not loop.last %}, {% endif %}
                 {% endif %}
               {% endfor %}
             {% else %}

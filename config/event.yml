@@ -18,15 +18,21 @@ tagline: "Build consistently. Share publicly. Ship real products."
 # Use ISO 8601 format: YYYY-MM-DD
 enrollment_start: "2026-04-12"
 enrollment_end: "2026-05-03"
-build_start: "2026-04-19"
+admin_week_1_start: "2026-04-13"
 build_end: "2026-07-19"
-final_presentation_start: "2026-07-19"
-final_presentation_end: "2026-07-12"
+final_presentation_start: "2026-07-13"
+final_presentation_end: "2026-07-19"
 payout_start: "2026-07-19"
 payout_end: "2026-07-26"
 
-# Computed for convenience — fill in manually
-event_duration_weeks: 12
+# Admin weeks are the canonical hackathon weeks shown on the dashboard.
+# Week 1 runs Monday 2026-04-13 through Sunday 2026-04-19.
+admin_duration_weeks: 14
+
+# Builders record 12 consecutive weekly updates, starting from their own
+# Builder Week 1. Store Builder Week 1 as the Sunday week-ending date.
+builder_update_duration_weeks: 12
+default_builder_week_1_end: "2026-05-03"
 
 # --- Reward Pools ---
 # Use the name of your native token or currency (e.g. ADA, ETH, USD, USDC)

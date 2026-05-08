@@ -30,11 +30,23 @@ ELEVENTY_SITE_URL="https://your-site.example.com/" npm run build
 ## Data flow
 
 - `config/repos.yml` is the manual builder registry.
-- `config/event.yml` defines the weekly X search rules and date windows.
+- `config/event.yml` defines the admin week calendar, the builder update cadence, and the weekly X search rules.
 - `src/_data/builders.js` reads and normalizes `config/repos.yml` directly at Eleventy build time.
-- `src/_data/xSearch.js` computes per-week and per-builder X live-search links directly at Eleventy build time.
+- `src/_data/xSearch.js` computes admin-week windows plus per-builder update timing and X live-search links directly at Eleventy build time.
 - `./scripts/generate-activity.mjs` fetches public GitHub commit activity and writes `src/_data/activity.json`.
 - Eleventy publishes the normalized builder registry at `/data/builders.json`, the cached GitHub snapshot at `/data/activity.json`, and the computed X search metadata at `/data/x-search.json`.
+
+## Week model
+
+- Admin week numbering is canonical for the dashboard. Week 1 runs Monday `2026-04-13` through Sunday `2026-04-19`.
+- Builder update timing is separate. A builder's "Week 1 update" is the first Sunday-ending week they use for public updates, which can happen in a later admin week.
+- `config/event.yml` sets the shared defaults:
+  - `admin_week_1_start`
+  - `admin_duration_weeks`
+  - `builder_update_duration_weeks`
+  - `default_builder_week_1_end`
+- `config/repos.yml` can override the default builder start with `first_update_week_end` on an individual builder record.
+- The dashboard keeps admin week labels on search links and shows builder-relative timing as supporting context.
 
 ## Tokens
 
