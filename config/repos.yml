@@ -17,6 +17,7 @@ repos:
     name: Ian
     github: IanoNjuguna
     x: 0xxxIaN0
+    first_update_week_end: "2026-04-19"
     project_name: Doba World
     repo_url: https://github.com/IanoNjuguna/bookish-worm
     pies:
@@ -44,6 +45,7 @@ repos:
     name: Gideon
     github: 0xGIDHUB
     x: 0xGIDHUB
+    first_update_week_end: "2026-04-26"
     project_name: Tixano
     repo_url: https://github.com/0xGIDHUB/tixano
     pies:
@@ -53,6 +55,7 @@ repos:
     name: Paul Corcoran
     github: pmcorcoran
     x: Adafan430292
+    first_update_week_end: "2026-04-26"
     project_name: ada battles
     repo_url: https://github.com/pmcorcoran/ada-battles
     pies:
@@ -62,6 +65,7 @@ repos:
     name: Harrie
     github: IamHarrie-Labs
     x: IamHarrie
+    first_update_week_end: "2026-04-26"
     project_name: Beni — AI Agent Wallet Guardrails on Cardano
     repo_url: https://github.com/IamHarrie-Labs/beni
     pies:
@@ -71,6 +75,7 @@ repos:
     name: Lewis
     github: lewis-nduati
     x: everydaylewis
+    first_update_week_end: "2026-04-26"
     project_name: TRACOM-CREDENTIALS
     repo_url: https://github.com/lewis-nduati/Tracom-credentials.git
     pies:
@@ -80,6 +85,7 @@ repos:
     name: Abid
     github: ArmanAbid
     x: _armanabid
+    first_update_week_end: "2026-04-26"
     project_name: ChainTask
     repo_url: https://github.com/ArmanAbid/ChainTask
     pies:
