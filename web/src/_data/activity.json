@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-09T12:35:34Z",
+  "generatedAt": "2026-05-10T12:34:42Z",
   "weekStart": "2026-05-04T00:00:00Z",
   "weekEnd": "2026-05-10T23:59:59Z",
   "builders": [
@@ -53,9 +53,21 @@
     {
       "id": "dammy",
       "name": "Dammy",
-      "lastActivityAt": "2026-05-05T20:24:52Z",
-      "commitsThisWeek": 3,
+      "lastActivityAt": "2026-05-09T14:01:02Z",
+      "commitsThisWeek": 5,
       "recentCommits": [
+        {
+          "repo": "Dammy7942/accordiax",
+          "message": "Ajusted the UI color of the Accordiax on the landing page",
+          "url": "https://github.com/Dammy7942/accordiax/commit/4ff2f7423f3ef77aff84e170aa0a86d35999cd3c",
+          "committedAt": "2026-05-09T14:01:02Z"
+        },
+        {
+          "repo": "Dammy7942/accordiax",
+          "message": "fix: update request status to matched on offer acceptance",
+          "url": "https://github.com/Dammy7942/accordiax/commit/5af36c8c3adbdcdd08d356eec75e7f6ffa029436",
+          "committedAt": "2026-05-09T12:57:49Z"
+        },
         {
           "repo": "Dammy7942/accordiax",
           "message": "Add pending offers for students and offer history for consultants to complete agreement flow.",
@@ -101,9 +113,15 @@
     {
       "id": "gidhub",
       "name": "Gideon",
-      "lastActivityAt": "2026-05-08T20:44:07Z",
-      "commitsThisWeek": 5,
+      "lastActivityAt": "2026-05-09T17:56:07Z",
+      "commitsThisWeek": 6,
       "recentCommits": [
+        {
+          "repo": "0xGIDHUB/tixano",
+          "message": "Register functionality for events added",
+          "url": "https://github.com/0xGIDHUB/tixano/commit/25bc427c31386b27e35361d89266dfa9acbc605c",
+          "committedAt": "2026-05-09T17:56:07Z"
+        },
         {
           "repo": "0xGIDHUB/tixano",
           "message": "Added links to download wallet extensions",
@@ -127,12 +145,6 @@
           "message": "Added safeguard to the cardano network",
           "url": "https://github.com/0xGIDHUB/tixano/commit/89badd6b41a0257efff20e26c3ebebf2acacb573",
           "committedAt": "2026-05-05T01:35:25Z"
-        },
-        {
-          "repo": "0xGIDHUB/tixano",
-          "message": "Create Events Functionality Added!",
-          "url": "https://github.com/0xGIDHUB/tixano/commit/09d90cbcd04627237676cb0606cb4cf26851adfe",
-          "committedAt": "2026-05-04T22:19:22Z"
         }
       ],
       "error": null
@@ -140,9 +152,27 @@
     {
       "id": "pmcorcoran",
       "name": "Paul Corcoran",
-      "lastActivityAt": "2026-05-06T00:53:03Z",
-      "commitsThisWeek": 1,
+      "lastActivityAt": "2026-05-10T03:21:22Z",
+      "commitsThisWeek": 4,
       "recentCommits": [
+        {
+          "repo": "pmcorcoran/ada-battles",
+          "message": "Merge branch 'main' of github.com:pmcorcoran/ada-battles",
+          "url": "https://github.com/pmcorcoran/ada-battles/commit/ef695d1bb382382ce3e03416250424bf1da5930e",
+          "committedAt": "2026-05-10T03:21:22Z"
+        },
+        {
+          "repo": "pmcorcoran/ada-battles",
+          "message": "add tx builder rough draft",
+          "url": "https://github.com/pmcorcoran/ada-battles/commit/7380cbb9be61c70b4e61302e4ae785d99bd0d47c",
+          "committedAt": "2026-05-10T02:48:26Z"
+        },
+        {
+          "repo": "pmcorcoran/ada-battles",
+          "message": "add tx builder rough draft",
+          "url": "https://github.com/pmcorcoran/ada-battles/commit/22752af440ebaa7ecca2fa1bf3f9e13239aa471b",
+          "committedAt": "2026-05-10T02:41:16Z"
+        },
         {
           "repo": "pmcorcoran/ada-battles",
           "message": "added 95% complete hydra referee contract",
@@ -202,14 +232,38 @@
     {
       "id": "armanabid",
       "name": "Abid",
-      "lastActivityAt": "2026-05-08T18:38:19Z",
-      "commitsThisWeek": 1,
+      "lastActivityAt": "2026-05-09T17:03:10Z",
+      "commitsThisWeek": 7,
       "recentCommits": [
         {
           "repo": "ArmanAbid/ChainTask",
-          "message": "Delete contracts/.DS_Store",
-          "url": "https://github.com/ArmanAbid/ChainTask/commit/49ffbbe082093e743af550f6c99f3b6e11acad61",
-          "committedAt": "2026-05-08T18:38:19Z"
+          "message": "ignore build artifacts and macos junk",
+          "url": "https://github.com/ArmanAbid/ChainTask/commit/d400f0ada9221d31ea2b44ec5558e840b0381cd3",
+          "committedAt": "2026-05-09T17:03:10Z"
+        },
+        {
+          "repo": "ArmanAbid/ChainTask",
+          "message": "add branch tests",
+          "url": "https://github.com/ArmanAbid/ChainTask/commit/9ab25933130c0d2272bcbcd90f1d924144c31cff",
+          "committedAt": "2026-05-09T16:58:11Z"
+        },
+        {
+          "repo": "ArmanAbid/ChainTask",
+          "message": "wire escrow dispatcher, update reputation stub",
+          "url": "https://github.com/ArmanAbid/ChainTask/commit/6438cc9241330dfe1012dc6408c121b200cc1e46",
+          "committedAt": "2026-05-09T16:57:50Z"
+        },
+        {
+          "repo": "ArmanAbid/ChainTask",
+          "message": "implement update, select, submit, release, refund, withdraw",
+          "url": "https://github.com/ArmanAbid/ChainTask/commit/a774e3e22b7cdaefece7caa48bfd17fcb81beecb",
+          "committedAt": "2026-05-09T16:57:32Z"
+        },
+        {
+          "repo": "ArmanAbid/ChainTask",
+          "message": "add tx helpers + global config lookup",
+          "url": "https://github.com/ArmanAbid/ChainTask/commit/5f9ad3932b8eb704da222a667f6882d8db94d808",
+          "committedAt": "2026-05-09T16:57:26Z"
         }
       ],
       "error": null
@@ -269,9 +323,21 @@
     {
       "id": "maxalexweber",
       "name": "Maximilian",
-      "lastActivityAt": "2026-05-08T21:02:01Z",
-      "commitsThisWeek": 4,
+      "lastActivityAt": "2026-05-10T05:38:49Z",
+      "commitsThisWeek": 6,
       "recentCommits": [
+        {
+          "repo": "maxalexweber1/CHAINFEED",
+          "message": "feat: Enhance documentation for on-chain integration and example stop-loss validator tests",
+          "url": "https://github.com/maxalexweber1/CHAINFEED/commit/f86bf3cf99eed7d0d2561ed84f973c6e58e80f9a",
+          "committedAt": "2026-05-10T05:38:49Z"
+        },
+        {
+          "repo": "maxalexweber1/CHAINFEED",
+          "message": "feat: Add unit tests and implementations for Aiken quote encoder\n\n- Implement `test-aiken-quote-encoder.ts` to validate canonical quote bytes, signature generation, and PlutusData serialization.\n- Create `aiken-quote-encoder.ts` for generating and signing quotes with Ed25519 signatures, ensuring bytewise-identical canonical CBOR output.\n- Add `test-liqwid-finance.ts` to test empirical APR/APY derivation from interestIndex deltas in Liqwid finance.\n- Introduce `liqwid-finance.ts` for recording snapshots and deriving rates based on interest index changes, with support for independent market snapshots.",
+          "url": "https://github.com/maxalexweber1/CHAINFEED/commit/dcd4bf4d475de374f5e907eb1fedea3083dc3160",
+          "committedAt": "2026-05-09T19:59:26Z"
+        },
         {
           "repo": "maxalexweber1/CHAINFEED",
           "message": "feat: add Liqwid Finance v2 smoke test and adapter\n\n- Implement smoke test for Liqwid Finance v2 on mainnet, validating market states and APY data.\n- Create Liqwid adapter for fetching market states and APY data from on-chain and GraphQL sources.",
@@ -289,12 +355,6 @@
           "message": "feat: update dependencies, enhance fluid tokens health computation, and add Dolos data node configuration",
           "url": "https://github.com/maxalexweber1/CHAINFEED/commit/a44d67f00d5ba322ec011a885519881a994c199a",
           "committedAt": "2026-05-06T20:54:53Z"
-        },
-        {
-          "repo": "maxalexweber1/CHAINFEED",
-          "message": "feat: add FluidTokens Lending V3 decoders and finance logic\n\n- Implemented datum decoders for PoolDatum, LoanDatum, and ConfigDatum in fluidtokens-decoder.ts.\n- Added finance calculations for perpetual and installment loans in fluidtokens-finance.ts.\n- Introduced health monitoring for loans and pools in fluidtokens-health.ts, including liquidation eligibility and repayment status.\n- Enhanced type definitions and interfaces for better type safety",
-          "url": "https://github.com/maxalexweber1/CHAINFEED/commit/7a048bc9a1e9913fb52b628ecdcf2d4e9957d917",
-          "committedAt": "2026-05-05T20:17:42Z"
         }
       ],
       "error": null
@@ -357,17 +417,60 @@
     {
       "id": "mobrai",
       "name": "Marcio",
-      "lastActivityAt": null,
-      "commitsThisWeek": 0,
-      "recentCommits": [],
-      "error": "EMPTY_REPO_OR_NO_COMMITS"
+      "lastActivityAt": "2026-05-09T21:29:43Z",
+      "commitsThisWeek": 4,
+      "recentCommits": [
+        {
+          "repo": "mobr-ai/cap-pie",
+          "message": "Merge commit '05a186174255649d80b68c6c06a2950c60ab1b6f'",
+          "url": "https://github.com/mobr-ai/cap-pie/commit/e71c1f111d42e19de428a5fb3868fb9c4304efd9",
+          "committedAt": "2026-05-09T21:29:43Z"
+        },
+        {
+          "repo": "mobr-ai/cap-pie",
+          "message": "feat: add federated SPARQL + SQL query pipeline for onchain and OHLCV asset data\n\nadd PostgreSQL asset and OHLCV schema/models\nadd federated query planner supporting SPARQL, SQL, or mixed execution\nreplace single-source NL->SPARQL flow with federated NL query generation\nadd SQL execution service with readonly validation and limit enforcement\nextend Redis NL cache to support federated query payloads\npreserve and restore placeholders for both SPARQL and SQL cached queries\ninfer query source type from cached assistant payloads instead of hardcoded classifiers\nsupport mixed onchain + offchain contextualized responses\nkeep backward compatibility with legacy SPARQL-only cache entries\nadd Alembic migration for asset and OHLCV tables\nimprove validation, execution safety, and retry handling for federated queries",
+          "url": "https://github.com/mobr-ai/cap-pie/commit/05a186174255649d80b68c6c06a2950c60ab1b6f",
+          "committedAt": "2026-05-09T20:57:03Z"
+        },
+        {
+          "repo": "mobr-ai/cap-pie",
+          "message": "Add 'backend/' from commit 'ebef7861c4decb86d5a1b2edc3e4dde1f11d280c'\n\ngit-subtree-dir: backend\ngit-subtree-mainline: 0fa0a7dc9757a6c503fc242a0c8a874ac229b29e\ngit-subtree-split: ebef7861c4decb86d5a1b2edc3e4dde1f11d280c",
+          "url": "https://github.com/mobr-ai/cap-pie/commit/9cedcf0ee331ea43bdfb8d27a451eebff79303db",
+          "committedAt": "2026-05-09T18:02:13Z"
+        },
+        {
+          "repo": "mobr-ai/cap-pie",
+          "message": "Initial commit",
+          "url": "https://github.com/mobr-ai/cap-pie/commit/0fa0a7dc9757a6c503fc242a0c8a874ac229b29e",
+          "committedAt": "2026-05-09T18:01:07Z"
+        }
+      ],
+      "error": null
     },
     {
       "id": "newman5",
       "name": "Newman",
-      "lastActivityAt": "2026-05-09T02:27:47Z",
-      "commitsThisWeek": 19,
+      "lastActivityAt": "2026-05-10T03:03:43Z",
+      "commitsThisWeek": 22,
       "recentCommits": [
+        {
+          "repo": "Newman5/builder-season-playbook",
+          "message": "Merge branch 'main' of https://github.com/Newman5/builder-season-playbook",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/8b2a01a63130e331b6e14303a10a37600605e5c2",
+          "committedAt": "2026-05-10T03:03:43Z"
+        },
+        {
+          "repo": "Newman5/builder-season-playbook",
+          "message": "adding a project.yml file",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/a2ea758cd4c9ef221261d83adb758c0c86504029",
+          "committedAt": "2026-05-10T02:44:46Z"
+        },
+        {
+          "repo": "Newman5/builder-season-playbook",
+          "message": "Update builder activity data",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/3328e4970ef8fb647a30982b0b51165c00fba203",
+          "committedAt": "2026-05-09T12:35:42Z"
+        },
         {
           "repo": "Newman5/builder-season-playbook",
           "message": "add code of conduct",
@@ -379,24 +482,6 @@
           "message": "updating the first post week for each builder",
           "url": "https://github.com/Newman5/builder-season-playbook/commit/df8530be335f677af10fda9b7f8c7077608a8ca5",
           "committedAt": "2026-05-09T01:07:54Z"
-        },
-        {
-          "repo": "Newman5/builder-season-playbook",
-          "message": "Merge branch 'main' of https://github.com/Newman5/builder-season-playbook",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/7e14f50472af79cac64a8b77ae950a51739e7410",
-          "committedAt": "2026-05-08T15:53:55Z"
-        },
-        {
-          "repo": "Newman5/builder-season-playbook",
-          "message": "Making Admin Weeks and a new progress log",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/5605f19abfa6571f76ad415ee923e48360163e79",
-          "committedAt": "2026-05-08T15:53:52Z"
-        },
-        {
-          "repo": "Newman5/builder-season-playbook",
-          "message": "Getting dashboard ready for preview",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/4057fe2a23bb9526c1ee7b6bfcf01d4121a90a12",
-          "committedAt": "2026-05-08T15:11:58Z"
         }
       ],
       "error": null
@@ -503,9 +588,15 @@
     {
       "id": "muhammedyuguda",
       "name": "Muhammed",
-      "lastActivityAt": "2026-05-08T17:56:32Z",
-      "commitsThisWeek": 2,
+      "lastActivityAt": "2026-05-09T21:36:01Z",
+      "commitsThisWeek": 3,
       "recentCommits": [
+        {
+          "repo": "Yuguda999/devmemory",
+          "message": "feat: add REST API with auth system complete\n\n- FastAPI app factory with async lifespan (init_db/close_db)\n- Auth routes: POST /auth/register, POST /auth/login\n- API key management: POST/GET/DELETE /auth/api-keys\n- Pydantic v2 request/response schemas with validation\n- Auth middleware: JWT bearer for REST, API key for MCP\n- Eager-loading subscription resolution (avoid DetachedInstance)\n- Health check endpoint: GET /health\n- Console script entry: 'devmemory' command\n- python -m devmemory support via __main__.py\n- 63 tests passing (19 new integration + 10 middleware)",
+          "url": "https://github.com/Yuguda999/devmemory/commit/7c6841f791435b9a77f174fa057353b784ca43d1",
+          "committedAt": "2026-05-09T21:36:01Z"
+        },
         {
           "repo": "Yuguda999/devmemory",
           "message": "feat: add auth module and repository layer\n\n- Password hashing (bcrypt, 12 rounds)\n- API key generation (dm_key_ prefix, 64 hex chars entropy)\n- API key hashing (SHA-256 for fast lookup)\n- JWT token creation and verification (PyJWT)\n- Repository layer with user-scoped CRUD:\n  - create_user (with auto free-tier subscription)\n  - get_user_by_email / get_user_by_id\n  - create/list/revoke API keys\n  - get_or_create_project\n- 16 new auth tests (34 total, all passing)",
