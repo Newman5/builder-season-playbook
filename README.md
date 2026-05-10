@@ -87,6 +87,8 @@ Key routes:
 
 Builder registrations are maintained in `config/repos.yml`.
 
+Each builder repo can also publish a root-level `project.yml` for distributed metadata ingestion through the GitHub API. This repo includes one at [`project.yml`](project.yml).
+
 Useful commands from `web/`:
 
 ```bash
@@ -95,7 +97,9 @@ npm run build:data
 npm run build
 ```
 
-`config/repos.yml` is the manual source of truth for builders. Eleventy reads it directly and publishes the normalized registry at `/data/builders.json`. `config/event.yml` drives the computed X search links for each hackathon week. `npm run build:data` refreshes the cached GitHub snapshot in `web/src/_data/activity.json`.
+`config/repos.yml` is the current manual source of truth for builders in this repo. Eleventy reads it directly and publishes the normalized registry at `/data/builders.json`. `config/event.yml` drives the computed X search links for each hackathon week. `npm run build:data` refreshes the cached GitHub snapshot in `web/src/_data/activity.json`.
+
+The root `project.yml` is a companion format intended for cross-repo ingestion. It gives each builder repository a self-contained metadata file that an admin script can fetch through the GitHub API before normalizing it for 11ty.
 
 X review is now manual-search based. The dashboard generates X live-search links from the configured hashtags, mention, builder handles, and weekly date windows, so there is no X API dependency and no separate X data build step.
 

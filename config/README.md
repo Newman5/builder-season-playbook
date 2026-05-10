@@ -64,6 +64,35 @@ For X tracking, you can also add:
 
 Per-builder X rules override the defaults in `event.yml`.
 
+## project.yml
+
+`project.yml` is the distributed per-repo metadata file for builder projects.
+
+Place it at the root of each builder repository when you want admins to collect project metadata through the GitHub API and ingest it into an Eleventy data loader or another aggregation script.
+
+Current shape:
+
+- `id`
+- `name`
+- `tagline`
+- `builder.name`
+- `builder.x_handle`
+- `builder.github`
+- `repo_url`
+- `demo_url`
+- `website_url`
+- `status`
+- `updates[]`
+
+Each `updates[]` item should include:
+
+- `week`
+- `date`
+- `x_url`
+- `summary`
+
+In this repo, see [`project.yml`](../project.yml) for the canonical example.
+
 ## Builder X Update Files
 
 The website now generates X live-search links directly from `config/event.yml` and `config/repos.yml`.

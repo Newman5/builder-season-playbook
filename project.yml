@@ -1,0 +1,31 @@
+# Root-level project metadata for builder repo ingestion.
+# Admin tooling can collect this file across repos via the GitHub API.
+# If you fork this repo for a new builder project, update these values.
+
+id: builder-season-playbook
+name: Builder Season Playbook
+tagline: A reusable playbook for running builder-season style hackathons.
+
+builder:
+  name: Newman
+  x_handle: "@Newman5"
+  github: Newman5
+
+repo_url: https://github.com/Newman5/builder-season-playbook
+demo_url:
+website_url:
+
+status: active
+
+updates:
+  - week: 1
+    date: 2026-04-19
+    x_url: https://x.com/example/status/123
+    summary: >
+      Started outlining the dashboard architecture and data model.
+
+  - week: 2
+    date: 2026-04-26
+    x_url: https://x.com/example/status/456
+    summary: >
+      Built the first iteration of the dashboard and explored 11ty global data.

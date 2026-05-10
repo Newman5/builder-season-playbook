@@ -71,6 +71,8 @@ Edit the root `README.md` to reflect your event:
 - Update the "Start Here" section with correct file links
 - Remove or update the "Contributing" section as appropriate
 
+If this repo is also serving as a builder project repo, update the root `project.yml` so admins can ingest your metadata and weekly summaries from GitHub.
+
 ---
 
 ## Step 6 — Set Up Registration
