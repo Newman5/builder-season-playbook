@@ -11,14 +11,19 @@ permalink: /data/
 <section class="hero">
   <p class="eyebrow">Raw Data</p>
   <h2 style="margin-top: 0;">Published JSON used by the site</h2>
-  <p>This page links to the normalized builder registry, the generated GitHub activity snapshot, and the computed X search metadata used for manual weekly review.</p>
+  <p>This page links to the normalized builder registry, fetched project metadata, the generated GitHub activity snapshot, and the computed X search metadata used for manual weekly review.</p>
 </section>
 
 <section class="card-grid">
   <article class="card">
     <h2>Builder Registry</h2>
-    <p>Normalized JSON generated from <code>config/repos.yml</code>.</p>
+    <p>Merged builder JSON generated from <code>config/repos.yml</code> plus fetched <code>project.yml</code> overlays when present.</p>
     <a class="button secondary" href="{{ '/data/builders.json' | withBase }}">Open builders.json</a>
+  </article>
+  <article class="card">
+    <h2>Project Metadata Cache</h2>
+    <p>Fetched root-level <code>project.yml</code> records cached under <code>src/_data/</code> for the site build.</p>
+    <a class="button secondary" href="{{ '/data/project-metadata.json' | withBase }}">Open project-metadata.json</a>
   </article>
   <article class="card">
     <h2>Activity Snapshot</h2>

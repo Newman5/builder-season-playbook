@@ -44,6 +44,7 @@ Full walkthrough: [`docs/setup-guide.md`](docs/setup-guide.md)
 /web            ← Published Eleventy site and dashboard
 /examples       ← Reference implementations
 /archive        ← Historical event snapshots
+/project.yml    ← Optional per-builder project metadata for GitHub ingestion
 ```
 
 ---
@@ -88,18 +89,34 @@ Key routes:
 Builder registrations are maintained in `config/repos.yml`.
 
 Each builder repo can also publish a root-level `project.yml` for distributed metadata ingestion through the GitHub API. This repo includes one at [`project.yml`](project.yml).
+There is also a reusable template at [`templates/builders/project.yml.example`](templates/builders/project.yml.example).
 
 Useful commands from `web/`:
 
 ```bash
 npm ci
 npm run build:data
+npm run sync:repos
 npm run build
 ```
 
 `config/repos.yml` is the current manual source of truth for builders in this repo. Eleventy reads it directly and publishes the normalized registry at `/data/builders.json`. `config/event.yml` drives the computed X search links for each hackathon week. `npm run build:data` refreshes the cached GitHub snapshot in `web/src/_data/activity.json`.
 
 The root `project.yml` is a companion format intended for cross-repo ingestion. It gives each builder repository a self-contained metadata file that an admin script can fetch through the GitHub API before normalizing it for 11ty.
+
+Current data flow:
+
+1. `config/repos.yml` defines which builders and repos are tracked.
+2. `npm run build:data` fetches each tracked repo's root `project.yml` when present and caches the results in `web/src/_data/project-metadata.json`.
+3. The builder loader merges builder-owned profile fields from fetched `project.yml` into the manual registry with fallback to `config/repos.yml` when the file is missing or incomplete.
+4. Eleventy publishes the merged builder registry at `/data/builders.json` and uses it for dashboard and builder pages.
+5. `npm run sync:repos` lets admins write selected fields from fetched `project.yml` back into `config/repos.yml` with a per-builder change report.
+
+Field ownership:
+
+- `config/repos.yml` owns builder membership, `id`, pies, notes, ignore flags, and X/week admin overrides.
+- `project.yml` owns builder/project profile fields such as project name, tagline, builder display name, GitHub handle, X handle, repo URL, demo URL, website URL, status, and update summaries.
+- If `project.yml` is missing, the site falls back to `config/repos.yml` and the builder still renders normally.
 
 X review is now manual-search based. The dashboard generates X live-search links from the configured hashtags, mention, builder handles, and weekly date windows, so there is no X API dependency and no separate X data build step.
 

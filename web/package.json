@@ -5,7 +5,8 @@
   "type": "module",
   "main": "eleventy.config.js",
   "scripts": {
-    "build:data": "node ./scripts/generate-activity.mjs",
+    "build:data": "node ./scripts/build-data.mjs",
+    "sync:repos": "node ./scripts/sync-repos.mjs",
     "prestart": "npm run build:data",
     "start": "eleventy --serve",
     "11ty": "eleventy --serve",

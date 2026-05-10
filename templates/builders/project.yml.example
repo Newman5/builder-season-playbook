@@ -1,0 +1,24 @@
+# Root-level builder project metadata for admin ingestion.
+# Save this file as /project.yml at the repo root.
+
+id: your-project-id
+name: Your Project Name
+tagline: A one-line description of what you are building.
+
+builder:
+  name: Your Name
+  x_handle: "@yourhandle"
+  github: your-github-username
+
+repo_url: https://github.com/your-github-username/your-repo
+demo_url:
+website_url:
+
+status: active
+
+updates:
+  - week: 1
+    date: 2026-04-19
+    x_url: https://x.com/yourhandle/status/123
+    summary: >
+      Shared the first public progress update for the project.

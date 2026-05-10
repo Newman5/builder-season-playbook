@@ -186,6 +186,10 @@ async function main() {
   fs.writeFileSync(OUTPUT_FILE, `${JSON.stringify(snapshot, null, 2)}\n`, "utf8");
 }
 
+export async function writeActivitySnapshot() {
+  await main();
+}
+
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
   await main();
 }

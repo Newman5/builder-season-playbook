@@ -38,6 +38,9 @@ jobs:
         run: npm ci
 
       - name: Build with Eleventy
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_ACTIVITY_TOKEN: ${{ secrets.GH_ACTIVITY_TOKEN }}
         run: npm run build-ghpages
 
       - name: Setup Pages

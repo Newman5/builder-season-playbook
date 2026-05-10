@@ -55,6 +55,16 @@ Suggested fields:
 
 Use `ignore: true` when you want to keep an entry in the registry without publishing it on the site or including it in activity generation.
 
+`repos.yml` also remains the source of truth for:
+
+- builder membership in the dashboard
+- `id`
+- `pies`
+- `notes`
+- `ignore`
+- per-builder X override fields
+- per-builder week timing overrides
+
 For X tracking, you can also add:
 
 - `x`
@@ -92,6 +102,34 @@ Each `updates[]` item should include:
 - `summary`
 
 In this repo, see [`project.yml`](../project.yml) for the canonical example.
+
+Builder/project field mapping:
+
+- `project.yml > id` becomes builder `projectId`
+- `project.yml > name` becomes builder `projectName`
+- `project.yml > tagline` becomes builder `tagline`
+- `project.yml > builder.name` becomes builder display `name`
+- `project.yml > builder.github` becomes builder `github`
+- `project.yml > builder.x_handle` becomes builder `x` after removing the leading `@`
+- `project.yml > repo_url` becomes builder `repoUrl`
+- `project.yml > demo_url` becomes builder `demoUrl`
+- `project.yml > website_url` becomes builder `websiteUrl`
+- `project.yml > demo_url` or `website_url` becomes builder `projectUrl`
+- `project.yml > status` becomes builder `status`
+- `project.yml > updates` becomes builder `updates`
+
+Fallback and precedence:
+
+- `config/repos.yml` seeds the tracked repo list.
+- When fetched `project.yml` metadata is present, builder/project profile fields are merged into the normalized builder data.
+- When fetched `project.yml` is missing or partial, the missing fields fall back to `repos.yml`.
+- Admin-only controls in `repos.yml` are never overwritten during the site build.
+
+Admin sync:
+
+- Run `npm run build:data` from `web/` to refresh fetched `project.yml` cache data.
+- Run `npm run sync:repos` from `web/` to update selected profile fields in `config/repos.yml`.
+- The sync command prints which builders and fields changed and skips builders with missing or invalid metadata.
 
 ## Builder X Update Files
 

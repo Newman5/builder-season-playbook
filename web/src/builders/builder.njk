@@ -19,6 +19,9 @@ eleventyComputed:
 <section class="hero">
   <p class="eyebrow">Builder Detail</p>
   <h2 style="margin-top: 0;">{{ builder.name }}</h2>
+  {% if builder.tagline %}
+    <p class="muted" style="margin-top: 0;">{{ builder.tagline }}</p>
+  {% endif %}
   <p>
     {% if builder.projectUrl %}
       <a href="{{ builder.projectUrl }}">{{ builder.projectName or "Project link" }}</a>
@@ -36,8 +39,17 @@ eleventyComputed:
       {% if builder.x %}
         <li><strong>X:</strong> <a href="https://x.com/{{ builder.x }}">@{{ builder.x }}</a></li>
       {% endif %}
+      {% if builder.status %}
+        <li><strong>Status:</strong> {{ builder.status }}</li>
+      {% endif %}
       {% if builder.repoUrl %}
         <li><strong>Tracked repo:</strong> <a href="{{ builder.repoUrl }}">{{ builder.repoUrl }}</a></li>
+      {% endif %}
+      {% if builder.demoUrl %}
+        <li><strong>Demo:</strong> <a href="{{ builder.demoUrl }}">{{ builder.demoUrl }}</a></li>
+      {% endif %}
+      {% if builder.websiteUrl %}
+        <li><strong>Website:</strong> <a href="{{ builder.websiteUrl }}">{{ builder.websiteUrl }}</a></li>
       {% endif %}
       {% if builder.pies and builder.pies.length %}
         <li><strong>Pies:</strong> {{ builder.pies | join(", ") }}</li>
@@ -62,6 +74,25 @@ eleventyComputed:
       {% endif %}
     </p>
   </article>
+</section>
+
+<section class="table-card" style="margin-top: 24px;">
+  <h2>Project Updates</h2>
+  {% if builder.updates and builder.updates.length %}
+    <ul class="clean">
+      {% for update in builder.updates %}
+        <li>
+          <strong>Week {{ update.week or "?" }}</strong>{% if update.date %} · {{ update.date | readableDate }}{% endif %}<br>
+          {% if update.summary %}{{ update.summary }}<br>{% endif %}
+          {% if update.xUrl %}<a href="{{ update.xUrl }}">Open X update</a>{% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  {% elseif builder.projectMetadataError and builder.projectMetadataError != "NOT_FOUND" %}
+    <p class="muted">Project metadata is unavailable right now: {{ builder.projectMetadataError }}</p>
+  {% else %}
+    <p class="muted">No project updates are listed yet.</p>
+  {% endif %}
 </section>
 
 <section class="table-card" style="margin-top: 24px;">

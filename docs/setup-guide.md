@@ -73,6 +73,8 @@ Edit the root `README.md` to reflect your event:
 
 If this repo is also serving as a builder project repo, update the root `project.yml` so admins can ingest your metadata and weekly summaries from GitHub.
 
+If you are running the admin dashboard for multiple builder repos, continue adding tracked repos to `config/repos.yml`. The distributed `project.yml` file is additive: it enriches builder metadata, but it does not replace the tracked repo registry.
+
 ---
 
 ## Step 6 — Set Up Registration

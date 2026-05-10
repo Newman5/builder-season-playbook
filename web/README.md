@@ -17,6 +17,7 @@ From this directory:
 ```bash
 npm ci
 npm run build:data
+npm run sync:repos
 npm start
 ```
 
@@ -29,12 +30,21 @@ ELEVENTY_SITE_URL="https://your-site.example.com/" npm run build
 
 ## Data flow
 
-- `config/repos.yml` is the manual builder registry.
+- `config/repos.yml` is the tracked builder registry and the source of admin-only fields.
+- Builder repos can publish a root-level `project.yml` with builder-owned project/profile metadata.
 - `config/event.yml` defines the admin week calendar, the builder update cadence, and the weekly X search rules.
-- `src/_data/builders.js` reads and normalizes `config/repos.yml` directly at Eleventy build time.
+- `./scripts/build-data.mjs` fetches root-level `project.yml` files from tracked repos and writes the cache to `src/_data/project-metadata.json`.
+- `src/_data/builders.js` reads and normalizes `config/repos.yml`, then merges fetched `project.yml` metadata into each builder with fallback to the manual registry when metadata is missing.
 - `src/_data/xSearch.js` computes admin-week windows plus per-builder update timing and X live-search links directly at Eleventy build time.
 - `./scripts/generate-activity.mjs` fetches public GitHub commit activity and writes `src/_data/activity.json`.
-- Eleventy publishes the normalized builder registry at `/data/builders.json`, the cached GitHub snapshot at `/data/activity.json`, and the computed X search metadata at `/data/x-search.json`.
+- `./scripts/sync-repos.mjs` optionally writes selected fetched profile fields back into `config/repos.yml` and prints a field-level change summary.
+- Eleventy publishes the merged builder registry at `/data/builders.json`, the fetched project metadata cache at `/data/project-metadata.json`, the cached GitHub snapshot at `/data/activity.json`, and the computed X search metadata at `/data/x-search.json`.
+
+Current precedence rules:
+
+- `config/repos.yml` controls membership, `id`, pies, notes, ignore flags, and X/week override fields.
+- `project.yml` controls builder/project profile fields such as project name, builder name, handles, URLs, status, and update summaries.
+- When `project.yml` is missing or incomplete, those fields fall back to `config/repos.yml`.
 
 ## Week model
 
@@ -50,7 +60,7 @@ ELEVENTY_SITE_URL="https://your-site.example.com/" npm run build
 
 ## Tokens
 
-`generate-activity.mjs` prefers `GH_ACTIVITY_TOKEN` and falls back to `GITHUB_TOKEN`.
+The fetch scripts prefer `GH_ACTIVITY_TOKEN` and fall back to `GITHUB_TOKEN`.
 
 ## Notes
 

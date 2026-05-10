@@ -18,6 +18,12 @@ This folder contains reusable template files for your event.
 | `feedback-rules.md` | Feedback track qualification requirements |
 | `reward-track-rules.md` | Generic reward track rules (copy and adapt for each track) |
 
+### builders/
+
+| File | Purpose |
+|---|---|
+| `project.yml.example` | Template for the root-level builder metadata file collected through GitHub ingestion |
+
 ## Placeholder Convention
 
 All placeholders use double curly braces: `{{variable_name}}`
@@ -30,3 +36,4 @@ The corresponding variable names match keys in `config/event.yml`.
 - You can rename tracks (e.g., "Builder Pie" → "Sprint Track" or "Season Pass")
 - You can add new tracks — just copy `reward-track-rules.md` and adapt it
 - The core principle (participation over competition, equal splits) can be adjusted, but think carefully before doing so — it's a load-bearing design decision
+- Builder repos can also copy `templates/builders/project.yml.example` to `/project.yml` and fill in their project metadata for admin ingestion
