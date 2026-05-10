@@ -1,51 +1,51 @@
 {
-  "generatedAt": "2026-05-08T12:46:24Z",
+  "generatedAt": "2026-05-09T12:35:34Z",
   "weekStart": "2026-05-04T00:00:00Z",
   "weekEnd": "2026-05-10T23:59:59Z",
   "builders": [
     {
       "id": "mhizta",
       "name": "Mhizta",
-      "lastActivityAt": null,
+      "lastActivityAt": "2026-04-28T12:37:29Z",
       "commitsThisWeek": 0,
       "recentCommits": [],
-      "error": "EMPTY_REPO_OR_NO_COMMITS"
+      "error": null
     },
     {
       "id": "ianonjuguna",
       "name": "Ian",
-      "lastActivityAt": "2026-05-05T17:28:36Z",
-      "commitsThisWeek": 6,
+      "lastActivityAt": "2026-05-09T12:23:23Z",
+      "commitsThisWeek": 10,
       "recentCommits": [
+        {
+          "repo": "IanoNjuguna/bookish-worm",
+          "message": "Integrate WaaS Authentication\n\nThis PR introduces non-custodial wallet authentication using the utxos.dev SDK, for users to securely create or connect their Cardano wallets.",
+          "url": "https://github.com/IanoNjuguna/bookish-worm/commit/e6c76770eb065468f0ed9b7b028b282489d9296d",
+          "committedAt": "2026-05-09T12:23:23Z"
+        },
+        {
+          "repo": "IanoNjuguna/bookish-worm",
+          "message": "integrate AuthButton into Navbar",
+          "url": "https://github.com/IanoNjuguna/bookish-worm/commit/9a633265c7bde26c47fa7cd1c83bc2a29621a360",
+          "committedAt": "2026-05-09T12:10:21Z"
+        },
+        {
+          "repo": "IanoNjuguna/bookish-worm",
+          "message": "create AuthButton component for utxos.dev integration",
+          "url": "https://github.com/IanoNjuguna/bookish-worm/commit/4c3317a5e676df4a7f777eb81a70ab981683620d",
+          "committedAt": "2026-05-09T12:10:21Z"
+        },
+        {
+          "repo": "IanoNjuguna/bookish-worm",
+          "message": "add utxos.dev sdk and configure vite node polyfills",
+          "url": "https://github.com/IanoNjuguna/bookish-worm/commit/d5391bed47fba152144255afd5072d61d4e77d9b",
+          "committedAt": "2026-05-09T12:10:20Z"
+        },
         {
           "repo": "IanoNjuguna/bookish-worm",
           "message": "refine call to action",
           "url": "https://github.com/IanoNjuguna/bookish-worm/commit/d43d64103adc0acd90d0aad871790eb288fb7925",
           "committedAt": "2026-05-05T17:28:36Z"
-        },
-        {
-          "repo": "IanoNjuguna/bookish-worm",
-          "message": "update copy: one statement is enough",
-          "url": "https://github.com/IanoNjuguna/bookish-worm/commit/b6bed37c95f182811347a16c35a83e198634f46d",
-          "committedAt": "2026-05-05T17:27:35Z"
-        },
-        {
-          "repo": "IanoNjuguna/bookish-worm",
-          "message": "Revert \"modularise the dapp's functions\"\n\nThis reverts commit e259d552496962d7e31fbdb155084ca02c49a1b9.",
-          "url": "https://github.com/IanoNjuguna/bookish-worm/commit/e0ecbefd881e5a99dd70929d720bc2c8cb1059af",
-          "committedAt": "2026-05-05T15:06:45Z"
-        },
-        {
-          "repo": "IanoNjuguna/bookish-worm",
-          "message": "modularise the dapp's functions",
-          "url": "https://github.com/IanoNjuguna/bookish-worm/commit/e259d552496962d7e31fbdb155084ca02c49a1b9",
-          "committedAt": "2026-05-05T14:09:06Z"
-        },
-        {
-          "repo": "IanoNjuguna/bookish-worm",
-          "message": "configure root",
-          "url": "https://github.com/IanoNjuguna/bookish-worm/commit/1bb7e90e10f782ff5d4c2b358fbc76c66ff3e670",
-          "committedAt": "2026-05-05T13:04:00Z"
         }
       ],
       "error": null
@@ -80,17 +80,36 @@
     {
       "id": "johnny5i",
       "name": "Johnny5i",
-      "lastActivityAt": "2026-04-23T08:17:18Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-05-09T07:53:54Z",
+      "commitsThisWeek": 2,
+      "recentCommits": [
+        {
+          "repo": "bytewizard42i/BlindOracle-Gimbalabs_hackathon",
+          "message": "docs: log Week 1 and Week 2 tweet evidence for final presentation\n\nBoth weekly hackathon tweets now logged with permalinks and verbatim\ntext in the audit trail, so the final presentation submission has\ncomplete, citation-ready evidence.\n\nWeek 1 tweet: https://x.com/realjohnny5i/status/2049975668566356157\n  Posted 2026-04-30 18:14 EDT (3 days before the May 3 enrollment\n  deadline). 164 views, Newman replied positively.\n\nWeek 2 tweet: https://x.com/realjohnny5i/status/2053019204752757028\n  Posted 2026-05-09 03:50 EDT (well ahead of the May 10 deadline).\n  Layman-accessible voice, contract-compiles-clean evidence,\n  honest Blockfrost pivot.\n\nPROGRESS_LOG.md preserves the full posted text of each tweet\nverbatim so the final presentation can quote and link them.\nHACKATHON_CHECKLIST.md weekly tweet log table now has Weeks 1 and 2\npopulated (10 weeks remaining).\n\nNote: Week 1 pre-dates the new \"humbly confident, no\nself-deprecation\" tone rule John locked in May 9. The verbatim\nphrases preserved as historical record. Week 2 is the calibrated\nversion that establishes the new voice going forward.",
+          "url": "https://github.com/bytewizard42i/BlindOracle-Gimbalabs_hackathon/commit/ca3f75ce2248fc3ae699cf4b0fd01bbb0aebfce7",
+          "committedAt": "2026-05-09T07:53:54Z"
+        },
+        {
+          "repo": "bytewizard42i/BlindOracle-Gimbalabs_hackathon",
+          "message": "docs: Week 2 — contract compiles clean + audit trail\n\nBrings the repo state in line with the Week 2 hackathon tweet narrative.\n\nCode:\n- fix(contract): correct compactc script syntax — was using a\n  non-existent `compile` subcommand and `--output` flag. Now uses\n  positional arg form. Adds `compact:check` for fast skip-zk\n  validation during development.\n- chore: README status badge bumped scaffolded -> compiles clean;\n  Compact badge updated to \"language 0.21+\" (describes what the\n  contract requires, not a specific compiler version).\n\nCompile evidence (verified May 9 via local compactc 0.29.0,\nlanguage 0.21.0, runtime 0.14.0, EXIT 0):\n- 10 ZKIR files generated, one per exported circuit\n- enter_round: 30,697 bytes (largest — pool assignment, range\n  gates, bucket cap, readiness logic, auto-phase-advance)\n- TypeScript bindings auto-generated (index.d.ts + index.js)\n- contract-info.json saved to docs/CONTRACT_INFO.json as\n  committed evidence\n\nNew docs:\n- docs/HACKATHON_CHECKLIST.md — Gimbalabs Piece-of-Pie rubric,\n  12-week master schedule, weekly tweet log (Week 1 logged,\n  Week 2 prepared), disqualification triggers, sibling-vs-\n  submission note re: proofOrBluff\n- docs/PROGRESS_LOG.md — running week-over-week log; Week 2\n  entry populated with v2/v3 contract mechanics, Oracle Canvas\n  scaffold, Blockfrost-pivot reasoning, compile evidence,\n  forward look (Testnet-02 deploy + first bot-seeded playtest)\n- docs/CONTRACT_INFO.json — compiler-produced ledger schema\n  (231 lines, immutable evidence)\n\nForward look — Week 3:\n1. Update local toolchain to compactc 0.31.0 (blocked on\n   GitHub auth refresh in `compact` updater)\n2. Deploy v3 to Midnight Testnet-02\n3. First bot-seeded playtest round\n4. Wire MidnightVitals to monitor node + server + wallet\n5. Locate Sebastien Guillemot's WASM 3D artifact for the\n   Oracle Canvas plugin loader",
+          "url": "https://github.com/bytewizard42i/BlindOracle-Gimbalabs_hackathon/commit/eb1c0364c98a4e4b1c01eb35661d6b9f1b6f8283",
+          "committedAt": "2026-05-09T07:25:30Z"
+        }
+      ],
       "error": null
     },
     {
       "id": "gidhub",
       "name": "Gideon",
-      "lastActivityAt": "2026-05-07T16:08:04Z",
-      "commitsThisWeek": 4,
+      "lastActivityAt": "2026-05-08T20:44:07Z",
+      "commitsThisWeek": 5,
       "recentCommits": [
+        {
+          "repo": "0xGIDHUB/tixano",
+          "message": "Added links to download wallet extensions",
+          "url": "https://github.com/0xGIDHUB/tixano/commit/31aba511e3b3e34dda500bd05c97d79a6a2c42d2",
+          "committedAt": "2026-05-08T20:44:07Z"
+        },
         {
           "repo": "0xGIDHUB/tixano",
           "message": "Added explore events and events details pages",
@@ -136,9 +155,40 @@
     {
       "id": "harrie",
       "name": "Harrie",
-      "lastActivityAt": "2026-04-23T18:28:00Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-05-09T12:07:45Z",
+      "commitsThisWeek": 6,
+      "recentCommits": [
+        {
+          "repo": "IamHarrie-Labs/beni",
+          "message": "feat(phase-5): implement createAgentWallet with real validator CBORs\n\nvalidators.ts (new):\n- Extracts AGENT_WALLET_CBOR and THREAD_TOKEN_BASE_CBOR from plutus.json\n- Documents the source path for each so they're easy to regenerate\n\nindex.ts (rewrite):\n- createAgentWallet: picks seed UTxO, applies it as parameter to the\n  thread_token minting policy via applyParamsToScript, derives unique\n  policyId, mints 1 thread token, locks initial ADA + token at script\n  address in one atomic tx\n- fetchScriptUTxO: upgraded to prefer the UTxO carrying the thread token\n  (guards against attacker-planted UTxOs with fake datums)\n- readConfig: shared helper to decode on-chain datum to GuardrailConfig\n- agentSpend: reads on-chain config as source of truth (not caller's wallet)\n- ownerAction / freezeWallet: use shared agentWalletScript instance\n- All spend txs include validFrom/validTo (required by the validator)\n\ntypes.ts:\n- CreateWalletConfig = Omit<GuardrailConfig, derived fields> — callers\n  no longer need to guess/fake threadTokenPolicyId/lastWindowStart/windowSpent\n\ndemo.ts:\n- Updated imports for CreateWalletConfig\n- Added demoOnChain() section that runs createAgentWallet + agentSpend +\n  freezeWallet when BLOCKFROST_PREVIEW_KEY + AGENT_PRIVATE_KEY are set\n- Offline scenarios still run first (no env vars needed)\n\nSDK: tsc --noEmit clean, 14/14 unit tests pass\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>",
+          "url": "https://github.com/IamHarrie-Labs/beni/commit/552f21445902a43cb04d3f0c2a04ba71e036e036",
+          "committedAt": "2026-05-09T12:07:45Z"
+        },
+        {
+          "repo": "IamHarrie-Labs/beni",
+          "message": "chore: commit plutus.json, unignore it, pin action versions\n\n- Remove plutus.json from .gitignore (SDK needs compiled validator CBOR)\n- Commit plutus.json generated by CI (aiken build)\n- Bump GitHub Actions to pinned versions (checkout@v4.2.2,\n  setup-node@v4.4.0, upload-artifact@v4.6.2) to silence Node 20\n  deprecation warnings ahead of June 2026 runner change\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>",
+          "url": "https://github.com/IamHarrie-Labs/beni/commit/50ca78de7841ef9bc5d63d720e42e25eb34d1eec",
+          "committedAt": "2026-05-09T10:53:34Z"
+        },
+        {
+          "repo": "IamHarrie-Labs/beni",
+          "message": "fix: use correct Credential constructors from stdlib v2\n\nIn aiken-lang/stdlib v2, the Credential variants are VerificationKey\nand Script (not VerificationKeyCredential/ScriptCredential).\nImport them from cardano/address and update credential_hash accordingly.\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>",
+          "url": "https://github.com/IamHarrie-Labs/beni/commit/65304518a25dfe387478bc164f0553fa23e7542a",
+          "committedAt": "2026-05-09T10:51:59Z"
+        },
+        {
+          "repo": "IamHarrie-Labs/beni",
+          "message": "fix: Aiken credential import path + use tsx for SDK tests\n\n- cardano/credential doesn't exist in stdlib v2 — VerificationKeyCredential\n  and ScriptCredential are exported from cardano/address\n- Switch SDK test runner from --experimental-strip-types (breaks .js→.ts\n  resolution) to tsx which handles it correctly\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>",
+          "url": "https://github.com/IamHarrie-Labs/beni/commit/318afec35727452e58b0f677cfb149ee84f1c772",
+          "committedAt": "2026-05-09T10:48:50Z"
+        },
+        {
+          "repo": "IamHarrie-Labs/beni",
+          "message": "fix: CI — robust Aiken binary extraction, bump Node to 22\n\n- Use find to locate the aiken binary regardless of tarball layout\n- Node 20 → 22: --experimental-strip-types requires Node ≥22\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>",
+          "url": "https://github.com/IamHarrie-Labs/beni/commit/563f42edaf6923f5424d89602d33e53123e97376",
+          "committedAt": "2026-05-09T10:47:07Z"
+        }
+      ],
       "error": null
     },
     {
@@ -152,9 +202,16 @@
     {
       "id": "armanabid",
       "name": "Abid",
-      "lastActivityAt": "2026-05-03T12:38:53Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-05-08T18:38:19Z",
+      "commitsThisWeek": 1,
+      "recentCommits": [
+        {
+          "repo": "ArmanAbid/ChainTask",
+          "message": "Delete contracts/.DS_Store",
+          "url": "https://github.com/ArmanAbid/ChainTask/commit/49ffbbe082093e743af550f6c99f3b6e11acad61",
+          "committedAt": "2026-05-08T18:38:19Z"
+        }
+      ],
       "error": null
     },
     {
@@ -183,9 +240,22 @@
     {
       "id": "gamechanger",
       "name": "Adriano",
-      "lastActivityAt": "2026-05-02T20:02:57Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-05-09T00:33:20Z",
+      "commitsThisWeek": 2,
+      "recentCommits": [
+        {
+          "repo": "GameChangerFinance/NeonSoup",
+          "message": "Merge pull request #1 from GameChangerFinance/feat/protocol\n\nfeat: first draft of the P2P DeFi Kernel One Way Swap protocols for o…",
+          "url": "https://github.com/GameChangerFinance/NeonSoup/commit/dc341036d14a69a067a62c23c67730eb9e153d3b",
+          "committedAt": "2026-05-09T00:33:20Z"
+        },
+        {
+          "repo": "GameChangerFinance/NeonSoup",
+          "message": "feat: first draft of the P2P DeFi Kernel One Way Swap protocols for open, swap, and close as a reusable, composable library",
+          "url": "https://github.com/GameChangerFinance/NeonSoup/commit/26235b9912a7968802ba2493fce6aa848173f705",
+          "committedAt": "2026-05-09T00:28:42Z"
+        }
+      ],
       "error": null
     },
     {
@@ -199,9 +269,15 @@
     {
       "id": "maxalexweber",
       "name": "Maximilian",
-      "lastActivityAt": "2026-05-07T05:29:49Z",
-      "commitsThisWeek": 3,
+      "lastActivityAt": "2026-05-08T21:02:01Z",
+      "commitsThisWeek": 4,
       "recentCommits": [
+        {
+          "repo": "maxalexweber1/CHAINFEED",
+          "message": "feat: add Liqwid Finance v2 smoke test and adapter\n\n- Implement smoke test for Liqwid Finance v2 on mainnet, validating market states and APY data.\n- Create Liqwid adapter for fetching market states and APY data from on-chain and GraphQL sources.",
+          "url": "https://github.com/maxalexweber1/CHAINFEED/commit/cd564daa5cb1e21a341d55f2fd873c3a6c58622b",
+          "committedAt": "2026-05-08T21:02:01Z"
+        },
         {
           "repo": "maxalexweber1/CHAINFEED",
           "message": "fix: update blockfrostApiKey placeholders in package.json for security",
@@ -226,9 +302,40 @@
     {
       "id": "murmurations",
       "name": "Nori",
-      "lastActivityAt": "2026-05-01T14:41:29Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-05-08T21:47:17Z",
+      "commitsThisWeek": 14,
+      "recentCommits": [
+        {
+          "repo": "murmurations-ai/flyway",
+          "message": "docs: add banner image to README\n\nThree distinct starling murmurations — a flowing wave, a curling spiral,\nand a long ribbon — sharing one migration corridor at golden hour, with\nfaint threads of light tracing between them. Source sovereignty, shared\ncorridor, mutual awareness without merger — the project's metaphors,\nvisualized.\n\nGenerated from a prompt encoding the load-bearing semantics: distinct\nflock shapes, shared route, no merger, no central control, subtle\npeer-recognition threads. PNG (2.0 MB) → JPG quality 88 (433 KB).\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>",
+          "url": "https://github.com/murmurations-ai/flyway/commit/b6942f6d4180db67222603b9659053f309492c21",
+          "committedAt": "2026-05-08T21:47:17Z"
+        },
+        {
+          "repo": "murmurations-ai/flyway",
+          "message": "docs: add and accept ADR-0005 (S3 patterns as canonical protocol vocabulary)\n\nS3 is the canonical pattern vocabulary for flyway's consent and governance\nsurface. Adoption proceeds in three phased tiers — Tier 1 (protocol\nprimitives in flyway-core) is the next implementation milestone, with\nseven specific patterns scoped against §IV.1 and §IV.7 of the bundled\nPractical Guide. Tier 2 (agent skills) and Tier 3 (reference docs) are\nfuture work with candidates named but artifact decisions deferred.\n\nLicense conventions for CC BY-SA derivatives spelled out.\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>",
+          "url": "https://github.com/murmurations-ai/flyway/commit/a4560f1a3c534f6a0cfa2f4775273dccbcc4d6e0",
+          "committedAt": "2026-05-08T21:18:58Z"
+        },
+        {
+          "repo": "murmurations-ai/flyway",
+          "message": "docs: add S3 Practical Guide as canonical reference for sociocracy work\n\nBundles the official Sociocracy 3.0 Practical Guide (Bockelbrink, Priest,\nDavid — v2026-01-26) into docs/concepts/. This becomes flyway's canonical\nS3 source: any flyway tool, skill, instruction, or governance primitive\nderived from S3 cites this edition, and if our description and the guide\ndisagree, the guide wins.\n\nUpdated sociocracy-3.md and consent-mechanisms.md to point at the local\nPDF. Added an explicit license note: S3 is CC BY-SA 4.0, flyway is MIT,\nso any derivative content (paraphrased patterns, S3-derived agent\ninstructions) needs to carry CC BY-SA attribution while pattern names\nand factual references can stay MIT.\n\nS3 Practical Guide is © James Priest, Bernhard Bockelbrink, Liliana\nDavid — CC BY-SA 4.0. Bundled here under that license.\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>",
+          "url": "https://github.com/murmurations-ai/flyway/commit/741898d1050ed31723acb7794cc3bc0e3888a725",
+          "committedAt": "2026-05-08T21:14:25Z"
+        },
+        {
+          "repo": "murmurations-ai/flyway",
+          "message": "docs: add docs/concepts/ — Source, S3, and consent-mechanisms primers\n\nThe README and protocol use \"Source\" in the precise Koenig/Nixon sense, and\nadopt S3 consent as the default decision-making framework. These are\nload-bearing concepts; readers shouldn't have to reverse-engineer them from\nthe ADRs or the research synthesis.\n\n- defining-source.md: what Source means (Peter Koenig and Tom Nixon's work)\n  with reading list\n- sociocracy-3.md: brief S3 primer, Bockelbrink/Priest/David, and a pointer\n  to the open Practical Guide\n- consent-mechanisms.md: the five flyway decision rules (s3-consent,\n  lazy-consent, dual-source-sign, weighted-vote-bounded, apache-vote) and\n  the four invariants that are never pluggable\n\nREADME: inline definition of Source at first use with a link out to the\nnew primer; docs/concepts/ added to the repository layout map.\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>",
+          "url": "https://github.com/murmurations-ai/flyway/commit/764e4dc48c9771eb68a009fccde087c886fb19cd",
+          "committedAt": "2026-05-08T21:10:52Z"
+        },
+        {
+          "repo": "murmurations-ai/flyway",
+          "message": "docs+core: reframe from \"no joint action\" to consent achievement\n\nThe defensive framing inherited from the research paper (\"when Sources do not\nagree, the correct outcome is no joint action\") collapsed flyway's whole\nconstructive purpose into its endpoint. flyway IS a mechanism for achieving\nconsent — surfacing objections, integrating concerns, running the response\ncycle. It is NOT a mechanism for forcing agreement. That distinction is\nload-bearing. Exit is the end of a good-faith consent-seeking process, not\na substitute for one.\n\nUpdated in four places for consistency:\n- README: new \"What flyway Is For\" section naming consent achievement as\n  the positive purpose; mentions the actual primitives (proposals,\n  objections, decision rules, escalation ladder)\n- flyway-core protocol instructions: invariants reframed from \"no joint\n  action without consent\" to \"seek consent; never force it\" and \"exit\n  follows process, not impatience\"\n- flyway_respond tool description: names the consent cycle explicitly;\n  decision enum positions exit as the end of a process\n- ADR-0004: incidental \"no joint action\" reference replaced with \"consent cycle\"\n\nResearch paper §1.2 / §10.4 remain as the historical snapshot they are.\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>",
+          "url": "https://github.com/murmurations-ai/flyway/commit/44340ce2313bee54451b1a54890c2e467a6cd255",
+          "committedAt": "2026-05-08T21:07:07Z"
+        }
+      ],
       "error": null
     },
     {
@@ -258,38 +365,38 @@
     {
       "id": "newman5",
       "name": "Newman",
-      "lastActivityAt": "2026-05-07T12:56:04Z",
-      "commitsThisWeek": 13,
+      "lastActivityAt": "2026-05-09T02:27:47Z",
+      "commitsThisWeek": 19,
       "recentCommits": [
         {
           "repo": "Newman5/builder-season-playbook",
-          "message": "Update builder activity data",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/a01dd570084a55a221adc16b89565109e5fa3b6a",
-          "committedAt": "2026-05-07T12:56:04Z"
+          "message": "add code of conduct",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/713be6036f143d48b6065569fa9647e0e9fe8b94",
+          "committedAt": "2026-05-09T02:27:47Z"
         },
         {
           "repo": "Newman5/builder-season-playbook",
-          "message": "a blog and updates to the repos.yml",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/a5ae0a5d7eb61d97b703b87b04a92488d71429a1",
-          "committedAt": "2026-05-07T03:21:21Z"
-        },
-        {
-          "repo": "Newman5/builder-season-playbook",
-          "message": "Tech stack for this repo",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/4c1100b4b2c27e47ec098608359e11fa16f47e1c",
-          "committedAt": "2026-05-06T21:34:40Z"
+          "message": "updating the first post week for each builder",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/df8530be335f677af10fda9b7f8c7077608a8ca5",
+          "committedAt": "2026-05-09T01:07:54Z"
         },
         {
           "repo": "Newman5/builder-season-playbook",
           "message": "Merge branch 'main' of https://github.com/Newman5/builder-season-playbook",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/545cd0a3f51564d1aeaf629cd69e2e04a66cd64e",
-          "committedAt": "2026-05-06T21:20:03Z"
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/7e14f50472af79cac64a8b77ae950a51739e7410",
+          "committedAt": "2026-05-08T15:53:55Z"
         },
         {
           "repo": "Newman5/builder-season-playbook",
-          "message": "update blog and a new script to serve site locally but not rebuild and hit the API",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/f605c506631d44c40de8354d785135cc34b81c06",
-          "committedAt": "2026-05-06T21:20:00Z"
+          "message": "Making Admin Weeks and a new progress log",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/5605f19abfa6571f76ad415ee923e48360163e79",
+          "committedAt": "2026-05-08T15:53:52Z"
+        },
+        {
+          "repo": "Newman5/builder-season-playbook",
+          "message": "Getting dashboard ready for preview",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/4057fe2a23bb9526c1ee7b6bfcf01d4121a90a12",
+          "committedAt": "2026-05-08T15:11:58Z"
         }
       ],
       "error": null
@@ -297,10 +404,17 @@
     {
       "id": "minustenex",
       "name": "Harsha",
-      "lastActivityAt": null,
-      "commitsThisWeek": 0,
-      "recentCommits": [],
-      "error": "REPO_NOT_FOUND"
+      "lastActivityAt": "2026-05-07T13:51:39Z",
+      "commitsThisWeek": 1,
+      "recentCommits": [
+        {
+          "repo": "agentic-architecture-research/plugin-harness",
+          "message": "foundational docs",
+          "url": "https://github.com/agentic-architecture-research/plugin-harness/commit/e17aa7ab30f6c4120e7f79b4cee02918f0479708",
+          "committedAt": "2026-05-07T13:51:39Z"
+        }
+      ],
+      "error": null
     },
     {
       "id": "devfreeguy",
@@ -326,9 +440,40 @@
     {
       "id": "haulink",
       "name": "Abdulazeez",
-      "lastActivityAt": "2026-05-01T14:59:15Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-05-09T10:34:46Z",
+      "commitsThisWeek": 9,
+      "recentCommits": [
+        {
+          "repo": "FoladDTechie/Haulink",
+          "message": "Merge pull request #3 from FoladDTechie/HAUL-22-AZB\n\nprod edits",
+          "url": "https://github.com/FoladDTechie/Haulink/commit/468d6323f022be03ec52289779b5a104c200ffea",
+          "committedAt": "2026-05-09T10:34:46Z"
+        },
+        {
+          "repo": "FoladDTechie/Haulink",
+          "message": "prod edits",
+          "url": "https://github.com/FoladDTechie/Haulink/commit/5f5ce2dc83fe18d7120ef70f626b0e6aed0fa5ec",
+          "committedAt": "2026-05-09T10:30:08Z"
+        },
+        {
+          "repo": "FoladDTechie/Haulink",
+          "message": "Merge pull request #2 from FoladDTechie/HAUL-22-AZB\n\nbooking page update",
+          "url": "https://github.com/FoladDTechie/Haulink/commit/20ca8d553131426934e99908cc61d406cdd96bfa",
+          "committedAt": "2026-05-09T10:22:29Z"
+        },
+        {
+          "repo": "FoladDTechie/Haulink",
+          "message": "booking page update3",
+          "url": "https://github.com/FoladDTechie/Haulink/commit/263a9e0d198e977b84b1cd89617ecb5da288185b",
+          "committedAt": "2026-05-09T10:20:56Z"
+        },
+        {
+          "repo": "FoladDTechie/Haulink",
+          "message": "booking page update2",
+          "url": "https://github.com/FoladDTechie/Haulink/commit/81232162cf638a32c54368c3d467b1615aa839c2",
+          "committedAt": "2026-05-09T10:08:51Z"
+        }
+      ],
       "error": null
     },
     {
@@ -358,10 +503,23 @@
     {
       "id": "muhammedyuguda",
       "name": "Muhammed",
-      "lastActivityAt": null,
-      "commitsThisWeek": 0,
-      "recentCommits": [],
-      "error": "EMPTY_REPO_OR_NO_COMMITS"
+      "lastActivityAt": "2026-05-08T17:56:32Z",
+      "commitsThisWeek": 2,
+      "recentCommits": [
+        {
+          "repo": "Yuguda999/devmemory",
+          "message": "feat: add auth module and repository layer\n\n- Password hashing (bcrypt, 12 rounds)\n- API key generation (dm_key_ prefix, 64 hex chars entropy)\n- API key hashing (SHA-256 for fast lookup)\n- JWT token creation and verification (PyJWT)\n- Repository layer with user-scoped CRUD:\n  - create_user (with auto free-tier subscription)\n  - get_user_by_email / get_user_by_id\n  - create/list/revoke API keys\n  - get_or_create_project\n- 16 new auth tests (34 total, all passing)",
+          "url": "https://github.com/Yuguda999/devmemory/commit/f160aba84ca0f1b6cad8e9799e2b14c54915cfa8",
+          "committedAt": "2026-05-08T17:56:32Z"
+        },
+        {
+          "repo": "Yuguda999/devmemory",
+          "message": "feat: initial project scaffolding, models, DB engine, and tests\n\n- Project setup with uv, pyproject.toml, and directory structure\n- Configuration via pydantic-settings with env var loading\n- SQLAlchemy 2.0 async models: User, ApiKey, Subscription, Project, Session, ContextBlock\n- Async database engine with SQLite (aiosqlite)\n- Alembic migrations (async-compatible)\n- Initial migration: 6 tables with proper indexes and foreign keys\n- 18 passing unit tests covering all models, enums, and metadata serialization\n- .env.example, .gitignore, README.md",
+          "url": "https://github.com/Yuguda999/devmemory/commit/3c52fa817799e43733967ecda3101078a2058959",
+          "committedAt": "2026-05-08T17:54:42Z"
+        }
+      ],
+      "error": null
     },
     {
       "id": "juanitajaramillo",
@@ -389,9 +547,16 @@
     {
       "id": "alfreditodole",
       "name": "Alfred Itodole",
-      "lastActivityAt": "2026-05-03T11:04:49Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-05-08T15:40:24Z",
+      "commitsThisWeek": 1,
+      "recentCommits": [
+        {
+          "repo": "sirxalfred/mosaic-cardano",
+          "message": "Setting up the Readme \n\nUpdated README to enhance branding and clarify project vision.",
+          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/d3703d6ecc8203c4ba4257e83612ffbe44db54be",
+          "committedAt": "2026-05-08T15:40:24Z"
+        }
+      ],
       "error": null
     }
   ]
