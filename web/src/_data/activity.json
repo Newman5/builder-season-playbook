@@ -1,7 +1,13 @@
 {
+<<<<<<< HEAD
   "generatedAt": "2026-05-10T03:33:43Z",
   "weekStart": "2026-05-04T00:00:00Z",
   "weekEnd": "2026-05-10T23:59:59Z",
+=======
+  "generatedAt": "2026-05-11T13:18:44Z",
+  "weekStart": "2026-05-11T00:00:00Z",
+  "weekEnd": "2026-05-17T23:59:59Z",
+>>>>>>> d0741eac5c6f090900caf903cfa13c4baa588eea
   "builders": [
     {
       "id": "mhizta",
@@ -14,50 +20,111 @@
     {
       "id": "ianonjuguna",
       "name": "Ian",
+<<<<<<< HEAD
       "lastActivityAt": null,
       "commitsThisWeek": 0,
       "recentCommits": [],
       "error": "NETWORK_ERROR"
+=======
+      "lastActivityAt": "2026-05-09T12:23:23Z",
+      "commitsThisWeek": 0,
+      "recentCommits": [],
+      "error": null
+>>>>>>> d0741eac5c6f090900caf903cfa13c4baa588eea
     },
     {
       "id": "dammy",
       "name": "Dammy",
+<<<<<<< HEAD
       "lastActivityAt": null,
       "commitsThisWeek": 0,
       "recentCommits": [],
       "error": "NETWORK_ERROR"
+=======
+      "lastActivityAt": "2026-05-09T14:01:02Z",
+      "commitsThisWeek": 0,
+      "recentCommits": [],
+      "error": null
+>>>>>>> d0741eac5c6f090900caf903cfa13c4baa588eea
     },
     {
       "id": "johnny5i",
       "name": "Johnny5i",
+<<<<<<< HEAD
       "lastActivityAt": null,
       "commitsThisWeek": 0,
       "recentCommits": [],
       "error": "NETWORK_ERROR"
+=======
+      "lastActivityAt": "2026-05-09T07:53:54Z",
+      "commitsThisWeek": 0,
+      "recentCommits": [],
+      "error": null
+>>>>>>> d0741eac5c6f090900caf903cfa13c4baa588eea
     },
     {
       "id": "gidhub",
       "name": "Gideon",
+<<<<<<< HEAD
       "lastActivityAt": null,
       "commitsThisWeek": 0,
       "recentCommits": [],
       "error": "NETWORK_ERROR"
+=======
+      "lastActivityAt": "2026-05-11T12:00:39Z",
+      "commitsThisWeek": 3,
+      "recentCommits": [
+        {
+          "repo": "0xGIDHUB/tixano",
+          "message": "Fixed a minor bug in the wallet connect button",
+          "url": "https://github.com/0xGIDHUB/tixano/commit/cbdd99aca12089aa73be1bfa569286e5baf24d5a",
+          "committedAt": "2026-05-11T12:00:39Z"
+        },
+        {
+          "repo": "0xGIDHUB/tixano",
+          "message": "Added address display to the connect wallet button",
+          "url": "https://github.com/0xGIDHUB/tixano/commit/ae54613b9362822ad90ef54a274109f2f308d439",
+          "committedAt": "2026-05-11T11:43:09Z"
+        },
+        {
+          "repo": "0xGIDHUB/tixano",
+          "message": "Added some missing files",
+          "url": "https://github.com/0xGIDHUB/tixano/commit/a957e35d36592f377715b57e223a1bdf7752ae2d",
+          "committedAt": "2026-05-11T10:26:14Z"
+        }
+      ],
+      "error": null
+>>>>>>> d0741eac5c6f090900caf903cfa13c4baa588eea
     },
     {
       "id": "pmcorcoran",
       "name": "Paul Corcoran",
+<<<<<<< HEAD
       "lastActivityAt": null,
       "commitsThisWeek": 0,
       "recentCommits": [],
       "error": "NETWORK_ERROR"
+=======
+      "lastActivityAt": "2026-05-10T03:21:22Z",
+      "commitsThisWeek": 0,
+      "recentCommits": [],
+      "error": null
+>>>>>>> d0741eac5c6f090900caf903cfa13c4baa588eea
     },
     {
       "id": "harrie",
       "name": "Harrie",
+<<<<<<< HEAD
       "lastActivityAt": null,
       "commitsThisWeek": 0,
       "recentCommits": [],
       "error": "NETWORK_ERROR"
+=======
+      "lastActivityAt": "2026-05-09T12:07:45Z",
+      "commitsThisWeek": 0,
+      "recentCommits": [],
+      "error": null
+>>>>>>> d0741eac5c6f090900caf903cfa13c4baa588eea
     },
     {
       "id": "lewis",
@@ -70,10 +137,17 @@
     {
       "id": "armanabid",
       "name": "Abid",
+<<<<<<< HEAD
       "lastActivityAt": null,
       "commitsThisWeek": 0,
       "recentCommits": [],
       "error": "NETWORK_ERROR"
+=======
+      "lastActivityAt": "2026-05-09T17:03:10Z",
+      "commitsThisWeek": 0,
+      "recentCommits": [],
+      "error": null
+>>>>>>> d0741eac5c6f090900caf903cfa13c4baa588eea
     },
     {
       "id": "workshopmaybe",
@@ -86,18 +160,32 @@
     {
       "id": "kanyuku",
       "name": "Kanyuku",
+<<<<<<< HEAD
       "lastActivityAt": null,
       "commitsThisWeek": 0,
       "recentCommits": [],
       "error": "NETWORK_ERROR"
+=======
+      "lastActivityAt": "2026-05-07T15:10:00Z",
+      "commitsThisWeek": 0,
+      "recentCommits": [],
+      "error": null
+>>>>>>> d0741eac5c6f090900caf903cfa13c4baa588eea
     },
     {
       "id": "gamechanger",
       "name": "Adriano",
+<<<<<<< HEAD
       "lastActivityAt": null,
       "commitsThisWeek": 0,
       "recentCommits": [],
       "error": "NETWORK_ERROR"
+=======
+      "lastActivityAt": "2026-05-09T00:33:20Z",
+      "commitsThisWeek": 0,
+      "recentCommits": [],
+      "error": null
+>>>>>>> d0741eac5c6f090900caf903cfa13c4baa588eea
     },
     {
       "id": "yungslaiz",
@@ -110,18 +198,32 @@
     {
       "id": "maxalexweber",
       "name": "Maximilian",
+<<<<<<< HEAD
       "lastActivityAt": null,
       "commitsThisWeek": 0,
       "recentCommits": [],
       "error": "NETWORK_ERROR"
+=======
+      "lastActivityAt": "2026-05-10T05:38:49Z",
+      "commitsThisWeek": 0,
+      "recentCommits": [],
+      "error": null
+>>>>>>> d0741eac5c6f090900caf903cfa13c4baa588eea
     },
     {
       "id": "murmurations",
       "name": "Nori",
+<<<<<<< HEAD
       "lastActivityAt": null,
       "commitsThisWeek": 0,
       "recentCommits": [],
       "error": "NETWORK_ERROR"
+=======
+      "lastActivityAt": "2026-05-08T21:47:17Z",
+      "commitsThisWeek": 0,
+      "recentCommits": [],
+      "error": null
+>>>>>>> d0741eac5c6f090900caf903cfa13c4baa588eea
     },
     {
       "id": "blockprint",
@@ -142,42 +244,74 @@
     {
       "id": "mobrai",
       "name": "Marcio",
-      "lastActivityAt": null,
+      "lastActivityAt": "2026-05-09T21:29:43Z",
       "commitsThisWeek": 0,
       "recentCommits": [],
+<<<<<<< HEAD
       "error": "NETWORK_ERROR"
+=======
+      "error": null
+>>>>>>> d0741eac5c6f090900caf903cfa13c4baa588eea
     },
     {
       "id": "newman5",
       "name": "Newman",
+<<<<<<< HEAD
       "lastActivityAt": null,
       "commitsThisWeek": 0,
       "recentCommits": [],
       "error": "NETWORK_ERROR"
+=======
+      "lastActivityAt": "2026-05-10T12:34:50Z",
+      "commitsThisWeek": 0,
+      "recentCommits": [],
+      "error": null
+>>>>>>> d0741eac5c6f090900caf903cfa13c4baa588eea
     },
     {
       "id": "minustenex",
       "name": "Harsha",
+<<<<<<< HEAD
       "lastActivityAt": null,
       "commitsThisWeek": 0,
       "recentCommits": [],
       "error": "NETWORK_ERROR"
+=======
+      "lastActivityAt": "2026-05-07T13:51:39Z",
+      "commitsThisWeek": 0,
+      "recentCommits": [],
+      "error": null
+>>>>>>> d0741eac5c6f090900caf903cfa13c4baa588eea
     },
     {
       "id": "devfreeguy",
       "name": "Daniel",
+<<<<<<< HEAD
       "lastActivityAt": null,
       "commitsThisWeek": 0,
       "recentCommits": [],
       "error": "NETWORK_ERROR"
+=======
+      "lastActivityAt": "2026-05-05T18:14:18Z",
+      "commitsThisWeek": 0,
+      "recentCommits": [],
+      "error": null
+>>>>>>> d0741eac5c6f090900caf903cfa13c4baa588eea
     },
     {
       "id": "haulink",
       "name": "Abdulazeez",
+<<<<<<< HEAD
       "lastActivityAt": null,
       "commitsThisWeek": 0,
       "recentCommits": [],
       "error": "NETWORK_ERROR"
+=======
+      "lastActivityAt": "2026-05-09T10:34:46Z",
+      "commitsThisWeek": 0,
+      "recentCommits": [],
+      "error": null
+>>>>>>> d0741eac5c6f090900caf903cfa13c4baa588eea
     },
     {
       "id": "opa007i",
@@ -206,18 +340,32 @@
     {
       "id": "muhammedyuguda",
       "name": "Muhammed",
+<<<<<<< HEAD
       "lastActivityAt": null,
       "commitsThisWeek": 0,
       "recentCommits": [],
       "error": "NETWORK_ERROR"
+=======
+      "lastActivityAt": "2026-05-09T21:36:01Z",
+      "commitsThisWeek": 0,
+      "recentCommits": [],
+      "error": null
+>>>>>>> d0741eac5c6f090900caf903cfa13c4baa588eea
     },
     {
       "id": "juanitajaramillo",
       "name": "Juanita",
+<<<<<<< HEAD
       "lastActivityAt": null,
       "commitsThisWeek": 0,
       "recentCommits": [],
       "error": "NETWORK_ERROR"
+=======
+      "lastActivityAt": "2026-05-07T23:03:24Z",
+      "commitsThisWeek": 0,
+      "recentCommits": [],
+      "error": null
+>>>>>>> d0741eac5c6f090900caf903cfa13c4baa588eea
     },
     {
       "id": "kamalaliyu",
@@ -230,10 +378,17 @@
     {
       "id": "alfreditodole",
       "name": "Alfred Itodole",
+<<<<<<< HEAD
       "lastActivityAt": null,
       "commitsThisWeek": 0,
       "recentCommits": [],
       "error": "NETWORK_ERROR"
+=======
+      "lastActivityAt": "2026-05-10T12:48:22Z",
+      "commitsThisWeek": 0,
+      "recentCommits": [],
+      "error": null
+>>>>>>> d0741eac5c6f090900caf903cfa13c4baa588eea
     }
   ]
 }
