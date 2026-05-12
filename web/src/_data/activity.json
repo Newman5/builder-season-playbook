@@ -1,130 +1,101 @@
 {
-<<<<<<< HEAD
-  "generatedAt": "2026-05-10T03:33:43Z",
-  "weekStart": "2026-05-04T00:00:00Z",
-  "weekEnd": "2026-05-10T23:59:59Z",
-=======
-  "generatedAt": "2026-05-11T13:18:44Z",
+  "generatedAt": "2026-05-12T12:58:30Z",
   "weekStart": "2026-05-11T00:00:00Z",
   "weekEnd": "2026-05-17T23:59:59Z",
->>>>>>> d0741eac5c6f090900caf903cfa13c4baa588eea
   "builders": [
     {
       "id": "mhizta",
       "name": "Mhizta",
-      "lastActivityAt": null,
+      "lastActivityAt": "2026-04-28T12:37:29Z",
       "commitsThisWeek": 0,
       "recentCommits": [],
-      "error": "NETWORK_ERROR"
+      "error": null
     },
     {
       "id": "ianonjuguna",
       "name": "Ian",
-<<<<<<< HEAD
-      "lastActivityAt": null,
-      "commitsThisWeek": 0,
-      "recentCommits": [],
-      "error": "NETWORK_ERROR"
-=======
       "lastActivityAt": "2026-05-09T12:23:23Z",
       "commitsThisWeek": 0,
       "recentCommits": [],
       "error": null
->>>>>>> d0741eac5c6f090900caf903cfa13c4baa588eea
     },
     {
       "id": "dammy",
       "name": "Dammy",
-<<<<<<< HEAD
-      "lastActivityAt": null,
-      "commitsThisWeek": 0,
-      "recentCommits": [],
-      "error": "NETWORK_ERROR"
-=======
       "lastActivityAt": "2026-05-09T14:01:02Z",
       "commitsThisWeek": 0,
       "recentCommits": [],
       "error": null
->>>>>>> d0741eac5c6f090900caf903cfa13c4baa588eea
     },
     {
       "id": "johnny5i",
       "name": "Johnny5i",
-<<<<<<< HEAD
-      "lastActivityAt": null,
-      "commitsThisWeek": 0,
-      "recentCommits": [],
-      "error": "NETWORK_ERROR"
-=======
       "lastActivityAt": "2026-05-09T07:53:54Z",
       "commitsThisWeek": 0,
       "recentCommits": [],
       "error": null
->>>>>>> d0741eac5c6f090900caf903cfa13c4baa588eea
     },
     {
       "id": "gidhub",
       "name": "Gideon",
-<<<<<<< HEAD
-      "lastActivityAt": null,
-      "commitsThisWeek": 0,
-      "recentCommits": [],
-      "error": "NETWORK_ERROR"
-=======
-      "lastActivityAt": "2026-05-11T12:00:39Z",
-      "commitsThisWeek": 3,
+      "lastActivityAt": "2026-05-12T12:22:06Z",
+      "commitsThisWeek": 8,
       "recentCommits": [
         {
           "repo": "0xGIDHUB/tixano",
-          "message": "Fixed a minor bug in the wallet connect button",
-          "url": "https://github.com/0xGIDHUB/tixano/commit/cbdd99aca12089aa73be1bfa569286e5baf24d5a",
-          "committedAt": "2026-05-11T12:00:39Z"
+          "message": "Fixed the race condition where multiple users can mint the same ticket name",
+          "url": "https://github.com/0xGIDHUB/tixano/commit/cbbcbd2bf5c808ea291c9e02fe46682ec7b1daa1",
+          "committedAt": "2026-05-12T12:22:06Z"
         },
         {
           "repo": "0xGIDHUB/tixano",
-          "message": "Added address display to the connect wallet button",
-          "url": "https://github.com/0xGIDHUB/tixano/commit/ae54613b9362822ad90ef54a274109f2f308d439",
-          "committedAt": "2026-05-11T11:43:09Z"
+          "message": "Added environment variables setup documentation",
+          "url": "https://github.com/0xGIDHUB/tixano/commit/8e43807c6394238bc3d3d926ba04e8a7c542294d",
+          "committedAt": "2026-05-11T21:11:44Z"
         },
         {
           "repo": "0xGIDHUB/tixano",
-          "message": "Added some missing files",
-          "url": "https://github.com/0xGIDHUB/tixano/commit/a957e35d36592f377715b57e223a1bdf7752ae2d",
-          "committedAt": "2026-05-11T10:26:14Z"
+          "message": "Few minor changes added",
+          "url": "https://github.com/0xGIDHUB/tixano/commit/bd8161aa0a4402dbae886547b0d11e9c7221ac53",
+          "committedAt": "2026-05-11T20:30:02Z"
+        },
+        {
+          "repo": "0xGIDHUB/tixano",
+          "message": "Edited the registration confirmation email format",
+          "url": "https://github.com/0xGIDHUB/tixano/commit/0cc6ef360a83f3a088ad1972d668ca17b2bf07b9",
+          "committedAt": "2026-05-11T15:27:52Z"
+        },
+        {
+          "repo": "0xGIDHUB/tixano",
+          "message": "Fixed issues with transactions building and signing in mesh",
+          "url": "https://github.com/0xGIDHUB/tixano/commit/0511fa53370e58ac0e170b07b4f728db7e879198",
+          "committedAt": "2026-05-11T14:44:39Z"
         }
       ],
       "error": null
->>>>>>> d0741eac5c6f090900caf903cfa13c4baa588eea
     },
     {
       "id": "pmcorcoran",
       "name": "Paul Corcoran",
-<<<<<<< HEAD
-      "lastActivityAt": null,
-      "commitsThisWeek": 0,
-      "recentCommits": [],
-      "error": "NETWORK_ERROR"
-=======
-      "lastActivityAt": "2026-05-10T03:21:22Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-05-11T20:55:53Z",
+      "commitsThisWeek": 1,
+      "recentCommits": [
+        {
+          "repo": "pmcorcoran/ada-battles",
+          "message": "added owner to bulletState",
+          "url": "https://github.com/pmcorcoran/ada-battles/commit/7d394f6aa82b886047423f9fe422f8aa5ef0584e",
+          "committedAt": "2026-05-11T20:55:53Z"
+        }
+      ],
       "error": null
->>>>>>> d0741eac5c6f090900caf903cfa13c4baa588eea
     },
     {
       "id": "harrie",
       "name": "Harrie",
-<<<<<<< HEAD
-      "lastActivityAt": null,
-      "commitsThisWeek": 0,
-      "recentCommits": [],
-      "error": "NETWORK_ERROR"
-=======
       "lastActivityAt": "2026-05-09T12:07:45Z",
       "commitsThisWeek": 0,
       "recentCommits": [],
       "error": null
->>>>>>> d0741eac5c6f090900caf903cfa13c4baa588eea
     },
     {
       "id": "lewis",
@@ -132,114 +103,92 @@
       "lastActivityAt": null,
       "commitsThisWeek": 0,
       "recentCommits": [],
-      "error": "NETWORK_ERROR"
+      "error": "EMPTY_REPO_OR_NO_COMMITS"
     },
     {
       "id": "armanabid",
       "name": "Abid",
-<<<<<<< HEAD
-      "lastActivityAt": null,
-      "commitsThisWeek": 0,
-      "recentCommits": [],
-      "error": "NETWORK_ERROR"
-=======
       "lastActivityAt": "2026-05-09T17:03:10Z",
       "commitsThisWeek": 0,
       "recentCommits": [],
       "error": null
->>>>>>> d0741eac5c6f090900caf903cfa13c4baa588eea
     },
     {
       "id": "workshopmaybe",
       "name": "James",
-      "lastActivityAt": null,
+      "lastActivityAt": "2026-04-27T13:22:10Z",
       "commitsThisWeek": 0,
       "recentCommits": [],
-      "error": "NETWORK_ERROR"
+      "error": null
     },
     {
       "id": "kanyuku",
       "name": "Kanyuku",
-<<<<<<< HEAD
-      "lastActivityAt": null,
-      "commitsThisWeek": 0,
-      "recentCommits": [],
-      "error": "NETWORK_ERROR"
-=======
       "lastActivityAt": "2026-05-07T15:10:00Z",
       "commitsThisWeek": 0,
       "recentCommits": [],
       "error": null
->>>>>>> d0741eac5c6f090900caf903cfa13c4baa588eea
     },
     {
       "id": "gamechanger",
       "name": "Adriano",
-<<<<<<< HEAD
-      "lastActivityAt": null,
-      "commitsThisWeek": 0,
-      "recentCommits": [],
-      "error": "NETWORK_ERROR"
-=======
       "lastActivityAt": "2026-05-09T00:33:20Z",
       "commitsThisWeek": 0,
       "recentCommits": [],
       "error": null
->>>>>>> d0741eac5c6f090900caf903cfa13c4baa588eea
     },
     {
       "id": "yungslaiz",
       "name": "Blessed David",
-      "lastActivityAt": null,
-      "commitsThisWeek": 0,
-      "recentCommits": [],
-      "error": "NETWORK_ERROR"
+      "lastActivityAt": "2026-05-11T22:41:52Z",
+      "commitsThisWeek": 2,
+      "recentCommits": [
+        {
+          "repo": "YungSlaiz53/GNXT",
+          "message": "Delete NEXT.AI-main.zip",
+          "url": "https://github.com/YungSlaiz53/GNXT/commit/1d6ebc26a708ef67ed81d73b8754d83356cf9c8a",
+          "committedAt": "2026-05-11T22:41:52Z"
+        },
+        {
+          "repo": "YungSlaiz53/GNXT",
+          "message": "Add files via upload",
+          "url": "https://github.com/YungSlaiz53/GNXT/commit/fd291d32a71b3465135b7a6563d86e8aef29526b",
+          "committedAt": "2026-05-11T22:39:45Z"
+        }
+      ],
+      "error": null
     },
     {
       "id": "maxalexweber",
       "name": "Maximilian",
-<<<<<<< HEAD
-      "lastActivityAt": null,
-      "commitsThisWeek": 0,
-      "recentCommits": [],
-      "error": "NETWORK_ERROR"
-=======
       "lastActivityAt": "2026-05-10T05:38:49Z",
       "commitsThisWeek": 0,
       "recentCommits": [],
       "error": null
->>>>>>> d0741eac5c6f090900caf903cfa13c4baa588eea
     },
     {
       "id": "murmurations",
       "name": "Nori",
-<<<<<<< HEAD
-      "lastActivityAt": null,
-      "commitsThisWeek": 0,
-      "recentCommits": [],
-      "error": "NETWORK_ERROR"
-=======
       "lastActivityAt": "2026-05-08T21:47:17Z",
       "commitsThisWeek": 0,
       "recentCommits": [],
       "error": null
->>>>>>> d0741eac5c6f090900caf903cfa13c4baa588eea
     },
     {
       "id": "blockprint",
       "name": "BlockPrint",
-      "lastActivityAt": null,
+      "lastActivityAt": "2026-04-28T09:23:24Z",
       "commitsThisWeek": 0,
       "recentCommits": [],
-      "error": "NETWORK_ERROR"
+      "error": null
     },
     {
       "id": "trike",
       "name": "Anita",
-      "lastActivityAt": null,
+      "lastActivityAt": "2026-04-28T10:40:53Z",
       "commitsThisWeek": 0,
       "recentCommits": [],
-      "error": "NETWORK_ERROR"
+      "error": null
     },
     {
       "id": "mobrai",
@@ -247,71 +196,52 @@
       "lastActivityAt": "2026-05-09T21:29:43Z",
       "commitsThisWeek": 0,
       "recentCommits": [],
-<<<<<<< HEAD
-      "error": "NETWORK_ERROR"
-=======
       "error": null
->>>>>>> d0741eac5c6f090900caf903cfa13c4baa588eea
     },
     {
       "id": "newman5",
       "name": "Newman",
-<<<<<<< HEAD
-      "lastActivityAt": null,
-      "commitsThisWeek": 0,
-      "recentCommits": [],
-      "error": "NETWORK_ERROR"
-=======
-      "lastActivityAt": "2026-05-10T12:34:50Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-05-11T15:08:22Z",
+      "commitsThisWeek": 2,
+      "recentCommits": [
+        {
+          "repo": "Newman5/builder-season-playbook",
+          "message": "Merge branch 'main' of https://github.com/Newman5/builder-season-playbook",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/09600b034ef3f232dea7cb88794aa61f9128afbf",
+          "committedAt": "2026-05-11T15:08:22Z"
+        },
+        {
+          "repo": "Newman5/builder-season-playbook",
+          "message": "Update builder activity data",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/d0741eac5c6f090900caf903cfa13c4baa588eea",
+          "committedAt": "2026-05-11T13:18:59Z"
+        }
+      ],
       "error": null
->>>>>>> d0741eac5c6f090900caf903cfa13c4baa588eea
     },
     {
       "id": "minustenex",
       "name": "Harsha",
-<<<<<<< HEAD
-      "lastActivityAt": null,
-      "commitsThisWeek": 0,
-      "recentCommits": [],
-      "error": "NETWORK_ERROR"
-=======
       "lastActivityAt": "2026-05-07T13:51:39Z",
       "commitsThisWeek": 0,
       "recentCommits": [],
       "error": null
->>>>>>> d0741eac5c6f090900caf903cfa13c4baa588eea
     },
     {
       "id": "devfreeguy",
       "name": "Daniel",
-<<<<<<< HEAD
-      "lastActivityAt": null,
-      "commitsThisWeek": 0,
-      "recentCommits": [],
-      "error": "NETWORK_ERROR"
-=======
       "lastActivityAt": "2026-05-05T18:14:18Z",
       "commitsThisWeek": 0,
       "recentCommits": [],
       "error": null
->>>>>>> d0741eac5c6f090900caf903cfa13c4baa588eea
     },
     {
       "id": "haulink",
       "name": "Abdulazeez",
-<<<<<<< HEAD
-      "lastActivityAt": null,
-      "commitsThisWeek": 0,
-      "recentCommits": [],
-      "error": "NETWORK_ERROR"
-=======
       "lastActivityAt": "2026-05-09T10:34:46Z",
       "commitsThisWeek": 0,
       "recentCommits": [],
       "error": null
->>>>>>> d0741eac5c6f090900caf903cfa13c4baa588eea
     },
     {
       "id": "opa007i",
@@ -319,7 +249,7 @@
       "lastActivityAt": null,
       "commitsThisWeek": 0,
       "recentCommits": [],
-      "error": "NETWORK_ERROR"
+      "error": "EMPTY_REPO_OR_NO_COMMITS"
     },
     {
       "id": "jakessevi",
@@ -327,68 +257,78 @@
       "lastActivityAt": null,
       "commitsThisWeek": 0,
       "recentCommits": [],
-      "error": "NETWORK_ERROR"
+      "error": "EMPTY_REPO_OR_NO_COMMITS"
     },
     {
       "id": "giorgiozanon",
       "name": "Giorgio",
-      "lastActivityAt": null,
+      "lastActivityAt": "2026-05-02T13:22:49Z",
       "commitsThisWeek": 0,
       "recentCommits": [],
-      "error": "NETWORK_ERROR"
+      "error": null
     },
     {
       "id": "muhammedyuguda",
       "name": "Muhammed",
-<<<<<<< HEAD
-      "lastActivityAt": null,
-      "commitsThisWeek": 0,
-      "recentCommits": [],
-      "error": "NETWORK_ERROR"
-=======
       "lastActivityAt": "2026-05-09T21:36:01Z",
       "commitsThisWeek": 0,
       "recentCommits": [],
       "error": null
->>>>>>> d0741eac5c6f090900caf903cfa13c4baa588eea
     },
     {
       "id": "juanitajaramillo",
       "name": "Juanita",
-<<<<<<< HEAD
-      "lastActivityAt": null,
-      "commitsThisWeek": 0,
-      "recentCommits": [],
-      "error": "NETWORK_ERROR"
-=======
       "lastActivityAt": "2026-05-07T23:03:24Z",
       "commitsThisWeek": 0,
       "recentCommits": [],
       "error": null
->>>>>>> d0741eac5c6f090900caf903cfa13c4baa588eea
     },
     {
       "id": "kamalaliyu",
       "name": "Kamal Aliyu",
-      "lastActivityAt": null,
+      "lastActivityAt": "2026-05-09T14:59:13Z",
       "commitsThisWeek": 0,
       "recentCommits": [],
-      "error": "NETWORK_ERROR"
+      "error": null
     },
     {
       "id": "alfreditodole",
       "name": "Alfred Itodole",
-<<<<<<< HEAD
-      "lastActivityAt": null,
-      "commitsThisWeek": 0,
-      "recentCommits": [],
-      "error": "NETWORK_ERROR"
-=======
-      "lastActivityAt": "2026-05-10T12:48:22Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-05-11T23:20:43Z",
+      "commitsThisWeek": 9,
+      "recentCommits": [
+        {
+          "repo": "sirxalfred/mosaic-cardano",
+          "message": "feat: implement Gemini API integration with content generation function",
+          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/5ee1c46851dc53e0e9deed9a0b4ed979ff1d1e81",
+          "committedAt": "2026-05-11T23:20:43Z"
+        },
+        {
+          "repo": "sirxalfred/mosaic-cardano",
+          "message": "refactor: update core application structure",
+          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/3f24b75d3aeb2d0b13be45a8f66d504c2b493be8",
+          "committedAt": "2026-05-11T22:58:04Z"
+        },
+        {
+          "repo": "sirxalfred/mosaic-cardano",
+          "message": "Merge branch 'main' of https://github.com/sirXalfred/mosaic-cardano",
+          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/58a1de9ea57b2da20c9a6972ae4a4e4ba78268fe",
+          "committedAt": "2026-05-11T22:54:45Z"
+        },
+        {
+          "repo": "sirxalfred/mosaic-cardano",
+          "message": "fix: update import path for MosaicSymbol in LandingView component",
+          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/53c3cbab7d223e04e4fa385d4cc4b9a97ac27f96",
+          "committedAt": "2026-05-11T22:54:11Z"
+        },
+        {
+          "repo": "sirxalfred/mosaic-cardano",
+          "message": "feat: add ExploreView and VillageCard components with data for villages",
+          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/bbf372a4cd0c806cb6e9f9abbc627b219ee80817",
+          "committedAt": "2026-05-11T22:53:59Z"
+        }
+      ],
       "error": null
->>>>>>> d0741eac5c6f090900caf903cfa13c4baa588eea
     }
   ]
 }
