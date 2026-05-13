@@ -1,63 +1,107 @@
 {
-  "generatedAt": "2026-05-13T03:04:10Z",
+  "generatedAt": "2026-05-13T13:02:24Z",
   "weekStart": "2026-05-11T00:00:00Z",
   "weekEnd": "2026-05-17T23:59:59Z",
   "builders": [
     {
       "id": "mhizta",
       "name": "Mhizta",
-      "lastActivityAt": null,
+      "lastActivityAt": "2026-04-28T12:37:29Z",
       "commitsThisWeek": 0,
       "recentCommits": [],
-      "error": "NETWORK_ERROR"
+      "error": null
     },
     {
       "id": "ianonjuguna",
       "name": "Ian",
-      "lastActivityAt": null,
+      "lastActivityAt": "2026-05-09T12:23:23Z",
       "commitsThisWeek": 0,
       "recentCommits": [],
-      "error": "NETWORK_ERROR"
+      "error": null
     },
     {
       "id": "dammy",
       "name": "Dammy",
-      "lastActivityAt": null,
+      "lastActivityAt": "2026-05-09T14:01:02Z",
       "commitsThisWeek": 0,
       "recentCommits": [],
-      "error": "NETWORK_ERROR"
+      "error": null
     },
     {
       "id": "johnny5i",
       "name": "Johnny5i",
-      "lastActivityAt": null,
+      "lastActivityAt": "2026-05-09T07:53:54Z",
       "commitsThisWeek": 0,
       "recentCommits": [],
-      "error": "NETWORK_ERROR"
+      "error": null
     },
     {
       "id": "gidhub",
       "name": "Gideon",
-      "lastActivityAt": null,
-      "commitsThisWeek": 0,
-      "recentCommits": [],
-      "error": "NETWORK_ERROR"
+      "lastActivityAt": "2026-05-13T12:25:36Z",
+      "commitsThisWeek": 15,
+      "recentCommits": [
+        {
+          "repo": "0xGIDHUB/tixano",
+          "message": "Changed the loading animation with other minor changes",
+          "url": "https://github.com/0xGIDHUB/tixano/commit/2524c0678b6a3a913ab171507999430157135fa7",
+          "committedAt": "2026-05-13T12:25:36Z"
+        },
+        {
+          "repo": "0xGIDHUB/tixano",
+          "message": "Fixed some formatting issues with the nft ticket image generation",
+          "url": "https://github.com/0xGIDHUB/tixano/commit/75603a48ed777139d279c891a1b03ab8935d03bd",
+          "committedAt": "2026-05-13T12:12:41Z"
+        },
+        {
+          "repo": "0xGIDHUB/tixano",
+          "message": "Edited the event creation nft image design",
+          "url": "https://github.com/0xGIDHUB/tixano/commit/0b1d98fbb6436990b6ff48eb0b61f102b2b53325",
+          "committedAt": "2026-05-13T06:37:34Z"
+        },
+        {
+          "repo": "0xGIDHUB/tixano",
+          "message": "Added nft tickets image generation! Noice (-_-)👌",
+          "url": "https://github.com/0xGIDHUB/tixano/commit/96b895269e9e329ad85c56a0db062b4837f82ad6",
+          "committedAt": "2026-05-13T05:59:34Z"
+        },
+        {
+          "repo": "0xGIDHUB/tixano",
+          "message": "Moved the email confirmation to be the last process in the registration submit flow",
+          "url": "https://github.com/0xGIDHUB/tixano/commit/5434e3b4348dfcaed09ebf43a28a04fc7fc0302a",
+          "committedAt": "2026-05-12T16:37:11Z"
+        }
+      ],
+      "error": null
     },
     {
       "id": "pmcorcoran",
       "name": "Paul Corcoran",
-      "lastActivityAt": null,
-      "commitsThisWeek": 0,
-      "recentCommits": [],
-      "error": "NETWORK_ERROR"
+      "lastActivityAt": "2026-05-12T22:12:21Z",
+      "commitsThisWeek": 2,
+      "recentCommits": [
+        {
+          "repo": "pmcorcoran/ada-battles",
+          "message": "adding web2 version game with wallet connect auth",
+          "url": "https://github.com/pmcorcoran/ada-battles/commit/173992aa765208f8d191841fc992157b7722cc98",
+          "committedAt": "2026-05-12T22:12:21Z"
+        },
+        {
+          "repo": "pmcorcoran/ada-battles",
+          "message": "added owner to bulletState",
+          "url": "https://github.com/pmcorcoran/ada-battles/commit/7d394f6aa82b886047423f9fe422f8aa5ef0584e",
+          "committedAt": "2026-05-11T20:55:53Z"
+        }
+      ],
+      "error": null
     },
     {
       "id": "harrie",
       "name": "Harrie",
-      "lastActivityAt": null,
+      "lastActivityAt": "2026-05-09T12:07:45Z",
       "commitsThisWeek": 0,
       "recentCommits": [],
-      "error": "NETWORK_ERROR"
+      "error": null
     },
     {
       "id": "lewis",
@@ -65,127 +109,196 @@
       "lastActivityAt": null,
       "commitsThisWeek": 0,
       "recentCommits": [],
-      "error": "NETWORK_ERROR"
+      "error": "EMPTY_REPO_OR_NO_COMMITS"
     },
     {
       "id": "armanabid",
       "name": "Abid",
-      "lastActivityAt": null,
+      "lastActivityAt": "2026-05-09T17:03:10Z",
       "commitsThisWeek": 0,
       "recentCommits": [],
-      "error": "NETWORK_ERROR"
+      "error": null
     },
     {
       "id": "workshopmaybe",
       "name": "James",
-      "lastActivityAt": null,
+      "lastActivityAt": "2026-04-27T13:22:10Z",
       "commitsThisWeek": 0,
       "recentCommits": [],
-      "error": "NETWORK_ERROR"
+      "error": null
     },
     {
       "id": "kanyuku",
       "name": "Kanyuku",
-      "lastActivityAt": null,
+      "lastActivityAt": "2026-05-07T15:10:00Z",
       "commitsThisWeek": 0,
       "recentCommits": [],
-      "error": "NETWORK_ERROR"
+      "error": null
     },
     {
       "id": "gamechanger",
       "name": "Adriano",
-      "lastActivityAt": null,
+      "lastActivityAt": "2026-05-09T00:33:20Z",
       "commitsThisWeek": 0,
       "recentCommits": [],
-      "error": "NETWORK_ERROR"
+      "error": null
     },
     {
       "id": "yungslaiz",
       "name": "Blessed David",
-      "lastActivityAt": null,
-      "commitsThisWeek": 0,
-      "recentCommits": [],
-      "error": "NETWORK_ERROR"
+      "lastActivityAt": "2026-05-11T22:41:52Z",
+      "commitsThisWeek": 2,
+      "recentCommits": [
+        {
+          "repo": "YungSlaiz53/GNXT",
+          "message": "Delete NEXT.AI-main.zip",
+          "url": "https://github.com/YungSlaiz53/GNXT/commit/1d6ebc26a708ef67ed81d73b8754d83356cf9c8a",
+          "committedAt": "2026-05-11T22:41:52Z"
+        },
+        {
+          "repo": "YungSlaiz53/GNXT",
+          "message": "Add files via upload",
+          "url": "https://github.com/YungSlaiz53/GNXT/commit/fd291d32a71b3465135b7a6563d86e8aef29526b",
+          "committedAt": "2026-05-11T22:39:45Z"
+        }
+      ],
+      "error": null
     },
     {
       "id": "maxalexweber",
       "name": "Maximilian",
-      "lastActivityAt": null,
+      "lastActivityAt": "2026-05-10T05:38:49Z",
       "commitsThisWeek": 0,
       "recentCommits": [],
-      "error": "NETWORK_ERROR"
+      "error": null
     },
     {
       "id": "murmurations",
       "name": "Nori",
-      "lastActivityAt": null,
+      "lastActivityAt": "2026-05-08T21:47:17Z",
       "commitsThisWeek": 0,
       "recentCommits": [],
-      "error": "NETWORK_ERROR"
+      "error": null
     },
     {
       "id": "blockprint",
       "name": "BlockPrint",
-      "lastActivityAt": null,
+      "lastActivityAt": "2026-04-28T09:23:24Z",
       "commitsThisWeek": 0,
       "recentCommits": [],
-      "error": "NETWORK_ERROR"
+      "error": null
     },
     {
       "id": "trike",
       "name": "Anita",
-      "lastActivityAt": null,
+      "lastActivityAt": "2026-04-28T10:40:53Z",
       "commitsThisWeek": 0,
       "recentCommits": [],
-      "error": "NETWORK_ERROR"
+      "error": null
     },
     {
       "id": "mobrai",
       "name": "Marcio",
-      "lastActivityAt": null,
+      "lastActivityAt": "2026-05-09T21:29:43Z",
       "commitsThisWeek": 0,
       "recentCommits": [],
-      "error": "NETWORK_ERROR"
+      "error": null
     },
     {
       "id": "newman5",
       "name": "Newman",
-      "lastActivityAt": null,
-      "commitsThisWeek": 0,
-      "recentCommits": [],
-      "error": "NETWORK_ERROR"
+      "lastActivityAt": "2026-05-13T03:07:41Z",
+      "commitsThisWeek": 6,
+      "recentCommits": [
+        {
+          "repo": "Newman5/builder-season-playbook",
+          "message": "post skill for the agent",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/18ea63152b9e2ad318b8524676d6735670b9c9ee",
+          "committedAt": "2026-05-13T03:07:41Z"
+        },
+        {
+          "repo": "Newman5/builder-season-playbook",
+          "message": "Merge branch 'main' of https://github.com/Newman5/builder-season-playbook",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/1f59d21319f312adebfe14ce3efcef53fc88effa",
+          "committedAt": "2026-05-13T02:17:59Z"
+        },
+        {
+          "repo": "Newman5/builder-season-playbook",
+          "message": "adding Facepile",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/7a586a4b51148297d43f27ce67ed82015121c47c",
+          "committedAt": "2026-05-13T02:15:12Z"
+        },
+        {
+          "repo": "Newman5/builder-season-playbook",
+          "message": "Update builder activity data",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/ef9cc6fb53add9da3bc9ba23e5f92a57fdf51f9e",
+          "committedAt": "2026-05-12T12:58:43Z"
+        },
+        {
+          "repo": "Newman5/builder-season-playbook",
+          "message": "Merge branch 'main' of https://github.com/Newman5/builder-season-playbook",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/09600b034ef3f232dea7cb88794aa61f9128afbf",
+          "committedAt": "2026-05-11T15:08:22Z"
+        }
+      ],
+      "error": null
     },
     {
       "id": "minustenex",
       "name": "Harsha",
-      "lastActivityAt": null,
+      "lastActivityAt": "2026-05-07T13:51:39Z",
       "commitsThisWeek": 0,
       "recentCommits": [],
-      "error": "NETWORK_ERROR"
+      "error": null
     },
     {
       "id": "devfreeguy",
       "name": "Daniel",
-      "lastActivityAt": null,
+      "lastActivityAt": "2026-05-05T18:14:18Z",
       "commitsThisWeek": 0,
       "recentCommits": [],
-      "error": "NETWORK_ERROR"
+      "error": null
     },
     {
       "id": "haulink",
       "name": "Abdulazeez",
-      "lastActivityAt": null,
+      "lastActivityAt": "2026-05-09T10:34:46Z",
       "commitsThisWeek": 0,
       "recentCommits": [],
-      "error": "NETWORK_ERROR"
+      "error": null
     },
     {
       "id": "opa007i",
       "name": "Opa",
-      "lastActivityAt": null,
-      "commitsThisWeek": 0,
-      "recentCommits": [],
-      "error": "NETWORK_ERROR"
+      "lastActivityAt": "2026-05-12T14:53:46Z",
+      "commitsThisWeek": 4,
+      "recentCommits": [
+        {
+          "repo": "opa1/the-quest",
+          "message": "Disabled horizontal scroll on screen wrappers",
+          "url": "https://github.com/opa1/the-quest/commit/04891ea09bb5d25e5951d8584207da5e011ffebc",
+          "committedAt": "2026-05-12T14:53:46Z"
+        },
+        {
+          "repo": "opa1/the-quest",
+          "message": "Disabled horizontal scroll on body",
+          "url": "https://github.com/opa1/the-quest/commit/0c37210bae3379def912702ebb9b8ad2491550de",
+          "committedAt": "2026-05-12T14:50:43Z"
+        },
+        {
+          "repo": "opa1/the-quest",
+          "message": "feat: landing page complete — sections, content, SEO metadata",
+          "url": "https://github.com/opa1/the-quest/commit/eb362322ca3a694313c89cbb50dd6d4154819ee4",
+          "committedAt": "2026-05-12T14:44:13Z"
+        },
+        {
+          "repo": "opa1/the-quest",
+          "message": "Landing page setup",
+          "url": "https://github.com/opa1/the-quest/commit/26ad311a00f4813b1ca6cecc768178645749c803",
+          "committedAt": "2026-05-12T11:27:08Z"
+        }
+      ],
+      "error": null
     },
     {
       "id": "jakessevi",
@@ -193,47 +306,78 @@
       "lastActivityAt": null,
       "commitsThisWeek": 0,
       "recentCommits": [],
-      "error": "NETWORK_ERROR"
+      "error": "EMPTY_REPO_OR_NO_COMMITS"
     },
     {
       "id": "giorgiozanon",
       "name": "Giorgio",
-      "lastActivityAt": null,
+      "lastActivityAt": "2026-05-02T13:22:49Z",
       "commitsThisWeek": 0,
       "recentCommits": [],
-      "error": "NETWORK_ERROR"
+      "error": null
     },
     {
       "id": "muhammedyuguda",
       "name": "Muhammed",
-      "lastActivityAt": null,
+      "lastActivityAt": "2026-05-09T21:36:01Z",
       "commitsThisWeek": 0,
       "recentCommits": [],
-      "error": "NETWORK_ERROR"
+      "error": null
     },
     {
       "id": "juanitajaramillo",
       "name": "Juanita",
-      "lastActivityAt": null,
+      "lastActivityAt": "2026-05-07T23:03:24Z",
       "commitsThisWeek": 0,
       "recentCommits": [],
-      "error": "NETWORK_ERROR"
+      "error": null
     },
     {
       "id": "kamalaliyu",
       "name": "Kamal Aliyu",
-      "lastActivityAt": null,
+      "lastActivityAt": "2026-05-09T14:59:13Z",
       "commitsThisWeek": 0,
       "recentCommits": [],
-      "error": "NETWORK_ERROR"
+      "error": null
     },
     {
       "id": "alfreditodole",
       "name": "Alfred Itodole",
-      "lastActivityAt": null,
-      "commitsThisWeek": 0,
-      "recentCommits": [],
-      "error": "NETWORK_ERROR"
+      "lastActivityAt": "2026-05-13T17:25:47Z",
+      "commitsThisWeek": 14,
+      "recentCommits": [
+        {
+          "repo": "sirxalfred/mosaic-cardano",
+          "message": "feat: add CI workflow",
+          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/ce47f4b9ce9df89810b68726d2aa207ebcd09e84",
+          "committedAt": "2026-05-13T17:25:47Z"
+        },
+        {
+          "repo": "sirxalfred/mosaic-cardano",
+          "message": "refactor: update pages to reuse button component",
+          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/afbfe56eaf6b33263f1fc0a1b27ded8cf8e9d66f",
+          "committedAt": "2026-05-13T17:25:09Z"
+        },
+        {
+          "repo": "sirxalfred/mosaic-cardano",
+          "message": "feat: add page transition and loading states",
+          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/05e4b80bf77685e1403925104bf828948cfd825e",
+          "committedAt": "2026-05-13T17:24:37Z"
+        },
+        {
+          "repo": "sirxalfred/mosaic-cardano",
+          "message": "config: add shadcn ui for reusable compnents",
+          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/af7a5063348232e7f4d49e074799edfecd6d586d",
+          "committedAt": "2026-05-13T17:23:52Z"
+        },
+        {
+          "repo": "sirxalfred/mosaic-cardano",
+          "message": "refactor: convert to fully nextjs app with routing, loading and config",
+          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/35a917661bbc79b3a0f739c15409acfd66d7acab",
+          "committedAt": "2026-05-13T17:19:09Z"
+        }
+      ],
+      "error": null
     }
   ]
 }
