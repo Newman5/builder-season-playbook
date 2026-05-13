@@ -1,0 +1,8 @@
+interface:
+  display_name: "Create Post"
+  short_description: "Create Builder Season Playbook blog posts."
+  brand_color: "#A44722"
+  default_prompt: "Use $create-post to draft a new Builder Season Playbook post from today's work."
+
+policy:
+  allow_implicit_invocation: false

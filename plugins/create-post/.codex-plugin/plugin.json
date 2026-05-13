@@ -1,0 +1,24 @@
+{
+  "name": "create-post",
+  "version": "0.1.0",
+  "description": "Starter prompt and skill bundle for creating Builder Season Playbook posts.",
+  "author": {
+    "name": "Newman5",
+    "url": "https://github.com/Newman5"
+  },
+  "license": "MIT",
+  "keywords": ["blog", "posts", "eleventy"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Create Post",
+    "shortDescription": "Draft a new Builder Season Playbook post",
+    "longDescription": "Provides a repo-local /post-style starter prompt that routes into the create-post skill.",
+    "developerName": "Newman5",
+    "category": "Productivity",
+    "capabilities": ["Interactive", "Write"],
+    "defaultPrompt": [
+      "/post Use $create-post to draft a new Builder Season Playbook post from today's work."
+    ],
+    "brandColor": "#A44722"
+  }
+}

@@ -6,6 +6,7 @@
   "main": "eleventy.config.js",
   "scripts": {
     "build:data": "node ./scripts/build-data.mjs",
+    "create-post": "node ./scripts/create-post.mjs",
     "sync:repos": "node ./scripts/sync-repos.mjs",
     "prestart": "npm run build:data",
     "start": "eleventy --serve",

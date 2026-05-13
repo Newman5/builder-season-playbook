@@ -111,6 +111,7 @@ cat > "$filename" << EOF
 ---
 title: "$title"
 date: $date
+author: "Newman"
 tags:
   - blog
 layout: post.njk

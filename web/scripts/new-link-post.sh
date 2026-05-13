@@ -129,6 +129,7 @@ cat > "$filename" << EOF
 ---
 title: "$title"
 date: $date
+author: "Newman"
 link: "$url"
 tags:
   - link

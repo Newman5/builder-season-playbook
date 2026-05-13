@@ -19,6 +19,8 @@
     <h1>{{ title }}</h1>
     <p>
       <time datetime="{{ date }}">{{ date | readableDate }}</time>
+      &nbsp;·&nbsp;
+      <span>Author: {{ author or "Newman" }}</span>
       
       {# Display tags if they exist #}
       {% if tags %}
