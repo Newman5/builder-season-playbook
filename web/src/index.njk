@@ -16,14 +16,41 @@
       {# <a class="button secondary" href="{{ '/progress-log/' | withBase }}">Read Progress Log</a> #}
     </div>
   </div>
-  <div class="card">
-    <p class="eyebrow">What You’ll Find</p>
-    <ul class="clean">
-      <li>Weekly builder activity summaries</li>
-      <li>Per-builder detail pages with recent commits</li>
-      <li>Raw published JSON for reuse and inspection</li>
-      <li>Progress posts and archive pages</li>
-    </ul>
+  
+</section>
+
+<section class="card facepile-section">
+  <div class="facepile-copy">
+    <p class="eyebrow">Builder Registry</p>
+    <h2 style="margin-top: 0;">The season is shaped by public work from a growing circle of builders.</h2>
+
   </div>
+  <ul class="facepile" aria-label="Builder profile images">
+    {% for builder in builders %}
+      {% if builder.githubAvatarUrl %}
+        {% set profileLink = builder.builderPageUrl %}
+        <li>
+          <a
+            class="facepile-link"
+            href="{% if profileLink %}{{ profileLink | withBase }}{% else %}{{ builder.githubProfileUrl }}{% endif %}"
+            {% if not profileLink %}rel="external noopener"{% endif %}
+            title="{{ builder.displayName }}"
+            aria-label="Open {{ builder.displayName }}"
+          >
+            <img
+              class="facepile-avatar"
+              src="{{ builder.githubAvatarUrl }}"
+              alt="{{ builder.displayName }} GitHub profile image"
+              width="48"
+              height="48"
+              loading="lazy"
+              decoding="async"
+            >
+          </a>
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+  
 </section>
 {% endblock %}

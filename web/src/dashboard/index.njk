@@ -39,6 +39,32 @@ permalink: /dashboard/
 
 <section class="table-card" style="margin-bottom: 24px;">
   <h2>Builders</h2>
+  <ul class="facepile" aria-label="Builder profile images">
+    {% for builder in builders %}
+      {% if builder.githubAvatarUrl %}
+        {% set profileLink = builder.builderPageUrl %}
+        <li>
+          <a
+            class="facepile-link"
+            href="{% if profileLink %}{{ profileLink | withBase }}{% else %}{{ builder.githubProfileUrl }}{% endif %}"
+            {% if not profileLink %}rel="external noopener"{% endif %}
+            title="{{ builder.displayName }}"
+            aria-label="Open {{ builder.displayName }}"
+          >
+            <img
+              class="facepile-avatar"
+              src="{{ builder.githubAvatarUrl }}"
+              alt="{{ builder.displayName }} GitHub profile image"
+              width="48"
+              height="48"
+              loading="lazy"
+              decoding="async"
+            >
+          </a>
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
   <table>
     <thead>
       <tr>
