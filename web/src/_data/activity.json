@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-13T13:02:24Z",
+  "generatedAt": "2026-05-14T12:53:48Z",
   "weekStart": "2026-05-11T00:00:00Z",
   "weekEnd": "2026-05-17T23:59:59Z",
   "builders": [
@@ -22,25 +22,69 @@
     {
       "id": "dammy",
       "name": "Dammy",
-      "lastActivityAt": "2026-05-09T14:01:02Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-05-13T22:29:45Z",
+      "commitsThisWeek": 5,
+      "recentCommits": [
+        {
+          "repo": "Dammy7942/accordiax",
+          "message": "fixed greeting card overflown on mobile",
+          "url": "https://github.com/Dammy7942/accordiax/commit/8a7256fa821bdadec5c0e20f34b6dc3c76c1d5f8",
+          "committedAt": "2026-05-13T22:29:45Z"
+        },
+        {
+          "repo": "Dammy7942/accordiax",
+          "message": "Improve the mobile responssiveness for the nav links",
+          "url": "https://github.com/Dammy7942/accordiax/commit/948dc5781fa02170b97bfa49c35244661c081f6d",
+          "committedAt": "2026-05-13T20:42:17Z"
+        },
+        {
+          "repo": "Dammy7942/accordiax",
+          "message": "feat: add dispute and approval workflow for delivered work – student approve/dispute, consultant accept dispute or appeal (placeholder for admin mediation)",
+          "url": "https://github.com/Dammy7942/accordiax/commit/5a64ac3acf4a173247105a54ea3ee37b92899ef0",
+          "committedAt": "2026-05-13T19:13:24Z"
+        },
+        {
+          "repo": "Dammy7942/accordiax",
+          "message": "feat: add My Requests tab for students and Open Requests tab for consultants, enhance dashboard with welcome cards, per-tab descriptions, and integrate all status tabs into overview stats",
+          "url": "https://github.com/Dammy7942/accordiax/commit/0f23c19f568fd807c4f71ee32d68ed55d03b11e2",
+          "committedAt": "2026-05-13T18:26:51Z"
+        },
+        {
+          "repo": "Dammy7942/accordiax",
+          "message": "feat: complete Week 3 Paystack integration, add dashboard overview tabs with stat cards, rejected/completed statuses, date displays, and professional UI overhaul",
+          "url": "https://github.com/Dammy7942/accordiax/commit/98aac504cb52b03e23e5fd03f70c508904c490af",
+          "committedAt": "2026-05-13T18:05:37Z"
+        }
+      ],
       "error": null
     },
     {
       "id": "johnny5i",
       "name": "Johnny5i",
-      "lastActivityAt": "2026-05-09T07:53:54Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-05-14T11:30:42Z",
+      "commitsThisWeek": 1,
+      "recentCommits": [
+        {
+          "repo": "bytewizard42i/BlindOracle-Gimbalabs_hackathon",
+          "message": "docs: add PENDING_REMINDERS.md tracking Gimbalabs xpost (deadline Sun May 17)",
+          "url": "https://github.com/bytewizard42i/BlindOracle-Gimbalabs_hackathon/commit/bb52fecfd41be6959b4277adc5d81ff6951e9593",
+          "committedAt": "2026-05-14T11:30:42Z"
+        }
+      ],
       "error": null
     },
     {
       "id": "gidhub",
       "name": "Gideon",
-      "lastActivityAt": "2026-05-13T12:25:36Z",
-      "commitsThisWeek": 15,
+      "lastActivityAt": "2026-05-13T17:10:12Z",
+      "commitsThisWeek": 16,
       "recentCommits": [
+        {
+          "repo": "0xGIDHUB/tixano",
+          "message": "Added initial setup for the dashboard page",
+          "url": "https://github.com/0xGIDHUB/tixano/commit/588e9c707728648c384c458ab1c05b2c7edd7e6a",
+          "committedAt": "2026-05-13T17:10:12Z"
+        },
         {
           "repo": "0xGIDHUB/tixano",
           "message": "Changed the loading animation with other minor changes",
@@ -64,12 +108,6 @@
           "message": "Added nft tickets image generation! Noice (-_-)👌",
           "url": "https://github.com/0xGIDHUB/tixano/commit/96b895269e9e329ad85c56a0db062b4837f82ad6",
           "committedAt": "2026-05-13T05:59:34Z"
-        },
-        {
-          "repo": "0xGIDHUB/tixano",
-          "message": "Moved the email confirmation to be the last process in the registration submit flow",
-          "url": "https://github.com/0xGIDHUB/tixano/commit/5434e3b4348dfcaed09ebf43a28a04fc7fc0302a",
-          "committedAt": "2026-05-12T16:37:11Z"
         }
       ],
       "error": null
@@ -98,9 +136,40 @@
     {
       "id": "harrie",
       "name": "Harrie",
-      "lastActivityAt": "2026-05-09T12:07:45Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-05-13T19:46:15Z",
+      "commitsThisWeek": 5,
+      "recentCommits": [
+        {
+          "repo": "IamHarrie-Labs/beni",
+          "message": "feat(phase-1): Blockfrost connection + CIP-30 wallet connect\n\n- api/blockfrost.js: Vercel serverless Blockfrost proxy with embedded\n  bech32 encoder — converts CIP-30 hex addresses server-side, handles\n  new/empty addresses (404 → 0 balance), routes action=address|txs\n- sdk/src/chat-server.ts: mirror Blockfrost proxy on local port 3001\n  so wallet connect works during dev without deploying\n- app/dashboard.jsx: full CIP-30 wallet connect integration\n  - useWallet() hook: detect Eternl/Nami/Lace/Flint/Vespr/Gero/Typhon\n  - WalletConnect dropdown: shows available wallet extensions, icons\n  - BalanceHero: real ₳ balance from Blockfrost when connected\n  - ActivityCard: real tx feed with cardanoscan.io links\n  - TransactionsTable: real tx rows with block time, block height\n  - SpendCurve: activity bars from tx history\n  - KPI: real tx count; faucet link when address is empty\n  - AssistantPanel: auto-updates welcome message on wallet connect\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>",
+          "url": "https://github.com/IamHarrie-Labs/beni/commit/6cac2f3554a16b2f74e91fd789bd51920680aaa0",
+          "committedAt": "2026-05-13T19:46:15Z"
+        },
+        {
+          "repo": "IamHarrie-Labs/beni",
+          "message": "feat: remove mock data, add Vercel deployment\n\n- dashboard.jsx: strip all hardcoded wallet data; show empty states\n  (no agents, ₳ — balance, flat curve, clear approvals queue, rules\n  all set to Not set, 0 whitelist entries, removed AllocationCard)\n- api/chat.js: Vercel serverless function wrapping Claude Haiku 4.5\n- package.json: root-level deps so Vercel can install @anthropic-ai/sdk\n- vercel.json: serve app/ as static output, route /api/chat to function\n- sdk/src/chat-server.ts: model confirmed as claude-haiku-4-5-20251001\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>",
+          "url": "https://github.com/IamHarrie-Labs/beni/commit/7c14249b816ac69e6a7689751acdc5c5d084438b",
+          "committedAt": "2026-05-13T19:13:08Z"
+        },
+        {
+          "repo": "IamHarrie-Labs/beni",
+          "message": "feat(chatbot): wire AssistantPanel to Claude Haiku via local chat server\n\n- sdk/src/chat-server.ts: Node.js HTTP server that proxies the dashboard\n  chat UI to Claude 3.5 Haiku (max_tokens: 300 to conserve credits).\n  System prompt includes live wallet context (balance, caps, agent list,\n  recent rejections). Reads ANTHROPIC_API_KEY from root .env.\n- sdk/package.json: add \"chat\" script (npx tsx src/chat-server.ts)\n- app/dashboard.jsx: AssistantPanel send() is now async — calls\n  http://localhost:3001/api/chat, shows \"thinking…\" loading state,\n  auto-scrolls to latest message, suggested actions pre-fill input box.\n  Status dot turns amber while waiting for Haiku.\n- .env.example: template for ANTHROPIC_API_KEY + Blockfrost + agent key\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>",
+          "url": "https://github.com/IamHarrie-Labs/beni/commit/e8ebdac20daee92f243c31f86ed3443b8dcbc238",
+          "committedAt": "2026-05-13T18:39:35Z"
+        },
+        {
+          "repo": "IamHarrie-Labs/beni",
+          "message": "feat(app): implement full web UI from Claude Design\n\nReplaces the minimal dark-mode placeholder with a complete editorial\nweb app — landing page, dashboard, security, docs, and brand pages.\n\n- app/index.html: React 18 + Babel standalone entry point, hash-based\n  routing across 5 pages (landing, dashboard, security, docs, brand)\n- app/styles.css: paper/ink design system (oklch palette, DM Serif\n  Display + Newsreader + Caveat + JetBrains Mono, hand-drawn SVG\n  primitives, stamp/tape/polaroid components)\n- app/components.jsx: GlobalDefs, Sketchbox, ScribbleUnder, HandArrow,\n  BeniMark wordmark, Icon set, TopNav, Footer\n- app/landing.jsx: Hero, HeroDiagram, Marquee, Problem stats, HowItWorks\n  4-step flow, 8 Rules grid, SDK code card, Testimonial, FAQ accordion,\n  FinalCTA\n- app/dashboard.jsx: Sidebar + agent list, Command Center (balance,\n  24h spend curve, KPI row, live activity feed, approvals queue with\n  approve/reject, rules toggle panel, whitelist card, allocation bar,\n  transactions table), Beni AI assistant chat panel\n- app/pages.jsx: Security (4-layer diagram, contract anatomy, stats),\n  Docs (sidebar nav, quickstart/install/rules/approval/contracts bodies,\n  code snippets), Brand book (logo variants, palette swatches, type\n  specimens, component kit)\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>",
+          "url": "https://github.com/IamHarrie-Labs/beni/commit/9743e40f947dc5d655488840edfbfc73ae47574b",
+          "committedAt": "2026-05-13T18:00:04Z"
+        },
+        {
+          "repo": "IamHarrie-Labs/beni",
+          "message": "docs: overhaul README to reflect current project state\n\n- Accurate project structure (validators, sdk, app, tests, plutus.json)\n- Architecture diagram showing SDK ↔ Cardano Ledger ↔ Claude API\n- Quick start covering aiken check/build, SDK install, offline + on-chain demo\n- SDK usage code example (createAgentWallet, agentSpend, freezeWallet)\n- Thread token security explanation\n- CI badge section and full stack list\n- Removed stale scaffold content (lib/ dir, wrong structure)\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>",
+          "url": "https://github.com/IamHarrie-Labs/beni/commit/fc26f67a259168b3f5763e6675326589e34994c3",
+          "committedAt": "2026-05-13T17:30:46Z"
+        }
+      ],
       "error": null
     },
     {
@@ -175,9 +244,40 @@
     {
       "id": "murmurations",
       "name": "Nori",
-      "lastActivityAt": "2026-05-08T21:47:17Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-05-13T22:24:18Z",
+      "commitsThisWeek": 8,
+      "recentCommits": [
+        {
+          "repo": "murmurations-ai/flyway",
+          "message": "docs: accept ADR-0006 (skill distribution and installation)\n\nImplementation now scoped: flyway-cli grows skill list/install/uninstall\nsubcommands; flyway-agent's FLYWAY_SKILL_MD becomes the first installable\nartifact. Target inference for .claude/skills/; explicit --target works\neverywhere. Closes retrospective gap #6 once implementation lands.\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>",
+          "url": "https://github.com/murmurations-ai/flyway/commit/bfcb7a0915570714753823b336fb218828e75aa1",
+          "committedAt": "2026-05-13T22:24:18Z"
+        },
+        {
+          "repo": "murmurations-ai/flyway",
+          "message": "docs: ADR-0006 (Proposed) — skill distribution and installation\n\nDrafted in response to retrospective gap #6 (skills are exported\nconstants today, not installable into agent environments). Frames the\nquestion generally so it scales to multiple skills as Tier 2 lands\n(Seven Principles, Meeting Practices, Peer Development).\n\nCore decision: skills are installable artifacts distributed as npm\npackages and installed via flyway-cli (which currently is a stub —\nthis gives it its first real job). Three subcommands proposed:\nflyway skill list / install / uninstall. Target resolution infers\nfrom environment markers (.claude/skills/, etc.) with explicit\n--target override.\n\nScope for v0.1 deliberately narrow: only flyway-agent is registered;\nonly SKILL.md is written (no scripts/references/assets subdirs until a\nreal skill ships them); update + content-hash safety deferred.\n\nFuture skills adopt flyway- namespace prefix as convention. CLI\nimports content from skill packages, never hardcodes — adding a skill\nis publish package + register in CLI.\n\nStatus: Proposed. Implementation follows acceptance.\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>",
+          "url": "https://github.com/murmurations-ai/flyway/commit/83b65cf7d3dfed6807585520b3e94861e5ae8203",
+          "committedAt": "2026-05-13T22:22:44Z"
+        },
+        {
+          "repo": "murmurations-ai/flyway",
+          "message": "docs(retrospectives): first build cycle (2026-04-27 → 2026-05-13)\n\nHonest look back at the first build cycle — research-only repo through\nTier 1 completion of ADR-0005. Same versioned-evidence pattern as the\nwalkthroughs: tied to SHA 12f48e4 and protocol 0.1.0 so progress is\nmeasurable against the next retrospective.\n\nCaptures:\n- What shipped (5 ADRs, 9 tools, 40 tests, 1 trial walkthrough, 8 issues)\n- What's working well (ADR discipline, S3 grounding, Agent Skills IO\n  pivot, surface/substance separation, the trial actually validated\n  consent dynamics empirically)\n- What still needs work, honestly ranked (no tool execution is the\n  largest gap; 2-party ceiling; no real two-machine test; stubs;\n  no identity infrastructure; no deployment story; single-perspective\n  design; adversarial cases unconsidered)\n- Patterns observed (subagent + discipline modes; ADR/code/docs triple;\n  tight loops; grounding; good pivots)\n- Recommendations forward (implement flyway_init first; close #1+#5\n  before Tier 2; real two-machine trial; second human Source; status\n  discipline in README)\n\nOne-sentence summary: flyway is a coherent protocol specification with\na typed reference and one empirically-validated consent cycle. It is\nnot yet a running system. The next milestone is the smallest one that\ncrosses that line.\n\nIndex at docs/retrospectives/README.md.\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>",
+          "url": "https://github.com/murmurations-ai/flyway/commit/9d89dee56b606d704de06088112723ba3ae0604c",
+          "committedAt": "2026-05-13T22:13:26Z"
+        },
+        {
+          "repo": "murmurations-ai/flyway",
+          "message": "docs(walkthroughs): 3-party retrospective-cadence trial of Tier 1 protocol\n\nEnd-to-end test of flyway 0.1.0 (SHA 02e1bfa) with three independent\nsubagents reasoning from distinct murmuration contexts plus one\nfacilitator subagent, on a realistic scenario: three peer murmurations\ncollaborating on a year-long joint paper needing to agree on\nretrospective cadence.\n\nThe protocol carried the full arc tension → independent acknowledgements\nwith divergent suggestions → facilitator integration into a\nrequirements-stage proposal → consent round (2 accept + 1 object) →\nobjection integration into a refinement → predicted consent on refinement.\n\nWhat worked:\n- Three subagents produced genuinely independent, distinct positions\n  (none pre-emptively softened)\n- §IV.1.6 objection-vs-concern test classified correctly under load\n- Facilitator integration produced a novel two-layer structure none of\n  the three suggested individually\n- Source C raised a textbook §IV.1.6 objection (premise + conclusion +\n  proposed resolution); §IV.1.7 integration cycle resolved it cleanly\n- 12 substantive concerns recorded across the accept responses\n- Agreement schema carried the integrated output without forcing\n\nGaps surfaced and filed:\n  #1 flyway_propose is 2-party only (singular peerDid)\n  #2 Tension → proposal promotion has no first-class linkage\n  #3 concerns_to_record not first-class on flyway_respond\n  #4 Facilitator role not first-class in the protocol\n  #5 Multi-party consent flow unspecified\n  #6 Structured requirements field on flyway_propose\n  #7 Operable triggers not structured in agreement schema\n  #8 No validation of stage transitions\n\nWalkthroughs are tied to git SHA + protocol version so progress over\ntime is auditable. docs/walkthroughs/README.md indexes them.\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>",
+          "url": "https://github.com/murmurations-ai/flyway/commit/12f48e402a7e73991b79a4f41427c56b87a956a7",
+          "committedAt": "2026-05-13T22:10:12Z"
+        },
+        {
+          "repo": "murmurations-ai/flyway",
+          "message": "feat(core): flyway_propose stages from S3 §IV.1.9–1.10 (Tier 1 #4 — Tier 1 complete)\n\nS3 Proposal Forming (§IV.1.10) is a 7-step pattern for developing\nproposals through stages instead of in a single shot. ADR-0005 committed\nto capturing this with an optional stage field on flyway_propose\n(driver / requirements / draft / refinement). final is added as the\ndefault to preserve single-shot proposals.\n\nMapping from S3's 7 steps to flyway's 4 stages + default:\n  driver       = §IV.1.10 step 1 (Consent to Purpose)\n  requirements = §IV.1.10 steps 2-4 (Questions, Info Gathering, Generative Qs)\n  draft        = §IV.1.10 steps 5-7 (Collect Ideas, Choose Tuners, Tuners Design)\n  refinement   = post-objection revision (§IV.1.7 Resolve Objections cycle)\n  final        = ready for consent decision (default)\n\nTwo new fields on flyway_propose:\n- stage (optional enum) — defaults to 'final'\n- previousStageId (optional string) — links a refinement back to its draft\n  so the staging chain is traceable without inferring from issue order\n\nResponses to non-final stages are signals about the proposal's evolution,\nnot consent decisions — the instructions name this explicitly so peers\ndon't mistake \"no objections to this draft as a draft\" for consent.\n\nNew section in protocol instructions explains the stages and when each\napplies; routine matters can still go straight to final, novel work\nbenefits from the early stages.\n\nFive new tests pin the stage enum, optional-ness, previousStageId field,\nand the §IV.1.9-1.10 citation. ADR-0005 Tier 1 row updated; this closes\nTier 1 — all four sub-tasks resolved. 40/40 tests passing; MCP smoke\ntest confirms stage field served correctly over stdio.\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>",
+          "url": "https://github.com/murmurations-ai/flyway/commit/02e1bfae1401281ba260178f27ba30d8d9622a6b",
+          "committedAt": "2026-05-13T21:45:57Z"
+        }
+      ],
       "error": null
     },
     {
@@ -207,9 +307,15 @@
     {
       "id": "newman5",
       "name": "Newman",
-      "lastActivityAt": "2026-05-13T03:07:41Z",
-      "commitsThisWeek": 6,
+      "lastActivityAt": "2026-05-13T13:02:35Z",
+      "commitsThisWeek": 7,
       "recentCommits": [
+        {
+          "repo": "Newman5/builder-season-playbook",
+          "message": "Update builder activity data",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/a200bf649f20a490aab84833ee15c013c6f6e790",
+          "committedAt": "2026-05-13T13:02:35Z"
+        },
         {
           "repo": "Newman5/builder-season-playbook",
           "message": "post skill for the agent",
@@ -233,12 +339,6 @@
           "message": "Update builder activity data",
           "url": "https://github.com/Newman5/builder-season-playbook/commit/ef9cc6fb53add9da3bc9ba23e5f92a57fdf51f9e",
           "committedAt": "2026-05-12T12:58:43Z"
-        },
-        {
-          "repo": "Newman5/builder-season-playbook",
-          "message": "Merge branch 'main' of https://github.com/Newman5/builder-season-playbook",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/09600b034ef3f232dea7cb88794aa61f9128afbf",
-          "committedAt": "2026-05-11T15:08:22Z"
         }
       ],
       "error": null
@@ -246,25 +346,88 @@
     {
       "id": "minustenex",
       "name": "Harsha",
-      "lastActivityAt": "2026-05-07T13:51:39Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-05-13T19:26:27Z",
+      "commitsThisWeek": 3,
+      "recentCommits": [
+        {
+          "repo": "agentic-architecture-research/plugin-harness",
+          "message": "Stop tracking .DS_Store\n\nCo-authored-by: Cursor <cursoragent@cursor.com>",
+          "url": "https://github.com/agentic-architecture-research/plugin-harness/commit/15b3ce7f4561467ae05613a12b8dedb21e08dcf5",
+          "committedAt": "2026-05-13T19:26:27Z"
+        },
+        {
+          "repo": "agentic-architecture-research/plugin-harness",
+          "message": "added ds store to gitignore",
+          "url": "https://github.com/agentic-architecture-research/plugin-harness/commit/c2eada079b06b951ad5703c4af40f3d6046e1c5b",
+          "committedAt": "2026-05-13T19:25:22Z"
+        },
+        {
+          "repo": "agentic-architecture-research/plugin-harness",
+          "message": "added plugin boundary doc, harness-language readiness doc, and build modules doc",
+          "url": "https://github.com/agentic-architecture-research/plugin-harness/commit/3527a8f18526b5595e1931d4da5bb5570a6d4ce0",
+          "committedAt": "2026-05-13T18:46:18Z"
+        }
+      ],
       "error": null
     },
     {
       "id": "devfreeguy",
       "name": "Daniel",
-      "lastActivityAt": "2026-05-05T18:14:18Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-05-14T12:38:55Z",
+      "commitsThisWeek": 4,
+      "recentCommits": [
+        {
+          "repo": "devfreeguy/skill-swap",
+          "message": "fix: pin pnpm version to 11.1.2 for vercel deployment",
+          "url": "https://github.com/devfreeguy/skill-swap/commit/e2d5b968c9cf8f913dc1b03af0fa9e6f5adb7a68",
+          "committedAt": "2026-05-14T12:38:55Z"
+        },
+        {
+          "repo": "devfreeguy/skill-swap",
+          "message": "fix: regenerate pnpm lockfile for vercel deployment",
+          "url": "https://github.com/devfreeguy/skill-swap/commit/665bbfdd96db7f379749e4d682d8f8001d6e5cd8",
+          "committedAt": "2026-05-14T12:38:12Z"
+        },
+        {
+          "repo": "devfreeguy/skill-swap",
+          "message": "feat: onboarding screen with skill search and cardano wallet registration",
+          "url": "https://github.com/devfreeguy/skill-swap/commit/913d996eb5e8534ecd32f3f48d808c09305643bc",
+          "committedAt": "2026-05-14T03:35:00Z"
+        },
+        {
+          "repo": "devfreeguy/skill-swap",
+          "message": "feat: setup prisma v7 backend, jwt auth, and auth screens",
+          "url": "https://github.com/devfreeguy/skill-swap/commit/ee007bdac1c8a504e1de57003512fc532c5d7b62",
+          "committedAt": "2026-05-13T14:08:14Z"
+        }
+      ],
       "error": null
     },
     {
       "id": "haulink",
       "name": "Abdulazeez",
-      "lastActivityAt": "2026-05-09T10:34:46Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-05-13T14:50:22Z",
+      "commitsThisWeek": 3,
+      "recentCommits": [
+        {
+          "repo": "FoladDTechie/Haulink",
+          "message": "Merge pull request #4 from FoladDTechie/HAUL-22-AZB\n\nfix: add ES2017 target to tsconfig to allow Set iteration",
+          "url": "https://github.com/FoladDTechie/Haulink/commit/76d5018b17bfe6121929b7e0cdfe1bf9baed7462",
+          "committedAt": "2026-05-13T14:50:22Z"
+        },
+        {
+          "repo": "FoladDTechie/Haulink",
+          "message": "feat: merchant auth, dashboard, shipment persistence",
+          "url": "https://github.com/FoladDTechie/Haulink/commit/e2ef3759f49157cde41e0dc21085b8710cb7670c",
+          "committedAt": "2026-05-13T14:48:16Z"
+        },
+        {
+          "repo": "FoladDTechie/Haulink",
+          "message": "feat: merchant auth, dashboard, shipment persistence",
+          "url": "https://github.com/FoladDTechie/Haulink/commit/ccbb3360b479e1b0c71c4149380627f398de1cf8",
+          "committedAt": "2026-05-13T14:47:02Z"
+        }
+      ],
       "error": null
     },
     {
