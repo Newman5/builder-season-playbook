@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-14T12:53:48Z",
+  "generatedAt": "2026-05-15T12:52:53Z",
   "weekStart": "2026-05-11T00:00:00Z",
   "weekEnd": "2026-05-17T23:59:59Z",
   "builders": [
@@ -76,38 +76,38 @@
     {
       "id": "gidhub",
       "name": "Gideon",
-      "lastActivityAt": "2026-05-13T17:10:12Z",
-      "commitsThisWeek": 16,
+      "lastActivityAt": "2026-05-15T10:30:26Z",
+      "commitsThisWeek": 20,
       "recentCommits": [
+        {
+          "repo": "0xGIDHUB/tixano",
+          "message": "Edited tickets grid layout",
+          "url": "https://github.com/0xGIDHUB/tixano/commit/ae0f4d433237393b1baf6e77b933c77efebbc3ad",
+          "committedAt": "2026-05-15T10:30:26Z"
+        },
+        {
+          "repo": "0xGIDHUB/tixano",
+          "message": "Edited nft ticket image format",
+          "url": "https://github.com/0xGIDHUB/tixano/commit/af97f88354979b19f5ac81b19750966c54338d59",
+          "committedAt": "2026-05-15T09:48:33Z"
+        },
+        {
+          "repo": "0xGIDHUB/tixano",
+          "message": "Added skeleton loading to ticket image",
+          "url": "https://github.com/0xGIDHUB/tixano/commit/8f13417d193e64a3a6bc4f85c516b15da7499d6d",
+          "committedAt": "2026-05-15T08:17:35Z"
+        },
+        {
+          "repo": "0xGIDHUB/tixano",
+          "message": "Added the interface for the dashboard ticket panel",
+          "url": "https://github.com/0xGIDHUB/tixano/commit/0604df9887d8f2bf83137b2607b7b1f089599497",
+          "committedAt": "2026-05-15T00:07:50Z"
+        },
         {
           "repo": "0xGIDHUB/tixano",
           "message": "Added initial setup for the dashboard page",
           "url": "https://github.com/0xGIDHUB/tixano/commit/588e9c707728648c384c458ab1c05b2c7edd7e6a",
           "committedAt": "2026-05-13T17:10:12Z"
-        },
-        {
-          "repo": "0xGIDHUB/tixano",
-          "message": "Changed the loading animation with other minor changes",
-          "url": "https://github.com/0xGIDHUB/tixano/commit/2524c0678b6a3a913ab171507999430157135fa7",
-          "committedAt": "2026-05-13T12:25:36Z"
-        },
-        {
-          "repo": "0xGIDHUB/tixano",
-          "message": "Fixed some formatting issues with the nft ticket image generation",
-          "url": "https://github.com/0xGIDHUB/tixano/commit/75603a48ed777139d279c891a1b03ab8935d03bd",
-          "committedAt": "2026-05-13T12:12:41Z"
-        },
-        {
-          "repo": "0xGIDHUB/tixano",
-          "message": "Edited the event creation nft image design",
-          "url": "https://github.com/0xGIDHUB/tixano/commit/0b1d98fbb6436990b6ff48eb0b61f102b2b53325",
-          "committedAt": "2026-05-13T06:37:34Z"
-        },
-        {
-          "repo": "0xGIDHUB/tixano",
-          "message": "Added nft tickets image generation! Noice (-_-)👌",
-          "url": "https://github.com/0xGIDHUB/tixano/commit/96b895269e9e329ad85c56a0db062b4837f82ad6",
-          "committedAt": "2026-05-13T05:59:34Z"
         }
       ],
       "error": null
@@ -175,10 +175,17 @@
     {
       "id": "lewis",
       "name": "Lewis",
-      "lastActivityAt": null,
-      "commitsThisWeek": 0,
-      "recentCommits": [],
-      "error": "EMPTY_REPO_OR_NO_COMMITS"
+      "lastActivityAt": "2026-05-15T12:24:37Z",
+      "commitsThisWeek": 1,
+      "recentCommits": [
+        {
+          "repo": "lewis-nduati/Tracom-credentials",
+          "message": "Initial commit: Add README",
+          "url": "https://github.com/lewis-nduati/Tracom-credentials/commit/8007f56b0e0e400bf23070231246f14d54b9f650",
+          "committedAt": "2026-05-15T12:24:37Z"
+        }
+      ],
+      "error": null
     },
     {
       "id": "armanabid",
@@ -215,9 +222,15 @@
     {
       "id": "yungslaiz",
       "name": "Blessed David",
-      "lastActivityAt": "2026-05-11T22:41:52Z",
-      "commitsThisWeek": 2,
+      "lastActivityAt": "2026-05-14T21:06:15Z",
+      "commitsThisWeek": 3,
       "recentCommits": [
+        {
+          "repo": "YungSlaiz53/GNXT",
+          "message": "initialize project scaffold with authentication, routing, and core pages",
+          "url": "https://github.com/YungSlaiz53/GNXT/commit/dcc63e5274a2ea93af2d7533867c7f6151cf8dbf",
+          "committedAt": "2026-05-14T21:06:15Z"
+        },
         {
           "repo": "YungSlaiz53/GNXT",
           "message": "Delete NEXT.AI-main.zip",
@@ -307,9 +320,15 @@
     {
       "id": "newman5",
       "name": "Newman",
-      "lastActivityAt": "2026-05-13T13:02:35Z",
-      "commitsThisWeek": 7,
+      "lastActivityAt": "2026-05-14T12:54:00Z",
+      "commitsThisWeek": 8,
       "recentCommits": [
+        {
+          "repo": "Newman5/builder-season-playbook",
+          "message": "Update builder activity data",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/0c307d8df121da131b80b0e81744083268955995",
+          "committedAt": "2026-05-14T12:54:00Z"
+        },
         {
           "repo": "Newman5/builder-season-playbook",
           "message": "Update builder activity data",
@@ -333,12 +352,6 @@
           "message": "adding Facepile",
           "url": "https://github.com/Newman5/builder-season-playbook/commit/7a586a4b51148297d43f27ce67ed82015121c47c",
           "committedAt": "2026-05-13T02:15:12Z"
-        },
-        {
-          "repo": "Newman5/builder-season-playbook",
-          "message": "Update builder activity data",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/ef9cc6fb53add9da3bc9ba23e5f92a57fdf51f9e",
-          "committedAt": "2026-05-12T12:58:43Z"
         }
       ],
       "error": null
@@ -373,9 +386,15 @@
     {
       "id": "devfreeguy",
       "name": "Daniel",
-      "lastActivityAt": "2026-05-14T12:38:55Z",
-      "commitsThisWeek": 4,
+      "lastActivityAt": "2026-05-14T13:02:59Z",
+      "commitsThisWeek": 5,
       "recentCommits": [
+        {
+          "repo": "devfreeguy/skill-swap",
+          "message": "fix: update password field background and auth card padding",
+          "url": "https://github.com/devfreeguy/skill-swap/commit/b2877606590e4ed085c9b9ffb7f65a1beadf1ff8",
+          "committedAt": "2026-05-14T13:02:59Z"
+        },
         {
           "repo": "devfreeguy/skill-swap",
           "message": "fix: pin pnpm version to 11.1.2 for vercel deployment",
