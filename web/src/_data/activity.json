@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-15T12:52:53Z",
+  "generatedAt": "2026-05-16T12:37:18Z",
   "weekStart": "2026-05-11T00:00:00Z",
   "weekEnd": "2026-05-17T23:59:59Z",
   "builders": [
@@ -175,9 +175,21 @@
     {
       "id": "lewis",
       "name": "Lewis",
-      "lastActivityAt": "2026-05-15T12:24:37Z",
-      "commitsThisWeek": 1,
+      "lastActivityAt": "2026-05-16T07:07:01Z",
+      "commitsThisWeek": 3,
       "recentCommits": [
+        {
+          "repo": "lewis-nduati/Tracom-credentials",
+          "message": "Update README with project overview",
+          "url": "https://github.com/lewis-nduati/Tracom-credentials/commit/9586dd3d153c12a2d8223d4734141a0feecf4189",
+          "committedAt": "2026-05-16T07:07:01Z"
+        },
+        {
+          "repo": "lewis-nduati/Tracom-credentials",
+          "message": "Add folder structure: docs, credentials, src",
+          "url": "https://github.com/lewis-nduati/Tracom-credentials/commit/4a5d9553bb5453db15b222d17b08bc4ecd84c8ad",
+          "committedAt": "2026-05-15T12:50:06Z"
+        },
         {
           "repo": "lewis-nduati/Tracom-credentials",
           "message": "Initial commit: Add README",
@@ -249,9 +261,22 @@
     {
       "id": "maxalexweber",
       "name": "Maximilian",
-      "lastActivityAt": "2026-05-10T05:38:49Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-05-16T06:43:01Z",
+      "commitsThisWeek": 2,
+      "recentCommits": [
+        {
+          "repo": "maxalexweber1/CHAINFEED",
+          "message": "feat: enhance fluid health computation with systematic bias documentation\n\n- Added comments in `fluidtokens-health.ts` to clarify known biases in debt calculations.\n- Updated debt computation logic to reflect these biases, ensuring better documentation for consumers.\n\nrefactor: improve liquidity depth calculations and documentation\n\n- Renamed `midPrice` to `marginalPrice` in `liquidity-depth.ts` for clarity.\n- Updated documentation to explain the relationship between slippage and fees.\n\nfix: correct economic invariant documentation in liqwid decoder\n\n- Revised comments in `liqwid-decoder.ts` to accurately describe the relationship between `qTokenRate` and `totalSupplied`.\n\nchore: implement encryption for webhook secrets in liqwid finance\n\n- Introduced `secret-crypto.ts` for handling encryption and decryption of HMAC secrets.\n- Updated `liqwid-finance.ts` to utilize encrypted secrets for improved security.\n\nfix: enhance response signing with better error handling\n\n- Updated `response-signing.ts` to reject unserializable types early, improving robustness.\n\nfeat: add network consistency checks in x402 configuration\n\n- Implemented `assertNetworkConsistency` to ensure x402 and odatano networks match, preventing misconfigurations.\n\nchore: introduce worker lease management in peg monitor\n\n- Added lease acquisition and renewal logic in `peg-monitor.ts` to manage worker instances effectively.\n\nrefactor: improve stable health computation error handling\n\n- Enhanced error logging in `stable-health.ts` for better observability of failures during computation.\n\nfix: update stable risk score logic for price source health\n\n- Adjusted conditions in `stable-risk-score.ts` to correctly identify degraded price sources.\n\nfeat: add encryption checks and handling for webhook secrets\n\n- Implemented encryption checks in `secret-crypto.ts` to ensure webhook secrets are stored securely.",
+          "url": "https://github.com/maxalexweber1/CHAINFEED/commit/0a164d9b8d2e1633083fd976f63b3c4158f1f82e",
+          "committedAt": "2026-05-16T06:43:01Z"
+        },
+        {
+          "repo": "maxalexweber1/CHAINFEED",
+          "message": "refactor: remove x402 payment processing modules and introduce new configuration structure\n\n- Deleted legacy error handling, nonce management, pricing, and validation modules for x402 payments.\n- Introduced a new configuration file for x402 server settings, consolidating environment variable management.\n- Moved peg pricing logic to a dedicated module for better organization and clarity.\n- Updated route pricing definitions to reflect the new structure and ensure consistency across services.\n- Enhanced the resource path generation for actions to align with the new configuration approach.",
+          "url": "https://github.com/maxalexweber1/CHAINFEED/commit/992afd4f2fdaab973f67f385f63428f576079329",
+          "committedAt": "2026-05-15T20:54:07Z"
+        }
+      ],
       "error": null
     },
     {
@@ -320,9 +345,15 @@
     {
       "id": "newman5",
       "name": "Newman",
-      "lastActivityAt": "2026-05-14T12:54:00Z",
-      "commitsThisWeek": 8,
+      "lastActivityAt": "2026-05-15T12:53:05Z",
+      "commitsThisWeek": 9,
       "recentCommits": [
+        {
+          "repo": "Newman5/builder-season-playbook",
+          "message": "Update builder activity data",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/ab2ac6c2fd995009cba951b15031399741e10a60",
+          "committedAt": "2026-05-15T12:53:05Z"
+        },
         {
           "repo": "Newman5/builder-season-playbook",
           "message": "Update builder activity data",
@@ -346,12 +377,6 @@
           "message": "Merge branch 'main' of https://github.com/Newman5/builder-season-playbook",
           "url": "https://github.com/Newman5/builder-season-playbook/commit/1f59d21319f312adebfe14ce3efcef53fc88effa",
           "committedAt": "2026-05-13T02:17:59Z"
-        },
-        {
-          "repo": "Newman5/builder-season-playbook",
-          "message": "adding Facepile",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/7a586a4b51148297d43f27ce67ed82015121c47c",
-          "committedAt": "2026-05-13T02:15:12Z"
         }
       ],
       "error": null
@@ -501,17 +526,43 @@
     {
       "id": "muhammedyuguda",
       "name": "Muhammed",
-      "lastActivityAt": "2026-05-09T21:36:01Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-05-15T17:26:52Z",
+      "commitsThisWeek": 3,
+      "recentCommits": [
+        {
+          "repo": "Yuguda999/devmemory",
+          "message": "test: add resolver and repository tests\n\n- 31 resolver tests: URL slugification (HTTPS, SSH, GitLab, Bitbucket),\n  slug helpers, git root detection, full resolution chain with fallbacks\n- 36 repository tests: Session CRUD, ContextBlock CRUD, user-scoping\n  isolation, cascade delete behavior\n- Enable PRAGMA foreign_keys=ON for SQLite test engine (cascade support)\n- 130 tests total, all passing",
+          "url": "https://github.com/Yuguda999/devmemory/commit/1c0fb182f047bace5b28a520f8c990c3338a8a7e",
+          "committedAt": "2026-05-15T17:26:52Z"
+        },
+        {
+          "repo": "Yuguda999/devmemory",
+          "message": "feat: expand repository layer with session and context CRUD\n\n- Session ops: create, get (eager-loaded), list (filterable), update\n- Context block ops: create, bulk create, get (type filter), update, delete\n- get_project_by_id for ownership verification\n- All queries enforce user-scoping via project→user relationship\n- Eager loading for sessions (context_blocks + project)",
+          "url": "https://github.com/Yuguda999/devmemory/commit/1a2355af056fe221259379d8bc96e7ecfecc496e",
+          "committedAt": "2026-05-15T17:22:20Z"
+        },
+        {
+          "repo": "Yuguda999/devmemory",
+          "message": "feat: add git resolver for automatic project detection\n\n- Resolve cwd → project slug via git remote URL slugification\n- Support HTTPS, SSH, and plain URL formats\n- 4-level fallback: explicit name → git remote → dir name → basename\n- Async subprocess for non-blocking git operations\n- URL-safe slug generation with normalization",
+          "url": "https://github.com/Yuguda999/devmemory/commit/c6e0a3e65b7acf9e0b213a3ffa9905140d9e781b",
+          "committedAt": "2026-05-15T17:21:10Z"
+        }
+      ],
       "error": null
     },
     {
       "id": "juanitajaramillo",
       "name": "Juanita",
-      "lastActivityAt": "2026-05-07T23:03:24Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-05-15T20:16:36Z",
+      "commitsThisWeek": 1,
+      "recentCommits": [
+        {
+          "repo": "JuanitaJaramill/cardano-insights-lab",
+          "message": "Update README.md",
+          "url": "https://github.com/JuanitaJaramill/cardano-insights-lab/commit/f89e5d50bd09f2b5ed0ac5609c5ec2148867c4d7",
+          "committedAt": "2026-05-15T20:16:36Z"
+        }
+      ],
       "error": null
     },
     {
