@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-16T12:37:18Z",
+  "generatedAt": "2026-05-17T12:36:17Z",
   "weekStart": "2026-05-11T00:00:00Z",
   "weekEnd": "2026-05-17T23:59:59Z",
   "builders": [
@@ -61,9 +61,21 @@
     {
       "id": "johnny5i",
       "name": "Johnny5i",
-      "lastActivityAt": "2026-05-14T11:30:42Z",
-      "commitsThisWeek": 1,
+      "lastActivityAt": "2026-05-16T21:33:01Z",
+      "commitsThisWeek": 3,
       "recentCommits": [
+        {
+          "repo": "bytewizard42i/BlindOracle-Gimbalabs_hackathon",
+          "message": "blind edits",
+          "url": "https://github.com/bytewizard42i/BlindOracle-Gimbalabs_hackathon/commit/4461d6ce9ea8db051bac760ad414674e203ecd4e",
+          "committedAt": "2026-05-16T21:33:01Z"
+        },
+        {
+          "repo": "bytewizard42i/BlindOracle-Gimbalabs_hackathon",
+          "message": "feat(contract): bump pragma to language 0.23, recompile clean on compactc 0.31.0\n\nSingle-line pragma change: '>= 0.16 && <= 0.21' -> '>= 0.16 && <= 0.23'.\n\nValidation: full ZK compile under compactc 0.31.0 (the Apr 29 stable\nrelease — language 0.23.0, runtime 0.16.0). All 10 circuits compiled\nclean in 20.6 seconds, exit code 0, zero warnings.\n\nGenerated artifacts (gitignored under src/managed/blind-oracle/):\n- compiler/contract-info.json reports {compiler 0.31.0, language 0.23.0,\n  runtime 0.16.0} — the new v0.31 ledger-layout enrichment is captured\n- contract/index.{js,d.ts,js.map} — TypeScript bindings\n- zkir/ — 10 .zkir + 10 .bzkir circuit IRs (enter_round still largest at\n  30,769 bytes; abort_round smallest at 3,981 bytes)\n- keys/ — 10 .prover + 10 .verifier keys (20 total)\n\nLocal install path: 'compact' updater is still blocked by GitHub auth\n('Bad credentials') so installed compactc 0.31.0 directly from the\nrelease tarball into ~/.compact/versions/0.31.0/.\n\nPROGRESS_LOG.md updated with the Week 5 entry (May 11-17, 2026):\ncontract bump details, ecosystem-citizen work (Issue #37 nudge,\nCOMPACT_VERSIONS.md re-verification on the parent monorepo, sister-AI\nfleet rule sync), and forward look for Week 6 (testnet-02 deploy,\nfirst bot-seeded playtest, MidnightVitals instrumentation).\n\nThis is the substantive shipping story behind the Week 5 Gimbalabs\ntweet (deadline Sun May 17 12:00 UTC). Tweet permalink will be added\nto PROGRESS_LOG once posted.",
+          "url": "https://github.com/bytewizard42i/BlindOracle-Gimbalabs_hackathon/commit/81f385b1f75ccc2fe77a39dfe445c13f9df90e9f",
+          "committedAt": "2026-05-16T19:24:17Z"
+        },
         {
           "repo": "bytewizard42i/BlindOracle-Gimbalabs_hackathon",
           "message": "docs: add PENDING_REMINDERS.md tracking Gimbalabs xpost (deadline Sun May 17)",
@@ -202,9 +214,34 @@
     {
       "id": "armanabid",
       "name": "Abid",
-      "lastActivityAt": "2026-05-09T17:03:10Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-05-16T16:06:12Z",
+      "commitsThisWeek": 4,
+      "recentCommits": [
+        {
+          "repo": "ArmanAbid/ChainTask",
+          "message": "tests for dispute and timeout branches",
+          "url": "https://github.com/ArmanAbid/ChainTask/commit/bf4a9a0406f91d4daea529ecc4cc1fb95bee7b9d",
+          "committedAt": "2026-05-16T16:06:12Z"
+        },
+        {
+          "repo": "ArmanAbid/ChainTask",
+          "message": "wire week 3 redeemers in dispatcher",
+          "url": "https://github.com/ArmanAbid/ChainTask/commit/503b163751b06d5a8212480b0942aa9fe344aa2a",
+          "committedAt": "2026-05-16T16:06:07Z"
+        },
+        {
+          "repo": "ArmanAbid/ChainTask",
+          "message": "implement dispute, resolve, auto-release, auto-refund, arbitrator timeout",
+          "url": "https://github.com/ArmanAbid/ChainTask/commit/f4d524f8b1daa4c833d3af50c1fabb6401d14d05",
+          "committedAt": "2026-05-16T16:06:01Z"
+        },
+        {
+          "repo": "ArmanAbid/ChainTask",
+          "message": "add dispute fields and Dispute redeemer payload",
+          "url": "https://github.com/ArmanAbid/ChainTask/commit/4529938d50c5b9435c06c28aba485d11eb1ac743",
+          "committedAt": "2026-05-16T16:05:50Z"
+        }
+      ],
       "error": null
     },
     {
@@ -226,9 +263,22 @@
     {
       "id": "gamechanger",
       "name": "Adriano",
-      "lastActivityAt": "2026-05-09T00:33:20Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-05-17T07:05:57Z",
+      "commitsThisWeek": 2,
+      "recentCommits": [
+        {
+          "repo": "GameChangerFinance/NeonSoup",
+          "message": "Merge pull request #2 from GameChangerFinance/feat/protocol\n\nrefactor: package.json/pnpm project added. GCscript build process and…",
+          "url": "https://github.com/GameChangerFinance/NeonSoup/commit/a857f1ef4f8fc0e037552100f3fc2898d71db918",
+          "committedAt": "2026-05-17T07:05:57Z"
+        },
+        {
+          "repo": "GameChangerFinance/NeonSoup",
+          "message": "refactor: package.json/pnpm project added. GCscript build process and basic frontend automation added. Added JSON with comment support\n\n- Refactored into a package.json/pnpm project with file watch and build scripts\n- GCScript JSONC, build, validation and enhanced frontend creation early-using upcoming CLI/lib features from https://github.com/GameChangerFinance/gamechanger/tree/feat/build\n- Added comment support to GCScript code, and renamed the files for automatic IDE syntax support\n- Created a build workflow that ends with automatic boilerplate frontend generation\n- Added  `generate-snippet-args.mjs` to automate a config file for frontend generation using GC CLI\n- Added `.gitignore`\n\n- Split monolithic Open, Close, and Swap GCScript intents into reusable source modules under `src/intents/lib/`.\n- Replaced hardcoded hex/import payloads with build-time `$importAsScript` directives using explicit `app://` resource URIs.\n- Rebuilt `dist/intents/{open,close,swap}.gcscript.json` from the modular source files.\n- Added `isolateCache: true` to imported Open, Close, Swap, and Common script modules to preserve wallet-side `importAsScript` execution semantics after build expansion. This affects runtime JSON paths on cache behavior and usually is required for reusable modules.\n- Updated reusable lib scripts to receive caller arguments via `{get('args')}` instead of embedded sample/default args.",
+          "url": "https://github.com/GameChangerFinance/NeonSoup/commit/cae881a4ba9f08ee9f44c4fab44f1674b8e4eb21",
+          "committedAt": "2026-05-17T06:45:07Z"
+        }
+      ],
       "error": null
     },
     {
@@ -337,17 +387,54 @@
     {
       "id": "mobrai",
       "name": "Marcio",
-      "lastActivityAt": "2026-05-09T21:29:43Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-05-16T17:23:20Z",
+      "commitsThisWeek": 7,
+      "recentCommits": [
+        {
+          "repo": "mobr-ai/cap-pie",
+          "message": "Add 'offchain-etl/' from commit 'e9ef2e1e21d9a24deba0a10054676020e4825ff9'\n\ngit-subtree-dir: offchain-etl\ngit-subtree-mainline: 79b2629ba887c35df02356a823aa8493dd9b664a\ngit-subtree-split: e9ef2e1e21d9a24deba0a10054676020e4825ff9",
+          "url": "https://github.com/mobr-ai/cap-pie/commit/3dfbe27e52e58266dd54013e293f7581d3c50d95",
+          "committedAt": "2026-05-16T17:23:20Z"
+        },
+        {
+          "repo": "mobr-ai/cap-pie",
+          "message": "few more details about logs",
+          "url": "https://github.com/mobr-ai/cap-pie/commit/79b2629ba887c35df02356a823aa8493dd9b664a",
+          "committedAt": "2026-05-16T17:20:58Z"
+        },
+        {
+          "repo": "mobr-ai/cap-pie",
+          "message": "Merge commit 'df16ba0106271ce7704ea430e676a914aac5a81f'",
+          "url": "https://github.com/mobr-ai/cap-pie/commit/bbf8d08a1c5ebc00c0ad3a7f14247223595725ea",
+          "committedAt": "2026-05-16T17:14:03Z"
+        },
+        {
+          "repo": "mobr-ai/cap-pie",
+          "message": "adding project structure in the readme file",
+          "url": "https://github.com/mobr-ai/cap-pie/commit/ec58de928e88b4ad3fb0e8ca8b06e59c05fdff62",
+          "committedAt": "2026-05-16T17:13:32Z"
+        },
+        {
+          "repo": "mobr-ai/cap-pie",
+          "message": "Add 'frontend/' from commit '78e99db7c39b025c64784b4ed39bb050e55b66b9'\n\ngit-subtree-dir: frontend\ngit-subtree-mainline: e71c1f111d42e19de428a5fb3868fb9c4304efd9\ngit-subtree-split: 78e99db7c39b025c64784b4ed39bb050e55b66b9",
+          "url": "https://github.com/mobr-ai/cap-pie/commit/2903d471b17ff87fdbb5a43ed72c5f96e284475a",
+          "committedAt": "2026-05-16T16:47:35Z"
+        }
+      ],
       "error": null
     },
     {
       "id": "newman5",
       "name": "Newman",
-      "lastActivityAt": "2026-05-15T12:53:05Z",
-      "commitsThisWeek": 9,
+      "lastActivityAt": "2026-05-16T12:37:31Z",
+      "commitsThisWeek": 10,
       "recentCommits": [
+        {
+          "repo": "Newman5/builder-season-playbook",
+          "message": "Update builder activity data",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/5bb3cc9b58b1cd01b30be65e074f9ab2f5605172",
+          "committedAt": "2026-05-16T12:37:31Z"
+        },
         {
           "repo": "Newman5/builder-season-playbook",
           "message": "Update builder activity data",
@@ -371,12 +458,6 @@
           "message": "post skill for the agent",
           "url": "https://github.com/Newman5/builder-season-playbook/commit/18ea63152b9e2ad318b8524676d6735670b9c9ee",
           "committedAt": "2026-05-13T03:07:41Z"
-        },
-        {
-          "repo": "Newman5/builder-season-playbook",
-          "message": "Merge branch 'main' of https://github.com/Newman5/builder-season-playbook",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/1f59d21319f312adebfe14ce3efcef53fc88effa",
-          "committedAt": "2026-05-13T02:17:59Z"
         }
       ],
       "error": null
