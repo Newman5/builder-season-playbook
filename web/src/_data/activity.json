@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-18T13:35:06Z",
+  "generatedAt": "2026-05-19T13:27:27Z",
   "weekStart": "2026-05-18T00:00:00Z",
   "weekEnd": "2026-05-24T23:59:59Z",
   "builders": [
@@ -38,17 +38,43 @@
     {
       "id": "gidhub",
       "name": "Gideon",
-      "lastActivityAt": "2026-05-15T10:30:26Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-05-18T16:15:32Z",
+      "commitsThisWeek": 1,
+      "recentCommits": [
+        {
+          "repo": "0xGIDHUB/tixano",
+          "message": "Minor edit to img template",
+          "url": "https://github.com/0xGIDHUB/tixano/commit/8a46a067ead614e803729b753ecd47d30a985f08",
+          "committedAt": "2026-05-18T16:15:32Z"
+        }
+      ],
       "error": null
     },
     {
       "id": "pmcorcoran",
       "name": "Paul Corcoran",
-      "lastActivityAt": "2026-05-12T22:12:21Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-05-18T14:57:40Z",
+      "commitsThisWeek": 3,
+      "recentCommits": [
+        {
+          "repo": "pmcorcoran/ada-battles",
+          "message": "Merge branch 'feat/add-client-authority'\nmerging to move to client side authority architecture",
+          "url": "https://github.com/pmcorcoran/ada-battles/commit/255899811d5095506427f4cfb697fffd56b92ac6",
+          "committedAt": "2026-05-18T14:57:40Z"
+        },
+        {
+          "repo": "pmcorcoran/ada-battles",
+          "message": "Merge branch 'feat/add-client-authority' of github.com:pmcorcoran/ada-battles into feat/add-client-authority\nsyncing with github",
+          "url": "https://github.com/pmcorcoran/ada-battles/commit/fa0cee3c1f4dcd6140b0c031fea8d19dba1ce9eb",
+          "committedAt": "2026-05-18T14:55:12Z"
+        },
+        {
+          "repo": "pmcorcoran/ada-battles",
+          "message": "Merge branch 'feat/add-client-authority'\nmerging the client side authority to main. This brings main 1 step closer in transitioning from a web2 game to a web3 game",
+          "url": "https://github.com/pmcorcoran/ada-battles/commit/0507142bfd3f8dda3a57d572adb81e42d6db98c8",
+          "committedAt": "2026-05-18T14:43:43Z"
+        }
+      ],
       "error": null
     },
     {
@@ -150,9 +176,16 @@
     {
       "id": "newman5",
       "name": "Newman",
-      "lastActivityAt": "2026-05-17T12:36:26Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-05-18T13:35:22Z",
+      "commitsThisWeek": 1,
+      "recentCommits": [
+        {
+          "repo": "Newman5/builder-season-playbook",
+          "message": "Update builder activity data",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/912b4d680e3d72ed8813b8f931e8ec26febccc53",
+          "committedAt": "2026-05-18T13:35:22Z"
+        }
+      ],
       "error": null
     },
     {
