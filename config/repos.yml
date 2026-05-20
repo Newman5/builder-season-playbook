@@ -92,6 +92,7 @@ repos:
       - builders
 
   - id: workshopmaybe
+    active: false
     name: James
     github: workshop-maybe
     x: jamesdunseith
@@ -101,6 +102,7 @@ repos:
       - builders
 
   - id: kanyuku
+    active: false
     name: Kanyuku
     github: kanyuku
     x: pierrepeach002
@@ -218,6 +220,7 @@ repos:
       - builders
       
   - id: jakessevi
+    active: true
     name: Jakes Sevi
     github: Sevijakes10
     x: JakesSevi9
@@ -256,6 +259,7 @@ repos:
       - builders
 
   - id: kamalaliyu
+    active: true
     name: Kamal Aliyu
     github: Alkamal01
     x: cedufy

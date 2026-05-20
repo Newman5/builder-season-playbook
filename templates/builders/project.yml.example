@@ -8,7 +8,7 @@ tagline: A one-line description of what you are building.
 builder:
   name: Your Name
   x_handle: "@yourhandle"
-  github: your-github-username
+  github_handle: your-github-username
 
 repo_url: https://github.com/your-github-username/your-repo
 demo_url:

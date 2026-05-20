@@ -1,0 +1,90 @@
+# Root-level builder project metadata for admin ingestion.
+# Save this file as /project.yml at the repo root.
+
+id: BuilderSeasonPlaybook
+name: Builder Season Playbook
+tagline: a builder-first community hackathon with accountability, incentives, and open web tooling.
+
+builder:
+  name: Newman
+  x_handle: "@Newman5"
+  github_handle: Newman5
+
+  repo_url: https://github.com/Newman5/builder-season-playbook
+  demo_url: https://newman5.github.io/builder-season-playbook/
+  website_url: https://newman5.github.io/builder-season-playbook/
+
+  status: active
+
+updates:
+  week1:
+    date: 2026-04-29
+    url: https://x.com/newman5/status/2049576957155693053
+    content: >
+      Week 1 I just registered for the #hackathon.  
+      My product is "Builder Season Playbook".  
+      My aim is to create a standard template to run future, #pieceofpie style hackathons smoothly. 
+      Check out the repo at https://github.com/Newman5/builder-season-playbook#gimbalabs@gimbalabs
+
+  week2:
+    date: 2026-05-09
+    url: https://x.com/newman5/status/2053245051317129259
+    content: >
+      Week 2 update — Builder Season Playbook at #pieceofpie #hackathon @gimbalabs
+      Focus was the builder dashboard website. I've been learning a lot about the @eleven_ty 
+      static site generator — especially the global data files and github api
+
+  week3:
+    date: 2026-05-16
+    url: https://x.com/newman5/status/2055319299334471875
+    content: >
+      Week 3 
+      Facepile on Builder Dashboard this week
+      Shifted from bash into the npm ecosystem, the 11ty + Nunjucks site design, and started exploring better builder workflows.
+      Current blocker: practical, lightweight project management
+      #gimbalabs #pieceofpie #hackathon @gimbalabs
+  week4:
+    date: 2026-05-16
+    url: https://x.com/newman5/status/2055319299334471875
+    content: >
+      Week 4 
+  week5:
+    date: 2026-05-16
+    url: https://x.com/newman5/status/2055319299334471875
+    content: >
+      Week 5
+  week6:
+    date: 2026-05-16
+    url: https://x.com/newman5/status/2055319299334471875
+    content: >
+      Week 6
+  week7:
+    date: 2026-05-16
+    url: https://x.com/newman5/status/2055319299334471875
+    content: >
+      Week 7
+  week8:
+    date: 2026-05-16
+    url: https://x.com/newman5/status/2055319299334471875
+    content: >
+      Week 8
+  week9:
+    date: 2026-05-16
+    url: https://x.com/newman5/status/2055319299334471875
+    content: >
+      Week 9
+  week10:
+    date: 2026-05-16
+    url: https://x.com/newman5/status/2055319299334471875
+    content: >
+      Week 10
+  week11:
+    date: 2026-05-16
+    url: https://x.com/newman5/status/2055319299334471875
+    content: >
+      Week 11
+  week12:
+    date: 2026-05-16
+    url: https://x.com/newman5/status/2055319299334471875
+    content: >
+      Week 12 
