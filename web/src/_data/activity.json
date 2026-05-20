@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-19T13:27:27Z",
+  "generatedAt": "2026-05-20T13:15:59Z",
   "weekStart": "2026-05-18T00:00:00Z",
   "weekEnd": "2026-05-24T23:59:59Z",
   "builders": [
@@ -38,9 +38,15 @@
     {
       "id": "gidhub",
       "name": "Gideon",
-      "lastActivityAt": "2026-05-18T16:15:32Z",
-      "commitsThisWeek": 1,
+      "lastActivityAt": "2026-05-19T13:44:23Z",
+      "commitsThisWeek": 2,
       "recentCommits": [
+        {
+          "repo": "0xGIDHUB/tixano",
+          "message": "Updated ticket image skeleton layout",
+          "url": "https://github.com/0xGIDHUB/tixano/commit/3153c3bb4d039096d1083c21dad270e9be7435ce",
+          "committedAt": "2026-05-19T13:44:23Z"
+        },
         {
           "repo": "0xGIDHUB/tixano",
           "message": "Minor edit to img template",
@@ -144,9 +150,40 @@
     {
       "id": "murmurations",
       "name": "Nori",
-      "lastActivityAt": "2026-05-13T22:24:18Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-05-19T15:26:16Z",
+      "commitsThisWeek": 5,
+      "recentCommits": [
+        {
+          "repo": "murmurations-ai/flyway",
+          "message": "docs(architecture): how-flyway-works.html — visual companion\n\nHand-crafted single-file HTML reference with custom SVG diagrams:\nmental model (three layers), component poster, flyway_init sequence,\ncross-murmuration consent sequence, four state machines, and the\ncontracts tables. Tied to SHA eec423c / protocol v0.1.0.\n\nTufte-meets-technical-spec aesthetic: warm paper for prose, deep-blue\ncanvas for diagrams, amber for implemented surface, slate for deferred.\nSelf-contained — no build step, web fonts via Google Fonts CDN. Prints\nas one cohesive document.\n\nREADME updated to point readers at the visual companion alongside the\nexisting markdown version.\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>",
+          "url": "https://github.com/murmurations-ai/flyway/commit/dd15561771eaa9bb9003d3158ee7bad012e17672",
+          "committedAt": "2026-05-19T15:26:16Z"
+        },
+        {
+          "repo": "murmurations-ai/flyway",
+          "message": "docs(architecture): how-flyway-works — sequence diagrams, state machines, contracts\n\nVersioned architecture walkthrough showing how flyway works concretely:\n\n- §1 Mental model (substance / surface / transport)\n- §2 Component diagram — packages × on-disk artifacts × agent runtimes\n- §3 What works today (with real sequence diagrams):\n  - Skill installation (ADR-0006 mechanism)\n  - flyway_init via CLI\n  - flyway_init via MCP (stateless — artifacts return to agent)\n- §4 Cross-murmuration consent (conceptual; surface defined, execution\n  pending) — full negotiation arc from tension → signed agreement\n- §5 State machines: Identity, Tension, Proposal stages, Agreement\n- §6 Contracts: the 9 tools, the agreement schema, entity statement\n  shape, DID document shape, the seven protocol invariants\n\nMermaid diagrams render natively on GitHub. Linked from README.\nTied to SHA eec423c so future revisions can refresh against changes.\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>",
+          "url": "https://github.com/murmurations-ai/flyway/commit/96a0126149a3ddbadfada3020b10ad3519913f3a",
+          "committedAt": "2026-05-19T15:03:30Z"
+        },
+        {
+          "repo": "murmurations-ai/flyway",
+          "message": "feat(core+cli+mcp): flyway_init — first tool that actually runs\n\nThe first crossing from \"specification\" to \"system.\" flyway_init now\ngenerates real artifacts:\n\n- A did:web DID derived from a GitHub repo URL\n  (did:web:github.com:owner:repo)\n- A W3C-compliant DID document with a JsonWebKey2020 verification\n  method (ed25519 public key in JWK form)\n- An entity statement carrying Source metadata (name, mode, supported\n  tools, supported schemas, verification key reference)\n- A real ed25519 keypair generated via Node's built-in crypto.\n  Private key in PKCS#8 PEM with mode 0o600.\n\nArchitecture per the surface/substance separation we've kept consistent:\n\n- packages/core/src/init.ts — pure functions (parseRepoUrl, deriveDid,\n  generateEd25519Keypair, buildDidDocument, buildEntityStatement,\n  flywayInit). No file I/O. 19 tests.\n- packages/cli/src/init.ts — wraps flywayInit + writes files to the\n  canonical paths per research paper §6.7:\n    .well-known/did.json\n    flyway/entity-statement.json\n    flyway/keys/source.key\n  Ensures .gitignore excludes flyway/keys/. Refuses to overwrite\n  without --force (private key loss is unrecoverable). 9 tests.\n- packages/cli/src/bin/flyway.ts — adds `flyway init --repo-url ...\n  --source-name ... [--mode interactive] [--force]` subcommand.\n- packages/mcp/src/handlers.ts — flyway_init now actually runs (calls\n  flywayInit, returns the artifacts to the agent). Other tools still\n  return \"not yet implemented.\" The MCP handler is stateless — the\n  agent (or CLI) writes the files. Updated handler tests: 3 cases for\n  flyway_init (valid input → artifacts; missing args → isError;\n  invalid URL → isError); existing \"not yet implemented\" test\n  preserved for other tools.\n\nEnd-to-end smoke test confirms CLI and MCP both produce the same DID\nand matching artifacts for the same input. 85/85 tests passing across\n7 test files.\n\nSigning of the entity statement is the next layer (uses the private\nkey we now generate). That, plus implementations of the remaining 8\ntools, are the work that follows.\n\nREADME updated to reflect that \"tool execution is unimplemented\" is\nno longer true — flyway_init runs.\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>",
+          "url": "https://github.com/murmurations-ai/flyway/commit/eec423cd45fc3e613f3f565159249354150ef2f0",
+          "committedAt": "2026-05-19T15:00:21Z"
+        },
+        {
+          "repo": "murmurations-ai/flyway",
+          "message": "chore: install flyway skill into the flyway repo itself (.claude/skills/flyway/)\n\nEating our own dog food. Any Claude Code session opened against the\nflyway repo now loads the flyway skill automatically, giving the agent\nthe full S3-grounded consent vocabulary when reasoning about flyway\noperations on flyway itself.\n\nInstalled via the ADR-0006 mechanism we just shipped:\n  node packages/cli/dist/bin/flyway.js skill install flyway\n\nNote: this file is generated from FLYWAY_SKILL_MD in\n@murmurations-ai/flyway-agent. When the protocol instructions or tool\ndefinitions change, re-run the install command to refresh. (Drift\ndetection — a CI test asserting this file matches the registry — is a\nfuture quality-of-life addition.)\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>",
+          "url": "https://github.com/murmurations-ai/flyway/commit/07ff8c8ebc270b3b791c2a46c5ac813df1e7638c",
+          "committedAt": "2026-05-19T14:53:36Z"
+        },
+        {
+          "repo": "murmurations-ai/flyway",
+          "message": "feat(cli): implement ADR-0006 — flyway skill list / install / uninstall\n\nflyway-cli stops being a stub. Three subcommands ship in v0.1:\n\n- flyway skill list                       — show available and installed skills\n- flyway skill install <name> [--target P] — write SKILL.md folder to target\n- flyway skill uninstall <name> [--target P] — remove the skill folder\n\nTarget resolution per ADR-0006: .claude/skills/ if .claude/ exists in\ncwd; otherwise ./skills/. Explicit --target always wins. Re-installing\nwarns when local content differs from the registry version.\n\nArchitecture per ADR-0006:\n- packages/cli/src/skill.ts holds the registry + the four operations\n  (list, install, uninstall, inferTarget). Pure functions, testable\n  without a transport.\n- The CLI imports FLYWAY_SKILL_MD from @murmurations-ai/flyway-agent\n  via workspace dep; never hardcodes skill content. Adding a future\n  skill means publishing a package and registering it here.\n- bin/flyway.ts does argv parsing + dispatch with plain Node — no\n  CLI framework dependency, matching the small-protocol principle.\n\nTests: 15 new (registry shape, list with installed/modified/absent\nstates, install behaviour incl. nested target creation and tampering\nwarning, uninstall idempotency, target inference for .claude/ and\ndefault). 55/55 total passing.\n\nEnd-to-end smoke test confirms all subcommands work against a real\ntemp directory, target inference switches correctly when .claude/\nappears, and tampering produces the expected warning.\n\nThis closes retrospective gap #6: skills move from \"exported constants\"\nto \"installable artifacts.\" flyway-cli row in the README updated from\n\"Stub\" to \"Wired.\"\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>",
+          "url": "https://github.com/murmurations-ai/flyway/commit/93a61ce7e9219d9a3bc81847d5d54fedccf5dfa8",
+          "committedAt": "2026-05-19T14:21:54Z"
+        }
+      ],
       "error": null
     },
     {
@@ -176,9 +213,15 @@
     {
       "id": "newman5",
       "name": "Newman",
-      "lastActivityAt": "2026-05-18T13:35:22Z",
-      "commitsThisWeek": 1,
+      "lastActivityAt": "2026-05-19T13:27:48Z",
+      "commitsThisWeek": 2,
       "recentCommits": [
+        {
+          "repo": "Newman5/builder-season-playbook",
+          "message": "Update builder activity data",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/63216d1f1dc2e181504c6ddb21d1f6af430146a9",
+          "committedAt": "2026-05-19T13:27:48Z"
+        },
         {
           "repo": "Newman5/builder-season-playbook",
           "message": "Update builder activity data",
@@ -260,9 +303,16 @@
     {
       "id": "juanitajaramillo",
       "name": "Juanita",
-      "lastActivityAt": "2026-05-15T20:16:36Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-05-19T20:22:47Z",
+      "commitsThisWeek": 1,
+      "recentCommits": [
+        {
+          "repo": "JuanitaJaramill/cardano-insights-lab",
+          "message": "Add files via upload",
+          "url": "https://github.com/JuanitaJaramill/cardano-insights-lab/commit/b92431870a71f25405c84020d3c4eea074154d8e",
+          "committedAt": "2026-05-19T20:22:47Z"
+        }
+      ],
       "error": null
     },
     {
