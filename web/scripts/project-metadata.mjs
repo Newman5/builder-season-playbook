@@ -68,7 +68,9 @@ function normalizeProjectDocument(raw, fallbackRepoUrl = null) {
     projectName: cleanString(project.name),
     tagline: cleanString(project.tagline),
     builderName: cleanString(builder.name),
-    builderGithub: cleanString(builder.github),
+    builderGithub: cleanString(
+      builder.github_handle || builder.githubHandle || builder.github
+    ),
     builderXHandle: stripAtPrefix(cleanString(builder.x_handle || builder.xHandle)),
     repoUrl: cleanString(project.repo_url || project.repoUrl) || fallbackRepoUrl,
     demoUrl,

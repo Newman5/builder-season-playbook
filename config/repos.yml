@@ -1,5 +1,5 @@
 # Manual builder registry for the public dashboard and activity scripts.
-# Set ignore: true to keep an entry in the file without publishing it.
+# Set active: false to keep an entry in the file without publishing it.
 # Optional per-builder override:
 # first_update_week_end: "2026-05-03"  # Sunday for the builder's Week 1 update
 

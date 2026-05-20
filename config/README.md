@@ -51,9 +51,9 @@ Suggested fields:
 - `x`
 - `pies`
 - `notes`
-- `ignore`
+- `active`
 
-Use `ignore: true` when you want to keep an entry in the registry without publishing it on the site or including it in activity generation.
+Use `active: false` when you want to keep an entry in the registry without publishing it on the site or including it in activity generation.
 
 `repos.yml` also remains the source of truth for:
 
@@ -61,7 +61,7 @@ Use `ignore: true` when you want to keep an entry in the registry without publis
 - `id`
 - `pies`
 - `notes`
-- `ignore`
+- `active`
 - per-builder X override fields
 - per-builder week timing overrides
 
@@ -87,7 +87,7 @@ Current shape:
 - `tagline`
 - `builder.name`
 - `builder.x_handle`
-- `builder.github`
+- `builder.github_handle`
 - `repo_url`
 - `demo_url`
 - `website_url`
@@ -109,7 +109,7 @@ Builder/project field mapping:
 - `project.yml > name` becomes builder `projectName`
 - `project.yml > tagline` becomes builder `tagline`
 - `project.yml > builder.name` becomes builder display `name`
-- `project.yml > builder.github` becomes builder `github`
+- `project.yml > builder.github_handle` becomes builder `github`
 - `project.yml > builder.x_handle` becomes builder `x` after removing the leading `@`
 - `project.yml > repo_url` becomes builder `repoUrl`
 - `project.yml > demo_url` becomes builder `demoUrl`

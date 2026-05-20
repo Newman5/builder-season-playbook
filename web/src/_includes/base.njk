@@ -197,6 +197,32 @@
       color: var(--muted);
     }
 
+    details summary {
+      cursor: pointer;
+      font-weight: 700;
+      color: var(--accent-dark);
+      list-style: none;
+    }
+
+    details summary::-webkit-details-marker {
+      display: none;
+    }
+
+    details summary::before {
+      content: "▸";
+      display: inline-block;
+      margin-right: 0.55rem;
+      transition: transform 140ms ease;
+    }
+
+    details[open] summary::before {
+      transform: rotate(90deg);
+    }
+
+    details > *:not(summary) {
+      margin-top: 16px;
+    }
+
     .hero {
       padding: 28px;
       background: linear-gradient(135deg, rgba(164, 71, 34, 0.14), rgba(255, 250, 240, 0.92));

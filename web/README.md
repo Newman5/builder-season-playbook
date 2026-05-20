@@ -42,7 +42,7 @@ ELEVENTY_SITE_URL="https://your-site.example.com/" npm run build
 
 Current precedence rules:
 
-- `config/repos.yml` controls membership, `id`, pies, notes, ignore flags, and X/week override fields.
+- `config/repos.yml` controls membership, `id`, pies, notes, active flags, and X/week override fields.
 - `project.yml` controls builder/project profile fields such as project name, builder name, handles, URLs, status, and update summaries.
 - When `project.yml` is missing or incomplete, those fields fall back to `config/repos.yml`.
 
@@ -65,6 +65,6 @@ The fetch scripts prefer `GH_ACTIVITY_TOKEN` and fall back to `GITHUB_TOKEN`.
 ## Notes
 
 - The deploy workflow builds this directory for GitHub Pages with the repo path prefix.
-- The scheduled activity workflow refreshes the generated JSON and commits it back to `main`.
+- The scheduled activity workflow refreshes the generated JSON, commits it back to `main`, and deploys GitHub Pages.
 - X update tracking is manual-search based, not live API based.
 - Existing post-management scripts still work from this directory because the source content remains under `src/`.

@@ -7,10 +7,18 @@ on:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
 
 jobs:
   update-activity:
     runs-on: ubuntu-latest
+    env:
+      ELEVENTY_SITE_URL: https://newman5.github.io/builder-season-playbook/
     defaults:
       run:
         working-directory: web
@@ -47,3 +55,21 @@ jobs:
           fi
           git commit -m "Update builder activity data"
           git push
+
+      - name: Build with Eleventy
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_ACTIVITY_TOKEN: ${{ secrets.GH_ACTIVITY_TOKEN }}
+        run: npm run build-ghpages
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: web/_site
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

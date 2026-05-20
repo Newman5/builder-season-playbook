@@ -114,7 +114,7 @@ Current data flow:
 
 Field ownership:
 
-- `config/repos.yml` owns builder membership, `id`, pies, notes, ignore flags, and X/week admin overrides.
+- `config/repos.yml` owns builder membership, `id`, pies, notes, active flags, and X/week admin overrides.
 - `project.yml` owns builder/project profile fields such as project name, tagline, builder display name, GitHub handle, X handle, repo URL, demo URL, website URL, status, and update summaries.
 - If `project.yml` is missing, the site falls back to `config/repos.yml` and the builder still renders normally.
 

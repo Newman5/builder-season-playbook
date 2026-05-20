@@ -34,7 +34,7 @@ export function loadBaseBuilders() {
   const repos = Array.isArray(raw.repos) ? raw.repos : [];
 
   return repos
-    .filter((entry) => entry?.ignore !== true)
+    .filter((entry) => entry?.active !== false)
     .map((entry) => {
       const repoUrl = entry.repo_url || entry.url;
       if (!repoUrl) {

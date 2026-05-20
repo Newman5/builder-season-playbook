@@ -123,6 +123,19 @@ export default function (eleventyConfig) {
       .sort((a, b) => new Date(b.committedAt) - new Date(a.committedAt));
   });
 
+  eleventyConfig.addFilter("truncateCommitMessage", (message, maxLength = 96) => {
+    if (typeof message !== "string" || !message.trim()) {
+      return "";
+    }
+
+    const normalized = message.replace(/\s+/g, " ").trim();
+    if (normalized.length <= maxLength) {
+      return normalized;
+    }
+
+    return `${normalized.slice(0, maxLength - 1).trimEnd()}...`;
+  });
+
   eleventyConfig.addFilter("activitySummary", (builders, activity) => {
     const registry = Array.isArray(builders) ? builders : [];
     const records = activity?.builders || [];
