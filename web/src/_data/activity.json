@@ -1,175 +1,351 @@
 {
-  "generatedAt": "2026-05-20T15:36:43Z",
+  "generatedAt": "2026-05-21T13:26:37Z",
   "weekStart": "2026-05-18T00:00:00Z",
   "weekEnd": "2026-05-24T23:59:59Z",
   "builders": [
     {
       "id": "mhizta",
       "name": "Mhizta",
-      "lastActivityAt": null,
+      "lastActivityAt": "2026-04-28T12:37:29Z",
       "commitsThisWeek": 0,
       "recentCommits": [],
-      "error": "NETWORK_ERROR"
+      "error": null
     },
     {
       "id": "ianonjuguna",
       "name": "Ian",
-      "lastActivityAt": null,
+      "lastActivityAt": "2026-05-09T12:23:23Z",
       "commitsThisWeek": 0,
       "recentCommits": [],
-      "error": "NETWORK_ERROR"
+      "error": null
     },
     {
       "id": "dammy",
       "name": "Dammy",
-      "lastActivityAt": null,
+      "lastActivityAt": "2026-05-13T22:29:45Z",
       "commitsThisWeek": 0,
       "recentCommits": [],
-      "error": "NETWORK_ERROR"
+      "error": null
     },
     {
       "id": "johnny5i",
       "name": "Johnny5i",
-      "lastActivityAt": null,
+      "lastActivityAt": "2026-05-16T21:33:01Z",
       "commitsThisWeek": 0,
       "recentCommits": [],
-      "error": "NETWORK_ERROR"
+      "error": null
     },
     {
       "id": "gidhub",
       "name": "Gideon",
-      "lastActivityAt": null,
-      "commitsThisWeek": 0,
-      "recentCommits": [],
-      "error": "NETWORK_ERROR"
+      "lastActivityAt": "2026-05-21T13:22:08Z",
+      "commitsThisWeek": 8,
+      "recentCommits": [
+        {
+          "repo": "0xGIDHUB/tixano",
+          "message": "Minor changes made",
+          "url": "https://github.com/0xGIDHUB/tixano/commit/61f7d8f4d749fc51e23accca3042f308ee481f3f",
+          "committedAt": "2026-05-21T13:22:08Z"
+        },
+        {
+          "repo": "0xGIDHUB/tixano",
+          "message": "Patched up some issues with events spotlight section",
+          "url": "https://github.com/0xGIDHUB/tixano/commit/6b4492cad73ee5eb165ef2be212c1a14656fd0c0",
+          "committedAt": "2026-05-21T01:47:58Z"
+        },
+        {
+          "repo": "0xGIDHUB/tixano",
+          "message": "Removed arrow button navigator from events selector",
+          "url": "https://github.com/0xGIDHUB/tixano/commit/351553a31045c472aca42d1bd90e0d7081eb3db5",
+          "committedAt": "2026-05-21T01:18:28Z"
+        },
+        {
+          "repo": "0xGIDHUB/tixano",
+          "message": "Edited placholder icons for empty events/tickets",
+          "url": "https://github.com/0xGIDHUB/tixano/commit/c79263f1a6502efe5ce1d14aaafc8c6f31277604",
+          "committedAt": "2026-05-21T00:56:48Z"
+        },
+        {
+          "repo": "0xGIDHUB/tixano",
+          "message": "Updated events spotlight skeleton loader",
+          "url": "https://github.com/0xGIDHUB/tixano/commit/89eca610cd91be64c183f285e85453d2d8ad7354",
+          "committedAt": "2026-05-21T00:55:01Z"
+        }
+      ],
+      "error": null
     },
     {
       "id": "pmcorcoran",
       "name": "Paul Corcoran",
-      "lastActivityAt": null,
-      "commitsThisWeek": 0,
-      "recentCommits": [],
-      "error": "NETWORK_ERROR"
+      "lastActivityAt": "2026-05-18T14:57:40Z",
+      "commitsThisWeek": 3,
+      "recentCommits": [
+        {
+          "repo": "pmcorcoran/ada-battles",
+          "message": "Merge branch 'feat/add-client-authority'\nmerging to move to client side authority architecture",
+          "url": "https://github.com/pmcorcoran/ada-battles/commit/255899811d5095506427f4cfb697fffd56b92ac6",
+          "committedAt": "2026-05-18T14:57:40Z"
+        },
+        {
+          "repo": "pmcorcoran/ada-battles",
+          "message": "Merge branch 'feat/add-client-authority' of github.com:pmcorcoran/ada-battles into feat/add-client-authority\nsyncing with github",
+          "url": "https://github.com/pmcorcoran/ada-battles/commit/fa0cee3c1f4dcd6140b0c031fea8d19dba1ce9eb",
+          "committedAt": "2026-05-18T14:55:12Z"
+        },
+        {
+          "repo": "pmcorcoran/ada-battles",
+          "message": "Merge branch 'feat/add-client-authority'\nmerging the client side authority to main. This brings main 1 step closer in transitioning from a web2 game to a web3 game",
+          "url": "https://github.com/pmcorcoran/ada-battles/commit/0507142bfd3f8dda3a57d572adb81e42d6db98c8",
+          "committedAt": "2026-05-18T14:43:43Z"
+        }
+      ],
+      "error": null
     },
     {
       "id": "harrie",
       "name": "Harrie",
-      "lastActivityAt": null,
+      "lastActivityAt": "2026-05-13T19:46:15Z",
       "commitsThisWeek": 0,
       "recentCommits": [],
-      "error": "NETWORK_ERROR"
+      "error": null
     },
     {
       "id": "lewis",
       "name": "Lewis",
-      "lastActivityAt": null,
-      "commitsThisWeek": 0,
-      "recentCommits": [],
-      "error": "NETWORK_ERROR"
+      "lastActivityAt": "2026-05-21T10:43:44Z",
+      "commitsThisWeek": 1,
+      "recentCommits": [
+        {
+          "repo": "lewis-nduati/Tracom-credentials",
+          "message": "feat: scaffold Next.js app with Tailwind, shadcn, lucid-evolution, next-auth",
+          "url": "https://github.com/lewis-nduati/Tracom-credentials/commit/08690ee9d1c380c07c554ab09410ee32470518c2",
+          "committedAt": "2026-05-21T10:43:44Z"
+        }
+      ],
+      "error": null
     },
     {
       "id": "armanabid",
       "name": "Abid",
-      "lastActivityAt": null,
+      "lastActivityAt": "2026-05-16T16:06:12Z",
       "commitsThisWeek": 0,
       "recentCommits": [],
-      "error": "NETWORK_ERROR"
+      "error": null
     },
     {
       "id": "gamechanger",
       "name": "Adriano",
-      "lastActivityAt": null,
+      "lastActivityAt": "2026-05-17T07:05:57Z",
       "commitsThisWeek": 0,
       "recentCommits": [],
-      "error": "NETWORK_ERROR"
+      "error": null
     },
     {
       "id": "yungslaiz",
       "name": "Blessed David",
-      "lastActivityAt": null,
+      "lastActivityAt": "2026-05-14T21:06:15Z",
       "commitsThisWeek": 0,
       "recentCommits": [],
-      "error": "NETWORK_ERROR"
+      "error": null
     },
     {
       "id": "maxalexweber",
       "name": "Maximilian",
-      "lastActivityAt": null,
+      "lastActivityAt": "2026-05-16T06:43:01Z",
       "commitsThisWeek": 0,
       "recentCommits": [],
-      "error": "NETWORK_ERROR"
+      "error": null
     },
     {
       "id": "murmurations",
       "name": "Nori",
-      "lastActivityAt": null,
-      "commitsThisWeek": 0,
-      "recentCommits": [],
-      "error": "NETWORK_ERROR"
+      "lastActivityAt": "2026-05-20T18:20:11Z",
+      "commitsThisWeek": 9,
+      "recentCommits": [
+        {
+          "repo": "murmurations-ai/flyway",
+          "message": "feat(core+cli+mcp): flyway_status — second working tool\n\nFirst read-only tool, first consumer of the signed identity. Inspects\nlocal on-disk state and reports:\n\n  identity     reads .well-known/did.json + flyway/entity-statement.json,\n               verifies the entity statement signature against the DID\n               document, surfaces issues (missing files, DID mismatch,\n               tampered statement, unsigned legacy statement)\n  peers        reports presence of flyway/peers.yaml (no parsing yet)\n  agreements   counts *.yaml files in flyway/agreements/ and lists ids\n\nSignals (inbox/outbox) deliberately deferred — their on-disk\nconvention is unsettled and will land with flyway_propose / flyway_check.\n\nCLI: `flyway status` (human output) and `flyway status --json`.\nMCP: handler accepts an optional cwd argument; defaults to process.cwd().\n\nTests: 113 passing across the workspace (+11 status + 2 MCP).\nEnd-to-end verified: init → status reports signatureValid=true.\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>",
+          "url": "https://github.com/murmurations-ai/flyway/commit/02a1f09172e65a739ba5ba9c79e12310aae187e0",
+          "committedAt": "2026-05-20T18:20:11Z"
+        },
+        {
+          "repo": "murmurations-ai/flyway",
+          "message": "docs: refresh README status — signing is now wired end-to-end\n\nflyway_init produces a cryptographically signed entity statement via\nthe pluggable Signer interface introduced in ADR-0007.\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>",
+          "url": "https://github.com/murmurations-ai/flyway/commit/1b0935af7230961f9954135bca3fbecf3dfdfe44",
+          "committedAt": "2026-05-20T18:06:33Z"
+        },
+        {
+          "repo": "murmurations-ai/flyway",
+          "message": "feat(core): signing milestone — Signer interface + local Ed25519 default\n\nImplements ADR-0007's signing seam. Three new pieces in flyway-core:\n\n  signing.ts\n    - canonicalize() — JCS-style deterministic JSON (sorted keys, no\n      whitespace, drops undefined)\n    - domainSeparated() — prefixes canonical bytes with a flyway domain\n      tag so signatures cannot be replayed across artifact kinds (or\n      mistaken for non-flyway signatures when keys are reused)\n    - Signer interface — pluggable, async; future Cardano / HSM / KMS\n      signers drop in without changing artifact-producing code\n    - localEd25519Signer() — the default; wraps Node crypto.sign\n    - signArtifactInline() — attaches a SignatureEnvelope to the\n      artifact (W3C VC / jws-2020 inline convention)\n    - verifyInlineSignedArtifact() — verifies against a DID document\n    - DOMAIN_* constants for each signed artifact kind\n\n  anchoring.ts\n    - Anchor interface + AnchorReceipt type. No implementation in\n      v0.1; the interface lands now so future Cardano anchors drop\n      in cleanly (ADR-0007).\n\n  init.ts\n    - flywayInit() is now async; the produced entity statement carries\n      an EdDSA signature over its canonical bytes\n    - EntityStatement gains an optional signature field\n      (SignedEntityStatement narrows it to required)\n\nConsumers updated to await: MCP handlers, CLI runInit, CLI bin.\n\nTests: 104 passing across the workspace (+17 signing + 3 signature\nround-trips in init + MCP + CLI).\n\nEnd-to-end verified: `flyway init` writes a signed entity statement\nthat round-trips through verifyInlineSignedArtifact against the\ngenerated DID document.\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>",
+          "url": "https://github.com/murmurations-ai/flyway/commit/48484bfa0a71f7304a8656b382f64f314d90b8cc",
+          "committedAt": "2026-05-20T18:05:34Z"
+        },
+        {
+          "repo": "murmurations-ai/flyway",
+          "message": "docs: accept ADR-0007 (pluggable signers and on-chain anchoring)\n\nDecides the architectural shape of signing before signing actually\nlands in flyway-core. Three separable concerns — signing (required,\ndefault = local Ed25519), anchoring (optional, no default),\ncredentialing (optional, declarative). Each is its own interface;\nchain-specific implementations ship as separate optional packages.\n\nThe lucky Ed25519 alignment with Cardano is named explicitly so the\nintegration is additive, not a refactor. flyway-core stays\nchain-agnostic; @murmurations-ai/flyway-cardano and\n@murmurations-ai/flyway-andamio are future optional packages, not\nv0.1 blockers.\n\nREADME catches up: ADR list now reflects all seven accepted ADRs\n(0005 and 0006 had not been listed).\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>",
+          "url": "https://github.com/murmurations-ai/flyway/commit/0c0bda2f35953d3f7a717bf1a022b5c3d320b8fe",
+          "committedAt": "2026-05-20T17:07:44Z"
+        },
+        {
+          "repo": "murmurations-ai/flyway",
+          "message": "docs(architecture): how-flyway-works.html — visual companion\n\nHand-crafted single-file HTML reference with custom SVG diagrams:\nmental model (three layers), component poster, flyway_init sequence,\ncross-murmuration consent sequence, four state machines, and the\ncontracts tables. Tied to SHA eec423c / protocol v0.1.0.\n\nTufte-meets-technical-spec aesthetic: warm paper for prose, deep-blue\ncanvas for diagrams, amber for implemented surface, slate for deferred.\nSelf-contained — no build step, web fonts via Google Fonts CDN. Prints\nas one cohesive document.\n\nREADME updated to point readers at the visual companion alongside the\nexisting markdown version.\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>",
+          "url": "https://github.com/murmurations-ai/flyway/commit/dd15561771eaa9bb9003d3158ee7bad012e17672",
+          "committedAt": "2026-05-19T15:26:16Z"
+        }
+      ],
+      "error": null
     },
     {
       "id": "blockprint",
       "name": "BlockPrint",
-      "lastActivityAt": null,
+      "lastActivityAt": "2026-04-28T09:23:24Z",
       "commitsThisWeek": 0,
       "recentCommits": [],
-      "error": "NETWORK_ERROR"
+      "error": null
     },
     {
       "id": "trike",
       "name": "Anita",
-      "lastActivityAt": null,
+      "lastActivityAt": "2026-04-28T10:40:53Z",
       "commitsThisWeek": 0,
       "recentCommits": [],
-      "error": "NETWORK_ERROR"
+      "error": null
     },
     {
       "id": "mobrai",
       "name": "Marcio",
-      "lastActivityAt": null,
+      "lastActivityAt": "2026-05-16T17:23:20Z",
       "commitsThisWeek": 0,
       "recentCommits": [],
-      "error": "NETWORK_ERROR"
+      "error": null
     },
     {
       "id": "newman5",
       "name": "Newman",
-      "lastActivityAt": null,
-      "commitsThisWeek": 0,
-      "recentCommits": [],
-      "error": "NETWORK_ERROR"
+      "lastActivityAt": "2026-05-20T16:25:27Z",
+      "commitsThisWeek": 5,
+      "recentCommits": [
+        {
+          "repo": "Newman5/builder-season-playbook",
+          "message": "knocking out a backlog of tasks for the dashboard.",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/55e19b297c1ddd51fa0b53f7aff5807883969be3",
+          "committedAt": "2026-05-20T16:25:27Z"
+        },
+        {
+          "repo": "Newman5/builder-season-playbook",
+          "message": "updating the source of truth, repos.yml - adding an active field.\n and some templates",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/eba76bfba9a0590907f41639c695d51fe8913e47",
+          "committedAt": "2026-05-20T15:09:50Z"
+        },
+        {
+          "repo": "Newman5/builder-season-playbook",
+          "message": "Update builder activity data",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/5e005dd72a048eef27af998f495b1cbe450f578c",
+          "committedAt": "2026-05-20T13:16:14Z"
+        },
+        {
+          "repo": "Newman5/builder-season-playbook",
+          "message": "Update builder activity data",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/63216d1f1dc2e181504c6ddb21d1f6af430146a9",
+          "committedAt": "2026-05-19T13:27:48Z"
+        },
+        {
+          "repo": "Newman5/builder-season-playbook",
+          "message": "Update builder activity data",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/912b4d680e3d72ed8813b8f931e8ec26febccc53",
+          "committedAt": "2026-05-18T13:35:22Z"
+        }
+      ],
+      "error": null
     },
     {
       "id": "minustenex",
       "name": "Harsha",
-      "lastActivityAt": null,
+      "lastActivityAt": "2026-05-13T19:26:27Z",
       "commitsThisWeek": 0,
       "recentCommits": [],
-      "error": "NETWORK_ERROR"
+      "error": null
     },
     {
       "id": "devfreeguy",
       "name": "Daniel",
-      "lastActivityAt": null,
-      "commitsThisWeek": 0,
-      "recentCommits": [],
-      "error": "NETWORK_ERROR"
+      "lastActivityAt": "2026-05-18T09:47:18Z",
+      "commitsThisWeek": 2,
+      "recentCommits": [
+        {
+          "repo": "devfreeguy/skill-swap",
+          "message": "feat(ui): disabled selecting on the app",
+          "url": "https://github.com/devfreeguy/skill-swap/commit/8c0e28964e25dcff5ed64df5649e934eb98e70a8",
+          "committedAt": "2026-05-18T09:47:18Z"
+        },
+        {
+          "repo": "devfreeguy/skill-swap",
+          "message": "feat(auth): redesign auth pages with animated 2-column layout\n\n- Extract shared AuthPage component with 3-column sliding track (register image | form | login image), animating between views via framer-motion spring\n- Tab switching updates URL with window.history.replaceState to avoid triggering Next.js navigation mid-animation\n- ImageColumn is a reusable internal component accepting heading, tagline, and optional src props\n- Mobile layout falls back to form-only, full-width\n- Both /login and /register pages are now thin wrappers",
+          "url": "https://github.com/devfreeguy/skill-swap/commit/2def69c18598eef2a9650915e930a309382022b0",
+          "committedAt": "2026-05-18T09:41:08Z"
+        }
+      ],
+      "error": null
     },
     {
       "id": "haulink",
       "name": "Abdulazeez",
-      "lastActivityAt": null,
-      "commitsThisWeek": 0,
-      "recentCommits": [],
-      "error": "NETWORK_ERROR"
+      "lastActivityAt": "2026-05-20T20:26:46Z",
+      "commitsThisWeek": 2,
+      "recentCommits": [
+        {
+          "repo": "FoladDTechie/Haulink",
+          "message": "Merge pull request #6 from FoladDTechie/HAUL-22-AZB\n\nfixed api route for getting trips",
+          "url": "https://github.com/FoladDTechie/Haulink/commit/8b9f1f4d72b545793f8b5a03a11b6b46eafac80e",
+          "committedAt": "2026-05-20T20:26:46Z"
+        },
+        {
+          "repo": "FoladDTechie/Haulink",
+          "message": "fixed api route for getting trips",
+          "url": "https://github.com/FoladDTechie/Haulink/commit/de710c1ffa67971dfc34a91b3b9474960ad9adc5",
+          "committedAt": "2026-05-19T19:36:10Z"
+        }
+      ],
+      "error": null
     },
     {
       "id": "opa007i",
       "name": "Opa",
-      "lastActivityAt": null,
-      "commitsThisWeek": 0,
-      "recentCommits": [],
-      "error": "NETWORK_ERROR"
+      "lastActivityAt": "2026-05-21T12:35:30Z",
+      "commitsThisWeek": 6,
+      "recentCommits": [
+        {
+          "repo": "opa1/the-quest",
+          "message": "feat: missions page, filter bar, paginated grid, missions store",
+          "url": "https://github.com/opa1/the-quest/commit/76c2b9565b6cbd833cad65319fce866e15458c5d",
+          "committedAt": "2026-05-21T12:35:30Z"
+        },
+        {
+          "repo": "opa1/the-quest",
+          "message": "fix: added scroll area to the overflowing filter bar causing screen overflow on mobile",
+          "url": "https://github.com/opa1/the-quest/commit/c5920d02f3120c304026a63f75bf2f872cc3e77e",
+          "committedAt": "2026-05-21T12:05:10Z"
+        },
+        {
+          "repo": "opa1/the-quest",
+          "message": "feat: floating mobile nav, responsive layout, realm feed, placeholder data",
+          "url": "https://github.com/opa1/the-quest/commit/f7e65d1c6e3a2d67de8d48d8ea7dc513478790b3",
+          "committedAt": "2026-05-20T14:55:54Z"
+        },
+        {
+          "repo": "opa1/the-quest",
+          "message": "feat: supabase x oauth setup, profiles table, rls policies",
+          "url": "https://github.com/opa1/the-quest/commit/75087bdf51e87cf7829ffc8a1ef5886be661a2de",
+          "committedAt": "2026-05-20T12:51:21Z"
+        },
+        {
+          "repo": "opa1/the-quest",
+          "message": "feat: navbar scroll-spy, scroll-to-top FAB, remove War Room nav item",
+          "url": "https://github.com/opa1/the-quest/commit/c84dc0b92a51d44121578b23d0de2cb010e6b86f",
+          "committedAt": "2026-05-19T13:16:07Z"
+        }
+      ],
+      "error": null
     },
     {
       "id": "jakessevi",
@@ -177,47 +353,85 @@
       "lastActivityAt": null,
       "commitsThisWeek": 0,
       "recentCommits": [],
-      "error": "NETWORK_ERROR"
+      "error": "EMPTY_REPO_OR_NO_COMMITS"
     },
     {
       "id": "giorgiozanon",
       "name": "Giorgio",
-      "lastActivityAt": null,
+      "lastActivityAt": "2026-05-02T13:22:49Z",
       "commitsThisWeek": 0,
       "recentCommits": [],
-      "error": "NETWORK_ERROR"
+      "error": null
     },
     {
       "id": "muhammedyuguda",
       "name": "Muhammed",
-      "lastActivityAt": null,
+      "lastActivityAt": "2026-05-15T17:26:52Z",
       "commitsThisWeek": 0,
       "recentCommits": [],
-      "error": "NETWORK_ERROR"
+      "error": null
     },
     {
       "id": "juanitajaramillo",
       "name": "Juanita",
-      "lastActivityAt": null,
-      "commitsThisWeek": 0,
-      "recentCommits": [],
-      "error": "NETWORK_ERROR"
+      "lastActivityAt": "2026-05-19T20:22:47Z",
+      "commitsThisWeek": 1,
+      "recentCommits": [
+        {
+          "repo": "JuanitaJaramill/cardano-insights-lab",
+          "message": "Add files via upload",
+          "url": "https://github.com/JuanitaJaramill/cardano-insights-lab/commit/b92431870a71f25405c84020d3c4eea074154d8e",
+          "committedAt": "2026-05-19T20:22:47Z"
+        }
+      ],
+      "error": null
     },
     {
       "id": "kamalaliyu",
       "name": "Kamal Aliyu",
-      "lastActivityAt": null,
+      "lastActivityAt": "2026-05-09T14:59:13Z",
       "commitsThisWeek": 0,
       "recentCommits": [],
-      "error": "NETWORK_ERROR"
+      "error": null
     },
     {
       "id": "alfreditodole",
       "name": "Alfred Itodole",
-      "lastActivityAt": null,
-      "commitsThisWeek": 0,
-      "recentCommits": [],
-      "error": "NETWORK_ERROR"
+      "lastActivityAt": "2026-05-20T19:56:07Z",
+      "commitsThisWeek": 19,
+      "recentCommits": [
+        {
+          "repo": "sirxalfred/mosaic-cardano",
+          "message": "feat(user): create an aesthetic user profile page with hooks for retrieving mock user data",
+          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/ceed2810c72e80474055278b4b817133a07b9090",
+          "committedAt": "2026-05-20T19:56:07Z"
+        },
+        {
+          "repo": "sirxalfred/mosaic-cardano",
+          "message": "refactor(explore): remove previosu content of explore page and replace eith coming soon",
+          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/966fded2ff17b4f055ee741f9ab9b75c025914f1",
+          "committedAt": "2026-05-20T19:54:16Z"
+        },
+        {
+          "repo": "sirxalfred/mosaic-cardano",
+          "message": "feat(villages): add react query hooks with mock api calls so it can easily be swapped out",
+          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/c89d1a79efb14fa28cec901c219164b301f4d64d",
+          "committedAt": "2026-05-20T19:53:22Z"
+        },
+        {
+          "repo": "sirxalfred/mosaic-cardano",
+          "message": "feat(village): add community home page ui components",
+          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/b2adc29511688de7cddd124da696b47e9648cfaf",
+          "committedAt": "2026-05-20T19:52:25Z"
+        },
+        {
+          "repo": "sirxalfred/mosaic-cardano",
+          "message": "feat(village): create core pages, layout and navigation flow",
+          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/460918ec79953b8a2e6c67a321f4e1d909ea5b01",
+          "committedAt": "2026-05-20T19:51:01Z"
+        }
+      ],
+      "error": null
     }
   ]
 }
