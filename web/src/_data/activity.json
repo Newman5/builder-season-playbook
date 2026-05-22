@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-21T13:26:37Z",
+  "generatedAt": "2026-05-22T13:11:10Z",
   "weekStart": "2026-05-18T00:00:00Z",
   "weekEnd": "2026-05-24T23:59:59Z",
   "builders": [
@@ -77,26 +77,38 @@
     {
       "id": "pmcorcoran",
       "name": "Paul Corcoran",
-      "lastActivityAt": "2026-05-18T14:57:40Z",
-      "commitsThisWeek": 3,
+      "lastActivityAt": "2026-05-22T01:18:47Z",
+      "commitsThisWeek": 19,
       "recentCommits": [
         {
           "repo": "pmcorcoran/ada-battles",
-          "message": "Merge branch 'feat/add-client-authority'\nmerging to move to client side authority architecture",
-          "url": "https://github.com/pmcorcoran/ada-battles/commit/255899811d5095506427f4cfb697fffd56b92ac6",
-          "committedAt": "2026-05-18T14:57:40Z"
+          "message": "update ARCHITECTURE.md",
+          "url": "https://github.com/pmcorcoran/ada-battles/commit/1537eca7f5a008065d0e7c8e29e31867ed5ad73a",
+          "committedAt": "2026-05-22T01:18:47Z"
         },
         {
           "repo": "pmcorcoran/ada-battles",
-          "message": "Merge branch 'feat/add-client-authority' of github.com:pmcorcoran/ada-battles into feat/add-client-authority\nsyncing with github",
-          "url": "https://github.com/pmcorcoran/ada-battles/commit/fa0cee3c1f4dcd6140b0c031fea8d19dba1ce9eb",
-          "committedAt": "2026-05-18T14:55:12Z"
+          "message": "add hydra-referee/ in contracts/",
+          "url": "https://github.com/pmcorcoran/ada-battles/commit/5e0e6b4c4a6e84897cc5e490df58e764a271738f",
+          "committedAt": "2026-05-22T00:13:17Z"
         },
         {
           "repo": "pmcorcoran/ada-battles",
-          "message": "Merge branch 'feat/add-client-authority'\nmerging the client side authority to main. This brings main 1 step closer in transitioning from a web2 game to a web3 game",
-          "url": "https://github.com/pmcorcoran/ada-battles/commit/0507142bfd3f8dda3a57d572adb81e42d6db98c8",
-          "committedAt": "2026-05-18T14:43:43Z"
+          "message": "update README",
+          "url": "https://github.com/pmcorcoran/ada-battles/commit/9dd913c327aea29f32694722331d6f77ee6291a4",
+          "committedAt": "2026-05-22T00:07:01Z"
+        },
+        {
+          "repo": "pmcorcoran/ada-battles",
+          "message": "Chore: remove compiled .js from /shared",
+          "url": "https://github.com/pmcorcoran/ada-battles/commit/30ec6a5e2e978b1ea65f5706b35c69e75aafb62d",
+          "committedAt": "2026-05-22T00:00:26Z"
+        },
+        {
+          "repo": "pmcorcoran/ada-battles",
+          "message": "Merge branch 'feat/full-containerization'\nseparates frontend from matchmaker container.",
+          "url": "https://github.com/pmcorcoran/ada-battles/commit/8cb8142b86739e2409b7b83ca2f2e6359e7de4f0",
+          "committedAt": "2026-05-21T23:48:28Z"
         }
       ],
       "error": null
@@ -159,38 +171,38 @@
     {
       "id": "murmurations",
       "name": "Nori",
-      "lastActivityAt": "2026-05-20T18:20:11Z",
-      "commitsThisWeek": 9,
+      "lastActivityAt": "2026-05-21T22:14:11Z",
+      "commitsThisWeek": 15,
       "recentCommits": [
         {
           "repo": "murmurations-ai/flyway",
-          "message": "feat(core+cli+mcp): flyway_status — second working tool\n\nFirst read-only tool, first consumer of the signed identity. Inspects\nlocal on-disk state and reports:\n\n  identity     reads .well-known/did.json + flyway/entity-statement.json,\n               verifies the entity statement signature against the DID\n               document, surfaces issues (missing files, DID mismatch,\n               tampered statement, unsigned legacy statement)\n  peers        reports presence of flyway/peers.yaml (no parsing yet)\n  agreements   counts *.yaml files in flyway/agreements/ and lists ids\n\nSignals (inbox/outbox) deliberately deferred — their on-disk\nconvention is unsettled and will land with flyway_propose / flyway_check.\n\nCLI: `flyway status` (human output) and `flyway status --json`.\nMCP: handler accepts an optional cwd argument; defaults to process.cwd().\n\nTests: 113 passing across the workspace (+11 status + 2 MCP).\nEnd-to-end verified: init → status reports signatureValid=true.\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>",
-          "url": "https://github.com/murmurations-ai/flyway/commit/02a1f09172e65a739ba5ba9c79e12310aae187e0",
-          "committedAt": "2026-05-20T18:20:11Z"
+          "message": "docs: accept ADR-0008 (signal transport convention)\n\nImplementation already landed in 3ce02ec. README catches up.\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>",
+          "url": "https://github.com/murmurations-ai/flyway/commit/4c472e781d95ffa3d19e594186da161759f44de0",
+          "committedAt": "2026-05-21T22:14:11Z"
         },
         {
           "repo": "murmurations-ai/flyway",
-          "message": "docs: refresh README status — signing is now wired end-to-end\n\nflyway_init produces a cryptographically signed entity statement via\nthe pluggable Signer interface introduced in ADR-0007.\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>",
-          "url": "https://github.com/murmurations-ai/flyway/commit/1b0935af7230961f9954135bca3fbecf3dfdfe44",
-          "committedAt": "2026-05-20T18:06:33Z"
+          "message": "feat(core+cli+mcp): S+2 — signal transport + flyway_check\n\nADR-0008 (Proposed) settles the on-disk shape of cross-murmuration\nsignals before any senders exist, so the senders drop in without\nchanging what receivers expect:\n\n  envelope    SignalEnvelope { schema, id, from, to, sentAt, kind, body, refs? }\n              signed inline under DOMAIN_TENSION / _PROPOSAL / _RESPOND / _EXIT\n              (kind-specific so signatures cannot be cross-kind replayed)\n  location    flyway/inbox/<host>/<owner>/<repo>/<id>.yaml   (recipient)\n              flyway/outbox/<host>/<owner>/<repo>/<id>.yaml  (sender)\n              ids: <unix-ms-13>-<8-hex>, time-sortable, charset-bounded\n  transport   pluggable; v0.1 ships local-fs (direct write into peer's\n              repo); github-pr and url-webhook reserved for later ADRs\n\nImplementation (flyway-core):\n  signal.ts   types, domainForSignalKind, buildSignedSignal,\n              verifySignedSignal, generateSignalId, writeSignalToInbox/Outbox\n              (idempotent; refuses overwrite with different signature)\n  check.ts   flywayCheck(cwd) walks flyway/inbox/, parses each envelope,\n              verifies envelope.from is in peers.yaml, loads cached peer\n              DID document, verifies signature under the kind-derived\n              domain, reports per-signal validity + issues\n\nWiring:\n  MCP        flyway_check handler — accepts optional cwd, defaults to\n              process.cwd()\n  CLI        `flyway check [--json]` — non-zero exit if any signal fails\n              to verify\n\nTests: 166 passing (+13 core signal, +5 core check). End-to-end smoke\nverified: A sends a tension to B (recognized, sig valid); C sends a\nproposal to B without recognition (unverified, clear \"not in\nflyway/peers.yaml\" issue).\n\nADR-0008 left as Proposed pending Source review.\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>",
+          "url": "https://github.com/murmurations-ai/flyway/commit/3ce02ec6ea3a713adbe870143d1dca288dab2466",
+          "committedAt": "2026-05-21T18:28:25Z"
         },
         {
           "repo": "murmurations-ai/flyway",
-          "message": "feat(core): signing milestone — Signer interface + local Ed25519 default\n\nImplements ADR-0007's signing seam. Three new pieces in flyway-core:\n\n  signing.ts\n    - canonicalize() — JCS-style deterministic JSON (sorted keys, no\n      whitespace, drops undefined)\n    - domainSeparated() — prefixes canonical bytes with a flyway domain\n      tag so signatures cannot be replayed across artifact kinds (or\n      mistaken for non-flyway signatures when keys are reused)\n    - Signer interface — pluggable, async; future Cardano / HSM / KMS\n      signers drop in without changing artifact-producing code\n    - localEd25519Signer() — the default; wraps Node crypto.sign\n    - signArtifactInline() — attaches a SignatureEnvelope to the\n      artifact (W3C VC / jws-2020 inline convention)\n    - verifyInlineSignedArtifact() — verifies against a DID document\n    - DOMAIN_* constants for each signed artifact kind\n\n  anchoring.ts\n    - Anchor interface + AnchorReceipt type. No implementation in\n      v0.1; the interface lands now so future Cardano anchors drop\n      in cleanly (ADR-0007).\n\n  init.ts\n    - flywayInit() is now async; the produced entity statement carries\n      an EdDSA signature over its canonical bytes\n    - EntityStatement gains an optional signature field\n      (SignedEntityStatement narrows it to required)\n\nConsumers updated to await: MCP handlers, CLI runInit, CLI bin.\n\nTests: 104 passing across the workspace (+17 signing + 3 signature\nround-trips in init + MCP + CLI).\n\nEnd-to-end verified: `flyway init` writes a signed entity statement\nthat round-trips through verifyInlineSignedArtifact against the\ngenerated DID document.\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>",
-          "url": "https://github.com/murmurations-ai/flyway/commit/48484bfa0a71f7304a8656b382f64f314d90b8cc",
-          "committedAt": "2026-05-20T18:05:34Z"
+          "message": "docs(walkthroughs): note resolution of G1/G2/G3 in the Tier 1 walkthrough\n\nAddendum only — the walkthrough body remains frozen at SHA 1712232.\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>",
+          "url": "https://github.com/murmurations-ai/flyway/commit/125d5b4edf338cace0b46475bbc02bcb235ff9c8",
+          "committedAt": "2026-05-21T14:36:37Z"
         },
         {
           "repo": "murmurations-ai/flyway",
-          "message": "docs: accept ADR-0007 (pluggable signers and on-chain anchoring)\n\nDecides the architectural shape of signing before signing actually\nlands in flyway-core. Three separable concerns — signing (required,\ndefault = local Ed25519), anchoring (optional, no default),\ncredentialing (optional, declarative). Each is its own interface;\nchain-specific implementations ship as separate optional packages.\n\nThe lucky Ed25519 alignment with Cardano is named explicitly so the\nintegration is additive, not a refactor. flyway-core stays\nchain-agnostic; @murmurations-ai/flyway-cardano and\n@murmurations-ai/flyway-andamio are future optional packages, not\nv0.1 blockers.\n\nREADME catches up: ADR list now reflects all seven accepted ADRs\n(0005 and 0006 had not been listed).\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>",
-          "url": "https://github.com/murmurations-ai/flyway/commit/0c0bda2f35953d3f7a717bf1a022b5c3d320b8fe",
-          "committedAt": "2026-05-20T17:07:44Z"
+          "message": "fix(core+cli): close the three Tier 1 walkthrough gaps\n\nG1 — Peer public key inline in recognition entries\n  RecognitionEntry gains peerVerificationKeyId + peerPublicKey, populated\n  from the peer's DID document at recognition time. The peer's key\n  becomes part of the signed payload, so future peer key rotation is\n  detectable from the entry alone (no DID document re-fetch required).\n\nG2 — flyway unrecognize verb\n  New core primitive unrecognizePeer() produces a signed\n  UnrecognitionRecord under DOMAIN_UNRECOGNITION = 'flyway-v1:unrecognition'.\n  Only the original recognizer may unrecognize (signer DID must match\n  priorEntry.recognizedBy). CLI exposes `flyway unrecognize <did>\n  [--reason \"...\"]`: writes the signed record to\n  flyway/unrecognized/<safe-did>.yaml, removes the peer from\n  flyway/peers.yaml, and intentionally retains the peer cache for audit.\n\nG3 — Peer identity drift detection in flyway_status\n  Status now reads each peer's cached did.json + entity-statement.json and\n  compares against the recognition entry's bindings:\n    - peerPublicKey vs. cached DID document's verification method  → key rotation\n    - entityStatementFingerprint vs. re-hashed cached statement     → statement reissue\n  Reports per-peer cacheConsistent + issues array. Legacy entries without\n  inline peerPublicKey are tolerated with a \"rerun recognize\" hint.\n\nTests: 148 passing (+2 core recognize G1/G2, +2 core status G3 drift\nscenarios, +7 CLI unrecognize). End-to-end smoke verified: recognize →\npeers.yaml shows inline key → unrecognize → audit record written →\npeers.yaml empty.\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>",
+          "url": "https://github.com/murmurations-ai/flyway/commit/f9911fddad1b72b7d661cd295164c3a333622115",
+          "committedAt": "2026-05-21T14:36:13Z"
         },
         {
           "repo": "murmurations-ai/flyway",
-          "message": "docs(architecture): how-flyway-works.html — visual companion\n\nHand-crafted single-file HTML reference with custom SVG diagrams:\nmental model (three layers), component poster, flyway_init sequence,\ncross-murmuration consent sequence, four state machines, and the\ncontracts tables. Tied to SHA eec423c / protocol v0.1.0.\n\nTufte-meets-technical-spec aesthetic: warm paper for prose, deep-blue\ncanvas for diagrams, amber for implemented surface, slate for deferred.\nSelf-contained — no build step, web fonts via Google Fonts CDN. Prints\nas one cohesive document.\n\nREADME updated to point readers at the visual companion alongside the\nexisting markdown version.\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>",
-          "url": "https://github.com/murmurations-ai/flyway/commit/dd15561771eaa9bb9003d3158ee7bad012e17672",
-          "committedAt": "2026-05-19T15:26:16Z"
+          "message": "docs(walkthroughs): Tier 1 mutual recognition — first executable walkthrough\n\nEnd-to-end walkthrough of flyway_init + flyway_recognize + flyway_status\nagainst real on-disk artifacts. Two murmurations create their identities,\nverify each other's signed entity statements, and produce signed\nrecognition entries — each step reproducible from SHA 1712232.\n\nDistinct from the 2026-05-13 narrative walkthrough: the actors here are\nreal CLI invocations, the evidence is files on disk, and the signatures\nround-trip through cryptographic verify. Updated walkthroughs/README to\ndistinguish narrative vs. executable kinds.\n\nSurfaces three new gaps worth filing (peer public key not in peers.yaml;\nno flyway_unrecognize; peer identity drift not detected).\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>",
+          "url": "https://github.com/murmurations-ai/flyway/commit/8dbf197034060d75872fa1209d6b943daf48827c",
+          "committedAt": "2026-05-21T14:21:05Z"
         }
       ],
       "error": null
@@ -214,17 +226,36 @@
     {
       "id": "mobrai",
       "name": "Marcio",
-      "lastActivityAt": "2026-05-16T17:23:20Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-05-21T13:35:54Z",
+      "commitsThisWeek": 2,
+      "recentCommits": [
+        {
+          "repo": "mobr-ai/cap-pie",
+          "message": "Merge commit '8ede13eb90941436770208401b00d6ab46314ffc'",
+          "url": "https://github.com/mobr-ai/cap-pie/commit/ec708856d08f5c1b2174861ac3b8266cd2631103",
+          "committedAt": "2026-05-21T13:35:54Z"
+        },
+        {
+          "repo": "mobr-ai/cap-pie",
+          "message": "refactor(agentic-ai): migrate NL pipeline to multi-agent LangGraph architecture\n\n* Replace procedural NL orchestration with stateful LangGraph workflow\n* Introduce multi-agent execution model:\n\n  * CacheAgent\n  * PlanningAgent\n  * ExecutionAgent\n  * CriticAgent\n  * ContextAgent\n  * AnswerAgent\n  * PersistenceAgent\n* Add shared AgenticQueryState for graph-wide state management\n* Integrate LangGraph as workflow runtime and orchestration engine\n* Integrate LangChain tool abstractions for reusable agent tools\n* Integrate Semantic Kernel runtime for semantic reasoning layer\n* Separate planning, execution, retry, formatting, and persistence concerns\n* Add self-healing retry loop through CriticAgent regeneration flow\n* Preserve existing federated SPARQL + SQL execution features\n* Preserve Redis semantic cache compatibility\n* Preserve metrics, visualization, and answer generation flows\n* Refactor cache serialization/deserialization into dedicated tool layer\n* Remove legacy orchestration helpers from nl_service.py\n* Eliminate duplicated orchestration and query handling logic\n* Prepare architecture for future:\n\n  * semantic memory\n  * planner decomposition\n  * tool-calling agents\n  * distributed execution\n  * human-in-the-loop workflows\n* Upgrade architecture toward production-grade agentic AI platform\n\nPackages:\n\n* langchain==1.3.1\n* langgraph==1.2.0\n* semantic-kernel>=1.0.0",
+          "url": "https://github.com/mobr-ai/cap-pie/commit/8ede13eb90941436770208401b00d6ab46314ffc",
+          "committedAt": "2026-05-21T08:06:59Z"
+        }
+      ],
       "error": null
     },
     {
       "id": "newman5",
       "name": "Newman",
-      "lastActivityAt": "2026-05-20T16:25:27Z",
-      "commitsThisWeek": 5,
+      "lastActivityAt": "2026-05-21T13:26:52Z",
+      "commitsThisWeek": 6,
       "recentCommits": [
+        {
+          "repo": "Newman5/builder-season-playbook",
+          "message": "Update builder activity data",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/322cf0f754ee6353c3f9e6d351cd12344ce722dd",
+          "committedAt": "2026-05-21T13:26:52Z"
+        },
         {
           "repo": "Newman5/builder-season-playbook",
           "message": "knocking out a backlog of tasks for the dashboard.",
@@ -248,12 +279,6 @@
           "message": "Update builder activity data",
           "url": "https://github.com/Newman5/builder-season-playbook/commit/63216d1f1dc2e181504c6ddb21d1f6af430146a9",
           "committedAt": "2026-05-19T13:27:48Z"
-        },
-        {
-          "repo": "Newman5/builder-season-playbook",
-          "message": "Update builder activity data",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/912b4d680e3d72ed8813b8f931e8ec26febccc53",
-          "committedAt": "2026-05-18T13:35:22Z"
         }
       ],
       "error": null
@@ -311,38 +336,38 @@
     {
       "id": "opa007i",
       "name": "Opa",
-      "lastActivityAt": "2026-05-21T12:35:30Z",
-      "commitsThisWeek": 6,
+      "lastActivityAt": "2026-05-22T10:58:59Z",
+      "commitsThisWeek": 13,
       "recentCommits": [
         {
           "repo": "opa1/the-quest",
-          "message": "feat: missions page, filter bar, paginated grid, missions store",
-          "url": "https://github.com/opa1/the-quest/commit/76c2b9565b6cbd833cad65319fce866e15458c5d",
-          "committedAt": "2026-05-21T12:35:30Z"
+          "message": "feat: profile settings page with username, wallet, and danger zone",
+          "url": "https://github.com/opa1/the-quest/commit/b8f480318799f50939cae8d159ff51163a5129bb",
+          "committedAt": "2026-05-22T10:58:59Z"
         },
         {
           "repo": "opa1/the-quest",
-          "message": "fix: added scroll area to the overflowing filter bar causing screen overflow on mobile",
-          "url": "https://github.com/opa1/the-quest/commit/c5920d02f3120c304026a63f75bf2f872cc3e77e",
-          "committedAt": "2026-05-21T12:05:10Z"
+          "message": "feat: mobile nav post button cancel state on /post page",
+          "url": "https://github.com/opa1/the-quest/commit/2dfe9de1eb33ef1512d8313ff9a8fb6177976c48",
+          "committedAt": "2026-05-22T10:37:38Z"
         },
         {
           "repo": "opa1/the-quest",
-          "message": "feat: floating mobile nav, responsive layout, realm feed, placeholder data",
-          "url": "https://github.com/opa1/the-quest/commit/f7e65d1c6e3a2d67de8d48d8ea7dc513478790b3",
-          "committedAt": "2026-05-20T14:55:54Z"
+          "message": "feat: post mission page, form fields, live preview, create mission action",
+          "url": "https://github.com/opa1/the-quest/commit/5cbc93e88ca279c34e9eea1941b630355e229f8d",
+          "committedAt": "2026-05-22T10:37:25Z"
         },
         {
           "repo": "opa1/the-quest",
-          "message": "feat: supabase x oauth setup, profiles table, rls policies",
-          "url": "https://github.com/opa1/the-quest/commit/75087bdf51e87cf7829ffc8a1ef5886be661a2de",
-          "committedAt": "2026-05-20T12:51:21Z"
+          "message": "feat: leaderboard page, podium, responsive table cards, record page, contribution history",
+          "url": "https://github.com/opa1/the-quest/commit/5dfb14cc564b1202fb4a1c394bd07699ea27a6ea",
+          "committedAt": "2026-05-22T10:16:32Z"
         },
         {
           "repo": "opa1/the-quest",
-          "message": "feat: navbar scroll-spy, scroll-to-top FAB, remove War Room nav item",
-          "url": "https://github.com/opa1/the-quest/commit/c84dc0b92a51d44121578b23d0de2cb010e6b86f",
-          "committedAt": "2026-05-19T13:16:07Z"
+          "message": "feat: leaderboard page, podium with real data, full table, current user highlight",
+          "url": "https://github.com/opa1/the-quest/commit/a1e51b91a4923a46a17f204682ac976fa3c9f57d",
+          "committedAt": "2026-05-22T09:55:26Z"
         }
       ],
       "error": null
