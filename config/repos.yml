@@ -33,6 +33,7 @@ repos:
       - builders
 
   - id: johnny5i
+    active: false
     name: Johnny5i
     github: bytewizard42i
     x: realjohnny5i
@@ -220,7 +221,7 @@ repos:
       - builders
       
   - id: jakessevi
-    active: true
+    active: false
     name: Jakes Sevi
     github: Sevijakes10
     x: JakesSevi9
