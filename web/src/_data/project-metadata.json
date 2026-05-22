@@ -1,220 +1,246 @@
 {
-  "generatedAt": "2026-05-20T15:36:43Z",
+  "generatedAt": "2026-05-22T13:11:10Z",
   "builders": [
     {
       "builderId": "mhizta",
       "repoUrl": "https://github.com/Mhizta-gab/bookworm-ai",
-      "fetchedAt": "2026-05-20T15:36:43Z",
+      "fetchedAt": "2026-05-22T13:11:05Z",
       "found": false,
-      "error": "NETWORK_ERROR",
+      "error": "NOT_FOUND",
       "project": null
     },
     {
       "builderId": "ianonjuguna",
       "repoUrl": "https://github.com/IanoNjuguna/bookish-worm",
-      "fetchedAt": "2026-05-20T15:36:43Z",
+      "fetchedAt": "2026-05-22T13:11:05Z",
       "found": false,
-      "error": "NETWORK_ERROR",
+      "error": "NOT_FOUND",
       "project": null
     },
     {
       "builderId": "dammy",
       "repoUrl": "https://github.com/Dammy7942/accordiax",
-      "fetchedAt": "2026-05-20T15:36:43Z",
+      "fetchedAt": "2026-05-22T13:11:06Z",
       "found": false,
-      "error": "NETWORK_ERROR",
+      "error": "NOT_FOUND",
       "project": null
     },
     {
       "builderId": "johnny5i",
       "repoUrl": "https://github.com/bytewizard42i/BlindOracle-Gimbalabs_hackathon",
-      "fetchedAt": "2026-05-20T15:36:43Z",
+      "fetchedAt": "2026-05-22T13:11:06Z",
       "found": false,
-      "error": "NETWORK_ERROR",
+      "error": "NOT_FOUND",
       "project": null
     },
     {
       "builderId": "gidhub",
       "repoUrl": "https://github.com/0xGIDHUB/tixano",
-      "fetchedAt": "2026-05-20T15:36:43Z",
+      "fetchedAt": "2026-05-22T13:11:06Z",
       "found": false,
-      "error": "NETWORK_ERROR",
+      "error": "NOT_FOUND",
       "project": null
     },
     {
       "builderId": "pmcorcoran",
       "repoUrl": "https://github.com/pmcorcoran/ada-battles",
-      "fetchedAt": "2026-05-20T15:36:43Z",
+      "fetchedAt": "2026-05-22T13:11:06Z",
       "found": false,
-      "error": "NETWORK_ERROR",
+      "error": "NOT_FOUND",
       "project": null
     },
     {
       "builderId": "harrie",
       "repoUrl": "https://github.com/IamHarrie-Labs/beni",
-      "fetchedAt": "2026-05-20T15:36:43Z",
+      "fetchedAt": "2026-05-22T13:11:06Z",
       "found": false,
-      "error": "NETWORK_ERROR",
+      "error": "NOT_FOUND",
       "project": null
     },
     {
       "builderId": "lewis",
       "repoUrl": "https://github.com/lewis-nduati/Tracom-credentials.git",
-      "fetchedAt": "2026-05-20T15:36:43Z",
+      "fetchedAt": "2026-05-22T13:11:06Z",
       "found": false,
-      "error": "NETWORK_ERROR",
+      "error": "NOT_FOUND",
       "project": null
     },
     {
       "builderId": "armanabid",
       "repoUrl": "https://github.com/ArmanAbid/ChainTask",
-      "fetchedAt": "2026-05-20T15:36:43Z",
+      "fetchedAt": "2026-05-22T13:11:07Z",
       "found": false,
-      "error": "NETWORK_ERROR",
+      "error": "NOT_FOUND",
       "project": null
     },
     {
       "builderId": "gamechanger",
       "repoUrl": "https://github.com/GameChangerFinance/NeonSoup",
-      "fetchedAt": "2026-05-20T15:36:43Z",
+      "fetchedAt": "2026-05-22T13:11:07Z",
       "found": false,
-      "error": "NETWORK_ERROR",
+      "error": "NOT_FOUND",
       "project": null
     },
     {
       "builderId": "yungslaiz",
       "repoUrl": "https://github.com/YungSlaiz53/GNXT",
-      "fetchedAt": "2026-05-20T15:36:43Z",
+      "fetchedAt": "2026-05-22T13:11:07Z",
       "found": false,
-      "error": "NETWORK_ERROR",
+      "error": "NOT_FOUND",
       "project": null
     },
     {
       "builderId": "maxalexweber",
       "repoUrl": "https://github.com/maxalexweber1/CHAINFEED",
-      "fetchedAt": "2026-05-20T15:36:43Z",
+      "fetchedAt": "2026-05-22T13:11:07Z",
       "found": false,
-      "error": "NETWORK_ERROR",
+      "error": "NOT_FOUND",
       "project": null
     },
     {
       "builderId": "murmurations",
       "repoUrl": "https://github.com/murmurations-ai/flyway",
-      "fetchedAt": "2026-05-20T15:36:43Z",
+      "fetchedAt": "2026-05-22T13:11:07Z",
       "found": false,
-      "error": "NETWORK_ERROR",
+      "error": "NOT_FOUND",
       "project": null
     },
     {
       "builderId": "blockprint",
       "repoUrl": "https://github.com/BlockPrintio/GigsGig",
-      "fetchedAt": "2026-05-20T15:36:43Z",
+      "fetchedAt": "2026-05-22T13:11:07Z",
       "found": false,
-      "error": "NETWORK_ERROR",
+      "error": "NOT_FOUND",
       "project": null
     },
     {
       "builderId": "trike",
       "repoUrl": "https://github.com/3rike12/3rike-Mobility_",
-      "fetchedAt": "2026-05-20T15:36:43Z",
+      "fetchedAt": "2026-05-22T13:11:08Z",
       "found": false,
-      "error": "NETWORK_ERROR",
+      "error": "NOT_FOUND",
       "project": null
     },
     {
       "builderId": "mobrai",
       "repoUrl": "https://github.com/mobr-ai/cap-pie",
-      "fetchedAt": "2026-05-20T15:36:43Z",
+      "fetchedAt": "2026-05-22T13:11:08Z",
       "found": false,
-      "error": "NETWORK_ERROR",
+      "error": "NOT_FOUND",
       "project": null
     },
     {
       "builderId": "newman5",
       "repoUrl": "https://github.com/Newman5/builder-season-playbook",
-      "fetchedAt": "2026-05-20T15:36:43Z",
-      "found": false,
-      "error": "NETWORK_ERROR",
-      "project": null
+      "fetchedAt": "2026-05-22T13:11:08Z",
+      "found": true,
+      "error": null,
+      "project": {
+        "projectId": "builder-season-playbook",
+        "projectName": "Builder Season Playbook",
+        "tagline": "A reusable playbook for running builder-season style hackathons.",
+        "builderName": "Newman",
+        "builderGithub": "Newman5",
+        "builderXHandle": "Newman5",
+        "repoUrl": "https://github.com/Newman5/builder-season-playbook",
+        "demoUrl": null,
+        "websiteUrl": null,
+        "projectUrl": null,
+        "status": "active",
+        "updates": [
+          {
+            "week": 1,
+            "date": null,
+            "xUrl": "https://x.com/example/status/123",
+            "summary": "Started outlining the dashboard architecture and data model."
+          },
+          {
+            "week": 2,
+            "date": null,
+            "xUrl": "https://x.com/example/status/456",
+            "summary": "Built the first iteration of the dashboard and explored 11ty global data."
+          }
+        ]
+      }
     },
     {
       "builderId": "minustenex",
       "repoUrl": "https://github.com/agentic-architecture-research/plugin-harness",
-      "fetchedAt": "2026-05-20T15:36:43Z",
+      "fetchedAt": "2026-05-22T13:11:08Z",
       "found": false,
-      "error": "NETWORK_ERROR",
+      "error": "NOT_FOUND",
       "project": null
     },
     {
       "builderId": "devfreeguy",
       "repoUrl": "https://github.com/devfreeguy/skill-swap",
-      "fetchedAt": "2026-05-20T15:36:43Z",
+      "fetchedAt": "2026-05-22T13:11:08Z",
       "found": false,
-      "error": "NETWORK_ERROR",
+      "error": "NOT_FOUND",
       "project": null
     },
     {
       "builderId": "haulink",
       "repoUrl": "https://github.com/FoladDTechie/Haulink",
-      "fetchedAt": "2026-05-20T15:36:43Z",
+      "fetchedAt": "2026-05-22T13:11:08Z",
       "found": false,
-      "error": "NETWORK_ERROR",
+      "error": "NOT_FOUND",
       "project": null
     },
     {
       "builderId": "opa007i",
       "repoUrl": "https://github.com/opa1/the-quest",
-      "fetchedAt": "2026-05-20T15:36:43Z",
+      "fetchedAt": "2026-05-22T13:11:09Z",
       "found": false,
-      "error": "NETWORK_ERROR",
+      "error": "NOT_FOUND",
       "project": null
     },
     {
       "builderId": "jakessevi",
       "repoUrl": "https://github.com/Sevijakes10/glowing-carnival",
-      "fetchedAt": "2026-05-20T15:36:43Z",
+      "fetchedAt": "2026-05-22T13:11:09Z",
       "found": false,
-      "error": "NETWORK_ERROR",
+      "error": "NOT_FOUND",
       "project": null
     },
     {
       "builderId": "giorgiozanon",
       "repoUrl": "https://github.com/adakondacoin/GeoCaching-game",
-      "fetchedAt": "2026-05-20T15:36:43Z",
+      "fetchedAt": "2026-05-22T13:11:09Z",
       "found": false,
-      "error": "NETWORK_ERROR",
+      "error": "NOT_FOUND",
       "project": null
     },
     {
       "builderId": "muhammedyuguda",
       "repoUrl": "https://github.com/Yuguda999/devmemory",
-      "fetchedAt": "2026-05-20T15:36:43Z",
+      "fetchedAt": "2026-05-22T13:11:09Z",
       "found": false,
-      "error": "NETWORK_ERROR",
+      "error": "NOT_FOUND",
       "project": null
     },
     {
       "builderId": "juanitajaramillo",
       "repoUrl": "https://github.com/JuanitaJaramill/cardano-insights-lab",
-      "fetchedAt": "2026-05-20T15:36:43Z",
+      "fetchedAt": "2026-05-22T13:11:09Z",
       "found": false,
-      "error": "NETWORK_ERROR",
+      "error": "NOT_FOUND",
       "project": null
     },
     {
       "builderId": "kamalaliyu",
       "repoUrl": "https://github.com/kamal-ogtl/cogikids",
-      "fetchedAt": "2026-05-20T15:36:43Z",
+      "fetchedAt": "2026-05-22T13:11:10Z",
       "found": false,
-      "error": "NETWORK_ERROR",
+      "error": "NOT_FOUND",
       "project": null
     },
     {
       "builderId": "alfreditodole",
       "repoUrl": "https://github.com/sirxalfred/mosaic-cardano",
-      "fetchedAt": "2026-05-20T15:36:43Z",
+      "fetchedAt": "2026-05-22T13:11:10Z",
       "found": false,
-      "error": "NETWORK_ERROR",
+      "error": "NOT_FOUND",
       "project": null
     }
   ]
