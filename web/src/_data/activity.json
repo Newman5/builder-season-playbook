@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-05-22T13:11:10Z",
+  "generatedAt": "2026-05-23T12:36:50Z",
   "weekStart": "2026-05-18T00:00:00Z",
   "weekEnd": "2026-05-24T23:59:59Z",
   "builders": [
     {
       "id": "mhizta",
       "name": "Mhizta",
-      "lastActivityAt": "2026-04-28T12:37:29Z",
+      "lastActivityAt": null,
       "commitsThisWeek": 0,
       "recentCommits": [],
-      "error": null
+      "error": "API_ERROR_401"
     },
     {
       "id": "ianonjuguna",
@@ -22,25 +22,30 @@
     {
       "id": "dammy",
       "name": "Dammy",
-      "lastActivityAt": "2026-05-13T22:29:45Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
-      "error": null
-    },
-    {
-      "id": "johnny5i",
-      "name": "Johnny5i",
-      "lastActivityAt": "2026-05-16T21:33:01Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-05-23T07:47:11Z",
+      "commitsThisWeek": 1,
+      "recentCommits": [
+        {
+          "repo": "Dammy7942/accordiax",
+          "message": "feat: complete Week 4 delivery, dispute, appeal, admin panel, chat, ratings, trust scores, and fix UUID/chat bugs",
+          "url": "https://github.com/Dammy7942/accordiax/commit/7a3e76245fc3378341b515be22fc1a8115c36b54",
+          "committedAt": "2026-05-23T07:47:11Z"
+        }
+      ],
       "error": null
     },
     {
       "id": "gidhub",
       "name": "Gideon",
-      "lastActivityAt": "2026-05-21T13:22:08Z",
-      "commitsThisWeek": 8,
+      "lastActivityAt": "2026-05-23T05:49:15Z",
+      "commitsThisWeek": 9,
       "recentCommits": [
+        {
+          "repo": "0xGIDHUB/tixano",
+          "message": "Renewed email token",
+          "url": "https://github.com/0xGIDHUB/tixano/commit/84aed5c017e790480fa113d24a6fa000ba24e598",
+          "committedAt": "2026-05-23T05:49:15Z"
+        },
         {
           "repo": "0xGIDHUB/tixano",
           "message": "Minor changes made",
@@ -64,12 +69,6 @@
           "message": "Edited placholder icons for empty events/tickets",
           "url": "https://github.com/0xGIDHUB/tixano/commit/c79263f1a6502efe5ce1d14aaafc8c6f31277604",
           "committedAt": "2026-05-21T00:56:48Z"
-        },
-        {
-          "repo": "0xGIDHUB/tixano",
-          "message": "Updated events spotlight skeleton loader",
-          "url": "https://github.com/0xGIDHUB/tixano/commit/89eca610cd91be64c183f285e85453d2d8ad7354",
-          "committedAt": "2026-05-21T00:55:01Z"
         }
       ],
       "error": null
@@ -116,22 +115,65 @@
     {
       "id": "harrie",
       "name": "Harrie",
-      "lastActivityAt": "2026-05-13T19:46:15Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-05-22T19:49:23Z",
+      "commitsThisWeek": 3,
+      "recentCommits": [
+        {
+          "repo": "IamHarrie-Labs/beni",
+          "message": "feat: full-stack audit fixes, typographic brand refresh + terracotta dot\n\nFull-stack audit (8 bugs fixed):\n- SpendCurve: replace Math.random() with hashToFloat() — stops bar flicker on re-render\n- Emergency freeze button: routes to modal with SDK code instead of silent local toggle\n- Added full freeze/unfreeze modal with on-chain vs UI distinction explained\n- \"Star on GitHub\" button: wired to window.open(github) — was dead\n- \"Book a 20-min demo\" CTA: fixed from setPage(\"docs\") to mailto: link\n- Docs: all 13 sections now have real content + working navigation\n- Docs search: real filtering logic (was cosmetic input with no onChange)\n- Right sidebar links: changed from dead text to window.open() buttons\n\nBrand refresh (logo):\n- BeniMark: typographic \"B\" in DM Serif Display (replaces old Aiken shield SVG)\n- Wordmark: \"Beni\" text + terracotta circle dot (39px at reference scale, border-radius 50%)\n  aligned to the baseline of the \"i\" — matches reference match.html exactly\n- Footer large display: text period replaced with proportional circle dot\n- Brand book stacked variant: raw <span>Beni</span> replaced with <Wordmark/> component\n- Deployed to https://beni-wallet.vercel.app\n\nREADME: complete rewrite reflecting current state — architecture, live demo link,\nfull feature table, on-chain datum schema, redeemer table, what-has-been-built\nsummary, roadmap checklist, and updated stack (lucid-evolution v0.4.31)\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>",
+          "url": "https://github.com/IamHarrie-Labs/beni/commit/bad73f07e7f618740fc43b3313fe805779dfabdb",
+          "committedAt": "2026-05-22T19:49:23Z"
+        },
+        {
+          "repo": "IamHarrie-Labs/beni",
+          "message": "Dashboard: full page routing + detailed API integration guide\n\nEach sidebar nav item now navigates to a dedicated full page view:\n- Overview:     balance hero + KPI row + mini summary cards\n- Live monitor: pulsing live feed with NEW badge on latest tx\n- Transactions: full table with source label (script vs operator)\n- Approvals:    dedicated queue page + queueSpend/approveSpend code examples\n- Rules:        all 5 guardrails with descriptions + freeze/unfreeze SDK code\n- Whitelist:    address manager with add/remove code examples\n\nAPI modal now contains a full integration guide:\n- Install + setup code\n- createAgentWallet, agentSpend, queueSpend, approveSpend examples\n- freezeWallet + ownerAction examples\n- REST endpoint reference (GET /api/agent-state, POST /api/chat)\n- Validation flow explanation (cap → window → whitelist → owner co-sign)\n- Live contract address + thread token policy\n\nOverview cards are now compact summaries with \"VIEW ALL →\" links\nthat navigate to the dedicated pages.\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>",
+          "url": "https://github.com/IamHarrie-Labs/beni/commit/80aaab5f2a63b58a32e04ec556135c1b354f7be4",
+          "committedAt": "2026-05-22T15:26:44Z"
+        },
+        {
+          "repo": "IamHarrie-Labs/beni",
+          "message": "Fix dashboard UX: nav scrolling, X close button, dual balance, modals\n\n- Sidebar nav items now scroll to named sections (Live monitor →\n  section-monitor, Transactions → section-txs, Approvals →\n  section-approvals, Rules → section-rules, Whitelist → section-whitelist);\n  Team and Webhooks show a toast \"coming soon\" notification\n- Add new agent button opens modal with SDK deployment instructions\n- API button opens modal listing all SDK functions and endpoints\n- AssistantPanel gets an ✕ close button in its header; setShowChat\n  passed down from Dashboard root so panel can close itself\n- BalanceHero now shows CONTRACT + OPERATOR + TOTAL breakdown side-by-side\n  so user sees both the ₳5 locked in the script and the ₳9,995+ reserve\n- api/agent-state.js fetches AGENT_ADDRESS operator wallet balance from\n  Blockfrost and returns operatorBalanceAda in the response\n- AGENT_ADDRESS added to Vercel production env\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>",
+          "url": "https://github.com/IamHarrie-Labs/beni/commit/f34beb136e3e3f348c8c5c12baab29680aff3cd3",
+          "committedAt": "2026-05-22T15:11:46Z"
+        }
+      ],
       "error": null
     },
     {
       "id": "lewis",
       "name": "Lewis",
-      "lastActivityAt": "2026-05-21T10:43:44Z",
-      "commitsThisWeek": 1,
+      "lastActivityAt": "2026-05-23T12:06:11Z",
+      "commitsThisWeek": 7,
       "recentCommits": [
         {
           "repo": "lewis-nduati/Tracom-credentials",
-          "message": "feat: scaffold Next.js app with Tailwind, shadcn, lucid-evolution, next-auth",
-          "url": "https://github.com/lewis-nduati/Tracom-credentials/commit/08690ee9d1c380c07c554ab09410ee32470518c2",
-          "committedAt": "2026-05-21T10:43:44Z"
+          "message": "rewrite README: project context, credential flow, design principles\n\nReplaced thin technical README with full project documentation:\nstatus block, Tracom Academy context, what it does/doesn't do,\ndesign principles, 6-step credential flow, repo layout, env setup.\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>",
+          "url": "https://github.com/lewis-nduati/Tracom-credentials/commit/1dd0d47581d8476aa68730f6b2f9a530d8807d1c",
+          "committedAt": "2026-05-23T12:06:11Z"
+        },
+        {
+          "repo": "lewis-nduati/Tracom-credentials",
+          "message": "merge components/project/ into components/projects/\n\nSingular and plural folders each had one file. Moved\nprerequisite-list.tsx into projects/ and updated 3 import sites.\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>",
+          "url": "https://github.com/lewis-nduati/Tracom-credentials/commit/192df326cf04eae19d1dfd422da1714cae022e44",
+          "committedAt": "2026-05-23T11:57:34Z"
+        },
+        {
+          "repo": "lewis-nduati/Tracom-credentials",
+          "message": "fix favicon: add icon.tsx generator, remove stale andamio .ico reference\n\nNext.js App Router icon.tsx generates a 32x32 PNG at /icon that takes\nprecedence over cached favicon.ico. Navy #1A3D6B with white 'T' monogram.\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>",
+          "url": "https://github.com/lewis-nduati/Tracom-credentials/commit/5d16d30849e6ae44c2534f23e18f94bb245350b5",
+          "committedAt": "2026-05-23T11:42:02Z"
+        },
+        {
+          "repo": "lewis-nduati/Tracom-credentials",
+          "message": "redesign landing page: navy nav, hero, 4-step flow, proof cards, Tracom favicon\n\n- Complete landing page rewrite with clean navy (#1A3D6B) design system\n- Nav: logo only on navy background\n- Hero: 'Your Skills, Verified on Cardano' + single Connect Wallet CTA\n- 4-step flow section: Complete → Submit → Earn → Unlock\n- Proof cards: 100% Verifiable, Forever, Yours\n- Footer: navy with copyright and preprod network indicator\n- Favicon: Tracom 'T' monogram SVG replacing Andamio favicon.ico\n- No gradients, minimal borders, white background on content sections\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>",
+          "url": "https://github.com/lewis-nduati/Tracom-credentials/commit/a95145bc484b5d9e2411443e0520c8cd3fea9eb5",
+          "committedAt": "2026-05-23T11:32:06Z"
+        },
+        {
+          "repo": "lewis-nduati/Tracom-credentials",
+          "message": "feat: Tracom branding - logo, landing page, branding config",
+          "url": "https://github.com/lewis-nduati/Tracom-credentials/commit/696542ad0438ed752674058c9481e8a3df5852c2",
+          "committedAt": "2026-05-23T08:32:40Z"
         }
       ],
       "error": null
@@ -147,7 +189,7 @@
     {
       "id": "gamechanger",
       "name": "Adriano",
-      "lastActivityAt": "2026-05-17T07:05:57Z",
+      "lastActivityAt": null,
       "commitsThisWeek": 0,
       "recentCommits": [],
       "error": null
@@ -155,7 +197,7 @@
     {
       "id": "yungslaiz",
       "name": "Blessed David",
-      "lastActivityAt": "2026-05-14T21:06:15Z",
+      "lastActivityAt": null,
       "commitsThisWeek": 0,
       "recentCommits": [],
       "error": null
@@ -247,9 +289,27 @@
     {
       "id": "newman5",
       "name": "Newman",
-      "lastActivityAt": "2026-05-21T13:26:52Z",
-      "commitsThisWeek": 6,
+      "lastActivityAt": "2026-05-22T23:40:14Z",
+      "commitsThisWeek": 9,
       "recentCommits": [
+        {
+          "repo": "Newman5/builder-season-playbook",
+          "message": "Merge branch 'main' of https://github.com/Newman5/builder-season-playbook",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/05668d9d16408db6b834929d9aba72404cbb1c76",
+          "committedAt": "2026-05-22T23:40:14Z"
+        },
+        {
+          "repo": "Newman5/builder-season-playbook",
+          "message": "updates to the active builders and dashboard front end",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/1494982f29955b5f24b6a37c410f4f11227668ab",
+          "committedAt": "2026-05-22T23:40:12Z"
+        },
+        {
+          "repo": "Newman5/builder-season-playbook",
+          "message": "Update builder activity data",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/e03d46b4ffe866b3ccb88ca0d0b78b80b7c33823",
+          "committedAt": "2026-05-22T13:11:22Z"
+        },
         {
           "repo": "Newman5/builder-season-playbook",
           "message": "Update builder activity data",
@@ -261,24 +321,6 @@
           "message": "knocking out a backlog of tasks for the dashboard.",
           "url": "https://github.com/Newman5/builder-season-playbook/commit/55e19b297c1ddd51fa0b53f7aff5807883969be3",
           "committedAt": "2026-05-20T16:25:27Z"
-        },
-        {
-          "repo": "Newman5/builder-season-playbook",
-          "message": "updating the source of truth, repos.yml - adding an active field.\n and some templates",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/eba76bfba9a0590907f41639c695d51fe8913e47",
-          "committedAt": "2026-05-20T15:09:50Z"
-        },
-        {
-          "repo": "Newman5/builder-season-playbook",
-          "message": "Update builder activity data",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/5e005dd72a048eef27af998f495b1cbe450f578c",
-          "committedAt": "2026-05-20T13:16:14Z"
-        },
-        {
-          "repo": "Newman5/builder-season-playbook",
-          "message": "Update builder activity data",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/63216d1f1dc2e181504c6ddb21d1f6af430146a9",
-          "committedAt": "2026-05-19T13:27:48Z"
         }
       ],
       "error": null
@@ -373,14 +415,6 @@
       "error": null
     },
     {
-      "id": "jakessevi",
-      "name": "Jakes Sevi",
-      "lastActivityAt": null,
-      "commitsThisWeek": 0,
-      "recentCommits": [],
-      "error": "EMPTY_REPO_OR_NO_COMMITS"
-    },
-    {
       "id": "giorgiozanon",
       "name": "Giorgio",
       "lastActivityAt": "2026-05-02T13:22:49Z",
@@ -391,17 +425,30 @@
     {
       "id": "muhammedyuguda",
       "name": "Muhammed",
-      "lastActivityAt": "2026-05-15T17:26:52Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-05-23T02:57:00Z",
+      "commitsThisWeek": 1,
+      "recentCommits": [
+        {
+          "repo": "Yuguda999/devmemory",
+          "message": "feat: implement session resume tool and MCP authentication logic with associated unit tests",
+          "url": "https://github.com/Yuguda999/devmemory/commit/f96efff852289c26187b72823fe929e449603092",
+          "committedAt": "2026-05-23T02:57:00Z"
+        }
+      ],
       "error": null
     },
     {
       "id": "juanitajaramillo",
       "name": "Juanita",
-      "lastActivityAt": "2026-05-19T20:22:47Z",
-      "commitsThisWeek": 1,
+      "lastActivityAt": "2026-05-22T21:44:36Z",
+      "commitsThisWeek": 2,
       "recentCommits": [
+        {
+          "repo": "JuanitaJaramill/cardano-insights-lab",
+          "message": "Update app foundation progress",
+          "url": "https://github.com/JuanitaJaramill/cardano-insights-lab/commit/e7317ea7dfe801c1d9945a2b6142834f32d8dd48",
+          "committedAt": "2026-05-22T21:44:36Z"
+        },
         {
           "repo": "JuanitaJaramill/cardano-insights-lab",
           "message": "Add files via upload",
@@ -422,38 +469,38 @@
     {
       "id": "alfreditodole",
       "name": "Alfred Itodole",
-      "lastActivityAt": "2026-05-20T19:56:07Z",
-      "commitsThisWeek": 19,
+      "lastActivityAt": "2026-05-23T06:27:33Z",
+      "commitsThisWeek": 26,
       "recentCommits": [
         {
           "repo": "sirxalfred/mosaic-cardano",
-          "message": "feat(user): create an aesthetic user profile page with hooks for retrieving mock user data",
-          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/ceed2810c72e80474055278b4b817133a07b9090",
-          "committedAt": "2026-05-20T19:56:07Z"
+          "message": "ci: add husky checks for commit and push",
+          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/7d5ab6c8b2b8d68ec5f4cca7aa8e570a048d5a45",
+          "committedAt": "2026-05-23T06:27:33Z"
         },
         {
           "repo": "sirxalfred/mosaic-cardano",
-          "message": "refactor(explore): remove previosu content of explore page and replace eith coming soon",
-          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/966fded2ff17b4f055ee741f9ab9b75c025914f1",
-          "committedAt": "2026-05-20T19:54:16Z"
+          "message": "fix: type and lint errors",
+          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/a12a89454c712315538d9e0117a5c732db432e01",
+          "committedAt": "2026-05-23T06:18:48Z"
         },
         {
           "repo": "sirxalfred/mosaic-cardano",
-          "message": "feat(villages): add react query hooks with mock api calls so it can easily be swapped out",
-          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/c89d1a79efb14fa28cec901c219164b301f4d64d",
-          "committedAt": "2026-05-20T19:53:22Z"
+          "message": "Update pnpm version to 9 in CI workflow",
+          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/7cdc93b0f95bdc65c2b12fb09c8614c7304230de",
+          "committedAt": "2026-05-22T23:25:41Z"
         },
         {
           "repo": "sirxalfred/mosaic-cardano",
-          "message": "feat(village): add community home page ui components",
-          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/b2adc29511688de7cddd124da696b47e9648cfaf",
-          "committedAt": "2026-05-20T19:52:25Z"
+          "message": "fix: pnpm worspace yaml",
+          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/247f064fb265d3c2010227b0ea5f1920fec7bfcc",
+          "committedAt": "2026-05-22T22:50:10Z"
         },
         {
           "repo": "sirxalfred/mosaic-cardano",
-          "message": "feat(village): create core pages, layout and navigation flow",
-          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/460918ec79953b8a2e6c67a321f4e1d909ea5b01",
-          "committedAt": "2026-05-20T19:51:01Z"
+          "message": "chore: pnpm workspace config",
+          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/1c05605325a072abf6cb3c32a8587adeaea51940",
+          "committedAt": "2026-05-22T22:35:35Z"
         }
       ],
       "error": null
