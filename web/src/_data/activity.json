@@ -1,15 +1,28 @@
 {
-  "generatedAt": "2026-05-23T12:36:50Z",
+  "generatedAt": "2026-05-24T12:38:52Z",
   "weekStart": "2026-05-18T00:00:00Z",
   "weekEnd": "2026-05-24T23:59:59Z",
   "builders": [
     {
       "id": "mhizta",
       "name": "Mhizta",
-      "lastActivityAt": null,
-      "commitsThisWeek": 0,
-      "recentCommits": [],
-      "error": "API_ERROR_401"
+      "lastActivityAt": "2026-05-23T11:53:51Z",
+      "commitsThisWeek": 2,
+      "recentCommits": [
+        {
+          "repo": "Mhizta-gab/bookworm-ai",
+          "message": "feat: implement dashboard shell component with persistent navigation and user authentication controls\n\nRefactor of app structure and flow",
+          "url": "https://github.com/Mhizta-gab/bookworm-ai/commit/14222753fcfbadd938ba4aafde3f62fd95e6f7db",
+          "committedAt": "2026-05-23T11:53:51Z"
+        },
+        {
+          "repo": "Mhizta-gab/bookworm-ai",
+          "message": "feat: scaffold dashboard layout, library view, and landing page navigation components",
+          "url": "https://github.com/Mhizta-gab/bookworm-ai/commit/3f799d496b93154f26278277c239bc718178eedd",
+          "committedAt": "2026-05-22T14:26:03Z"
+        }
+      ],
+      "error": null
     },
     {
       "id": "ianonjuguna",
@@ -37,9 +50,21 @@
     {
       "id": "gidhub",
       "name": "Gideon",
-      "lastActivityAt": "2026-05-23T05:49:15Z",
-      "commitsThisWeek": 9,
+      "lastActivityAt": "2026-05-24T00:29:40Z",
+      "commitsThisWeek": 11,
       "recentCommits": [
+        {
+          "repo": "0xGIDHUB/tixano",
+          "message": "Added comments, changed icon colour",
+          "url": "https://github.com/0xGIDHUB/tixano/commit/b857dd05dd2d545e824ed24ca9528a4af0f89e64",
+          "committedAt": "2026-05-24T00:29:40Z"
+        },
+        {
+          "repo": "0xGIDHUB/tixano",
+          "message": "Changed to cardano and meshjs logo in the footer",
+          "url": "https://github.com/0xGIDHUB/tixano/commit/dbfc44bb39cf6bb1aa55f0cf5a378b2f7cd6f0a3",
+          "committedAt": "2026-05-23T15:55:30Z"
+        },
         {
           "repo": "0xGIDHUB/tixano",
           "message": "Renewed email token",
@@ -57,18 +82,6 @@
           "message": "Patched up some issues with events spotlight section",
           "url": "https://github.com/0xGIDHUB/tixano/commit/6b4492cad73ee5eb165ef2be212c1a14656fd0c0",
           "committedAt": "2026-05-21T01:47:58Z"
-        },
-        {
-          "repo": "0xGIDHUB/tixano",
-          "message": "Removed arrow button navigator from events selector",
-          "url": "https://github.com/0xGIDHUB/tixano/commit/351553a31045c472aca42d1bd90e0d7081eb3db5",
-          "committedAt": "2026-05-21T01:18:28Z"
-        },
-        {
-          "repo": "0xGIDHUB/tixano",
-          "message": "Edited placholder icons for empty events/tickets",
-          "url": "https://github.com/0xGIDHUB/tixano/commit/c79263f1a6502efe5ce1d14aaafc8c6f31277604",
-          "committedAt": "2026-05-21T00:56:48Z"
         }
       ],
       "error": null
@@ -142,38 +155,38 @@
     {
       "id": "lewis",
       "name": "Lewis",
-      "lastActivityAt": "2026-05-23T12:06:11Z",
-      "commitsThisWeek": 7,
+      "lastActivityAt": "2026-05-23T18:09:55Z",
+      "commitsThisWeek": 17,
       "recentCommits": [
         {
           "repo": "lewis-nduati/Tracom-credentials",
-          "message": "rewrite README: project context, credential flow, design principles\n\nReplaced thin technical README with full project documentation:\nstatus block, Tracom Academy context, what it does/doesn't do,\ndesign principles, 6-step credential flow, repo layout, env setup.\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>",
-          "url": "https://github.com/lewis-nduati/Tracom-credentials/commit/1dd0d47581d8476aa68730f6b2f9a530d8807d1c",
-          "committedAt": "2026-05-23T12:06:11Z"
+          "message": "add course prerequisites UI: set allowed_student_state_ids via Eternl\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>",
+          "url": "https://github.com/lewis-nduati/Tracom-credentials/commit/c8c593110e6140641db33008f2c8a114112d4054",
+          "committedAt": "2026-05-23T18:09:55Z"
         },
         {
           "repo": "lewis-nduati/Tracom-credentials",
-          "message": "merge components/project/ into components/projects/\n\nSingular and plural folders each had one file. Moved\nprerequisite-list.tsx into projects/ and updated 3 import sites.\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>",
-          "url": "https://github.com/lewis-nduati/Tracom-credentials/commit/192df326cf04eae19d1dfd422da1714cae022e44",
-          "committedAt": "2026-05-23T11:57:34Z"
+          "message": "add Course 3 compiled content: Secure Payments and Cybersecurity (modules 301-304)\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>",
+          "url": "https://github.com/lewis-nduati/Tracom-credentials/commit/8966a6035a7f70e3d9e8ae02e72724783ea6d411",
+          "committedAt": "2026-05-23T17:52:43Z"
         },
         {
           "repo": "lewis-nduati/Tracom-credentials",
-          "message": "fix favicon: add icon.tsx generator, remove stale andamio .ico reference\n\nNext.js App Router icon.tsx generates a 32x32 PNG at /icon that takes\nprecedence over cached favicon.ico. Navy #1A3D6B with white 'T' monogram.\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>",
-          "url": "https://github.com/lewis-nduati/Tracom-credentials/commit/5d16d30849e6ae44c2534f23e18f94bb245350b5",
-          "committedAt": "2026-05-23T11:42:02Z"
+          "message": "add Course 2 compiled content: POS Developer Fundamentals (modules 201-204)\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>",
+          "url": "https://github.com/lewis-nduati/Tracom-credentials/commit/ae37ca3cc8b23b76d87937feef0077c1518e6666",
+          "committedAt": "2026-05-23T17:00:12Z"
         },
         {
           "repo": "lewis-nduati/Tracom-credentials",
-          "message": "redesign landing page: navy nav, hero, 4-step flow, proof cards, Tracom favicon\n\n- Complete landing page rewrite with clean navy (#1A3D6B) design system\n- Nav: logo only on navy background\n- Hero: 'Your Skills, Verified on Cardano' + single Connect Wallet CTA\n- 4-step flow section: Complete → Submit → Earn → Unlock\n- Proof cards: 100% Verifiable, Forever, Yours\n- Footer: navy with copyright and preprod network indicator\n- Favicon: Tracom 'T' monogram SVG replacing Andamio favicon.ico\n- No gradients, minimal borders, white background on content sections\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>",
-          "url": "https://github.com/lewis-nduati/Tracom-credentials/commit/a95145bc484b5d9e2411443e0520c8cd3fea9eb5",
-          "committedAt": "2026-05-23T11:32:06Z"
+          "message": "add course structure doc with Course 2 curriculum and working draft disclaimer\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>",
+          "url": "https://github.com/lewis-nduati/Tracom-credentials/commit/d7c747a0d058b8d01705ceff5a1c97fa2081294f",
+          "committedAt": "2026-05-23T16:49:06Z"
         },
         {
           "repo": "lewis-nduati/Tracom-credentials",
-          "message": "feat: Tracom branding - logo, landing page, branding config",
-          "url": "https://github.com/lewis-nduati/Tracom-credentials/commit/696542ad0438ed752674058c9481e8a3df5852c2",
-          "committedAt": "2026-05-23T08:32:40Z"
+          "message": "fill docs/andamio-integration.md\n\nCovers: environments, auth (API key + JWT), policy IDs, course registry,\nAPI proxy architecture, full credential flow transaction map, module SLT\nhashes, and CLI usage.\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>",
+          "url": "https://github.com/lewis-nduati/Tracom-credentials/commit/c1a37d01f245ad8d84bcf77abb4fd5650f765825",
+          "committedAt": "2026-05-23T16:20:40Z"
         }
       ],
       "error": null
@@ -181,15 +194,40 @@
     {
       "id": "armanabid",
       "name": "Abid",
-      "lastActivityAt": "2026-05-16T16:06:12Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-05-23T20:50:42Z",
+      "commitsThisWeek": 4,
+      "recentCommits": [
+        {
+          "repo": "ArmanAbid/ChainTask",
+          "message": "tests for reputation cross-validator",
+          "url": "https://github.com/ArmanAbid/ChainTask/commit/89a208d97422b895f9226ea5b0c331c0f35fa9a0",
+          "committedAt": "2026-05-23T20:50:42Z"
+        },
+        {
+          "repo": "ArmanAbid/ChainTask",
+          "message": "wire reputation validator with escrow script hash param",
+          "url": "https://github.com/ArmanAbid/ChainTask/commit/58f7177d07bf86322cab9ccaf42b39afc8b109e4",
+          "committedAt": "2026-05-23T20:50:42Z"
+        },
+        {
+          "repo": "ArmanAbid/ChainTask",
+          "message": "implement reputation cross-validator logic",
+          "url": "https://github.com/ArmanAbid/ChainTask/commit/177037679bfeecc02d80fee1fd6e2b97034cbd0c",
+          "committedAt": "2026-05-23T20:50:42Z"
+        },
+        {
+          "repo": "ArmanAbid/ChainTask",
+          "message": "drop unique_clients, compute it off-chain",
+          "url": "https://github.com/ArmanAbid/ChainTask/commit/5ae34071e16356701df169f002f28b7e3f9b8362",
+          "committedAt": "2026-05-23T20:50:42Z"
+        }
+      ],
       "error": null
     },
     {
       "id": "gamechanger",
       "name": "Adriano",
-      "lastActivityAt": null,
+      "lastActivityAt": "2026-05-17T07:05:57Z",
       "commitsThisWeek": 0,
       "recentCommits": [],
       "error": null
@@ -197,7 +235,7 @@
     {
       "id": "yungslaiz",
       "name": "Blessed David",
-      "lastActivityAt": null,
+      "lastActivityAt": "2026-05-14T21:06:15Z",
       "commitsThisWeek": 0,
       "recentCommits": [],
       "error": null
@@ -268,9 +306,21 @@
     {
       "id": "mobrai",
       "name": "Marcio",
-      "lastActivityAt": "2026-05-21T13:35:54Z",
-      "commitsThisWeek": 2,
+      "lastActivityAt": "2026-05-23T17:18:53Z",
+      "commitsThisWeek": 4,
       "recentCommits": [
+        {
+          "repo": "mobr-ai/cap-pie",
+          "message": "Merge commit '65ce3e3c007ee2dd97d0682c0d54e3c39eee86f2'",
+          "url": "https://github.com/mobr-ai/cap-pie/commit/dfdeefcfec5b3fe8a1f1d1c19a867e42234922a4",
+          "committedAt": "2026-05-23T17:18:53Z"
+        },
+        {
+          "repo": "mobr-ai/cap-pie",
+          "message": "initial commit",
+          "url": "https://github.com/mobr-ai/cap-pie/commit/65ce3e3c007ee2dd97d0682c0d54e3c39eee86f2",
+          "committedAt": "2026-05-23T17:17:25Z"
+        },
         {
           "repo": "mobr-ai/cap-pie",
           "message": "Merge commit '8ede13eb90941436770208401b00d6ab46314ffc'",
@@ -289,9 +339,15 @@
     {
       "id": "newman5",
       "name": "Newman",
-      "lastActivityAt": "2026-05-22T23:40:14Z",
-      "commitsThisWeek": 9,
+      "lastActivityAt": "2026-05-23T12:36:58Z",
+      "commitsThisWeek": 10,
       "recentCommits": [
+        {
+          "repo": "Newman5/builder-season-playbook",
+          "message": "Update builder activity data",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/b7e7ac24928b2d4f8a330c1c67a5b023f6419682",
+          "committedAt": "2026-05-23T12:36:58Z"
+        },
         {
           "repo": "Newman5/builder-season-playbook",
           "message": "Merge branch 'main' of https://github.com/Newman5/builder-season-playbook",
@@ -315,12 +371,6 @@
           "message": "Update builder activity data",
           "url": "https://github.com/Newman5/builder-season-playbook/commit/322cf0f754ee6353c3f9e6d351cd12344ce722dd",
           "committedAt": "2026-05-21T13:26:52Z"
-        },
-        {
-          "repo": "Newman5/builder-season-playbook",
-          "message": "knocking out a backlog of tasks for the dashboard.",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/55e19b297c1ddd51fa0b53f7aff5807883969be3",
-          "committedAt": "2026-05-20T16:25:27Z"
         }
       ],
       "error": null
