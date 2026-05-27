@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-26T13:21:31Z",
+  "generatedAt": "2026-05-27T13:33:49Z",
   "weekStart": "2026-05-25T00:00:00Z",
   "weekEnd": "2026-05-31T23:59:59Z",
   "builders": [
@@ -30,38 +30,38 @@
     {
       "id": "gidhub",
       "name": "Gideon",
-      "lastActivityAt": "2026-05-26T06:16:23Z",
-      "commitsThisWeek": 6,
+      "lastActivityAt": "2026-05-27T10:02:16Z",
+      "commitsThisWeek": 10,
       "recentCommits": [
+        {
+          "repo": "0xGIDHUB/tixano",
+          "message": "Updated README.md, added FOLDER_STRUCTURE.md",
+          "url": "https://github.com/0xGIDHUB/tixano/commit/5351b01c793196d913383ec58e2c8dcc5e31e42c",
+          "committedAt": "2026-05-27T10:02:16Z"
+        },
+        {
+          "repo": "0xGIDHUB/tixano",
+          "message": "Reworked events grids layout display format",
+          "url": "https://github.com/0xGIDHUB/tixano/commit/46e998cbfb27b11b1d5ab460a7d1c1cba711d37f",
+          "committedAt": "2026-05-26T18:59:01Z"
+        },
+        {
+          "repo": "0xGIDHUB/tixano",
+          "message": "Redesigned pagination controls for tickets view",
+          "url": "https://github.com/0xGIDHUB/tixano/commit/15807acc4907b4c9adb45686e080e37eb3cd1d1d",
+          "committedAt": "2026-05-26T15:50:17Z"
+        },
+        {
+          "repo": "0xGIDHUB/tixano",
+          "message": "Moved edit event transaction validation to backend",
+          "url": "https://github.com/0xGIDHUB/tixano/commit/93fcae48c58755a66edc5e6540ab9551b4c95437",
+          "committedAt": "2026-05-26T15:30:26Z"
+        },
         {
           "repo": "0xGIDHUB/tixano",
           "message": "Added payment gating to event edit",
           "url": "https://github.com/0xGIDHUB/tixano/commit/bc9cc46e57462a1f2fcf027c9e3d103b809cfed7",
           "committedAt": "2026-05-26T06:16:23Z"
-        },
-        {
-          "repo": "0xGIDHUB/tixano",
-          "message": "Added events guest list page",
-          "url": "https://github.com/0xGIDHUB/tixano/commit/10cc2b858d5a4406a2cbe7d45f0235c835ca82c9",
-          "committedAt": "2026-05-26T04:19:30Z"
-        },
-        {
-          "repo": "0xGIDHUB/tixano",
-          "message": "Events status update modified",
-          "url": "https://github.com/0xGIDHUB/tixano/commit/7f6d71943b054f5ef1e4517a40acf311c0fe4ae9",
-          "committedAt": "2026-05-26T02:28:37Z"
-        },
-        {
-          "repo": "0xGIDHUB/tixano",
-          "message": "Removed event date from nft metadata",
-          "url": "https://github.com/0xGIDHUB/tixano/commit/0fe7d720ed0a09a650c0ebdf64ea11741306b22a",
-          "committedAt": "2026-05-26T01:32:30Z"
-        },
-        {
-          "repo": "0xGIDHUB/tixano",
-          "message": "Added event details edit form to dashboard",
-          "url": "https://github.com/0xGIDHUB/tixano/commit/45331453b4ac9f6e2dd89f3eee05a191181e7dbc",
-          "committedAt": "2026-05-25T17:22:33Z"
         }
       ],
       "error": null
@@ -69,9 +69,22 @@
     {
       "id": "pmcorcoran",
       "name": "Paul Corcoran",
-      "lastActivityAt": "2026-05-22T01:18:47Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-05-26T16:30:23Z",
+      "commitsThisWeek": 2,
+      "recentCommits": [
+        {
+          "repo": "pmcorcoran/ada-battles",
+          "message": "Merge branch 'feat/hydra-keys' adds client hydra key gen",
+          "url": "https://github.com/pmcorcoran/ada-battles/commit/fa3329fb1c53f1b594151d0eddc2dc8600d9ebdd",
+          "committedAt": "2026-05-26T16:30:23Z"
+        },
+        {
+          "repo": "pmcorcoran/ada-battles",
+          "message": "added hydra key gen and fixed stale frontend/tsconfig",
+          "url": "https://github.com/pmcorcoran/ada-battles/commit/8e3e3c77416a6951bed803ac0e3944df7ebbfb9d",
+          "committedAt": "2026-05-26T16:25:47Z"
+        }
+      ],
       "error": null
     },
     {
@@ -161,9 +174,15 @@
     {
       "id": "maxalexweber",
       "name": "Maximilian",
-      "lastActivityAt": "2026-05-25T17:27:19Z",
-      "commitsThisWeek": 1,
+      "lastActivityAt": "2026-05-26T16:57:50Z",
+      "commitsThisWeek": 2,
       "recentCommits": [
+        {
+          "repo": "maxalexweber1/CHAINFEED",
+          "message": "feat: add structured logging and health monitoring for agents\n\n- Implemented a pino-based structured logger in agents/shared/log.ts for consistent logging across agents, supporting both pretty and JSON formats based on environment variables.\n- Created a heartbeat mechanism in agents/watcher/heartbeat.ts to signal liveness for the health endpoint, ensuring graceful degradation in case of write failures.\n- Added comprehensive documentation in docs/AGENT_GUIDE.md detailing the usage of the MCP server and reference agents, including setup instructions and agent patterns.\n- Introduced unit tests for health report generation in scripts/test-health.ts, ensuring robust health checks for database, adapters, and watcher components.\n- Developed a health report builder in srv/lib/health.ts that aggregates statuses from database, adapters, and watcher, providing a unified health status.\n- Established a separate logging utility in srv/lib/log.ts for non-CAP code, ensuring consistent logging practices across different modules.",
+          "url": "https://github.com/maxalexweber1/CHAINFEED/commit/41972985f9e2a4a68be25f2e6f9a6ba7e7d3bdf9",
+          "committedAt": "2026-05-26T16:57:50Z"
+        },
         {
           "repo": "maxalexweber1/CHAINFEED",
           "message": "feat: implement stable watcher with alerting sinks for Discord and Telegram\n\n- Add main watcher logic to poll stable assessments and handle alerts.\n- Implement state management for persisting last observations.\n- Create sinks for outputting alerts to stdout, Discord, and Telegram.\n- Add unit tests for the watcher diff logic and sinks functionality.\n- Ensure graceful shutdown and error handling in the watcher.",
@@ -176,9 +195,21 @@
     {
       "id": "murmurations",
       "name": "Nori",
-      "lastActivityAt": "2026-05-25T21:59:09Z",
-      "commitsThisWeek": 7,
+      "lastActivityAt": "2026-05-27T04:49:34Z",
+      "commitsThisWeek": 9,
       "recentCommits": [
+        {
+          "repo": "murmurations-ai/flyway",
+          "message": "feat(core+cli+mcp): S+5a — flyway_propose + proposal responses (Session A)\n\nFlagship sender wired end-to-end. Two independent murmurations can now\nrun a full S3 §IV.1.9–1.10 consent cycle: tension → proposal(driver) →\nobject → proposal(draft) → object → proposal(refinement) → accept,\nwith every step signed under its kind-specific domain, every antecedent\nverified per ADR-0009, and every response carrying refs that resolve\nto a real prior signal in the recipient's outbox.\n\nCore\n- createProposal({ from, to, body, signer, tensionAntecedent?,\n  proposalAntecedent? }): discriminated body for directive / project /\n  agreement types. type='agreement' validates against\n  FLYWAY_AGREEMENT_SCHEMA (sender + recipient must appear in\n  participants, schemaVersion match, decisionRule enum, all 11\n  required fields). Stage validation enforces driver →\n  [driver/requirements/draft/final], requirements → [requirements/\n  draft/refinement/final], draft → [draft/refinement/final],\n  refinement → [refinement/final], final is terminal. previousStageId\n  required for stage='refinement'. Refines DOMAIN_PROPOSAL. Closes #8.\n- ProposalRequirement structured items required at stage='requirements'\n  (id, description, mustOrShould?, rationale?). Closes #6.\n- ADR-0009 antecedent verification on both tensionAntecedent and\n  proposalAntecedent (kind, id, sender, DID-doc binding, signature).\n- createProposalResponse({ subjectEnvelope: ProposalEnvelope, ... }):\n  decisions accept/object/exit; reason required for object/exit;\n  concernsToRecord first-class field (closes #3, #15). ADR-0009\n  verification on prior proposal.\n- FLYWAY_AGREEMENT_SCHEMA extended with optional `trigger` and\n  `acceptanceCriteria` (closes #7).\n- flyway_check verifyRefsResolve now handles refs.proposalId in\n  addition to refs.tensionId (catches the regression the new senders\n  introduced).\n\nCLI\n- runPropose loads identity, recognized-peer trust gate, resolves\n  tension/proposal antecedents from outbox or inbox, loads the cached\n  peer DID document, calls createProposal, writes outbox first,\n  delivers to recipient inbox.\n- runRespond now dispatches on subject.kind: tension subjects route\n  through createTensionResponse; proposal subjects through\n  createProposalResponse. Cross-flag validation: --concerns-to-record\n  refused on tensions, --transfer-to refused on proposals.\n- `flyway propose` verb with --type / --title / --body / --stage /\n  --previous-stage-id / --promote-tension-id / --agreement-file /\n  --requirements-file. `flyway respond` extended with --concern\n  (repeatable).\n\nMCP\n- handleProposal: stateless; caller supplies own identity, peerDid,\n  body, and optional antecedents (each as { envelope, senderDidDocument }).\n  Returns signed envelope; caller persists.\n- handleRespond dispatcher already routed by subject.kind; the proposal\n  branch now invokes handleProposalResponse instead of returning\n  not-yet-wired.\n\nTests: 289 passed across the workspace (up from 226).\n  core:  188 (+45: 32 propose + 13 response/coverage)\n  cli:   72  (+14: 9 propose + 5 respond proposal-branch)\n  mcp:   20  (+4: propose + proposal-response)\n\nSmoke run: full A↔B consent cycle (tension → object → draft → object →\nrefinement → accept) — 8 signed envelopes, 0 issues from flyway_check\non either side.\n\nSession B (next) — materializeAgreement primitive that produces a\nbyte-identical co-signed agreement file on both repos when an\nagreement proposal reaches stage='final' + accepted; Tier 4 walkthrough\nwith verbatim transcript; status / how-flyway-works refresh.\n\nCloses #3, #6, #7, #8, #15. References #2 (tension promotion now\nexists; full promotion semantics including the \"tension was raised by\nthe responder\" path will land with Session B's walkthrough).\n\nCo-Authored-By: Claude Opus 4.7 <noreply@anthropic.com>",
+          "url": "https://github.com/murmurations-ai/flyway/commit/080aaff427eaaf040ea937bdfa83bd6f7520da70",
+          "committedAt": "2026-05-27T04:49:34Z"
+        },
+        {
+          "repo": "murmurations-ai/flyway",
+          "message": "refactor(mcp)+feat(core): pre-S+5 cleanup — kind-dispatch handleRespond, verify refs.tensionId\n\nTwo small pre-work changes to land cleaner ground for the S+5\nflyway_propose milestone:\n\nhandleRespond → kind-dispatcher (closes #9)\n- Splits handleRespond into a thin dispatcher (validates shape, reads\n  subject.kind) and handleTensionResponse (the existing tension logic).\n- The proposal branch now returns an informative errorResult specifying\n  what's not yet wired; adding it later is a single new case rather\n  than a rewrite of the existing function.\n- Behavior unchanged for tension responses; 16 MCP tests still green.\n\nflyway_check verifies refs.tensionId (closes #14, addresses G7)\n- For any respond signal, cross-references refs.tensionId against\n  flyway/outbox/<responder-segments>/<id>.yaml to ensure the\n  referenced tension actually exists in our outbox AND was sent by\n  us TO the responder AND has kind='tension'.\n- New verifyRefsResolve helper in core/check.ts; uses signalOutboxPath\n  from signal.ts. Adds per-signal issues for: missing refs.tensionId\n  on a respond signal, no matching outbox file, file/envelope id\n  mismatch, wrong subject kind, wrong recipient.\n- Closes the soundness gap the Tier 3 walkthrough surfaced — an\n  attacker who is recognized cannot fabricate \"objections to\n  proposals\" by signing responses pointing at refs that don't\n  resolve. (The same shape will guard refs.proposalId when proposals\n  land.)\n\nTests: 226 passed (5 new in check.test.ts). End-to-end tension→respond\nsmoke run still verifies clean. No external API changes.\n\nCo-Authored-By: Claude Opus 4.7 <noreply@anthropic.com>",
+          "url": "https://github.com/murmurations-ai/flyway/commit/682f5c253d56d3f91f82d2a14e1bfc023a736946",
+          "committedAt": "2026-05-26T19:09:49Z"
+        },
         {
           "repo": "murmurations-ai/flyway",
           "message": "docs: refresh the reviewer-facing surface to SHA d5ad56f\n\nExternal reviewers will be looking at this branch. The existing\nhow-flyway-works.{md,html} reflected SHA eec423c — eleven commits and\nfive wired tools ago. This commit closes the gap and adds a single\ndedicated status snapshot for reviewers.\n\nNew:\n- docs/status.md — markdown status dashboard: tool maturity (6/9 wired),\n  milestone timeline (S+0 → S+4 + review hardening), walkthrough\n  progression, ADR digest, cryptographic-properties matrix, open issues\n  organized by theme (19 across 4 themes), how-to-evaluate read list,\n  pending milestones.\n- docs/status.html — visual companion to status.md, matching the\n  established how-flyway-works aesthetic (Crimson Pro + IBM Plex,\n  paper/ink/canvas palette, hand-crafted SVG timeline) with all relative\n  links pointing at real walkthrough files. Single self-contained file,\n  1377 lines.\n\nRefreshed:\n- docs/architecture/how-flyway-works.md — full rewrite to SHA d5ad56f.\n  Adds sections for recognition, signal transport (ADR-0008), tension,\n  respond, antecedent verification (ADR-0009), and path-traversal\n  safety. Updates the tool-status table, state machines, contracts, and\n  invariants. New reading-order guide reflects six wired tools instead\n  of one. Reading further now points to the status pages.\n- docs/architecture/how-flyway-works.html — minimal in-place refresh:\n  SHA links bumped to d5ad56f, tool-surface table flipped to current\n  status, banner pointing to status.html and the now-canonical\n  markdown source. SVG diagrams preserved as-is (full HTML regeneration\n  out of scope).\n- README.md — status line bumped; new \"Where to start (for reviewers)\"\n  section points at status.md / status.html / how-flyway-works.md /\n  walkthroughs in that order.\n\nAll relative paths validated. No code changes; tests still pass at 221.\n\nCo-Authored-By: Claude Opus 4.7 <noreply@anthropic.com>",
@@ -196,18 +227,6 @@
           "message": "refactor(security+core+cli+mcp): act on architecture, TS, and security review of S+3/S+4\n\nThree independent review agents reviewed the S+3 (flyway_tension) and\nS+4 (flyway_respond) milestones. This commit implements every blocker\nand important-severity finding; deferred items are noted at the end\nof this message.\n\nSecurity hardening (security review)\n- SEC-1 (HIGH): peerCachePathSegments accepted '..', '/', '\\\\', NUL,\n  empty segments. A peer who controls their .well-known/did.json could\n  publish 'did:web:host:..:..:tmp:pwn' and coerce outbox/inbox writes\n  outside the intended subtree. Now rejects any segment that is empty,\n  '.', '..', or contains characters outside [A-Za-z0-9._-]. 8 new\n  traversal-rejection tests in recognize.test.ts.\n- SEC-2 (HIGH) / ARCH-7: createTensionResponse and runRespond verified\n  the subject signature against a freshly-read peer DID document from\n  <peerRepoPath>/.well-known/did.json — attacker-controllable. Subject\n  verification has moved into core (see ADR-0009) and adapters now\n  load the recognition-time cached copy from\n  flyway/peers/<segments>/did.json. New core checks: kind match, id\n  match, sender match, DID-doc binding, signature verify. 6 new tests\n  in respond.test.ts including a concrete confused-deputy simulation.\n- SEC-3 (MEDIUM): flyway_check now flags signals whose sentAt predates\n  the peer's recognizedAt — blocks the \"drop a forged signal, then\n  recognize later\" retroactive-validation attack. validCount tightened\n  to require zero per-signal issues.\n- SEC-4 (MEDIUM): writeSignalFile used a non-atomic\n  existsSync→read→write sequence. Switched to writeFileSync(flag:'wx')\n  + EEXIST handling — closes the TOCTOU window where two writers\n  could both pass the existence check.\n\nStructural cleanup (architecture + TS reviews)\n- ARCH-2 / KIE-1+2: collectYamlFiles and findInboxSignalById lifted\n  into core/signal.ts. Removes the verbatim duplication between\n  core/check.ts and cli/respond.ts.\n- KIE-5: getPrimaryVerificationKey helper in core/init.ts; replaces\n  the duplicated `verificationMethod[0]!` non-null assertions in\n  cli/tension.ts and cli/respond.ts with a descriptive error path.\n- KIE-3: bin/flyway.ts now imports TENSION_DECISIONS from core, uses\n  a proper `isTensionDecision` type guard, and drops the `as` cast.\n- KIE-4: MCP handleRespond does a minimal shape check on\n  subjectEnvelope before casting (catches missing id/from/kind/\n  signature at the boundary with a useful error).\n- KIE-7: TensionResponseRefs alias exported from core so MCP and core\n  share the type.\n- KIE-10: respond.test.ts replaces a dynamic `await import('node:fs')`\n  with a static top-of-file import.\n- ARCH-5: dropped the peerCachePathSegments re-export from\n  cli/respond.ts (smell; callers should depend on core directly).\n\nDocumentation\n- ADR-0009 committed separately documents the antecedent-verification\n  invariant the review surfaced. ADR index README updated to also\n  list 0007 / 0008 / 0009.\n\nTests: 221 passed (138 core, 9 agent, 16 mcp, 58 cli) — up from 207.\nEnd-to-end tension→acknowledge round-trip still verifies.\n\nDeferred to issues (not in this commit):\n  ARCH-6 — handleRespond kind-dispatcher refactor (wait for proposals)\n  KIE-6  — sync vs async fs policy decision\n  KIE-8  — imperative-tone error messages\n  KIE-9  — same-id collision behavior documentation\n  KIE-11 — whitespace policy on body fields\n  SEC-5  — peerRepoPath recognition-time match (footgun, not security)\n\nCo-Authored-By: Claude Opus 4.7 <noreply@anthropic.com>",
           "url": "https://github.com/murmurations-ai/flyway/commit/2a2ac16fe9d67a6c5baabc3bf739cea49f56ff19",
           "committedAt": "2026-05-25T21:35:09Z"
-        },
-        {
-          "repo": "murmurations-ai/flyway",
-          "message": "docs(walkthroughs): Tier 3 — first cross-murmuration dialogue\n\nExecutable walkthrough at SHA 64b112a. Captures the verbatim transcript\nof A→tension→B→acknowledge→A round-trip, with both sides holding\ncomplete signed records of the exchange and A's flyway_check\nindependently verifying B's response against B's DID document cached\nat recognition time.\n\nSurfaces three new gaps to file as issues:\n  G7 — flyway_check doesn't verify refs.tensionId resolves to a real\n       prior signal (attack surface for fabricated objections once\n       proposal responses land).\n  G8 — concerns_to_record not yet a first-class response field\n       (partial close for Issue #3).\n  G9 — no timestamp ordering check (responses dated before their\n       subject accepted today).\n\nCo-Authored-By: Claude Opus 4.7 <noreply@anthropic.com>",
-          "url": "https://github.com/murmurations-ai/flyway/commit/2a97330b81b2a28c52d976705151a48383b72293",
-          "committedAt": "2026-05-25T21:12:11Z"
-        },
-        {
-          "repo": "murmurations-ai/flyway",
-          "message": "feat(core+cli+mcp): S+4 — flyway_respond closes the first dialogue (tensions only)\n\nS+3 produced the first one-way send (A flags a tension to B). This\nmilestone wires the reply path so the protocol carries a full\nround-trip — A signs a tension, B verifies and signs back an\nacknowledge/dispute/dissolve/transfer, A verifies the response, and\nboth sides have signed inbox+outbox records of the exchange.\n\n- core: new createTensionResponse(input) — validates the four tension\n  decisions, requires reason on dispute/dissolve/transfer, requires\n  transferTo iff decision === 'transfer', and binds refs.tensionId so\n  every response points at a real subject. inReplyTo defaults to the\n  tension id when not specified.\n- cli: new `flyway respond <peer-repo-path> --subject-id <id>\n  --decision <d>` verb. Reads the responder's inbox to find the subject\n  by id, cross-checks that the subject's sender matches the\n  peer-repo-path's DID, verifies the subject's signature before\n  responding (refuses to launder a tampered tension into a signed\n  reply), and writes outbox-first / delivers via local-fs.\n- mcp: handleRespond follows the stateless pattern — caller supplies\n  the subject envelope and the peer DID document; the handler verifies\n  the subject and returns a signed response.\n\nProposal responses (accept/object/exit) remain stubbed in this tool\nuntil flyway_propose lands — the envelope plumbing is shared but the\nreceiver-side semantics differ. Smoke run with two temp-dir\nmurmurations: A→tension→B→acknowledge→A's flyway_check reports sig\nvalid with refs.tensionId pointing at the original. 207 tests pass\nacross all packages (10 new in core, 8 new in cli, 4 new in mcp).\n\nCo-Authored-By: Claude Opus 4.7 <noreply@anthropic.com>",
-          "url": "https://github.com/murmurations-ai/flyway/commit/64b112a993ba548fc1f13897f0484914a02399f4",
-          "committedAt": "2026-05-25T21:10:38Z"
         }
       ],
       "error": null
@@ -239,9 +258,15 @@
     {
       "id": "newman5",
       "name": "Newman",
-      "lastActivityAt": "2026-05-25T13:26:38Z",
-      "commitsThisWeek": 1,
+      "lastActivityAt": "2026-05-26T13:21:45Z",
+      "commitsThisWeek": 2,
       "recentCommits": [
+        {
+          "repo": "Newman5/builder-season-playbook",
+          "message": "Update builder activity data",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/9bf0b8c25bee31ba7e97d89c1a4f10722bd74a78",
+          "committedAt": "2026-05-26T13:21:45Z"
+        },
         {
           "repo": "Newman5/builder-season-playbook",
           "message": "Update builder activity data",
@@ -340,22 +365,53 @@
     {
       "id": "juanitajaramillo",
       "name": "Juanita",
-      "lastActivityAt": "2026-05-22T21:44:36Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-05-26T14:25:08Z",
+      "commitsThisWeek": 1,
+      "recentCommits": [
+        {
+          "repo": "JuanitaJaramill/cardano-insights-lab",
+          "message": "Update README.md\n\nAdd Week 4 beta app update",
+          "url": "https://github.com/JuanitaJaramill/cardano-insights-lab/commit/d6caae4ad759fbb8162d7faa11299a436ba1475f",
+          "committedAt": "2026-05-26T14:25:08Z"
+        }
+      ],
       "error": null
     },
     {
       "id": "kamalaliyu",
       "name": "Kamal Aliyu",
-      "lastActivityAt": "2026-05-25T09:00:00Z",
-      "commitsThisWeek": 1,
+      "lastActivityAt": "2026-05-27T15:50:00Z",
+      "commitsThisWeek": 6,
       "recentCommits": [
         {
           "repo": "kamal-ogtl/cogikids",
-          "message": "feat: profile screen, sound effects toggle and daily streak tracking",
-          "url": "https://github.com/kamal-ogtl/cogikids/commit/7e81812bfff72a6cf59cdaec2a90693d90ee02cc",
-          "committedAt": "2026-05-25T09:00:00Z"
+          "message": "fix: set splash screen background to dark color to avoid white flash on app launch",
+          "url": "https://github.com/kamal-ogtl/cogikids/commit/3995e2702c1d6f9474bfb8fce83cfdae94e6f7dd",
+          "committedAt": "2026-05-27T15:50:00Z"
+        },
+        {
+          "repo": "kamal-ogtl/cogikids",
+          "message": "chore: add package description for Nigerian kids learning app",
+          "url": "https://github.com/kamal-ogtl/cogikids/commit/3cfe07190be46cfd6a05a774775d1568aa5960a4",
+          "committedAt": "2026-05-27T13:35:00Z"
+        },
+        {
+          "repo": "kamal-ogtl/cogikids",
+          "message": "chore: set bundle identifiers and fix adaptive icon background color in app.json",
+          "url": "https://github.com/kamal-ogtl/cogikids/commit/73bd2ba86f42b5925c4e37659ad9a4a46a227eaa",
+          "committedAt": "2026-05-27T11:10:00Z"
+        },
+        {
+          "repo": "kamal-ogtl/cogikids",
+          "message": "chore: update .gitignore — exclude shell scripts and editor swap files",
+          "url": "https://github.com/kamal-ogtl/cogikids/commit/d2e1a9a36e19b80551eea6c8726819de0c28fae9",
+          "committedAt": "2026-05-27T09:20:00Z"
+        },
+        {
+          "repo": "kamal-ogtl/cogikids",
+          "message": "docs: update README to reflect actual stack — StyleSheet, Expo Speech, Nigerian languages",
+          "url": "https://github.com/kamal-ogtl/cogikids/commit/c7fa44febeb651fcd9b7952c9b44f21232baf20f",
+          "committedAt": "2026-05-27T07:45:00Z"
         }
       ],
       "error": null
