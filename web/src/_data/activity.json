@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-28T13:36:04Z",
+  "generatedAt": "2026-05-29T13:28:24Z",
   "weekStart": "2026-05-25T00:00:00Z",
   "weekEnd": "2026-05-31T23:59:59Z",
   "builders": [
@@ -30,9 +30,15 @@
     {
       "id": "gidhub",
       "name": "Gideon",
-      "lastActivityAt": "2026-05-28T03:17:26Z",
-      "commitsThisWeek": 14,
+      "lastActivityAt": "2026-05-28T14:28:37Z",
+      "commitsThisWeek": 15,
       "recentCommits": [
+        {
+          "repo": "0xGIDHUB/tixano",
+          "message": "Check-in page interface setup",
+          "url": "https://github.com/0xGIDHUB/tixano/commit/ccd9a61e0fe6cb8ef8ea20994b998b85bb0becc4",
+          "committedAt": "2026-05-28T14:28:37Z"
+        },
         {
           "repo": "0xGIDHUB/tixano",
           "message": "Smoother scrolling for events carousel view",
@@ -56,12 +62,6 @@
           "message": "Added tickets preview to event creation flow",
           "url": "https://github.com/0xGIDHUB/tixano/commit/7e415afd1cfd5a88838b8a84ade4213bdb7fdbd3",
           "committedAt": "2026-05-27T19:16:58Z"
-        },
-        {
-          "repo": "0xGIDHUB/tixano",
-          "message": "Updated README.md, added FOLDER_STRUCTURE.md",
-          "url": "https://github.com/0xGIDHUB/tixano/commit/5351b01c793196d913383ec58e2c8dcc5e31e42c",
-          "committedAt": "2026-05-27T10:02:16Z"
         }
       ],
       "error": null
@@ -104,38 +104,38 @@
     {
       "id": "lewis",
       "name": "Lewis",
-      "lastActivityAt": "2026-05-26T02:53:28Z",
-      "commitsThisWeek": 7,
+      "lastActivityAt": "2026-05-29T12:27:33Z",
+      "commitsThisWeek": 30,
       "recentCommits": [
         {
           "repo": "lewis-nduati/Tracom-credentials",
-          "message": "fix: trigger access token ceremony on \"confirmed\" state\n\nGLOBAL_GENERAL_ACCESS_TOKEN_MINT has requiresDBUpdate: false, so the\ngateway never transitions past \"confirmed\" to \"updated\". The ceremony\nwas silently stalling — the onComplete callback only handled \"updated\"\nand \"failed\"/\"expired\", leaving the TX in a permanent \"confirming\" UI\nstate after on-chain confirmation.\n\nTwo-layer fix:\n1. onComplete now handles state === \"confirmed\" (covers the 30s stall\n   terminal fired by the watcher store when \"updated\" never arrives)\n2. New useEffect watches txStatus.state === \"confirmed\" directly for\n   immediate ceremony start — no need to wait for the stall timeout\n\nhasHandledSuccessRef guards both paths against double-triggering.\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>",
-          "url": "https://github.com/lewis-nduati/Tracom-credentials/commit/4e2f59fc731442707b2d796ed8d76d08501aeb63",
-          "committedAt": "2026-05-26T02:53:28Z"
+          "message": "fix(landing): round credential-badge bead coords to stop hydration mismatch\n\nMath.cos/sin for the beaded ring serialize to slightly different float\nstrings on server vs client (e.g. 53.684646700454124 vs 53.68464670045414),\nwhich tripped React's hydration check on the landing page. Round each\ncoordinate to 3 decimals so both render passes emit identical strings.\nSub-pixel on the 340-unit viewport, so no visible change.\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>",
+          "url": "https://github.com/lewis-nduati/Tracom-credentials/commit/a5c9fa77ea7106f628064b85acfc9ea90165cb86",
+          "committedAt": "2026-05-29T12:27:33Z"
         },
         {
           "repo": "lewis-nduati/Tracom-credentials",
-          "message": "feat: full impeccable polish pass — layout, copy, UX, and TX reliability\n\n- Layout & spacing: dashboard, sidebar, mobile nav, course/project pages\n  redesigned with better rhythm, responsive breakpoints, and touch targets\n- Typography: sentence case throughout, no trailing !, removed AI filler\n  from all toast.success() and TX success copy\n- TX config: added celebrationDescription to 5 Moments of Commitment;\n  andamio-celebration respects prefers-reduced-motion via Framer Motion\n- Polling fallback: 429 rate limit handling with Retry-After backoff,\n  MAX_CONSECUTIVE_429S budget to prevent infinite loops\n- Manage learners: pending review banner + per-row Review button linking\n  to Teacher Dashboard with student deep-link (?student=alias)\n- Console.log cleanup across all TX components\n- credentials page: simplified layout, removed redundant wrappers\n- welcome-hero, account-details, course-card: layout and copy improvements\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>",
-          "url": "https://github.com/lewis-nduati/Tracom-credentials/commit/b4f53349128e126a33eada3b7f5844a75afcf04d",
-          "committedAt": "2026-05-25T16:04:04Z"
+          "message": "fix: remove unused tRPC scaffold causing client-bundle crash\n\nThe T3 template shipped a full tRPC stack (src/trpc, src/server/api,\n/api/trpc) that the app never used — there were zero api.*.useQuery\ncalls. Its only job was wrapping the layout in TRPCReactProvider, which\npulled @trpc/server into the client bundle and threw \"trying to use\n@trpc/server in a non-server environment\" at runtime.\n\nReplace it with a plain react-query QueryProvider (same gateway caching\ndefaults) since the gateway hooks depend on QueryClientProvider, and\ndelete the dead scaffold plus the unused trpc route constant.\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>",
+          "url": "https://github.com/lewis-nduati/Tracom-credentials/commit/b3de26182cf759b242ce50b65c6bc95325043a55",
+          "committedAt": "2026-05-29T11:05:30Z"
         },
         {
           "repo": "lewis-nduati/Tracom-credentials",
-          "message": "feat: redesign sign-in flow and polish app-wide MVP issues\n\n- Replace full-width social login buttons with icon tiles matching wallet\n  grid size; add \"get a wallet\" popover with Eternl, Lace, Vespr links\n- Two-column brand-navy layout on landing: branding left, sign-in right\n- Thread darkLayout prop from LandingHero → AccessTokenOnboarding →\n  RegistrationFlow so full-screen navy only applies on the landing page\n- Extract SignInOptions as shared component; simplify ConnectWalletButton\n\nPolish fixes:\n- first-login-card: remove duplicate \"Waiting for confirmation...\" text\n- connect-wallet-gate: fix capitalisation (\"Sign-in failed\", \"Signing in...\")\n- app/(app)/error.tsx: replace raw h1/p with AndamioHeading/AndamioText\n- credentials/page.tsx: remove rounded-full icon circle from summary card\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>",
-          "url": "https://github.com/lewis-nduati/Tracom-credentials/commit/d571795b0d905b230200f05f9beae821f0c7500c",
-          "committedAt": "2026-05-25T12:17:18Z"
+          "message": "docs: note fee sponsorship requires utxos.dev Pro (paid)\n\nSponsorship is a paid utxos.dev feature, so it carries a recurring\nsubscription cost (budget line §8) on top of the tank's ADA. App stays\nself-funded until that's paid for. On preprod this is a non-issue (free\ntADA); the decision only bites at mainnet — pay for Pro and sponsor, or\nhave students self-fund.\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>",
+          "url": "https://github.com/lewis-nduati/Tracom-credentials/commit/0e289aa4e6685728868139843ae4e127fae8024b",
+          "committedAt": "2026-05-29T10:53:37Z"
         },
         {
           "repo": "lewis-nduati/Tracom-credentials",
-          "message": "feat: add branded error and not-found pages\n\nAdd root-level 404 (brand-navy full-screen with ghosted number),\nupdate in-app 404 and error boundaries to match app aesthetic,\nand improve global-error fallback with inline brand styles.\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>",
-          "url": "https://github.com/lewis-nduati/Tracom-credentials/commit/30b593a6f736bbc8b41cf2152da4a9ee6022c89d",
-          "committedAt": "2026-05-25T10:44:11Z"
+          "message": "ci: add quality + security workflow\n\nGitHub Actions on every push to main and every PR:\n- quality: npm run check (lint + typecheck) and the unit test suite\n- audit: hard-fail on a CRITICAL production-dependency vuln; full audit\n  report as informational (dev-tooling advisories don't block)\n- secrets: gitleaks scans full history for committed secrets\n\nThis is the automated gate so checks don't depend on remembering to run\nthem locally.\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>",
+          "url": "https://github.com/lewis-nduati/Tracom-credentials/commit/545185e5071954b120ed3ec4b70a424cc3938415",
+          "committedAt": "2026-05-29T09:46:44Z"
         },
         {
           "repo": "lewis-nduati/Tracom-credentials",
-          "message": "refactor(onboard): redesign access token onboarding flow\n\nRemove icon circles from all card states, add overline step labels,\nreplace blockchain jargon with plain language, wrap inline loading\nstates in card containers, and rename \"Mint Access Token\" to\n\"Create Identity\" throughout the registration flow.\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>",
-          "url": "https://github.com/lewis-nduati/Tracom-credentials/commit/e773ca28c2f5532e4ba384f5733d00663d648436",
-          "committedAt": "2026-05-25T09:53:41Z"
+          "message": "chore(deps): apply non-breaking npm audit fixes\n\nnpm audit fix (no --force): 61 -> 50 advisories, critical (protobufjs)\nresolved. Lockfile-only change; npm run check passes and 377/377 tests\npass. Remaining advisories are in dev/build tooling and need breaking\nupgrades — handle separately.\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>",
+          "url": "https://github.com/lewis-nduati/Tracom-credentials/commit/bd91476daad162a839242175033e40c0b97aa865",
+          "committedAt": "2026-05-29T09:45:21Z"
         }
       ],
       "error": null
@@ -180,9 +180,15 @@
     {
       "id": "maxalexweber",
       "name": "Maximilian",
-      "lastActivityAt": "2026-05-27T21:07:38Z",
-      "commitsThisWeek": 4,
+      "lastActivityAt": "2026-05-28T20:22:32Z",
+      "commitsThisWeek": 5,
       "recentCommits": [
+        {
+          "repo": "maxalexweber1/CHAINFEED",
+          "message": "feat: implement authentication for MCP transport and enhance webhook security",
+          "url": "https://github.com/maxalexweber1/CHAINFEED/commit/440bf9b0599f5898c81a81a29f11aebcf09c587c",
+          "committedAt": "2026-05-28T20:22:32Z"
+        },
         {
           "repo": "maxalexweber1/CHAINFEED",
           "message": "fix: specify type for Set in subscription action path test",
@@ -276,9 +282,15 @@
     {
       "id": "newman5",
       "name": "Newman",
-      "lastActivityAt": "2026-05-28T02:55:59Z",
-      "commitsThisWeek": 6,
+      "lastActivityAt": "2026-05-28T13:36:17Z",
+      "commitsThisWeek": 7,
       "recentCommits": [
+        {
+          "repo": "Newman5/builder-season-playbook",
+          "message": "Update builder activity data",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/7342e5b9e640d06ab7ad4a03c4e555bcb70161c9",
+          "committedAt": "2026-05-28T13:36:17Z"
+        },
         {
           "repo": "Newman5/builder-season-playbook",
           "message": "Add script to regenerate work breakdown from GitHub Project and update markdown file\n\n- Created `scripts/update_work_breakdown.py` to automate the regeneration of `work-breakdown.md` from GitHub Project items.\n- Updated `templates/admins/work-breakdown.md` to reflect the current project structure and details.\n- Added a new blog post discussing the implementation of project management using Kanban and the integration of AI tools.",
@@ -302,12 +314,6 @@
           "message": "Update builder activity data",
           "url": "https://github.com/Newman5/builder-season-playbook/commit/e0a512e9aa99191216814e54a64cd2b3457cfe60",
           "committedAt": "2026-05-27T13:33:59Z"
-        },
-        {
-          "repo": "Newman5/builder-season-playbook",
-          "message": "Update builder activity data",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/9bf0b8c25bee31ba7e97d89c1a4f10722bd74a78",
-          "committedAt": "2026-05-26T13:21:45Z"
         }
       ],
       "error": null
