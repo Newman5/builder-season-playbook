@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-30T12:41:45Z",
+  "generatedAt": "2026-05-31T12:46:32Z",
   "weekStart": "2026-05-25T00:00:00Z",
   "weekEnd": "2026-05-31T23:59:59Z",
   "builders": [
@@ -108,9 +108,16 @@
     {
       "id": "harrie",
       "name": "Harrie",
-      "lastActivityAt": "2026-05-22T19:49:23Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-05-30T18:57:19Z",
+      "commitsThisWeek": 1,
+      "recentCommits": [
+        {
+          "repo": "IamHarrie-Labs/beni",
+          "message": "fix: update deployTxHash from pending-confirmation to confirmed on-chain tx\n\nThe deploy script wrote \"pending-confirmation\" because it checked\nUTxOs before the tx propagated. The real tx is confirmed at block 4305491:\n8dc2afdb6caff5779d8e32b52e924909064b33f3cfdacbf20a55de4010ff0f25\n\nContract status: live ✓ | Balance: ₳5 | Thread token: present ✓\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>",
+          "url": "https://github.com/IamHarrie-Labs/beni/commit/02f1aa6fe1a681a4f8a24c7785aa166e6da4abde",
+          "committedAt": "2026-05-30T18:57:19Z"
+        }
+      ],
       "error": null
     },
     {
@@ -155,9 +162,40 @@
     {
       "id": "armanabid",
       "name": "Abid",
-      "lastActivityAt": "2026-05-23T20:50:42Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-05-30T23:06:23Z",
+      "commitsThisWeek": 5,
+      "recentCommits": [
+        {
+          "repo": "ArmanAbid/ChainTask",
+          "message": "build landing, app shell, read-only dashboard",
+          "url": "https://github.com/ArmanAbid/ChainTask/commit/8f791cd416924a837015150bf1ff0b782d3250e5",
+          "committedAt": "2026-05-30T23:06:23Z"
+        },
+        {
+          "repo": "ArmanAbid/ChainTask",
+          "message": "integrate weld for real cip-30 wallet connect",
+          "url": "https://github.com/ArmanAbid/ChainTask/commit/f34e98051169688bfb817fd79c203696ff9600ac",
+          "committedAt": "2026-05-30T23:06:18Z"
+        },
+        {
+          "repo": "ArmanAbid/ChainTask",
+          "message": "add blockfrost client, ipfs, datum decoders, data layer",
+          "url": "https://github.com/ArmanAbid/ChainTask/commit/39cdba174b7b255436638bd09af5609b5d2a1b88",
+          "committedAt": "2026-05-30T23:06:12Z"
+        },
+        {
+          "repo": "ArmanAbid/ChainTask",
+          "message": "add two-layer types mirroring contract datums + env config",
+          "url": "https://github.com/ArmanAbid/ChainTask/commit/51c2fdd37e99e51f0578d885ad55c29d2bcfc0cc",
+          "committedAt": "2026-05-30T23:06:07Z"
+        },
+        {
+          "repo": "ArmanAbid/ChainTask",
+          "message": "scaffold production frontend with brand assets",
+          "url": "https://github.com/ArmanAbid/ChainTask/commit/aa41e92885d4c64764b6ad656fcc4b709b58171e",
+          "committedAt": "2026-05-30T23:05:49Z"
+        }
+      ],
       "error": null
     },
     {
@@ -313,9 +351,15 @@
     {
       "id": "newman5",
       "name": "Newman",
-      "lastActivityAt": "2026-05-29T13:28:35Z",
-      "commitsThisWeek": 8,
+      "lastActivityAt": "2026-05-30T12:41:54Z",
+      "commitsThisWeek": 9,
       "recentCommits": [
+        {
+          "repo": "Newman5/builder-season-playbook",
+          "message": "Update builder activity data",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/0024f629b1975489271e5e6197b74529bcce8e51",
+          "committedAt": "2026-05-30T12:41:54Z"
+        },
         {
           "repo": "Newman5/builder-season-playbook",
           "message": "Update builder activity data",
@@ -339,12 +383,6 @@
           "message": "Merge branch 'main' of https://github.com/Newman5/builder-season-playbook",
           "url": "https://github.com/Newman5/builder-season-playbook/commit/3778a02b0324f5c48c07baffebedf316279da3f2",
           "committedAt": "2026-05-28T02:12:23Z"
-        },
-        {
-          "repo": "Newman5/builder-season-playbook",
-          "message": "tweet changes and work-breakdown before creation of Github Project",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/aa869639a092ea0d4379c131cae45e2acf2354c4",
-          "committedAt": "2026-05-28T02:12:20Z"
         }
       ],
       "error": null
@@ -436,9 +474,16 @@
     {
       "id": "muhammedyuguda",
       "name": "Muhammed",
-      "lastActivityAt": "2026-05-23T02:57:00Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-05-28T14:44:20Z",
+      "commitsThisWeek": 1,
+      "recentCommits": [
+        {
+          "repo": "Yuguda999/devmemory",
+          "message": "feat: Phase 3-5 — billing quota, REST API polish, CI, and PyPI publication prep\n\nPhase 3 — Billing & Quota Enforcement\n- billing/quota.py: TierQuota, QuotaExceededError, check_project/session/block_quota\n- Tier limits: Free (3/10/500), Pro (25/100/5000), Team (unlimited)\n- Quota gates wired into save_context, start_session MCP tools\n- list_projects_tool now returns quota metadata\n- 21 new tests in tests/test_quota.py\n\nPhase 4 — REST API Polish\n- GET /projects, GET|PATCH /sessions, GET /sessions/{id}/blocks\n- DELETE /context-blocks/{id}, GET /billing/status\n- Full Pydantic v2 schemas; OpenAPI docs at /docs and /redoc\n- 18 new TestClient tests in tests/test_rest_api.py\n\nPhase 5 — Publication & CI\n- pyproject.toml: Beta status, project.urls, Typing::Typed classifier\n- README.md: full docs with Claude/Cursor/Windsurf MCP config examples\n- CHANGELOG.md: v0.1.0 release notes\n- .github/workflows/ci.yml: test on 3.10/3.11/3.12, lint, build\n\nTotal: 208 tests passing",
+          "url": "https://github.com/Yuguda999/devmemory/commit/6065dc243c75e0fe11081e8221cde099b944ca5f",
+          "committedAt": "2026-05-28T14:44:20Z"
+        }
+      ],
       "error": null
     },
     {
@@ -483,38 +528,38 @@
     {
       "id": "kamalaliyu",
       "name": "Kamal Aliyu",
-      "lastActivityAt": "2026-05-27T18:00:00Z",
-      "commitsThisWeek": 12,
+      "lastActivityAt": "2026-05-28T16:50:00Z",
+      "commitsThisWeek": 20,
       "recentCommits": [
         {
           "repo": "kamal-ogtl/cogikids",
-          "message": "refactor(tts): export SpeakOptions interface and support configurable pitch",
-          "url": "https://github.com/kamal-ogtl/cogikids/commit/0c808061e4c9c9fb9b48382ceeb4a7b09129e9f5",
-          "committedAt": "2026-05-27T18:00:00Z"
+          "message": "docs(utils): document the sounds module and soundEnabled gating",
+          "url": "https://github.com/kamal-ogtl/cogikids/commit/2bcbca648f9934acad6eefbb5c7842dbd66c1e50",
+          "committedAt": "2026-05-28T16:50:00Z"
         },
         {
           "repo": "kamal-ogtl/cogikids",
-          "message": "refactor(stores): export store interfaces for better TypeScript ergonomics",
-          "url": "https://github.com/kamal-ogtl/cogikids/commit/db1865db064e9bdc9581a89da21321356e1cb761",
-          "committedAt": "2026-05-27T16:30:00Z"
+          "message": "docs(utils): document curriculumMapper node-lookup helpers",
+          "url": "https://github.com/kamal-ogtl/cogikids/commit/cc26d6408a4a60da1a0591f47f69ae51e362e616",
+          "committedAt": "2026-05-28T15:20:00Z"
         },
         {
           "repo": "kamal-ogtl/cogikids",
-          "message": "feat(a11y): add accessibilityLabel to spelling keyboard keys and backspace button",
-          "url": "https://github.com/kamal-ogtl/cogikids/commit/a85656399d7f77998789ad143208da2497a323d5",
-          "committedAt": "2026-05-27T14:00:00Z"
+          "message": "docs(voice): document the microphone recorder module",
+          "url": "https://github.com/kamal-ogtl/cogikids/commit/3a93701cb36d9650279694b15845613ef31b4fc5",
+          "committedAt": "2026-05-28T14:00:00Z"
         },
         {
           "repo": "kamal-ogtl/cogikids",
-          "message": "feat(a11y): add accessibilityRole and accessibilityLabel to battle answer buttons",
-          "url": "https://github.com/kamal-ogtl/cogikids/commit/3f0cebb4ae466a9373fcb207dbc2551763823321",
-          "committedAt": "2026-05-27T12:20:00Z"
+          "message": "docs(utils): document xpCalculator XP and star-rating helpers",
+          "url": "https://github.com/kamal-ogtl/cogikids/commit/4990dd5f98fc8aecc449e38ab137890080fbcdb2",
+          "committedAt": "2026-05-28T12:40:00Z"
         },
         {
           "repo": "kamal-ogtl/cogikids",
-          "message": "fix(battle): add missing playerHP and bossHP deps to startTimer useCallback",
-          "url": "https://github.com/kamal-ogtl/cogikids/commit/e743e9b6026746ba1d7802977e45e3bf54723971",
-          "committedAt": "2026-05-27T10:05:00Z"
+          "message": "docs(store): add file-level documentation to useSettingsStore",
+          "url": "https://github.com/kamal-ogtl/cogikids/commit/65089ff36769ceb5c2cdbbcdec0e688bf82b44b8",
+          "committedAt": "2026-05-28T11:15:00Z"
         }
       ],
       "error": null
@@ -522,38 +567,38 @@
     {
       "id": "alfreditodole",
       "name": "Alfred Itodole",
-      "lastActivityAt": "2026-05-27T15:22:22Z",
-      "commitsThisWeek": 8,
+      "lastActivityAt": "2026-05-30T14:25:58Z",
+      "commitsThisWeek": 25,
       "recentCommits": [
         {
           "repo": "sirxalfred/mosaic-cardano",
-          "message": "deps: add zustand for client-sdie data layer persistence",
-          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/2938f48d7af1c548d05f5928a2dc41d3d3e2caf7",
-          "committedAt": "2026-05-27T15:22:22Z"
+          "message": "Merge pull request #1 from sirXalfred/feat/participate",
+          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/fa0c6f9fc9e8f479fa8d633c4ac2596658bbf3ac",
+          "committedAt": "2026-05-30T14:25:58Z"
         },
         {
           "repo": "sirxalfred/mosaic-cardano",
-          "message": "refactor: change hardcoded links in app to use enums for routes",
-          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/e3bc2acae9192223b3269b6906146335d19b6f7c",
-          "committedAt": "2026-05-27T15:20:31Z"
+          "message": "feat(project): implement artifact analytics service hooks",
+          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/2f67a20964b275cf855e5e1354ce4bd186b7a6ad",
+          "committedAt": "2026-05-29T00:11:02Z"
         },
         {
           "repo": "sirxalfred/mosaic-cardano",
-          "message": "feat: create `UseXQuery` that extends useQuery with loaded property",
-          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/9a8371663cdeb2fe6136240dde4b990e69ca6ebf",
-          "committedAt": "2026-05-27T15:19:29Z"
+          "message": "feat: add artifact view page",
+          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/09d50c265f68a38d64a6891e07ddc0db3564ab0a",
+          "committedAt": "2026-05-29T00:10:13Z"
         },
         {
           "repo": "sirxalfred/mosaic-cardano",
-          "message": "style: ui and shadcn component style changes",
-          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/45e655609603cb41cb960e7e7abca0514bae1555",
-          "committedAt": "2026-05-27T15:17:40Z"
+          "message": "feat: addd utility function for conerting strings to titlecase",
+          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/72d41e9783f312a4e552082baac2de29308d371c",
+          "committedAt": "2026-05-28T13:03:34Z"
         },
         {
           "repo": "sirxalfred/mosaic-cardano",
-          "message": "refactoe: update village layout to show app sidebar if the user is not a member",
-          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/9a880e53ac5b5a75966b43d8f6d2bca327091087",
-          "committedAt": "2026-05-27T15:15:30Z"
+          "message": "feat: add a app page container for reusing page layouts within the main app",
+          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/5232a6ed741256f74bb9a403bbb2be5d9fe4e58b",
+          "committedAt": "2026-05-28T13:02:15Z"
         }
       ],
       "error": null
