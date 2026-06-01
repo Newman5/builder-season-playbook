@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-05-31T12:46:32Z",
-  "weekStart": "2026-05-25T00:00:00Z",
-  "weekEnd": "2026-05-31T23:59:59Z",
+  "generatedAt": "2026-06-01T14:23:53Z",
+  "weekStart": "2026-06-01T00:00:00Z",
+  "weekEnd": "2026-06-07T23:59:59Z",
   "builders": [
     {
       "id": "mhizta",
       "name": "Mhizta",
-      "lastActivityAt": "2026-05-23T11:53:51Z",
+      "lastActivityAt": "2026-05-31T13:34:57Z",
       "commitsThisWeek": 0,
       "recentCommits": [],
       "error": null
@@ -30,38 +30,20 @@
     {
       "id": "gidhub",
       "name": "Gideon",
-      "lastActivityAt": "2026-05-29T19:48:25Z",
-      "commitsThisWeek": 16,
+      "lastActivityAt": "2026-06-01T09:21:04Z",
+      "commitsThisWeek": 2,
       "recentCommits": [
         {
           "repo": "0xGIDHUB/tixano",
-          "message": "Added date sorting to dashboards events selector",
-          "url": "https://github.com/0xGIDHUB/tixano/commit/dde10e059e733f7bafdd92bdd0735dabcbe4bbd1",
-          "committedAt": "2026-05-29T19:48:25Z"
+          "message": "Guest page update list, removed footer",
+          "url": "https://github.com/0xGIDHUB/tixano/commit/7ac21d10fab39173691ee512219c402ad597852a",
+          "committedAt": "2026-06-01T09:21:04Z"
         },
         {
           "repo": "0xGIDHUB/tixano",
-          "message": "Check-in page interface setup",
-          "url": "https://github.com/0xGIDHUB/tixano/commit/ccd9a61e0fe6cb8ef8ea20994b998b85bb0becc4",
-          "committedAt": "2026-05-28T14:28:37Z"
-        },
-        {
-          "repo": "0xGIDHUB/tixano",
-          "message": "Smoother scrolling for events carousel view",
-          "url": "https://github.com/0xGIDHUB/tixano/commit/b68e98744c7cd043c7efa715ac83e824915814ff",
-          "committedAt": "2026-05-28T03:17:26Z"
-        },
-        {
-          "repo": "0xGIDHUB/tixano",
-          "message": "Reworked event registration button, removed event date from nft metadata",
-          "url": "https://github.com/0xGIDHUB/tixano/commit/19fa0946d5583bbc01f902a752d99eb2f29cea1c",
-          "committedAt": "2026-05-28T01:02:03Z"
-        },
-        {
-          "repo": "0xGIDHUB/tixano",
-          "message": "Added qr to preview ticket",
-          "url": "https://github.com/0xGIDHUB/tixano/commit/2558ecf65c8e21ea49d45ccbb95485081fa3d8e1",
-          "committedAt": "2026-05-28T00:47:14Z"
+          "message": "Wallet auth for checkin page, ensures only events owners can access check in interface",
+          "url": "https://github.com/0xGIDHUB/tixano/commit/7c11e0955306895f7b6547fb799e4ed8f12c9ee0",
+          "committedAt": "2026-06-01T03:22:45Z"
         }
       ],
       "error": null
@@ -70,91 +52,29 @@
       "id": "pmcorcoran",
       "name": "Paul Corcoran",
       "lastActivityAt": "2026-05-29T22:13:08Z",
-      "commitsThisWeek": 5,
-      "recentCommits": [
-        {
-          "repo": "pmcorcoran/ada-battles",
-          "message": "Merge branch 'feat/collect-pubkeyhash'\ncollect player pubkeyhash at auth signing",
-          "url": "https://github.com/pmcorcoran/ada-battles/commit/651547673ac016d5c01f851b7617bf81ee36f723",
-          "committedAt": "2026-05-29T22:13:08Z"
-        },
-        {
-          "repo": "pmcorcoran/ada-battles",
-          "message": "add collect pubkeyhash on sign",
-          "url": "https://github.com/pmcorcoran/ada-battles/commit/1f059ed3294608df5250c5f581fb57ead287be27",
-          "committedAt": "2026-05-29T22:12:22Z"
-        },
-        {
-          "repo": "pmcorcoran/ada-battles",
-          "message": "add tx builders",
-          "url": "https://github.com/pmcorcoran/ada-battles/commit/f1ac437fc2722bff7b9d62bbca09b018679845fa",
-          "committedAt": "2026-05-27T22:02:26Z"
-        },
-        {
-          "repo": "pmcorcoran/ada-battles",
-          "message": "Merge branch 'feat/hydra-keys' adds client hydra key gen",
-          "url": "https://github.com/pmcorcoran/ada-battles/commit/fa3329fb1c53f1b594151d0eddc2dc8600d9ebdd",
-          "committedAt": "2026-05-26T16:30:23Z"
-        },
-        {
-          "repo": "pmcorcoran/ada-battles",
-          "message": "added hydra key gen and fixed stale frontend/tsconfig",
-          "url": "https://github.com/pmcorcoran/ada-battles/commit/8e3e3c77416a6951bed803ac0e3944df7ebbfb9d",
-          "committedAt": "2026-05-26T16:25:47Z"
-        }
-      ],
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
       "id": "harrie",
       "name": "Harrie",
       "lastActivityAt": "2026-05-30T18:57:19Z",
-      "commitsThisWeek": 1,
-      "recentCommits": [
-        {
-          "repo": "IamHarrie-Labs/beni",
-          "message": "fix: update deployTxHash from pending-confirmation to confirmed on-chain tx\n\nThe deploy script wrote \"pending-confirmation\" because it checked\nUTxOs before the tx propagated. The real tx is confirmed at block 4305491:\n8dc2afdb6caff5779d8e32b52e924909064b33f3cfdacbf20a55de4010ff0f25\n\nContract status: live ✓ | Balance: ₳5 | Thread token: present ✓\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>",
-          "url": "https://github.com/IamHarrie-Labs/beni/commit/02f1aa6fe1a681a4f8a24c7785aa166e6da4abde",
-          "committedAt": "2026-05-30T18:57:19Z"
-        }
-      ],
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
       "id": "lewis",
       "name": "Lewis",
-      "lastActivityAt": "2026-05-30T07:05:57Z",
-      "commitsThisWeek": 40,
+      "lastActivityAt": "2026-06-01T09:17:24Z",
+      "commitsThisWeek": 1,
       "recentCommits": [
         {
           "repo": "lewis-nduati/Tracom-credentials",
-          "message": "refactor: rename product to Tracom Credentials\n\nThe product is Tracom Credentials, not Tracom Academy. Update the central\nbranding config (name, title, descriptions) and every hardcoded\nuser-facing string: nav logo alt, footer, hero kicker, sign-in dialogs,\nthe post-mint welcome, the branded error/not-found pages, and the\npioneer-program FAQ. Reworded the few spots where a literal swap read\nawkwardly (\"your coursework\", \"Tracom students\").\n\nAlso centres the hero guilloché star on the badge.\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>",
-          "url": "https://github.com/lewis-nduati/Tracom-credentials/commit/ff8a2e10b5eab8c9e32b552a68e92dd8be3a0be9",
-          "committedAt": "2026-05-30T07:05:57Z"
-        },
-        {
-          "repo": "lewis-nduati/Tracom-credentials",
-          "message": "feat(course): simplify the lesson reading view\n\nDrop the redundant \"Learning Target N\" card (it just repeated itself) in\nfavour of a quiet kicker, and constrain the lesson to a comfortable\nreading column (max-w-2xl, ~75 characters) with more whitespace. The\ncontent now reads like a page, not a stack of cards.\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>",
-          "url": "https://github.com/lewis-nduati/Tracom-credentials/commit/ba90d004d601223cbcb29e942f989cf69b2bb8b7",
-          "committedAt": "2026-05-29T19:11:31Z"
-        },
-        {
-          "repo": "lewis-nduati/Tracom-credentials",
-          "message": "Revert \"feat(course): simplify course catalog to a clean numbered list\"\n\nThis reverts commit f5a948ac5918222ec436dabc68419c6f82fa53a2.",
-          "url": "https://github.com/lewis-nduati/Tracom-credentials/commit/379fa9f4f99fec9421611d4e0c89e0d4ed2eaf43",
-          "committedAt": "2026-05-29T19:07:12Z"
-        },
-        {
-          "repo": "lewis-nduati/Tracom-credentials",
-          "message": "feat(course): simplify course catalog to a clean numbered list\n\nReplace the gradient image-card grid and the status-badge stats bar with\nthe same clean numbered rows as the course module list: number, title,\none line of description, and a status or enrollment indicator. The two\ncourse screens now read as one simple system. CourseCard stays for the\ndashboard (my-learning); only the catalog changes.\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>",
-          "url": "https://github.com/lewis-nduati/Tracom-credentials/commit/f5a948ac5918222ec436dabc68419c6f82fa53a2",
-          "committedAt": "2026-05-29T19:02:38Z"
-        },
-        {
-          "repo": "lewis-nduati/Tracom-credentials",
-          "message": "feat(course): simplify learner module list to clean numbered rows\n\nThe course page rendered every learning target under each module, a wall\nof text. Rework CourseModuleCard into a scannable row: a gold-ringed navy\nnumber (matching the how-it-works nodes), the title, and a learning-target\ncount, with a status badge or chevron on the right. The targets live on\nthe module page now. Rename the section to \"Modules\" and drop the unused\non-chain SLT props.\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>",
-          "url": "https://github.com/lewis-nduati/Tracom-credentials/commit/a13f019ceebdaa96be00879b67c7e80a20b669ad",
-          "committedAt": "2026-05-29T18:54:43Z"
+          "message": "feat(projects): scope the browse page to one owner alias\n\nThe projects page showed every project on the shared Andamio network.\nAdd NEXT_PUBLIC_PROJECT_OWNER and filter useProjects to that owner alias,\nmirroring the existing NEXT_PUBLIC_COURSE_OWNER filter on courses. Unset,\nit falls back to showing everything, so nothing breaks until configured.\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>",
+          "url": "https://github.com/lewis-nduati/Tracom-credentials/commit/ff3ad1f61d692d35683f53f7eb0c6608d28638bc",
+          "committedAt": "2026-06-01T09:17:24Z"
         }
       ],
       "error": null
@@ -163,165 +83,40 @@
       "id": "armanabid",
       "name": "Abid",
       "lastActivityAt": "2026-05-30T23:06:23Z",
-      "commitsThisWeek": 5,
-      "recentCommits": [
-        {
-          "repo": "ArmanAbid/ChainTask",
-          "message": "build landing, app shell, read-only dashboard",
-          "url": "https://github.com/ArmanAbid/ChainTask/commit/8f791cd416924a837015150bf1ff0b782d3250e5",
-          "committedAt": "2026-05-30T23:06:23Z"
-        },
-        {
-          "repo": "ArmanAbid/ChainTask",
-          "message": "integrate weld for real cip-30 wallet connect",
-          "url": "https://github.com/ArmanAbid/ChainTask/commit/f34e98051169688bfb817fd79c203696ff9600ac",
-          "committedAt": "2026-05-30T23:06:18Z"
-        },
-        {
-          "repo": "ArmanAbid/ChainTask",
-          "message": "add blockfrost client, ipfs, datum decoders, data layer",
-          "url": "https://github.com/ArmanAbid/ChainTask/commit/39cdba174b7b255436638bd09af5609b5d2a1b88",
-          "committedAt": "2026-05-30T23:06:12Z"
-        },
-        {
-          "repo": "ArmanAbid/ChainTask",
-          "message": "add two-layer types mirroring contract datums + env config",
-          "url": "https://github.com/ArmanAbid/ChainTask/commit/51c2fdd37e99e51f0578d885ad55c29d2bcfc0cc",
-          "committedAt": "2026-05-30T23:06:07Z"
-        },
-        {
-          "repo": "ArmanAbid/ChainTask",
-          "message": "scaffold production frontend with brand assets",
-          "url": "https://github.com/ArmanAbid/ChainTask/commit/aa41e92885d4c64764b6ad656fcc4b709b58171e",
-          "committedAt": "2026-05-30T23:05:49Z"
-        }
-      ],
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
       "id": "gamechanger",
       "name": "Adriano",
       "lastActivityAt": "2026-05-29T22:20:31Z",
-      "commitsThisWeek": 2,
-      "recentCommits": [
-        {
-          "repo": "GameChangerFinance/NeonSoup",
-          "message": "Merge pull request #3 from GameChangerFinance/feat/protocol\n\nfeat: development tool dapp. Protocol fixes. Repo refactor",
-          "url": "https://github.com/GameChangerFinance/NeonSoup/commit/002d51203c8ebe88733e12fa1d4cd716b102850d",
-          "committedAt": "2026-05-29T22:20:31Z"
-        },
-        {
-          "repo": "GameChangerFinance/NeonSoup",
-          "message": "feat: development tool dapp. Protocol fixes. Repo refactor\n\n- created a development tool dapp derived from the GC auto-generated dapp templates.\n  - allows to open, fill and close offers\n  - shows open offers and user portfolio\n  - gives advanced control over the generated intents\n  - has an asset whitelist\n  - runs queries with blockfrost (only option for now)\n  - allows for bad intent arguments to debug errors but warns via form validations\n- renamed initial auto-generated html dapp and let the dev tool to became the new temporary index.html\n- refactored package.json for these changes\n- fixed protocol issues:\n  - wrong constructor on redeemer\n  - wrong/missing math at swap intent\n  - required signers at close\n- added a live demo for the dev tool for community to try it out\n- other minor stuff",
-          "url": "https://github.com/GameChangerFinance/NeonSoup/commit/c425eaea7d9a4d3b5cff1e6997048d8dd8f4831d",
-          "committedAt": "2026-05-29T22:10:33Z"
-        }
-      ],
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
       "id": "yungslaiz",
       "name": "Blessed David",
       "lastActivityAt": "2026-05-30T00:09:37Z",
-      "commitsThisWeek": 3,
-      "recentCommits": [
-        {
-          "repo": "YungSlaiz53/GNXT",
-          "message": " adjust token upgrade cost to 200 NXTP, and optimize Cardano transaction logic.",
-          "url": "https://github.com/YungSlaiz53/GNXT/commit/d289ab9829f385e568724f6619b8e76eb3739827",
-          "committedAt": "2026-05-30T00:09:37Z"
-        },
-        {
-          "repo": "YungSlaiz53/GNXT",
-          "message": "Week 4: integrated Cardano wallet support (Nami/Eternl) and implemented a safe minting function for the token on the Pre-prod testnet.",
-          "url": "https://github.com/YungSlaiz53/GNXT/commit/a3f42522b7242bb06152cd9eb9571c865eae2e21",
-          "committedAt": "2026-05-24T15:42:20Z"
-        },
-        {
-          "repo": "YungSlaiz53/GNXT",
-          "message": "Week 3: initialize project scaffold with authentication, routing, and core pages",
-          "url": "https://github.com/YungSlaiz53/GNXT/commit/0bf529ba5daffce2845b92ed9e1c7c5f65a3f9dc",
-          "committedAt": "2026-05-14T21:06:15Z"
-        }
-      ],
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
       "id": "maxalexweber",
       "name": "Maximilian",
       "lastActivityAt": "2026-05-28T20:22:32Z",
-      "commitsThisWeek": 5,
-      "recentCommits": [
-        {
-          "repo": "maxalexweber1/CHAINFEED",
-          "message": "feat: implement authentication for MCP transport and enhance webhook security",
-          "url": "https://github.com/maxalexweber1/CHAINFEED/commit/440bf9b0599f5898c81a81a29f11aebcf09c587c",
-          "committedAt": "2026-05-28T20:22:32Z"
-        },
-        {
-          "repo": "maxalexweber1/CHAINFEED",
-          "message": "fix: specify type for Set in subscription action path test",
-          "url": "https://github.com/maxalexweber1/CHAINFEED/commit/19ac5a80ae83e0457aae2f962cd1722718734d6a",
-          "committedAt": "2026-05-27T21:07:38Z"
-        },
-        {
-          "repo": "maxalexweber1/CHAINFEED",
-          "message": "feat: implement rate limiting and SSRF prevention for webhook URLs",
-          "url": "https://github.com/maxalexweber1/CHAINFEED/commit/abe9c353fbe91d51884ed378d95fefd93076e75e",
-          "committedAt": "2026-05-27T20:38:07Z"
-        },
-        {
-          "repo": "maxalexweber1/CHAINFEED",
-          "message": "feat: add structured logging and health monitoring for agents\n\n- Implemented a pino-based structured logger in agents/shared/log.ts for consistent logging across agents, supporting both pretty and JSON formats based on environment variables.\n- Created a heartbeat mechanism in agents/watcher/heartbeat.ts to signal liveness for the health endpoint, ensuring graceful degradation in case of write failures.\n- Added comprehensive documentation in docs/AGENT_GUIDE.md detailing the usage of the MCP server and reference agents, including setup instructions and agent patterns.\n- Introduced unit tests for health report generation in scripts/test-health.ts, ensuring robust health checks for database, adapters, and watcher components.\n- Developed a health report builder in srv/lib/health.ts that aggregates statuses from database, adapters, and watcher, providing a unified health status.\n- Established a separate logging utility in srv/lib/log.ts for non-CAP code, ensuring consistent logging practices across different modules.",
-          "url": "https://github.com/maxalexweber1/CHAINFEED/commit/41972985f9e2a4a68be25f2e6f9a6ba7e7d3bdf9",
-          "committedAt": "2026-05-26T16:57:50Z"
-        },
-        {
-          "repo": "maxalexweber1/CHAINFEED",
-          "message": "feat: implement stable watcher with alerting sinks for Discord and Telegram\n\n- Add main watcher logic to poll stable assessments and handle alerts.\n- Implement state management for persisting last observations.\n- Create sinks for outputting alerts to stdout, Discord, and Telegram.\n- Add unit tests for the watcher diff logic and sinks functionality.\n- Ensure graceful shutdown and error handling in the watcher.",
-          "url": "https://github.com/maxalexweber1/CHAINFEED/commit/73ddcf5722732ae8bf6272785189edb843ef1e0a",
-          "committedAt": "2026-05-25T17:27:19Z"
-        }
-      ],
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
       "id": "murmurations",
       "name": "Nori",
       "lastActivityAt": "2026-05-27T04:49:34Z",
-      "commitsThisWeek": 9,
-      "recentCommits": [
-        {
-          "repo": "murmurations-ai/flyway",
-          "message": "feat(core+cli+mcp): S+5a — flyway_propose + proposal responses (Session A)\n\nFlagship sender wired end-to-end. Two independent murmurations can now\nrun a full S3 §IV.1.9–1.10 consent cycle: tension → proposal(driver) →\nobject → proposal(draft) → object → proposal(refinement) → accept,\nwith every step signed under its kind-specific domain, every antecedent\nverified per ADR-0009, and every response carrying refs that resolve\nto a real prior signal in the recipient's outbox.\n\nCore\n- createProposal({ from, to, body, signer, tensionAntecedent?,\n  proposalAntecedent? }): discriminated body for directive / project /\n  agreement types. type='agreement' validates against\n  FLYWAY_AGREEMENT_SCHEMA (sender + recipient must appear in\n  participants, schemaVersion match, decisionRule enum, all 11\n  required fields). Stage validation enforces driver →\n  [driver/requirements/draft/final], requirements → [requirements/\n  draft/refinement/final], draft → [draft/refinement/final],\n  refinement → [refinement/final], final is terminal. previousStageId\n  required for stage='refinement'. Refines DOMAIN_PROPOSAL. Closes #8.\n- ProposalRequirement structured items required at stage='requirements'\n  (id, description, mustOrShould?, rationale?). Closes #6.\n- ADR-0009 antecedent verification on both tensionAntecedent and\n  proposalAntecedent (kind, id, sender, DID-doc binding, signature).\n- createProposalResponse({ subjectEnvelope: ProposalEnvelope, ... }):\n  decisions accept/object/exit; reason required for object/exit;\n  concernsToRecord first-class field (closes #3, #15). ADR-0009\n  verification on prior proposal.\n- FLYWAY_AGREEMENT_SCHEMA extended with optional `trigger` and\n  `acceptanceCriteria` (closes #7).\n- flyway_check verifyRefsResolve now handles refs.proposalId in\n  addition to refs.tensionId (catches the regression the new senders\n  introduced).\n\nCLI\n- runPropose loads identity, recognized-peer trust gate, resolves\n  tension/proposal antecedents from outbox or inbox, loads the cached\n  peer DID document, calls createProposal, writes outbox first,\n  delivers to recipient inbox.\n- runRespond now dispatches on subject.kind: tension subjects route\n  through createTensionResponse; proposal subjects through\n  createProposalResponse. Cross-flag validation: --concerns-to-record\n  refused on tensions, --transfer-to refused on proposals.\n- `flyway propose` verb with --type / --title / --body / --stage /\n  --previous-stage-id / --promote-tension-id / --agreement-file /\n  --requirements-file. `flyway respond` extended with --concern\n  (repeatable).\n\nMCP\n- handleProposal: stateless; caller supplies own identity, peerDid,\n  body, and optional antecedents (each as { envelope, senderDidDocument }).\n  Returns signed envelope; caller persists.\n- handleRespond dispatcher already routed by subject.kind; the proposal\n  branch now invokes handleProposalResponse instead of returning\n  not-yet-wired.\n\nTests: 289 passed across the workspace (up from 226).\n  core:  188 (+45: 32 propose + 13 response/coverage)\n  cli:   72  (+14: 9 propose + 5 respond proposal-branch)\n  mcp:   20  (+4: propose + proposal-response)\n\nSmoke run: full A↔B consent cycle (tension → object → draft → object →\nrefinement → accept) — 8 signed envelopes, 0 issues from flyway_check\non either side.\n\nSession B (next) — materializeAgreement primitive that produces a\nbyte-identical co-signed agreement file on both repos when an\nagreement proposal reaches stage='final' + accepted; Tier 4 walkthrough\nwith verbatim transcript; status / how-flyway-works refresh.\n\nCloses #3, #6, #7, #8, #15. References #2 (tension promotion now\nexists; full promotion semantics including the \"tension was raised by\nthe responder\" path will land with Session B's walkthrough).\n\nCo-Authored-By: Claude Opus 4.7 <noreply@anthropic.com>",
-          "url": "https://github.com/murmurations-ai/flyway/commit/080aaff427eaaf040ea937bdfa83bd6f7520da70",
-          "committedAt": "2026-05-27T04:49:34Z"
-        },
-        {
-          "repo": "murmurations-ai/flyway",
-          "message": "refactor(mcp)+feat(core): pre-S+5 cleanup — kind-dispatch handleRespond, verify refs.tensionId\n\nTwo small pre-work changes to land cleaner ground for the S+5\nflyway_propose milestone:\n\nhandleRespond → kind-dispatcher (closes #9)\n- Splits handleRespond into a thin dispatcher (validates shape, reads\n  subject.kind) and handleTensionResponse (the existing tension logic).\n- The proposal branch now returns an informative errorResult specifying\n  what's not yet wired; adding it later is a single new case rather\n  than a rewrite of the existing function.\n- Behavior unchanged for tension responses; 16 MCP tests still green.\n\nflyway_check verifies refs.tensionId (closes #14, addresses G7)\n- For any respond signal, cross-references refs.tensionId against\n  flyway/outbox/<responder-segments>/<id>.yaml to ensure the\n  referenced tension actually exists in our outbox AND was sent by\n  us TO the responder AND has kind='tension'.\n- New verifyRefsResolve helper in core/check.ts; uses signalOutboxPath\n  from signal.ts. Adds per-signal issues for: missing refs.tensionId\n  on a respond signal, no matching outbox file, file/envelope id\n  mismatch, wrong subject kind, wrong recipient.\n- Closes the soundness gap the Tier 3 walkthrough surfaced — an\n  attacker who is recognized cannot fabricate \"objections to\n  proposals\" by signing responses pointing at refs that don't\n  resolve. (The same shape will guard refs.proposalId when proposals\n  land.)\n\nTests: 226 passed (5 new in check.test.ts). End-to-end tension→respond\nsmoke run still verifies clean. No external API changes.\n\nCo-Authored-By: Claude Opus 4.7 <noreply@anthropic.com>",
-          "url": "https://github.com/murmurations-ai/flyway/commit/682f5c253d56d3f91f82d2a14e1bfc023a736946",
-          "committedAt": "2026-05-26T19:09:49Z"
-        },
-        {
-          "repo": "murmurations-ai/flyway",
-          "message": "docs: refresh the reviewer-facing surface to SHA d5ad56f\n\nExternal reviewers will be looking at this branch. The existing\nhow-flyway-works.{md,html} reflected SHA eec423c — eleven commits and\nfive wired tools ago. This commit closes the gap and adds a single\ndedicated status snapshot for reviewers.\n\nNew:\n- docs/status.md — markdown status dashboard: tool maturity (6/9 wired),\n  milestone timeline (S+0 → S+4 + review hardening), walkthrough\n  progression, ADR digest, cryptographic-properties matrix, open issues\n  organized by theme (19 across 4 themes), how-to-evaluate read list,\n  pending milestones.\n- docs/status.html — visual companion to status.md, matching the\n  established how-flyway-works aesthetic (Crimson Pro + IBM Plex,\n  paper/ink/canvas palette, hand-crafted SVG timeline) with all relative\n  links pointing at real walkthrough files. Single self-contained file,\n  1377 lines.\n\nRefreshed:\n- docs/architecture/how-flyway-works.md — full rewrite to SHA d5ad56f.\n  Adds sections for recognition, signal transport (ADR-0008), tension,\n  respond, antecedent verification (ADR-0009), and path-traversal\n  safety. Updates the tool-status table, state machines, contracts, and\n  invariants. New reading-order guide reflects six wired tools instead\n  of one. Reading further now points to the status pages.\n- docs/architecture/how-flyway-works.html — minimal in-place refresh:\n  SHA links bumped to d5ad56f, tool-surface table flipped to current\n  status, banner pointing to status.html and the now-canonical\n  markdown source. SVG diagrams preserved as-is (full HTML regeneration\n  out of scope).\n- README.md — status line bumped; new \"Where to start (for reviewers)\"\n  section points at status.md / status.html / how-flyway-works.md /\n  walkthroughs in that order.\n\nAll relative paths validated. No code changes; tests still pass at 221.\n\nCo-Authored-By: Claude Opus 4.7 <noreply@anthropic.com>",
-          "url": "https://github.com/murmurations-ai/flyway/commit/b76ba44afe0245d819f10845628d9c997ba0e303",
-          "committedAt": "2026-05-25T21:59:09Z"
-        },
-        {
-          "repo": "murmurations-ai/flyway",
-          "message": "docs: accept ADR-0009 (antecedent verification before signing)\n\nCaptures the load-bearing invariant that surfaced in the architecture\nreview: a signer never signs an attestation over an unverified\nantecedent artifact, and the verifying key is the recognition-time\ncached copy — not anything freshly read from a peer-controlled path.\n\nThe rule lives in core, at the signing primitive itself, so adapters\ncan't skip it. createTensionResponse is the first primitive built\nunder this rule (S+4 + 2a2ac16). recognizePeer pre-dates the ADR\nbut conforms by accident. Future flyway_propose, proposal-response,\nand exit will inherit the structure from their function signature.\n\nCo-Authored-By: Claude Opus 4.7 <noreply@anthropic.com>",
-          "url": "https://github.com/murmurations-ai/flyway/commit/d5ad56f83ecf4116cdc44b16a4f2ad00c3c23cca",
-          "committedAt": "2026-05-25T21:35:17Z"
-        },
-        {
-          "repo": "murmurations-ai/flyway",
-          "message": "refactor(security+core+cli+mcp): act on architecture, TS, and security review of S+3/S+4\n\nThree independent review agents reviewed the S+3 (flyway_tension) and\nS+4 (flyway_respond) milestones. This commit implements every blocker\nand important-severity finding; deferred items are noted at the end\nof this message.\n\nSecurity hardening (security review)\n- SEC-1 (HIGH): peerCachePathSegments accepted '..', '/', '\\\\', NUL,\n  empty segments. A peer who controls their .well-known/did.json could\n  publish 'did:web:host:..:..:tmp:pwn' and coerce outbox/inbox writes\n  outside the intended subtree. Now rejects any segment that is empty,\n  '.', '..', or contains characters outside [A-Za-z0-9._-]. 8 new\n  traversal-rejection tests in recognize.test.ts.\n- SEC-2 (HIGH) / ARCH-7: createTensionResponse and runRespond verified\n  the subject signature against a freshly-read peer DID document from\n  <peerRepoPath>/.well-known/did.json — attacker-controllable. Subject\n  verification has moved into core (see ADR-0009) and adapters now\n  load the recognition-time cached copy from\n  flyway/peers/<segments>/did.json. New core checks: kind match, id\n  match, sender match, DID-doc binding, signature verify. 6 new tests\n  in respond.test.ts including a concrete confused-deputy simulation.\n- SEC-3 (MEDIUM): flyway_check now flags signals whose sentAt predates\n  the peer's recognizedAt — blocks the \"drop a forged signal, then\n  recognize later\" retroactive-validation attack. validCount tightened\n  to require zero per-signal issues.\n- SEC-4 (MEDIUM): writeSignalFile used a non-atomic\n  existsSync→read→write sequence. Switched to writeFileSync(flag:'wx')\n  + EEXIST handling — closes the TOCTOU window where two writers\n  could both pass the existence check.\n\nStructural cleanup (architecture + TS reviews)\n- ARCH-2 / KIE-1+2: collectYamlFiles and findInboxSignalById lifted\n  into core/signal.ts. Removes the verbatim duplication between\n  core/check.ts and cli/respond.ts.\n- KIE-5: getPrimaryVerificationKey helper in core/init.ts; replaces\n  the duplicated `verificationMethod[0]!` non-null assertions in\n  cli/tension.ts and cli/respond.ts with a descriptive error path.\n- KIE-3: bin/flyway.ts now imports TENSION_DECISIONS from core, uses\n  a proper `isTensionDecision` type guard, and drops the `as` cast.\n- KIE-4: MCP handleRespond does a minimal shape check on\n  subjectEnvelope before casting (catches missing id/from/kind/\n  signature at the boundary with a useful error).\n- KIE-7: TensionResponseRefs alias exported from core so MCP and core\n  share the type.\n- KIE-10: respond.test.ts replaces a dynamic `await import('node:fs')`\n  with a static top-of-file import.\n- ARCH-5: dropped the peerCachePathSegments re-export from\n  cli/respond.ts (smell; callers should depend on core directly).\n\nDocumentation\n- ADR-0009 committed separately documents the antecedent-verification\n  invariant the review surfaced. ADR index README updated to also\n  list 0007 / 0008 / 0009.\n\nTests: 221 passed (138 core, 9 agent, 16 mcp, 58 cli) — up from 207.\nEnd-to-end tension→acknowledge round-trip still verifies.\n\nDeferred to issues (not in this commit):\n  ARCH-6 — handleRespond kind-dispatcher refactor (wait for proposals)\n  KIE-6  — sync vs async fs policy decision\n  KIE-8  — imperative-tone error messages\n  KIE-9  — same-id collision behavior documentation\n  KIE-11 — whitespace policy on body fields\n  SEC-5  — peerRepoPath recognition-time match (footgun, not security)\n\nCo-Authored-By: Claude Opus 4.7 <noreply@anthropic.com>",
-          "url": "https://github.com/murmurations-ai/flyway/commit/2a2ac16fe9d67a6c5baabc3bf739cea49f56ff19",
-          "committedAt": "2026-05-25T21:35:09Z"
-        }
-      ],
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
@@ -351,40 +146,9 @@
     {
       "id": "newman5",
       "name": "Newman",
-      "lastActivityAt": "2026-05-30T12:41:54Z",
-      "commitsThisWeek": 9,
-      "recentCommits": [
-        {
-          "repo": "Newman5/builder-season-playbook",
-          "message": "Update builder activity data",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/0024f629b1975489271e5e6197b74529bcce8e51",
-          "committedAt": "2026-05-30T12:41:54Z"
-        },
-        {
-          "repo": "Newman5/builder-season-playbook",
-          "message": "Update builder activity data",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/1f3dd669230c418053a7ac4b5c999700e4ea521b",
-          "committedAt": "2026-05-29T13:28:35Z"
-        },
-        {
-          "repo": "Newman5/builder-season-playbook",
-          "message": "Update builder activity data",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/7342e5b9e640d06ab7ad4a03c4e555bcb70161c9",
-          "committedAt": "2026-05-28T13:36:17Z"
-        },
-        {
-          "repo": "Newman5/builder-season-playbook",
-          "message": "Add script to regenerate work breakdown from GitHub Project and update markdown file\n\n- Created `scripts/update_work_breakdown.py` to automate the regeneration of `work-breakdown.md` from GitHub Project items.\n- Updated `templates/admins/work-breakdown.md` to reflect the current project structure and details.\n- Added a new blog post discussing the implementation of project management using Kanban and the integration of AI tools.",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/718e51a28c470c119470e1a218158e4e3052c799",
-          "committedAt": "2026-05-28T02:55:59Z"
-        },
-        {
-          "repo": "Newman5/builder-season-playbook",
-          "message": "Merge branch 'main' of https://github.com/Newman5/builder-season-playbook",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/3778a02b0324f5c48c07baffebedf316279da3f2",
-          "committedAt": "2026-05-28T02:12:23Z"
-        }
-      ],
+      "lastActivityAt": "2026-05-31T12:46:41Z",
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
@@ -407,60 +171,16 @@
       "id": "haulink",
       "name": "Abdulazeez",
       "lastActivityAt": "2026-05-25T14:58:27Z",
-      "commitsThisWeek": 2,
-      "recentCommits": [
-        {
-          "repo": "FoladDTechie/Haulink",
-          "message": "Merge pull request #7 from FoladDTechie/HAUL-22-AZB\n\nfeat: week 5 — status updates, operator flow, realtime tracking, even…",
-          "url": "https://github.com/FoladDTechie/Haulink/commit/7d75648628ecedb4badb817afe11077b856029f8",
-          "committedAt": "2026-05-25T14:58:27Z"
-        },
-        {
-          "repo": "FoladDTechie/Haulink",
-          "message": "feat: week 5 — status updates, operator flow, realtime tracking, event history",
-          "url": "https://github.com/FoladDTechie/Haulink/commit/e76ec8e0d602fee60182b14ba1faea949ee7e6ae",
-          "committedAt": "2026-05-25T14:51:43Z"
-        }
-      ],
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
       "id": "opa007i",
       "name": "Opa",
       "lastActivityAt": "2026-05-28T13:22:27Z",
-      "commitsThisWeek": 5,
-      "recentCommits": [
-        {
-          "repo": "opa1/the-quest",
-          "message": "feat: wallet authentication via CIP-8 signature, wallet and X sign-in paths",
-          "url": "https://github.com/opa1/the-quest/commit/6ae1ace6f2c5b2a06f9000f68abba305df301c5b",
-          "committedAt": "2026-05-28T13:22:27Z"
-        },
-        {
-          "repo": "opa1/the-quest",
-          "message": "docs: add README and .env.example for hackathon submission",
-          "url": "https://github.com/opa1/the-quest/commit/8cf8ae0d7576c6731cf2b97cdad2749eccab5f9a",
-          "committedAt": "2026-05-26T01:32:45Z"
-        },
-        {
-          "repo": "opa1/the-quest",
-          "message": "1.0.1",
-          "url": "https://github.com/opa1/the-quest/commit/ef5b8020ff62bb607305cc711ada4de35983f807",
-          "committedAt": "2026-05-26T01:12:33Z"
-        },
-        {
-          "repo": "opa1/the-quest",
-          "message": "refactor: realm feed — recent missions + realtime activity log\n\n- Simplify feed store to missions-only (4 recent open tasks, 60s cache)\n- Add lib/utils/activity.ts — normalized activity event fetcher\n- Add RealmActivityLog — realtime claimed/completed log (right column)\n- Add RecentMissions — 4 BountyCards with banner + view all link\n- Stub FeedList and FeedFilterBar (files kept, return null)\n- Add BannerPlaceholder (replaced with bounty-banner.webp)\n- Remove ActiveMissionBanner from realm layout (file kept)\n- Add ada_reward to FeedEvent type\n- Fix TaskActionPanel hydration with mounted guard\n- Fix TimeAgo suppressHydrationWarning\n- Fix approveWork — admin client for credits, claimer user_id in log",
-          "url": "https://github.com/opa1/the-quest/commit/71e502f9bed735dc4a98b613dbe32a650d354e63",
-          "committedAt": "2026-05-26T01:07:35Z"
-        },
-        {
-          "repo": "opa1/the-quest",
-          "message": "feat: submit work, review flow, proof system, ada reward, proof type",
-          "url": "https://github.com/opa1/the-quest/commit/909ddeaebed944c72cc8ba2e7b6cc60a1f08b814",
-          "committedAt": "2026-05-25T09:58:04Z"
-        }
-      ],
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
@@ -475,132 +195,32 @@
       "id": "muhammedyuguda",
       "name": "Muhammed",
       "lastActivityAt": "2026-05-28T14:44:20Z",
-      "commitsThisWeek": 1,
-      "recentCommits": [
-        {
-          "repo": "Yuguda999/devmemory",
-          "message": "feat: Phase 3-5 — billing quota, REST API polish, CI, and PyPI publication prep\n\nPhase 3 — Billing & Quota Enforcement\n- billing/quota.py: TierQuota, QuotaExceededError, check_project/session/block_quota\n- Tier limits: Free (3/10/500), Pro (25/100/5000), Team (unlimited)\n- Quota gates wired into save_context, start_session MCP tools\n- list_projects_tool now returns quota metadata\n- 21 new tests in tests/test_quota.py\n\nPhase 4 — REST API Polish\n- GET /projects, GET|PATCH /sessions, GET /sessions/{id}/blocks\n- DELETE /context-blocks/{id}, GET /billing/status\n- Full Pydantic v2 schemas; OpenAPI docs at /docs and /redoc\n- 18 new TestClient tests in tests/test_rest_api.py\n\nPhase 5 — Publication & CI\n- pyproject.toml: Beta status, project.urls, Typing::Typed classifier\n- README.md: full docs with Claude/Cursor/Windsurf MCP config examples\n- CHANGELOG.md: v0.1.0 release notes\n- .github/workflows/ci.yml: test on 3.10/3.11/3.12, lint, build\n\nTotal: 208 tests passing",
-          "url": "https://github.com/Yuguda999/devmemory/commit/6065dc243c75e0fe11081e8221cde099b944ca5f",
-          "committedAt": "2026-05-28T14:44:20Z"
-        }
-      ],
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
       "id": "juanitajaramillo",
       "name": "Juanita",
       "lastActivityAt": "2026-05-29T16:21:30Z",
-      "commitsThisWeek": 5,
-      "recentCommits": [
-        {
-          "repo": "JuanitaJaramill/cardano-insights-lab",
-          "message": "Update README.md",
-          "url": "https://github.com/JuanitaJaramill/cardano-insights-lab/commit/0d3df342cceb7354b3bbe7879d6e4bea4234904a",
-          "committedAt": "2026-05-29T16:21:30Z"
-        },
-        {
-          "repo": "JuanitaJaramill/cardano-insights-lab",
-          "message": "Update README.md",
-          "url": "https://github.com/JuanitaJaramill/cardano-insights-lab/commit/ade97f0b3fa1675cd5caac1a6b3832f2592fd5fd",
-          "committedAt": "2026-05-29T16:19:07Z"
-        },
-        {
-          "repo": "JuanitaJaramill/cardano-insights-lab",
-          "message": "Update README.md",
-          "url": "https://github.com/JuanitaJaramill/cardano-insights-lab/commit/f4ebf8cc60953f61182f68bfb70345bd130ca8c8",
-          "committedAt": "2026-05-29T16:17:42Z"
-        },
-        {
-          "repo": "JuanitaJaramill/cardano-insights-lab",
-          "message": "Update page.tsx\n\nBuild first interactive case map flow",
-          "url": "https://github.com/JuanitaJaramill/cardano-insights-lab/commit/411d3f320245a190068ae5bf911812bc8efbe024",
-          "committedAt": "2026-05-29T15:53:19Z"
-        },
-        {
-          "repo": "JuanitaJaramill/cardano-insights-lab",
-          "message": "Update README.md\n\nAdd Week 4 beta app update",
-          "url": "https://github.com/JuanitaJaramill/cardano-insights-lab/commit/d6caae4ad759fbb8162d7faa11299a436ba1475f",
-          "committedAt": "2026-05-26T14:25:08Z"
-        }
-      ],
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
       "id": "kamalaliyu",
       "name": "Kamal Aliyu",
       "lastActivityAt": "2026-05-28T16:50:00Z",
-      "commitsThisWeek": 20,
-      "recentCommits": [
-        {
-          "repo": "kamal-ogtl/cogikids",
-          "message": "docs(utils): document the sounds module and soundEnabled gating",
-          "url": "https://github.com/kamal-ogtl/cogikids/commit/2bcbca648f9934acad6eefbb5c7842dbd66c1e50",
-          "committedAt": "2026-05-28T16:50:00Z"
-        },
-        {
-          "repo": "kamal-ogtl/cogikids",
-          "message": "docs(utils): document curriculumMapper node-lookup helpers",
-          "url": "https://github.com/kamal-ogtl/cogikids/commit/cc26d6408a4a60da1a0591f47f69ae51e362e616",
-          "committedAt": "2026-05-28T15:20:00Z"
-        },
-        {
-          "repo": "kamal-ogtl/cogikids",
-          "message": "docs(voice): document the microphone recorder module",
-          "url": "https://github.com/kamal-ogtl/cogikids/commit/3a93701cb36d9650279694b15845613ef31b4fc5",
-          "committedAt": "2026-05-28T14:00:00Z"
-        },
-        {
-          "repo": "kamal-ogtl/cogikids",
-          "message": "docs(utils): document xpCalculator XP and star-rating helpers",
-          "url": "https://github.com/kamal-ogtl/cogikids/commit/4990dd5f98fc8aecc449e38ab137890080fbcdb2",
-          "committedAt": "2026-05-28T12:40:00Z"
-        },
-        {
-          "repo": "kamal-ogtl/cogikids",
-          "message": "docs(store): add file-level documentation to useSettingsStore",
-          "url": "https://github.com/kamal-ogtl/cogikids/commit/65089ff36769ceb5c2cdbbcdec0e688bf82b44b8",
-          "committedAt": "2026-05-28T11:15:00Z"
-        }
-      ],
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
       "id": "alfreditodole",
       "name": "Alfred Itodole",
       "lastActivityAt": "2026-05-30T14:25:58Z",
-      "commitsThisWeek": 25,
-      "recentCommits": [
-        {
-          "repo": "sirxalfred/mosaic-cardano",
-          "message": "Merge pull request #1 from sirXalfred/feat/participate",
-          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/fa0c6f9fc9e8f479fa8d633c4ac2596658bbf3ac",
-          "committedAt": "2026-05-30T14:25:58Z"
-        },
-        {
-          "repo": "sirxalfred/mosaic-cardano",
-          "message": "feat(project): implement artifact analytics service hooks",
-          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/2f67a20964b275cf855e5e1354ce4bd186b7a6ad",
-          "committedAt": "2026-05-29T00:11:02Z"
-        },
-        {
-          "repo": "sirxalfred/mosaic-cardano",
-          "message": "feat: add artifact view page",
-          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/09d50c265f68a38d64a6891e07ddc0db3564ab0a",
-          "committedAt": "2026-05-29T00:10:13Z"
-        },
-        {
-          "repo": "sirxalfred/mosaic-cardano",
-          "message": "feat: addd utility function for conerting strings to titlecase",
-          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/72d41e9783f312a4e552082baac2de29308d371c",
-          "committedAt": "2026-05-28T13:03:34Z"
-        },
-        {
-          "repo": "sirxalfred/mosaic-cardano",
-          "message": "feat: add a app page container for reusing page layouts within the main app",
-          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/5232a6ed741256f74bb9a403bbb2be5d9fe4e58b",
-          "committedAt": "2026-05-28T13:02:15Z"
-        }
-      ],
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     }
   ]
