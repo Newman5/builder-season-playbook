@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-01T14:23:53Z",
+  "generatedAt": "2026-06-02T13:39:01Z",
   "weekStart": "2026-06-01T00:00:00Z",
   "weekEnd": "2026-06-07T23:59:59Z",
   "builders": [
@@ -30,9 +30,15 @@
     {
       "id": "gidhub",
       "name": "Gideon",
-      "lastActivityAt": "2026-06-01T09:21:04Z",
-      "commitsThisWeek": 2,
+      "lastActivityAt": "2026-06-01T23:49:25Z",
+      "commitsThisWeek": 3,
       "recentCommits": [
+        {
+          "repo": "0xGIDHUB/tixano",
+          "message": "Setup scanner to decode tickets qr",
+          "url": "https://github.com/0xGIDHUB/tixano/commit/1dce18416278d5987d793f5872ec2b18ffb6d4ab",
+          "committedAt": "2026-06-01T23:49:25Z"
+        },
         {
           "repo": "0xGIDHUB/tixano",
           "message": "Guest page update list, removed footer",
@@ -146,9 +152,16 @@
     {
       "id": "newman5",
       "name": "Newman",
-      "lastActivityAt": "2026-05-31T12:46:41Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-06-01T14:24:09Z",
+      "commitsThisWeek": 1,
+      "recentCommits": [
+        {
+          "repo": "Newman5/builder-season-playbook",
+          "message": "Update builder activity data",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/a7cf4e27123f7de468756d1da733549daf3e59fc",
+          "committedAt": "2026-06-01T14:24:09Z"
+        }
+      ],
       "error": null
     },
     {
