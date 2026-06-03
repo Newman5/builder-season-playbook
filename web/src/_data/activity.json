@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-05-27T13:33:49Z",
-  "weekStart": "2026-05-25T00:00:00Z",
-  "weekEnd": "2026-05-31T23:59:59Z",
+  "generatedAt": "2026-06-02T13:39:01Z",
+  "weekStart": "2026-06-01T00:00:00Z",
+  "weekEnd": "2026-06-07T23:59:59Z",
   "builders": [
     {
       "id": "mhizta",
       "name": "Mhizta",
-      "lastActivityAt": "2026-05-23T11:53:51Z",
+      "lastActivityAt": "2026-05-31T13:34:57Z",
       "commitsThisWeek": 0,
       "recentCommits": [],
       "error": null
@@ -30,38 +30,26 @@
     {
       "id": "gidhub",
       "name": "Gideon",
-      "lastActivityAt": "2026-05-27T10:02:16Z",
-      "commitsThisWeek": 10,
+      "lastActivityAt": "2026-06-01T23:49:25Z",
+      "commitsThisWeek": 3,
       "recentCommits": [
         {
           "repo": "0xGIDHUB/tixano",
-          "message": "Updated README.md, added FOLDER_STRUCTURE.md",
-          "url": "https://github.com/0xGIDHUB/tixano/commit/5351b01c793196d913383ec58e2c8dcc5e31e42c",
-          "committedAt": "2026-05-27T10:02:16Z"
+          "message": "Setup scanner to decode tickets qr",
+          "url": "https://github.com/0xGIDHUB/tixano/commit/1dce18416278d5987d793f5872ec2b18ffb6d4ab",
+          "committedAt": "2026-06-01T23:49:25Z"
         },
         {
           "repo": "0xGIDHUB/tixano",
-          "message": "Reworked events grids layout display format",
-          "url": "https://github.com/0xGIDHUB/tixano/commit/46e998cbfb27b11b1d5ab460a7d1c1cba711d37f",
-          "committedAt": "2026-05-26T18:59:01Z"
+          "message": "Guest page update list, removed footer",
+          "url": "https://github.com/0xGIDHUB/tixano/commit/7ac21d10fab39173691ee512219c402ad597852a",
+          "committedAt": "2026-06-01T09:21:04Z"
         },
         {
           "repo": "0xGIDHUB/tixano",
-          "message": "Redesigned pagination controls for tickets view",
-          "url": "https://github.com/0xGIDHUB/tixano/commit/15807acc4907b4c9adb45686e080e37eb3cd1d1d",
-          "committedAt": "2026-05-26T15:50:17Z"
-        },
-        {
-          "repo": "0xGIDHUB/tixano",
-          "message": "Moved edit event transaction validation to backend",
-          "url": "https://github.com/0xGIDHUB/tixano/commit/93fcae48c58755a66edc5e6540ab9551b4c95437",
-          "committedAt": "2026-05-26T15:30:26Z"
-        },
-        {
-          "repo": "0xGIDHUB/tixano",
-          "message": "Added payment gating to event edit",
-          "url": "https://github.com/0xGIDHUB/tixano/commit/bc9cc46e57462a1f2fcf027c9e3d103b809cfed7",
-          "committedAt": "2026-05-26T06:16:23Z"
+          "message": "Wallet auth for checkin page, ensures only events owners can access check in interface",
+          "url": "https://github.com/0xGIDHUB/tixano/commit/7c11e0955306895f7b6547fb799e4ed8f12c9ee0",
+          "committedAt": "2026-06-01T03:22:45Z"
         }
       ],
       "error": null
@@ -69,28 +57,15 @@
     {
       "id": "pmcorcoran",
       "name": "Paul Corcoran",
-      "lastActivityAt": "2026-05-26T16:30:23Z",
-      "commitsThisWeek": 2,
-      "recentCommits": [
-        {
-          "repo": "pmcorcoran/ada-battles",
-          "message": "Merge branch 'feat/hydra-keys' adds client hydra key gen",
-          "url": "https://github.com/pmcorcoran/ada-battles/commit/fa3329fb1c53f1b594151d0eddc2dc8600d9ebdd",
-          "committedAt": "2026-05-26T16:30:23Z"
-        },
-        {
-          "repo": "pmcorcoran/ada-battles",
-          "message": "added hydra key gen and fixed stale frontend/tsconfig",
-          "url": "https://github.com/pmcorcoran/ada-battles/commit/8e3e3c77416a6951bed803ac0e3944df7ebbfb9d",
-          "committedAt": "2026-05-26T16:25:47Z"
-        }
-      ],
+      "lastActivityAt": "2026-05-29T22:13:08Z",
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
       "id": "harrie",
       "name": "Harrie",
-      "lastActivityAt": "2026-05-22T19:49:23Z",
+      "lastActivityAt": "2026-05-30T18:57:19Z",
       "commitsThisWeek": 0,
       "recentCommits": [],
       "error": null
@@ -98,38 +73,14 @@
     {
       "id": "lewis",
       "name": "Lewis",
-      "lastActivityAt": "2026-05-26T02:53:28Z",
-      "commitsThisWeek": 7,
+      "lastActivityAt": "2026-06-01T09:17:24Z",
+      "commitsThisWeek": 1,
       "recentCommits": [
         {
           "repo": "lewis-nduati/Tracom-credentials",
-          "message": "fix: trigger access token ceremony on \"confirmed\" state\n\nGLOBAL_GENERAL_ACCESS_TOKEN_MINT has requiresDBUpdate: false, so the\ngateway never transitions past \"confirmed\" to \"updated\". The ceremony\nwas silently stalling — the onComplete callback only handled \"updated\"\nand \"failed\"/\"expired\", leaving the TX in a permanent \"confirming\" UI\nstate after on-chain confirmation.\n\nTwo-layer fix:\n1. onComplete now handles state === \"confirmed\" (covers the 30s stall\n   terminal fired by the watcher store when \"updated\" never arrives)\n2. New useEffect watches txStatus.state === \"confirmed\" directly for\n   immediate ceremony start — no need to wait for the stall timeout\n\nhasHandledSuccessRef guards both paths against double-triggering.\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>",
-          "url": "https://github.com/lewis-nduati/Tracom-credentials/commit/4e2f59fc731442707b2d796ed8d76d08501aeb63",
-          "committedAt": "2026-05-26T02:53:28Z"
-        },
-        {
-          "repo": "lewis-nduati/Tracom-credentials",
-          "message": "feat: full impeccable polish pass — layout, copy, UX, and TX reliability\n\n- Layout & spacing: dashboard, sidebar, mobile nav, course/project pages\n  redesigned with better rhythm, responsive breakpoints, and touch targets\n- Typography: sentence case throughout, no trailing !, removed AI filler\n  from all toast.success() and TX success copy\n- TX config: added celebrationDescription to 5 Moments of Commitment;\n  andamio-celebration respects prefers-reduced-motion via Framer Motion\n- Polling fallback: 429 rate limit handling with Retry-After backoff,\n  MAX_CONSECUTIVE_429S budget to prevent infinite loops\n- Manage learners: pending review banner + per-row Review button linking\n  to Teacher Dashboard with student deep-link (?student=alias)\n- Console.log cleanup across all TX components\n- credentials page: simplified layout, removed redundant wrappers\n- welcome-hero, account-details, course-card: layout and copy improvements\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>",
-          "url": "https://github.com/lewis-nduati/Tracom-credentials/commit/b4f53349128e126a33eada3b7f5844a75afcf04d",
-          "committedAt": "2026-05-25T16:04:04Z"
-        },
-        {
-          "repo": "lewis-nduati/Tracom-credentials",
-          "message": "feat: redesign sign-in flow and polish app-wide MVP issues\n\n- Replace full-width social login buttons with icon tiles matching wallet\n  grid size; add \"get a wallet\" popover with Eternl, Lace, Vespr links\n- Two-column brand-navy layout on landing: branding left, sign-in right\n- Thread darkLayout prop from LandingHero → AccessTokenOnboarding →\n  RegistrationFlow so full-screen navy only applies on the landing page\n- Extract SignInOptions as shared component; simplify ConnectWalletButton\n\nPolish fixes:\n- first-login-card: remove duplicate \"Waiting for confirmation...\" text\n- connect-wallet-gate: fix capitalisation (\"Sign-in failed\", \"Signing in...\")\n- app/(app)/error.tsx: replace raw h1/p with AndamioHeading/AndamioText\n- credentials/page.tsx: remove rounded-full icon circle from summary card\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>",
-          "url": "https://github.com/lewis-nduati/Tracom-credentials/commit/d571795b0d905b230200f05f9beae821f0c7500c",
-          "committedAt": "2026-05-25T12:17:18Z"
-        },
-        {
-          "repo": "lewis-nduati/Tracom-credentials",
-          "message": "feat: add branded error and not-found pages\n\nAdd root-level 404 (brand-navy full-screen with ghosted number),\nupdate in-app 404 and error boundaries to match app aesthetic,\nand improve global-error fallback with inline brand styles.\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>",
-          "url": "https://github.com/lewis-nduati/Tracom-credentials/commit/30b593a6f736bbc8b41cf2152da4a9ee6022c89d",
-          "committedAt": "2026-05-25T10:44:11Z"
-        },
-        {
-          "repo": "lewis-nduati/Tracom-credentials",
-          "message": "refactor(onboard): redesign access token onboarding flow\n\nRemove icon circles from all card states, add overline step labels,\nreplace blockchain jargon with plain language, wrap inline loading\nstates in card containers, and rename \"Mint Access Token\" to\n\"Create Identity\" throughout the registration flow.\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>",
-          "url": "https://github.com/lewis-nduati/Tracom-credentials/commit/e773ca28c2f5532e4ba384f5733d00663d648436",
-          "committedAt": "2026-05-25T09:53:41Z"
+          "message": "feat(projects): scope the browse page to one owner alias\n\nThe projects page showed every project on the shared Andamio network.\nAdd NEXT_PUBLIC_PROJECT_OWNER and filter useProjects to that owner alias,\nmirroring the existing NEXT_PUBLIC_COURSE_OWNER filter on courses. Unset,\nit falls back to showing everything, so nothing breaks until configured.\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>",
+          "url": "https://github.com/lewis-nduati/Tracom-credentials/commit/ff3ad1f61d692d35683f53f7eb0c6608d28638bc",
+          "committedAt": "2026-06-01T09:17:24Z"
         }
       ],
       "error": null
@@ -137,7 +88,7 @@
     {
       "id": "armanabid",
       "name": "Abid",
-      "lastActivityAt": "2026-05-23T20:50:42Z",
+      "lastActivityAt": "2026-05-30T23:06:23Z",
       "commitsThisWeek": 0,
       "recentCommits": [],
       "error": null
@@ -145,7 +96,7 @@
     {
       "id": "gamechanger",
       "name": "Adriano",
-      "lastActivityAt": "2026-05-17T07:05:57Z",
+      "lastActivityAt": "2026-05-29T22:20:31Z",
       "commitsThisWeek": 0,
       "recentCommits": [],
       "error": null
@@ -153,82 +104,25 @@
     {
       "id": "yungslaiz",
       "name": "Blessed David",
-      "lastActivityAt": "2026-05-24T15:42:20Z",
-      "commitsThisWeek": 2,
-      "recentCommits": [
-        {
-          "repo": "YungSlaiz53/GNXT",
-          "message": "Week 8: integrated Cardano wallet support (Nami/Eternl) and implemented a safe minting function for the  token on the Pre‑prod testnet.",
-          "url": "https://github.com/YungSlaiz53/GNXT/commit/293cf5561288b8dacc3946672c415edb8f92b051",
-          "committedAt": "2026-05-24T15:42:20Z"
-        },
-        {
-          "repo": "YungSlaiz53/GNXT",
-          "message": "Week 7: initialize project scaffold with authentication, routing, and core pages",
-          "url": "https://github.com/YungSlaiz53/GNXT/commit/dc2167032aba6ee721a92876c94dcef17e904bd5",
-          "committedAt": "2026-05-14T21:06:15Z"
-        }
-      ],
+      "lastActivityAt": "2026-05-30T00:09:37Z",
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
       "id": "maxalexweber",
       "name": "Maximilian",
-      "lastActivityAt": "2026-05-26T16:57:50Z",
-      "commitsThisWeek": 2,
-      "recentCommits": [
-        {
-          "repo": "maxalexweber1/CHAINFEED",
-          "message": "feat: add structured logging and health monitoring for agents\n\n- Implemented a pino-based structured logger in agents/shared/log.ts for consistent logging across agents, supporting both pretty and JSON formats based on environment variables.\n- Created a heartbeat mechanism in agents/watcher/heartbeat.ts to signal liveness for the health endpoint, ensuring graceful degradation in case of write failures.\n- Added comprehensive documentation in docs/AGENT_GUIDE.md detailing the usage of the MCP server and reference agents, including setup instructions and agent patterns.\n- Introduced unit tests for health report generation in scripts/test-health.ts, ensuring robust health checks for database, adapters, and watcher components.\n- Developed a health report builder in srv/lib/health.ts that aggregates statuses from database, adapters, and watcher, providing a unified health status.\n- Established a separate logging utility in srv/lib/log.ts for non-CAP code, ensuring consistent logging practices across different modules.",
-          "url": "https://github.com/maxalexweber1/CHAINFEED/commit/41972985f9e2a4a68be25f2e6f9a6ba7e7d3bdf9",
-          "committedAt": "2026-05-26T16:57:50Z"
-        },
-        {
-          "repo": "maxalexweber1/CHAINFEED",
-          "message": "feat: implement stable watcher with alerting sinks for Discord and Telegram\n\n- Add main watcher logic to poll stable assessments and handle alerts.\n- Implement state management for persisting last observations.\n- Create sinks for outputting alerts to stdout, Discord, and Telegram.\n- Add unit tests for the watcher diff logic and sinks functionality.\n- Ensure graceful shutdown and error handling in the watcher.",
-          "url": "https://github.com/maxalexweber1/CHAINFEED/commit/73ddcf5722732ae8bf6272785189edb843ef1e0a",
-          "committedAt": "2026-05-25T17:27:19Z"
-        }
-      ],
+      "lastActivityAt": "2026-05-28T20:22:32Z",
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
       "id": "murmurations",
       "name": "Nori",
       "lastActivityAt": "2026-05-27T04:49:34Z",
-      "commitsThisWeek": 9,
-      "recentCommits": [
-        {
-          "repo": "murmurations-ai/flyway",
-          "message": "feat(core+cli+mcp): S+5a — flyway_propose + proposal responses (Session A)\n\nFlagship sender wired end-to-end. Two independent murmurations can now\nrun a full S3 §IV.1.9–1.10 consent cycle: tension → proposal(driver) →\nobject → proposal(draft) → object → proposal(refinement) → accept,\nwith every step signed under its kind-specific domain, every antecedent\nverified per ADR-0009, and every response carrying refs that resolve\nto a real prior signal in the recipient's outbox.\n\nCore\n- createProposal({ from, to, body, signer, tensionAntecedent?,\n  proposalAntecedent? }): discriminated body for directive / project /\n  agreement types. type='agreement' validates against\n  FLYWAY_AGREEMENT_SCHEMA (sender + recipient must appear in\n  participants, schemaVersion match, decisionRule enum, all 11\n  required fields). Stage validation enforces driver →\n  [driver/requirements/draft/final], requirements → [requirements/\n  draft/refinement/final], draft → [draft/refinement/final],\n  refinement → [refinement/final], final is terminal. previousStageId\n  required for stage='refinement'. Refines DOMAIN_PROPOSAL. Closes #8.\n- ProposalRequirement structured items required at stage='requirements'\n  (id, description, mustOrShould?, rationale?). Closes #6.\n- ADR-0009 antecedent verification on both tensionAntecedent and\n  proposalAntecedent (kind, id, sender, DID-doc binding, signature).\n- createProposalResponse({ subjectEnvelope: ProposalEnvelope, ... }):\n  decisions accept/object/exit; reason required for object/exit;\n  concernsToRecord first-class field (closes #3, #15). ADR-0009\n  verification on prior proposal.\n- FLYWAY_AGREEMENT_SCHEMA extended with optional `trigger` and\n  `acceptanceCriteria` (closes #7).\n- flyway_check verifyRefsResolve now handles refs.proposalId in\n  addition to refs.tensionId (catches the regression the new senders\n  introduced).\n\nCLI\n- runPropose loads identity, recognized-peer trust gate, resolves\n  tension/proposal antecedents from outbox or inbox, loads the cached\n  peer DID document, calls createProposal, writes outbox first,\n  delivers to recipient inbox.\n- runRespond now dispatches on subject.kind: tension subjects route\n  through createTensionResponse; proposal subjects through\n  createProposalResponse. Cross-flag validation: --concerns-to-record\n  refused on tensions, --transfer-to refused on proposals.\n- `flyway propose` verb with --type / --title / --body / --stage /\n  --previous-stage-id / --promote-tension-id / --agreement-file /\n  --requirements-file. `flyway respond` extended with --concern\n  (repeatable).\n\nMCP\n- handleProposal: stateless; caller supplies own identity, peerDid,\n  body, and optional antecedents (each as { envelope, senderDidDocument }).\n  Returns signed envelope; caller persists.\n- handleRespond dispatcher already routed by subject.kind; the proposal\n  branch now invokes handleProposalResponse instead of returning\n  not-yet-wired.\n\nTests: 289 passed across the workspace (up from 226).\n  core:  188 (+45: 32 propose + 13 response/coverage)\n  cli:   72  (+14: 9 propose + 5 respond proposal-branch)\n  mcp:   20  (+4: propose + proposal-response)\n\nSmoke run: full A↔B consent cycle (tension → object → draft → object →\nrefinement → accept) — 8 signed envelopes, 0 issues from flyway_check\non either side.\n\nSession B (next) — materializeAgreement primitive that produces a\nbyte-identical co-signed agreement file on both repos when an\nagreement proposal reaches stage='final' + accepted; Tier 4 walkthrough\nwith verbatim transcript; status / how-flyway-works refresh.\n\nCloses #3, #6, #7, #8, #15. References #2 (tension promotion now\nexists; full promotion semantics including the \"tension was raised by\nthe responder\" path will land with Session B's walkthrough).\n\nCo-Authored-By: Claude Opus 4.7 <noreply@anthropic.com>",
-          "url": "https://github.com/murmurations-ai/flyway/commit/080aaff427eaaf040ea937bdfa83bd6f7520da70",
-          "committedAt": "2026-05-27T04:49:34Z"
-        },
-        {
-          "repo": "murmurations-ai/flyway",
-          "message": "refactor(mcp)+feat(core): pre-S+5 cleanup — kind-dispatch handleRespond, verify refs.tensionId\n\nTwo small pre-work changes to land cleaner ground for the S+5\nflyway_propose milestone:\n\nhandleRespond → kind-dispatcher (closes #9)\n- Splits handleRespond into a thin dispatcher (validates shape, reads\n  subject.kind) and handleTensionResponse (the existing tension logic).\n- The proposal branch now returns an informative errorResult specifying\n  what's not yet wired; adding it later is a single new case rather\n  than a rewrite of the existing function.\n- Behavior unchanged for tension responses; 16 MCP tests still green.\n\nflyway_check verifies refs.tensionId (closes #14, addresses G7)\n- For any respond signal, cross-references refs.tensionId against\n  flyway/outbox/<responder-segments>/<id>.yaml to ensure the\n  referenced tension actually exists in our outbox AND was sent by\n  us TO the responder AND has kind='tension'.\n- New verifyRefsResolve helper in core/check.ts; uses signalOutboxPath\n  from signal.ts. Adds per-signal issues for: missing refs.tensionId\n  on a respond signal, no matching outbox file, file/envelope id\n  mismatch, wrong subject kind, wrong recipient.\n- Closes the soundness gap the Tier 3 walkthrough surfaced — an\n  attacker who is recognized cannot fabricate \"objections to\n  proposals\" by signing responses pointing at refs that don't\n  resolve. (The same shape will guard refs.proposalId when proposals\n  land.)\n\nTests: 226 passed (5 new in check.test.ts). End-to-end tension→respond\nsmoke run still verifies clean. No external API changes.\n\nCo-Authored-By: Claude Opus 4.7 <noreply@anthropic.com>",
-          "url": "https://github.com/murmurations-ai/flyway/commit/682f5c253d56d3f91f82d2a14e1bfc023a736946",
-          "committedAt": "2026-05-26T19:09:49Z"
-        },
-        {
-          "repo": "murmurations-ai/flyway",
-          "message": "docs: refresh the reviewer-facing surface to SHA d5ad56f\n\nExternal reviewers will be looking at this branch. The existing\nhow-flyway-works.{md,html} reflected SHA eec423c — eleven commits and\nfive wired tools ago. This commit closes the gap and adds a single\ndedicated status snapshot for reviewers.\n\nNew:\n- docs/status.md — markdown status dashboard: tool maturity (6/9 wired),\n  milestone timeline (S+0 → S+4 + review hardening), walkthrough\n  progression, ADR digest, cryptographic-properties matrix, open issues\n  organized by theme (19 across 4 themes), how-to-evaluate read list,\n  pending milestones.\n- docs/status.html — visual companion to status.md, matching the\n  established how-flyway-works aesthetic (Crimson Pro + IBM Plex,\n  paper/ink/canvas palette, hand-crafted SVG timeline) with all relative\n  links pointing at real walkthrough files. Single self-contained file,\n  1377 lines.\n\nRefreshed:\n- docs/architecture/how-flyway-works.md — full rewrite to SHA d5ad56f.\n  Adds sections for recognition, signal transport (ADR-0008), tension,\n  respond, antecedent verification (ADR-0009), and path-traversal\n  safety. Updates the tool-status table, state machines, contracts, and\n  invariants. New reading-order guide reflects six wired tools instead\n  of one. Reading further now points to the status pages.\n- docs/architecture/how-flyway-works.html — minimal in-place refresh:\n  SHA links bumped to d5ad56f, tool-surface table flipped to current\n  status, banner pointing to status.html and the now-canonical\n  markdown source. SVG diagrams preserved as-is (full HTML regeneration\n  out of scope).\n- README.md — status line bumped; new \"Where to start (for reviewers)\"\n  section points at status.md / status.html / how-flyway-works.md /\n  walkthroughs in that order.\n\nAll relative paths validated. No code changes; tests still pass at 221.\n\nCo-Authored-By: Claude Opus 4.7 <noreply@anthropic.com>",
-          "url": "https://github.com/murmurations-ai/flyway/commit/b76ba44afe0245d819f10845628d9c997ba0e303",
-          "committedAt": "2026-05-25T21:59:09Z"
-        },
-        {
-          "repo": "murmurations-ai/flyway",
-          "message": "docs: accept ADR-0009 (antecedent verification before signing)\n\nCaptures the load-bearing invariant that surfaced in the architecture\nreview: a signer never signs an attestation over an unverified\nantecedent artifact, and the verifying key is the recognition-time\ncached copy — not anything freshly read from a peer-controlled path.\n\nThe rule lives in core, at the signing primitive itself, so adapters\ncan't skip it. createTensionResponse is the first primitive built\nunder this rule (S+4 + 2a2ac16). recognizePeer pre-dates the ADR\nbut conforms by accident. Future flyway_propose, proposal-response,\nand exit will inherit the structure from their function signature.\n\nCo-Authored-By: Claude Opus 4.7 <noreply@anthropic.com>",
-          "url": "https://github.com/murmurations-ai/flyway/commit/d5ad56f83ecf4116cdc44b16a4f2ad00c3c23cca",
-          "committedAt": "2026-05-25T21:35:17Z"
-        },
-        {
-          "repo": "murmurations-ai/flyway",
-          "message": "refactor(security+core+cli+mcp): act on architecture, TS, and security review of S+3/S+4\n\nThree independent review agents reviewed the S+3 (flyway_tension) and\nS+4 (flyway_respond) milestones. This commit implements every blocker\nand important-severity finding; deferred items are noted at the end\nof this message.\n\nSecurity hardening (security review)\n- SEC-1 (HIGH): peerCachePathSegments accepted '..', '/', '\\\\', NUL,\n  empty segments. A peer who controls their .well-known/did.json could\n  publish 'did:web:host:..:..:tmp:pwn' and coerce outbox/inbox writes\n  outside the intended subtree. Now rejects any segment that is empty,\n  '.', '..', or contains characters outside [A-Za-z0-9._-]. 8 new\n  traversal-rejection tests in recognize.test.ts.\n- SEC-2 (HIGH) / ARCH-7: createTensionResponse and runRespond verified\n  the subject signature against a freshly-read peer DID document from\n  <peerRepoPath>/.well-known/did.json — attacker-controllable. Subject\n  verification has moved into core (see ADR-0009) and adapters now\n  load the recognition-time cached copy from\n  flyway/peers/<segments>/did.json. New core checks: kind match, id\n  match, sender match, DID-doc binding, signature verify. 6 new tests\n  in respond.test.ts including a concrete confused-deputy simulation.\n- SEC-3 (MEDIUM): flyway_check now flags signals whose sentAt predates\n  the peer's recognizedAt — blocks the \"drop a forged signal, then\n  recognize later\" retroactive-validation attack. validCount tightened\n  to require zero per-signal issues.\n- SEC-4 (MEDIUM): writeSignalFile used a non-atomic\n  existsSync→read→write sequence. Switched to writeFileSync(flag:'wx')\n  + EEXIST handling — closes the TOCTOU window where two writers\n  could both pass the existence check.\n\nStructural cleanup (architecture + TS reviews)\n- ARCH-2 / KIE-1+2: collectYamlFiles and findInboxSignalById lifted\n  into core/signal.ts. Removes the verbatim duplication between\n  core/check.ts and cli/respond.ts.\n- KIE-5: getPrimaryVerificationKey helper in core/init.ts; replaces\n  the duplicated `verificationMethod[0]!` non-null assertions in\n  cli/tension.ts and cli/respond.ts with a descriptive error path.\n- KIE-3: bin/flyway.ts now imports TENSION_DECISIONS from core, uses\n  a proper `isTensionDecision` type guard, and drops the `as` cast.\n- KIE-4: MCP handleRespond does a minimal shape check on\n  subjectEnvelope before casting (catches missing id/from/kind/\n  signature at the boundary with a useful error).\n- KIE-7: TensionResponseRefs alias exported from core so MCP and core\n  share the type.\n- KIE-10: respond.test.ts replaces a dynamic `await import('node:fs')`\n  with a static top-of-file import.\n- ARCH-5: dropped the peerCachePathSegments re-export from\n  cli/respond.ts (smell; callers should depend on core directly).\n\nDocumentation\n- ADR-0009 committed separately documents the antecedent-verification\n  invariant the review surfaced. ADR index README updated to also\n  list 0007 / 0008 / 0009.\n\nTests: 221 passed (138 core, 9 agent, 16 mcp, 58 cli) — up from 207.\nEnd-to-end tension→acknowledge round-trip still verifies.\n\nDeferred to issues (not in this commit):\n  ARCH-6 — handleRespond kind-dispatcher refactor (wait for proposals)\n  KIE-6  — sync vs async fs policy decision\n  KIE-8  — imperative-tone error messages\n  KIE-9  — same-id collision behavior documentation\n  KIE-11 — whitespace policy on body fields\n  SEC-5  — peerRepoPath recognition-time match (footgun, not security)\n\nCo-Authored-By: Claude Opus 4.7 <noreply@anthropic.com>",
-          "url": "https://github.com/murmurations-ai/flyway/commit/2a2ac16fe9d67a6c5baabc3bf739cea49f56ff19",
-          "committedAt": "2026-05-25T21:35:09Z"
-        }
-      ],
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
@@ -258,20 +152,14 @@
     {
       "id": "newman5",
       "name": "Newman",
-      "lastActivityAt": "2026-05-26T13:21:45Z",
-      "commitsThisWeek": 2,
+      "lastActivityAt": "2026-06-01T14:24:09Z",
+      "commitsThisWeek": 1,
       "recentCommits": [
         {
           "repo": "Newman5/builder-season-playbook",
           "message": "Update builder activity data",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/9bf0b8c25bee31ba7e97d89c1a4f10722bd74a78",
-          "committedAt": "2026-05-26T13:21:45Z"
-        },
-        {
-          "repo": "Newman5/builder-season-playbook",
-          "message": "Update builder activity data",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/623ec33376ab90f313efd5764a387861cf3f912b",
-          "committedAt": "2026-05-25T13:26:38Z"
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/a7cf4e27123f7de468756d1da733549daf3e59fc",
+          "committedAt": "2026-06-01T14:24:09Z"
         }
       ],
       "error": null
@@ -296,54 +184,16 @@
       "id": "haulink",
       "name": "Abdulazeez",
       "lastActivityAt": "2026-05-25T14:58:27Z",
-      "commitsThisWeek": 2,
-      "recentCommits": [
-        {
-          "repo": "FoladDTechie/Haulink",
-          "message": "Merge pull request #7 from FoladDTechie/HAUL-22-AZB\n\nfeat: week 5 — status updates, operator flow, realtime tracking, even…",
-          "url": "https://github.com/FoladDTechie/Haulink/commit/7d75648628ecedb4badb817afe11077b856029f8",
-          "committedAt": "2026-05-25T14:58:27Z"
-        },
-        {
-          "repo": "FoladDTechie/Haulink",
-          "message": "feat: week 5 — status updates, operator flow, realtime tracking, event history",
-          "url": "https://github.com/FoladDTechie/Haulink/commit/e76ec8e0d602fee60182b14ba1faea949ee7e6ae",
-          "committedAt": "2026-05-25T14:51:43Z"
-        }
-      ],
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
       "id": "opa007i",
       "name": "Opa",
-      "lastActivityAt": "2026-05-26T01:32:45Z",
-      "commitsThisWeek": 4,
-      "recentCommits": [
-        {
-          "repo": "opa1/the-quest",
-          "message": "docs: add README and .env.example for hackathon submission",
-          "url": "https://github.com/opa1/the-quest/commit/8cf8ae0d7576c6731cf2b97cdad2749eccab5f9a",
-          "committedAt": "2026-05-26T01:32:45Z"
-        },
-        {
-          "repo": "opa1/the-quest",
-          "message": "1.0.1",
-          "url": "https://github.com/opa1/the-quest/commit/ef5b8020ff62bb607305cc711ada4de35983f807",
-          "committedAt": "2026-05-26T01:12:33Z"
-        },
-        {
-          "repo": "opa1/the-quest",
-          "message": "refactor: realm feed — recent missions + realtime activity log\n\n- Simplify feed store to missions-only (4 recent open tasks, 60s cache)\n- Add lib/utils/activity.ts — normalized activity event fetcher\n- Add RealmActivityLog — realtime claimed/completed log (right column)\n- Add RecentMissions — 4 BountyCards with banner + view all link\n- Stub FeedList and FeedFilterBar (files kept, return null)\n- Add BannerPlaceholder (replaced with bounty-banner.webp)\n- Remove ActiveMissionBanner from realm layout (file kept)\n- Add ada_reward to FeedEvent type\n- Fix TaskActionPanel hydration with mounted guard\n- Fix TimeAgo suppressHydrationWarning\n- Fix approveWork — admin client for credits, claimer user_id in log",
-          "url": "https://github.com/opa1/the-quest/commit/71e502f9bed735dc4a98b613dbe32a650d354e63",
-          "committedAt": "2026-05-26T01:07:35Z"
-        },
-        {
-          "repo": "opa1/the-quest",
-          "message": "feat: submit work, review flow, proof system, ada reward, proof type",
-          "url": "https://github.com/opa1/the-quest/commit/909ddeaebed944c72cc8ba2e7b6cc60a1f08b814",
-          "committedAt": "2026-05-25T09:58:04Z"
-        }
-      ],
+      "lastActivityAt": "2026-05-28T13:22:27Z",
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
@@ -357,7 +207,7 @@
     {
       "id": "muhammedyuguda",
       "name": "Muhammed",
-      "lastActivityAt": "2026-05-23T02:57:00Z",
+      "lastActivityAt": "2026-05-28T14:44:20Z",
       "commitsThisWeek": 0,
       "recentCommits": [],
       "error": null
@@ -365,61 +215,23 @@
     {
       "id": "juanitajaramillo",
       "name": "Juanita",
-      "lastActivityAt": "2026-05-26T14:25:08Z",
-      "commitsThisWeek": 1,
-      "recentCommits": [
-        {
-          "repo": "JuanitaJaramill/cardano-insights-lab",
-          "message": "Update README.md\n\nAdd Week 4 beta app update",
-          "url": "https://github.com/JuanitaJaramill/cardano-insights-lab/commit/d6caae4ad759fbb8162d7faa11299a436ba1475f",
-          "committedAt": "2026-05-26T14:25:08Z"
-        }
-      ],
+      "lastActivityAt": "2026-05-29T16:21:30Z",
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
       "id": "kamalaliyu",
       "name": "Kamal Aliyu",
-      "lastActivityAt": "2026-05-27T15:50:00Z",
-      "commitsThisWeek": 6,
-      "recentCommits": [
-        {
-          "repo": "kamal-ogtl/cogikids",
-          "message": "fix: set splash screen background to dark color to avoid white flash on app launch",
-          "url": "https://github.com/kamal-ogtl/cogikids/commit/3995e2702c1d6f9474bfb8fce83cfdae94e6f7dd",
-          "committedAt": "2026-05-27T15:50:00Z"
-        },
-        {
-          "repo": "kamal-ogtl/cogikids",
-          "message": "chore: add package description for Nigerian kids learning app",
-          "url": "https://github.com/kamal-ogtl/cogikids/commit/3cfe07190be46cfd6a05a774775d1568aa5960a4",
-          "committedAt": "2026-05-27T13:35:00Z"
-        },
-        {
-          "repo": "kamal-ogtl/cogikids",
-          "message": "chore: set bundle identifiers and fix adaptive icon background color in app.json",
-          "url": "https://github.com/kamal-ogtl/cogikids/commit/73bd2ba86f42b5925c4e37659ad9a4a46a227eaa",
-          "committedAt": "2026-05-27T11:10:00Z"
-        },
-        {
-          "repo": "kamal-ogtl/cogikids",
-          "message": "chore: update .gitignore — exclude shell scripts and editor swap files",
-          "url": "https://github.com/kamal-ogtl/cogikids/commit/d2e1a9a36e19b80551eea6c8726819de0c28fae9",
-          "committedAt": "2026-05-27T09:20:00Z"
-        },
-        {
-          "repo": "kamal-ogtl/cogikids",
-          "message": "docs: update README to reflect actual stack — StyleSheet, Expo Speech, Nigerian languages",
-          "url": "https://github.com/kamal-ogtl/cogikids/commit/c7fa44febeb651fcd9b7952c9b44f21232baf20f",
-          "committedAt": "2026-05-27T07:45:00Z"
-        }
-      ],
+      "lastActivityAt": "2026-05-28T16:50:00Z",
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
       "id": "alfreditodole",
       "name": "Alfred Itodole",
-      "lastActivityAt": "2026-05-23T06:27:33Z",
+      "lastActivityAt": "2026-05-30T14:25:58Z",
       "commitsThisWeek": 0,
       "recentCommits": [],
       "error": null
