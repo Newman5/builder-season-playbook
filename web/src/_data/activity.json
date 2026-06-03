@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-02T13:39:01Z",
+  "generatedAt": "2026-06-03T14:00:41Z",
   "weekStart": "2026-06-01T00:00:00Z",
   "weekEnd": "2026-06-07T23:59:59Z",
   "builders": [
@@ -30,9 +30,15 @@
     {
       "id": "gidhub",
       "name": "Gideon",
-      "lastActivityAt": "2026-06-01T23:49:25Z",
-      "commitsThisWeek": 3,
+      "lastActivityAt": "2026-06-03T09:56:20Z",
+      "commitsThisWeek": 4,
       "recentCommits": [
+        {
+          "repo": "0xGIDHUB/tixano",
+          "message": "Secure tickets verification setup, check in flow completed",
+          "url": "https://github.com/0xGIDHUB/tixano/commit/827d38fe508ede419531b4e8a3245c42fbf00cde",
+          "committedAt": "2026-06-03T09:56:20Z"
+        },
         {
           "repo": "0xGIDHUB/tixano",
           "message": "Setup scanner to decode tickets qr",
@@ -152,9 +158,27 @@
     {
       "id": "newman5",
       "name": "Newman",
-      "lastActivityAt": "2026-06-01T14:24:09Z",
-      "commitsThisWeek": 1,
+      "lastActivityAt": "2026-06-03T12:45:05Z",
+      "commitsThisWeek": 4,
       "recentCommits": [
+        {
+          "repo": "Newman5/builder-season-playbook",
+          "message": "Merge branch 'main' of https://github.com/Newman5/builder-season-playbook",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/3e4a6a5187e01a28481d5779900a54d93a32cd18",
+          "committedAt": "2026-06-03T12:45:05Z"
+        },
+        {
+          "repo": "Newman5/builder-season-playbook",
+          "message": "Updating the example tweet planning doc and my project.yml, which will make the final presentation easier",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/8f6b81cb1027291a30862a7a2bdd4b581a617c4c",
+          "committedAt": "2026-06-03T12:45:03Z"
+        },
+        {
+          "repo": "Newman5/builder-season-playbook",
+          "message": "Update builder activity data",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/3fbfcfe06974d800a7d57605cc80b251cad38c3e",
+          "committedAt": "2026-06-02T13:39:18Z"
+        },
         {
           "repo": "Newman5/builder-season-playbook",
           "message": "Update builder activity data",
