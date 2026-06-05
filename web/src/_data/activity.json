@@ -209,6 +209,40 @@
           "committedAt": "2026-06-04T08:59:23Z"
         }
       ],
+      "lastActivityAt": "2026-06-04T17:04:53Z",
+      "commitsThisWeek": 12,
+      "recentCommits": [
+        {
+          "repo": "3rike12/3rike-Mobility_",
+          "message": "feat: implement fiat-to-crypto on-ramp via Paycrest integration for bank deposits",
+          "url": "https://github.com/3rike12/3rike-Mobility_/commit/a1969b6026c2934fe26c79736339f8ead82c1e5a",
+          "committedAt": "2026-06-04T17:04:53Z"
+        },
+        {
+          "repo": "3rike12/3rike-Mobility_",
+          "message": "feat: implement Paycrest bank off-ramp integration with Arbitrum treasury bridging and webhook support",
+          "url": "https://github.com/3rike12/3rike-Mobility_/commit/e159f269e9bcedb2139e38fe27113c74a06a5904",
+          "committedAt": "2026-06-04T16:18:49Z"
+        },
+        {
+          "repo": "3rike12/3rike-Mobility_",
+          "message": "feat: implement PIN verification for withdrawals, account registration, and secure settings updates.",
+          "url": "https://github.com/3rike12/3rike-Mobility_/commit/214e613fac8371bb41442f69bec8d3c7c7ced2a8",
+          "committedAt": "2026-06-04T10:05:48Z"
+        },
+        {
+          "repo": "3rike12/3rike-Mobility_",
+          "message": "feat: implement crypto withdrawal modal and backend support for on-chain transfers",
+          "url": "https://github.com/3rike12/3rike-Mobility_/commit/fdac4ecee4b6e184b85588c27053c7070641fa3c",
+          "committedAt": "2026-06-04T09:38:42Z"
+        },
+        {
+          "repo": "3rike12/3rike-Mobility_",
+          "message": "refactor: replace inline crypto deposit logic with ReceiveCrypto component",
+          "url": "https://github.com/3rike12/3rike-Mobility_/commit/609b3decfdc9e71fa62496870f2c4e44ca1aa5a1",
+          "committedAt": "2026-06-04T08:59:23Z"
+        }
+      ],
       "error": null
     },
     {
@@ -355,10 +389,41 @@
     {
       "id": "kamalaliyu",
       "name": "Kamal Aliyu",
-      "lastActivityAt": null,
-      "commitsThisWeek": 0,
-      "recentCommits": [],
-      "error": "FORBIDDEN_OR_RATE_LIMITED"
+      "lastActivityAt": "2026-06-05T10:00:00Z",
+      "commitsThisWeek": 9,
+      "recentCommits": [
+        {
+          "repo": "kamal-ogtl/cogikids",
+          "message": "docs(ai): document bilingual hint engine",
+          "url": "https://github.com/kamal-ogtl/cogikids/commit/52d7cfb45535a9d902c04e9f6d8ed6f469557079",
+          "committedAt": "2026-06-05T10:00:00Z"
+        },
+        {
+          "repo": "kamal-ogtl/cogikids",
+          "message": "docs(ai): document companion chat response and emotion cue",
+          "url": "https://github.com/kamal-ogtl/cogikids/commit/6df440b822bd22db1cc0c2777e44f171fa26ff55",
+          "committedAt": "2026-06-04T15:10:00Z"
+        },
+        {
+          "repo": "kamal-ogtl/cogikids",
+          "message": "docs(ai): document language auto-detection offline and remote paths",
+          "url": "https://github.com/kamal-ogtl/cogikids/commit/93b29b8cbed674ca229aa7a69dc2dc543980bb4b",
+          "committedAt": "2026-06-04T09:30:00Z"
+        },
+        {
+          "repo": "kamal-ogtl/cogikids",
+          "message": "docs(offline): document sync reconciliation flow",
+          "url": "https://github.com/kamal-ogtl/cogikids/commit/cb26130a13180e237917d488cbccda1af90e1788",
+          "committedAt": "2026-06-03T13:20:00Z"
+        },
+        {
+          "repo": "kamal-ogtl/cogikids",
+          "message": "docs(offline): document cache token and data layer",
+          "url": "https://github.com/kamal-ogtl/cogikids/commit/73aebb894b6f8d33924ca6897663e13192487630",
+          "committedAt": "2026-06-03T08:45:00Z"
+        }
+      ],
+      "error": null
     },
     {
       "id": "alfreditodole",
