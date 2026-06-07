@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-06T12:44:38Z",
+  "generatedAt": "2026-06-07T12:48:11Z",
   "weekStart": "2026-06-01T00:00:00Z",
   "weekEnd": "2026-06-07T23:59:59Z",
   "builders": [
@@ -91,9 +91,16 @@
     {
       "id": "harrie",
       "name": "Harrie",
-      "lastActivityAt": "2026-05-30T18:57:19Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-06-07T10:50:45Z",
+      "commitsThisWeek": 1,
+      "recentCommits": [
+        {
+          "repo": "IamHarrie-Labs/beni",
+          "message": "feat(approvals): persistent queue via Vercel KV + live UI\n\nAPI\n- New endpoint api/approvals.js (GET/POST/PATCH/DELETE)\n- Uses @vercel/kv when KV_REST_API_URL + KV_REST_API_TOKEN are set\n- Falls back to in-memory module-scope store when KV is absent\n- Caps queue at 100 entries; entries sort newest-first\n\nDashboard\n- ApprovalsPage rewritten to read from the live API\n- useApprovals() hook polls every 15s, exposes create/decide/remove\n- Pending entries render as full rows with Approve / Reject actions\n- History section shows the last 8 decided items\n- Persistence badge (Persisted · KV vs In-memory only) in info banner\n- New \"+ Simulate request\" button + QueueRequestModal to add test items\n- ApprovalsSummary on Overview now reflects real count + next item preview\n\nSDK\n- approvals.ts gains a remote backend selected via BENI_APPROVALS_API env var\n- queueSpend, getPendingSpends, approveSpend, rejectSpend all dual-backed\n- File-based store retained for offline dev (no env var = local JSON file)\n- Web dashboard + Node SDK now share the same approval state\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>",
+          "url": "https://github.com/IamHarrie-Labs/beni/commit/c350a1674fc237bdb48a34afdcbf94f71c14329e",
+          "committedAt": "2026-06-07T10:50:45Z"
+        }
+      ],
       "error": null
     },
     {
@@ -229,9 +236,15 @@
     {
       "id": "newman5",
       "name": "Newman",
-      "lastActivityAt": "2026-06-05T19:12:09Z",
-      "commitsThisWeek": 9,
+      "lastActivityAt": "2026-06-06T12:44:50Z",
+      "commitsThisWeek": 10,
       "recentCommits": [
+        {
+          "repo": "Newman5/builder-season-playbook",
+          "message": "Update builder activity data",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/71238fe11f554aed1e5316f355b3524915340f29",
+          "committedAt": "2026-06-06T12:44:50Z"
+        },
         {
           "repo": "Newman5/builder-season-playbook",
           "message": "Merge branch 'main' of https://github.com/Newman5/builder-season-playbook",
@@ -255,12 +268,6 @@
           "message": "Update builder activity data",
           "url": "https://github.com/Newman5/builder-season-playbook/commit/1e1f0322f9517bb51b196dcfbe84c5d7d813ed84",
           "committedAt": "2026-06-04T13:27:46Z"
-        },
-        {
-          "repo": "Newman5/builder-season-playbook",
-          "message": "Update builder activity data",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/62ef56a2faf9577518d396d88ffa8a73d7432336",
-          "committedAt": "2026-06-03T14:00:54Z"
         }
       ],
       "error": null
@@ -276,9 +283,21 @@
     {
       "id": "devfreeguy",
       "name": "Daniel",
-      "lastActivityAt": "2026-06-04T10:21:18Z",
-      "commitsThisWeek": 1,
+      "lastActivityAt": "2026-06-06T18:37:03Z",
+      "commitsThisWeek": 3,
       "recentCommits": [
+        {
+          "repo": "devfreeguy/skill-swap",
+          "message": "feat: updated swap detail page and enable esbuild in workspace configuration",
+          "url": "https://github.com/devfreeguy/skill-swap/commit/6b951fe84af8a1e4bfb5c576cafaa19b8926cbb9",
+          "committedAt": "2026-06-06T18:37:03Z"
+        },
+        {
+          "repo": "devfreeguy/skill-swap",
+          "message": "feat: implement SkillSwap core application screens\n\n* build Dashboard page with profile summary, suggested matches, active swaps, and notifications\n* build Discover page with search, filters, perfect matches, and user discovery feed\n* build Swap Details page with participants, progress tracking, deliverables, proof records, and activity timeline\n* improve responsive layouts across mobile, tablet, and desktop\n* standardize UI using HeroUI v3 components\n* refactor shared UI into reusable components\n* improve application navigation and screen structure\n* prepare foundation for delivery, proof, and verification workflows",
+          "url": "https://github.com/devfreeguy/skill-swap/commit/26bd41bcf0b450c2b64201f631b0059a3318f995",
+          "committedAt": "2026-06-06T13:10:45Z"
+        },
         {
           "repo": "devfreeguy/skill-swap",
           "message": "feat(landing): reposition as contribution & reputation\n  network\n\n  Rewrites the landing page messaging and adds four new\n  sections to reflect\n  the \"exchange → proof → verification → reputation\"\n  framing.\n\n  Changes:\n  - Hero: new headline/subheadline/CTAs (Find a Match,\n  Browse Community)\n  - Stats: Users/Swaps → Contributions/Exchanges with\n  updated counts\n  - How It Works: expanded from 3 to 6 steps through the\n  full proof lifecycle\n  - Features: renamed to \"Protocol, Not a Platform\"\n  - CTA: reputation-first copy replacing skill-acquisition\n  framing\n  - Nav: Features/About → Ledger, Community\n\n  New sections:\n  - PerfectMatchSection: visual bidirectional match demo\n  with CTA\n  - ContributionLedgerSection: example records + 4-stat\n  summary dashboard\n  - CardanoSection: functional Cardano positioning (no hype)\n  - DiscoverySection: user feed, horizontal scroll on mobile\n  via ScrollArea\n\n  New component:\n  - ScrollArea: custom scroll primitive with themed\n  track/thumb, drag-to-scroll,\n    track-click-to-jump, and Framer Motion fade animations;\n  supports vertical\n    and horizontal orientation with hover/always/auto\n  visibility modes",
