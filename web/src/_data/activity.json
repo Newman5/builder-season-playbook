@@ -1,21 +1,14 @@
 {
-  "generatedAt": "2026-06-07T12:48:11Z",
-  "weekStart": "2026-06-01T00:00:00Z",
-  "weekEnd": "2026-06-07T23:59:59Z",
+  "generatedAt": "2026-06-08T13:45:34Z",
+  "weekStart": "2026-06-08T00:00:00Z",
+  "weekEnd": "2026-06-14T23:59:59Z",
   "builders": [
     {
       "id": "mhizta",
       "name": "Mhizta",
       "lastActivityAt": "2026-06-05T15:49:13Z",
-      "commitsThisWeek": 1,
-      "recentCommits": [
-        {
-          "repo": "Mhizta-gab/bookworm-ai",
-          "message": "feat: implement Vapi integration, Mongoose database connection, and PDF text processing utilities.",
-          "url": "https://github.com/Mhizta-gab/bookworm-ai/commit/3f197db0be6126c795c0ab61f6ef37bf4a043df1",
-          "committedAt": "2026-06-05T15:49:13Z"
-        }
-      ],
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
@@ -30,52 +23,45 @@
       "id": "dammy",
       "name": "Dammy",
       "lastActivityAt": "2026-06-05T00:50:26Z",
-      "commitsThisWeek": 1,
-      "recentCommits": [
-        {
-          "repo": "Dammy7942/accordiax",
-          "message": "price negotiation added",
-          "url": "https://github.com/Dammy7942/accordiax/commit/2725559e1897737b314a1db88e7f5f9a4239851f",
-          "committedAt": "2026-06-05T00:50:26Z"
-        }
-      ],
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
       "id": "gidhub",
       "name": "Gideon",
-      "lastActivityAt": "2026-06-05T11:00:05Z",
-      "commitsThisWeek": 5,
+      "lastActivityAt": "2026-06-08T12:29:28Z",
+      "commitsThisWeek": 12,
       "recentCommits": [
         {
           "repo": "0xGIDHUB/tixano",
-          "message": "Resolve all TypeScript/ESLint build errors, update documentation",
-          "url": "https://github.com/0xGIDHUB/tixano/commit/db43c07e5126e2884f4f001be2404b9c17bb7b96",
-          "committedAt": "2026-06-05T11:00:05Z"
+          "message": "Revert to direct canvas text rendering",
+          "url": "https://github.com/0xGIDHUB/tixano/commit/2529adf7c07650725531dfd9d09ca8868002873e",
+          "committedAt": "2026-06-08T12:29:28Z"
         },
         {
           "repo": "0xGIDHUB/tixano",
-          "message": "Secure tickets verification setup, check in flow completed",
-          "url": "https://github.com/0xGIDHUB/tixano/commit/827d38fe508ede419531b4e8a3245c42fbf00cde",
-          "committedAt": "2026-06-03T09:56:20Z"
+          "message": "Simplified to SVG-Only Text Rendering",
+          "url": "https://github.com/0xGIDHUB/tixano/commit/b3d9c941c952fe846c9fd73c6cadfc6d3ceea907",
+          "committedAt": "2026-06-08T10:52:50Z"
         },
         {
           "repo": "0xGIDHUB/tixano",
-          "message": "Setup scanner to decode tickets qr",
-          "url": "https://github.com/0xGIDHUB/tixano/commit/1dce18416278d5987d793f5872ec2b18ffb6d4ab",
-          "committedAt": "2026-06-01T23:49:25Z"
+          "message": "SVG fallback text rendering for ticket images on Vercel",
+          "url": "https://github.com/0xGIDHUB/tixano/commit/52dc79b168f7106f790b406dd0ae874f86448e72",
+          "committedAt": "2026-06-08T10:02:11Z"
         },
         {
           "repo": "0xGIDHUB/tixano",
-          "message": "Guest page update list, removed footer",
-          "url": "https://github.com/0xGIDHUB/tixano/commit/7ac21d10fab39173691ee512219c402ad597852a",
-          "committedAt": "2026-06-01T09:21:04Z"
+          "message": "Update font registration",
+          "url": "https://github.com/0xGIDHUB/tixano/commit/11f9df541a6aa5064bf5e43d891ca7493cbcb756",
+          "committedAt": "2026-06-08T09:34:46Z"
         },
         {
           "repo": "0xGIDHUB/tixano",
-          "message": "Wallet auth for checkin page, ensures only events owners can access check in interface",
-          "url": "https://github.com/0xGIDHUB/tixano/commit/7c11e0955306895f7b6547fb799e4ed8f12c9ee0",
-          "committedAt": "2026-06-01T03:22:45Z"
+          "message": "Explicitly register DejaVu fonts for Alpine Linux rendering",
+          "url": "https://github.com/0xGIDHUB/tixano/commit/52e5444f7d35da460c934a5320d0f9c2b7d857a3",
+          "committedAt": "2026-06-08T08:40:21Z"
         }
       ],
       "error": null
@@ -92,36 +78,22 @@
       "id": "harrie",
       "name": "Harrie",
       "lastActivityAt": "2026-06-07T10:50:45Z",
-      "commitsThisWeek": 1,
-      "recentCommits": [
-        {
-          "repo": "IamHarrie-Labs/beni",
-          "message": "feat(approvals): persistent queue via Vercel KV + live UI\n\nAPI\n- New endpoint api/approvals.js (GET/POST/PATCH/DELETE)\n- Uses @vercel/kv when KV_REST_API_URL + KV_REST_API_TOKEN are set\n- Falls back to in-memory module-scope store when KV is absent\n- Caps queue at 100 entries; entries sort newest-first\n\nDashboard\n- ApprovalsPage rewritten to read from the live API\n- useApprovals() hook polls every 15s, exposes create/decide/remove\n- Pending entries render as full rows with Approve / Reject actions\n- History section shows the last 8 decided items\n- Persistence badge (Persisted · KV vs In-memory only) in info banner\n- New \"+ Simulate request\" button + QueueRequestModal to add test items\n- ApprovalsSummary on Overview now reflects real count + next item preview\n\nSDK\n- approvals.ts gains a remote backend selected via BENI_APPROVALS_API env var\n- queueSpend, getPendingSpends, approveSpend, rejectSpend all dual-backed\n- File-based store retained for offline dev (no env var = local JSON file)\n- Web dashboard + Node SDK now share the same approval state\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>",
-          "url": "https://github.com/IamHarrie-Labs/beni/commit/c350a1674fc237bdb48a34afdcbf94f71c14329e",
-          "committedAt": "2026-06-07T10:50:45Z"
-        }
-      ],
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
       "id": "lewis",
       "name": "Lewis",
       "lastActivityAt": "2026-06-01T09:17:24Z",
-      "commitsThisWeek": 1,
-      "recentCommits": [
-        {
-          "repo": "lewis-nduati/Tracom-credentials",
-          "message": "feat(projects): scope the browse page to one owner alias\n\nThe projects page showed every project on the shared Andamio network.\nAdd NEXT_PUBLIC_PROJECT_OWNER and filter useProjects to that owner alias,\nmirroring the existing NEXT_PUBLIC_COURSE_OWNER filter on courses. Unset,\nit falls back to showing everything, so nothing breaks until configured.\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>",
-          "url": "https://github.com/lewis-nduati/Tracom-credentials/commit/ff3ad1f61d692d35683f53f7eb0c6608d28638bc",
-          "committedAt": "2026-06-01T09:17:24Z"
-        }
-      ],
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
       "id": "armanabid",
       "name": "Abid",
-      "lastActivityAt": "2026-05-30T23:06:23Z",
+      "lastActivityAt": "2026-06-07T15:49:13Z",
       "commitsThisWeek": 0,
       "recentCommits": [],
       "error": null
@@ -138,36 +110,16 @@
       "id": "yungslaiz",
       "name": "Blessed David",
       "lastActivityAt": "2026-06-05T12:47:45Z",
-      "commitsThisWeek": 2,
-      "recentCommits": [
-        {
-          "repo": "YungSlaiz53/GNXT",
-          "message": "week 6: add adnin control and data, activity management, improve login UI, and implemented Social Tasks Missions logic.",
-          "url": "https://github.com/YungSlaiz53/GNXT/commit/7efc676ea729e5cc41cd3fdb1eb4db81a3cb67f6",
-          "committedAt": "2026-06-05T12:47:45Z"
-        },
-        {
-          "repo": "YungSlaiz53/GNXT",
-          "message": "week 5: adjust token upgrade cost to 200 NXTP, and optimize Cardano transaction logic.",
-          "url": "https://github.com/YungSlaiz53/GNXT/commit/42d1d421683fcf5a95be8cf02c276891cc967765",
-          "committedAt": "2026-05-30T00:09:37Z"
-        }
-      ],
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
       "id": "maxalexweber",
       "name": "Maximilian",
       "lastActivityAt": "2026-06-05T19:13:40Z",
-      "commitsThisWeek": 1,
-      "recentCommits": [
-        {
-          "repo": "maxalexweber1/CHAINFEED",
-          "message": "refactor: remove Charli3 adapter and update related references\n\n- Deleted the Charli3 oracle adapter due to its shutdown and lack of replacement sources.\n- Updated tests and stable metadata to reflect the removal of USDM-RESERVES and its transition to reserves-unsubstantiated.\n- Adjusted registry and source handling to exclude Charli3, ensuring all references are consistent with the current state of available adapters.\n- Modified comments and documentation to clarify the changes in reserve attestations and their implications for stablecoin health assessments.",
-          "url": "https://github.com/maxalexweber1/CHAINFEED/commit/3671da4a91877547a4fcd7510a18683a13315099",
-          "committedAt": "2026-06-05T19:13:40Z"
-        }
-      ],
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
@@ -190,39 +142,8 @@
       "id": "trike",
       "name": "Anita",
       "lastActivityAt": "2026-06-06T12:25:07Z",
-      "commitsThisWeek": 14,
-      "recentCommits": [
-        {
-          "repo": "3rike12/3rike-Mobility_",
-          "message": "feat: add currency toggle to driver dashboard and implement automatic rate retry for off-ramp orders",
-          "url": "https://github.com/3rike12/3rike-Mobility_/commit/dd49645d2b004425aa5cf4ee80d55d9461f0ab77",
-          "committedAt": "2026-06-06T12:25:07Z"
-        },
-        {
-          "repo": "3rike12/3rike-Mobility_",
-          "message": "feat: implement fractional investment system with on-chain yield claiming and portfolio tracking",
-          "url": "https://github.com/3rike12/3rike-Mobility_/commit/c7334d29ceca9942a3b1c49e48bd61a7131a7adc",
-          "committedAt": "2026-06-05T21:16:51Z"
-        },
-        {
-          "repo": "3rike12/3rike-Mobility_",
-          "message": "feat: implement fiat-to-crypto on-ramp via Paycrest integration for bank deposits",
-          "url": "https://github.com/3rike12/3rike-Mobility_/commit/a1969b6026c2934fe26c79736339f8ead82c1e5a",
-          "committedAt": "2026-06-04T17:04:53Z"
-        },
-        {
-          "repo": "3rike12/3rike-Mobility_",
-          "message": "feat: implement Paycrest bank off-ramp integration with Arbitrum treasury bridging and webhook support",
-          "url": "https://github.com/3rike12/3rike-Mobility_/commit/e159f269e9bcedb2139e38fe27113c74a06a5904",
-          "committedAt": "2026-06-04T16:18:49Z"
-        },
-        {
-          "repo": "3rike12/3rike-Mobility_",
-          "message": "feat: implement PIN verification for withdrawals, account registration, and secure settings updates.",
-          "url": "https://github.com/3rike12/3rike-Mobility_/commit/214e613fac8371bb41442f69bec8d3c7c7ced2a8",
-          "committedAt": "2026-06-04T10:05:48Z"
-        }
-      ],
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
@@ -236,40 +157,9 @@
     {
       "id": "newman5",
       "name": "Newman",
-      "lastActivityAt": "2026-06-06T12:44:50Z",
-      "commitsThisWeek": 10,
-      "recentCommits": [
-        {
-          "repo": "Newman5/builder-season-playbook",
-          "message": "Update builder activity data",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/71238fe11f554aed1e5316f355b3524915340f29",
-          "committedAt": "2026-06-06T12:44:50Z"
-        },
-        {
-          "repo": "Newman5/builder-season-playbook",
-          "message": "Merge branch 'main' of https://github.com/Newman5/builder-season-playbook",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/dcbe84178db5eb9f0afb0a402056e907c26cd10d",
-          "committedAt": "2026-06-05T19:12:09Z"
-        },
-        {
-          "repo": "Newman5/builder-season-playbook",
-          "message": "another week",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/cb0c66021a341a029a1d2cd049a7e60358216728",
-          "committedAt": "2026-06-05T19:01:35Z"
-        },
-        {
-          "repo": "Newman5/builder-season-playbook",
-          "message": "Update builder activity data",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/0f8dbc49918b01e27e00bb0a26a5716a90f55604",
-          "committedAt": "2026-06-05T13:22:50Z"
-        },
-        {
-          "repo": "Newman5/builder-season-playbook",
-          "message": "Update builder activity data",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/1e1f0322f9517bb51b196dcfbe84c5d7d813ed84",
-          "committedAt": "2026-06-04T13:27:46Z"
-        }
-      ],
+      "lastActivityAt": "2026-06-07T12:48:19Z",
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
@@ -284,33 +174,14 @@
       "id": "devfreeguy",
       "name": "Daniel",
       "lastActivityAt": "2026-06-06T18:37:03Z",
-      "commitsThisWeek": 3,
-      "recentCommits": [
-        {
-          "repo": "devfreeguy/skill-swap",
-          "message": "feat: updated swap detail page and enable esbuild in workspace configuration",
-          "url": "https://github.com/devfreeguy/skill-swap/commit/6b951fe84af8a1e4bfb5c576cafaa19b8926cbb9",
-          "committedAt": "2026-06-06T18:37:03Z"
-        },
-        {
-          "repo": "devfreeguy/skill-swap",
-          "message": "feat: implement SkillSwap core application screens\n\n* build Dashboard page with profile summary, suggested matches, active swaps, and notifications\n* build Discover page with search, filters, perfect matches, and user discovery feed\n* build Swap Details page with participants, progress tracking, deliverables, proof records, and activity timeline\n* improve responsive layouts across mobile, tablet, and desktop\n* standardize UI using HeroUI v3 components\n* refactor shared UI into reusable components\n* improve application navigation and screen structure\n* prepare foundation for delivery, proof, and verification workflows",
-          "url": "https://github.com/devfreeguy/skill-swap/commit/26bd41bcf0b450c2b64201f631b0059a3318f995",
-          "committedAt": "2026-06-06T13:10:45Z"
-        },
-        {
-          "repo": "devfreeguy/skill-swap",
-          "message": "feat(landing): reposition as contribution & reputation\n  network\n\n  Rewrites the landing page messaging and adds four new\n  sections to reflect\n  the \"exchange → proof → verification → reputation\"\n  framing.\n\n  Changes:\n  - Hero: new headline/subheadline/CTAs (Find a Match,\n  Browse Community)\n  - Stats: Users/Swaps → Contributions/Exchanges with\n  updated counts\n  - How It Works: expanded from 3 to 6 steps through the\n  full proof lifecycle\n  - Features: renamed to \"Protocol, Not a Platform\"\n  - CTA: reputation-first copy replacing skill-acquisition\n  framing\n  - Nav: Features/About → Ledger, Community\n\n  New sections:\n  - PerfectMatchSection: visual bidirectional match demo\n  with CTA\n  - ContributionLedgerSection: example records + 4-stat\n  summary dashboard\n  - CardanoSection: functional Cardano positioning (no hype)\n  - DiscoverySection: user feed, horizontal scroll on mobile\n  via ScrollArea\n\n  New component:\n  - ScrollArea: custom scroll primitive with themed\n  track/thumb, drag-to-scroll,\n    track-click-to-jump, and Framer Motion fade animations;\n  supports vertical\n    and horizontal orientation with hover/always/auto\n  visibility modes",
-          "url": "https://github.com/devfreeguy/skill-swap/commit/83cdf473bd4a30c3125abd262f62d7d98dbe9c19",
-          "committedAt": "2026-06-04T10:21:18Z"
-        }
-      ],
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
       "id": "haulink",
       "name": "Abdulazeez",
-      "lastActivityAt": "2026-05-25T14:58:27Z",
+      "lastActivityAt": "2026-06-07T21:12:59Z",
       "commitsThisWeek": 0,
       "recentCommits": [],
       "error": null
@@ -319,39 +190,8 @@
       "id": "opa007i",
       "name": "Opa",
       "lastActivityAt": "2026-06-04T15:34:26Z",
-      "commitsThisWeek": 10,
-      "recentCommits": [
-        {
-          "repo": "opa1/the-quest",
-          "message": "flexible notification system with real-time bell, mission and reward events",
-          "url": "https://github.com/opa1/the-quest/commit/422e8f4a6789cc7ba40bca49dc783970da654389",
-          "committedAt": "2026-06-04T15:34:26Z"
-        },
-        {
-          "repo": "opa1/the-quest",
-          "message": "fix(cardano-service): configured dotenv to load env from the path of the service app",
-          "url": "https://github.com/opa1/the-quest/commit/ba56ce89085b4d21fea8cc76a5a50fa5fb429552",
-          "committedAt": "2026-06-04T15:05:52Z"
-        },
-        {
-          "repo": "opa1/the-quest",
-          "message": "feat(review): add image skeleton loader and fullscreen viewer dialog to proof display",
-          "url": "https://github.com/opa1/the-quest/commit/a401146ae751b302e4db83c718fa708dd3031de8",
-          "committedAt": "2026-06-04T14:43:42Z"
-        },
-        {
-          "repo": "opa1/the-quest",
-          "message": "feat(review): add image skeleton loader and fullscreen viewer dialog to proof display",
-          "url": "https://github.com/opa1/the-quest/commit/72a0660a3ec7200dd85a3b296c9749ea9eee9983",
-          "committedAt": "2026-06-04T14:28:17Z"
-        },
-        {
-          "repo": "opa1/the-quest",
-          "message": "fix(leaderboard): replace hardcoded zeros with real completed and proof counts",
-          "url": "https://github.com/opa1/the-quest/commit/359135a96efa3a22cae6dfb5f29cc125bc44527d",
-          "committedAt": "2026-06-04T14:24:11Z"
-        }
-      ],
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
@@ -365,7 +205,7 @@
     {
       "id": "muhammedyuguda",
       "name": "Muhammed",
-      "lastActivityAt": "2026-05-28T14:44:20Z",
+      "lastActivityAt": "2026-06-07T13:40:57Z",
       "commitsThisWeek": 0,
       "recentCommits": [],
       "error": null
@@ -382,78 +222,16 @@
       "id": "kamalaliyu",
       "name": "Kamal Aliyu",
       "lastActivityAt": "2026-06-05T10:00:00Z",
-      "commitsThisWeek": 9,
-      "recentCommits": [
-        {
-          "repo": "kamal-ogtl/cogikids",
-          "message": "docs(ai): document bilingual hint engine",
-          "url": "https://github.com/kamal-ogtl/cogikids/commit/52d7cfb45535a9d902c04e9f6d8ed6f469557079",
-          "committedAt": "2026-06-05T10:00:00Z"
-        },
-        {
-          "repo": "kamal-ogtl/cogikids",
-          "message": "docs(ai): document companion chat response and emotion cue",
-          "url": "https://github.com/kamal-ogtl/cogikids/commit/6df440b822bd22db1cc0c2777e44f171fa26ff55",
-          "committedAt": "2026-06-04T15:10:00Z"
-        },
-        {
-          "repo": "kamal-ogtl/cogikids",
-          "message": "docs(ai): document language auto-detection offline and remote paths",
-          "url": "https://github.com/kamal-ogtl/cogikids/commit/93b29b8cbed674ca229aa7a69dc2dc543980bb4b",
-          "committedAt": "2026-06-04T09:30:00Z"
-        },
-        {
-          "repo": "kamal-ogtl/cogikids",
-          "message": "docs(offline): document sync reconciliation flow",
-          "url": "https://github.com/kamal-ogtl/cogikids/commit/cb26130a13180e237917d488cbccda1af90e1788",
-          "committedAt": "2026-06-03T13:20:00Z"
-        },
-        {
-          "repo": "kamal-ogtl/cogikids",
-          "message": "docs(offline): document cache token and data layer",
-          "url": "https://github.com/kamal-ogtl/cogikids/commit/73aebb894b6f8d33924ca6897663e13192487630",
-          "committedAt": "2026-06-03T08:45:00Z"
-        }
-      ],
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
       "id": "alfreditodole",
       "name": "Alfred Itodole",
       "lastActivityAt": "2026-06-05T16:16:01Z",
-      "commitsThisWeek": 5,
-      "recentCommits": [
-        {
-          "repo": "sirxalfred/mosaic-cardano",
-          "message": "config: add middleware config to only match view paths",
-          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/59c954e594f14b91d19fad1a2c9109da697c9e50",
-          "committedAt": "2026-06-05T16:16:01Z"
-        },
-        {
-          "repo": "sirxalfred/mosaic-cardano",
-          "message": "feat: add hook for debounce logic",
-          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/74b89c5e433ba048af206ea8f9acb1fa4fd4e944",
-          "committedAt": "2026-06-05T16:29:51Z"
-        },
-        {
-          "repo": "sirxalfred/mosaic-cardano",
-          "message": "feat: add error component for full-page errors",
-          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/a31878579c05c41a9b40d55125709b335bea2cdd",
-          "committedAt": "2026-06-05T16:30:51Z"
-        },
-        {
-          "repo": "sirxalfred/mosaic-cardano",
-          "message": "style: upate globals.css",
-          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/c34799ba988fb6d458b79345d660729e1d0d4542",
-          "committedAt": "2026-06-05T16:32:00Z"
-        },
-        {
-          "repo": "sirxalfred/mosaic-cardano",
-          "message": "chore: update react query provider default options, extend `useXQuery` with  `is404Error`",
-          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/e8eddd337e049f2c78cb39fee5acf89316be5872",
-          "committedAt": "2026-06-05T16:46:32Z"
-        }
-      ],
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     }
   ]
