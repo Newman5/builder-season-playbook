@@ -1,56 +1,227 @@
+---
+title: Builder Season Playbook
+description: A practical framework for running long-form hackathons with visible progress, weekly accountability, and lightweight operations.
+---
+
 {% extends "base.njk" %}
 
 {% block title %}Builder Season Playbook{% endblock %}
 
 {% block content %}
-<section class="hero split">
-  <div>
-    <p class="eyebrow">Builder Season Surface</p>
-    <h2 style="margin-top: 0;">One public site for weekly momentum and long-form progress.</h2>
-    <p>
-      This site combines a lightweight GitHub activity dashboard with the project progress log.
-      It is meant to stay transparent, inspectable, and easy to fork.
+<section class="landing-hero">
+  <div class="landing-hero-copy">
+    <p class="eyebrow">Long-form builder ecosystems</p>
+    <h2>Run a builder season that produces real progress instead of demo theater.</h2>
+    <p class="lede">
+      Builder Season Playbook helps communities operate calm, accountable hackathons with weekly updates,
+      public evidence, lightweight admin systems, and room for real user feedback.
     </p>
     <div class="button-row">
-      <a class="button" href="{{ '/dashboard/' | withBase }}">Open Dashboard</a>
-      {# <a class="button secondary" href="{{ '/progress-log/' | withBase }}">Read Progress Log</a> #}
+      <a class="button" href="#strategy-call">Run Your Own Builder Season</a>
+      <a class="button secondary" href="#download">Download the Playbook</a>
+      <a class="text-link" href="{{ '/dashboard/' | withBase }}">View Current Season Dashboard</a>
     </div>
   </div>
-  
+
+  <aside class="workflow-panel" aria-label="Builder season operating snapshot">
+    <div class="panel-header">
+      <span>season-week-07.yml</span>
+      <span>public</span>
+    </div>
+    <div class="status-row">
+      <strong>18</strong>
+      <span>tracked builders</span>
+    </div>
+    <div class="status-row">
+      <strong>42</strong>
+      <span>commits this week</span>
+    </div>
+    <div class="status-row">
+      <strong>Sun</strong>
+      <span>weekly update checkpoint</span>
+    </div>
+    <ol class="workflow-list">
+      <li>Collect builder updates</li>
+      <li>Review public evidence</li>
+      <li>Publish the weekly signal</li>
+      <li>Route users and feedback</li>
+    </ol>
+  </aside>
 </section>
 
-<section class="card facepile-section">
-  <div class="facepile-copy">
-    <p class="eyebrow">Builder Registry</p>
-    <h2 style="margin-top: 0;">The season is shaped by public work from a growing circle of builders.</h2>
-
+<section class="landing-section split-section">
+  <div>
+    <p class="eyebrow">The problem</p>
+    <h2>Most hackathons optimize for a final performance.</h2>
   </div>
-  <ul class="facepile" aria-label="Builder profile images">
-    {% for builder in builders %}
-      {% if builder.githubAvatarUrl %}
-        {% set profileLink = builder.builderPageUrl %}
-        <li>
-          <a
-            class="facepile-link"
-            href="{% if profileLink %}{{ profileLink | withBase }}{% else %}{{ builder.githubProfileUrl }}{% endif %}"
-            {% if not profileLink %}rel="external noopener"{% endif %}
-            title="{{ builder.displayName }}"
-            aria-label="Open {{ builder.displayName }}"
-          >
-            <img
-              class="facepile-avatar"
-              src="{{ builder.githubAvatarUrl }}"
-              alt="{{ builder.displayName }} GitHub profile image"
-              width="48"
-              height="48"
-              loading="lazy"
-              decoding="async"
-            >
-          </a>
-        </li>
-      {% endif %}
-    {% endfor %}
+  <div class="problem-grid">
+    <article>
+      <h3>Demo theater</h3>
+      <p>Teams rush toward presentation day while the deeper work stays hard to see.</p>
+    </article>
+    <article>
+      <h3>Low follow-through</h3>
+      <p>Projects disappear after judging because the operating cadence ends too soon.</p>
+    </article>
+    <article>
+      <h3>Organizer burnout</h3>
+      <p>Admins chase updates manually without shared systems for evidence, rhythm, or review.</p>
+    </article>
+    <article>
+      <h3>Weak accountability</h3>
+      <p>Communities cannot tell which builders are active, blocked, shipping, or learning from users.</p>
+    </article>
+  </div>
+</section>
+
+<section class="landing-section framework-section">
+  <div class="section-heading">
+    <p class="eyebrow">The framework</p>
+    <h2>Consistency beats intensity.</h2>
+    <p>
+      A builder season turns a hackathon into a visible operating cadence. Builders keep moving,
+      organizers keep the surface lightweight, and the community can inspect progress as it happens.
+    </p>
+  </div>
+
+  <div class="cadence-grid">
+    <article>
+      <span class="step-number">01</span>
+      <h3>Long-form cadence</h3>
+      <p>Run the season over weeks, not a weekend, so real projects have time to meet real constraints.</p>
+    </article>
+    <article>
+      <span class="step-number">02</span>
+      <h3>Weekly updates</h3>
+      <p>Use repeatable prompts, public posts, and lightweight check-ins to keep momentum visible.</p>
+    </article>
+    <article>
+      <span class="step-number">03</span>
+      <h3>Evidence dashboard</h3>
+      <p>Track GitHub activity, builder pages, project metadata, and manual review links in one place.</p>
+    </article>
+    <article>
+      <span class="step-number">04</span>
+      <h3>User feedback loops</h3>
+      <p>Move attention from judging to usage, conversation, iteration, and public learning.</p>
+    </article>
+  </div>
+</section>
+
+<section class="landing-section included-section" id="download">
+  <div class="section-heading">
+    <p class="eyebrow">What's included</p>
+    <h2>A practical kit for operating the season.</h2>
+  </div>
+
+  <div class="included-grid">
+    <div>
+      <h3>Templates</h3>
+      <ul class="check-list">
+        <li>Builder onboarding docs</li>
+        <li>Weekly update prompts</li>
+        <li>Newsletter and X post templates</li>
+        <li>Final presentation guides</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Operations</h3>
+      <ul class="check-list">
+        <li>Admin checklists</li>
+        <li>GitHub project structures</li>
+        <li>YAML examples and registry data</li>
+        <li>Automation patterns</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Reference systems</h3>
+      <ul class="check-list">
+        <li>Dashboard and builder pages</li>
+        <li>Progress log examples</li>
+        <li>Obsidian-ready working notes</li>
+        <li>Real season artifacts</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="landing-section examples-section">
+  <div class="section-heading">
+    <p class="eyebrow">Screenshots and examples</p>
+    <h2>Built around the surfaces organizers actually use.</h2>
+  </div>
+
+  <div class="example-grid">
+    <a class="example-panel large" href="{{ '/dashboard/' | withBase }}">
+      <span class="panel-kicker">Current Season Dashboard</span>
+      <strong>GitHub activity, builder registry, weekly review links</strong>
+      <div class="mini-table" aria-hidden="true">
+        <span>Builder</span><span>Project</span><span>Commits</span>
+        <span>core-team</span><span>dashboard</span><span>12</span>
+        <span>tooling</span><span>templates</span><span>8</span>
+        <span>research</span><span>feedback</span><span>6</span>
+      </div>
+    </a>
+    <div class="example-panel">
+      <span class="panel-kicker">GitHub Projects</span>
+      <strong>Simple boards for issue flow and public coordination</strong>
+    </div>
+    <div class="example-panel">
+      <span class="panel-kicker">Builder Feed</span>
+      <strong>Weekly updates that show learning, blockers, and progress</strong>
+    </div>
+    <div class="example-panel">
+      <span class="panel-kicker">Admin Workflow</span>
+      <strong>Checklists, newsletter rhythm, and review queues</strong>
+    </div>
+  </div>
+</section>
+
+<section class="landing-section audience-section">
+  <div>
+    <p class="eyebrow">Who it's for</p>
+    <h2>Communities that need visible progress, not just event energy.</h2>
+  </div>
+  <ul class="tag-list" aria-label="Ideal audiences">
+    <li>Ecosystem teams</li>
+    <li>DAOs</li>
+    <li>Accelerators</li>
+    <li>Open-source communities</li>
+    <li>Developer education programs</li>
+    <li>Community-led hackathons</li>
+    <li>Incubators</li>
+    <li>Growth teams</li>
   </ul>
-  
+</section>
+
+<section class="landing-section philosophy-section">
+  <div class="section-heading">
+    <p class="eyebrow">Philosophy</p>
+    <h2>No judges. No fluff. Keep the work visible.</h2>
+  </div>
+
+  <div class="quote-grid">
+    <blockquote>Build in public.</blockquote>
+    <blockquote>Visible progress matters.</blockquote>
+    <blockquote>Users and programmers party together.</blockquote>
+    <blockquote>Real users count more than demo day.</blockquote>
+  </div>
+</section>
+
+<section class="landing-section support-section" id="strategy-call">
+  <div>
+    <p class="eyebrow">Open source plus support</p>
+    <h2>Fork the system, then adapt it to your community.</h2>
+    <p>
+      The playbook is open-source friendly and designed to be customized. For teams that want help
+      with setup, dashboard configuration, admin workflows, or season operations, it can also become
+      a consulting engagement.
+    </p>
+  </div>
+  <div class="support-actions">
+    <a class="button" href="#strategy-call">Book a Strategy Call</a>
+    <a class="button secondary" href="#download">Download the Playbook</a>
+    <a class="text-link" href="{{ '/dashboard/' | withBase }}">Review the example dashboard</a>
+  </div>
 </section>
 {% endblock %}
