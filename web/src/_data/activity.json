@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-11T13:41:34Z",
+  "generatedAt": "2026-06-12T13:28:20Z",
   "weekStart": "2026-06-08T00:00:00Z",
   "weekEnd": "2026-06-14T23:59:59Z",
   "builders": [
@@ -214,9 +214,15 @@
     {
       "id": "newman5",
       "name": "Newman",
-      "lastActivityAt": "2026-06-10T13:31:26Z",
-      "commitsThisWeek": 3,
+      "lastActivityAt": "2026-06-11T13:41:45Z",
+      "commitsThisWeek": 4,
       "recentCommits": [
+        {
+          "repo": "Newman5/builder-season-playbook",
+          "message": "Update builder activity data",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/320726bf61fffa09dd3c4a37efd3ec102099adb9",
+          "committedAt": "2026-06-11T13:41:45Z"
+        },
         {
           "repo": "Newman5/builder-season-playbook",
           "message": "Update builder activity data",
@@ -249,17 +255,61 @@
     {
       "id": "devfreeguy",
       "name": "Daniel",
-      "lastActivityAt": "2026-06-06T18:37:03Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-06-12T01:38:49Z",
+      "commitsThisWeek": 6,
+      "recentCommits": [
+        {
+          "repo": "devfreeguy/skill-swap",
+          "message": "feat: build profile page with skills, wallet, and exchange stats",
+          "url": "https://github.com/devfreeguy/skill-swap/commit/df097d77caf92407db5cc4ad70fa58df1aee7196",
+          "committedAt": "2026-06-12T01:38:49Z"
+        },
+        {
+          "repo": "devfreeguy/skill-swap",
+          "message": "fix(router): prevent infinite fetch loop and handle aborted renders\n\n- Remove `router` from effect dependencies to stop re-fetching on every navigation state update.\n- Implement a `cancelled` flag in the effect cleanup to prevent memory leaks and state updates on unmounted components.",
+          "url": "https://github.com/devfreeguy/skill-swap/commit/6aef212de76c446bc794bbd94c3a445cd86550f7",
+          "committedAt": "2026-06-12T01:35:34Z"
+        },
+        {
+          "repo": "devfreeguy/skill-swap",
+          "message": "feat: build notifications page with type filters and read tracking",
+          "url": "https://github.com/devfreeguy/skill-swap/commit/078abe903594bc713c394df8086f1d033301d979",
+          "committedAt": "2026-06-12T01:11:41Z"
+        },
+        {
+          "repo": "devfreeguy/skill-swap",
+          "message": "feat: build messaging system with link, image, and document support",
+          "url": "https://github.com/devfreeguy/skill-swap/commit/eddabb51ca631d8f7b2a2fa5dae6abf39b561042",
+          "committedAt": "2026-06-12T00:44:48Z"
+        },
+        {
+          "repo": "devfreeguy/skill-swap",
+          "message": "feat: add link, image, and document message types with messaging api routes",
+          "url": "https://github.com/devfreeguy/skill-swap/commit/a045d29922ad2b8f35b1cb2ec77a74ceb6b57823",
+          "committedAt": "2026-06-12T00:26:47Z"
+        }
+      ],
       "error": null
     },
     {
       "id": "haulink",
       "name": "Abdulazeez",
-      "lastActivityAt": "2026-06-07T21:12:59Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-06-12T03:57:14Z",
+      "commitsThisWeek": 2,
+      "recentCommits": [
+        {
+          "repo": "FoladDTechie/Haulink",
+          "message": "Merge pull request #10 from FoladDTechie/HAUL-22-AZB\n\nfix: booking_slots RLS policy for Cardano payment flow",
+          "url": "https://github.com/FoladDTechie/Haulink/commit/b8ab7a9bad4a0956d643dca0f18cb0f3063831ea",
+          "committedAt": "2026-06-12T03:57:14Z"
+        },
+        {
+          "repo": "FoladDTechie/Haulink",
+          "message": "fix: booking_slots RLS policy for Cardano payment flow",
+          "url": "https://github.com/FoladDTechie/Haulink/commit/f71d55325f96897abed30b2d1590e2d75a1cc084",
+          "committedAt": "2026-06-12T03:54:51Z"
+        }
+      ],
       "error": null
     },
     {
@@ -312,9 +362,40 @@
     {
       "id": "alfreditodole",
       "name": "Alfred Itodole",
-      "lastActivityAt": "2026-06-05T16:16:01Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-06-11T19:50:01Z",
+      "commitsThisWeek": 11,
+      "recentCommits": [
+        {
+          "repo": "sirxalfred/mosaic-cardano",
+          "message": "fix: invalid url error",
+          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/1cd9e192d38c66a76ac907f3fd72b70959f1f70a",
+          "committedAt": "2026-06-11T19:50:01Z"
+        },
+        {
+          "repo": "sirxalfred/mosaic-cardano",
+          "message": "Merge pull request #12 from sirXalfred/chore/landing-main\n\nfeat(seo): enhance landing page with pricing, UI updates, and SEO improvements",
+          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/2b0e8b7874549f2fa7f1f121f13610ebc483deec",
+          "committedAt": "2026-06-11T19:32:05Z"
+        },
+        {
+          "repo": "sirxalfred/mosaic-cardano",
+          "message": "chore: remove unused FilmGrain component",
+          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/a242eea35c2727321f30f752b45054e524b84504",
+          "committedAt": "2026-06-11T19:22:53Z"
+        },
+        {
+          "repo": "sirxalfred/mosaic-cardano",
+          "message": "Merge pull request #3 from DavidTimi1/main\n\nDelete src/middleware.ts",
+          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/47880b38ab8de6d5809563e1a8a549d8246bd4b3",
+          "committedAt": "2026-06-11T19:17:21Z"
+        },
+        {
+          "repo": "sirxalfred/mosaic-cardano",
+          "message": "config: add example env file",
+          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/bcba8b6c50fc878ccfe07397a3911eee977a5d10",
+          "committedAt": "2026-06-11T18:58:51Z"
+        }
+      ],
       "error": null
     }
   ]
