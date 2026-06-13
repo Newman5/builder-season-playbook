@@ -1,14 +1,27 @@
 {
-  "generatedAt": "2026-06-12T13:28:20Z",
+  "generatedAt": "2026-06-13T12:52:27Z",
   "weekStart": "2026-06-08T00:00:00Z",
   "weekEnd": "2026-06-14T23:59:59Z",
   "builders": [
     {
       "id": "mhizta",
       "name": "Mhizta",
-      "lastActivityAt": "2026-06-05T15:49:13Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-06-13T12:44:01Z",
+      "commitsThisWeek": 2,
+      "recentCommits": [
+        {
+          "repo": "Mhizta-gab/bookworm-ai",
+          "message": "feat: implement dashboard shell with navigation, library view, and book management components",
+          "url": "https://github.com/Mhizta-gab/bookworm-ai/commit/4233c7a999ba75fdb2c0b8dfd531d78c0f463d48",
+          "committedAt": "2026-06-13T12:44:01Z"
+        },
+        {
+          "repo": "Mhizta-gab/bookworm-ai",
+          "message": "feat: implement Vapi-based voice session controls with automated Gemini summarization and session persistence",
+          "url": "https://github.com/Mhizta-gab/bookworm-ai/commit/6f5a635c1818c61765f364c03e73b464299bf4df",
+          "committedAt": "2026-06-13T10:18:44Z"
+        }
+      ],
       "error": null
     },
     {
@@ -55,9 +68,15 @@
     {
       "id": "gidhub",
       "name": "Gideon",
-      "lastActivityAt": "2026-06-09T02:33:32Z",
-      "commitsThisWeek": 17,
+      "lastActivityAt": "2026-06-13T07:40:05Z",
+      "commitsThisWeek": 18,
       "recentCommits": [
+        {
+          "repo": "0xGIDHUB/tixano",
+          "message": "Add github link to contact",
+          "url": "https://github.com/0xGIDHUB/tixano/commit/b291d5294fbfe455c29a4a2461aaa6f46edc4cdb",
+          "committedAt": "2026-06-13T07:40:05Z"
+        },
         {
           "repo": "0xGIDHUB/tixano",
           "message": "Update FAQ",
@@ -81,12 +100,6 @@
           "message": "Update link in metadata",
           "url": "https://github.com/0xGIDHUB/tixano/commit/45a57c37ae0d78478323656f399c1d6ed6add7fc",
           "committedAt": "2026-06-08T14:16:28Z"
-        },
-        {
-          "repo": "0xGIDHUB/tixano",
-          "message": "Frontend canvas migrations",
-          "url": "https://github.com/0xGIDHUB/tixano/commit/a1628f56acca331c22a693662f03147b5b679ea5",
-          "committedAt": "2026-06-08T13:50:46Z"
         }
       ],
       "error": null
@@ -126,9 +139,22 @@
     {
       "id": "gamechanger",
       "name": "Adriano",
-      "lastActivityAt": "2026-05-29T22:20:31Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-06-12T15:44:34Z",
+      "commitsThisWeek": 2,
+      "recentCommits": [
+        {
+          "repo": "GameChangerFinance/NeonSoup",
+          "message": "Merge pull request #4 from GameChangerFinance/feat/composability\n\nFeat/composability",
+          "url": "https://github.com/GameChangerFinance/NeonSoup/commit/e3f3b1a552da9c4cea80b96e0cf06e0058ab9bad",
+          "committedAt": "2026-06-12T15:44:34Z"
+        },
+        {
+          "repo": "GameChangerFinance/NeonSoup",
+          "message": "feat: centralize chain-backed protocol classification and provider normalization\n\n  - Add shared chain transaction shape and getTransactions to MKII and Blockfrost providers\n  - Classify protocol transactions from on-chain evidence using inputs, outputs, beacons, datum\n    previousInput, and valid_contract\n\n  - Treat wallet receipts as hint-only and replace them once chain evidence is available\n  - Support bundle-aware transaction summaries and mixed/fill/open/close semantics\n  - Centralize normalization for transactions, offers, assets, and ownership in reusable domain\n    helpers\n\n  - Fix ownership badges so You is the visible label and the role is preserved in the tooltip title\n  - Remove unsafe MKII metadata-based known inference and keep canonical asset identity keys\n  - Normalize cart/app-state reconciliation after API and wallet-return handling\n  - Fix refresh handlers passing raw events into loaders, which caused extraPendingHashes is not\n    iterable\n\n  - Update AGENTS with new provider, query, and categorization guidance",
+          "url": "https://github.com/GameChangerFinance/NeonSoup/commit/472e5fe3c78eafa1127f2f9a375f184ef2d7e561",
+          "committedAt": "2026-06-12T15:29:21Z"
+        }
+      ],
       "error": null
     },
     {
@@ -150,9 +176,34 @@
     {
       "id": "murmurations",
       "name": "Nori",
-      "lastActivityAt": "2026-05-27T04:49:34Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-06-12T21:45:24Z",
+      "commitsThisWeek": 4,
+      "recentCommits": [
+        {
+          "repo": "murmurations-ai/flyway",
+          "message": "docs: refresh HTML companions to SHA 10d7045 (S+5b)\n\nBring the hand-built visual companions in line with the markdown refreshed\nin 08b4b06 — they were pinned to d5ad56f / \"6 of 9 tools\".\n\nstatus.html\n- header SHA, date, headline (\"Seven of nine tools. Two murmurations\n  co-signing\"), and at-a-glance stats (7 of 9 tools, 4 walkthroughs, 315\n  tests / 22 files, 12 open issues).\n- tool-maturity table: flyway_propose and flyway_respond now wired;\n  materialization noted as a local act, not a wire tool.\n- milestone timeline SVG: added the S+5 \"agreements\" node, extended the\n  flow line, moved the \"↓ HERE\" pointer, retitled, fixed the date axis.\n- walkthroughs: added the Tier 4 card; \"Four artifacts\".\n- what's-pending: now S+6 exit / S+7 discover / S+8 staging-chain\n  walkthrough; open-issues chips trimmed to the 12 still open.\n- recommended-read and footer updated to Tier 4 / 10d7045.\n\nhow-flyway-works.html\n- header + footer SHA; status-snapshot paragraph (7 of 9, 4 walkthroughs,\n  co-signed agreement); §4 consent section relabelled implemented with a\n  Tier 4 pointer; tool contract table (propose/respond implemented);\n  Fig. 4 legend + caption note the flow is now wired (the SVG arrows are\n  still drawn \"execution pending\" and lag — called out explicitly).\n\nThe SVG negotiation arrows in Fig. 4 are not recoloured; the surrounding\ntext now flags that lag rather than leaving it silent.\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>",
+          "url": "https://github.com/murmurations-ai/flyway/commit/1634c8a5199db19634f27557aea270d81cfe23c5",
+          "committedAt": "2026-06-12T21:45:24Z"
+        },
+        {
+          "repo": "murmurations-ai/flyway",
+          "message": "docs: add Newman review artifacts (demo runbook + walkthrough deck)\n\n- demo-runbook.md: copy-paste runbook for driving the live two-murmuration\n  consent-cycle demo during a review meeting.\n- newman-presentation.html: standalone walkthrough deck (what flyway is,\n  why it exists, the S3 vocabulary, the protocol surface) prepared for\n  Newman's review.\n- research/2026-04-27-multi-murmuration-collaboration.md: cosmetic table\n  whitespace reformat (no content change).\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>",
+          "url": "https://github.com/murmurations-ai/flyway/commit/90a2afc414eb6e8e5ad39d27e1187f1c47102802",
+          "committedAt": "2026-06-12T21:36:49Z"
+        },
+        {
+          "repo": "murmurations-ai/flyway",
+          "message": "docs: Tier 4 walkthrough + reviewer-surface refresh to SHA 10d7045\n\nDocuments the S+5b co-signed-agreement milestone and refreshes the\nreviewer-facing surface to match the wired protocol.\n\n- walkthroughs/2026-06-12-tier4-cosigned-agreement.md (new): executable\n  walkthrough with verbatim transcript — A proposes a final agreement, B\n  co-signs by accepting, both materialize a byte-identical\n  flyway/agreements/<id>.yaml (matching SHA-256). Shows A's detached\n  agreement signature riding inside the proposal and reappearing verbatim\n  in the final file; the verify-before-co-sign guard; the\n  envelope-pinned signedAt that makes the bytes deterministic. Surfaces\n  G8 (agreement→tension back-link, the agreement face of #2) and G9.\n- walkthroughs/README.md: index row for Tier 4.\n- architecture/how-flyway-works.md: consent-flow diagram Phases 2–4 are\n  no longer PENDING; \"What's pending\" now lists only flyway_exit and\n  flyway_discover; domain-tag and lifecycle tables updated; agreements\n  repo-structure node no longer \"pending\"; materialization noted as a\n  local act, not a wire tool.\n- status.md: 7 of 9 tools wired; 4 executable walkthroughs; 315 tests /\n  22 files; 12 open issues (8 closed); S+5a/S+5b milestone rows;\n  co-signature byte-identity added to the crypto-properties table;\n  Tier 4 promoted to the recommended reviewer read.\n\nNote: the hand-built HTML companions (docs/status.html,\ndocs/architecture/how-flyway-works.html) are now stale relative to the\nmarkdown and need a separate rebuild.\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>",
+          "url": "https://github.com/murmurations-ai/flyway/commit/08b4b066072ffde1a30c850fede15bcc46ff06ad",
+          "committedAt": "2026-06-12T21:27:58Z"
+        },
+        {
+          "repo": "murmurations-ai/flyway",
+          "message": "feat(core+cli): S+5b part 1 — materialize co-signed agreements\n\nWhen a final-stage agreement proposal is accepted, both murmurations can\nnow produce a byte-identical flyway/agreements/<id>.yaml from records they\nalready hold — no authoritative copy, each repo is the record. Closes the\nS3 §IV.1.9–1.10 cycle at Phase 4 (Sign).\n\nHow the signatures travel (no extra round trip):\n- A final-stage agreement proposal carries the proposer's detached\n  DOMAIN_AGREEMENT signature over the agreement signing target\n  ({...agreement, state: 'agreed'}, signatures stripped).\n- Accepting that proposal verifies the proposer's half, then attaches the\n  responder's half. You cannot consent to an agreement you couldn't\n  materialize.\n- After accept lands, both parties hold both signatures and materialize\n  independently.\n\nCore\n- signing.ts: signArtifactDetached / verifyDetachedSignature — two\n  parties must sign the SAME canonical bytes, so neither signature can be\n  inline (inline would make the second cover the first).\n- materialize.ts (new): signAgreement, verifyAgreementSignature,\n  materializeAgreement, writeAgreementFile, agreementFilePath. The signing\n  target is the final form; signedAt pins to each carrying envelope's\n  sentAt (never wall-clock), signatures sort by participant DID, fields\n  emit in canonical schema order — that is what makes the bytes identical.\n  ADR-0009 verification on both envelopes and both detached signatures.\n- propose.ts: final-stage agreement proposals auto-attach the proposer's\n  agreement signature; caller-supplied signatures refused; agreement.id\n  validated against the path-traversal-shaped filename it becomes.\n- respond.ts: accept of a final agreement proposal verifies the proposer's\n  half before co-signing; refuses if the proposal carries no signature.\n- agreements.ts: signatures[].verificationKeyId (optional) so the file\n  verifies standalone, without the carrying envelopes.\n- signal.ts: findOutboxSignalById (outbox counterpart of the inbox finder).\n- writeAgreementFile: same atomic-create-or-no-op idempotency as signals;\n  differing bytes at the same path are refused (id reuse).\n\nCLI\n- `flyway materialize <peer-repo-path> --response-id <id> [--proposal-id]`\n  — both sides run the identical command in their own repos; prints the\n  sha256 so the two Sources confirm byte-identity out of band. Trusted\n  peer DID document is the recognition-time cache, never a fresh read.\n\nTests: 315 passed workspace-wide (up from 289).\n  core: +20 (byte-identity across YAML round trips, standalone file\n        verification, tamper/swap/objection/forgery refusals)\n  cli:  +6  (both-sides materialize, refs-resolved proposal id, status\n        integration, unrecognized-peer + objection + unknown-id refusals)\n\nSmoke: full A↔B consent cycle then materialize on both sides — identical\nsha256, byte-identical files, both signatures verify standalone.\n\nStill open for S+5b: Tier 4 walkthrough with verbatim transcript;\nstatus / how-flyway-works refresh; MCP-exposure decision (materialize is a\nlocal act, not one of the 9 protocol tools).\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>",
+          "url": "https://github.com/murmurations-ai/flyway/commit/10d70453610855eea236c2741b86866b170dff98",
+          "committedAt": "2026-06-12T21:14:11Z"
+        }
+      ],
       "error": null
     },
     {
@@ -214,9 +265,27 @@
     {
       "id": "newman5",
       "name": "Newman",
-      "lastActivityAt": "2026-06-11T13:41:45Z",
-      "commitsThisWeek": 4,
+      "lastActivityAt": "2026-06-12T17:14:15Z",
+      "commitsThisWeek": 7,
       "recentCommits": [
+        {
+          "repo": "Newman5/builder-season-playbook",
+          "message": "Merge branch 'main' of https://github.com/Newman5/builder-season-playbook",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/78fe2a7717d9f7f6c5315144c2fa457f0bfdb643",
+          "committedAt": "2026-06-12T17:14:15Z"
+        },
+        {
+          "repo": "Newman5/builder-season-playbook",
+          "message": "we made a landing page and a progress log for the week",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/c2307e949f2984e00b776521f14a95291abb1ef4",
+          "committedAt": "2026-06-12T17:14:13Z"
+        },
+        {
+          "repo": "Newman5/builder-season-playbook",
+          "message": "Update builder activity data",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/bfce0e5634c64a7ab94773924be3c8069ce388c1",
+          "committedAt": "2026-06-12T13:28:33Z"
+        },
         {
           "repo": "Newman5/builder-season-playbook",
           "message": "Update builder activity data",
@@ -228,18 +297,6 @@
           "message": "Update builder activity data",
           "url": "https://github.com/Newman5/builder-season-playbook/commit/1b67c215541446f130fa900a629284527f11053e",
           "committedAt": "2026-06-10T13:31:26Z"
-        },
-        {
-          "repo": "Newman5/builder-season-playbook",
-          "message": "Update builder activity data",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/0ce50d80e6e59e10a70271c38fede640055cc26a",
-          "committedAt": "2026-06-09T13:17:18Z"
-        },
-        {
-          "repo": "Newman5/builder-season-playbook",
-          "message": "Update builder activity data",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/fdc26490535400b48b0a829ec11d074c8914463d",
-          "committedAt": "2026-06-08T13:45:48Z"
         }
       ],
       "error": null
@@ -315,9 +372,16 @@
     {
       "id": "opa007i",
       "name": "Opa",
-      "lastActivityAt": "2026-06-04T15:34:26Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-06-13T07:03:39Z",
+      "commitsThisWeek": 1,
+      "recentCommits": [
+        {
+          "repo": "opa1/the-quest",
+          "message": "feat(missions): public shareable mission pages + share buttons",
+          "url": "https://github.com/opa1/the-quest/commit/f5cfde3ef64cdb85f121e8f19ac6227a20f313cb",
+          "committedAt": "2026-06-13T07:03:39Z"
+        }
+      ],
       "error": null
     },
     {
@@ -339,9 +403,27 @@
     {
       "id": "juanitajaramillo",
       "name": "Juanita",
-      "lastActivityAt": "2026-06-08T13:59:22Z",
-      "commitsThisWeek": 1,
+      "lastActivityAt": "2026-06-12T19:20:42Z",
+      "commitsThisWeek": 4,
       "recentCommits": [
+        {
+          "repo": "JuanitaJaramill/cardano-insights-lab",
+          "message": "Update README.md",
+          "url": "https://github.com/JuanitaJaramill/cardano-insights-lab/commit/ab61227acb37995c2011166322f4bc451fb0aa5c",
+          "committedAt": "2026-06-12T19:20:42Z"
+        },
+        {
+          "repo": "JuanitaJaramill/cardano-insights-lab",
+          "message": "Update README.md",
+          "url": "https://github.com/JuanitaJaramill/cardano-insights-lab/commit/add6b5f2e871544f08fd568bbe618787a7661912",
+          "committedAt": "2026-06-12T19:18:37Z"
+        },
+        {
+          "repo": "JuanitaJaramill/cardano-insights-lab",
+          "message": "Improve beta app free case map",
+          "url": "https://github.com/JuanitaJaramill/cardano-insights-lab/commit/63090604d891663bd520c11123c4ee23ef122d19",
+          "committedAt": "2026-06-12T19:12:57Z"
+        },
         {
           "repo": "JuanitaJaramill/cardano-insights-lab",
           "message": "Improve free case map result",
@@ -354,9 +436,40 @@
     {
       "id": "kamalaliyu",
       "name": "Kamal Aliyu",
-      "lastActivityAt": "2026-06-05T10:00:00Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-06-13T13:15:00Z",
+      "commitsThisWeek": 15,
+      "recentCommits": [
+        {
+          "repo": "kamal-ogtl/cogikids",
+          "message": "docs(characters): document boss background illustrations",
+          "url": "https://github.com/kamal-ogtl/cogikids/commit/d003318458eab2570fb90cec35efa968281a73a8",
+          "committedAt": "2026-06-13T13:15:00Z"
+        },
+        {
+          "repo": "kamal-ogtl/cogikids",
+          "message": "docs(characters): document KidAvatar component",
+          "url": "https://github.com/kamal-ogtl/cogikids/commit/e3585aeb9a878f525ffac4567d1466c8688a17c0",
+          "committedAt": "2026-06-13T10:45:00Z"
+        },
+        {
+          "repo": "kamal-ogtl/cogikids",
+          "message": "docs(ai): document AI lesson generator service",
+          "url": "https://github.com/kamal-ogtl/cogikids/commit/92222d76746b211e7ce32f032c541509755c2835",
+          "committedAt": "2026-06-13T08:30:00Z"
+        },
+        {
+          "repo": "kamal-ogtl/cogikids",
+          "message": "docs(voice): document pronunciation scoring service",
+          "url": "https://github.com/kamal-ogtl/cogikids/commit/e9c2068e682aa8aa59c13b185e48c923cefd1371",
+          "committedAt": "2026-06-12T16:00:00Z"
+        },
+        {
+          "repo": "kamal-ogtl/cogikids",
+          "message": "docs(animations): document Reanimated transition presets",
+          "url": "https://github.com/kamal-ogtl/cogikids/commit/49e08d7a4630fa1d075e7d788d7fd5db54a79f91",
+          "committedAt": "2026-06-12T12:30:00Z"
+        }
+      ],
       "error": null
     },
     {
