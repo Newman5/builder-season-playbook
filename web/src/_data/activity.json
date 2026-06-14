@@ -1,25 +1,43 @@
 {
-  "generatedAt": "2026-06-13T12:52:27Z",
+  "generatedAt": "2026-06-14T12:55:12Z",
   "weekStart": "2026-06-08T00:00:00Z",
   "weekEnd": "2026-06-14T23:59:59Z",
   "builders": [
     {
       "id": "mhizta",
       "name": "Mhizta",
-      "lastActivityAt": "2026-06-13T12:44:01Z",
-      "commitsThisWeek": 2,
+      "lastActivityAt": "2026-06-13T22:16:11Z",
+      "commitsThisWeek": 6,
       "recentCommits": [
+        {
+          "repo": "Mhizta-gab/bookworm-ai",
+          "message": "feat: implement root layout with Clerk and Sonner, and update server action body size limit",
+          "url": "https://github.com/Mhizta-gab/bookworm-ai/commit/e97af1d93acf47bb9752abebb979d74bdc7ec1cd",
+          "committedAt": "2026-06-13T22:16:11Z"
+        },
+        {
+          "repo": "Mhizta-gab/bookworm-ai",
+          "message": "feat: initialize root layout with Clerk provider, toast notifications, and custom typography",
+          "url": "https://github.com/Mhizta-gab/bookworm-ai/commit/e07a2bb3e24e388b78942aff403c5ff66c050a78",
+          "committedAt": "2026-06-13T21:59:38Z"
+        },
+        {
+          "repo": "Mhizta-gab/bookworm-ai",
+          "message": "feat: initialize global layout, typography, and custom Sonner toast styling",
+          "url": "https://github.com/Mhizta-gab/bookworm-ai/commit/853171b2db5d935e69539311a71ab856729a00d6",
+          "committedAt": "2026-06-13T21:55:41Z"
+        },
+        {
+          "repo": "Mhizta-gab/bookworm-ai",
+          "message": "feat: add library dashboard page, Vapi integration hook, voice controls, and book library card component",
+          "url": "https://github.com/Mhizta-gab/bookworm-ai/commit/4372c5ed0c680b0d2c71752eaafdad91d23a0af8",
+          "committedAt": "2026-06-13T21:50:20Z"
+        },
         {
           "repo": "Mhizta-gab/bookworm-ai",
           "message": "feat: implement dashboard shell with navigation, library view, and book management components",
           "url": "https://github.com/Mhizta-gab/bookworm-ai/commit/4233c7a999ba75fdb2c0b8dfd531d78c0f463d48",
           "committedAt": "2026-06-13T12:44:01Z"
-        },
-        {
-          "repo": "Mhizta-gab/bookworm-ai",
-          "message": "feat: implement Vapi-based voice session controls with automated Gemini summarization and session persistence",
-          "url": "https://github.com/Mhizta-gab/bookworm-ai/commit/6f5a635c1818c61765f364c03e73b464299bf4df",
-          "committedAt": "2026-06-13T10:18:44Z"
         }
       ],
       "error": null
@@ -60,9 +78,40 @@
     {
       "id": "dammy",
       "name": "Dammy",
-      "lastActivityAt": "2026-06-05T00:50:26Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-06-13T17:32:53Z",
+      "commitsThisWeek": 6,
+      "recentCommits": [
+        {
+          "repo": "Dammy7942/accordiax",
+          "message": "feat: added rating history page",
+          "url": "https://github.com/Dammy7942/accordiax/commit/c2cf0a5f6dc6bd51b5244ae9873b63db80e0a7a1",
+          "committedAt": "2026-06-13T17:32:53Z"
+        },
+        {
+          "repo": "Dammy7942/accordiax",
+          "message": "fix: typesafe error fixed",
+          "url": "https://github.com/Dammy7942/accordiax/commit/c8a8a5da3a6acdecee1708333d61dc2f39aae70b",
+          "committedAt": "2026-06-13T16:57:22Z"
+        },
+        {
+          "repo": "Dammy7942/accordiax",
+          "message": "chore: trigger redeployment",
+          "url": "https://github.com/Dammy7942/accordiax/commit/efefc6cee6f8f425082362532979d221780c77fe",
+          "committedAt": "2026-06-13T16:54:40Z"
+        },
+        {
+          "repo": "Dammy7942/accordiax",
+          "message": "fix: resolve TypeScript build error in admin escrow API route",
+          "url": "https://github.com/Dammy7942/accordiax/commit/cd79eeca8a7784f3829fb53404c24957fc56c050",
+          "committedAt": "2026-06-13T16:46:54Z"
+        },
+        {
+          "repo": "Dammy7942/accordiax",
+          "message": "fix: remove getUserEmail import from admin page to resolve build error (client component cannot import server-only module)",
+          "url": "https://github.com/Dammy7942/accordiax/commit/eee788b7e7824f3b9bf25a14bbcfc2a4800ba715",
+          "committedAt": "2026-06-13T16:43:39Z"
+        }
+      ],
       "error": null
     },
     {
@@ -131,9 +180,16 @@
     {
       "id": "armanabid",
       "name": "Abid",
-      "lastActivityAt": "2026-06-07T15:49:13Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-06-14T00:38:32Z",
+      "commitsThisWeek": 1,
+      "recentCommits": [
+        {
+          "repo": "ArmanAbid/ChainTask",
+          "message": "add frontend with marketplace, profiles, and tanstack query",
+          "url": "https://github.com/ArmanAbid/ChainTask/commit/998e3bd8dad1a4f620e3a3e0f7fd704803977736",
+          "committedAt": "2026-06-14T00:38:32Z"
+        }
+      ],
       "error": null
     },
     {
@@ -265,9 +321,15 @@
     {
       "id": "newman5",
       "name": "Newman",
-      "lastActivityAt": "2026-06-12T17:14:15Z",
-      "commitsThisWeek": 7,
+      "lastActivityAt": "2026-06-13T12:52:38Z",
+      "commitsThisWeek": 8,
       "recentCommits": [
+        {
+          "repo": "Newman5/builder-season-playbook",
+          "message": "Update builder activity data",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/43f99edfb3a9414f741817248a6b2f3f55d4f01a",
+          "committedAt": "2026-06-13T12:52:38Z"
+        },
         {
           "repo": "Newman5/builder-season-playbook",
           "message": "Merge branch 'main' of https://github.com/Newman5/builder-season-playbook",
@@ -291,12 +353,6 @@
           "message": "Update builder activity data",
           "url": "https://github.com/Newman5/builder-season-playbook/commit/320726bf61fffa09dd3c4a37efd3ec102099adb9",
           "committedAt": "2026-06-11T13:41:45Z"
-        },
-        {
-          "repo": "Newman5/builder-season-playbook",
-          "message": "Update builder activity data",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/1b67c215541446f130fa900a629284527f11053e",
-          "committedAt": "2026-06-10T13:31:26Z"
         }
       ],
       "error": null
