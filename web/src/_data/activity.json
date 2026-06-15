@@ -1,156 +1,38 @@
 {
-  "generatedAt": "2026-06-14T12:55:12Z",
-  "weekStart": "2026-06-08T00:00:00Z",
-  "weekEnd": "2026-06-14T23:59:59Z",
+  "generatedAt": "2026-06-15T14:25:47Z",
+  "weekStart": "2026-06-15T00:00:00Z",
+  "weekEnd": "2026-06-21T23:59:59Z",
   "builders": [
     {
       "id": "mhizta",
       "name": "Mhizta",
       "lastActivityAt": "2026-06-13T22:16:11Z",
-      "commitsThisWeek": 6,
-      "recentCommits": [
-        {
-          "repo": "Mhizta-gab/bookworm-ai",
-          "message": "feat: implement root layout with Clerk and Sonner, and update server action body size limit",
-          "url": "https://github.com/Mhizta-gab/bookworm-ai/commit/e97af1d93acf47bb9752abebb979d74bdc7ec1cd",
-          "committedAt": "2026-06-13T22:16:11Z"
-        },
-        {
-          "repo": "Mhizta-gab/bookworm-ai",
-          "message": "feat: initialize root layout with Clerk provider, toast notifications, and custom typography",
-          "url": "https://github.com/Mhizta-gab/bookworm-ai/commit/e07a2bb3e24e388b78942aff403c5ff66c050a78",
-          "committedAt": "2026-06-13T21:59:38Z"
-        },
-        {
-          "repo": "Mhizta-gab/bookworm-ai",
-          "message": "feat: initialize global layout, typography, and custom Sonner toast styling",
-          "url": "https://github.com/Mhizta-gab/bookworm-ai/commit/853171b2db5d935e69539311a71ab856729a00d6",
-          "committedAt": "2026-06-13T21:55:41Z"
-        },
-        {
-          "repo": "Mhizta-gab/bookworm-ai",
-          "message": "feat: add library dashboard page, Vapi integration hook, voice controls, and book library card component",
-          "url": "https://github.com/Mhizta-gab/bookworm-ai/commit/4372c5ed0c680b0d2c71752eaafdad91d23a0af8",
-          "committedAt": "2026-06-13T21:50:20Z"
-        },
-        {
-          "repo": "Mhizta-gab/bookworm-ai",
-          "message": "feat: implement dashboard shell with navigation, library view, and book management components",
-          "url": "https://github.com/Mhizta-gab/bookworm-ai/commit/4233c7a999ba75fdb2c0b8dfd531d78c0f463d48",
-          "committedAt": "2026-06-13T12:44:01Z"
-        }
-      ],
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
       "id": "ianonjuguna",
       "name": "Ian",
       "lastActivityAt": "2026-06-09T12:32:41Z",
-      "commitsThisWeek": 4,
-      "recentCommits": [
-        {
-          "repo": "IanoNjuguna/bookish-worm",
-          "message": "create architecture doc, update contribution doc & readme file",
-          "url": "https://github.com/IanoNjuguna/bookish-worm/commit/386f26e6e5e6a0ea22bd43f4fb2609e530bc254a",
-          "committedAt": "2026-06-09T12:32:41Z"
-        },
-        {
-          "repo": "IanoNjuguna/bookish-worm",
-          "message": "this project is licensed under GNU AGPL v3.0",
-          "url": "https://github.com/IanoNjuguna/bookish-worm/commit/c423afe6d05202d357751414085dcd78c3105c25",
-          "committedAt": "2026-06-09T11:55:10Z"
-        },
-        {
-          "repo": "IanoNjuguna/bookish-worm",
-          "message": "add architecture",
-          "url": "https://github.com/IanoNjuguna/bookish-worm/commit/25ca28abda8f19044c773c922c04571aa6a5def4",
-          "committedAt": "2026-06-09T11:44:20Z"
-        },
-        {
-          "repo": "IanoNjuguna/bookish-worm",
-          "message": "update description",
-          "url": "https://github.com/IanoNjuguna/bookish-worm/commit/dfd4e5735e7b5e1a147c514079b99767f76c394c",
-          "committedAt": "2026-06-09T11:15:05Z"
-        }
-      ],
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
       "id": "dammy",
       "name": "Dammy",
       "lastActivityAt": "2026-06-13T17:32:53Z",
-      "commitsThisWeek": 6,
-      "recentCommits": [
-        {
-          "repo": "Dammy7942/accordiax",
-          "message": "feat: added rating history page",
-          "url": "https://github.com/Dammy7942/accordiax/commit/c2cf0a5f6dc6bd51b5244ae9873b63db80e0a7a1",
-          "committedAt": "2026-06-13T17:32:53Z"
-        },
-        {
-          "repo": "Dammy7942/accordiax",
-          "message": "fix: typesafe error fixed",
-          "url": "https://github.com/Dammy7942/accordiax/commit/c8a8a5da3a6acdecee1708333d61dc2f39aae70b",
-          "committedAt": "2026-06-13T16:57:22Z"
-        },
-        {
-          "repo": "Dammy7942/accordiax",
-          "message": "chore: trigger redeployment",
-          "url": "https://github.com/Dammy7942/accordiax/commit/efefc6cee6f8f425082362532979d221780c77fe",
-          "committedAt": "2026-06-13T16:54:40Z"
-        },
-        {
-          "repo": "Dammy7942/accordiax",
-          "message": "fix: resolve TypeScript build error in admin escrow API route",
-          "url": "https://github.com/Dammy7942/accordiax/commit/cd79eeca8a7784f3829fb53404c24957fc56c050",
-          "committedAt": "2026-06-13T16:46:54Z"
-        },
-        {
-          "repo": "Dammy7942/accordiax",
-          "message": "fix: remove getUserEmail import from admin page to resolve build error (client component cannot import server-only module)",
-          "url": "https://github.com/Dammy7942/accordiax/commit/eee788b7e7824f3b9bf25a14bbcfc2a4800ba715",
-          "committedAt": "2026-06-13T16:43:39Z"
-        }
-      ],
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
       "id": "gidhub",
       "name": "Gideon",
       "lastActivityAt": "2026-06-13T07:40:05Z",
-      "commitsThisWeek": 18,
-      "recentCommits": [
-        {
-          "repo": "0xGIDHUB/tixano",
-          "message": "Add github link to contact",
-          "url": "https://github.com/0xGIDHUB/tixano/commit/b291d5294fbfe455c29a4a2461aaa6f46edc4cdb",
-          "committedAt": "2026-06-13T07:40:05Z"
-        },
-        {
-          "repo": "0xGIDHUB/tixano",
-          "message": "Update FAQ",
-          "url": "https://github.com/0xGIDHUB/tixano/commit/41dc28add50b8467818eaa145eece9c99fc2b625",
-          "committedAt": "2026-06-09T02:33:32Z"
-        },
-        {
-          "repo": "0xGIDHUB/tixano",
-          "message": ".",
-          "url": "https://github.com/0xGIDHUB/tixano/commit/496dc67863677376bd678ed882c7661b198d3e48",
-          "committedAt": "2026-06-08T15:55:20Z"
-        },
-        {
-          "repo": "0xGIDHUB/tixano",
-          "message": "Fix missing env variable",
-          "url": "https://github.com/0xGIDHUB/tixano/commit/d587d169ac55b38d12e4aa81d3e5c4f3ae80b2b4",
-          "committedAt": "2026-06-08T15:46:46Z"
-        },
-        {
-          "repo": "0xGIDHUB/tixano",
-          "message": "Update link in metadata",
-          "url": "https://github.com/0xGIDHUB/tixano/commit/45a57c37ae0d78478323656f399c1d6ed6add7fc",
-          "committedAt": "2026-06-08T14:16:28Z"
-        }
-      ],
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
@@ -181,36 +63,16 @@
       "id": "armanabid",
       "name": "Abid",
       "lastActivityAt": "2026-06-14T00:38:32Z",
-      "commitsThisWeek": 1,
-      "recentCommits": [
-        {
-          "repo": "ArmanAbid/ChainTask",
-          "message": "add frontend with marketplace, profiles, and tanstack query",
-          "url": "https://github.com/ArmanAbid/ChainTask/commit/998e3bd8dad1a4f620e3a3e0f7fd704803977736",
-          "committedAt": "2026-06-14T00:38:32Z"
-        }
-      ],
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
       "id": "gamechanger",
       "name": "Adriano",
       "lastActivityAt": "2026-06-12T15:44:34Z",
-      "commitsThisWeek": 2,
-      "recentCommits": [
-        {
-          "repo": "GameChangerFinance/NeonSoup",
-          "message": "Merge pull request #4 from GameChangerFinance/feat/composability\n\nFeat/composability",
-          "url": "https://github.com/GameChangerFinance/NeonSoup/commit/e3f3b1a552da9c4cea80b96e0cf06e0058ab9bad",
-          "committedAt": "2026-06-12T15:44:34Z"
-        },
-        {
-          "repo": "GameChangerFinance/NeonSoup",
-          "message": "feat: centralize chain-backed protocol classification and provider normalization\n\n  - Add shared chain transaction shape and getTransactions to MKII and Blockfrost providers\n  - Classify protocol transactions from on-chain evidence using inputs, outputs, beacons, datum\n    previousInput, and valid_contract\n\n  - Treat wallet receipts as hint-only and replace them once chain evidence is available\n  - Support bundle-aware transaction summaries and mixed/fill/open/close semantics\n  - Centralize normalization for transactions, offers, assets, and ownership in reusable domain\n    helpers\n\n  - Fix ownership badges so You is the visible label and the role is preserved in the tooltip title\n  - Remove unsafe MKII metadata-based known inference and keep canonical asset identity keys\n  - Normalize cart/app-state reconciliation after API and wallet-return handling\n  - Fix refresh handlers passing raw events into loaders, which caused extraPendingHashes is not\n    iterable\n\n  - Update AGENTS with new provider, query, and categorization guidance",
-          "url": "https://github.com/GameChangerFinance/NeonSoup/commit/472e5fe3c78eafa1127f2f9a375f184ef2d7e561",
-          "committedAt": "2026-06-12T15:29:21Z"
-        }
-      ],
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
@@ -233,33 +95,8 @@
       "id": "murmurations",
       "name": "Nori",
       "lastActivityAt": "2026-06-12T21:45:24Z",
-      "commitsThisWeek": 4,
-      "recentCommits": [
-        {
-          "repo": "murmurations-ai/flyway",
-          "message": "docs: refresh HTML companions to SHA 10d7045 (S+5b)\n\nBring the hand-built visual companions in line with the markdown refreshed\nin 08b4b06 — they were pinned to d5ad56f / \"6 of 9 tools\".\n\nstatus.html\n- header SHA, date, headline (\"Seven of nine tools. Two murmurations\n  co-signing\"), and at-a-glance stats (7 of 9 tools, 4 walkthroughs, 315\n  tests / 22 files, 12 open issues).\n- tool-maturity table: flyway_propose and flyway_respond now wired;\n  materialization noted as a local act, not a wire tool.\n- milestone timeline SVG: added the S+5 \"agreements\" node, extended the\n  flow line, moved the \"↓ HERE\" pointer, retitled, fixed the date axis.\n- walkthroughs: added the Tier 4 card; \"Four artifacts\".\n- what's-pending: now S+6 exit / S+7 discover / S+8 staging-chain\n  walkthrough; open-issues chips trimmed to the 12 still open.\n- recommended-read and footer updated to Tier 4 / 10d7045.\n\nhow-flyway-works.html\n- header + footer SHA; status-snapshot paragraph (7 of 9, 4 walkthroughs,\n  co-signed agreement); §4 consent section relabelled implemented with a\n  Tier 4 pointer; tool contract table (propose/respond implemented);\n  Fig. 4 legend + caption note the flow is now wired (the SVG arrows are\n  still drawn \"execution pending\" and lag — called out explicitly).\n\nThe SVG negotiation arrows in Fig. 4 are not recoloured; the surrounding\ntext now flags that lag rather than leaving it silent.\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>",
-          "url": "https://github.com/murmurations-ai/flyway/commit/1634c8a5199db19634f27557aea270d81cfe23c5",
-          "committedAt": "2026-06-12T21:45:24Z"
-        },
-        {
-          "repo": "murmurations-ai/flyway",
-          "message": "docs: add Newman review artifacts (demo runbook + walkthrough deck)\n\n- demo-runbook.md: copy-paste runbook for driving the live two-murmuration\n  consent-cycle demo during a review meeting.\n- newman-presentation.html: standalone walkthrough deck (what flyway is,\n  why it exists, the S3 vocabulary, the protocol surface) prepared for\n  Newman's review.\n- research/2026-04-27-multi-murmuration-collaboration.md: cosmetic table\n  whitespace reformat (no content change).\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>",
-          "url": "https://github.com/murmurations-ai/flyway/commit/90a2afc414eb6e8e5ad39d27e1187f1c47102802",
-          "committedAt": "2026-06-12T21:36:49Z"
-        },
-        {
-          "repo": "murmurations-ai/flyway",
-          "message": "docs: Tier 4 walkthrough + reviewer-surface refresh to SHA 10d7045\n\nDocuments the S+5b co-signed-agreement milestone and refreshes the\nreviewer-facing surface to match the wired protocol.\n\n- walkthroughs/2026-06-12-tier4-cosigned-agreement.md (new): executable\n  walkthrough with verbatim transcript — A proposes a final agreement, B\n  co-signs by accepting, both materialize a byte-identical\n  flyway/agreements/<id>.yaml (matching SHA-256). Shows A's detached\n  agreement signature riding inside the proposal and reappearing verbatim\n  in the final file; the verify-before-co-sign guard; the\n  envelope-pinned signedAt that makes the bytes deterministic. Surfaces\n  G8 (agreement→tension back-link, the agreement face of #2) and G9.\n- walkthroughs/README.md: index row for Tier 4.\n- architecture/how-flyway-works.md: consent-flow diagram Phases 2–4 are\n  no longer PENDING; \"What's pending\" now lists only flyway_exit and\n  flyway_discover; domain-tag and lifecycle tables updated; agreements\n  repo-structure node no longer \"pending\"; materialization noted as a\n  local act, not a wire tool.\n- status.md: 7 of 9 tools wired; 4 executable walkthroughs; 315 tests /\n  22 files; 12 open issues (8 closed); S+5a/S+5b milestone rows;\n  co-signature byte-identity added to the crypto-properties table;\n  Tier 4 promoted to the recommended reviewer read.\n\nNote: the hand-built HTML companions (docs/status.html,\ndocs/architecture/how-flyway-works.html) are now stale relative to the\nmarkdown and need a separate rebuild.\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>",
-          "url": "https://github.com/murmurations-ai/flyway/commit/08b4b066072ffde1a30c850fede15bcc46ff06ad",
-          "committedAt": "2026-06-12T21:27:58Z"
-        },
-        {
-          "repo": "murmurations-ai/flyway",
-          "message": "feat(core+cli): S+5b part 1 — materialize co-signed agreements\n\nWhen a final-stage agreement proposal is accepted, both murmurations can\nnow produce a byte-identical flyway/agreements/<id>.yaml from records they\nalready hold — no authoritative copy, each repo is the record. Closes the\nS3 §IV.1.9–1.10 cycle at Phase 4 (Sign).\n\nHow the signatures travel (no extra round trip):\n- A final-stage agreement proposal carries the proposer's detached\n  DOMAIN_AGREEMENT signature over the agreement signing target\n  ({...agreement, state: 'agreed'}, signatures stripped).\n- Accepting that proposal verifies the proposer's half, then attaches the\n  responder's half. You cannot consent to an agreement you couldn't\n  materialize.\n- After accept lands, both parties hold both signatures and materialize\n  independently.\n\nCore\n- signing.ts: signArtifactDetached / verifyDetachedSignature — two\n  parties must sign the SAME canonical bytes, so neither signature can be\n  inline (inline would make the second cover the first).\n- materialize.ts (new): signAgreement, verifyAgreementSignature,\n  materializeAgreement, writeAgreementFile, agreementFilePath. The signing\n  target is the final form; signedAt pins to each carrying envelope's\n  sentAt (never wall-clock), signatures sort by participant DID, fields\n  emit in canonical schema order — that is what makes the bytes identical.\n  ADR-0009 verification on both envelopes and both detached signatures.\n- propose.ts: final-stage agreement proposals auto-attach the proposer's\n  agreement signature; caller-supplied signatures refused; agreement.id\n  validated against the path-traversal-shaped filename it becomes.\n- respond.ts: accept of a final agreement proposal verifies the proposer's\n  half before co-signing; refuses if the proposal carries no signature.\n- agreements.ts: signatures[].verificationKeyId (optional) so the file\n  verifies standalone, without the carrying envelopes.\n- signal.ts: findOutboxSignalById (outbox counterpart of the inbox finder).\n- writeAgreementFile: same atomic-create-or-no-op idempotency as signals;\n  differing bytes at the same path are refused (id reuse).\n\nCLI\n- `flyway materialize <peer-repo-path> --response-id <id> [--proposal-id]`\n  — both sides run the identical command in their own repos; prints the\n  sha256 so the two Sources confirm byte-identity out of band. Trusted\n  peer DID document is the recognition-time cache, never a fresh read.\n\nTests: 315 passed workspace-wide (up from 289).\n  core: +20 (byte-identity across YAML round trips, standalone file\n        verification, tamper/swap/objection/forgery refusals)\n  cli:  +6  (both-sides materialize, refs-resolved proposal id, status\n        integration, unrecognized-peer + objection + unknown-id refusals)\n\nSmoke: full A↔B consent cycle then materialize on both sides — identical\nsha256, byte-identical files, both signatures verify standalone.\n\nStill open for S+5b: Tier 4 walkthrough with verbatim transcript;\nstatus / how-flyway-works refresh; MCP-exposure decision (materialize is a\nlocal act, not one of the 9 protocol tools).\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>",
-          "url": "https://github.com/murmurations-ai/flyway/commit/10d70453610855eea236c2741b86866b170dff98",
-          "committedAt": "2026-06-12T21:14:11Z"
-        }
-      ],
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
@@ -274,87 +111,24 @@
       "id": "trike",
       "name": "Anita",
       "lastActivityAt": "2026-06-10T06:27:59Z",
-      "commitsThisWeek": 1,
-      "recentCommits": [
-        {
-          "repo": "3rike12/3rike-Mobility_",
-          "message": "feat: update deployment addresses, adjust share pricing, and add 3rike branding assets and theme specification.",
-          "url": "https://github.com/3rike12/3rike-Mobility_/commit/20e695d703b1ad12655a5aeefed840a08e7c1033",
-          "committedAt": "2026-06-10T06:27:59Z"
-        }
-      ],
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
       "id": "mobrai",
       "name": "Marcio",
       "lastActivityAt": "2026-06-09T12:40:35Z",
-      "commitsThisWeek": 4,
-      "recentCommits": [
-        {
-          "repo": "mobr-ai/cap-pie",
-          "message": "Update README.md",
-          "url": "https://github.com/mobr-ai/cap-pie/commit/cb2d5b1c79a7356e6bc097a368536693c8e871df",
-          "committedAt": "2026-06-09T12:40:35Z"
-        },
-        {
-          "repo": "mobr-ai/cap-pie",
-          "message": "Update README.md",
-          "url": "https://github.com/mobr-ai/cap-pie/commit/7ca0caf8106a5d2e46aca5be062934a387ea2321",
-          "committedAt": "2026-06-09T12:36:08Z"
-        },
-        {
-          "repo": "mobr-ai/cap-pie",
-          "message": "Update README.md",
-          "url": "https://github.com/mobr-ai/cap-pie/commit/a84e682c425453de8a24abedb9d8d10073b7f288",
-          "committedAt": "2026-06-09T12:34:35Z"
-        },
-        {
-          "repo": "mobr-ai/cap-pie",
-          "message": "Update README.md",
-          "url": "https://github.com/mobr-ai/cap-pie/commit/71e8af579c6beae26509ca41b60fb806c2db9863",
-          "committedAt": "2026-06-08T20:26:57Z"
-        }
-      ],
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
       "id": "newman5",
       "name": "Newman",
-      "lastActivityAt": "2026-06-13T12:52:38Z",
-      "commitsThisWeek": 8,
-      "recentCommits": [
-        {
-          "repo": "Newman5/builder-season-playbook",
-          "message": "Update builder activity data",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/43f99edfb3a9414f741817248a6b2f3f55d4f01a",
-          "committedAt": "2026-06-13T12:52:38Z"
-        },
-        {
-          "repo": "Newman5/builder-season-playbook",
-          "message": "Merge branch 'main' of https://github.com/Newman5/builder-season-playbook",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/78fe2a7717d9f7f6c5315144c2fa457f0bfdb643",
-          "committedAt": "2026-06-12T17:14:15Z"
-        },
-        {
-          "repo": "Newman5/builder-season-playbook",
-          "message": "we made a landing page and a progress log for the week",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/c2307e949f2984e00b776521f14a95291abb1ef4",
-          "committedAt": "2026-06-12T17:14:13Z"
-        },
-        {
-          "repo": "Newman5/builder-season-playbook",
-          "message": "Update builder activity data",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/bfce0e5634c64a7ab94773924be3c8069ce388c1",
-          "committedAt": "2026-06-12T13:28:33Z"
-        },
-        {
-          "repo": "Newman5/builder-season-playbook",
-          "message": "Update builder activity data",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/320726bf61fffa09dd3c4a37efd3ec102099adb9",
-          "committedAt": "2026-06-11T13:41:45Z"
-        }
-      ],
+      "lastActivityAt": "2026-06-14T12:55:20Z",
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
@@ -369,75 +143,24 @@
       "id": "devfreeguy",
       "name": "Daniel",
       "lastActivityAt": "2026-06-12T01:38:49Z",
-      "commitsThisWeek": 6,
-      "recentCommits": [
-        {
-          "repo": "devfreeguy/skill-swap",
-          "message": "feat: build profile page with skills, wallet, and exchange stats",
-          "url": "https://github.com/devfreeguy/skill-swap/commit/df097d77caf92407db5cc4ad70fa58df1aee7196",
-          "committedAt": "2026-06-12T01:38:49Z"
-        },
-        {
-          "repo": "devfreeguy/skill-swap",
-          "message": "fix(router): prevent infinite fetch loop and handle aborted renders\n\n- Remove `router` from effect dependencies to stop re-fetching on every navigation state update.\n- Implement a `cancelled` flag in the effect cleanup to prevent memory leaks and state updates on unmounted components.",
-          "url": "https://github.com/devfreeguy/skill-swap/commit/6aef212de76c446bc794bbd94c3a445cd86550f7",
-          "committedAt": "2026-06-12T01:35:34Z"
-        },
-        {
-          "repo": "devfreeguy/skill-swap",
-          "message": "feat: build notifications page with type filters and read tracking",
-          "url": "https://github.com/devfreeguy/skill-swap/commit/078abe903594bc713c394df8086f1d033301d979",
-          "committedAt": "2026-06-12T01:11:41Z"
-        },
-        {
-          "repo": "devfreeguy/skill-swap",
-          "message": "feat: build messaging system with link, image, and document support",
-          "url": "https://github.com/devfreeguy/skill-swap/commit/eddabb51ca631d8f7b2a2fa5dae6abf39b561042",
-          "committedAt": "2026-06-12T00:44:48Z"
-        },
-        {
-          "repo": "devfreeguy/skill-swap",
-          "message": "feat: add link, image, and document message types with messaging api routes",
-          "url": "https://github.com/devfreeguy/skill-swap/commit/a045d29922ad2b8f35b1cb2ec77a74ceb6b57823",
-          "committedAt": "2026-06-12T00:26:47Z"
-        }
-      ],
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
       "id": "haulink",
       "name": "Abdulazeez",
       "lastActivityAt": "2026-06-12T03:57:14Z",
-      "commitsThisWeek": 2,
-      "recentCommits": [
-        {
-          "repo": "FoladDTechie/Haulink",
-          "message": "Merge pull request #10 from FoladDTechie/HAUL-22-AZB\n\nfix: booking_slots RLS policy for Cardano payment flow",
-          "url": "https://github.com/FoladDTechie/Haulink/commit/b8ab7a9bad4a0956d643dca0f18cb0f3063831ea",
-          "committedAt": "2026-06-12T03:57:14Z"
-        },
-        {
-          "repo": "FoladDTechie/Haulink",
-          "message": "fix: booking_slots RLS policy for Cardano payment flow",
-          "url": "https://github.com/FoladDTechie/Haulink/commit/f71d55325f96897abed30b2d1590e2d75a1cc084",
-          "committedAt": "2026-06-12T03:54:51Z"
-        }
-      ],
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
       "id": "opa007i",
       "name": "Opa",
       "lastActivityAt": "2026-06-13T07:03:39Z",
-      "commitsThisWeek": 1,
-      "recentCommits": [
-        {
-          "repo": "opa1/the-quest",
-          "message": "feat(missions): public shareable mission pages + share buttons",
-          "url": "https://github.com/opa1/the-quest/commit/f5cfde3ef64cdb85f121e8f19ac6227a20f313cb",
-          "committedAt": "2026-06-13T07:03:39Z"
-        }
-      ],
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
@@ -451,7 +174,7 @@
     {
       "id": "muhammedyuguda",
       "name": "Muhammed",
-      "lastActivityAt": "2026-06-07T13:40:57Z",
+      "lastActivityAt": "2026-06-14T17:30:52Z",
       "commitsThisWeek": 0,
       "recentCommits": [],
       "error": null
@@ -460,111 +183,24 @@
       "id": "juanitajaramillo",
       "name": "Juanita",
       "lastActivityAt": "2026-06-12T19:20:42Z",
-      "commitsThisWeek": 4,
-      "recentCommits": [
-        {
-          "repo": "JuanitaJaramill/cardano-insights-lab",
-          "message": "Update README.md",
-          "url": "https://github.com/JuanitaJaramill/cardano-insights-lab/commit/ab61227acb37995c2011166322f4bc451fb0aa5c",
-          "committedAt": "2026-06-12T19:20:42Z"
-        },
-        {
-          "repo": "JuanitaJaramill/cardano-insights-lab",
-          "message": "Update README.md",
-          "url": "https://github.com/JuanitaJaramill/cardano-insights-lab/commit/add6b5f2e871544f08fd568bbe618787a7661912",
-          "committedAt": "2026-06-12T19:18:37Z"
-        },
-        {
-          "repo": "JuanitaJaramill/cardano-insights-lab",
-          "message": "Improve beta app free case map",
-          "url": "https://github.com/JuanitaJaramill/cardano-insights-lab/commit/63090604d891663bd520c11123c4ee23ef122d19",
-          "committedAt": "2026-06-12T19:12:57Z"
-        },
-        {
-          "repo": "JuanitaJaramill/cardano-insights-lab",
-          "message": "Improve free case map result",
-          "url": "https://github.com/JuanitaJaramill/cardano-insights-lab/commit/3a975294aab47b6fde52b90733670d36966bec82",
-          "committedAt": "2026-06-08T13:59:22Z"
-        }
-      ],
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
       "id": "kamalaliyu",
       "name": "Kamal Aliyu",
       "lastActivityAt": "2026-06-13T13:15:00Z",
-      "commitsThisWeek": 15,
-      "recentCommits": [
-        {
-          "repo": "kamal-ogtl/cogikids",
-          "message": "docs(characters): document boss background illustrations",
-          "url": "https://github.com/kamal-ogtl/cogikids/commit/d003318458eab2570fb90cec35efa968281a73a8",
-          "committedAt": "2026-06-13T13:15:00Z"
-        },
-        {
-          "repo": "kamal-ogtl/cogikids",
-          "message": "docs(characters): document KidAvatar component",
-          "url": "https://github.com/kamal-ogtl/cogikids/commit/e3585aeb9a878f525ffac4567d1466c8688a17c0",
-          "committedAt": "2026-06-13T10:45:00Z"
-        },
-        {
-          "repo": "kamal-ogtl/cogikids",
-          "message": "docs(ai): document AI lesson generator service",
-          "url": "https://github.com/kamal-ogtl/cogikids/commit/92222d76746b211e7ce32f032c541509755c2835",
-          "committedAt": "2026-06-13T08:30:00Z"
-        },
-        {
-          "repo": "kamal-ogtl/cogikids",
-          "message": "docs(voice): document pronunciation scoring service",
-          "url": "https://github.com/kamal-ogtl/cogikids/commit/e9c2068e682aa8aa59c13b185e48c923cefd1371",
-          "committedAt": "2026-06-12T16:00:00Z"
-        },
-        {
-          "repo": "kamal-ogtl/cogikids",
-          "message": "docs(animations): document Reanimated transition presets",
-          "url": "https://github.com/kamal-ogtl/cogikids/commit/49e08d7a4630fa1d075e7d788d7fd5db54a79f91",
-          "committedAt": "2026-06-12T12:30:00Z"
-        }
-      ],
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
       "id": "alfreditodole",
       "name": "Alfred Itodole",
-      "lastActivityAt": "2026-06-11T19:50:01Z",
-      "commitsThisWeek": 11,
-      "recentCommits": [
-        {
-          "repo": "sirxalfred/mosaic-cardano",
-          "message": "fix: invalid url error",
-          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/1cd9e192d38c66a76ac907f3fd72b70959f1f70a",
-          "committedAt": "2026-06-11T19:50:01Z"
-        },
-        {
-          "repo": "sirxalfred/mosaic-cardano",
-          "message": "Merge pull request #12 from sirXalfred/chore/landing-main\n\nfeat(seo): enhance landing page with pricing, UI updates, and SEO improvements",
-          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/2b0e8b7874549f2fa7f1f121f13610ebc483deec",
-          "committedAt": "2026-06-11T19:32:05Z"
-        },
-        {
-          "repo": "sirxalfred/mosaic-cardano",
-          "message": "chore: remove unused FilmGrain component",
-          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/a242eea35c2727321f30f752b45054e524b84504",
-          "committedAt": "2026-06-11T19:22:53Z"
-        },
-        {
-          "repo": "sirxalfred/mosaic-cardano",
-          "message": "Merge pull request #3 from DavidTimi1/main\n\nDelete src/middleware.ts",
-          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/47880b38ab8de6d5809563e1a8a549d8246bd4b3",
-          "committedAt": "2026-06-11T19:17:21Z"
-        },
-        {
-          "repo": "sirxalfred/mosaic-cardano",
-          "message": "config: add example env file",
-          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/bcba8b6c50fc878ccfe07397a3911eee977a5d10",
-          "committedAt": "2026-06-11T18:58:51Z"
-        }
-      ],
+      "lastActivityAt": "2026-06-14T13:36:19Z",
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     }
   ]
