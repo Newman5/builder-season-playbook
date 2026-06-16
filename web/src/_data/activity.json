@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-15T14:25:47Z",
+  "generatedAt": "2026-06-16T14:07:05Z",
   "weekStart": "2026-06-15T00:00:00Z",
   "weekEnd": "2026-06-21T23:59:59Z",
   "builders": [
@@ -30,9 +30,22 @@
     {
       "id": "gidhub",
       "name": "Gideon",
-      "lastActivityAt": "2026-06-13T07:40:05Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-06-16T03:24:11Z",
+      "commitsThisWeek": 2,
+      "recentCommits": [
+        {
+          "repo": "0xGIDHUB/tixano",
+          "message": "UI optimization for date inputs",
+          "url": "https://github.com/0xGIDHUB/tixano/commit/9bd65c7f664996508253d4663e69a7804984571b",
+          "committedAt": "2026-06-16T03:24:11Z"
+        },
+        {
+          "repo": "0xGIDHUB/tixano",
+          "message": "Display events name on tickets card in dashboard view",
+          "url": "https://github.com/0xGIDHUB/tixano/commit/f555e6083c89f32b15069012ac5c2c7df62a12fd",
+          "committedAt": "2026-06-16T02:14:33Z"
+        }
+      ],
       "error": null
     },
     {
@@ -126,9 +139,16 @@
     {
       "id": "newman5",
       "name": "Newman",
-      "lastActivityAt": "2026-06-14T12:55:20Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-06-15T14:25:59Z",
+      "commitsThisWeek": 1,
+      "recentCommits": [
+        {
+          "repo": "Newman5/builder-season-playbook",
+          "message": "Update builder activity data",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/eae705e829642a1c15f89ac28975de82e454c893",
+          "committedAt": "2026-06-15T14:25:59Z"
+        }
+      ],
       "error": null
     },
     {
@@ -198,9 +218,16 @@
     {
       "id": "alfreditodole",
       "name": "Alfred Itodole",
-      "lastActivityAt": "2026-06-14T13:36:19Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-06-16T10:43:41Z",
+      "commitsThisWeek": 1,
+      "recentCommits": [
+        {
+          "repo": "sirxalfred/mosaic-cardano",
+          "message": "Update hackathon status to Week 7 and last updated date",
+          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/f67f8ac66570907fb51f790d7d9a98d901212989",
+          "committedAt": "2026-06-16T10:43:41Z"
+        }
+      ],
       "error": null
     }
   ]
