@@ -1,0 +1,159 @@
+hero:
+  eventName: "Piece of Pie Hackathon"
+  seasonName: "Season 1"
+  communityName: "Gimbalabs"
+  eyebrow: "Public progress - clear rules - real output"
+  title: "Build in public. Qualify through consistency."
+  duration: 12
+  lead: "This is not about judges picking favorites. It is about meeting clear requirements, showing visible effort, and earning your slice by doing the work."
+  sideCopy: "Teams can be solo or multi-person, but every participant must be named. Each project must have one official public repo, and every participant can only be in one project."
+  stats:
+    - label: Duration
+      value: event_duration
+    - label: Enrollment
+      value: enrollment
+    - label: Repo
+      value: Public and official
+    - label: Progress
+      value: weekly_update
+
+overview:
+  title: "A builder season for visible work."
+  copy: "The season gives builders enough time to ship real software while keeping public proof simple enough for organizers to verify."
+  cards:
+    - title: "Build consistently"
+      copy: "Use the full season to make steady progress instead of rushing toward a single demo day."
+    - title: "Share publicly"
+      copy: "Post weekly updates so the community can see what changed, what shipped, and what is blocked."
+    - title: "Ship real products"
+      copy: "Aim for a public product that people can use, pay for, test, or give feedback on."
+    - title: "Verify with evidence"
+      copy: "Qualification depends on public repos, weekly updates, final presentation links, and clear track requirements."
+
+howItWorks:
+  title: "The season runs on a simple operating loop."
+  copy: "Register once, build in public every week, collect evidence, and present the public record at the end."
+  steps:
+    - title: "Register the project"
+      copy: "Submit one project, name every contributor, and declare the official public repository."
+    - title: "Build in the open"
+      copy: "Keep the repo active and use public updates to show visible progress each week."
+    - title: "Use feedback"
+      copy: "Ask for recorded feedback sessions and help other builders improve their work."
+    - title: "Present the evidence"
+      copy: "Show the demo, repo, deployed product, and weekly updates during final verification."
+
+rewards:
+  title: "How the pie gets shared."
+  copy: "Each pool rewards a different kind of contribution: building consistently, shipping in the sponsor ecosystem, proving real-world value, and helping other teams get better."
+  pill: "qualification beats judging"
+  cards:
+    - key: builder
+      title: "Builder Pie"
+      amountKey: builderPrizePool
+      copy: "Build one project through the season and share progress publicly each week. Qualified builders split this pool equally."
+    - key: cardano
+      title: "Sponsored Pie"
+      amountKey: sponsoredTrackPrizePool
+      copy: "Qualify for the sponsor track by meeting Builder requirements plus the ecosystem-specific requirements. This replaces the Builder Pie for qualifying teams."
+    - key: user
+      title: "Real User Pie"
+      amountKey: realUserPrizePool
+      copy: "Show at least one real paying user, payment evidence, and a public story of how you acquired that user."
+    - key: feedback
+      title: "Feedback Pie"
+      amountKey: feedbackPrizePool
+      copy: "Give live, recorded feedback to other builders. This pool is distributed proportionally by valid feedback credits."
+
+sponsors:
+  mark: "CF"
+  title: "Backed by season sponsors."
+  copy: "Sponsors make the reward pools and focused builder incentives possible."
+
+rules:
+  title: "Core rules."
+  copy: "Read this before anything else. These rules define what can qualify and what evidence builders need to preserve."
+  builder:
+    - title: "Build something real users can use"
+      copy: "Your project must be a user-facing software product with a clear payment gate or business model."
+    - title: "Work solo or form a team"
+      copy: "Solo projects and team projects are both welcome."
+    - title: "Register every contributor"
+      copy: "Every person contributing to the project must be named during registration."
+    - title: "Commit to a single project"
+      copy: "Each participant may only join one project during the season."
+    - title: "Maintain one official public repo"
+      copy: "The repository is the public source of truth and must remain public through verification."
+    - title: "Start with an empty repo"
+      copy: "The official repository must start empty for the event."
+    - title: "Post weekly public progress"
+      copy: "Every required week needs at least one public update that shows progress and includes the required tags and mention."
+    - title: "Deploy the product"
+      copy: "By the end of the event, the product must be publicly accessible on its intended platform."
+    - title: "Deliver a complete final presentation"
+      copy: "Final verification needs a demo, public repo, weekly update links, and deployed product link."
+  sponsorTrack:
+    - title: "Meet Builder requirements plus sponsor requirements"
+      copy: "Sponsor-track projects must qualify as builders first and then satisfy the sponsor-specific rules."
+  realUser:
+    - title: "Qualify as a builder first"
+      copy: "Real User qualification starts with a valid Builder or sponsor-track qualification."
+    - title: "Gain a real paying user"
+      copy: "The paying user cannot be family or friends, and payment evidence must be verifiable."
+    - title: "Publish the acquisition story"
+      copy: "Share how you found the customer and why the product created enough value for payment."
+  feedback:
+    - title: "Participate with or without a project"
+      copy: "The feedback track is open even if you are not submitting a builder project."
+    - title: "Use recorded live sessions"
+      copy: "Feedback must happen in a live recorded session with the builder present."
+    - title: "Earn credits with evidence"
+      copy: "Each valid recorded session earns one feedback credit up to the season limit."
+
+timeline:
+  title: "Timeline."
+  copy: "Start with enrollment, then keep momentum through build weeks, feedback, final presentations, and payouts."
+  items:
+    - title: "Enrollment period"
+      dateKey: enrollment
+      copy: "Register the project, list every participant, and submit the official public repo."
+    - title: "Build period"
+      dateKey: build
+      copy: "Build in public, keep the repo updated, and post weekly public progress."
+    - title: "Final presentations"
+      dateKey: final
+      copy: "Show the demo, public repo, all weekly update links, and deployed product."
+    - title: "Payout window"
+      dateKey: payout
+      copy: "Qualified participants receive shares according to the published rules."
+
+registration:
+  title: "Registration."
+  copy: "Submit one registration form per project during the enrollment window."
+  steps:
+    - title: "Step 1 - prepare your project info"
+      copy: "Finalize your project title and team members, create an empty public GitHub repo, and keep the repo link ready."
+    - title: "Step 2 - complete the form"
+      copy: "Submit the official registration form with accurate participant and project information."
+    - title: "Step 3 - keep proof public"
+      copy: "Keep the repository, weekly updates, and final evidence public until verification and payouts are complete."
+
+faq:
+  title: "Questions builders usually ask."
+  items:
+    - question: "Can I work alone?"
+      answer: "Yes. Solo and team projects are both allowed."
+    - question: "Can I join more than one project?"
+      answer: "No. Each participant may only join one project."
+    - question: "Can we use a private repository?"
+      answer: "No. The official repository must be public and remain public until final payouts are complete."
+    - question: "What happens if I miss a weekly update?"
+      answer: "Missing a required weekly update is disqualifying for Builder qualification."
+    - question: "Do I need a deployed product?"
+      answer: "For Builder qualification, yes. By the end of the event, the product must be publicly accessible."
+    - question: "Do I need to be a Builder to participate in the Feedback Pie?"
+      answer: "No. You may participate in the Feedback track without a builder project."
+
+community:
+  title: "Official source of truth."
+  copy: "Detailed rules, clarifications, FAQs, dashboard data, and official updates should stay easy to find throughout the season."

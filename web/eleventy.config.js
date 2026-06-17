@@ -104,6 +104,14 @@ export default function (eleventyConfig) {
     JSON.stringify(value, null, spaces)
   );
 
+  eleventyConfig.addFilter("numberWithCommas", (value) => {
+    const number = Number(value);
+    if (!Number.isFinite(number)) {
+      return value ?? "";
+    }
+    return number.toLocaleString("en-US");
+  });
+
   eleventyConfig.addFilter("activityForBuilder", (activity, builderId) => {
     const records = activity?.builders || [];
     return records.find((entry) => entry.id === builderId) || null;
