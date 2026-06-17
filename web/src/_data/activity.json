@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-16T14:07:05Z",
+  "generatedAt": "2026-06-17T13:30:57Z",
   "weekStart": "2026-06-15T00:00:00Z",
   "weekEnd": "2026-06-21T23:59:59Z",
   "builders": [
@@ -123,25 +123,99 @@
     {
       "id": "trike",
       "name": "Anita",
-      "lastActivityAt": "2026-06-10T06:27:59Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-06-16T15:14:23Z",
+      "commitsThisWeek": 5,
+      "recentCommits": [
+        {
+          "repo": "3rike12/3rike-Mobility_",
+          "message": "refactor: frontend — Midnight wallet types, ZK commitment UI, remove EVM display",
+          "url": "https://github.com/3rike12/3rike-Mobility_/commit/8543e5f8cb93f7c535a4e206dcab9e6c47f25c2d",
+          "committedAt": "2026-06-16T15:14:23Z"
+        },
+        {
+          "repo": "3rike12/3rike-Mobility_",
+          "message": "feat: backend Midnight integration — SDK wrapper, wallet, investment service, routes",
+          "url": "https://github.com/3rike12/3rike-Mobility_/commit/50a3ef5ab4d3b381c971ae427c8041624dc29c01",
+          "committedAt": "2026-06-16T15:14:17Z"
+        },
+        {
+          "repo": "3rike12/3rike-Mobility_",
+          "message": "feat: Cardano TricycleNFT — CIP-25 minting policy in Aiken",
+          "url": "https://github.com/3rike12/3rike-Mobility_/commit/13378c35a7d72ae6d2efaf330118b7f55da571d9",
+          "committedAt": "2026-06-16T15:14:12Z"
+        },
+        {
+          "repo": "3rike12/3rike-Mobility_",
+          "message": "feat: Midnight privacy contracts — UserRegistry, PrivateInvestment, YieldVault",
+          "url": "https://github.com/3rike12/3rike-Mobility_/commit/e8bed3d1b7c10a6e9cbe6b61321acff7a08a73c6",
+          "committedAt": "2026-06-16T15:14:08Z"
+        },
+        {
+          "repo": "3rike12/3rike-Mobility_",
+          "message": "chore: remove EVM — viem, Robinhood Chain, Arbitrum treasury, legacy scripts",
+          "url": "https://github.com/3rike12/3rike-Mobility_/commit/682b9be5dd72f9729d072b24530e75ff72bb8dcd",
+          "committedAt": "2026-06-16T15:14:04Z"
+        }
+      ],
       "error": null
     },
     {
       "id": "mobrai",
       "name": "Marcio",
-      "lastActivityAt": "2026-06-09T12:40:35Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-06-16T20:17:30Z",
+      "commitsThisWeek": 16,
+      "recentCommits": [
+        {
+          "repo": "mobr-ai/cap-pie",
+          "message": "Merge branch 'main' of github.com:mobr-ai/cap-pie",
+          "url": "https://github.com/mobr-ai/cap-pie/commit/141bbff55c13819dcb824bdb57c3dc8432a94165",
+          "committedAt": "2026-06-16T20:17:30Z"
+        },
+        {
+          "repo": "mobr-ai/cap-pie",
+          "message": "Merge commit 'c0e78fd9d888b4669516f7369d47273596fadc4a'",
+          "url": "https://github.com/mobr-ai/cap-pie/commit/0ee29ba500b535c278705043ee8f2fc8fa4b2d65",
+          "committedAt": "2026-06-16T20:16:20Z"
+        },
+        {
+          "repo": "mobr-ai/cap-pie",
+          "message": "Merge commit 'c03a353f9953843651f69cd3e6c253835d1cfca1'",
+          "url": "https://github.com/mobr-ai/cap-pie/commit/cf70e44cc4a19cecc6ea12d053dbe26b2ff253eb",
+          "committedAt": "2026-06-16T20:14:12Z"
+        },
+        {
+          "repo": "mobr-ai/cap-pie",
+          "message": "Merge commit '9d40f34cda0caf192c6e8fc15d8b380abf0953e5'",
+          "url": "https://github.com/mobr-ai/cap-pie/commit/bd888863c664246a6c35d7d7386b4c18f0dcdb2a",
+          "committedAt": "2026-06-16T20:13:47Z"
+        },
+        {
+          "repo": "mobr-ai/cap-pie",
+          "message": "removing graph step default message",
+          "url": "https://github.com/mobr-ai/cap-pie/commit/9d40f34cda0caf192c6e8fc15d8b380abf0953e5",
+          "committedAt": "2026-06-16T16:44:47Z"
+        }
+      ],
       "error": null
     },
     {
       "id": "newman5",
       "name": "Newman",
-      "lastActivityAt": "2026-06-15T14:25:59Z",
-      "commitsThisWeek": 1,
+      "lastActivityAt": "2026-06-16T20:45:57Z",
+      "commitsThisWeek": 3,
       "recentCommits": [
+        {
+          "repo": "Newman5/builder-season-playbook",
+          "message": "Add admin templates and rules for builder season management",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/0e2bae987a6f10757e1fb79dba8b4d76992e8d26",
+          "committedAt": "2026-06-16T20:45:57Z"
+        },
+        {
+          "repo": "Newman5/builder-season-playbook",
+          "message": "Update builder activity data",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/6842b17f8bc8f232895f2015d8eb0549d4ffd4e2",
+          "committedAt": "2026-06-16T14:07:21Z"
+        },
         {
           "repo": "Newman5/builder-season-playbook",
           "message": "Update builder activity data",
