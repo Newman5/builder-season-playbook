@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-17T13:30:57Z",
+  "generatedAt": "2026-06-18T13:27:55Z",
   "weekStart": "2026-06-15T00:00:00Z",
   "weekEnd": "2026-06-21T23:59:59Z",
   "builders": [
@@ -107,9 +107,40 @@
     {
       "id": "murmurations",
       "name": "Nori",
-      "lastActivityAt": "2026-06-12T21:45:24Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-06-17T17:34:12Z",
+      "commitsThisWeek": 6,
+      "recentCommits": [
+        {
+          "repo": "murmurations-ai/flyway",
+          "message": "docs: Tier 5 walkthrough — full staging chain with an integrated objection\n\nThe executable walkthrough Tier 4 explicitly starts past: a tension runs\nthe complete S3 proposal-forming chain (driver → requirements → draft →\nrefinement → final) with a real objection integrated mid-chain.\n\nwalkthroughs/2026-06-17-tier5-staging-chain.md (new): verbatim transcript\nat SHA 4c894b6. B objects at the draft stage — facilitation and the\nshared tension log both fall on Andamio — and A's refinement integrates\nit: the log expectation moves from Andamio to Praxis, and that split is\nwhat lands in the byte-identical co-signed agreement (SHA-256 ab6b1975…).\nShows tension→proposal promotion, stage-transition enforcement, the\nobjection's refs binding the refinement to the objected draft, and the\nsix-signal chain reconciling in B's flyway_check. Surfaces G8/#2\n(re-confirmed: no machine-followable agreement→tension link after a\nfive-hop chain) and G10 (mid-chain recorded concerns don't reach the\nagreement's concerns field).\n\n- walkthroughs/README.md: Tier 5 index row.\n- status.md / status.html: 5 executable walkthroughs; Tier 5 card +\n  table row; pending section drops the (now-done) staging-chain\n  walkthrough and adds agreement-provenance (Issue #2 / G8).\n- how-flyway-works.html: \"Five executable walkthroughs\".\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>",
+          "url": "https://github.com/murmurations-ai/flyway/commit/3a210ec800221bc39d0d2df144e84ac9c375c7de",
+          "committedAt": "2026-06-17T17:34:12Z"
+        },
+        {
+          "repo": "murmurations-ai/flyway",
+          "message": "docs: protocol surface complete — 9 of 9 tools, SHA 17f9bc1\n\nflyway_discover (S+7) is the last tool; the reviewer surface now reads\n9 of 9.\n\nREADME.md — \"All nine tools run end-to-end\", flyway_discover described\n(pre-trust directory search); remote directory fetch noted as a reserved\nv0.2 seam alongside remote signal transport.\n\ndocs/status.md + docs/status.html\n- at-a-glance: 9 of 9, 355 tests / 26 files, SHA 17f9bc1.\n- headline / lede / tool-maturity: discover wired; \"all nine speaking\".\n- S+7 milestone row; pending section reframed — the surface is complete,\n  what's left is the staging-chain walkthrough, remote transports (v0.2),\n  and exit-aware reads, not new tools.\n- legend clarified: all nine wired; remaining items are reserved\n  transports and lifecycle depth, not stubs.\n\ndocs/architecture/how-flyway-works.md + .html\n- §4 rewritten: all nine wired; table now lists areas (remote transports,\n  exit-aware reads, agreement lifecycle) rather than stubbed tools; notes\n  the three subtler tools (discover is pre-trust, exit is unilateral,\n  materialize is a local act).\n- §7.1 + HTML contract tables: flyway_discover implemented.\n- reading-order count and status-snapshot paragraph updated.\n\nThe status.html milestone-timeline SVG and how-flyway-works.html Fig. 4\narrows still lag (left intentionally — blind SVG surgery is risky); the\nsurrounding text flags both.\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>",
+          "url": "https://github.com/murmurations-ai/flyway/commit/4c894b628cc99a121ec4dd7afb35fb2b23232f2e",
+          "committedAt": "2026-06-17T17:23:16Z"
+        },
+        {
+          "repo": "murmurations-ai/flyway",
+          "message": "feat(core+cli+mcp): S+7 — flyway_discover completes the 9-tool surface\n\nDiscovery is the one pre-trust tool: it helps a Source find potential\npeers before proposing recognition. Nothing it returns is trusted —\ndirectory entries are informational pointers, not attestations. A\ndirectory that lies can only waste your time, never forge an identity:\nyou still verify at recognition. So entries are unsigned and discover\nperforms no signature checks. This is the last stubbed tool — 9 of 9 now\nwired.\n\nCore (discover.ts)\n- FlywayDirectory / FlywayDirectoryEntry types + FLYWAY_DIRECTORY_SCHEMA\n  (JSON Schema). An entry needs only did + sourceName; mode, capabilities,\n  repoUrl, description are optional hints.\n- flywayDiscover({ directory, query? }): pure query. No query → all\n  entries; query starting `did:` → exact DID match; otherwise\n  case-insensitive substring over did / sourceName / capabilities /\n  description, in directory order.\n- parseFlywayDirectory(raw): validates shape (schemaVersion, entries,\n  per-entry did/sourceName/mode/capabilities), rejects duplicate DIDs,\n  returns a defensively-copied typed document.\n\nTransport: v0.1 reads a LOCAL directory file. Fetching a directory over\nhttp(s) — the first genuinely non-local-fs operation — is a reserved\nseam: the directory shape is defined now so a remote fetcher drops in\nlater without changing the query logic (parallels ADR-0008 reserving\nremote signal transports). A URL source is refused with a clear message,\nnever silently treated as a path.\n\nCLI\n- `flyway discover --directory <path> [query] [--json]`. Read-only,\n  needs no identity. Loads a YAML/JSON directory file, parses, filters,\n  prints (human or --json).\n\nMCP\n- handleDiscover replaces the last not-implemented stub; stateless (the\n  caller supplies the directory document; the server does no fs/network\n  I/O), parses + filters + returns matches. Refreshed the handlers test\n  that asserted discover was unimplemented; added unknown-tool coverage.\n\nTests: core +16, cli +7, mcp +3. 355 passed workspace-wide (233 core /\n90 cli / 23 mcp / 9 agent).\n\nSmoke: list-all, free-text filter, exact-DID lookup, and http-URL refusal\nall behave. The protocol surface is complete.\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>",
+          "url": "https://github.com/murmurations-ai/flyway/commit/17f9bc1fefe44770d68418012462a6102c531f37",
+          "committedAt": "2026-06-17T17:17:05Z"
+        },
+        {
+          "repo": "murmurations-ai/flyway",
+          "message": "build: migrate pnpm settings to pnpm-workspace.yaml (pnpm 10+/11 compat)\n\npnpm 11 no longer reads the \"pnpm\" field from package.json, so the\npeerDependencyRules that suppressed resolution of the harness package's\nprivate, unpublished optional peer (@murmurations-ai/murmurations-harness)\nwere being ignored — `pnpm install` then 404'd on that dep and left\nnode_modules unpopulated, breaking every build/test until a manual\nworkaround.\n\nMoves the settings to their new home in pnpm-workspace.yaml:\n- peerDependencyRules.ignoreMissing — keeps install from resolving the\n  unpublished harness peer (harness is excluded from builds/tests anyway).\n- autoInstallPeers: false — matches the lockfile (avoids a frozen-install\n  config-mismatch error after the pnpm upgrade).\n- allowBuilds: { esbuild: true } — approves esbuild's install script\n  (pulled in by vitest), clearing ERR_PNPM_IGNORED_BUILDS.\n\nRemoves the now-dead \"pnpm\" field from package.json.\n\nVerified: a clean `pnpm install` then `pnpm -r --filter\n'!@murmurations-ai/flyway-harness' build && … test` runs green (329\ntests) with no CI=true or --config workarounds. Lockfile unchanged.\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>",
+          "url": "https://github.com/murmurations-ai/flyway/commit/44d3eaa03117faf64b0e1be3b6a1cc5b97c77a0a",
+          "committedAt": "2026-06-17T17:10:21Z"
+        },
+        {
+          "repo": "murmurations-ai/flyway",
+          "message": "docs: reflect S+6 (flyway_exit) — 8 of 9 tools wired, SHA 11c6b0d\n\nBring the reviewer surface in line with the wired protocol now that\nflyway_exit has landed.\n\nREADME.md\n- front-door status paragraph: \"Eight of the nine tools run end-to-end\",\n  with propose / co-signed-agreement materialization / exit described;\n  only flyway_discover remains stubbed.\n\ndocs/status.md + docs/status.html\n- at-a-glance: 8 of 9 tools, 329 tests / 24 files, SHA 11c6b0d.\n- headline + tool-maturity: flyway_exit wired; \"one pending\" (discover).\n- S+6 milestone row; pending list now discover / staging-chain\n  walkthrough / exit-aware status. (status.html SVG timeline left at S+5\n  — adding a node blind risks the layout; dashboard numbers are current.)\n\ndocs/architecture/how-flyway-works.md + .html\n- §4 pending: only flyway_discover stubbed; flyway_exit described as a\n  unilateral signed notice, distinct from unrecognition, never mutating a\n  co-signed agreement file.\n- tool contract tables: propose / respond / exit marked wired/implemented.\n- domain-tag table: createExit no longer \"(pending)\".\n- ADR-0009 section: corrected — createProposal / createProposalResponse /\n  materializeAgreement carry antecedent verification; createExit is the\n  deliberate exception (unilateral, no antecedent).\n- agreement lifecycle note + reading-order count (eight of nine).\n\nThe Fig. 4 SVG negotiation arrows still render \"execution pending\" and\nlag the implementation; the surrounding text continues to flag that.\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>",
+          "url": "https://github.com/murmurations-ai/flyway/commit/c64675a3693877110816a9b2bd4731378b6f6427",
+          "committedAt": "2026-06-17T17:01:49Z"
+        }
+      ],
       "error": null
     },
     {
@@ -201,9 +232,27 @@
     {
       "id": "newman5",
       "name": "Newman",
-      "lastActivityAt": "2026-06-16T20:45:57Z",
-      "commitsThisWeek": 3,
+      "lastActivityAt": "2026-06-17T16:23:21Z",
+      "commitsThisWeek": 6,
       "recentCommits": [
+        {
+          "repo": "Newman5/builder-season-playbook",
+          "message": "Merge branch 'main' of https://github.com/Newman5/builder-season-playbook",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/eeef968928c67e3108b6c69444afc91090f17da6",
+          "committedAt": "2026-06-17T16:23:21Z"
+        },
+        {
+          "repo": "Newman5/builder-season-playbook",
+          "message": "adding the participate onboarding to the root of the site",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/01bee1c23742b1ab38d8fb997792a3e5aa036e13",
+          "committedAt": "2026-06-17T16:23:21Z"
+        },
+        {
+          "repo": "Newman5/builder-season-playbook",
+          "message": "Update builder activity data",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/bcff5ee0b0782908f68670ed06e49f6862480a48",
+          "committedAt": "2026-06-17T13:31:08Z"
+        },
         {
           "repo": "Newman5/builder-season-playbook",
           "message": "Add admin templates and rules for builder season management",
@@ -215,12 +264,6 @@
           "message": "Update builder activity data",
           "url": "https://github.com/Newman5/builder-season-playbook/commit/6842b17f8bc8f232895f2015d8eb0549d4ffd4e2",
           "committedAt": "2026-06-16T14:07:21Z"
-        },
-        {
-          "repo": "Newman5/builder-season-playbook",
-          "message": "Update builder activity data",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/eae705e829642a1c15f89ac28975de82e454c893",
-          "committedAt": "2026-06-15T14:25:59Z"
         }
       ],
       "error": null
