@@ -184,12 +184,12 @@ repos:
     pies:
       - builders
 
-  - id: minustenex
+  - id: juniordevforever
     name: Harsha
-    github: agentic-architecture-research
+    github: gulla0
     x: minustenexdev
-    project_name: modular-agentic-harness marketplace
-    repo_url: https://github.com/agentic-architecture-research/plugin-harness
+    project_name: Cohort15
+    repo_url: https://github.com/gulla0/Cohort15-MVP
     pies:
       - builders
 
