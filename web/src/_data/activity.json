@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-18T13:27:55Z",
+  "generatedAt": "2026-06-19T13:25:21Z",
   "weekStart": "2026-06-15T00:00:00Z",
   "weekEnd": "2026-06-21T23:59:59Z",
   "builders": [
@@ -232,9 +232,15 @@
     {
       "id": "newman5",
       "name": "Newman",
-      "lastActivityAt": "2026-06-17T16:23:21Z",
-      "commitsThisWeek": 6,
+      "lastActivityAt": "2026-06-18T13:28:11Z",
+      "commitsThisWeek": 7,
       "recentCommits": [
+        {
+          "repo": "Newman5/builder-season-playbook",
+          "message": "Update builder activity data",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/db78ebf6172759b86704e1ab17594e226fb992a4",
+          "committedAt": "2026-06-18T13:28:11Z"
+        },
         {
           "repo": "Newman5/builder-season-playbook",
           "message": "Merge branch 'main' of https://github.com/Newman5/builder-season-playbook",
@@ -258,12 +264,6 @@
           "message": "Add admin templates and rules for builder season management",
           "url": "https://github.com/Newman5/builder-season-playbook/commit/0e2bae987a6f10757e1fb79dba8b4d76992e8d26",
           "committedAt": "2026-06-16T20:45:57Z"
-        },
-        {
-          "repo": "Newman5/builder-season-playbook",
-          "message": "Update builder activity data",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/6842b17f8bc8f232895f2015d8eb0549d4ffd4e2",
-          "committedAt": "2026-06-16T14:07:21Z"
         }
       ],
       "error": null
@@ -279,9 +279,34 @@
     {
       "id": "devfreeguy",
       "name": "Daniel",
-      "lastActivityAt": "2026-06-12T01:38:49Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-06-19T11:39:11Z",
+      "commitsThisWeek": 4,
+      "recentCommits": [
+        {
+          "repo": "devfreeguy/skill-swap",
+          "message": "feat(wallet-auth): real CIP-8 verification, env-driven network and one-tap connect",
+          "url": "https://github.com/devfreeguy/skill-swap/commit/b47ac771fd13dffe74f60d1eb79871161607eddb",
+          "committedAt": "2026-06-19T11:39:11Z"
+        },
+        {
+          "repo": "devfreeguy/skill-swap",
+          "message": "fix: wire up non-functional buttons across app",
+          "url": "https://github.com/devfreeguy/skill-swap/commit/5b5a0d06af7cbff9189167a1209ace73b8f81b36",
+          "committedAt": "2026-06-19T00:33:06Z"
+        },
+        {
+          "repo": "devfreeguy/skill-swap",
+          "message": "fix(ui): adjusted some ui defects on the landing page",
+          "url": "https://github.com/devfreeguy/skill-swap/commit/cdebddb318e5d5321cc8d85b2a7f5a1b410cd79e",
+          "committedAt": "2026-06-19T00:25:50Z"
+        },
+        {
+          "repo": "devfreeguy/skill-swap",
+          "message": "feat: remove mandatory ada payment gate, cardano becomes optional trust layer",
+          "url": "https://github.com/devfreeguy/skill-swap/commit/5ca1e3bbd48d03f8676de9a1880a871ead5cc5f4",
+          "committedAt": "2026-06-18T23:58:37Z"
+        }
+      ],
       "error": null
     },
     {
