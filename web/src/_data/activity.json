@@ -1,14 +1,21 @@
 {
-  "generatedAt": "2026-06-19T13:25:21Z",
+  "generatedAt": "2026-06-20T12:52:14Z",
   "weekStart": "2026-06-15T00:00:00Z",
   "weekEnd": "2026-06-21T23:59:59Z",
   "builders": [
     {
       "id": "mhizta",
       "name": "Mhizta",
-      "lastActivityAt": "2026-06-13T22:16:11Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-06-19T21:11:48Z",
+      "commitsThisWeek": 1,
+      "recentCommits": [
+        {
+          "repo": "Mhizta-gab/bookworm-ai",
+          "message": "feat: add voice session management, subscription limits, and Vapi controls for book interaction",
+          "url": "https://github.com/Mhizta-gab/bookworm-ai/commit/7da8e3185c9e26018af72bb8c4c5e4bc3f35c25e",
+          "committedAt": "2026-06-19T21:11:48Z"
+        }
+      ],
       "error": null
     },
     {
@@ -59,9 +66,40 @@
     {
       "id": "harrie",
       "name": "Harrie",
-      "lastActivityAt": "2026-06-07T10:50:45Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-06-20T10:45:53Z",
+      "commitsThisWeek": 17,
+      "recentCommits": [
+        {
+          "repo": "IamHarrie-Labs/beni",
+          "message": "fix(ui): remove fabricated latency/benchmark metrics\n\nNothing in Beni measures validator latency, and the contract uses a list\ncheck, not a bloom filter. These were invented numbers presented as fact:\n\n- Dashboard KPI 'Validator latency 28ms / p95 41ms' -> real 'Per-tx cap'\n  pulled from the on-chain rules (or '·' when no contract is deployed)\n- Security page 'What happens in 28ms' -> 'Every spend, checked four ways'\n- Pipeline: dropped the fake per-step millisecond column and the\n  '12 addresses · bloom filter' line; descriptions now match the validator\n- SecurityStats '28ms median validator latency' -> '1 block to freeze a\n  rogue agent' (a real property of the freeze path)\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>",
+          "url": "https://github.com/IamHarrie-Labs/beni/commit/f80851bc53112b180ad8a0dda78c3ae335b81304",
+          "committedAt": "2026-06-20T10:45:53Z"
+        },
+        {
+          "repo": "IamHarrie-Labs/beni",
+          "message": "fix(dashboard): replace fake spend curve with real daily-spend gauge\n\nThe '24h spend curve' rendered random bar heights hashed from each tx hash,\nand labeled them 'N TXS' from the operator wallet's recent tx count, neither\nof which was real spend data.\n\nNow shows actual window spend vs daily cap from the on-chain datum\n(windowSpentAda / dailyCapAda / pctUsed). Without a funded contract there is\nno real spend data, so it honestly reads 'NO SPEND DATA YET' instead of\ninventing bars. Removed the now-unused hashToFloat helper.\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>",
+          "url": "https://github.com/IamHarrie-Labs/beni/commit/8c6eabcb2d5e991387d8065a3921d4d16b9f5cfd",
+          "committedAt": "2026-06-20T10:35:49Z"
+        },
+        {
+          "repo": "IamHarrie-Labs/beni",
+          "message": "fix(sdk): correct lucid-evolution API calls in on-chain demo\n\ndemo.ts used the legacy lucid-cardano API in the on-chain section, which\nwould throw the moment BLOCKFROST_PREVIEW_KEY + AGENT_PRIVATE_KEY were set:\n- selectWalletFromPrivateKey -> selectWallet.fromPrivateKey\n- lucid.wallet.address()     -> lucid.wallet().address()\n\nBoth now match the patterns used in index.ts and deploy-wallet.ts. The\noffline guardrail demo was unaffected and still passes all 6 scenarios.\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>",
+          "url": "https://github.com/IamHarrie-Labs/beni/commit/e31cd5caab4bf92cf6e07b5658e6d3268236d2ba",
+          "committedAt": "2026-06-20T10:22:25Z"
+        },
+        {
+          "repo": "IamHarrie-Labs/beni",
+          "message": "feat(dashboard): form-driven config, editable workspace, no code dumps\n\n- Workspace name is now editable inline (persisted to localStorage)\n- Rules page: replaced SDK code blocks with editable cap inputs + Save,\n  plus a one-click freeze/resume control\n- Whitelist page: replaced code blocks with add/remove address UI (persisted)\n- Approvals + Monitor + deploy/API modals: code dumps removed, integration\n  details now point to the GitHub repo\n- Removed non-functional Team and Webhooks nav items\n- Stripped em/en dashes from all dashboard copy\n- Removed now-unused CodeBlock component\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>",
+          "url": "https://github.com/IamHarrie-Labs/beni/commit/f0cf7dd41e90d40b084936ba750d1c7106ca623f",
+          "committedAt": "2026-06-20T10:03:40Z"
+        },
+        {
+          "repo": "IamHarrie-Labs/beni",
+          "message": "style(nav): rename nav items to Security and Docs",
+          "url": "https://github.com/IamHarrie-Labs/beni/commit/04b72ea3494109975f30157360c9546fea80b9d2",
+          "committedAt": "2026-06-20T07:20:02Z"
+        }
+      ],
       "error": null
     },
     {
@@ -91,9 +129,22 @@
     {
       "id": "yungslaiz",
       "name": "Blessed David",
-      "lastActivityAt": "2026-06-05T12:47:45Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-06-19T20:23:57Z",
+      "commitsThisWeek": 2,
+      "recentCommits": [
+        {
+          "repo": "YungSlaiz53/GNXT",
+          "message": "add About page and link it to the sidebar",
+          "url": "https://github.com/YungSlaiz53/GNXT/commit/a2e38d3c7b469b8e94e1b1c27e91c9617b40efe3",
+          "committedAt": "2026-06-19T20:23:57Z"
+        },
+        {
+          "repo": "YungSlaiz53/GNXT",
+          "message": "feat: add Cardano NXTP token withdrawal functionality and integrate upgrade validation in Sidebar, plus revamp Login UI with improved error handling.",
+          "url": "https://github.com/YungSlaiz53/GNXT/commit/8efd3c4045179af084b5fb1f5a09d78db4b80222",
+          "committedAt": "2026-06-19T19:27:35Z"
+        }
+      ],
       "error": null
     },
     {
@@ -154,9 +205,15 @@
     {
       "id": "trike",
       "name": "Anita",
-      "lastActivityAt": "2026-06-16T15:14:23Z",
-      "commitsThisWeek": 5,
+      "lastActivityAt": "2026-06-20T10:23:14Z",
+      "commitsThisWeek": 6,
       "recentCommits": [
+        {
+          "repo": "3rike12/3rike-Mobility_",
+          "message": "fix: round all dollar/cedi figures to whole numbers across frontend",
+          "url": "https://github.com/3rike12/3rike-Mobility_/commit/cc4715e19c9910f2fee8aea5dbf68bc62ab8c179",
+          "committedAt": "2026-06-20T10:23:14Z"
+        },
         {
           "repo": "3rike12/3rike-Mobility_",
           "message": "refactor: frontend — Midnight wallet types, ZK commitment UI, remove EVM display",
@@ -180,12 +237,6 @@
           "message": "feat: Midnight privacy contracts — UserRegistry, PrivateInvestment, YieldVault",
           "url": "https://github.com/3rike12/3rike-Mobility_/commit/e8bed3d1b7c10a6e9cbe6b61321acff7a08a73c6",
           "committedAt": "2026-06-16T15:14:08Z"
-        },
-        {
-          "repo": "3rike12/3rike-Mobility_",
-          "message": "chore: remove EVM — viem, Robinhood Chain, Arbitrum treasury, legacy scripts",
-          "url": "https://github.com/3rike12/3rike-Mobility_/commit/682b9be5dd72f9729d072b24530e75ff72bb8dcd",
-          "committedAt": "2026-06-16T15:14:04Z"
         }
       ],
       "error": null
@@ -232,9 +283,27 @@
     {
       "id": "newman5",
       "name": "Newman",
-      "lastActivityAt": "2026-06-18T13:28:11Z",
-      "commitsThisWeek": 7,
+      "lastActivityAt": "2026-06-19T16:58:14Z",
+      "commitsThisWeek": 10,
       "recentCommits": [
+        {
+          "repo": "Newman5/builder-season-playbook",
+          "message": "Merge branch 'main' of https://github.com/Newman5/builder-season-playbook",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/2a9a7364f035bebaf3a200be2290f47f7d6c2e6d",
+          "committedAt": "2026-06-19T16:58:14Z"
+        },
+        {
+          "repo": "Newman5/builder-season-playbook",
+          "message": "builder updates",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/32143f6d91ad2edb764ebd40bdf2cb2be9ec4924",
+          "committedAt": "2026-06-19T16:58:12Z"
+        },
+        {
+          "repo": "Newman5/builder-season-playbook",
+          "message": "Update builder activity data",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/4fcf5feff9a00f59749bedab410866dbe688e6d5",
+          "committedAt": "2026-06-19T13:25:35Z"
+        },
         {
           "repo": "Newman5/builder-season-playbook",
           "message": "Update builder activity data",
@@ -246,42 +315,61 @@
           "message": "Merge branch 'main' of https://github.com/Newman5/builder-season-playbook",
           "url": "https://github.com/Newman5/builder-season-playbook/commit/eeef968928c67e3108b6c69444afc91090f17da6",
           "committedAt": "2026-06-17T16:23:21Z"
-        },
-        {
-          "repo": "Newman5/builder-season-playbook",
-          "message": "adding the participate onboarding to the root of the site",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/01bee1c23742b1ab38d8fb997792a3e5aa036e13",
-          "committedAt": "2026-06-17T16:23:21Z"
-        },
-        {
-          "repo": "Newman5/builder-season-playbook",
-          "message": "Update builder activity data",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/bcff5ee0b0782908f68670ed06e49f6862480a48",
-          "committedAt": "2026-06-17T13:31:08Z"
-        },
-        {
-          "repo": "Newman5/builder-season-playbook",
-          "message": "Add admin templates and rules for builder season management",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/0e2bae987a6f10757e1fb79dba8b4d76992e8d26",
-          "committedAt": "2026-06-16T20:45:57Z"
         }
       ],
       "error": null
     },
     {
-      "id": "minustenex",
+      "id": "juniordevforever",
       "name": "Harsha",
-      "lastActivityAt": "2026-05-13T19:26:27Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-06-17T01:29:24Z",
+      "commitsThisWeek": 10,
+      "recentCommits": [
+        {
+          "repo": "gulla0/Cohort15-MVP",
+          "message": "Require human setup checklists for provider tasks",
+          "url": "https://github.com/gulla0/Cohort15-MVP/commit/76e39e50dcef8c3af32155766fc4797f4f4e90d7",
+          "committedAt": "2026-06-17T01:29:24Z"
+        },
+        {
+          "repo": "gulla0/Cohort15-MVP",
+          "message": "Define production MVP dependency graph",
+          "url": "https://github.com/gulla0/Cohort15-MVP/commit/8a3b2cb6f90c71335fec5f8533de58ad2241c053",
+          "committedAt": "2026-06-17T01:13:07Z"
+        },
+        {
+          "repo": "gulla0/Cohort15-MVP",
+          "message": "Complete T012 auth boundary",
+          "url": "https://github.com/gulla0/Cohort15-MVP/commit/36eae86f6e8e2f679753f1b3c190eb7747dc0759",
+          "committedAt": "2026-06-16T17:34:24Z"
+        },
+        {
+          "repo": "gulla0/Cohort15-MVP",
+          "message": "Resolve ISSUE-014 buy credits nav alignment",
+          "url": "https://github.com/gulla0/Cohort15-MVP/commit/eb6d7745f1f4d98350905932963f48b14a2d67aa",
+          "committedAt": "2026-06-16T16:34:38Z"
+        },
+        {
+          "repo": "gulla0/Cohort15-MVP",
+          "message": "Resolve ISSUE-013 placeholder focus styling",
+          "url": "https://github.com/gulla0/Cohort15-MVP/commit/4ecaba6feb35ad5fad884807b8da515bf9ac8e24",
+          "committedAt": "2026-06-16T16:21:58Z"
+        }
+      ],
       "error": null
     },
     {
       "id": "devfreeguy",
       "name": "Daniel",
-      "lastActivityAt": "2026-06-19T11:39:11Z",
-      "commitsThisWeek": 4,
+      "lastActivityAt": "2026-06-19T16:23:20Z",
+      "commitsThisWeek": 5,
       "recentCommits": [
+        {
+          "repo": "devfreeguy/skill-swap",
+          "message": "chore(wallet-auth): remove temporary diagnostic logging",
+          "url": "https://github.com/devfreeguy/skill-swap/commit/094dadad1fc826f44fc5cbe5ab44176d9b4b1249",
+          "committedAt": "2026-06-19T16:23:20Z"
+        },
         {
           "repo": "devfreeguy/skill-swap",
           "message": "feat(wallet-auth): real CIP-8 verification, env-driven network and one-tap connect",
@@ -344,9 +432,40 @@
     {
       "id": "juanitajaramillo",
       "name": "Juanita",
-      "lastActivityAt": "2026-06-12T19:20:42Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-06-19T21:57:56Z",
+      "commitsThisWeek": 12,
+      "recentCommits": [
+        {
+          "repo": "JuanitaJaramill/cardano-insights-lab",
+          "message": "Update README.md",
+          "url": "https://github.com/JuanitaJaramill/cardano-insights-lab/commit/6bbf385a2de469d43bc4521934c51498255bd71f",
+          "committedAt": "2026-06-19T21:57:56Z"
+        },
+        {
+          "repo": "JuanitaJaramill/cardano-insights-lab",
+          "message": "Remove misplaced CaseResult component",
+          "url": "https://github.com/JuanitaJaramill/cardano-insights-lab/commit/8e21608e82cecf995485a5fe752de3940a8e4f47",
+          "committedAt": "2026-06-19T21:41:50Z"
+        },
+        {
+          "repo": "JuanitaJaramill/cardano-insights-lab",
+          "message": "Move CaseResult to correct components folder",
+          "url": "https://github.com/JuanitaJaramill/cardano-insights-lab/commit/2f9fef2f447a8fd0c50d79bf0d2c96b17003af53",
+          "committedAt": "2026-06-19T21:34:27Z"
+        },
+        {
+          "repo": "JuanitaJaramill/cardano-insights-lab",
+          "message": "Connect modular beta app flow",
+          "url": "https://github.com/JuanitaJaramill/cardano-insights-lab/commit/32f668f2eb7c4a848076a9d757adcc4d92e54580",
+          "committedAt": "2026-06-19T21:30:24Z"
+        },
+        {
+          "repo": "JuanitaJaramill/cardano-insights-lab",
+          "message": "Connect modular beta app flow",
+          "url": "https://github.com/JuanitaJaramill/cardano-insights-lab/commit/81f1fcef79de07c2696c8d7df0d7d11ed2db39bd",
+          "committedAt": "2026-06-19T21:08:35Z"
+        }
+      ],
       "error": null
     },
     {
