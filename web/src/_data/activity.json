@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-20T12:52:14Z",
+  "generatedAt": "2026-06-21T12:57:39Z",
   "weekStart": "2026-06-15T00:00:00Z",
   "weekEnd": "2026-06-21T23:59:59Z",
   "builders": [
@@ -29,9 +29,16 @@
     {
       "id": "dammy",
       "name": "Dammy",
-      "lastActivityAt": "2026-06-13T17:32:53Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-06-20T23:30:31Z",
+      "commitsThisWeek": 1,
+      "recentCommits": [
+        {
+          "repo": "Dammy7942/accordiax",
+          "message": "feat: implement advanced trust & safety (identity verification, reporting with evidence, admin pages, block user, and storage policies)",
+          "url": "https://github.com/Dammy7942/accordiax/commit/43494167cab94fa30a46180a53d0e17e9171ae37",
+          "committedAt": "2026-06-20T23:30:31Z"
+        }
+      ],
       "error": null
     },
     {
@@ -66,38 +73,38 @@
     {
       "id": "harrie",
       "name": "Harrie",
-      "lastActivityAt": "2026-06-20T10:45:53Z",
-      "commitsThisWeek": 17,
+      "lastActivityAt": "2026-06-21T09:55:06Z",
+      "commitsThisWeek": 21,
       "recentCommits": [
+        {
+          "repo": "IamHarrie-Labs/beni",
+          "message": "chore: update compiled validator CBOR and redeploy agent wallet\n\nReplaced validators.ts CBOR with output from fixed aiken build (CI artifact).\nNew script hash: 04dc2ad3a35042b23d1589e8249951c021f689583f325124f576b474\n\nRedeployed agent wallet with corrected spend validator:\n  Script: addr_test1wqzdc2kn5dgy9v3azky7sfye28qzra5ftqlny5fy74mtgaqc4hl7y\n  Deploy TX: b37f0f1b00380e1cb915149359dedcd416c2764977ec5246252bd7f57102178f\n  Demo TX (1 ADA self-send): 9d186e33b271b4b433998734b20a28acae72fe3aa70230783ce03c7d4060c884\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>",
+          "url": "https://github.com/IamHarrie-Labs/beni/commit/eecbbf0148769688f967be3a28662e416f545cbe",
+          "committedAt": "2026-06-21T09:55:06Z"
+        },
+        {
+          "repo": "IamHarrie-Labs/beni",
+          "message": "fix(validator): compute this_spend as net script outflow, not sum of outputs\n\nThe old logic summed lovelace across all non-whitelisted outputs (including\nthe continuing script output and agent change), making window_spent always\ndrift away from the SDK-computed value and causing every Spend to fail.\n\nThe fix: this_spend = script_input_lovelace - lovelace_of(continuing.value),\nwhich exactly matches the `lovelace` parameter the SDK passes in.\n\nAlso adds utility scripts (deploy-wallet, generate-key, check-balance) and\nrewrites the demo to load the deployed wallet from beni-wallet-state.json\ninstead of creating a new one each run.\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>",
+          "url": "https://github.com/IamHarrie-Labs/beni/commit/3c2c69508023f992bdb2153f56d25a1dfe2538d1",
+          "committedAt": "2026-06-21T07:38:03Z"
+        },
+        {
+          "repo": "IamHarrie-Labs/beni",
+          "message": "docs: add MCP server section to docs page and README\n\n- Docs page: new \"Integrations / MCP server\" section with tool table,\n  offline testing instructions, Claude Desktop config snippet\n- README: MCP server section with setup table, config JSON, roadmap update,\n  fix stale lucid API call (selectWalletFromPrivateKey -> selectWallet.fromPrivateKey),\n  remove brand book reference, update What has been built\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>",
+          "url": "https://github.com/IamHarrie-Labs/beni/commit/73598480a3c710461691db1df82e03995c1651a8",
+          "committedAt": "2026-06-21T04:09:38Z"
+        },
+        {
+          "repo": "IamHarrie-Labs/beni",
+          "message": "feat(sdk): add MCP server exposing Beni guardrail tools to any LLM agent\n\nAdds sdk/mcp-server.ts — a Model Context Protocol server that wraps the\nBeni SDK so any MCP-compatible agent (Claude Desktop, etc.) can call\ncheck_limits, get_status, spend, freeze, and create_wallet without\ntouching Lucid, Aiken, or Blockfrost directly.\n\nOffline tools (check_limits, get_status) work with no keys.\nOn-chain tools activate when BLOCKFROST_PREVIEW_KEY + AGENT_PRIVATE_KEY\nare set in the MCP server env config.\n\nAlso adds sdk/claude-desktop-config.example.json with ready-to-paste\nClaude Desktop config snippet.\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>",
+          "url": "https://github.com/IamHarrie-Labs/beni/commit/892154dac4e6b79e7e5840f538b57ecc76a2c382",
+          "committedAt": "2026-06-20T16:34:51Z"
+        },
         {
           "repo": "IamHarrie-Labs/beni",
           "message": "fix(ui): remove fabricated latency/benchmark metrics\n\nNothing in Beni measures validator latency, and the contract uses a list\ncheck, not a bloom filter. These were invented numbers presented as fact:\n\n- Dashboard KPI 'Validator latency 28ms / p95 41ms' -> real 'Per-tx cap'\n  pulled from the on-chain rules (or '·' when no contract is deployed)\n- Security page 'What happens in 28ms' -> 'Every spend, checked four ways'\n- Pipeline: dropped the fake per-step millisecond column and the\n  '12 addresses · bloom filter' line; descriptions now match the validator\n- SecurityStats '28ms median validator latency' -> '1 block to freeze a\n  rogue agent' (a real property of the freeze path)\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>",
           "url": "https://github.com/IamHarrie-Labs/beni/commit/f80851bc53112b180ad8a0dda78c3ae335b81304",
           "committedAt": "2026-06-20T10:45:53Z"
-        },
-        {
-          "repo": "IamHarrie-Labs/beni",
-          "message": "fix(dashboard): replace fake spend curve with real daily-spend gauge\n\nThe '24h spend curve' rendered random bar heights hashed from each tx hash,\nand labeled them 'N TXS' from the operator wallet's recent tx count, neither\nof which was real spend data.\n\nNow shows actual window spend vs daily cap from the on-chain datum\n(windowSpentAda / dailyCapAda / pctUsed). Without a funded contract there is\nno real spend data, so it honestly reads 'NO SPEND DATA YET' instead of\ninventing bars. Removed the now-unused hashToFloat helper.\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>",
-          "url": "https://github.com/IamHarrie-Labs/beni/commit/8c6eabcb2d5e991387d8065a3921d4d16b9f5cfd",
-          "committedAt": "2026-06-20T10:35:49Z"
-        },
-        {
-          "repo": "IamHarrie-Labs/beni",
-          "message": "fix(sdk): correct lucid-evolution API calls in on-chain demo\n\ndemo.ts used the legacy lucid-cardano API in the on-chain section, which\nwould throw the moment BLOCKFROST_PREVIEW_KEY + AGENT_PRIVATE_KEY were set:\n- selectWalletFromPrivateKey -> selectWallet.fromPrivateKey\n- lucid.wallet.address()     -> lucid.wallet().address()\n\nBoth now match the patterns used in index.ts and deploy-wallet.ts. The\noffline guardrail demo was unaffected and still passes all 6 scenarios.\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>",
-          "url": "https://github.com/IamHarrie-Labs/beni/commit/e31cd5caab4bf92cf6e07b5658e6d3268236d2ba",
-          "committedAt": "2026-06-20T10:22:25Z"
-        },
-        {
-          "repo": "IamHarrie-Labs/beni",
-          "message": "feat(dashboard): form-driven config, editable workspace, no code dumps\n\n- Workspace name is now editable inline (persisted to localStorage)\n- Rules page: replaced SDK code blocks with editable cap inputs + Save,\n  plus a one-click freeze/resume control\n- Whitelist page: replaced code blocks with add/remove address UI (persisted)\n- Approvals + Monitor + deploy/API modals: code dumps removed, integration\n  details now point to the GitHub repo\n- Removed non-functional Team and Webhooks nav items\n- Stripped em/en dashes from all dashboard copy\n- Removed now-unused CodeBlock component\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>",
-          "url": "https://github.com/IamHarrie-Labs/beni/commit/f0cf7dd41e90d40b084936ba750d1c7106ca623f",
-          "committedAt": "2026-06-20T10:03:40Z"
-        },
-        {
-          "repo": "IamHarrie-Labs/beni",
-          "message": "style(nav): rename nav items to Security and Docs",
-          "url": "https://github.com/IamHarrie-Labs/beni/commit/04b72ea3494109975f30157360c9546fea80b9d2",
-          "committedAt": "2026-06-20T07:20:02Z"
         }
       ],
       "error": null
@@ -113,9 +120,34 @@
     {
       "id": "armanabid",
       "name": "Abid",
-      "lastActivityAt": "2026-06-14T00:38:32Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-06-20T22:13:18Z",
+      "commitsThisWeek": 4,
+      "recentCommits": [
+        {
+          "repo": "ArmanAbid/ChainTask",
+          "message": "fix deploy script: hand-roll native script cbor and use esm imports",
+          "url": "https://github.com/ArmanAbid/ChainTask/commit/d0224f47291a47e24b647762c286d16b33c5fea5",
+          "committedAt": "2026-06-20T22:13:18Z"
+        },
+        {
+          "repo": "ArmanAbid/ChainTask",
+          "message": "remove draft banner now that contracts are live",
+          "url": "https://github.com/ArmanAbid/ChainTask/commit/2601cdd9557af081cf0c3d086d131c02e391d9c9",
+          "committedAt": "2026-06-20T22:12:41Z"
+        },
+        {
+          "repo": "ArmanAbid/ChainTask",
+          "message": "wire deployed validator cbor from preview testnet",
+          "url": "https://github.com/ArmanAbid/ChainTask/commit/02943bea9d71d88701de7b62e7563c98b59b5839",
+          "committedAt": "2026-06-20T22:12:23Z"
+        },
+        {
+          "repo": "ArmanAbid/ChainTask",
+          "message": "add lucid integration, tx builders, deploy script, and clean up scaffolding",
+          "url": "https://github.com/ArmanAbid/ChainTask/commit/4d5dc64cf708082823df913e42353755141d71fd",
+          "committedAt": "2026-06-20T21:21:32Z"
+        }
+      ],
       "error": null
     },
     {
@@ -283,9 +315,15 @@
     {
       "id": "newman5",
       "name": "Newman",
-      "lastActivityAt": "2026-06-19T16:58:14Z",
-      "commitsThisWeek": 10,
+      "lastActivityAt": "2026-06-20T12:52:24Z",
+      "commitsThisWeek": 11,
       "recentCommits": [
+        {
+          "repo": "Newman5/builder-season-playbook",
+          "message": "Update builder activity data",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/4cd762e15c0b64a02b044a9fac0f8f24d4cc5e1c",
+          "committedAt": "2026-06-20T12:52:24Z"
+        },
         {
           "repo": "Newman5/builder-season-playbook",
           "message": "Merge branch 'main' of https://github.com/Newman5/builder-season-playbook",
@@ -309,12 +347,6 @@
           "message": "Update builder activity data",
           "url": "https://github.com/Newman5/builder-season-playbook/commit/db78ebf6172759b86704e1ab17594e226fb992a4",
           "committedAt": "2026-06-18T13:28:11Z"
-        },
-        {
-          "repo": "Newman5/builder-season-playbook",
-          "message": "Merge branch 'main' of https://github.com/Newman5/builder-season-playbook",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/eeef968928c67e3108b6c69444afc91090f17da6",
-          "committedAt": "2026-06-17T16:23:21Z"
         }
       ],
       "error": null
@@ -424,9 +456,16 @@
     {
       "id": "muhammedyuguda",
       "name": "Muhammed",
-      "lastActivityAt": "2026-06-14T17:30:52Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-06-21T12:05:49Z",
+      "commitsThisWeek": 1,
+      "recentCommits": [
+        {
+          "repo": "Yuguda999/devmemory",
+          "message": "feat: implement automated global and project-level hooks to inject DevMemory instructions across Claude, Cursor, Windsurf, Cline, and Kilo.",
+          "url": "https://github.com/Yuguda999/devmemory/commit/ef887cc0d5d7dc354383a3cdc638076878ecd880",
+          "committedAt": "2026-06-21T12:05:49Z"
+        }
+      ],
       "error": null
     },
     {
@@ -471,7 +510,7 @@
     {
       "id": "kamalaliyu",
       "name": "Kamal Aliyu",
-      "lastActivityAt": "2026-06-13T13:15:00Z",
+      "lastActivityAt": "2026-06-14T14:30:00Z",
       "commitsThisWeek": 0,
       "recentCommits": [],
       "error": null
@@ -479,9 +518,21 @@
     {
       "id": "alfreditodole",
       "name": "Alfred Itodole",
-      "lastActivityAt": "2026-06-16T10:43:41Z",
-      "commitsThisWeek": 1,
+      "lastActivityAt": "2026-06-20T13:23:32Z",
+      "commitsThisWeek": 3,
       "recentCommits": [
+        {
+          "repo": "sirxalfred/mosaic-cardano",
+          "message": "Merge pull request #16 from sirXalfred/chore/main\n\nfeat: add option to create a village at onboarding",
+          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/fb80a85fdb0ee4b095fd3c95a79b7f9285032e58",
+          "committedAt": "2026-06-20T13:23:32Z"
+        },
+        {
+          "repo": "sirxalfred/mosaic-cardano",
+          "message": "feat: add option to create a village at onboarding",
+          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/9d3576946595f74599f9617d20d1c332381acc66",
+          "committedAt": "2026-06-20T13:03:27Z"
+        },
         {
           "repo": "sirxalfred/mosaic-cardano",
           "message": "Update hackathon status to Week 7 and last updated date",
