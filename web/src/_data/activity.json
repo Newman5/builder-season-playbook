@@ -1,21 +1,14 @@
 {
-  "generatedAt": "2026-06-21T12:57:39Z",
-  "weekStart": "2026-06-15T00:00:00Z",
-  "weekEnd": "2026-06-21T23:59:59Z",
+  "generatedAt": "2026-06-22T14:10:19Z",
+  "weekStart": "2026-06-22T00:00:00Z",
+  "weekEnd": "2026-06-28T23:59:59Z",
   "builders": [
     {
       "id": "mhizta",
       "name": "Mhizta",
       "lastActivityAt": "2026-06-19T21:11:48Z",
-      "commitsThisWeek": 1,
-      "recentCommits": [
-        {
-          "repo": "Mhizta-gab/bookworm-ai",
-          "message": "feat: add voice session management, subscription limits, and Vapi controls for book interaction",
-          "url": "https://github.com/Mhizta-gab/bookworm-ai/commit/7da8e3185c9e26018af72bb8c4c5e4bc3f35c25e",
-          "committedAt": "2026-06-19T21:11:48Z"
-        }
-      ],
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
@@ -30,36 +23,16 @@
       "id": "dammy",
       "name": "Dammy",
       "lastActivityAt": "2026-06-20T23:30:31Z",
-      "commitsThisWeek": 1,
-      "recentCommits": [
-        {
-          "repo": "Dammy7942/accordiax",
-          "message": "feat: implement advanced trust & safety (identity verification, reporting with evidence, admin pages, block user, and storage policies)",
-          "url": "https://github.com/Dammy7942/accordiax/commit/43494167cab94fa30a46180a53d0e17e9171ae37",
-          "committedAt": "2026-06-20T23:30:31Z"
-        }
-      ],
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
       "id": "gidhub",
       "name": "Gideon",
       "lastActivityAt": "2026-06-16T03:24:11Z",
-      "commitsThisWeek": 2,
-      "recentCommits": [
-        {
-          "repo": "0xGIDHUB/tixano",
-          "message": "UI optimization for date inputs",
-          "url": "https://github.com/0xGIDHUB/tixano/commit/9bd65c7f664996508253d4663e69a7804984571b",
-          "committedAt": "2026-06-16T03:24:11Z"
-        },
-        {
-          "repo": "0xGIDHUB/tixano",
-          "message": "Display events name on tickets card in dashboard view",
-          "url": "https://github.com/0xGIDHUB/tixano/commit/f555e6083c89f32b15069012ac5c2c7df62a12fd",
-          "committedAt": "2026-06-16T02:14:33Z"
-        }
-      ],
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
@@ -74,39 +47,8 @@
       "id": "harrie",
       "name": "Harrie",
       "lastActivityAt": "2026-06-21T09:55:06Z",
-      "commitsThisWeek": 21,
-      "recentCommits": [
-        {
-          "repo": "IamHarrie-Labs/beni",
-          "message": "chore: update compiled validator CBOR and redeploy agent wallet\n\nReplaced validators.ts CBOR with output from fixed aiken build (CI artifact).\nNew script hash: 04dc2ad3a35042b23d1589e8249951c021f689583f325124f576b474\n\nRedeployed agent wallet with corrected spend validator:\n  Script: addr_test1wqzdc2kn5dgy9v3azky7sfye28qzra5ftqlny5fy74mtgaqc4hl7y\n  Deploy TX: b37f0f1b00380e1cb915149359dedcd416c2764977ec5246252bd7f57102178f\n  Demo TX (1 ADA self-send): 9d186e33b271b4b433998734b20a28acae72fe3aa70230783ce03c7d4060c884\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>",
-          "url": "https://github.com/IamHarrie-Labs/beni/commit/eecbbf0148769688f967be3a28662e416f545cbe",
-          "committedAt": "2026-06-21T09:55:06Z"
-        },
-        {
-          "repo": "IamHarrie-Labs/beni",
-          "message": "fix(validator): compute this_spend as net script outflow, not sum of outputs\n\nThe old logic summed lovelace across all non-whitelisted outputs (including\nthe continuing script output and agent change), making window_spent always\ndrift away from the SDK-computed value and causing every Spend to fail.\n\nThe fix: this_spend = script_input_lovelace - lovelace_of(continuing.value),\nwhich exactly matches the `lovelace` parameter the SDK passes in.\n\nAlso adds utility scripts (deploy-wallet, generate-key, check-balance) and\nrewrites the demo to load the deployed wallet from beni-wallet-state.json\ninstead of creating a new one each run.\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>",
-          "url": "https://github.com/IamHarrie-Labs/beni/commit/3c2c69508023f992bdb2153f56d25a1dfe2538d1",
-          "committedAt": "2026-06-21T07:38:03Z"
-        },
-        {
-          "repo": "IamHarrie-Labs/beni",
-          "message": "docs: add MCP server section to docs page and README\n\n- Docs page: new \"Integrations / MCP server\" section with tool table,\n  offline testing instructions, Claude Desktop config snippet\n- README: MCP server section with setup table, config JSON, roadmap update,\n  fix stale lucid API call (selectWalletFromPrivateKey -> selectWallet.fromPrivateKey),\n  remove brand book reference, update What has been built\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>",
-          "url": "https://github.com/IamHarrie-Labs/beni/commit/73598480a3c710461691db1df82e03995c1651a8",
-          "committedAt": "2026-06-21T04:09:38Z"
-        },
-        {
-          "repo": "IamHarrie-Labs/beni",
-          "message": "feat(sdk): add MCP server exposing Beni guardrail tools to any LLM agent\n\nAdds sdk/mcp-server.ts — a Model Context Protocol server that wraps the\nBeni SDK so any MCP-compatible agent (Claude Desktop, etc.) can call\ncheck_limits, get_status, spend, freeze, and create_wallet without\ntouching Lucid, Aiken, or Blockfrost directly.\n\nOffline tools (check_limits, get_status) work with no keys.\nOn-chain tools activate when BLOCKFROST_PREVIEW_KEY + AGENT_PRIVATE_KEY\nare set in the MCP server env config.\n\nAlso adds sdk/claude-desktop-config.example.json with ready-to-paste\nClaude Desktop config snippet.\n\nCo-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>",
-          "url": "https://github.com/IamHarrie-Labs/beni/commit/892154dac4e6b79e7e5840f538b57ecc76a2c382",
-          "committedAt": "2026-06-20T16:34:51Z"
-        },
-        {
-          "repo": "IamHarrie-Labs/beni",
-          "message": "fix(ui): remove fabricated latency/benchmark metrics\n\nNothing in Beni measures validator latency, and the contract uses a list\ncheck, not a bloom filter. These were invented numbers presented as fact:\n\n- Dashboard KPI 'Validator latency 28ms / p95 41ms' -> real 'Per-tx cap'\n  pulled from the on-chain rules (or '·' when no contract is deployed)\n- Security page 'What happens in 28ms' -> 'Every spend, checked four ways'\n- Pipeline: dropped the fake per-step millisecond column and the\n  '12 addresses · bloom filter' line; descriptions now match the validator\n- SecurityStats '28ms median validator latency' -> '1 block to freeze a\n  rogue agent' (a real property of the freeze path)\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>",
-          "url": "https://github.com/IamHarrie-Labs/beni/commit/f80851bc53112b180ad8a0dda78c3ae335b81304",
-          "committedAt": "2026-06-20T10:45:53Z"
-        }
-      ],
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
@@ -121,33 +63,8 @@
       "id": "armanabid",
       "name": "Abid",
       "lastActivityAt": "2026-06-20T22:13:18Z",
-      "commitsThisWeek": 4,
-      "recentCommits": [
-        {
-          "repo": "ArmanAbid/ChainTask",
-          "message": "fix deploy script: hand-roll native script cbor and use esm imports",
-          "url": "https://github.com/ArmanAbid/ChainTask/commit/d0224f47291a47e24b647762c286d16b33c5fea5",
-          "committedAt": "2026-06-20T22:13:18Z"
-        },
-        {
-          "repo": "ArmanAbid/ChainTask",
-          "message": "remove draft banner now that contracts are live",
-          "url": "https://github.com/ArmanAbid/ChainTask/commit/2601cdd9557af081cf0c3d086d131c02e391d9c9",
-          "committedAt": "2026-06-20T22:12:41Z"
-        },
-        {
-          "repo": "ArmanAbid/ChainTask",
-          "message": "wire deployed validator cbor from preview testnet",
-          "url": "https://github.com/ArmanAbid/ChainTask/commit/02943bea9d71d88701de7b62e7563c98b59b5839",
-          "committedAt": "2026-06-20T22:12:23Z"
-        },
-        {
-          "repo": "ArmanAbid/ChainTask",
-          "message": "add lucid integration, tx builders, deploy script, and clean up scaffolding",
-          "url": "https://github.com/ArmanAbid/ChainTask/commit/4d5dc64cf708082823df913e42353755141d71fd",
-          "committedAt": "2026-06-20T21:21:32Z"
-        }
-      ],
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
@@ -162,21 +79,8 @@
       "id": "yungslaiz",
       "name": "Blessed David",
       "lastActivityAt": "2026-06-19T20:23:57Z",
-      "commitsThisWeek": 2,
-      "recentCommits": [
-        {
-          "repo": "YungSlaiz53/GNXT",
-          "message": "add About page and link it to the sidebar",
-          "url": "https://github.com/YungSlaiz53/GNXT/commit/a2e38d3c7b469b8e94e1b1c27e91c9617b40efe3",
-          "committedAt": "2026-06-19T20:23:57Z"
-        },
-        {
-          "repo": "YungSlaiz53/GNXT",
-          "message": "feat: add Cardano NXTP token withdrawal functionality and integrate upgrade validation in Sidebar, plus revamp Login UI with improved error handling.",
-          "url": "https://github.com/YungSlaiz53/GNXT/commit/8efd3c4045179af084b5fb1f5a09d78db4b80222",
-          "committedAt": "2026-06-19T19:27:35Z"
-        }
-      ],
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
@@ -191,39 +95,8 @@
       "id": "murmurations",
       "name": "Nori",
       "lastActivityAt": "2026-06-17T17:34:12Z",
-      "commitsThisWeek": 6,
-      "recentCommits": [
-        {
-          "repo": "murmurations-ai/flyway",
-          "message": "docs: Tier 5 walkthrough — full staging chain with an integrated objection\n\nThe executable walkthrough Tier 4 explicitly starts past: a tension runs\nthe complete S3 proposal-forming chain (driver → requirements → draft →\nrefinement → final) with a real objection integrated mid-chain.\n\nwalkthroughs/2026-06-17-tier5-staging-chain.md (new): verbatim transcript\nat SHA 4c894b6. B objects at the draft stage — facilitation and the\nshared tension log both fall on Andamio — and A's refinement integrates\nit: the log expectation moves from Andamio to Praxis, and that split is\nwhat lands in the byte-identical co-signed agreement (SHA-256 ab6b1975…).\nShows tension→proposal promotion, stage-transition enforcement, the\nobjection's refs binding the refinement to the objected draft, and the\nsix-signal chain reconciling in B's flyway_check. Surfaces G8/#2\n(re-confirmed: no machine-followable agreement→tension link after a\nfive-hop chain) and G10 (mid-chain recorded concerns don't reach the\nagreement's concerns field).\n\n- walkthroughs/README.md: Tier 5 index row.\n- status.md / status.html: 5 executable walkthroughs; Tier 5 card +\n  table row; pending section drops the (now-done) staging-chain\n  walkthrough and adds agreement-provenance (Issue #2 / G8).\n- how-flyway-works.html: \"Five executable walkthroughs\".\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>",
-          "url": "https://github.com/murmurations-ai/flyway/commit/3a210ec800221bc39d0d2df144e84ac9c375c7de",
-          "committedAt": "2026-06-17T17:34:12Z"
-        },
-        {
-          "repo": "murmurations-ai/flyway",
-          "message": "docs: protocol surface complete — 9 of 9 tools, SHA 17f9bc1\n\nflyway_discover (S+7) is the last tool; the reviewer surface now reads\n9 of 9.\n\nREADME.md — \"All nine tools run end-to-end\", flyway_discover described\n(pre-trust directory search); remote directory fetch noted as a reserved\nv0.2 seam alongside remote signal transport.\n\ndocs/status.md + docs/status.html\n- at-a-glance: 9 of 9, 355 tests / 26 files, SHA 17f9bc1.\n- headline / lede / tool-maturity: discover wired; \"all nine speaking\".\n- S+7 milestone row; pending section reframed — the surface is complete,\n  what's left is the staging-chain walkthrough, remote transports (v0.2),\n  and exit-aware reads, not new tools.\n- legend clarified: all nine wired; remaining items are reserved\n  transports and lifecycle depth, not stubs.\n\ndocs/architecture/how-flyway-works.md + .html\n- §4 rewritten: all nine wired; table now lists areas (remote transports,\n  exit-aware reads, agreement lifecycle) rather than stubbed tools; notes\n  the three subtler tools (discover is pre-trust, exit is unilateral,\n  materialize is a local act).\n- §7.1 + HTML contract tables: flyway_discover implemented.\n- reading-order count and status-snapshot paragraph updated.\n\nThe status.html milestone-timeline SVG and how-flyway-works.html Fig. 4\narrows still lag (left intentionally — blind SVG surgery is risky); the\nsurrounding text flags both.\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>",
-          "url": "https://github.com/murmurations-ai/flyway/commit/4c894b628cc99a121ec4dd7afb35fb2b23232f2e",
-          "committedAt": "2026-06-17T17:23:16Z"
-        },
-        {
-          "repo": "murmurations-ai/flyway",
-          "message": "feat(core+cli+mcp): S+7 — flyway_discover completes the 9-tool surface\n\nDiscovery is the one pre-trust tool: it helps a Source find potential\npeers before proposing recognition. Nothing it returns is trusted —\ndirectory entries are informational pointers, not attestations. A\ndirectory that lies can only waste your time, never forge an identity:\nyou still verify at recognition. So entries are unsigned and discover\nperforms no signature checks. This is the last stubbed tool — 9 of 9 now\nwired.\n\nCore (discover.ts)\n- FlywayDirectory / FlywayDirectoryEntry types + FLYWAY_DIRECTORY_SCHEMA\n  (JSON Schema). An entry needs only did + sourceName; mode, capabilities,\n  repoUrl, description are optional hints.\n- flywayDiscover({ directory, query? }): pure query. No query → all\n  entries; query starting `did:` → exact DID match; otherwise\n  case-insensitive substring over did / sourceName / capabilities /\n  description, in directory order.\n- parseFlywayDirectory(raw): validates shape (schemaVersion, entries,\n  per-entry did/sourceName/mode/capabilities), rejects duplicate DIDs,\n  returns a defensively-copied typed document.\n\nTransport: v0.1 reads a LOCAL directory file. Fetching a directory over\nhttp(s) — the first genuinely non-local-fs operation — is a reserved\nseam: the directory shape is defined now so a remote fetcher drops in\nlater without changing the query logic (parallels ADR-0008 reserving\nremote signal transports). A URL source is refused with a clear message,\nnever silently treated as a path.\n\nCLI\n- `flyway discover --directory <path> [query] [--json]`. Read-only,\n  needs no identity. Loads a YAML/JSON directory file, parses, filters,\n  prints (human or --json).\n\nMCP\n- handleDiscover replaces the last not-implemented stub; stateless (the\n  caller supplies the directory document; the server does no fs/network\n  I/O), parses + filters + returns matches. Refreshed the handlers test\n  that asserted discover was unimplemented; added unknown-tool coverage.\n\nTests: core +16, cli +7, mcp +3. 355 passed workspace-wide (233 core /\n90 cli / 23 mcp / 9 agent).\n\nSmoke: list-all, free-text filter, exact-DID lookup, and http-URL refusal\nall behave. The protocol surface is complete.\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>",
-          "url": "https://github.com/murmurations-ai/flyway/commit/17f9bc1fefe44770d68418012462a6102c531f37",
-          "committedAt": "2026-06-17T17:17:05Z"
-        },
-        {
-          "repo": "murmurations-ai/flyway",
-          "message": "build: migrate pnpm settings to pnpm-workspace.yaml (pnpm 10+/11 compat)\n\npnpm 11 no longer reads the \"pnpm\" field from package.json, so the\npeerDependencyRules that suppressed resolution of the harness package's\nprivate, unpublished optional peer (@murmurations-ai/murmurations-harness)\nwere being ignored — `pnpm install` then 404'd on that dep and left\nnode_modules unpopulated, breaking every build/test until a manual\nworkaround.\n\nMoves the settings to their new home in pnpm-workspace.yaml:\n- peerDependencyRules.ignoreMissing — keeps install from resolving the\n  unpublished harness peer (harness is excluded from builds/tests anyway).\n- autoInstallPeers: false — matches the lockfile (avoids a frozen-install\n  config-mismatch error after the pnpm upgrade).\n- allowBuilds: { esbuild: true } — approves esbuild's install script\n  (pulled in by vitest), clearing ERR_PNPM_IGNORED_BUILDS.\n\nRemoves the now-dead \"pnpm\" field from package.json.\n\nVerified: a clean `pnpm install` then `pnpm -r --filter\n'!@murmurations-ai/flyway-harness' build && … test` runs green (329\ntests) with no CI=true or --config workarounds. Lockfile unchanged.\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>",
-          "url": "https://github.com/murmurations-ai/flyway/commit/44d3eaa03117faf64b0e1be3b6a1cc5b97c77a0a",
-          "committedAt": "2026-06-17T17:10:21Z"
-        },
-        {
-          "repo": "murmurations-ai/flyway",
-          "message": "docs: reflect S+6 (flyway_exit) — 8 of 9 tools wired, SHA 11c6b0d\n\nBring the reviewer surface in line with the wired protocol now that\nflyway_exit has landed.\n\nREADME.md\n- front-door status paragraph: \"Eight of the nine tools run end-to-end\",\n  with propose / co-signed-agreement materialization / exit described;\n  only flyway_discover remains stubbed.\n\ndocs/status.md + docs/status.html\n- at-a-glance: 8 of 9 tools, 329 tests / 24 files, SHA 11c6b0d.\n- headline + tool-maturity: flyway_exit wired; \"one pending\" (discover).\n- S+6 milestone row; pending list now discover / staging-chain\n  walkthrough / exit-aware status. (status.html SVG timeline left at S+5\n  — adding a node blind risks the layout; dashboard numbers are current.)\n\ndocs/architecture/how-flyway-works.md + .html\n- §4 pending: only flyway_discover stubbed; flyway_exit described as a\n  unilateral signed notice, distinct from unrecognition, never mutating a\n  co-signed agreement file.\n- tool contract tables: propose / respond / exit marked wired/implemented.\n- domain-tag table: createExit no longer \"(pending)\".\n- ADR-0009 section: corrected — createProposal / createProposalResponse /\n  materializeAgreement carry antecedent verification; createExit is the\n  deliberate exception (unilateral, no antecedent).\n- agreement lifecycle note + reading-order count (eight of nine).\n\nThe Fig. 4 SVG negotiation arrows still render \"execution pending\" and\nlag the implementation; the surrounding text continues to flag that.\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>",
-          "url": "https://github.com/murmurations-ai/flyway/commit/c64675a3693877110816a9b2bd4731378b6f6427",
-          "committedAt": "2026-06-17T17:01:49Z"
-        }
-      ],
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
@@ -238,201 +111,46 @@
       "id": "trike",
       "name": "Anita",
       "lastActivityAt": "2026-06-20T10:23:14Z",
-      "commitsThisWeek": 6,
-      "recentCommits": [
-        {
-          "repo": "3rike12/3rike-Mobility_",
-          "message": "fix: round all dollar/cedi figures to whole numbers across frontend",
-          "url": "https://github.com/3rike12/3rike-Mobility_/commit/cc4715e19c9910f2fee8aea5dbf68bc62ab8c179",
-          "committedAt": "2026-06-20T10:23:14Z"
-        },
-        {
-          "repo": "3rike12/3rike-Mobility_",
-          "message": "refactor: frontend — Midnight wallet types, ZK commitment UI, remove EVM display",
-          "url": "https://github.com/3rike12/3rike-Mobility_/commit/8543e5f8cb93f7c535a4e206dcab9e6c47f25c2d",
-          "committedAt": "2026-06-16T15:14:23Z"
-        },
-        {
-          "repo": "3rike12/3rike-Mobility_",
-          "message": "feat: backend Midnight integration — SDK wrapper, wallet, investment service, routes",
-          "url": "https://github.com/3rike12/3rike-Mobility_/commit/50a3ef5ab4d3b381c971ae427c8041624dc29c01",
-          "committedAt": "2026-06-16T15:14:17Z"
-        },
-        {
-          "repo": "3rike12/3rike-Mobility_",
-          "message": "feat: Cardano TricycleNFT — CIP-25 minting policy in Aiken",
-          "url": "https://github.com/3rike12/3rike-Mobility_/commit/13378c35a7d72ae6d2efaf330118b7f55da571d9",
-          "committedAt": "2026-06-16T15:14:12Z"
-        },
-        {
-          "repo": "3rike12/3rike-Mobility_",
-          "message": "feat: Midnight privacy contracts — UserRegistry, PrivateInvestment, YieldVault",
-          "url": "https://github.com/3rike12/3rike-Mobility_/commit/e8bed3d1b7c10a6e9cbe6b61321acff7a08a73c6",
-          "committedAt": "2026-06-16T15:14:08Z"
-        }
-      ],
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
       "id": "mobrai",
       "name": "Marcio",
       "lastActivityAt": "2026-06-16T20:17:30Z",
-      "commitsThisWeek": 16,
-      "recentCommits": [
-        {
-          "repo": "mobr-ai/cap-pie",
-          "message": "Merge branch 'main' of github.com:mobr-ai/cap-pie",
-          "url": "https://github.com/mobr-ai/cap-pie/commit/141bbff55c13819dcb824bdb57c3dc8432a94165",
-          "committedAt": "2026-06-16T20:17:30Z"
-        },
-        {
-          "repo": "mobr-ai/cap-pie",
-          "message": "Merge commit 'c0e78fd9d888b4669516f7369d47273596fadc4a'",
-          "url": "https://github.com/mobr-ai/cap-pie/commit/0ee29ba500b535c278705043ee8f2fc8fa4b2d65",
-          "committedAt": "2026-06-16T20:16:20Z"
-        },
-        {
-          "repo": "mobr-ai/cap-pie",
-          "message": "Merge commit 'c03a353f9953843651f69cd3e6c253835d1cfca1'",
-          "url": "https://github.com/mobr-ai/cap-pie/commit/cf70e44cc4a19cecc6ea12d053dbe26b2ff253eb",
-          "committedAt": "2026-06-16T20:14:12Z"
-        },
-        {
-          "repo": "mobr-ai/cap-pie",
-          "message": "Merge commit '9d40f34cda0caf192c6e8fc15d8b380abf0953e5'",
-          "url": "https://github.com/mobr-ai/cap-pie/commit/bd888863c664246a6c35d7d7386b4c18f0dcdb2a",
-          "committedAt": "2026-06-16T20:13:47Z"
-        },
-        {
-          "repo": "mobr-ai/cap-pie",
-          "message": "removing graph step default message",
-          "url": "https://github.com/mobr-ai/cap-pie/commit/9d40f34cda0caf192c6e8fc15d8b380abf0953e5",
-          "committedAt": "2026-06-16T16:44:47Z"
-        }
-      ],
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
       "id": "newman5",
       "name": "Newman",
-      "lastActivityAt": "2026-06-20T12:52:24Z",
-      "commitsThisWeek": 11,
-      "recentCommits": [
-        {
-          "repo": "Newman5/builder-season-playbook",
-          "message": "Update builder activity data",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/4cd762e15c0b64a02b044a9fac0f8f24d4cc5e1c",
-          "committedAt": "2026-06-20T12:52:24Z"
-        },
-        {
-          "repo": "Newman5/builder-season-playbook",
-          "message": "Merge branch 'main' of https://github.com/Newman5/builder-season-playbook",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/2a9a7364f035bebaf3a200be2290f47f7d6c2e6d",
-          "committedAt": "2026-06-19T16:58:14Z"
-        },
-        {
-          "repo": "Newman5/builder-season-playbook",
-          "message": "builder updates",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/32143f6d91ad2edb764ebd40bdf2cb2be9ec4924",
-          "committedAt": "2026-06-19T16:58:12Z"
-        },
-        {
-          "repo": "Newman5/builder-season-playbook",
-          "message": "Update builder activity data",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/4fcf5feff9a00f59749bedab410866dbe688e6d5",
-          "committedAt": "2026-06-19T13:25:35Z"
-        },
-        {
-          "repo": "Newman5/builder-season-playbook",
-          "message": "Update builder activity data",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/db78ebf6172759b86704e1ab17594e226fb992a4",
-          "committedAt": "2026-06-18T13:28:11Z"
-        }
-      ],
+      "lastActivityAt": "2026-06-21T12:57:48Z",
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
       "id": "juniordevforever",
       "name": "Harsha",
       "lastActivityAt": "2026-06-17T01:29:24Z",
-      "commitsThisWeek": 10,
-      "recentCommits": [
-        {
-          "repo": "gulla0/Cohort15-MVP",
-          "message": "Require human setup checklists for provider tasks",
-          "url": "https://github.com/gulla0/Cohort15-MVP/commit/76e39e50dcef8c3af32155766fc4797f4f4e90d7",
-          "committedAt": "2026-06-17T01:29:24Z"
-        },
-        {
-          "repo": "gulla0/Cohort15-MVP",
-          "message": "Define production MVP dependency graph",
-          "url": "https://github.com/gulla0/Cohort15-MVP/commit/8a3b2cb6f90c71335fec5f8533de58ad2241c053",
-          "committedAt": "2026-06-17T01:13:07Z"
-        },
-        {
-          "repo": "gulla0/Cohort15-MVP",
-          "message": "Complete T012 auth boundary",
-          "url": "https://github.com/gulla0/Cohort15-MVP/commit/36eae86f6e8e2f679753f1b3c190eb7747dc0759",
-          "committedAt": "2026-06-16T17:34:24Z"
-        },
-        {
-          "repo": "gulla0/Cohort15-MVP",
-          "message": "Resolve ISSUE-014 buy credits nav alignment",
-          "url": "https://github.com/gulla0/Cohort15-MVP/commit/eb6d7745f1f4d98350905932963f48b14a2d67aa",
-          "committedAt": "2026-06-16T16:34:38Z"
-        },
-        {
-          "repo": "gulla0/Cohort15-MVP",
-          "message": "Resolve ISSUE-013 placeholder focus styling",
-          "url": "https://github.com/gulla0/Cohort15-MVP/commit/4ecaba6feb35ad5fad884807b8da515bf9ac8e24",
-          "committedAt": "2026-06-16T16:21:58Z"
-        }
-      ],
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
       "id": "devfreeguy",
       "name": "Daniel",
       "lastActivityAt": "2026-06-19T16:23:20Z",
-      "commitsThisWeek": 5,
-      "recentCommits": [
-        {
-          "repo": "devfreeguy/skill-swap",
-          "message": "chore(wallet-auth): remove temporary diagnostic logging",
-          "url": "https://github.com/devfreeguy/skill-swap/commit/094dadad1fc826f44fc5cbe5ab44176d9b4b1249",
-          "committedAt": "2026-06-19T16:23:20Z"
-        },
-        {
-          "repo": "devfreeguy/skill-swap",
-          "message": "feat(wallet-auth): real CIP-8 verification, env-driven network and one-tap connect",
-          "url": "https://github.com/devfreeguy/skill-swap/commit/b47ac771fd13dffe74f60d1eb79871161607eddb",
-          "committedAt": "2026-06-19T11:39:11Z"
-        },
-        {
-          "repo": "devfreeguy/skill-swap",
-          "message": "fix: wire up non-functional buttons across app",
-          "url": "https://github.com/devfreeguy/skill-swap/commit/5b5a0d06af7cbff9189167a1209ace73b8f81b36",
-          "committedAt": "2026-06-19T00:33:06Z"
-        },
-        {
-          "repo": "devfreeguy/skill-swap",
-          "message": "fix(ui): adjusted some ui defects on the landing page",
-          "url": "https://github.com/devfreeguy/skill-swap/commit/cdebddb318e5d5321cc8d85b2a7f5a1b410cd79e",
-          "committedAt": "2026-06-19T00:25:50Z"
-        },
-        {
-          "repo": "devfreeguy/skill-swap",
-          "message": "feat: remove mandatory ada payment gate, cardano becomes optional trust layer",
-          "url": "https://github.com/devfreeguy/skill-swap/commit/5ca1e3bbd48d03f8676de9a1880a871ead5cc5f4",
-          "committedAt": "2026-06-18T23:58:37Z"
-        }
-      ],
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
       "id": "haulink",
       "name": "Abdulazeez",
-      "lastActivityAt": "2026-06-12T03:57:14Z",
+      "lastActivityAt": "2026-06-21T15:06:29Z",
       "commitsThisWeek": 0,
       "recentCommits": [],
       "error": null
@@ -456,55 +174,17 @@
     {
       "id": "muhammedyuguda",
       "name": "Muhammed",
-      "lastActivityAt": "2026-06-21T12:05:49Z",
-      "commitsThisWeek": 1,
-      "recentCommits": [
-        {
-          "repo": "Yuguda999/devmemory",
-          "message": "feat: implement automated global and project-level hooks to inject DevMemory instructions across Claude, Cursor, Windsurf, Cline, and Kilo.",
-          "url": "https://github.com/Yuguda999/devmemory/commit/ef887cc0d5d7dc354383a3cdc638076878ecd880",
-          "committedAt": "2026-06-21T12:05:49Z"
-        }
-      ],
+      "lastActivityAt": "2026-06-21T16:35:01Z",
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
       "id": "juanitajaramillo",
       "name": "Juanita",
       "lastActivityAt": "2026-06-19T21:57:56Z",
-      "commitsThisWeek": 12,
-      "recentCommits": [
-        {
-          "repo": "JuanitaJaramill/cardano-insights-lab",
-          "message": "Update README.md",
-          "url": "https://github.com/JuanitaJaramill/cardano-insights-lab/commit/6bbf385a2de469d43bc4521934c51498255bd71f",
-          "committedAt": "2026-06-19T21:57:56Z"
-        },
-        {
-          "repo": "JuanitaJaramill/cardano-insights-lab",
-          "message": "Remove misplaced CaseResult component",
-          "url": "https://github.com/JuanitaJaramill/cardano-insights-lab/commit/8e21608e82cecf995485a5fe752de3940a8e4f47",
-          "committedAt": "2026-06-19T21:41:50Z"
-        },
-        {
-          "repo": "JuanitaJaramill/cardano-insights-lab",
-          "message": "Move CaseResult to correct components folder",
-          "url": "https://github.com/JuanitaJaramill/cardano-insights-lab/commit/2f9fef2f447a8fd0c50d79bf0d2c96b17003af53",
-          "committedAt": "2026-06-19T21:34:27Z"
-        },
-        {
-          "repo": "JuanitaJaramill/cardano-insights-lab",
-          "message": "Connect modular beta app flow",
-          "url": "https://github.com/JuanitaJaramill/cardano-insights-lab/commit/32f668f2eb7c4a848076a9d757adcc4d92e54580",
-          "committedAt": "2026-06-19T21:30:24Z"
-        },
-        {
-          "repo": "JuanitaJaramill/cardano-insights-lab",
-          "message": "Connect modular beta app flow",
-          "url": "https://github.com/JuanitaJaramill/cardano-insights-lab/commit/81f1fcef79de07c2696c8d7df0d7d11ed2db39bd",
-          "committedAt": "2026-06-19T21:08:35Z"
-        }
-      ],
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
@@ -519,27 +199,8 @@
       "id": "alfreditodole",
       "name": "Alfred Itodole",
       "lastActivityAt": "2026-06-20T13:23:32Z",
-      "commitsThisWeek": 3,
-      "recentCommits": [
-        {
-          "repo": "sirxalfred/mosaic-cardano",
-          "message": "Merge pull request #16 from sirXalfred/chore/main\n\nfeat: add option to create a village at onboarding",
-          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/fb80a85fdb0ee4b095fd3c95a79b7f9285032e58",
-          "committedAt": "2026-06-20T13:23:32Z"
-        },
-        {
-          "repo": "sirxalfred/mosaic-cardano",
-          "message": "feat: add option to create a village at onboarding",
-          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/9d3576946595f74599f9617d20d1c332381acc66",
-          "committedAt": "2026-06-20T13:03:27Z"
-        },
-        {
-          "repo": "sirxalfred/mosaic-cardano",
-          "message": "Update hackathon status to Week 7 and last updated date",
-          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/f67f8ac66570907fb51f790d7d9a98d901212989",
-          "committedAt": "2026-06-16T10:43:41Z"
-        }
-      ],
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     }
   ]
