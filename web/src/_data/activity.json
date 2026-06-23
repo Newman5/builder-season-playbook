@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-22T14:10:19Z",
+  "generatedAt": "2026-06-23T13:15:51Z",
   "weekStart": "2026-06-22T00:00:00Z",
   "weekEnd": "2026-06-28T23:59:59Z",
   "builders": [
@@ -30,9 +30,16 @@
     {
       "id": "gidhub",
       "name": "Gideon",
-      "lastActivityAt": "2026-06-16T03:24:11Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-06-23T00:49:46Z",
+      "commitsThisWeek": 1,
+      "recentCommits": [
+        {
+          "repo": "0xGIDHUB/tixano",
+          "message": "Ticket mint success modal with clear next-step guidance for users",
+          "url": "https://github.com/0xGIDHUB/tixano/commit/c47671e857c573bf99ed84807c5cb2dfd87a68c6",
+          "committedAt": "2026-06-23T00:49:46Z"
+        }
+      ],
       "error": null
     },
     {
@@ -126,9 +133,16 @@
     {
       "id": "newman5",
       "name": "Newman",
-      "lastActivityAt": "2026-06-21T12:57:48Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-06-22T14:10:35Z",
+      "commitsThisWeek": 1,
+      "recentCommits": [
+        {
+          "repo": "Newman5/builder-season-playbook",
+          "message": "Update builder activity data",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/488b98db4074b51fc0af2b62c5a557ade30081cb",
+          "committedAt": "2026-06-22T14:10:35Z"
+        }
+      ],
       "error": null
     },
     {
