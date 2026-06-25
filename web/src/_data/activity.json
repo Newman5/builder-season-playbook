@@ -1,14 +1,20 @@
 {
-  "generatedAt": "2026-06-24T13:03:57Z",
+  "generatedAt": "2026-06-25T13:03:50Z",
   "weekStart": "2026-06-22T00:00:00Z",
   "weekEnd": "2026-06-28T23:59:59Z",
   "builders": [
     {
       "id": "mhizta",
       "name": "Mhizta",
-      "lastActivityAt": "2026-06-23T13:44:26Z",
-      "commitsThisWeek": 1,
+      "lastActivityAt": "2026-06-24T15:56:30Z",
+      "commitsThisWeek": 2,
       "recentCommits": [
+        {
+          "repo": "Mhizta-gab/bookworm-ai",
+          "message": "feat: implement dashboard shell with library management, comment system, and recommendation integration",
+          "url": "https://github.com/Mhizta-gab/bookworm-ai/commit/603be78cb5158ce413c8e16b77e30f43dfc45af1",
+          "committedAt": "2026-06-24T15:56:30Z"
+        },
         {
           "repo": "Mhizta-gab/bookworm-ai",
           "message": "feat: implement voice session integration with Vapi, including usage tracking, transcript summarization, and subscription limits.",
@@ -37,9 +43,15 @@
     {
       "id": "gidhub",
       "name": "Gideon",
-      "lastActivityAt": "2026-06-24T11:53:02Z",
-      "commitsThisWeek": 2,
+      "lastActivityAt": "2026-06-25T10:11:10Z",
+      "commitsThisWeek": 3,
       "recentCommits": [
+        {
+          "repo": "0xGIDHUB/tixano",
+          "message": "Clearer modal redesign on edit payment gate",
+          "url": "https://github.com/0xGIDHUB/tixano/commit/b23289bf43cdac908036f477645b02fdb5122f79",
+          "committedAt": "2026-06-25T10:11:10Z"
+        },
         {
           "repo": "0xGIDHUB/tixano",
           "message": "Fix dashboard ticket tab routing",
@@ -146,9 +158,15 @@
     {
       "id": "newman5",
       "name": "Newman",
-      "lastActivityAt": "2026-06-23T13:16:03Z",
-      "commitsThisWeek": 2,
+      "lastActivityAt": "2026-06-24T13:04:12Z",
+      "commitsThisWeek": 3,
       "recentCommits": [
+        {
+          "repo": "Newman5/builder-season-playbook",
+          "message": "Update builder activity data",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/8113bb19a138d6473ce2d7a92c88c9510e9bc4a0",
+          "committedAt": "2026-06-24T13:04:12Z"
+        },
         {
           "repo": "Newman5/builder-season-playbook",
           "message": "Update builder activity data",
