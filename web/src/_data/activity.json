@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-25T13:03:50Z",
+  "generatedAt": "2026-06-26T12:59:35Z",
   "weekStart": "2026-06-22T00:00:00Z",
   "weekEnd": "2026-06-28T23:59:59Z",
   "builders": [
@@ -150,17 +150,54 @@
     {
       "id": "mobrai",
       "name": "Marcio",
-      "lastActivityAt": "2026-06-16T20:17:30Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-06-26T12:26:42Z",
+      "commitsThisWeek": 15,
+      "recentCommits": [
+        {
+          "repo": "mobr-ai/cap-pie",
+          "message": "Merge commit '8b9df6f39949dabaa3b7060fc9da6eb7b25f02e8'",
+          "url": "https://github.com/mobr-ai/cap-pie/commit/e0b5187a2c52ba7861d206d3712470a592117e63",
+          "committedAt": "2026-06-26T12:26:42Z"
+        },
+        {
+          "repo": "mobr-ai/cap-pie",
+          "message": "Merge commit '4423ce7d9241abbd47657ea32a5031d42203d2df'",
+          "url": "https://github.com/mobr-ai/cap-pie/commit/b5d135603aba4046aa2ffe77d44fffcda56e6703",
+          "committedAt": "2026-06-26T12:26:29Z"
+        },
+        {
+          "repo": "mobr-ai/cap-pie",
+          "message": "feat: add static CAP agent cube avatar",
+          "url": "https://github.com/mobr-ai/cap-pie/commit/8b9df6f39949dabaa3b7060fc9da6eb7b25f02e8",
+          "committedAt": "2026-06-25T20:57:54Z"
+        },
+        {
+          "repo": "mobr-ai/cap-pie",
+          "message": "fix: add beta-user query alert channel",
+          "url": "https://github.com/mobr-ai/cap-pie/commit/4423ce7d9241abbd47657ea32a5031d42203d2df",
+          "committedAt": "2026-06-25T19:06:37Z"
+        },
+        {
+          "repo": "mobr-ai/cap-pie",
+          "message": "fix: split beta query admin notifications",
+          "url": "https://github.com/mobr-ai/cap-pie/commit/fbb335e11b4aded4d1674ae722f1b5dc9675a3f3",
+          "committedAt": "2026-06-25T19:06:27Z"
+        }
+      ],
       "error": null
     },
     {
       "id": "newman5",
       "name": "Newman",
-      "lastActivityAt": "2026-06-24T13:04:12Z",
-      "commitsThisWeek": 3,
+      "lastActivityAt": "2026-06-25T13:04:03Z",
+      "commitsThisWeek": 4,
       "recentCommits": [
+        {
+          "repo": "Newman5/builder-season-playbook",
+          "message": "Update builder activity data",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/87331e2890219d7fd4574d38c59fd20c7aebeb1f",
+          "committedAt": "2026-06-25T13:04:03Z"
+        },
         {
           "repo": "Newman5/builder-season-playbook",
           "message": "Update builder activity data",
