@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-26T12:59:35Z",
+  "generatedAt": "2026-06-27T12:43:54Z",
   "weekStart": "2026-06-22T00:00:00Z",
   "weekEnd": "2026-06-28T23:59:59Z",
   "builders": [
@@ -78,9 +78,40 @@
     {
       "id": "harrie",
       "name": "Harrie",
-      "lastActivityAt": "2026-06-21T09:55:06Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-06-27T10:52:49Z",
+      "commitsThisWeek": 8,
+      "recentCommits": [
+        {
+          "repo": "IamHarrie-Labs/beni",
+          "message": "fix(telegram): read wallet state from BENI_STATE_JSON env var for Railway deploy",
+          "url": "https://github.com/IamHarrie-Labs/beni/commit/2863dd2479b4e2b16b4a6191b638c206634ba8f0",
+          "committedAt": "2026-06-27T10:52:49Z"
+        },
+        {
+          "repo": "IamHarrie-Labs/beni",
+          "message": "feat(integrations): Telegram bot for agent wallet control\n\nA human-in-the-loop control surface over beni-sdk: /status, /pay,\n/pending, /freeze. Under-cap spends send immediately; above-cap spends\nqueue and surface Approve/Reject inline buttons that co-sign on-chain.\nVerified the SDK wiring against the live Preview wallet.\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>",
+          "url": "https://github.com/IamHarrie-Labs/beni/commit/326b70cc798128c3c42a2bc41fb94ee84daa211d",
+          "committedAt": "2026-06-27T09:53:04Z"
+        },
+        {
+          "repo": "IamHarrie-Labs/beni",
+          "message": "feat(api): friendly error for stale-UTxO race on rapid re-deploy\n\nAfter a deploy spends the agent's change UTxO, Blockfrost's indexer lags\n~30-60s. A second deploy in that window builds against a spent input and\nthe node returns BadInputsUTxO. Translate that Conway error blob into a\nclear 'wait and retry' message instead of surfacing raw chain internals.\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>",
+          "url": "https://github.com/IamHarrie-Labs/beni/commit/80b94d000e3316a9a1cc3b937d5b72f2f1747c98",
+          "committedAt": "2026-06-27T09:05:55Z"
+        },
+        {
+          "repo": "IamHarrie-Labs/beni",
+          "message": "chore: sync wallet state to live UI-deployed wallet (f556 policy)\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>",
+          "url": "https://github.com/IamHarrie-Labs/beni/commit/aa0f7c25425746fbab1fa521b95823c0bc09faf7",
+          "committedAt": "2026-06-27T08:58:36Z"
+        },
+        {
+          "repo": "IamHarrie-Labs/beni",
+          "message": "fix(api): set type:module so Lucid WASM imports survive in serverless\n\nVercel was transpiling the ESM functions to CommonJS, which broke\n@lucid-evolution/lucid's dynamic WASM imports and crashed /api/deploy\nat module load (FUNCTION_INVOCATION_FAILED).\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>",
+          "url": "https://github.com/IamHarrie-Labs/beni/commit/5864ea926bb354ebdedd7a599e6c94e417b88c01",
+          "committedAt": "2026-06-27T08:52:21Z"
+        }
+      ],
       "error": null
     },
     {
@@ -110,9 +141,16 @@
     {
       "id": "yungslaiz",
       "name": "Blessed David",
-      "lastActivityAt": "2026-06-19T20:23:57Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-06-26T22:49:20Z",
+      "commitsThisWeek": 1,
+      "recentCommits": [
+        {
+          "repo": "YungSlaiz53/GNXT",
+          "message": " week 9: implement idempotent slug-based survey creation, add Firebase Auth redirect fallback, and Admin Survey Management",
+          "url": "https://github.com/YungSlaiz53/GNXT/commit/4b38b5759c64f24c7f49f431a22a73ca00313a73",
+          "committedAt": "2026-06-26T22:49:20Z"
+        }
+      ],
       "error": null
     },
     {
@@ -126,9 +164,40 @@
     {
       "id": "murmurations",
       "name": "Nori",
-      "lastActivityAt": "2026-06-17T17:34:12Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-06-27T03:02:54Z",
+      "commitsThisWeek": 13,
+      "recentCommits": [
+        {
+          "repo": "murmurations-ai/flyway",
+          "message": "Merge pull request #24 from murmurations-ai/feat/recognize-over-https\n\nS+11: recognize a peer at a distance over HTTPS (ADR-0011, Tier 6)",
+          "url": "https://github.com/murmurations-ai/flyway/commit/00896b6fdaa643d2ca2907bacf810cd023aee448",
+          "committedAt": "2026-06-27T03:02:54Z"
+        },
+        {
+          "repo": "murmurations-ai/flyway",
+          "message": "refactor(security+core): act on architecture/security/QA review of v0.2\n\nA 3-agent review (architecture, security, QA) of the v0.2 remote work\nsurfaced real issues; this acts on the reasonable ones.\n\nSecurity (the network code is the first outbound surface):\n  - SSRF guard (http.ts) now parses IP literals and blocks IPv6 forms that\n    EMBED a private IPv4 — IPv4-mapped (::ffff:), NAT64 (64:ff9b::), 6to4\n    (2002:) — plus site-local/multicast, not just textual prefixes (H-1).\n  - Redirects are followed manually (redirect:'manual') and EACH hop is\n    validated before it is contacted, closing the pre-connection SSRF and\n    the final-hop-only / http-downgrade gaps (H-2). DNS rebinding remains\n    the sole documented residual.\n\nCorrectness:\n  - propose.ts refuses a tensionAntecedent that diverges from the tension\n    the staging chain already carries, so originTensionId can't record a\n    provenance link the chain didn't descend from (F1).\n  - resolve.ts wraps did:web percent-decoding so malformed input yields a\n    diagnosable flyway error, not a raw URIError (F2).\n  - localFsTransport now rejects (never throws sync) on a write failure,\n    honouring its Promise contract; receipt.at is wall-clock delivery time,\n    not the signed sentAt (F3, arch #2).\n  - recognize.ts treats empty/whitespace locators as absent (F6).\n\nCLI: recognize gets its own --allow-private-host flag instead of reusing\nthe directory-named one (arch #3 / sec M-2).\n\n+19 tests incl. a new http.test.ts (scheme, IPv4/IPv6 ranges, H-1 bypass\naddresses, H-2 redirect cases, cap boundary, timeout). Full suite 417.\nNew core files lint-clean; no new lint on touched legacy files.\n\nDeferred to v0.2b (noted): DeliveryTarget.inboxRelPath and renaming the\nsenders' inboxPath result field — both correct for local-fs today, cheap\nto revisit when github-pr adds a second transport.\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01ULwXbPnpnFwjMSK93Runac",
+          "url": "https://github.com/murmurations-ai/flyway/commit/7f70fce0cf0b0e7ff4943ff8124167da264d9fad",
+          "committedAt": "2026-06-27T03:02:27Z"
+        },
+        {
+          "repo": "murmurations-ai/flyway",
+          "message": "docs: accept ADR-0011 (did:web resolution); Tier 6 + S+11 status\n\nADR-0011 settles the did:web → raw.githubusercontent resolution convention\nfor github.com peers. Tier 6 walkthrough proves the remote discover→\nrecognize flow (test-backed). status.md: S+10/S+11 rows, ADR 10→11, 6\nwalkthroughs, 398 tests/28 files, recognize tool row + pending row. Spec\nopen-decision #2 marked accepted.\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01ULwXbPnpnFwjMSK93Runac",
+          "url": "https://github.com/murmurations-ai/flyway/commit/193846c1dafd7a560d327b9be0d16b69c38567c7",
+          "committedAt": "2026-06-27T02:46:44Z"
+        },
+        {
+          "repo": "murmurations-ai/flyway",
+          "message": "feat(core+cli): S+11 — recognize a peer at a distance over HTTPS\n\nResolve a peer's identity from its did:web URL and recognize it with no\nshared filesystem — the first fully remote flow (discover + recognize).\nCloses the \"recognition at a distance\" gap Tier 1 left open.\n\ncore:\n  - http.ts — shared, audited HTTPS fetch (assertPublicHttpsUrl +\n    fetchTextOverHttps): HTTPS-only, SSRF guard (loopback/RFC-1918/link-\n    local + localhost), size cap, timeout, redirect re-validation. Extracted\n    from discover.ts so directory fetch and DID resolution share one path.\n  - resolve.ts — didWebResolutionUrls maps did:web:github.com:owner:repo to\n    its raw.githubusercontent identity artifacts (ADR-0011);\n    resolvePeerIdentity fetches + id-sanity-checks them. Pre-trust: the\n    crypto verification still happens in recognizePeer.\n  - discover.ts now consumes http.ts (re-exports assertPublicHttpsUrl for\n    compat); behavior unchanged.\n\ncli: `flyway recognize <did:web:…> [--branch main]` resolves over HTTPS;\na non-did argument stays a local path (exactly one). Same signed\nrecognition entry + peer cache as local recognition — source of bytes is\ninvisible downstream.\n\n+12 tests (resolve unit + remote-recognize, incl. a tamper-rejected case\nproving verification still gates remote artifacts). Full suite green (398).\nNew files lint-clean. See ADR-0011.\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01ULwXbPnpnFwjMSK93Runac",
+          "url": "https://github.com/murmurations-ai/flyway/commit/8dfadaf4d9bebbd16f35c308363632ab79dfe960",
+          "committedAt": "2026-06-27T02:46:44Z"
+        },
+        {
+          "repo": "murmurations-ai/flyway",
+          "message": "Merge pull request #23 from murmurations-ai/feat/signal-transport-seam\n\nS+10: SignalTransport seam (v0.2a, part 2)",
+          "url": "https://github.com/murmurations-ai/flyway/commit/58ddf6966e66b7921726ad622f33e754fccf793a",
+          "committedAt": "2026-06-27T02:25:20Z"
+        }
+      ],
       "error": null
     },
     {
@@ -189,9 +258,15 @@
     {
       "id": "newman5",
       "name": "Newman",
-      "lastActivityAt": "2026-06-25T13:04:03Z",
-      "commitsThisWeek": 4,
+      "lastActivityAt": "2026-06-26T12:59:52Z",
+      "commitsThisWeek": 5,
       "recentCommits": [
+        {
+          "repo": "Newman5/builder-season-playbook",
+          "message": "Update builder activity data",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/341bc1c24451a2ecc22227b07bd4a1dc13c00c9a",
+          "committedAt": "2026-06-26T12:59:52Z"
+        },
         {
           "repo": "Newman5/builder-season-playbook",
           "message": "Update builder activity data",
@@ -230,9 +305,16 @@
     {
       "id": "devfreeguy",
       "name": "Daniel",
-      "lastActivityAt": "2026-06-19T16:23:20Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-06-27T10:25:14Z",
+      "commitsThisWeek": 1,
+      "recentCommits": [
+        {
+          "repo": "devfreeguy/skill-swap",
+          "message": "chore(ui): tweak some ui in the landing page and app",
+          "url": "https://github.com/devfreeguy/skill-swap/commit/e94656db114176e848cb1d828db8b3d7749343b0",
+          "committedAt": "2026-06-27T10:25:14Z"
+        }
+      ],
       "error": null
     },
     {
@@ -286,9 +368,40 @@
     {
       "id": "alfreditodole",
       "name": "Alfred Itodole",
-      "lastActivityAt": "2026-06-20T13:23:32Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-06-26T16:59:30Z",
+      "commitsThisWeek": 33,
+      "recentCommits": [
+        {
+          "repo": "sirxalfred/mosaic-cardano",
+          "message": "Update README to include Technical Breakdown link",
+          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/48e52cd9d8fcefc864ef20451a2d4e97fee81741",
+          "committedAt": "2026-06-26T16:59:30Z"
+        },
+        {
+          "repo": "sirxalfred/mosaic-cardano",
+          "message": "docs: add documentation and update README for project insights",
+          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/f30e7c5134fef31826f7a0e3b99e9ea943f44781",
+          "committedAt": "2026-06-26T16:34:52Z"
+        },
+        {
+          "repo": "sirxalfred/mosaic-cardano",
+          "message": "Merge pull request #21 from sirXalfred/chore/develop\n\nfeat: enhance UI and village features with avatar support and caching",
+          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/38f9aa88122bf2418c03963491bb1518c3ef64ab",
+          "committedAt": "2026-06-26T15:26:54Z"
+        },
+        {
+          "repo": "sirxalfred/mosaic-cardano",
+          "message": "fix: update API error handling to reference error property instead of message",
+          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/caada3653d6dd1fefcf40886fdd81978ea4a1fc4",
+          "committedAt": "2026-06-26T14:56:41Z"
+        },
+        {
+          "repo": "sirxalfred/mosaic-cardano",
+          "message": "refactor: replace hardcoded routing paths with central ROUTES constants",
+          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/7b202d112816c441d0aab030a6800c71e8dee801",
+          "committedAt": "2026-06-26T14:35:24Z"
+        }
+      ],
       "error": null
     }
   ]
