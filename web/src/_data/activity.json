@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-27T12:43:54Z",
+  "generatedAt": "2026-06-28T12:44:06Z",
   "weekStart": "2026-06-22T00:00:00Z",
   "weekEnd": "2026-06-28T23:59:59Z",
   "builders": [
@@ -35,9 +35,22 @@
     {
       "id": "dammy",
       "name": "Dammy",
-      "lastActivityAt": "2026-06-20T23:30:31Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-06-28T03:41:06Z",
+      "commitsThisWeek": 2,
+      "recentCommits": [
+        {
+          "repo": "Dammy7942/accordiax",
+          "message": "feat(requests): add flexible Other category option; fix Flutterwave key validation",
+          "url": "https://github.com/Dammy7942/accordiax/commit/36fc8936d18acc5ff3ee664d4f7023d7979bd67a",
+          "committedAt": "2026-06-28T03:41:06Z"
+        },
+        {
+          "repo": "Dammy7942/accordiax",
+          "message": "feat(payment): replace Paystack with Flutterwave for live and test payments",
+          "url": "https://github.com/Dammy7942/accordiax/commit/307c83eac5e472da90d720db32373c65074dfb4d",
+          "committedAt": "2026-06-28T03:05:31Z"
+        }
+      ],
       "error": null
     },
     {
@@ -125,9 +138,28 @@
     {
       "id": "armanabid",
       "name": "Abid",
-      "lastActivityAt": "2026-06-20T22:13:18Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-06-28T10:46:10Z",
+      "commitsThisWeek": 3,
+      "recentCommits": [
+        {
+          "repo": "ArmanAbid/ChainTask",
+          "message": "team-only arbitrator + deadlineDays on jobs + marketplace redesign",
+          "url": "https://github.com/ArmanAbid/ChainTask/commit/607bd2e6d64642641423b0403f3abcb926280ee5",
+          "committedAt": "2026-06-28T10:46:10Z"
+        },
+        {
+          "repo": "ArmanAbid/ChainTask",
+          "message": "off-chain proposals via IPFS + wire JobDetail actions",
+          "url": "https://github.com/ArmanAbid/ChainTask/commit/43fbaa5693f08d54b5fb5a8c647de3faaec17e26",
+          "committedAt": "2026-06-28T10:46:05Z"
+        },
+        {
+          "repo": "ArmanAbid/ChainTask",
+          "message": "wire refund, builderWithdraw, dispute, resolve tx builders",
+          "url": "https://github.com/ArmanAbid/ChainTask/commit/51ed15315860602519c32e6e4dc373aae49517b2",
+          "committedAt": "2026-06-28T10:43:33Z"
+        }
+      ],
       "error": null
     },
     {
@@ -211,9 +243,40 @@
     {
       "id": "trike",
       "name": "Anita",
-      "lastActivityAt": "2026-06-20T10:23:14Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-06-28T11:18:20Z",
+      "commitsThisWeek": 10,
+      "recentCommits": [
+        {
+          "repo": "3rike12/3rike-Mobility_",
+          "message": "feat: live on-chain demo scripts — mint TRK-4 + tADA transfer\n\n- live-mint.py: mints TRK-4 token on Cardano Preprod, shows explorer link\n- live-transfer.py: sends real tADA between addresses\n- Both scripts print step-by-step progress for video recording\n- live-mint.py auto-updates deployed-addresses.json",
+          "url": "https://github.com/3rike12/3rike-Mobility_/commit/0f09287bbbb3b1734b820d866f40fae71d99d0e3",
+          "committedAt": "2026-06-28T11:18:20Z"
+        },
+        {
+          "repo": "3rike12/3rike-Mobility_",
+          "message": "feat: investor registration flow — role picker page, URL-based role in create-account\n\n- Add /role-select page with driver vs investor choice\n- Onboarding now navigates to /role-select instead of /create-account-rider\n- CreateAccountForm reads role from ?role= query param (defaults to driver)\n- /create-account and /create-account-rider both route to CreateAccountForm\n- After registration, investors navigate to /investor, drivers to /driver",
+          "url": "https://github.com/3rike12/3rike-Mobility_/commit/82692d618c9dd3ce08de4b52f39497c721477dc1",
+          "committedAt": "2026-06-28T10:26:25Z"
+        },
+        {
+          "repo": "3rike12/3rike-Mobility_",
+          "message": "feat: role-based routing — RequireRole guard, investor dashboard, login redirects\n\n- Add RequireRole component (lib/require-role.tsx) for role-gated routes\n- Add useDashboardBase hook returning /driver or /investor based on role\n- Create investor dashboard with portfolio summary, holdings, quick actions\n- Wrap /driver/* with RequireRole(['driver']), /investor/* with RequireRole(['investor'])\n- Fix login to navigate investors to /investor, drivers to /driver\n- Update BottomNav to be role-aware (hide Pay 3rike Ai for investors, show Browse Marketplace)",
+          "url": "https://github.com/3rike12/3rike-Mobility_/commit/302642d1879de1d26a40b403ff42d80da62cec78",
+          "committedAt": "2026-06-28T10:20:00Z"
+        },
+        {
+          "repo": "3rike12/3rike-Mobility_",
+          "message": "fix: separate driver/investor UI + realistic investment amounts\n\n- Dashboard: replace 'Investment' tile with 'My 3rike' (drivers ride, don't invest)\n- Mock pools: 0/share, realistic tricycle prices (,500-,200)\n- Fix pricePerShare conversion from raw 6dp to USD\n- Re-seed demo data with correct 0/share amounts\n- Paycrest disabled (API unreachable, not needed for demo)",
+          "url": "https://github.com/3rike12/3rike-Mobility_/commit/be202c71679663d5a0ccc53a979ed70470a7d022",
+          "committedAt": "2026-06-28T09:54:12Z"
+        },
+        {
+          "repo": "3rike12/3rike-Mobility_",
+          "message": "chore: update Midnight contract dependencies and deploy tooling\n\n- package.json/lock: updated wallet-sdk deps\n- deploy.ts: debugged for barrel package API, witness support\n- check-balance.ts: standalone balance checker with sync timeout\n- .env.preprod: deploy config for old wallet seed",
+          "url": "https://github.com/3rike12/3rike-Mobility_/commit/f3fae7d52b2d9ebc80bebed4147a38ccf4d6f5a2",
+          "committedAt": "2026-06-28T09:16:54Z"
+        }
+      ],
       "error": null
     },
     {
@@ -258,9 +321,15 @@
     {
       "id": "newman5",
       "name": "Newman",
-      "lastActivityAt": "2026-06-26T12:59:52Z",
-      "commitsThisWeek": 5,
+      "lastActivityAt": "2026-06-27T12:44:08Z",
+      "commitsThisWeek": 6,
       "recentCommits": [
+        {
+          "repo": "Newman5/builder-season-playbook",
+          "message": "Update builder activity data",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/14234ac535f352a3645fbe4c7fef730be0c5c71b",
+          "committedAt": "2026-06-27T12:44:08Z"
+        },
         {
           "repo": "Newman5/builder-season-playbook",
           "message": "Update builder activity data",
@@ -284,12 +353,6 @@
           "message": "Update builder activity data",
           "url": "https://github.com/Newman5/builder-season-playbook/commit/9cc9602f4896c162a7a5953937dc5bb86ea43ac8",
           "committedAt": "2026-06-23T13:16:03Z"
-        },
-        {
-          "repo": "Newman5/builder-season-playbook",
-          "message": "Update builder activity data",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/488b98db4074b51fc0af2b62c5a557ade30081cb",
-          "committedAt": "2026-06-22T14:10:35Z"
         }
       ],
       "error": null
@@ -328,9 +391,22 @@
     {
       "id": "opa007i",
       "name": "Opa",
-      "lastActivityAt": "2026-06-13T07:03:39Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-06-27T15:10:16Z",
+      "commitsThisWeek": 2,
+      "recentCommits": [
+        {
+          "repo": "opa1/the-quest",
+          "message": "chore: added Trading to list of category",
+          "url": "https://github.com/opa1/the-quest/commit/42acc283d6a58d738a47706d8fdd8a98a8ae06fa",
+          "committedAt": "2026-06-27T15:10:16Z"
+        },
+        {
+          "repo": "opa1/the-quest",
+          "message": "feat(missions): expand categories and add searchable category select\n\nAdd 20 new mission categories (Art, Video, Audio, Animation, Photography, Translation, Community, Moderation, Social, Content, Data, Testing, Security,\n  Contracts, DevOps, Product, Strategy, Finance, Legal, Education) and extend the MissionCategory type to match.\n\nReplace the post-mission category dropdown with a searchable combobox (new SearchableSelect Radix Popover component) so the longer list stays usable.",
+          "url": "https://github.com/opa1/the-quest/commit/1979e63cd7a03876322965dfef81605d8446b6b9",
+          "committedAt": "2026-06-27T13:53:47Z"
+        }
+      ],
       "error": null
     },
     {
@@ -368,38 +444,38 @@
     {
       "id": "alfreditodole",
       "name": "Alfred Itodole",
-      "lastActivityAt": "2026-06-26T16:59:30Z",
-      "commitsThisWeek": 33,
+      "lastActivityAt": "2026-06-28T02:20:02Z",
+      "commitsThisWeek": 40,
       "recentCommits": [
         {
           "repo": "sirxalfred/mosaic-cardano",
-          "message": "Update README to include Technical Breakdown link",
-          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/48e52cd9d8fcefc864ef20451a2d4e97fee81741",
-          "committedAt": "2026-06-26T16:59:30Z"
+          "message": "Merge pull request #22 from sirXalfred/chore/main\n\nchore: enhance UI and authentication with responsive sidebar and route protection",
+          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/e5a9325fba3a0efce38f59137eca3e0f03bf0df5",
+          "committedAt": "2026-06-28T02:20:02Z"
         },
         {
           "repo": "sirxalfred/mosaic-cardano",
-          "message": "docs: add documentation and update README for project insights",
-          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/f30e7c5134fef31826f7a0e3b99e9ea943f44781",
-          "committedAt": "2026-06-26T16:34:52Z"
+          "message": "chore(village): remove deprecated archives and create pages",
+          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/cc6b480b573ee8c078f4b4c5643f5e39dc8258b2",
+          "committedAt": "2026-06-28T01:06:25Z"
         },
         {
           "repo": "sirxalfred/mosaic-cardano",
-          "message": "Merge pull request #21 from sirXalfred/chore/develop\n\nfeat: enhance UI and village features with avatar support and caching",
-          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/38f9aa88122bf2418c03963491bb1518c3ef64ab",
-          "committedAt": "2026-06-26T15:26:54Z"
+          "message": "feat(village): add MemberGuard to protect internal village pages",
+          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/6f717de91bb3b44f8234fdd8d191d116dc7133d6",
+          "committedAt": "2026-06-28T01:06:17Z"
         },
         {
           "repo": "sirxalfred/mosaic-cardano",
-          "message": "fix: update API error handling to reference error property instead of message",
-          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/caada3653d6dd1fefcf40886fdd81978ea4a1fc4",
-          "committedAt": "2026-06-26T14:56:41Z"
+          "message": "feat(auth): expose public routes (invite, user profiles, villages) through middleware",
+          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/2bffca9f7c15554c13de6a775014cbd4c3aeb74c",
+          "committedAt": "2026-06-28T01:03:45Z"
         },
         {
           "repo": "sirxalfred/mosaic-cardano",
-          "message": "refactor: replace hardcoded routing paths with central ROUTES constants",
-          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/7b202d112816c441d0aab030a6800c71e8dee801",
-          "committedAt": "2026-06-26T14:35:24Z"
+          "message": "feat(ui): implement responsive mobile sidebar drawer and auto-close on navigate",
+          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/af3e8b94825c2adbdb04e7461b4ff4cdd5bf728e",
+          "committedAt": "2026-06-28T01:02:59Z"
         }
       ],
       "error": null
