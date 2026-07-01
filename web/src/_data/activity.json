@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-30T12:58:04Z",
+  "generatedAt": "2026-07-01T13:12:18Z",
   "weekStart": "2026-06-29T00:00:00Z",
   "weekEnd": "2026-07-05T23:59:59Z",
   "builders": [
@@ -157,9 +157,15 @@
     {
       "id": "newman5",
       "name": "Newman",
-      "lastActivityAt": "2026-06-29T13:46:53Z",
-      "commitsThisWeek": 1,
+      "lastActivityAt": "2026-06-30T12:58:19Z",
+      "commitsThisWeek": 2,
       "recentCommits": [
+        {
+          "repo": "Newman5/builder-season-playbook",
+          "message": "Update builder activity data",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/49b0b4c68ca2e6cb00df5945d8fa7957ceb3035b",
+          "committedAt": "2026-06-30T12:58:19Z"
+        },
         {
           "repo": "Newman5/builder-season-playbook",
           "message": "Update builder activity data",
@@ -180,9 +186,16 @@
     {
       "id": "devfreeguy",
       "name": "Daniel",
-      "lastActivityAt": "2026-06-27T10:25:14Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-06-30T22:34:48Z",
+      "commitsThisWeek": 1,
+      "recentCommits": [
+        {
+          "repo": "devfreeguy/skill-swap",
+          "message": "feat: wallet-first auth, realtime, E2E messaging, on-chain proof + hardening\n\nAuth\n- Replace email/password with Twitter/X OAuth2 + mandatory Cardano wallet\n- Real CIP-8 signature verification (drop the nonce-possession stub)\n- DB-backed, single-use, TTL'd wallet nonces (new WalletNonce model); atomic-delete consume; survives restarts and works across instances\n\nSwaps & proof\n- Two-sided deliverables + completion gate; auto-create Proof on completion\n- Retryable on-chain anchoring with Blockfrost -> Koios -> Maestro fallback\n- Guard swap creation: no concurrent swap with the same person, no repeat of an already-completed identical skill pair\n\nMessaging & realtime\n- End-to-end encrypted chat (tweetnacl, wallet-derived keys)\n- Pusher (primary) -> Ably (fallback) for messages, notifications, requests\n- Conversation list unread/completed states; per-user last-read tracking\n\nUI / layout\n- Extract AppSidebar + shared nav.ts from AppShell\n- Fix app-shell height chain so the message thread scrolls internally\n- Fix avatar rendering in header/sidebar (DB lookup in getShellUser)\n\nFixes\n- lib/cardano: type-only NetworkType import to keep wallet runtime out of SSR\n- proxy.ts: protect /messages, drop dead /discover\n- Matching uses scoreMatch + parseSkills (multi-skill aware)\n\nDocs\n- Rewrite README, refresh CLAUDE.md gotchas, add docs/session-report.md",
+          "url": "https://github.com/devfreeguy/skill-swap/commit/640e161064072709a7c4251f55142781a082c6cb",
+          "committedAt": "2026-06-30T22:34:48Z"
+        }
+      ],
       "error": null
     },
     {
@@ -220,9 +233,40 @@
     {
       "id": "juanitajaramillo",
       "name": "Juanita",
-      "lastActivityAt": "2026-06-19T21:57:56Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-07-01T00:44:08Z",
+      "commitsThisWeek": 7,
+      "recentCommits": [
+        {
+          "repo": "JuanitaJaramill/cardano-insights-lab",
+          "message": "Update README.md",
+          "url": "https://github.com/JuanitaJaramill/cardano-insights-lab/commit/dbf34a4516868ae96bec7e0f68ca527fdb87e8e2",
+          "committedAt": "2026-07-01T00:44:08Z"
+        },
+        {
+          "repo": "JuanitaJaramill/cardano-insights-lab",
+          "message": "Add PayPal create order route",
+          "url": "https://github.com/JuanitaJaramill/cardano-insights-lab/commit/79f0efc68485d4132ac26561eefc5dd78aad1816",
+          "committedAt": "2026-06-30T23:56:58Z"
+        },
+        {
+          "repo": "JuanitaJaramill/cardano-insights-lab",
+          "message": "Update CaseResult.tsx",
+          "url": "https://github.com/JuanitaJaramill/cardano-insights-lab/commit/ec7111ee6be68163ed5237d99e7c669b74f059f7",
+          "committedAt": "2026-06-30T22:42:42Z"
+        },
+        {
+          "repo": "JuanitaJaramill/cardano-insights-lab",
+          "message": "Add PayPal capture order route",
+          "url": "https://github.com/JuanitaJaramill/cardano-insights-lab/commit/ed2f296d0d111403c991ffe599efdc1c5f5a005a",
+          "committedAt": "2026-06-30T22:34:08Z"
+        },
+        {
+          "repo": "JuanitaJaramill/cardano-insights-lab",
+          "message": "Add PayPal create order route",
+          "url": "https://github.com/JuanitaJaramill/cardano-insights-lab/commit/26de1626e325974c5ed20283861867a5add9aa34",
+          "committedAt": "2026-06-30T22:31:02Z"
+        }
+      ],
       "error": null
     },
     {
