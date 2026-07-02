@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-01T13:12:18Z",
+  "generatedAt": "2026-07-02T12:53:48Z",
   "weekStart": "2026-06-29T00:00:00Z",
   "weekEnd": "2026-07-05T23:59:59Z",
   "builders": [
@@ -110,9 +110,40 @@
     {
       "id": "trike",
       "name": "Anita",
-      "lastActivityAt": "2026-06-28T11:18:20Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-07-02T11:22:43Z",
+      "commitsThisWeek": 9,
+      "recentCommits": [
+        {
+          "repo": "3rike12/3rike-Mobility_",
+          "message": "feat: add landing page auth navigation and auto-redirect guard logic on auth screens",
+          "url": "https://github.com/3rike12/3rike-Mobility_/commit/eede12b6c6710701095c2f71958a6a92bf99ccff",
+          "committedAt": "2026-07-02T11:22:43Z"
+        },
+        {
+          "repo": "3rike12/3rike-Mobility_",
+          "message": "docs: update demo video script to use frontend UI flows instead of backend API curl commands",
+          "url": "https://github.com/3rike12/3rike-Mobility_/commit/4eee1bf25b94ba64c650e727b8fdd0ad24c51f86",
+          "committedAt": "2026-07-02T11:22:40Z"
+        },
+        {
+          "repo": "3rike12/3rike-Mobility_",
+          "message": "fix: registry datum accepts Bech32 addresses, not just hex",
+          "url": "https://github.com/3rike12/3rike-Mobility_/commit/26c657ebfb39d16bfaccd1e674ea707091c1a972",
+          "committedAt": "2026-07-02T11:06:18Z"
+        },
+        {
+          "repo": "3rike12/3rike-Mobility_",
+          "message": "fix: kyc datum write",
+          "url": "https://github.com/3rike12/3rike-Mobility_/commit/51cb2230b1249313f0c58c55f70ae559a8007e28",
+          "committedAt": "2026-07-02T10:55:07Z"
+        },
+        {
+          "repo": "3rike12/3rike-Mobility_",
+          "message": "feat: working PlutusV3 invest/claim on Cardano Preprod\n\n- cardano_tx.py: PlutusData subclasses (CONSTR_ID=0), claim command, 2-step script_data_hash\n- midnight-investment.ts: readPoolDatums from chain, BF fetch timeout, claimYield with shares\n- investment.service.ts: claim tracks shares, uses on-chain pool data\n- cardano.ts/cardano-wallet.ts: fix AssetInfo.unit for Blockfrost API\n- index.ts: fix lovelace parsing\n- auth.ts: fire-and-forget KYC datum write\n- frontend: Cardano address + on-chain count in wallet",
+          "url": "https://github.com/3rike12/3rike-Mobility_/commit/cc807c7330e5a1b861753210ab5465b0a24be602",
+          "committedAt": "2026-07-02T00:55:00Z"
+        }
+      ],
       "error": null
     },
     {
@@ -157,9 +188,15 @@
     {
       "id": "newman5",
       "name": "Newman",
-      "lastActivityAt": "2026-06-30T12:58:19Z",
-      "commitsThisWeek": 2,
+      "lastActivityAt": "2026-07-01T13:12:31Z",
+      "commitsThisWeek": 3,
       "recentCommits": [
+        {
+          "repo": "Newman5/builder-season-playbook",
+          "message": "Update builder activity data",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/0d00f1ffe6fcffe7763926bf06b6813c3e4bebd3",
+          "committedAt": "2026-07-01T13:12:31Z"
+        },
         {
           "repo": "Newman5/builder-season-playbook",
           "message": "Update builder activity data",
@@ -201,9 +238,40 @@
     {
       "id": "haulink",
       "name": "Abdulazeez",
-      "lastActivityAt": "2026-06-21T15:06:29Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-07-01T19:35:56Z",
+      "commitsThisWeek": 6,
+      "recentCommits": [
+        {
+          "repo": "FoladDTechie/Haulink",
+          "message": "Merge pull request #14 from FoladDTechie/HAUL-22-AZB\n\nfix: wire ADA_NGN_RATE from env var, add NEXT_PUBLIC_ADA_NGN_RATE2",
+          "url": "https://github.com/FoladDTechie/Haulink/commit/5cb603303dc715a3e7af4cc3102d828ce8689909",
+          "committedAt": "2026-07-01T19:35:56Z"
+        },
+        {
+          "repo": "FoladDTechie/Haulink",
+          "message": "fix: wire ADA_NGN_RATE from env var, add NEXT_PUBLIC_ADA_NGN_RATE2",
+          "url": "https://github.com/FoladDTechie/Haulink/commit/780639f422ccc887f8601232918071dd90162782",
+          "committedAt": "2026-07-01T19:33:39Z"
+        },
+        {
+          "repo": "FoladDTechie/Haulink",
+          "message": "Merge pull request #13 from FoladDTechie/HAUL-22-AZB\n\nfix: wire ADA_NGN_RATE from env var, add NEXT_PUBLIC_ADA_NGN_RATE",
+          "url": "https://github.com/FoladDTechie/Haulink/commit/410a92d06a97b15b45944a877a09959434572800",
+          "committedAt": "2026-07-01T19:03:52Z"
+        },
+        {
+          "repo": "FoladDTechie/Haulink",
+          "message": "fix: wire ADA_NGN_RATE from env var, add NEXT_PUBLIC_ADA_NGN_RATE",
+          "url": "https://github.com/FoladDTechie/Haulink/commit/102e7edf79daf2e8b0c56ff0e5e95177edd0eb49",
+          "committedAt": "2026-07-01T19:02:33Z"
+        },
+        {
+          "repo": "FoladDTechie/Haulink",
+          "message": "Merge pull request #12 from FoladDTechie/HAUL-22-AZB\n\nfeat: mainnet switch, ADA-only payment, cargo estimator pricing",
+          "url": "https://github.com/FoladDTechie/Haulink/commit/01f707bd335dd2de8bc2187db253bc6708498832",
+          "committedAt": "2026-07-01T18:00:38Z"
+        }
+      ],
       "error": null
     },
     {
@@ -233,9 +301,21 @@
     {
       "id": "juanitajaramillo",
       "name": "Juanita",
-      "lastActivityAt": "2026-07-01T00:44:08Z",
-      "commitsThisWeek": 7,
+      "lastActivityAt": "2026-07-02T04:01:27Z",
+      "commitsThisWeek": 9,
       "recentCommits": [
+        {
+          "repo": "JuanitaJaramill/cardano-insights-lab",
+          "message": "Remove redundant beta label",
+          "url": "https://github.com/JuanitaJaramill/cardano-insights-lab/commit/215639f22d5ac3ef40b1565e3f92681c61e922ea",
+          "committedAt": "2026-07-02T04:01:27Z"
+        },
+        {
+          "repo": "JuanitaJaramill/cardano-insights-lab",
+          "message": "Update PayPalButton.tsx",
+          "url": "https://github.com/JuanitaJaramill/cardano-insights-lab/commit/a2a524c32ec8f9210bd0363ba388f3db9a688577",
+          "committedAt": "2026-07-02T03:31:38Z"
+        },
         {
           "repo": "JuanitaJaramill/cardano-insights-lab",
           "message": "Update README.md",
@@ -253,18 +333,6 @@
           "message": "Update CaseResult.tsx",
           "url": "https://github.com/JuanitaJaramill/cardano-insights-lab/commit/ec7111ee6be68163ed5237d99e7c669b74f059f7",
           "committedAt": "2026-06-30T22:42:42Z"
-        },
-        {
-          "repo": "JuanitaJaramill/cardano-insights-lab",
-          "message": "Add PayPal capture order route",
-          "url": "https://github.com/JuanitaJaramill/cardano-insights-lab/commit/ed2f296d0d111403c991ffe599efdc1c5f5a005a",
-          "committedAt": "2026-06-30T22:34:08Z"
-        },
-        {
-          "repo": "JuanitaJaramill/cardano-insights-lab",
-          "message": "Add PayPal create order route",
-          "url": "https://github.com/JuanitaJaramill/cardano-insights-lab/commit/26de1626e325974c5ed20283861867a5add9aa34",
-          "committedAt": "2026-06-30T22:31:02Z"
         }
       ],
       "error": null
