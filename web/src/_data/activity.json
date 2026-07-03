@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-02T12:53:48Z",
+  "generatedAt": "2026-07-03T14:31:27Z",
   "weekStart": "2026-06-29T00:00:00Z",
   "weekEnd": "2026-07-05T23:59:59Z",
   "builders": [
@@ -30,9 +30,16 @@
     {
       "id": "gidhub",
       "name": "Gideon",
-      "lastActivityAt": "2026-06-25T10:11:10Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-07-03T00:58:10Z",
+      "commitsThisWeek": 1,
+      "recentCommits": [
+        {
+          "repo": "0xGIDHUB/tixano",
+          "message": "Fixed timezone conversion bug affecting date storage and retrival",
+          "url": "https://github.com/0xGIDHUB/tixano/commit/4634d58a961f994c989523f3164b1546f82ef512",
+          "committedAt": "2026-07-03T00:58:10Z"
+        }
+      ],
       "error": null
     },
     {
@@ -46,9 +53,22 @@
     {
       "id": "harrie",
       "name": "Harrie",
-      "lastActivityAt": "2026-06-27T10:52:49Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-07-02T16:52:22Z",
+      "commitsThisWeek": 2,
+      "recentCommits": [
+        {
+          "repo": "IamHarrie-Labs/beni",
+          "message": "feat(telegram): public multi-tenant bot - every user gets their own wallet\n\n- /newwallet generates a per-user custodial testnet agent key + caps\n- /deploy creates that user own guarded wallet on-chain (beni-sdk\n  createAgentWallet); /status /pay /pending /freeze all per-user\n- approvals go to the wallet owner; no more global BENI_OWNER_CHAT_ID\n- store.js: Upstash Redis REST backend (KV_REST_API_URL/TOKEN) with\n  local JSON fallback for dev\n- sdk 0.1.1 (published): getBalance/getDailyUsage/approveSpend now\n  select the UTxO by thread token - the script address is shared by\n  every Beni wallet, so utxos[0] could be someone else wallet\n\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>",
+          "url": "https://github.com/IamHarrie-Labs/beni/commit/106f40f9b81016f33a921a26687cd94fa31e4b9d",
+          "committedAt": "2026-07-02T16:52:22Z"
+        },
+        {
+          "repo": "IamHarrie-Labs/beni",
+          "message": "feat(payments): 2 ADA deployment fee paid from the user wallet\n\n- api/fee.js: builds the fee tx server-side, user signs via CIP-30,\n  server assembles + submits. Treasury = BENI_TREASURY_ADDRESS.\n- api/deploy.js: requires a verified feeTxHash before deploying;\n  polls Blockfrost while the fee confirms; replay-protected via KV;\n  fee marked used only after a successful deploy. Network now\n  switchable via BENI_NETWORK (Preview | Mainnet).\n- DeployModal: shows the fee, walks pay -> deploy, new paying state.\n\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>",
+          "url": "https://github.com/IamHarrie-Labs/beni/commit/893cc5a787fdecb5d36f6adf7be1aec05668436d",
+          "committedAt": "2026-07-02T16:37:12Z"
+        }
+      ],
       "error": null
     },
     {
@@ -94,9 +114,22 @@
     {
       "id": "murmurations",
       "name": "Nori",
-      "lastActivityAt": "2026-06-27T03:02:54Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-07-02T15:39:12Z",
+      "commitsThisWeek": 2,
+      "recentCommits": [
+        {
+          "repo": "murmurations-ai/flyway",
+          "message": "Merge pull request #25 from murmurations-ai/feat/github-pr-transport\n\nfeat: S+12 — github-pr signal transport (v0.2b, ADR-0012)",
+          "url": "https://github.com/murmurations-ai/flyway/commit/d0b4d17d1f5efe98b134914351c3b31db6160262",
+          "committedAt": "2026-07-02T15:39:12Z"
+        },
+        {
+          "repo": "murmurations-ai/flyway",
+          "message": "feat(core+cli): S+12 — github-pr signal transport (v0.2b, ADR-0012)\n\nDeliver a signal by opening a pull request against the peer's repo instead\nof writing their working tree — the production transport ADR-0008 reserved.\nThe recipient merges under their own governance: delivery becomes a proposal\nthe receiver consents to, mirroring the protocol's own consent semantics.\nWith Tier 6 (recognize at a distance), the full discover → recognize →\ndeliver loop now runs with no shared filesystem.\n\nCore (github-pr.ts):\n- githubPrTransport drops in behind the v0.2a SignalTransport seam — no\n  sender touched. Resolves did:web:github.com:owner:repo → target repo via a\n  new shared githubRepoForDid (also reused by identity resolution).\n- Fork-first (no push access to the peer's repo across an org boundary);\n  direct branch only when push access exists.\n- Deterministic branch flyway/inbox/<sanitized-from>/<id> is the idempotency\n  key; an existing PR is a no-op. PR-open = delivered; acceptance is the\n  recipient's merge, observed downstream by flyway_check, not awaited.\n- gh-CLI auth behind an injectable RunGh — the whole flow is unit-tested with\n  no network. gh missing/unauth/repo-unreachable/fork-blocked degrade to\n  delivered:false with the outbox record intact.\n- Shared renderInboxSignalFile keeps PR-delivered bytes byte-identical to\n  local-fs (ADR-0008 invariant 3).\n\nCLI: --transport github-pr on all four senders (tension/respond/propose/exit)\nwith a receipt-aware status line (offered <pr-url> vs delivered <path>).\n\nCI: verify-signal GitHub Action (+ composite action) runs `flyway check` on\nPRs touching flyway/inbox/**, comments the verdict, and gates the merge —\nrecognition runs in the recipient's own CI against their own cached keys.\n\nDocs: ADR-0012 (Proposed), Tier 7 walkthrough (test-backed), status.md S+12.\n\n+10 tests (427 total). ADR-0012 is Proposed, not yet Accepted.\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>",
+          "url": "https://github.com/murmurations-ai/flyway/commit/57e4dfe6896a8e1ff6300915a1e6fe060a6d5313",
+          "committedAt": "2026-07-02T15:38:32Z"
+        }
+      ],
       "error": null
     },
     {
@@ -188,9 +221,15 @@
     {
       "id": "newman5",
       "name": "Newman",
-      "lastActivityAt": "2026-07-01T13:12:31Z",
-      "commitsThisWeek": 3,
+      "lastActivityAt": "2026-07-02T12:53:59Z",
+      "commitsThisWeek": 4,
       "recentCommits": [
+        {
+          "repo": "Newman5/builder-season-playbook",
+          "message": "Update builder activity data",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/45ede1a5e0af9fd04c58b6f1110212fdd8d03336",
+          "committedAt": "2026-07-02T12:53:59Z"
+        },
         {
           "repo": "Newman5/builder-season-playbook",
           "message": "Update builder activity data",
@@ -223,9 +262,15 @@
     {
       "id": "devfreeguy",
       "name": "Daniel",
-      "lastActivityAt": "2026-06-30T22:34:48Z",
-      "commitsThisWeek": 1,
+      "lastActivityAt": "2026-07-02T19:23:28Z",
+      "commitsThisWeek": 2,
       "recentCommits": [
+        {
+          "repo": "devfreeguy/skill-swap",
+          "message": "feat(swaps): refundable on-chain swap fee + header account menu\n\nCharge a 2 ADA platform fee when requesting a swap, refunded in full only if the other party declines. The fee is validated instantly by decoding the signed tx server-side - no waiting for on-chain confirmation - and refunds are auto-issued from a platform hot wallet on decline.\n\nFee flow:\n- lib/cardano/fee.ts: client-safe fee config (amount, platform address, PAYMENTS_ENABLED). Blank platform address disables fees for local dev.\n- lib/cardano/fee-client.ts: wallet builds+signs the fee tx (browser).\n- lib/cardano/fee-verify.ts: signedTxPaysAtLeast() decodes the signed CBOR (Mesh CST) to verify the fee output synchronously at request time.\n- lib/cardano/refund.ts: platform hot wallet (MeshWallet + Blockfrost) refunds a declined swap's fee.\n- lib/cardano/providers.ts: verifyPaymentTx() re-checks the fee on-chain before any refund - the safety net for the optimistic confirm.\n- POST /api/swaps: decode-verify, submit, store feeTxHash + CONFIRMED.\n- PATCH /api/swaps/[id]: accept/cancel keep the fee (KEPT); decline auto-refunds (REFUNDED; deferred REFUND_PENDING retried on GET).\n- Swap gains feeTxHash/feeLovelace/refundAddress/refundTxHash/paymentStatus (additive migration; prisma client regenerated).\n\nUI:\n- Fee notice + live status when requesting; fee/refund chip on the swap detail page; fee/refund status in the dashboard lists (Recent History now includes declined/cancelled so refunds are visible).\n- Header avatar (mobile + desktop) is now an account menu (Profile / Log out); logout goes through a shared confirmation dialog, also used by the sidebar, mobile gains a logout path it lacked.\n\nVerified end-to-end on preprod: fee paid, confirmed, and fully refunded on decline (each side pays only its own tx fee).\n\nRequires NEXT_PUBLIC_PLATFORM_WALLET_ADDRESS, PLATFORM_WALLET_MNEMONIC and BLOCKFROST_API_KEY (see .env.example).",
+          "url": "https://github.com/devfreeguy/skill-swap/commit/9846dee4b85ec146df5a4ac10184dbc4b6748991",
+          "committedAt": "2026-07-02T19:23:28Z"
+        },
         {
           "repo": "devfreeguy/skill-swap",
           "message": "feat: wallet-first auth, realtime, E2E messaging, on-chain proof + hardening\n\nAuth\n- Replace email/password with Twitter/X OAuth2 + mandatory Cardano wallet\n- Real CIP-8 signature verification (drop the nonce-possession stub)\n- DB-backed, single-use, TTL'd wallet nonces (new WalletNonce model); atomic-delete consume; survives restarts and works across instances\n\nSwaps & proof\n- Two-sided deliverables + completion gate; auto-create Proof on completion\n- Retryable on-chain anchoring with Blockfrost -> Koios -> Maestro fallback\n- Guard swap creation: no concurrent swap with the same person, no repeat of an already-completed identical skill pair\n\nMessaging & realtime\n- End-to-end encrypted chat (tweetnacl, wallet-derived keys)\n- Pusher (primary) -> Ably (fallback) for messages, notifications, requests\n- Conversation list unread/completed states; per-user last-read tracking\n\nUI / layout\n- Extract AppSidebar + shared nav.ts from AppShell\n- Fix app-shell height chain so the message thread scrolls internally\n- Fix avatar rendering in header/sidebar (DB lookup in getShellUser)\n\nFixes\n- lib/cardano: type-only NetworkType import to keep wallet runtime out of SSR\n- proxy.ts: protect /messages, drop dead /discover\n- Matching uses scoreMatch + parseSkills (multi-skill aware)\n\nDocs\n- Rewrite README, refresh CLAUDE.md gotchas, add docs/session-report.md",
