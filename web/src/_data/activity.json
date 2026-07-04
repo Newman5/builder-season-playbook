@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-03T14:31:27Z",
+  "generatedAt": "2026-07-04T13:56:41Z",
   "weekStart": "2026-06-29T00:00:00Z",
   "weekEnd": "2026-07-05T23:59:59Z",
   "builders": [
@@ -30,9 +30,15 @@
     {
       "id": "gidhub",
       "name": "Gideon",
-      "lastActivityAt": "2026-07-03T00:58:10Z",
-      "commitsThisWeek": 1,
+      "lastActivityAt": "2026-07-04T10:43:57Z",
+      "commitsThisWeek": 2,
       "recentCommits": [
+        {
+          "repo": "0xGIDHUB/tixano",
+          "message": "Avatar upload integration for ticket customization system",
+          "url": "https://github.com/0xGIDHUB/tixano/commit/913de7aa02e35321b20a3ddb566f3503da6d23e2",
+          "committedAt": "2026-07-04T10:43:57Z"
+        },
         {
           "repo": "0xGIDHUB/tixano",
           "message": "Fixed timezone conversion bug affecting date storage and retrival",
@@ -53,9 +59,15 @@
     {
       "id": "harrie",
       "name": "Harrie",
-      "lastActivityAt": "2026-07-02T16:52:22Z",
-      "commitsThisWeek": 2,
+      "lastActivityAt": "2026-07-04T04:53:04Z",
+      "commitsThisWeek": 3,
       "recentCommits": [
+        {
+          "repo": "IamHarrie-Labs/beni",
+          "message": "feat(landing): Telegram bot section + pricing FAQ entry\n\nNew TelegramSection promoting @Beniwallet_bot with a mock chat card showing the approve/reject flow. FAQ: added deploy-fee cost disclosure (2 ADA one-time, no subscriptions).\n\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>",
+          "url": "https://github.com/IamHarrie-Labs/beni/commit/bef7ac4617a92b086f637eae5065f47ac2ed6481",
+          "committedAt": "2026-07-04T04:53:04Z"
+        },
         {
           "repo": "IamHarrie-Labs/beni",
           "message": "feat(telegram): public multi-tenant bot - every user gets their own wallet\n\n- /newwallet generates a per-user custodial testnet agent key + caps\n- /deploy creates that user own guarded wallet on-chain (beni-sdk\n  createAgentWallet); /status /pay /pending /freeze all per-user\n- approvals go to the wallet owner; no more global BENI_OWNER_CHAT_ID\n- store.js: Upstash Redis REST backend (KV_REST_API_URL/TOKEN) with\n  local JSON fallback for dev\n- sdk 0.1.1 (published): getBalance/getDailyUsage/approveSpend now\n  select the UTxO by thread token - the script address is shared by\n  every Beni wallet, so utxos[0] could be someone else wallet\n\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>",
@@ -90,9 +102,40 @@
     {
       "id": "gamechanger",
       "name": "Adriano",
-      "lastActivityAt": "2026-06-12T15:44:34Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-07-04T07:30:16Z",
+      "commitsThisWeek": 9,
+      "recentCommits": [
+        {
+          "repo": "GameChangerFinance/NeonSoup",
+          "message": "Merge pull request #6 from GameChangerFinance/feat/swap\n\nchore: cleanup",
+          "url": "https://github.com/GameChangerFinance/NeonSoup/commit/a0d3bdb509a8585ae0a907ce7138a918d1fd3ff4",
+          "committedAt": "2026-07-04T07:30:16Z"
+        },
+        {
+          "repo": "GameChangerFinance/NeonSoup",
+          "message": "chore: cleanup",
+          "url": "https://github.com/GameChangerFinance/NeonSoup/commit/f9fe1dbc68ed5ccafeb416465cd1a5dfad82a3e4",
+          "committedAt": "2026-07-04T07:29:46Z"
+        },
+        {
+          "repo": "GameChangerFinance/NeonSoup",
+          "message": "Merge pull request #5 from GameChangerFinance/feat/swap\n\nfeat(swap): merge swap UX, cart composition, and submission updates into main",
+          "url": "https://github.com/GameChangerFinance/NeonSoup/commit/061a6127e121f9603d754a5d2aaf17031738db2b",
+          "committedAt": "2026-07-04T07:26:49Z"
+        },
+        {
+          "repo": "GameChangerFinance/NeonSoup",
+          "message": "docs: updated context and doc files. file cleanup",
+          "url": "https://github.com/GameChangerFinance/NeonSoup/commit/428c1692df06a3d26d0ad786c8ae795e106ebb3b",
+          "committedAt": "2026-07-04T07:21:33Z"
+        },
+        {
+          "repo": "GameChangerFinance/NeonSoup",
+          "message": "fix: removed old code fragment breaking some close intent cases",
+          "url": "https://github.com/GameChangerFinance/NeonSoup/commit/be134058a1f7918d911d850f2bce91ff3ec91513",
+          "committedAt": "2026-07-04T06:37:16Z"
+        }
+      ],
       "error": null
     },
     {
@@ -143,9 +186,27 @@
     {
       "id": "trike",
       "name": "Anita",
-      "lastActivityAt": "2026-07-02T11:22:43Z",
-      "commitsThisWeek": 9,
+      "lastActivityAt": "2026-07-02T11:38:41Z",
+      "commitsThisWeek": 12,
       "recentCommits": [
+        {
+          "repo": "3rike12/3rike-Mobility_",
+          "message": "feat: add View on CardanoScan button on successful investment confirmation",
+          "url": "https://github.com/3rike12/3rike-Mobility_/commit/e6aa2bd01e93e62e2aca793eb4cec2314ca418f5",
+          "committedAt": "2026-07-02T11:38:41Z"
+        },
+        {
+          "repo": "3rike12/3rike-Mobility_",
+          "message": "feat: remove minimum password length validation on LoginForm",
+          "url": "https://github.com/3rike12/3rike-Mobility_/commit/d092420d985760ec9516c35097f8fd87e18efa6d",
+          "committedAt": "2026-07-02T11:33:00Z"
+        },
+        {
+          "repo": "3rike12/3rike-Mobility_",
+          "message": "feat: change login page footer signup link to point to role-select",
+          "url": "https://github.com/3rike12/3rike-Mobility_/commit/d659603e5bdee3cf8f91fa2bd368cc8294050d22",
+          "committedAt": "2026-07-02T11:30:47Z"
+        },
         {
           "repo": "3rike12/3rike-Mobility_",
           "message": "feat: add landing page auth navigation and auto-redirect guard logic on auth screens",
@@ -157,24 +218,6 @@
           "message": "docs: update demo video script to use frontend UI flows instead of backend API curl commands",
           "url": "https://github.com/3rike12/3rike-Mobility_/commit/4eee1bf25b94ba64c650e727b8fdd0ad24c51f86",
           "committedAt": "2026-07-02T11:22:40Z"
-        },
-        {
-          "repo": "3rike12/3rike-Mobility_",
-          "message": "fix: registry datum accepts Bech32 addresses, not just hex",
-          "url": "https://github.com/3rike12/3rike-Mobility_/commit/26c657ebfb39d16bfaccd1e674ea707091c1a972",
-          "committedAt": "2026-07-02T11:06:18Z"
-        },
-        {
-          "repo": "3rike12/3rike-Mobility_",
-          "message": "fix: kyc datum write",
-          "url": "https://github.com/3rike12/3rike-Mobility_/commit/51cb2230b1249313f0c58c55f70ae559a8007e28",
-          "committedAt": "2026-07-02T10:55:07Z"
-        },
-        {
-          "repo": "3rike12/3rike-Mobility_",
-          "message": "feat: working PlutusV3 invest/claim on Cardano Preprod\n\n- cardano_tx.py: PlutusData subclasses (CONSTR_ID=0), claim command, 2-step script_data_hash\n- midnight-investment.ts: readPoolDatums from chain, BF fetch timeout, claimYield with shares\n- investment.service.ts: claim tracks shares, uses on-chain pool data\n- cardano.ts/cardano-wallet.ts: fix AssetInfo.unit for Blockfrost API\n- index.ts: fix lovelace parsing\n- auth.ts: fire-and-forget KYC datum write\n- frontend: Cardano address + on-chain count in wallet",
-          "url": "https://github.com/3rike12/3rike-Mobility_/commit/cc807c7330e5a1b861753210ab5465b0a24be602",
-          "committedAt": "2026-07-02T00:55:00Z"
         }
       ],
       "error": null
@@ -221,9 +264,15 @@
     {
       "id": "newman5",
       "name": "Newman",
-      "lastActivityAt": "2026-07-02T12:53:59Z",
-      "commitsThisWeek": 4,
+      "lastActivityAt": "2026-07-03T14:31:38Z",
+      "commitsThisWeek": 5,
       "recentCommits": [
+        {
+          "repo": "Newman5/builder-season-playbook",
+          "message": "Update builder activity data",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/be7e78d3867a1b889b6c11d27157f1545a01b9f5",
+          "committedAt": "2026-07-03T14:31:38Z"
+        },
         {
           "repo": "Newman5/builder-season-playbook",
           "message": "Update builder activity data",
@@ -393,9 +442,40 @@
     {
       "id": "alfreditodole",
       "name": "Alfred Itodole",
-      "lastActivityAt": "2026-06-28T02:20:02Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-07-03T22:41:48Z",
+      "commitsThisWeek": 23,
+      "recentCommits": [
+        {
+          "repo": "sirxalfred/mosaic-cardano",
+          "message": "Merge pull request #26 from sirXalfred/develop\n\nrefactor: move public assets to dedicated directory and update refere…",
+          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/30cdc484db94f05ff9a814686be2eba237329180",
+          "committedAt": "2026-07-03T22:41:48Z"
+        },
+        {
+          "repo": "sirxalfred/mosaic-cardano",
+          "message": "refactor: move public assets to dedicated directory and update references accordingly",
+          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/f6fec4919c42622b2157a951faa0a8acb0556de4",
+          "committedAt": "2026-07-03T22:36:35Z"
+        },
+        {
+          "repo": "sirxalfred/mosaic-cardano",
+          "message": "Update progress indicators for weeks 6 and 7",
+          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/c52b49806ad026fa28ad53b7d0822a8f6c786444",
+          "committedAt": "2026-07-03T21:58:17Z"
+        },
+        {
+          "repo": "sirxalfred/mosaic-cardano",
+          "message": "Merge pull request #25 from sirXalfred/develop\n\nMerge branch `develop` into `main`",
+          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/20738c83323b1b225eecd34b1cfa849d5ad59770",
+          "committedAt": "2026-07-03T21:35:35Z"
+        },
+        {
+          "repo": "sirxalfred/mosaic-cardano",
+          "message": "Merge pull request #20 from sirXalfred/feat/onchain-badges\n\nfeat: implement on-chain badge minting and enhance UI with gamification",
+          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/5fdc4a8ac0c72e1aa1727f67b74f869f5ced45f9",
+          "committedAt": "2026-07-03T21:32:12Z"
+        }
+      ],
       "error": null
     }
   ]
