@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-04T13:56:41Z",
+  "generatedAt": "2026-07-05T14:08:32Z",
   "weekStart": "2026-06-29T00:00:00Z",
   "weekEnd": "2026-07-05T23:59:59Z",
   "builders": [
@@ -59,9 +59,15 @@
     {
       "id": "harrie",
       "name": "Harrie",
-      "lastActivityAt": "2026-07-04T04:53:04Z",
-      "commitsThisWeek": 3,
+      "lastActivityAt": "2026-07-04T16:06:51Z",
+      "commitsThisWeek": 4,
       "recentCommits": [
+        {
+          "repo": "IamHarrie-Labs/beni",
+          "message": "feat(landing): disclose real mainnet deployment as Cardano Pie evidence\n\nNew FAQ entry links the mainnet deploy + guarded-spend transactions on Cardanoscan. Updated the audit FAQ so it no longer claims mainnet deployment is only 'planned' now that a small-scale mainnet proof exists.\n\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>",
+          "url": "https://github.com/IamHarrie-Labs/beni/commit/8786ca4111c18445e6b31abf9b855b962b87ef37",
+          "committedAt": "2026-07-04T16:06:51Z"
+        },
         {
           "repo": "IamHarrie-Labs/beni",
           "message": "feat(landing): Telegram bot section + pricing FAQ entry\n\nNew TelegramSection promoting @Beniwallet_bot with a mock chat card showing the approve/reject flow. FAQ: added deploy-fee cost disclosure (2 ADA one-time, no subscriptions).\n\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>",
@@ -94,9 +100,16 @@
     {
       "id": "armanabid",
       "name": "Abid",
-      "lastActivityAt": "2026-06-28T10:46:10Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-07-05T09:37:30Z",
+      "commitsThisWeek": 1,
+      "recentCommits": [
+        {
+          "repo": "ArmanAbid/ChainTask",
+          "message": "fix schemas wire encoding + wire AmendSubmission and Update",
+          "url": "https://github.com/ArmanAbid/ChainTask/commit/510ae399baceeeeaeb9b0abac6b31845f4dc106a",
+          "committedAt": "2026-07-05T09:37:30Z"
+        }
+      ],
       "error": null
     },
     {
@@ -264,9 +277,15 @@
     {
       "id": "newman5",
       "name": "Newman",
-      "lastActivityAt": "2026-07-03T14:31:38Z",
-      "commitsThisWeek": 5,
+      "lastActivityAt": "2026-07-04T13:56:51Z",
+      "commitsThisWeek": 6,
       "recentCommits": [
+        {
+          "repo": "Newman5/builder-season-playbook",
+          "message": "Update builder activity data",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/241fe1ececa0a2ce94051a2e66d60a0d04bd9faf",
+          "committedAt": "2026-07-04T13:56:51Z"
+        },
         {
           "repo": "Newman5/builder-season-playbook",
           "message": "Update builder activity data",
@@ -290,12 +309,6 @@
           "message": "Update builder activity data",
           "url": "https://github.com/Newman5/builder-season-playbook/commit/49b0b4c68ca2e6cb00df5945d8fa7957ceb3035b",
           "committedAt": "2026-06-30T12:58:19Z"
-        },
-        {
-          "repo": "Newman5/builder-season-playbook",
-          "message": "Update builder activity data",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/062211a868c39e6d81c90804f6c733dd666114d6",
-          "committedAt": "2026-06-29T13:46:53Z"
         }
       ],
       "error": null
@@ -387,9 +400,16 @@
     {
       "id": "muhammedyuguda",
       "name": "Muhammed",
-      "lastActivityAt": "2026-06-28T17:01:50Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-07-05T02:21:54Z",
+      "commitsThisWeek": 1,
+      "recentCommits": [
+        {
+          "repo": "Yuguda999/devmemory",
+          "message": "feat: implement styled confirmation dialog and enhance logout confirmation",
+          "url": "https://github.com/Yuguda999/devmemory/commit/8272cc2bf248203ae5968f74f22a0d9d1c35b764",
+          "committedAt": "2026-07-05T02:21:54Z"
+        }
+      ],
       "error": null
     },
     {
@@ -442,38 +462,38 @@
     {
       "id": "alfreditodole",
       "name": "Alfred Itodole",
-      "lastActivityAt": "2026-07-03T22:41:48Z",
-      "commitsThisWeek": 23,
+      "lastActivityAt": "2026-07-04T23:29:11Z",
+      "commitsThisWeek": 43,
       "recentCommits": [
         {
           "repo": "sirxalfred/mosaic-cardano",
-          "message": "Merge pull request #26 from sirXalfred/develop\n\nrefactor: move public assets to dedicated directory and update refere…",
-          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/30cdc484db94f05ff9a814686be2eba237329180",
-          "committedAt": "2026-07-03T22:41:48Z"
+          "message": "Merge pull request #29 from sirXalfred/develop\n\nfeat: enhance studio features and fix wallet connection issues",
+          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/e209f6540bb3ddb7572cf4c8736e9ab68df07eb4",
+          "committedAt": "2026-07-04T23:29:11Z"
         },
         {
           "repo": "sirxalfred/mosaic-cardano",
-          "message": "refactor: move public assets to dedicated directory and update references accordingly",
-          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/f6fec4919c42622b2157a951faa0a8acb0556de4",
-          "committedAt": "2026-07-03T22:36:35Z"
+          "message": "fix(badges): invalidate cache on rewardable actions to update UI",
+          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/f3c19aa6fd23b838735da75b4a68131ff32e1c4d",
+          "committedAt": "2026-07-04T23:16:24Z"
         },
         {
           "repo": "sirxalfred/mosaic-cardano",
-          "message": "Update progress indicators for weeks 6 and 7",
-          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/c52b49806ad026fa28ad53b7d0822a8f6c786444",
-          "committedAt": "2026-07-03T21:58:17Z"
+          "message": "feat(studio): implement personal drafts and publishing workflow to communities",
+          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/c525192a237ae4546e60ea35694a29784b6c944f",
+          "committedAt": "2026-07-04T23:16:14Z"
         },
         {
           "repo": "sirxalfred/mosaic-cardano",
-          "message": "Merge pull request #25 from sirXalfred/develop\n\nMerge branch `develop` into `main`",
-          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/20738c83323b1b225eecd34b1cfa849d5ad59770",
-          "committedAt": "2026-07-03T21:35:35Z"
+          "message": "fix(wallet): resolve endless connection loop on prompt dismissal",
+          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/0ca50c43e1cadf621663286a14b52f98803aaa4e",
+          "committedAt": "2026-07-04T23:16:05Z"
         },
         {
           "repo": "sirxalfred/mosaic-cardano",
-          "message": "Merge pull request #20 from sirXalfred/feat/onchain-badges\n\nfeat: implement on-chain badge minting and enhance UI with gamification",
-          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/5fdc4a8ac0c72e1aa1727f67b74f869f5ced45f9",
-          "committedAt": "2026-07-03T21:32:12Z"
+          "message": "feat(library): segregate formal artifacts from feed posts in village library",
+          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/e724dde7fda33da019f7a402602326c1d574c5cd",
+          "committedAt": "2026-07-04T23:15:56Z"
         }
       ],
       "error": null
