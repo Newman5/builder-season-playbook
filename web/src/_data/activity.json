@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-05T14:08:32Z",
-  "weekStart": "2026-06-29T00:00:00Z",
-  "weekEnd": "2026-07-05T23:59:59Z",
+  "generatedAt": "2026-07-06T15:54:01Z",
+  "weekStart": "2026-07-06T00:00:00Z",
+  "weekEnd": "2026-07-12T23:59:59Z",
   "builders": [
     {
       "id": "mhizta",
@@ -14,7 +14,7 @@
     {
       "id": "ianonjuguna",
       "name": "Ian",
-      "lastActivityAt": "2026-06-09T12:32:41Z",
+      "lastActivityAt": "2026-07-05T14:30:02Z",
       "commitsThisWeek": 0,
       "recentCommits": [],
       "error": null
@@ -31,21 +31,8 @@
       "id": "gidhub",
       "name": "Gideon",
       "lastActivityAt": "2026-07-04T10:43:57Z",
-      "commitsThisWeek": 2,
-      "recentCommits": [
-        {
-          "repo": "0xGIDHUB/tixano",
-          "message": "Avatar upload integration for ticket customization system",
-          "url": "https://github.com/0xGIDHUB/tixano/commit/913de7aa02e35321b20a3ddb566f3503da6d23e2",
-          "committedAt": "2026-07-04T10:43:57Z"
-        },
-        {
-          "repo": "0xGIDHUB/tixano",
-          "message": "Fixed timezone conversion bug affecting date storage and retrival",
-          "url": "https://github.com/0xGIDHUB/tixano/commit/4634d58a961f994c989523f3164b1546f82ef512",
-          "committedAt": "2026-07-03T00:58:10Z"
-        }
-      ],
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
@@ -60,33 +47,8 @@
       "id": "harrie",
       "name": "Harrie",
       "lastActivityAt": "2026-07-04T16:06:51Z",
-      "commitsThisWeek": 4,
-      "recentCommits": [
-        {
-          "repo": "IamHarrie-Labs/beni",
-          "message": "feat(landing): disclose real mainnet deployment as Cardano Pie evidence\n\nNew FAQ entry links the mainnet deploy + guarded-spend transactions on Cardanoscan. Updated the audit FAQ so it no longer claims mainnet deployment is only 'planned' now that a small-scale mainnet proof exists.\n\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>",
-          "url": "https://github.com/IamHarrie-Labs/beni/commit/8786ca4111c18445e6b31abf9b855b962b87ef37",
-          "committedAt": "2026-07-04T16:06:51Z"
-        },
-        {
-          "repo": "IamHarrie-Labs/beni",
-          "message": "feat(landing): Telegram bot section + pricing FAQ entry\n\nNew TelegramSection promoting @Beniwallet_bot with a mock chat card showing the approve/reject flow. FAQ: added deploy-fee cost disclosure (2 ADA one-time, no subscriptions).\n\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>",
-          "url": "https://github.com/IamHarrie-Labs/beni/commit/bef7ac4617a92b086f637eae5065f47ac2ed6481",
-          "committedAt": "2026-07-04T04:53:04Z"
-        },
-        {
-          "repo": "IamHarrie-Labs/beni",
-          "message": "feat(telegram): public multi-tenant bot - every user gets their own wallet\n\n- /newwallet generates a per-user custodial testnet agent key + caps\n- /deploy creates that user own guarded wallet on-chain (beni-sdk\n  createAgentWallet); /status /pay /pending /freeze all per-user\n- approvals go to the wallet owner; no more global BENI_OWNER_CHAT_ID\n- store.js: Upstash Redis REST backend (KV_REST_API_URL/TOKEN) with\n  local JSON fallback for dev\n- sdk 0.1.1 (published): getBalance/getDailyUsage/approveSpend now\n  select the UTxO by thread token - the script address is shared by\n  every Beni wallet, so utxos[0] could be someone else wallet\n\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>",
-          "url": "https://github.com/IamHarrie-Labs/beni/commit/106f40f9b81016f33a921a26687cd94fa31e4b9d",
-          "committedAt": "2026-07-02T16:52:22Z"
-        },
-        {
-          "repo": "IamHarrie-Labs/beni",
-          "message": "feat(payments): 2 ADA deployment fee paid from the user wallet\n\n- api/fee.js: builds the fee tx server-side, user signs via CIP-30,\n  server assembles + submits. Treasury = BENI_TREASURY_ADDRESS.\n- api/deploy.js: requires a verified feeTxHash before deploying;\n  polls Blockfrost while the fee confirms; replay-protected via KV;\n  fee marked used only after a successful deploy. Network now\n  switchable via BENI_NETWORK (Preview | Mainnet).\n- DeployModal: shows the fee, walks pay -> deploy, new paying state.\n\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>",
-          "url": "https://github.com/IamHarrie-Labs/beni/commit/893cc5a787fdecb5d36f6adf7be1aec05668436d",
-          "committedAt": "2026-07-02T16:37:12Z"
-        }
-      ],
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
@@ -101,54 +63,16 @@
       "id": "armanabid",
       "name": "Abid",
       "lastActivityAt": "2026-07-05T09:37:30Z",
-      "commitsThisWeek": 1,
-      "recentCommits": [
-        {
-          "repo": "ArmanAbid/ChainTask",
-          "message": "fix schemas wire encoding + wire AmendSubmission and Update",
-          "url": "https://github.com/ArmanAbid/ChainTask/commit/510ae399baceeeeaeb9b0abac6b31845f4dc106a",
-          "committedAt": "2026-07-05T09:37:30Z"
-        }
-      ],
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
       "id": "gamechanger",
       "name": "Adriano",
       "lastActivityAt": "2026-07-04T07:30:16Z",
-      "commitsThisWeek": 9,
-      "recentCommits": [
-        {
-          "repo": "GameChangerFinance/NeonSoup",
-          "message": "Merge pull request #6 from GameChangerFinance/feat/swap\n\nchore: cleanup",
-          "url": "https://github.com/GameChangerFinance/NeonSoup/commit/a0d3bdb509a8585ae0a907ce7138a918d1fd3ff4",
-          "committedAt": "2026-07-04T07:30:16Z"
-        },
-        {
-          "repo": "GameChangerFinance/NeonSoup",
-          "message": "chore: cleanup",
-          "url": "https://github.com/GameChangerFinance/NeonSoup/commit/f9fe1dbc68ed5ccafeb416465cd1a5dfad82a3e4",
-          "committedAt": "2026-07-04T07:29:46Z"
-        },
-        {
-          "repo": "GameChangerFinance/NeonSoup",
-          "message": "Merge pull request #5 from GameChangerFinance/feat/swap\n\nfeat(swap): merge swap UX, cart composition, and submission updates into main",
-          "url": "https://github.com/GameChangerFinance/NeonSoup/commit/061a6127e121f9603d754a5d2aaf17031738db2b",
-          "committedAt": "2026-07-04T07:26:49Z"
-        },
-        {
-          "repo": "GameChangerFinance/NeonSoup",
-          "message": "docs: updated context and doc files. file cleanup",
-          "url": "https://github.com/GameChangerFinance/NeonSoup/commit/428c1692df06a3d26d0ad786c8ae795e106ebb3b",
-          "committedAt": "2026-07-04T07:21:33Z"
-        },
-        {
-          "repo": "GameChangerFinance/NeonSoup",
-          "message": "fix: removed old code fragment breaking some close intent cases",
-          "url": "https://github.com/GameChangerFinance/NeonSoup/commit/be134058a1f7918d911d850f2bce91ff3ec91513",
-          "committedAt": "2026-07-04T06:37:16Z"
-        }
-      ],
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
@@ -171,21 +95,8 @@
       "id": "murmurations",
       "name": "Nori",
       "lastActivityAt": "2026-07-02T15:39:12Z",
-      "commitsThisWeek": 2,
-      "recentCommits": [
-        {
-          "repo": "murmurations-ai/flyway",
-          "message": "Merge pull request #25 from murmurations-ai/feat/github-pr-transport\n\nfeat: S+12 — github-pr signal transport (v0.2b, ADR-0012)",
-          "url": "https://github.com/murmurations-ai/flyway/commit/d0b4d17d1f5efe98b134914351c3b31db6160262",
-          "committedAt": "2026-07-02T15:39:12Z"
-        },
-        {
-          "repo": "murmurations-ai/flyway",
-          "message": "feat(core+cli): S+12 — github-pr signal transport (v0.2b, ADR-0012)\n\nDeliver a signal by opening a pull request against the peer's repo instead\nof writing their working tree — the production transport ADR-0008 reserved.\nThe recipient merges under their own governance: delivery becomes a proposal\nthe receiver consents to, mirroring the protocol's own consent semantics.\nWith Tier 6 (recognize at a distance), the full discover → recognize →\ndeliver loop now runs with no shared filesystem.\n\nCore (github-pr.ts):\n- githubPrTransport drops in behind the v0.2a SignalTransport seam — no\n  sender touched. Resolves did:web:github.com:owner:repo → target repo via a\n  new shared githubRepoForDid (also reused by identity resolution).\n- Fork-first (no push access to the peer's repo across an org boundary);\n  direct branch only when push access exists.\n- Deterministic branch flyway/inbox/<sanitized-from>/<id> is the idempotency\n  key; an existing PR is a no-op. PR-open = delivered; acceptance is the\n  recipient's merge, observed downstream by flyway_check, not awaited.\n- gh-CLI auth behind an injectable RunGh — the whole flow is unit-tested with\n  no network. gh missing/unauth/repo-unreachable/fork-blocked degrade to\n  delivered:false with the outbox record intact.\n- Shared renderInboxSignalFile keeps PR-delivered bytes byte-identical to\n  local-fs (ADR-0008 invariant 3).\n\nCLI: --transport github-pr on all four senders (tension/respond/propose/exit)\nwith a receipt-aware status line (offered <pr-url> vs delivered <path>).\n\nCI: verify-signal GitHub Action (+ composite action) runs `flyway check` on\nPRs touching flyway/inbox/**, comments the verdict, and gates the merge —\nrecognition runs in the recipient's own CI against their own cached keys.\n\nDocs: ADR-0012 (Proposed), Tier 7 walkthrough (test-backed), status.md S+12.\n\n+10 tests (427 total). ADR-0012 is Proposed, not yet Accepted.\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>",
-          "url": "https://github.com/murmurations-ai/flyway/commit/57e4dfe6896a8e1ff6300915a1e6fe060a6d5313",
-          "committedAt": "2026-07-02T15:38:32Z"
-        }
-      ],
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
@@ -200,117 +111,24 @@
       "id": "trike",
       "name": "Anita",
       "lastActivityAt": "2026-07-02T11:38:41Z",
-      "commitsThisWeek": 12,
-      "recentCommits": [
-        {
-          "repo": "3rike12/3rike-Mobility_",
-          "message": "feat: add View on CardanoScan button on successful investment confirmation",
-          "url": "https://github.com/3rike12/3rike-Mobility_/commit/e6aa2bd01e93e62e2aca793eb4cec2314ca418f5",
-          "committedAt": "2026-07-02T11:38:41Z"
-        },
-        {
-          "repo": "3rike12/3rike-Mobility_",
-          "message": "feat: remove minimum password length validation on LoginForm",
-          "url": "https://github.com/3rike12/3rike-Mobility_/commit/d092420d985760ec9516c35097f8fd87e18efa6d",
-          "committedAt": "2026-07-02T11:33:00Z"
-        },
-        {
-          "repo": "3rike12/3rike-Mobility_",
-          "message": "feat: change login page footer signup link to point to role-select",
-          "url": "https://github.com/3rike12/3rike-Mobility_/commit/d659603e5bdee3cf8f91fa2bd368cc8294050d22",
-          "committedAt": "2026-07-02T11:30:47Z"
-        },
-        {
-          "repo": "3rike12/3rike-Mobility_",
-          "message": "feat: add landing page auth navigation and auto-redirect guard logic on auth screens",
-          "url": "https://github.com/3rike12/3rike-Mobility_/commit/eede12b6c6710701095c2f71958a6a92bf99ccff",
-          "committedAt": "2026-07-02T11:22:43Z"
-        },
-        {
-          "repo": "3rike12/3rike-Mobility_",
-          "message": "docs: update demo video script to use frontend UI flows instead of backend API curl commands",
-          "url": "https://github.com/3rike12/3rike-Mobility_/commit/4eee1bf25b94ba64c650e727b8fdd0ad24c51f86",
-          "committedAt": "2026-07-02T11:22:40Z"
-        }
-      ],
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
       "id": "mobrai",
       "name": "Marcio",
       "lastActivityAt": "2026-06-29T10:41:57Z",
-      "commitsThisWeek": 6,
-      "recentCommits": [
-        {
-          "repo": "mobr-ai/cap-pie",
-          "message": "Merge commit '20032d5a117f80b720ace15d4dad5bdbf8bc0268'",
-          "url": "https://github.com/mobr-ai/cap-pie/commit/544158e3c0c3d7f61882a1387f0f8d3b407c72c6",
-          "committedAt": "2026-06-29T10:41:57Z"
-        },
-        {
-          "repo": "mobr-ai/cap-pie",
-          "message": "Merge commit '5d9d28d97123a60a960d524389554bc9917a9b3d'",
-          "url": "https://github.com/mobr-ai/cap-pie/commit/f4a07a5b27046978548bc66fb4e30a52cd3e5577",
-          "committedAt": "2026-06-29T10:41:47Z"
-        },
-        {
-          "repo": "mobr-ai/cap-pie",
-          "message": "adding labels for chart axis",
-          "url": "https://github.com/mobr-ai/cap-pie/commit/5d9d28d97123a60a960d524389554bc9917a9b3d",
-          "committedAt": "2026-06-29T10:41:11Z"
-        },
-        {
-          "repo": "mobr-ai/cap-pie",
-          "message": "bug fix kv results in telegram path",
-          "url": "https://github.com/mobr-ai/cap-pie/commit/ee50298451f821bfcc32ce9ab41a68b7fb4c87c0",
-          "committedAt": "2026-06-29T10:20:07Z"
-        },
-        {
-          "repo": "mobr-ai/cap-pie",
-          "message": "ruff check fix",
-          "url": "https://github.com/mobr-ai/cap-pie/commit/0c10c1f8698560e242b7c2dc61def5989a3d85fc",
-          "committedAt": "2026-06-29T09:56:21Z"
-        }
-      ],
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
       "id": "newman5",
       "name": "Newman",
-      "lastActivityAt": "2026-07-04T13:56:51Z",
-      "commitsThisWeek": 6,
-      "recentCommits": [
-        {
-          "repo": "Newman5/builder-season-playbook",
-          "message": "Update builder activity data",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/241fe1ececa0a2ce94051a2e66d60a0d04bd9faf",
-          "committedAt": "2026-07-04T13:56:51Z"
-        },
-        {
-          "repo": "Newman5/builder-season-playbook",
-          "message": "Update builder activity data",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/be7e78d3867a1b889b6c11d27157f1545a01b9f5",
-          "committedAt": "2026-07-03T14:31:38Z"
-        },
-        {
-          "repo": "Newman5/builder-season-playbook",
-          "message": "Update builder activity data",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/45ede1a5e0af9fd04c58b6f1110212fdd8d03336",
-          "committedAt": "2026-07-02T12:53:59Z"
-        },
-        {
-          "repo": "Newman5/builder-season-playbook",
-          "message": "Update builder activity data",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/0d00f1ffe6fcffe7763926bf06b6813c3e4bebd3",
-          "committedAt": "2026-07-01T13:12:31Z"
-        },
-        {
-          "repo": "Newman5/builder-season-playbook",
-          "message": "Update builder activity data",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/49b0b4c68ca2e6cb00df5945d8fa7957ceb3035b",
-          "committedAt": "2026-06-30T12:58:19Z"
-        }
-      ],
+      "lastActivityAt": "2026-07-05T14:08:44Z",
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
@@ -324,20 +142,14 @@
     {
       "id": "devfreeguy",
       "name": "Daniel",
-      "lastActivityAt": "2026-07-02T19:23:28Z",
-      "commitsThisWeek": 2,
+      "lastActivityAt": "2026-07-06T10:27:49Z",
+      "commitsThisWeek": 1,
       "recentCommits": [
         {
           "repo": "devfreeguy/skill-swap",
-          "message": "feat(swaps): refundable on-chain swap fee + header account menu\n\nCharge a 2 ADA platform fee when requesting a swap, refunded in full only if the other party declines. The fee is validated instantly by decoding the signed tx server-side - no waiting for on-chain confirmation - and refunds are auto-issued from a platform hot wallet on decline.\n\nFee flow:\n- lib/cardano/fee.ts: client-safe fee config (amount, platform address, PAYMENTS_ENABLED). Blank platform address disables fees for local dev.\n- lib/cardano/fee-client.ts: wallet builds+signs the fee tx (browser).\n- lib/cardano/fee-verify.ts: signedTxPaysAtLeast() decodes the signed CBOR (Mesh CST) to verify the fee output synchronously at request time.\n- lib/cardano/refund.ts: platform hot wallet (MeshWallet + Blockfrost) refunds a declined swap's fee.\n- lib/cardano/providers.ts: verifyPaymentTx() re-checks the fee on-chain before any refund - the safety net for the optimistic confirm.\n- POST /api/swaps: decode-verify, submit, store feeTxHash + CONFIRMED.\n- PATCH /api/swaps/[id]: accept/cancel keep the fee (KEPT); decline auto-refunds (REFUNDED; deferred REFUND_PENDING retried on GET).\n- Swap gains feeTxHash/feeLovelace/refundAddress/refundTxHash/paymentStatus (additive migration; prisma client regenerated).\n\nUI:\n- Fee notice + live status when requesting; fee/refund chip on the swap detail page; fee/refund status in the dashboard lists (Recent History now includes declined/cancelled so refunds are visible).\n- Header avatar (mobile + desktop) is now an account menu (Profile / Log out); logout goes through a shared confirmation dialog, also used by the sidebar, mobile gains a logout path it lacked.\n\nVerified end-to-end on preprod: fee paid, confirmed, and fully refunded on decline (each side pays only its own tx fee).\n\nRequires NEXT_PUBLIC_PLATFORM_WALLET_ADDRESS, PLATFORM_WALLET_MNEMONIC and BLOCKFROST_API_KEY (see .env.example).",
-          "url": "https://github.com/devfreeguy/skill-swap/commit/9846dee4b85ec146df5a4ac10184dbc4b6748991",
-          "committedAt": "2026-07-02T19:23:28Z"
-        },
-        {
-          "repo": "devfreeguy/skill-swap",
-          "message": "feat: wallet-first auth, realtime, E2E messaging, on-chain proof + hardening\n\nAuth\n- Replace email/password with Twitter/X OAuth2 + mandatory Cardano wallet\n- Real CIP-8 signature verification (drop the nonce-possession stub)\n- DB-backed, single-use, TTL'd wallet nonces (new WalletNonce model); atomic-delete consume; survives restarts and works across instances\n\nSwaps & proof\n- Two-sided deliverables + completion gate; auto-create Proof on completion\n- Retryable on-chain anchoring with Blockfrost -> Koios -> Maestro fallback\n- Guard swap creation: no concurrent swap with the same person, no repeat of an already-completed identical skill pair\n\nMessaging & realtime\n- End-to-end encrypted chat (tweetnacl, wallet-derived keys)\n- Pusher (primary) -> Ably (fallback) for messages, notifications, requests\n- Conversation list unread/completed states; per-user last-read tracking\n\nUI / layout\n- Extract AppSidebar + shared nav.ts from AppShell\n- Fix app-shell height chain so the message thread scrolls internally\n- Fix avatar rendering in header/sidebar (DB lookup in getShellUser)\n\nFixes\n- lib/cardano: type-only NetworkType import to keep wallet runtime out of SSR\n- proxy.ts: protect /messages, drop dead /discover\n- Matching uses scoreMatch + parseSkills (multi-skill aware)\n\nDocs\n- Rewrite README, refresh CLAUDE.md gotchas, add docs/session-report.md",
-          "url": "https://github.com/devfreeguy/skill-swap/commit/640e161064072709a7c4251f55142781a082c6cb",
-          "committedAt": "2026-06-30T22:34:48Z"
+          "message": "feat(public): How It Works page rendered from JSON markdown\n\nAdd a public /how-it-works page whose content lives in JSON and is\nrendered through a small, dependency-free Markdown renderer.\n\n- data/how-it-works.json: page content as structured sections, each\nbody authored in Markdown (covers the swap flow, the 2 ADA refundable\nfee, E2E messaging, and on-chain proofs).\n- lib/markdown.tsx: renderMarkdown() turns Markdown into React elements\n(headings, paragraphs, ordered/unordered lists, blockquotes, rules,\ninline bold/italic/code/links). No new dependency, no\ndangerouslySetInnerHTML — XSS-safe by construction.\n- app/how-it-works/page.tsx: server component with a hero, sticky\ntable-of-contents, and the rendered article, wrapped in the public\nheader/footer. Public route (not gated by proxy.ts).\n\nNav + footer:\n- Header/footer \"How it Works\" now links to /how-it-works; the #ledger\nand #discovery anchors are made absolute (/#…) so they resolve from\nany page.\n- Footer: social icons moved into the links column; bottom bar now holds\nonly the tagline and copyright.",
+          "url": "https://github.com/devfreeguy/skill-swap/commit/cb2bc3834e925c5813767c2a94edc97cfdeaef30",
+          "committedAt": "2026-07-06T10:27:49Z"
         }
       ],
       "error": null
@@ -346,39 +158,8 @@
       "id": "haulink",
       "name": "Abdulazeez",
       "lastActivityAt": "2026-07-01T19:35:56Z",
-      "commitsThisWeek": 6,
-      "recentCommits": [
-        {
-          "repo": "FoladDTechie/Haulink",
-          "message": "Merge pull request #14 from FoladDTechie/HAUL-22-AZB\n\nfix: wire ADA_NGN_RATE from env var, add NEXT_PUBLIC_ADA_NGN_RATE2",
-          "url": "https://github.com/FoladDTechie/Haulink/commit/5cb603303dc715a3e7af4cc3102d828ce8689909",
-          "committedAt": "2026-07-01T19:35:56Z"
-        },
-        {
-          "repo": "FoladDTechie/Haulink",
-          "message": "fix: wire ADA_NGN_RATE from env var, add NEXT_PUBLIC_ADA_NGN_RATE2",
-          "url": "https://github.com/FoladDTechie/Haulink/commit/780639f422ccc887f8601232918071dd90162782",
-          "committedAt": "2026-07-01T19:33:39Z"
-        },
-        {
-          "repo": "FoladDTechie/Haulink",
-          "message": "Merge pull request #13 from FoladDTechie/HAUL-22-AZB\n\nfix: wire ADA_NGN_RATE from env var, add NEXT_PUBLIC_ADA_NGN_RATE",
-          "url": "https://github.com/FoladDTechie/Haulink/commit/410a92d06a97b15b45944a877a09959434572800",
-          "committedAt": "2026-07-01T19:03:52Z"
-        },
-        {
-          "repo": "FoladDTechie/Haulink",
-          "message": "fix: wire ADA_NGN_RATE from env var, add NEXT_PUBLIC_ADA_NGN_RATE",
-          "url": "https://github.com/FoladDTechie/Haulink/commit/102e7edf79daf2e8b0c56ff0e5e95177edd0eb49",
-          "committedAt": "2026-07-01T19:02:33Z"
-        },
-        {
-          "repo": "FoladDTechie/Haulink",
-          "message": "Merge pull request #12 from FoladDTechie/HAUL-22-AZB\n\nfeat: mainnet switch, ADA-only payment, cargo estimator pricing",
-          "url": "https://github.com/FoladDTechie/Haulink/commit/01f707bd335dd2de8bc2187db253bc6708498832",
-          "committedAt": "2026-07-01T18:00:38Z"
-        }
-      ],
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
@@ -400,55 +181,17 @@
     {
       "id": "muhammedyuguda",
       "name": "Muhammed",
-      "lastActivityAt": "2026-07-05T02:21:54Z",
-      "commitsThisWeek": 1,
-      "recentCommits": [
-        {
-          "repo": "Yuguda999/devmemory",
-          "message": "feat: implement styled confirmation dialog and enhance logout confirmation",
-          "url": "https://github.com/Yuguda999/devmemory/commit/8272cc2bf248203ae5968f74f22a0d9d1c35b764",
-          "committedAt": "2026-07-05T02:21:54Z"
-        }
-      ],
+      "lastActivityAt": "2026-07-05T17:41:39Z",
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
       "id": "juanitajaramillo",
       "name": "Juanita",
       "lastActivityAt": "2026-07-02T04:01:27Z",
-      "commitsThisWeek": 9,
-      "recentCommits": [
-        {
-          "repo": "JuanitaJaramill/cardano-insights-lab",
-          "message": "Remove redundant beta label",
-          "url": "https://github.com/JuanitaJaramill/cardano-insights-lab/commit/215639f22d5ac3ef40b1565e3f92681c61e922ea",
-          "committedAt": "2026-07-02T04:01:27Z"
-        },
-        {
-          "repo": "JuanitaJaramill/cardano-insights-lab",
-          "message": "Update PayPalButton.tsx",
-          "url": "https://github.com/JuanitaJaramill/cardano-insights-lab/commit/a2a524c32ec8f9210bd0363ba388f3db9a688577",
-          "committedAt": "2026-07-02T03:31:38Z"
-        },
-        {
-          "repo": "JuanitaJaramill/cardano-insights-lab",
-          "message": "Update README.md",
-          "url": "https://github.com/JuanitaJaramill/cardano-insights-lab/commit/dbf34a4516868ae96bec7e0f68ca527fdb87e8e2",
-          "committedAt": "2026-07-01T00:44:08Z"
-        },
-        {
-          "repo": "JuanitaJaramill/cardano-insights-lab",
-          "message": "Add PayPal create order route",
-          "url": "https://github.com/JuanitaJaramill/cardano-insights-lab/commit/79f0efc68485d4132ac26561eefc5dd78aad1816",
-          "committedAt": "2026-06-30T23:56:58Z"
-        },
-        {
-          "repo": "JuanitaJaramill/cardano-insights-lab",
-          "message": "Update CaseResult.tsx",
-          "url": "https://github.com/JuanitaJaramill/cardano-insights-lab/commit/ec7111ee6be68163ed5237d99e7c669b74f059f7",
-          "committedAt": "2026-06-30T22:42:42Z"
-        }
-      ],
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
@@ -463,39 +206,8 @@
       "id": "alfreditodole",
       "name": "Alfred Itodole",
       "lastActivityAt": "2026-07-04T23:29:11Z",
-      "commitsThisWeek": 43,
-      "recentCommits": [
-        {
-          "repo": "sirxalfred/mosaic-cardano",
-          "message": "Merge pull request #29 from sirXalfred/develop\n\nfeat: enhance studio features and fix wallet connection issues",
-          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/e209f6540bb3ddb7572cf4c8736e9ab68df07eb4",
-          "committedAt": "2026-07-04T23:29:11Z"
-        },
-        {
-          "repo": "sirxalfred/mosaic-cardano",
-          "message": "fix(badges): invalidate cache on rewardable actions to update UI",
-          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/f3c19aa6fd23b838735da75b4a68131ff32e1c4d",
-          "committedAt": "2026-07-04T23:16:24Z"
-        },
-        {
-          "repo": "sirxalfred/mosaic-cardano",
-          "message": "feat(studio): implement personal drafts and publishing workflow to communities",
-          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/c525192a237ae4546e60ea35694a29784b6c944f",
-          "committedAt": "2026-07-04T23:16:14Z"
-        },
-        {
-          "repo": "sirxalfred/mosaic-cardano",
-          "message": "fix(wallet): resolve endless connection loop on prompt dismissal",
-          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/0ca50c43e1cadf621663286a14b52f98803aaa4e",
-          "committedAt": "2026-07-04T23:16:05Z"
-        },
-        {
-          "repo": "sirxalfred/mosaic-cardano",
-          "message": "feat(library): segregate formal artifacts from feed posts in village library",
-          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/e724dde7fda33da019f7a402602326c1d574c5cd",
-          "committedAt": "2026-07-04T23:15:56Z"
-        }
-      ],
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     }
   ]
