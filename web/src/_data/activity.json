@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-06T15:54:01Z",
+  "generatedAt": "2026-07-07T15:13:42Z",
   "weekStart": "2026-07-06T00:00:00Z",
   "weekEnd": "2026-07-12T23:59:59Z",
   "builders": [
@@ -126,9 +126,16 @@
     {
       "id": "newman5",
       "name": "Newman",
-      "lastActivityAt": "2026-07-05T14:08:44Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-07-06T15:54:14Z",
+      "commitsThisWeek": 1,
+      "recentCommits": [
+        {
+          "repo": "Newman5/builder-season-playbook",
+          "message": "Update builder activity data",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/44d1750191d9343b9e3ee2f8aed3f5064ccf5f0c",
+          "committedAt": "2026-07-06T15:54:14Z"
+        }
+      ],
       "error": null
     },
     {
@@ -165,9 +172,28 @@
     {
       "id": "opa007i",
       "name": "Opa",
-      "lastActivityAt": "2026-06-27T15:10:16Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-07-06T22:07:48Z",
+      "commitsThisWeek": 3,
+      "recentCommits": [
+        {
+          "repo": "opa1/the-quest",
+          "message": "refactor: use BountyCard in RecentMissions for consistency across realm and missions pages",
+          "url": "https://github.com/opa1/the-quest/commit/719bbf2a9977a1bbf5053dd56ee4908631c19a43",
+          "committedAt": "2026-07-06T22:07:48Z"
+        },
+        {
+          "repo": "opa1/the-quest",
+          "message": "feat: slot progress bars, prominent deadline display on task detail, mission cards, and landing page",
+          "url": "https://github.com/opa1/the-quest/commit/8799dda434a0f4b062e34272ada284dadee76807",
+          "committedAt": "2026-07-06T22:05:35Z"
+        },
+        {
+          "repo": "opa1/the-quest",
+          "message": "feat: multi-claimer post form UI, deadline picker, automatic ADA refund on deadline",
+          "url": "https://github.com/opa1/the-quest/commit/da290d53b326f53ae5ed275ab6961d72121a1d14",
+          "committedAt": "2026-07-06T21:58:40Z"
+        }
+      ],
       "error": null
     },
     {
