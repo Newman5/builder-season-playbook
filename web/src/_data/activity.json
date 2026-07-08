@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-07T15:13:42Z",
+  "generatedAt": "2026-07-08T14:40:08Z",
   "weekStart": "2026-07-06T00:00:00Z",
   "weekEnd": "2026-07-12T23:59:59Z",
   "builders": [
@@ -46,9 +46,22 @@
     {
       "id": "harrie",
       "name": "Harrie",
-      "lastActivityAt": "2026-07-04T16:06:51Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-07-08T08:40:02Z",
+      "commitsThisWeek": 2,
+      "recentCommits": [
+        {
+          "repo": "IamHarrie-Labs/beni",
+          "message": "feat(deploy): connected wallet is now the agent - no custodial key\n\napi/deploy.js rewritten to the same build/sign/submit pattern as\napi/fee.js: the server builds an unsigned deploy tx from the user's own\nUTxOs, the browser signs it via CIP-30, the server assembles and\nsubmits. The connected wallet's own credential becomes agent_pkh, so\nevery dashboard-deployed wallet is genuinely controlled by whoever\ndeployed it - no shared AGENT_PRIVATE_KEY in Vercel signing on anyone's\nbehalf.\n\napi/fee.js: treasuryAddress() now requires BENI_TREASURY_ADDRESS\ndirectly instead of falling back to an address derived from\nAGENT_PRIVATE_KEY (that fallback no longer makes sense once deploys\naren't custodial). BENI_TREASURY_ADDRESS must be set in Vercel for fee\npayments to keep working.\n\ndashboard.jsx: DeployModal now asks for a second wallet signature\nafter the fee (fee tx, then deploy tx), and its copy no longer claims\nthe wallet deploys with a Vercel-configured key.\n\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>",
+          "url": "https://github.com/IamHarrie-Labs/beni/commit/9e3a08cc2939dc92d12a16a5ea3f624f1704d233",
+          "committedAt": "2026-07-08T08:40:02Z"
+        },
+        {
+          "repo": "IamHarrie-Labs/beni",
+          "message": "fix(security): require agent signature on every Spend (agent_pkh)\n\nThe validator only checked spending caps, never who was allowed to spend -\nanyone watching the chain could construct a valid Spend transaction and\ndrain a Beni wallet to themselves, up to the per-tx cap. Adds agent_pkh\nto the datum and requires it in tx.extra_signatories for every Spend.\n\nAlso fixed the test suite, which had never actually run: tests/ is not\na directory Aiken scans (only lib/ and validators/), so this whole test\nfile was silently skipped since day one. Moved it into validators/,\nextracted the validator body into a plain spend_logic() function so it's\ncallable from tests, and fixed two latent test bugs this exposed\n(last_window_start and window_spent were computed wrong in two cases).\nAll 13 tests now actually execute and pass.\n\nSDK (beni-sdk@0.1.2, published): GuardrailConfig.agentPkh required,\nagentSpend adds the signer key, datum schema/CBOR updated.\n\nMigration: reclaimed the real ADA from the old vulnerable mainnet\ncontract via OwnerAction and redeployed under the fixed validator.\nRedeployed the Preview testnet demo wallet the same way. Dashboard\n(api/deploy.js, api/agent-state.js) and the Telegram bot updated to\nthe new CBOR/schema and to set agent_pkh at deploy time.\n\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>",
+          "url": "https://github.com/IamHarrie-Labs/beni/commit/4dd4ea0ba3746c97ac4893e56384f9d86c78f639",
+          "committedAt": "2026-07-08T08:11:31Z"
+        }
+      ],
       "error": null
     },
     {
@@ -126,9 +139,15 @@
     {
       "id": "newman5",
       "name": "Newman",
-      "lastActivityAt": "2026-07-06T15:54:14Z",
-      "commitsThisWeek": 1,
+      "lastActivityAt": "2026-07-07T15:13:59Z",
+      "commitsThisWeek": 2,
       "recentCommits": [
+        {
+          "repo": "Newman5/builder-season-playbook",
+          "message": "Update builder activity data",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/18714b5fd6b80283a38903bb449bbbd6e373b9f9",
+          "committedAt": "2026-07-07T15:13:59Z"
+        },
         {
           "repo": "Newman5/builder-season-playbook",
           "message": "Update builder activity data",
@@ -164,9 +183,40 @@
     {
       "id": "haulink",
       "name": "Abdulazeez",
-      "lastActivityAt": "2026-07-01T19:35:56Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-07-08T13:04:22Z",
+      "commitsThisWeek": 6,
+      "recentCommits": [
+        {
+          "repo": "FoladDTechie/Haulink",
+          "message": "Merge pull request #16 from FoladDTechie/HAUL-22-AZB\n\nHaul 22 azb",
+          "url": "https://github.com/FoladDTechie/Haulink/commit/42c8c130a3674e258a02866c4d530be3ce97f8d3",
+          "committedAt": "2026-07-08T13:04:22Z"
+        },
+        {
+          "repo": "FoladDTechie/Haulink",
+          "message": "feat: slot availability display, pre-payment validation, race condition handling",
+          "url": "https://github.com/FoladDTechie/Haulink/commit/5abe39b7c1aaec053b628455861609b9eb4dec3f",
+          "committedAt": "2026-07-08T13:02:03Z"
+        },
+        {
+          "repo": "FoladDTechie/Haulink",
+          "message": "feat: slot availability display, pre-payment validation, race condition handling",
+          "url": "https://github.com/FoladDTechie/Haulink/commit/2e144b8fb587daa4d856a8c7534fec15b2a389a5",
+          "committedAt": "2026-07-08T13:00:59Z"
+        },
+        {
+          "repo": "FoladDTechie/Haulink",
+          "message": "Merge pull request #15 from FoladDTechie/HAUL-22-AZB\n\nHaul 22 azb",
+          "url": "https://github.com/FoladDTechie/Haulink/commit/2cb3c02f70b397cdbcf0b558033e73e829b5dd8f",
+          "committedAt": "2026-07-07T15:44:12Z"
+        },
+        {
+          "repo": "FoladDTechie/Haulink",
+          "message": "fix: pickup date validation, preprod wallet block, box dimensions, phone format",
+          "url": "https://github.com/FoladDTechie/Haulink/commit/0cce28bf6f33f452b5d177f471f3043d3fe06f5e",
+          "committedAt": "2026-07-07T14:48:45Z"
+        }
+      ],
       "error": null
     },
     {
@@ -231,9 +281,40 @@
     {
       "id": "alfreditodole",
       "name": "Alfred Itodole",
-      "lastActivityAt": "2026-07-04T23:29:11Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-07-08T01:46:13Z",
+      "commitsThisWeek": 14,
+      "recentCommits": [
+        {
+          "repo": "sirxalfred/mosaic-cardano",
+          "message": "Merge pull request #32 from sirXalfred/develop\n\nmega feat: enhance document management with contributions, uploads, and UI updates",
+          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/298bee780345699607d0ffec4c5d084e4d4c2d8a",
+          "committedAt": "2026-07-08T01:46:13Z"
+        },
+        {
+          "repo": "sirxalfred/mosaic-cardano",
+          "message": "Merge pull request #31 from sirXalfred/feat/contributions\n\nIntegrate wallet tracking, enhance UI, and implement markdown export",
+          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/2fc73c10022a8c6722c55a1287e38abc227cb4c8",
+          "committedAt": "2026-07-08T01:18:47Z"
+        },
+        {
+          "repo": "sirxalfred/mosaic-cardano",
+          "message": "refactor(viewer): transition artifact UI to piece terminology and enhance viewer robustess",
+          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/26e0cd30b29d71edcfa6af9dcf7669944aa89a37",
+          "committedAt": "2026-07-08T01:07:28Z"
+        },
+        {
+          "repo": "sirxalfred/mosaic-cardano",
+          "message": "feat(studio): implement markdown export and storage format",
+          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/5d286b10ed9a2446a5fb86bd5a04a3fa48c86cdd",
+          "committedAt": "2026-07-08T01:07:02Z"
+        },
+        {
+          "repo": "sirxalfred/mosaic-cardano",
+          "message": "chore: relocate mock artifact resources to public directory",
+          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/707abfb761de7f406cb5d64ba07d08fa4ba0f6cd",
+          "committedAt": "2026-07-08T01:04:57Z"
+        }
+      ],
       "error": null
     }
   ]
