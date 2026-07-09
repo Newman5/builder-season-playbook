@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-08T14:40:08Z",
+  "generatedAt": "2026-07-09T15:32:33Z",
   "weekStart": "2026-07-06T00:00:00Z",
   "weekEnd": "2026-07-12T23:59:59Z",
   "builders": [
@@ -139,9 +139,15 @@
     {
       "id": "newman5",
       "name": "Newman",
-      "lastActivityAt": "2026-07-07T15:13:59Z",
-      "commitsThisWeek": 2,
+      "lastActivityAt": "2026-07-08T14:40:22Z",
+      "commitsThisWeek": 3,
       "recentCommits": [
+        {
+          "repo": "Newman5/builder-season-playbook",
+          "message": "Update builder activity data",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/c59ea3201976acf2d43cf548410bf074c68ed5a2",
+          "committedAt": "2026-07-08T14:40:22Z"
+        },
         {
           "repo": "Newman5/builder-season-playbook",
           "message": "Update builder activity data",
@@ -222,9 +228,15 @@
     {
       "id": "opa007i",
       "name": "Opa",
-      "lastActivityAt": "2026-07-06T22:07:48Z",
-      "commitsThisWeek": 3,
+      "lastActivityAt": "2026-07-08T16:09:33Z",
+      "commitsThisWeek": 4,
       "recentCommits": [
+        {
+          "repo": "opa1/the-quest",
+          "message": "fix: prevent lost/duplicate ADA payouts and add test coverage for tasks.ts\n\nRefunds that failed after a deadline closure were permanently unrecoverable, and neither approveWork nor processDeadlineRefund guarded against a concurrent/retried call sending a duplicate payout. Both now track payout/refund state independently of task/claim status via an atomic compare-and-swap lock, so failures are safely retryable and a payout's tx hash is persisted the instant it succeeds. Also sets up Vitest with an in-memory fake Supabase client and a full test suite for app/actions/tasks.ts to lock in this behavior.",
+          "url": "https://github.com/opa1/the-quest/commit/768f5e319730c3883ee7c1b24dbfcb497ae0f488",
+          "committedAt": "2026-07-08T16:09:33Z"
+        },
         {
           "repo": "opa1/the-quest",
           "message": "refactor: use BountyCard in RecentMissions for consistency across realm and missions pages",
@@ -281,38 +293,38 @@
     {
       "id": "alfreditodole",
       "name": "Alfred Itodole",
-      "lastActivityAt": "2026-07-08T01:46:13Z",
-      "commitsThisWeek": 14,
+      "lastActivityAt": "2026-07-08T15:29:05Z",
+      "commitsThisWeek": 29,
       "recentCommits": [
         {
           "repo": "sirxalfred/mosaic-cardano",
-          "message": "Merge pull request #32 from sirXalfred/develop\n\nmega feat: enhance document management with contributions, uploads, and UI updates",
-          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/298bee780345699607d0ffec4c5d084e4d4c2d8a",
-          "committedAt": "2026-07-08T01:46:13Z"
+          "message": "Merge pull request #34 from sirXalfred/develop\n\nMerge from `develop` into `main`: Implement RBAC, admin dashboard, and notification features",
+          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/7140c84521a7d4e2f30a95397d09a5c455f89568",
+          "committedAt": "2026-07-08T15:29:05Z"
         },
         {
           "repo": "sirxalfred/mosaic-cardano",
-          "message": "Merge pull request #31 from sirXalfred/feat/contributions\n\nIntegrate wallet tracking, enhance UI, and implement markdown export",
-          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/2fc73c10022a8c6722c55a1287e38abc227cb4c8",
-          "committedAt": "2026-07-08T01:18:47Z"
+          "message": "Merge pull request #35 from sirXalfred/chore/develop2\n\nfeat: add MRR trend chart and improve data safety in admin dashboard",
+          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/5857c976d93be8a5bd213fdccbec98e550dd5f67",
+          "committedAt": "2026-07-08T15:21:46Z"
         },
         {
           "repo": "sirxalfred/mosaic-cardano",
-          "message": "refactor(viewer): transition artifact UI to piece terminology and enhance viewer robustess",
-          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/26e0cd30b29d71edcfa6af9dcf7669944aa89a37",
-          "committedAt": "2026-07-08T01:07:28Z"
+          "message": "feat: trigger automatic notifation fo rnew users",
+          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/7352755c6d2adf9d75be512848a9bcd8c5f185c0",
+          "committedAt": "2026-07-08T15:18:35Z"
         },
         {
           "repo": "sirxalfred/mosaic-cardano",
-          "message": "feat(studio): implement markdown export and storage format",
-          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/5d286b10ed9a2446a5fb86bd5a04a3fa48c86cdd",
-          "committedAt": "2026-07-08T01:07:02Z"
+          "message": "feat: add MRR trend chart to admin dashboard and improve data null-safety across registry pages",
+          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/f83e890d0f12b4f5f64c5428b7f8e7b660f44f88",
+          "committedAt": "2026-07-08T15:07:49Z"
         },
         {
           "repo": "sirxalfred/mosaic-cardano",
-          "message": "chore: relocate mock artifact resources to public directory",
-          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/707abfb761de7f406cb5d64ba07d08fa4ba0f6cd",
-          "committedAt": "2026-07-08T01:04:57Z"
+          "message": "Merge pull request #33 from sirXalfred/feat/notifications\n\nfeat: implement RBAC, admin dashboard, and notification features",
+          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/2a8a0e01492fe4aa429c8397d0d66bbb872a7c25",
+          "committedAt": "2026-07-08T03:17:01Z"
         }
       ],
       "error": null
