@@ -1,33 +1,20 @@
 {
-  "generatedAt": "2026-06-28T12:44:06Z",
-  "weekStart": "2026-06-22T00:00:00Z",
-  "weekEnd": "2026-06-28T23:59:59Z",
+  "generatedAt": "2026-07-10T14:50:30Z",
+  "weekStart": "2026-07-06T00:00:00Z",
+  "weekEnd": "2026-07-12T23:59:59Z",
   "builders": [
     {
       "id": "mhizta",
       "name": "Mhizta",
-      "lastActivityAt": "2026-06-24T15:56:30Z",
-      "commitsThisWeek": 2,
-      "recentCommits": [
-        {
-          "repo": "Mhizta-gab/bookworm-ai",
-          "message": "feat: implement dashboard shell with library management, comment system, and recommendation integration",
-          "url": "https://github.com/Mhizta-gab/bookworm-ai/commit/603be78cb5158ce413c8e16b77e30f43dfc45af1",
-          "committedAt": "2026-06-24T15:56:30Z"
-        },
-        {
-          "repo": "Mhizta-gab/bookworm-ai",
-          "message": "feat: implement voice session integration with Vapi, including usage tracking, transcript summarization, and subscription limits.",
-          "url": "https://github.com/Mhizta-gab/bookworm-ai/commit/9371dc88a38264e4e574396d4abf65099cef08bb",
-          "committedAt": "2026-06-23T13:44:26Z"
-        }
-      ],
+      "lastActivityAt": "2026-06-28T14:10:08Z",
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
       "id": "ianonjuguna",
       "name": "Ian",
-      "lastActivityAt": "2026-06-09T12:32:41Z",
+      "lastActivityAt": "2026-07-05T14:30:02Z",
       "commitsThisWeek": 0,
       "recentCommits": [],
       "error": null
@@ -36,48 +23,16 @@
       "id": "dammy",
       "name": "Dammy",
       "lastActivityAt": "2026-06-28T03:41:06Z",
-      "commitsThisWeek": 2,
-      "recentCommits": [
-        {
-          "repo": "Dammy7942/accordiax",
-          "message": "feat(requests): add flexible Other category option; fix Flutterwave key validation",
-          "url": "https://github.com/Dammy7942/accordiax/commit/36fc8936d18acc5ff3ee664d4f7023d7979bd67a",
-          "committedAt": "2026-06-28T03:41:06Z"
-        },
-        {
-          "repo": "Dammy7942/accordiax",
-          "message": "feat(payment): replace Paystack with Flutterwave for live and test payments",
-          "url": "https://github.com/Dammy7942/accordiax/commit/307c83eac5e472da90d720db32373c65074dfb4d",
-          "committedAt": "2026-06-28T03:05:31Z"
-        }
-      ],
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
       "id": "gidhub",
       "name": "Gideon",
-      "lastActivityAt": "2026-06-25T10:11:10Z",
-      "commitsThisWeek": 3,
-      "recentCommits": [
-        {
-          "repo": "0xGIDHUB/tixano",
-          "message": "Clearer modal redesign on edit payment gate",
-          "url": "https://github.com/0xGIDHUB/tixano/commit/b23289bf43cdac908036f477645b02fdb5122f79",
-          "committedAt": "2026-06-25T10:11:10Z"
-        },
-        {
-          "repo": "0xGIDHUB/tixano",
-          "message": "Fix dashboard ticket tab routing",
-          "url": "https://github.com/0xGIDHUB/tixano/commit/a2996ab659a4ddc0a4a4f8d22cf3cb0e1e734fee",
-          "committedAt": "2026-06-24T11:53:02Z"
-        },
-        {
-          "repo": "0xGIDHUB/tixano",
-          "message": "Ticket mint success modal with clear next-step guidance for users",
-          "url": "https://github.com/0xGIDHUB/tixano/commit/c47671e857c573bf99ed84807c5cb2dfd87a68c6",
-          "committedAt": "2026-06-23T00:49:46Z"
-        }
-      ],
+      "lastActivityAt": "2026-07-04T10:43:57Z",
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
@@ -91,38 +46,20 @@
     {
       "id": "harrie",
       "name": "Harrie",
-      "lastActivityAt": "2026-06-27T10:52:49Z",
-      "commitsThisWeek": 8,
+      "lastActivityAt": "2026-07-08T08:40:02Z",
+      "commitsThisWeek": 2,
       "recentCommits": [
         {
           "repo": "IamHarrie-Labs/beni",
-          "message": "fix(telegram): read wallet state from BENI_STATE_JSON env var for Railway deploy",
-          "url": "https://github.com/IamHarrie-Labs/beni/commit/2863dd2479b4e2b16b4a6191b638c206634ba8f0",
-          "committedAt": "2026-06-27T10:52:49Z"
+          "message": "feat(deploy): connected wallet is now the agent - no custodial key\n\napi/deploy.js rewritten to the same build/sign/submit pattern as\napi/fee.js: the server builds an unsigned deploy tx from the user's own\nUTxOs, the browser signs it via CIP-30, the server assembles and\nsubmits. The connected wallet's own credential becomes agent_pkh, so\nevery dashboard-deployed wallet is genuinely controlled by whoever\ndeployed it - no shared AGENT_PRIVATE_KEY in Vercel signing on anyone's\nbehalf.\n\napi/fee.js: treasuryAddress() now requires BENI_TREASURY_ADDRESS\ndirectly instead of falling back to an address derived from\nAGENT_PRIVATE_KEY (that fallback no longer makes sense once deploys\naren't custodial). BENI_TREASURY_ADDRESS must be set in Vercel for fee\npayments to keep working.\n\ndashboard.jsx: DeployModal now asks for a second wallet signature\nafter the fee (fee tx, then deploy tx), and its copy no longer claims\nthe wallet deploys with a Vercel-configured key.\n\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>",
+          "url": "https://github.com/IamHarrie-Labs/beni/commit/9e3a08cc2939dc92d12a16a5ea3f624f1704d233",
+          "committedAt": "2026-07-08T08:40:02Z"
         },
         {
           "repo": "IamHarrie-Labs/beni",
-          "message": "feat(integrations): Telegram bot for agent wallet control\n\nA human-in-the-loop control surface over beni-sdk: /status, /pay,\n/pending, /freeze. Under-cap spends send immediately; above-cap spends\nqueue and surface Approve/Reject inline buttons that co-sign on-chain.\nVerified the SDK wiring against the live Preview wallet.\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>",
-          "url": "https://github.com/IamHarrie-Labs/beni/commit/326b70cc798128c3c42a2bc41fb94ee84daa211d",
-          "committedAt": "2026-06-27T09:53:04Z"
-        },
-        {
-          "repo": "IamHarrie-Labs/beni",
-          "message": "feat(api): friendly error for stale-UTxO race on rapid re-deploy\n\nAfter a deploy spends the agent's change UTxO, Blockfrost's indexer lags\n~30-60s. A second deploy in that window builds against a spent input and\nthe node returns BadInputsUTxO. Translate that Conway error blob into a\nclear 'wait and retry' message instead of surfacing raw chain internals.\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>",
-          "url": "https://github.com/IamHarrie-Labs/beni/commit/80b94d000e3316a9a1cc3b937d5b72f2f1747c98",
-          "committedAt": "2026-06-27T09:05:55Z"
-        },
-        {
-          "repo": "IamHarrie-Labs/beni",
-          "message": "chore: sync wallet state to live UI-deployed wallet (f556 policy)\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>",
-          "url": "https://github.com/IamHarrie-Labs/beni/commit/aa0f7c25425746fbab1fa521b95823c0bc09faf7",
-          "committedAt": "2026-06-27T08:58:36Z"
-        },
-        {
-          "repo": "IamHarrie-Labs/beni",
-          "message": "fix(api): set type:module so Lucid WASM imports survive in serverless\n\nVercel was transpiling the ESM functions to CommonJS, which broke\n@lucid-evolution/lucid's dynamic WASM imports and crashed /api/deploy\nat module load (FUNCTION_INVOCATION_FAILED).\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>",
-          "url": "https://github.com/IamHarrie-Labs/beni/commit/5864ea926bb354ebdedd7a599e6c94e417b88c01",
-          "committedAt": "2026-06-27T08:52:21Z"
+          "message": "fix(security): require agent signature on every Spend (agent_pkh)\n\nThe validator only checked spending caps, never who was allowed to spend -\nanyone watching the chain could construct a valid Spend transaction and\ndrain a Beni wallet to themselves, up to the per-tx cap. Adds agent_pkh\nto the datum and requires it in tx.extra_signatories for every Spend.\n\nAlso fixed the test suite, which had never actually run: tests/ is not\na directory Aiken scans (only lib/ and validators/), so this whole test\nfile was silently skipped since day one. Moved it into validators/,\nextracted the validator body into a plain spend_logic() function so it's\ncallable from tests, and fixed two latent test bugs this exposed\n(last_window_start and window_spent were computed wrong in two cases).\nAll 13 tests now actually execute and pass.\n\nSDK (beni-sdk@0.1.2, published): GuardrailConfig.agentPkh required,\nagentSpend adds the signer key, datum schema/CBOR updated.\n\nMigration: reclaimed the real ADA from the old vulnerable mainnet\ncontract via OwnerAction and redeployed under the fixed validator.\nRedeployed the Preview testnet demo wallet the same way. Dashboard\n(api/deploy.js, api/agent-state.js) and the Telegram bot updated to\nthe new CBOR/schema and to set agent_pkh at deploy time.\n\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>",
+          "url": "https://github.com/IamHarrie-Labs/beni/commit/4dd4ea0ba3746c97ac4893e56384f9d86c78f639",
+          "committedAt": "2026-07-08T08:11:31Z"
         }
       ],
       "error": null
@@ -138,34 +75,15 @@
     {
       "id": "armanabid",
       "name": "Abid",
-      "lastActivityAt": "2026-06-28T10:46:10Z",
-      "commitsThisWeek": 3,
-      "recentCommits": [
-        {
-          "repo": "ArmanAbid/ChainTask",
-          "message": "team-only arbitrator + deadlineDays on jobs + marketplace redesign",
-          "url": "https://github.com/ArmanAbid/ChainTask/commit/607bd2e6d64642641423b0403f3abcb926280ee5",
-          "committedAt": "2026-06-28T10:46:10Z"
-        },
-        {
-          "repo": "ArmanAbid/ChainTask",
-          "message": "off-chain proposals via IPFS + wire JobDetail actions",
-          "url": "https://github.com/ArmanAbid/ChainTask/commit/43fbaa5693f08d54b5fb5a8c647de3faaec17e26",
-          "committedAt": "2026-06-28T10:46:05Z"
-        },
-        {
-          "repo": "ArmanAbid/ChainTask",
-          "message": "wire refund, builderWithdraw, dispute, resolve tx builders",
-          "url": "https://github.com/ArmanAbid/ChainTask/commit/51ed15315860602519c32e6e4dc373aae49517b2",
-          "committedAt": "2026-06-28T10:43:33Z"
-        }
-      ],
+      "lastActivityAt": "2026-07-05T09:37:30Z",
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
       "id": "gamechanger",
       "name": "Adriano",
-      "lastActivityAt": "2026-06-12T15:44:34Z",
+      "lastActivityAt": "2026-07-04T07:30:16Z",
       "commitsThisWeek": 0,
       "recentCommits": [],
       "error": null
@@ -174,15 +92,8 @@
       "id": "yungslaiz",
       "name": "Blessed David",
       "lastActivityAt": "2026-06-26T22:49:20Z",
-      "commitsThisWeek": 1,
-      "recentCommits": [
-        {
-          "repo": "YungSlaiz53/GNXT",
-          "message": " week 9: implement idempotent slug-based survey creation, add Firebase Auth redirect fallback, and Admin Survey Management",
-          "url": "https://github.com/YungSlaiz53/GNXT/commit/4b38b5759c64f24c7f49f431a22a73ca00313a73",
-          "committedAt": "2026-06-26T22:49:20Z"
-        }
-      ],
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
@@ -196,40 +107,9 @@
     {
       "id": "murmurations",
       "name": "Nori",
-      "lastActivityAt": "2026-06-27T03:02:54Z",
-      "commitsThisWeek": 13,
-      "recentCommits": [
-        {
-          "repo": "murmurations-ai/flyway",
-          "message": "Merge pull request #24 from murmurations-ai/feat/recognize-over-https\n\nS+11: recognize a peer at a distance over HTTPS (ADR-0011, Tier 6)",
-          "url": "https://github.com/murmurations-ai/flyway/commit/00896b6fdaa643d2ca2907bacf810cd023aee448",
-          "committedAt": "2026-06-27T03:02:54Z"
-        },
-        {
-          "repo": "murmurations-ai/flyway",
-          "message": "refactor(security+core): act on architecture/security/QA review of v0.2\n\nA 3-agent review (architecture, security, QA) of the v0.2 remote work\nsurfaced real issues; this acts on the reasonable ones.\n\nSecurity (the network code is the first outbound surface):\n  - SSRF guard (http.ts) now parses IP literals and blocks IPv6 forms that\n    EMBED a private IPv4 — IPv4-mapped (::ffff:), NAT64 (64:ff9b::), 6to4\n    (2002:) — plus site-local/multicast, not just textual prefixes (H-1).\n  - Redirects are followed manually (redirect:'manual') and EACH hop is\n    validated before it is contacted, closing the pre-connection SSRF and\n    the final-hop-only / http-downgrade gaps (H-2). DNS rebinding remains\n    the sole documented residual.\n\nCorrectness:\n  - propose.ts refuses a tensionAntecedent that diverges from the tension\n    the staging chain already carries, so originTensionId can't record a\n    provenance link the chain didn't descend from (F1).\n  - resolve.ts wraps did:web percent-decoding so malformed input yields a\n    diagnosable flyway error, not a raw URIError (F2).\n  - localFsTransport now rejects (never throws sync) on a write failure,\n    honouring its Promise contract; receipt.at is wall-clock delivery time,\n    not the signed sentAt (F3, arch #2).\n  - recognize.ts treats empty/whitespace locators as absent (F6).\n\nCLI: recognize gets its own --allow-private-host flag instead of reusing\nthe directory-named one (arch #3 / sec M-2).\n\n+19 tests incl. a new http.test.ts (scheme, IPv4/IPv6 ranges, H-1 bypass\naddresses, H-2 redirect cases, cap boundary, timeout). Full suite 417.\nNew core files lint-clean; no new lint on touched legacy files.\n\nDeferred to v0.2b (noted): DeliveryTarget.inboxRelPath and renaming the\nsenders' inboxPath result field — both correct for local-fs today, cheap\nto revisit when github-pr adds a second transport.\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01ULwXbPnpnFwjMSK93Runac",
-          "url": "https://github.com/murmurations-ai/flyway/commit/7f70fce0cf0b0e7ff4943ff8124167da264d9fad",
-          "committedAt": "2026-06-27T03:02:27Z"
-        },
-        {
-          "repo": "murmurations-ai/flyway",
-          "message": "docs: accept ADR-0011 (did:web resolution); Tier 6 + S+11 status\n\nADR-0011 settles the did:web → raw.githubusercontent resolution convention\nfor github.com peers. Tier 6 walkthrough proves the remote discover→\nrecognize flow (test-backed). status.md: S+10/S+11 rows, ADR 10→11, 6\nwalkthroughs, 398 tests/28 files, recognize tool row + pending row. Spec\nopen-decision #2 marked accepted.\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01ULwXbPnpnFwjMSK93Runac",
-          "url": "https://github.com/murmurations-ai/flyway/commit/193846c1dafd7a560d327b9be0d16b69c38567c7",
-          "committedAt": "2026-06-27T02:46:44Z"
-        },
-        {
-          "repo": "murmurations-ai/flyway",
-          "message": "feat(core+cli): S+11 — recognize a peer at a distance over HTTPS\n\nResolve a peer's identity from its did:web URL and recognize it with no\nshared filesystem — the first fully remote flow (discover + recognize).\nCloses the \"recognition at a distance\" gap Tier 1 left open.\n\ncore:\n  - http.ts — shared, audited HTTPS fetch (assertPublicHttpsUrl +\n    fetchTextOverHttps): HTTPS-only, SSRF guard (loopback/RFC-1918/link-\n    local + localhost), size cap, timeout, redirect re-validation. Extracted\n    from discover.ts so directory fetch and DID resolution share one path.\n  - resolve.ts — didWebResolutionUrls maps did:web:github.com:owner:repo to\n    its raw.githubusercontent identity artifacts (ADR-0011);\n    resolvePeerIdentity fetches + id-sanity-checks them. Pre-trust: the\n    crypto verification still happens in recognizePeer.\n  - discover.ts now consumes http.ts (re-exports assertPublicHttpsUrl for\n    compat); behavior unchanged.\n\ncli: `flyway recognize <did:web:…> [--branch main]` resolves over HTTPS;\na non-did argument stays a local path (exactly one). Same signed\nrecognition entry + peer cache as local recognition — source of bytes is\ninvisible downstream.\n\n+12 tests (resolve unit + remote-recognize, incl. a tamper-rejected case\nproving verification still gates remote artifacts). Full suite green (398).\nNew files lint-clean. See ADR-0011.\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01ULwXbPnpnFwjMSK93Runac",
-          "url": "https://github.com/murmurations-ai/flyway/commit/8dfadaf4d9bebbd16f35c308363632ab79dfe960",
-          "committedAt": "2026-06-27T02:46:44Z"
-        },
-        {
-          "repo": "murmurations-ai/flyway",
-          "message": "Merge pull request #23 from murmurations-ai/feat/signal-transport-seam\n\nS+10: SignalTransport seam (v0.2a, part 2)",
-          "url": "https://github.com/murmurations-ai/flyway/commit/58ddf6966e66b7921726ad622f33e754fccf793a",
-          "committedAt": "2026-06-27T02:25:20Z"
-        }
-      ],
+      "lastActivityAt": "2026-07-02T15:39:12Z",
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
@@ -243,38 +123,20 @@
     {
       "id": "trike",
       "name": "Anita",
-      "lastActivityAt": "2026-06-28T11:18:20Z",
-      "commitsThisWeek": 10,
+      "lastActivityAt": "2026-07-10T14:15:33Z",
+      "commitsThisWeek": 2,
       "recentCommits": [
         {
           "repo": "3rike12/3rike-Mobility_",
-          "message": "feat: live on-chain demo scripts — mint TRK-4 + tADA transfer\n\n- live-mint.py: mints TRK-4 token on Cardano Preprod, shows explorer link\n- live-transfer.py: sends real tADA between addresses\n- Both scripts print step-by-step progress for video recording\n- live-mint.py auto-updates deployed-addresses.json",
-          "url": "https://github.com/3rike12/3rike-Mobility_/commit/0f09287bbbb3b1734b820d866f40fae71d99d0e3",
-          "committedAt": "2026-06-28T11:18:20Z"
+          "message": "chore: remove abandoned EVM contracts, Midnight SDK, old deploy/mint scripts",
+          "url": "https://github.com/3rike12/3rike-Mobility_/commit/87acf3e98f16cb3ee5c0f833a1476b725385edf0",
+          "committedAt": "2026-07-10T14:15:33Z"
         },
         {
           "repo": "3rike12/3rike-Mobility_",
-          "message": "feat: investor registration flow — role picker page, URL-based role in create-account\n\n- Add /role-select page with driver vs investor choice\n- Onboarding now navigates to /role-select instead of /create-account-rider\n- CreateAccountForm reads role from ?role= query param (defaults to driver)\n- /create-account and /create-account-rider both route to CreateAccountForm\n- After registration, investors navigate to /investor, drivers to /driver",
-          "url": "https://github.com/3rike12/3rike-Mobility_/commit/82692d618c9dd3ce08de4b52f39497c721477dc1",
-          "committedAt": "2026-06-28T10:26:25Z"
-        },
-        {
-          "repo": "3rike12/3rike-Mobility_",
-          "message": "feat: role-based routing — RequireRole guard, investor dashboard, login redirects\n\n- Add RequireRole component (lib/require-role.tsx) for role-gated routes\n- Add useDashboardBase hook returning /driver or /investor based on role\n- Create investor dashboard with portfolio summary, holdings, quick actions\n- Wrap /driver/* with RequireRole(['driver']), /investor/* with RequireRole(['investor'])\n- Fix login to navigate investors to /investor, drivers to /driver\n- Update BottomNav to be role-aware (hide Pay 3rike Ai for investors, show Browse Marketplace)",
-          "url": "https://github.com/3rike12/3rike-Mobility_/commit/302642d1879de1d26a40b403ff42d80da62cec78",
-          "committedAt": "2026-06-28T10:20:00Z"
-        },
-        {
-          "repo": "3rike12/3rike-Mobility_",
-          "message": "fix: separate driver/investor UI + realistic investment amounts\n\n- Dashboard: replace 'Investment' tile with 'My 3rike' (drivers ride, don't invest)\n- Mock pools: 0/share, realistic tricycle prices (,500-,200)\n- Fix pricePerShare conversion from raw 6dp to USD\n- Re-seed demo data with correct 0/share amounts\n- Paycrest disabled (API unreachable, not needed for demo)",
-          "url": "https://github.com/3rike12/3rike-Mobility_/commit/be202c71679663d5a0ccc53a979ed70470a7d022",
-          "committedAt": "2026-06-28T09:54:12Z"
-        },
-        {
-          "repo": "3rike12/3rike-Mobility_",
-          "message": "chore: update Midnight contract dependencies and deploy tooling\n\n- package.json/lock: updated wallet-sdk deps\n- deploy.ts: debugged for barrel package API, witness support\n- check-balance.ts: standalone balance checker with sync timeout\n- .env.preprod: deploy config for old wallet seed",
-          "url": "https://github.com/3rike12/3rike-Mobility_/commit/f3fae7d52b2d9ebc80bebed4147a38ccf4d6f5a2",
-          "committedAt": "2026-06-28T09:16:54Z"
+          "message": "chore: add mainnet wallet to gitignore",
+          "url": "https://github.com/3rike12/3rike-Mobility_/commit/b5f548629b662d9abe686ad64a2c0c8374fc979b",
+          "committedAt": "2026-07-10T14:13:36Z"
         }
       ],
       "error": null
@@ -282,77 +144,40 @@
     {
       "id": "mobrai",
       "name": "Marcio",
-      "lastActivityAt": "2026-06-26T12:26:42Z",
-      "commitsThisWeek": 15,
-      "recentCommits": [
-        {
-          "repo": "mobr-ai/cap-pie",
-          "message": "Merge commit '8b9df6f39949dabaa3b7060fc9da6eb7b25f02e8'",
-          "url": "https://github.com/mobr-ai/cap-pie/commit/e0b5187a2c52ba7861d206d3712470a592117e63",
-          "committedAt": "2026-06-26T12:26:42Z"
-        },
-        {
-          "repo": "mobr-ai/cap-pie",
-          "message": "Merge commit '4423ce7d9241abbd47657ea32a5031d42203d2df'",
-          "url": "https://github.com/mobr-ai/cap-pie/commit/b5d135603aba4046aa2ffe77d44fffcda56e6703",
-          "committedAt": "2026-06-26T12:26:29Z"
-        },
-        {
-          "repo": "mobr-ai/cap-pie",
-          "message": "feat: add static CAP agent cube avatar",
-          "url": "https://github.com/mobr-ai/cap-pie/commit/8b9df6f39949dabaa3b7060fc9da6eb7b25f02e8",
-          "committedAt": "2026-06-25T20:57:54Z"
-        },
-        {
-          "repo": "mobr-ai/cap-pie",
-          "message": "fix: add beta-user query alert channel",
-          "url": "https://github.com/mobr-ai/cap-pie/commit/4423ce7d9241abbd47657ea32a5031d42203d2df",
-          "committedAt": "2026-06-25T19:06:37Z"
-        },
-        {
-          "repo": "mobr-ai/cap-pie",
-          "message": "fix: split beta query admin notifications",
-          "url": "https://github.com/mobr-ai/cap-pie/commit/fbb335e11b4aded4d1674ae722f1b5dc9675a3f3",
-          "committedAt": "2026-06-25T19:06:27Z"
-        }
-      ],
+      "lastActivityAt": "2026-06-29T10:41:57Z",
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
       "id": "newman5",
       "name": "Newman",
-      "lastActivityAt": "2026-06-27T12:44:08Z",
-      "commitsThisWeek": 6,
+      "lastActivityAt": "2026-07-09T15:32:47Z",
+      "commitsThisWeek": 4,
       "recentCommits": [
         {
           "repo": "Newman5/builder-season-playbook",
           "message": "Update builder activity data",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/14234ac535f352a3645fbe4c7fef730be0c5c71b",
-          "committedAt": "2026-06-27T12:44:08Z"
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/f78d7f3cbf4d4ad57bbfe89ae464ccfdee6df095",
+          "committedAt": "2026-07-09T15:32:47Z"
         },
         {
           "repo": "Newman5/builder-season-playbook",
           "message": "Update builder activity data",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/341bc1c24451a2ecc22227b07bd4a1dc13c00c9a",
-          "committedAt": "2026-06-26T12:59:52Z"
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/c59ea3201976acf2d43cf548410bf074c68ed5a2",
+          "committedAt": "2026-07-08T14:40:22Z"
         },
         {
           "repo": "Newman5/builder-season-playbook",
           "message": "Update builder activity data",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/87331e2890219d7fd4574d38c59fd20c7aebeb1f",
-          "committedAt": "2026-06-25T13:04:03Z"
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/18714b5fd6b80283a38903bb449bbbd6e373b9f9",
+          "committedAt": "2026-07-07T15:13:59Z"
         },
         {
           "repo": "Newman5/builder-season-playbook",
           "message": "Update builder activity data",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/8113bb19a138d6473ce2d7a92c88c9510e9bc4a0",
-          "committedAt": "2026-06-24T13:04:12Z"
-        },
-        {
-          "repo": "Newman5/builder-season-playbook",
-          "message": "Update builder activity data",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/9cc9602f4896c162a7a5953937dc5bb86ea43ac8",
-          "committedAt": "2026-06-23T13:16:03Z"
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/44d1750191d9343b9e3ee2f8aed3f5064ccf5f0c",
+          "committedAt": "2026-07-06T15:54:14Z"
         }
       ],
       "error": null
@@ -368,14 +193,14 @@
     {
       "id": "devfreeguy",
       "name": "Daniel",
-      "lastActivityAt": "2026-06-27T10:25:14Z",
+      "lastActivityAt": "2026-07-06T10:27:49Z",
       "commitsThisWeek": 1,
       "recentCommits": [
         {
           "repo": "devfreeguy/skill-swap",
-          "message": "chore(ui): tweak some ui in the landing page and app",
-          "url": "https://github.com/devfreeguy/skill-swap/commit/e94656db114176e848cb1d828db8b3d7749343b0",
-          "committedAt": "2026-06-27T10:25:14Z"
+          "message": "feat(public): How It Works page rendered from JSON markdown\n\nAdd a public /how-it-works page whose content lives in JSON and is\nrendered through a small, dependency-free Markdown renderer.\n\n- data/how-it-works.json: page content as structured sections, each\nbody authored in Markdown (covers the swap flow, the 2 ADA refundable\nfee, E2E messaging, and on-chain proofs).\n- lib/markdown.tsx: renderMarkdown() turns Markdown into React elements\n(headings, paragraphs, ordered/unordered lists, blockquotes, rules,\ninline bold/italic/code/links). No new dependency, no\ndangerouslySetInnerHTML — XSS-safe by construction.\n- app/how-it-works/page.tsx: server component with a hero, sticky\ntable-of-contents, and the rendered article, wrapped in the public\nheader/footer. Public route (not gated by proxy.ts).\n\nNav + footer:\n- Header/footer \"How it Works\" now links to /how-it-works; the #ledger\nand #discovery anchors are made absolute (/#…) so they resolve from\nany page.\n- Footer: social icons moved into the links column; bottom bar now holds\nonly the tagline and copyright.",
+          "url": "https://github.com/devfreeguy/skill-swap/commit/cb2bc3834e925c5813767c2a94edc97cfdeaef30",
+          "committedAt": "2026-07-06T10:27:49Z"
         }
       ],
       "error": null
@@ -383,28 +208,71 @@
     {
       "id": "haulink",
       "name": "Abdulazeez",
-      "lastActivityAt": "2026-06-21T15:06:29Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-07-08T13:04:22Z",
+      "commitsThisWeek": 6,
+      "recentCommits": [
+        {
+          "repo": "FoladDTechie/Haulink",
+          "message": "Merge pull request #16 from FoladDTechie/HAUL-22-AZB\n\nHaul 22 azb",
+          "url": "https://github.com/FoladDTechie/Haulink/commit/42c8c130a3674e258a02866c4d530be3ce97f8d3",
+          "committedAt": "2026-07-08T13:04:22Z"
+        },
+        {
+          "repo": "FoladDTechie/Haulink",
+          "message": "feat: slot availability display, pre-payment validation, race condition handling",
+          "url": "https://github.com/FoladDTechie/Haulink/commit/5abe39b7c1aaec053b628455861609b9eb4dec3f",
+          "committedAt": "2026-07-08T13:02:03Z"
+        },
+        {
+          "repo": "FoladDTechie/Haulink",
+          "message": "feat: slot availability display, pre-payment validation, race condition handling",
+          "url": "https://github.com/FoladDTechie/Haulink/commit/2e144b8fb587daa4d856a8c7534fec15b2a389a5",
+          "committedAt": "2026-07-08T13:00:59Z"
+        },
+        {
+          "repo": "FoladDTechie/Haulink",
+          "message": "Merge pull request #15 from FoladDTechie/HAUL-22-AZB\n\nHaul 22 azb",
+          "url": "https://github.com/FoladDTechie/Haulink/commit/2cb3c02f70b397cdbcf0b558033e73e829b5dd8f",
+          "committedAt": "2026-07-07T15:44:12Z"
+        },
+        {
+          "repo": "FoladDTechie/Haulink",
+          "message": "fix: pickup date validation, preprod wallet block, box dimensions, phone format",
+          "url": "https://github.com/FoladDTechie/Haulink/commit/0cce28bf6f33f452b5d177f471f3043d3fe06f5e",
+          "committedAt": "2026-07-07T14:48:45Z"
+        }
+      ],
       "error": null
     },
     {
       "id": "opa007i",
       "name": "Opa",
-      "lastActivityAt": "2026-06-27T15:10:16Z",
-      "commitsThisWeek": 2,
+      "lastActivityAt": "2026-07-08T16:09:33Z",
+      "commitsThisWeek": 4,
       "recentCommits": [
         {
           "repo": "opa1/the-quest",
-          "message": "chore: added Trading to list of category",
-          "url": "https://github.com/opa1/the-quest/commit/42acc283d6a58d738a47706d8fdd8a98a8ae06fa",
-          "committedAt": "2026-06-27T15:10:16Z"
+          "message": "fix: prevent lost/duplicate ADA payouts and add test coverage for tasks.ts\n\nRefunds that failed after a deadline closure were permanently unrecoverable, and neither approveWork nor processDeadlineRefund guarded against a concurrent/retried call sending a duplicate payout. Both now track payout/refund state independently of task/claim status via an atomic compare-and-swap lock, so failures are safely retryable and a payout's tx hash is persisted the instant it succeeds. Also sets up Vitest with an in-memory fake Supabase client and a full test suite for app/actions/tasks.ts to lock in this behavior.",
+          "url": "https://github.com/opa1/the-quest/commit/768f5e319730c3883ee7c1b24dbfcb497ae0f488",
+          "committedAt": "2026-07-08T16:09:33Z"
         },
         {
           "repo": "opa1/the-quest",
-          "message": "feat(missions): expand categories and add searchable category select\n\nAdd 20 new mission categories (Art, Video, Audio, Animation, Photography, Translation, Community, Moderation, Social, Content, Data, Testing, Security,\n  Contracts, DevOps, Product, Strategy, Finance, Legal, Education) and extend the MissionCategory type to match.\n\nReplace the post-mission category dropdown with a searchable combobox (new SearchableSelect Radix Popover component) so the longer list stays usable.",
-          "url": "https://github.com/opa1/the-quest/commit/1979e63cd7a03876322965dfef81605d8446b6b9",
-          "committedAt": "2026-06-27T13:53:47Z"
+          "message": "refactor: use BountyCard in RecentMissions for consistency across realm and missions pages",
+          "url": "https://github.com/opa1/the-quest/commit/719bbf2a9977a1bbf5053dd56ee4908631c19a43",
+          "committedAt": "2026-07-06T22:07:48Z"
+        },
+        {
+          "repo": "opa1/the-quest",
+          "message": "feat: slot progress bars, prominent deadline display on task detail, mission cards, and landing page",
+          "url": "https://github.com/opa1/the-quest/commit/8799dda434a0f4b062e34272ada284dadee76807",
+          "committedAt": "2026-07-06T22:05:35Z"
+        },
+        {
+          "repo": "opa1/the-quest",
+          "message": "feat: multi-claimer post form UI, deadline picker, automatic ADA refund on deadline",
+          "url": "https://github.com/opa1/the-quest/commit/da290d53b326f53ae5ed275ab6961d72121a1d14",
+          "committedAt": "2026-07-06T21:58:40Z"
         }
       ],
       "error": null
@@ -420,7 +288,7 @@
     {
       "id": "muhammedyuguda",
       "name": "Muhammed",
-      "lastActivityAt": "2026-06-21T16:35:01Z",
+      "lastActivityAt": "2026-07-05T17:41:39Z",
       "commitsThisWeek": 0,
       "recentCommits": [],
       "error": null
@@ -428,7 +296,7 @@
     {
       "id": "juanitajaramillo",
       "name": "Juanita",
-      "lastActivityAt": "2026-06-19T21:57:56Z",
+      "lastActivityAt": "2026-07-02T04:01:27Z",
       "commitsThisWeek": 0,
       "recentCommits": [],
       "error": null
@@ -444,38 +312,38 @@
     {
       "id": "alfreditodole",
       "name": "Alfred Itodole",
-      "lastActivityAt": "2026-06-28T02:20:02Z",
-      "commitsThisWeek": 40,
+      "lastActivityAt": "2026-07-10T11:27:59Z",
+      "commitsThisWeek": 31,
       "recentCommits": [
         {
           "repo": "sirxalfred/mosaic-cardano",
-          "message": "Merge pull request #22 from sirXalfred/chore/main\n\nchore: enhance UI and authentication with responsive sidebar and route protection",
-          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/e5a9325fba3a0efce38f59137eca3e0f03bf0df5",
-          "committedAt": "2026-06-28T02:20:02Z"
+          "message": "chore: safe codebase cleanup (docs, debug logs, terminology)",
+          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/e26797086bba4766ba42d2379a12a39c861768c9",
+          "committedAt": "2026-07-10T11:27:59Z"
         },
         {
           "repo": "sirxalfred/mosaic-cardano",
-          "message": "chore(village): remove deprecated archives and create pages",
-          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/cc6b480b573ee8c078f4b4c5643f5e39dc8258b2",
-          "committedAt": "2026-06-28T01:06:25Z"
+          "message": "docs: add PM foundational docs (roadmap, contributing) and improve metadata",
+          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/a9938432f1a9b542f8c6e7e8f13dcb9c95e9a841",
+          "committedAt": "2026-07-10T10:42:21Z"
         },
         {
           "repo": "sirxalfred/mosaic-cardano",
-          "message": "feat(village): add MemberGuard to protect internal village pages",
-          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/6f717de91bb3b44f8234fdd8d191d116dc7133d6",
-          "committedAt": "2026-06-28T01:06:17Z"
+          "message": "Merge pull request #34 from sirXalfred/develop\n\nMerge from `develop` into `main`: Implement RBAC, admin dashboard, and notification features",
+          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/7140c84521a7d4e2f30a95397d09a5c455f89568",
+          "committedAt": "2026-07-08T15:29:05Z"
         },
         {
           "repo": "sirxalfred/mosaic-cardano",
-          "message": "feat(auth): expose public routes (invite, user profiles, villages) through middleware",
-          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/2bffca9f7c15554c13de6a775014cbd4c3aeb74c",
-          "committedAt": "2026-06-28T01:03:45Z"
+          "message": "Merge pull request #35 from sirXalfred/chore/develop2\n\nfeat: add MRR trend chart and improve data safety in admin dashboard",
+          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/5857c976d93be8a5bd213fdccbec98e550dd5f67",
+          "committedAt": "2026-07-08T15:21:46Z"
         },
         {
           "repo": "sirxalfred/mosaic-cardano",
-          "message": "feat(ui): implement responsive mobile sidebar drawer and auto-close on navigate",
-          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/af3e8b94825c2adbdb04e7461b4ff4cdd5bf728e",
-          "committedAt": "2026-06-28T01:02:59Z"
+          "message": "feat: trigger automatic notifation fo rnew users",
+          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/7352755c6d2adf9d75be512848a9bcd8c5f185c0",
+          "committedAt": "2026-07-08T15:18:35Z"
         }
       ],
       "error": null
