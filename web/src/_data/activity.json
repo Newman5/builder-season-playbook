@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-09T15:32:33Z",
+  "generatedAt": "2026-07-10T14:50:30Z",
   "weekStart": "2026-07-06T00:00:00Z",
   "weekEnd": "2026-07-12T23:59:59Z",
   "builders": [
@@ -123,9 +123,22 @@
     {
       "id": "trike",
       "name": "Anita",
-      "lastActivityAt": "2026-07-02T11:38:41Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-07-10T14:15:33Z",
+      "commitsThisWeek": 2,
+      "recentCommits": [
+        {
+          "repo": "3rike12/3rike-Mobility_",
+          "message": "chore: remove abandoned EVM contracts, Midnight SDK, old deploy/mint scripts",
+          "url": "https://github.com/3rike12/3rike-Mobility_/commit/87acf3e98f16cb3ee5c0f833a1476b725385edf0",
+          "committedAt": "2026-07-10T14:15:33Z"
+        },
+        {
+          "repo": "3rike12/3rike-Mobility_",
+          "message": "chore: add mainnet wallet to gitignore",
+          "url": "https://github.com/3rike12/3rike-Mobility_/commit/b5f548629b662d9abe686ad64a2c0c8374fc979b",
+          "committedAt": "2026-07-10T14:13:36Z"
+        }
+      ],
       "error": null
     },
     {
@@ -139,9 +152,15 @@
     {
       "id": "newman5",
       "name": "Newman",
-      "lastActivityAt": "2026-07-08T14:40:22Z",
-      "commitsThisWeek": 3,
+      "lastActivityAt": "2026-07-09T15:32:47Z",
+      "commitsThisWeek": 4,
       "recentCommits": [
+        {
+          "repo": "Newman5/builder-season-playbook",
+          "message": "Update builder activity data",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/f78d7f3cbf4d4ad57bbfe89ae464ccfdee6df095",
+          "committedAt": "2026-07-09T15:32:47Z"
+        },
         {
           "repo": "Newman5/builder-season-playbook",
           "message": "Update builder activity data",
@@ -293,9 +312,21 @@
     {
       "id": "alfreditodole",
       "name": "Alfred Itodole",
-      "lastActivityAt": "2026-07-08T15:29:05Z",
-      "commitsThisWeek": 29,
+      "lastActivityAt": "2026-07-10T11:27:59Z",
+      "commitsThisWeek": 31,
       "recentCommits": [
+        {
+          "repo": "sirxalfred/mosaic-cardano",
+          "message": "chore: safe codebase cleanup (docs, debug logs, terminology)",
+          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/e26797086bba4766ba42d2379a12a39c861768c9",
+          "committedAt": "2026-07-10T11:27:59Z"
+        },
+        {
+          "repo": "sirxalfred/mosaic-cardano",
+          "message": "docs: add PM foundational docs (roadmap, contributing) and improve metadata",
+          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/a9938432f1a9b542f8c6e7e8f13dcb9c95e9a841",
+          "committedAt": "2026-07-10T10:42:21Z"
+        },
         {
           "repo": "sirxalfred/mosaic-cardano",
           "message": "Merge pull request #34 from sirXalfred/develop\n\nMerge from `develop` into `main`: Implement RBAC, admin dashboard, and notification features",
@@ -313,18 +344,6 @@
           "message": "feat: trigger automatic notifation fo rnew users",
           "url": "https://github.com/sirXalfred/mosaic-cardano/commit/7352755c6d2adf9d75be512848a9bcd8c5f185c0",
           "committedAt": "2026-07-08T15:18:35Z"
-        },
-        {
-          "repo": "sirxalfred/mosaic-cardano",
-          "message": "feat: add MRR trend chart to admin dashboard and improve data null-safety across registry pages",
-          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/f83e890d0f12b4f5f64c5428b7f8e7b660f44f88",
-          "committedAt": "2026-07-08T15:07:49Z"
-        },
-        {
-          "repo": "sirxalfred/mosaic-cardano",
-          "message": "Merge pull request #33 from sirXalfred/feat/notifications\n\nfeat: implement RBAC, admin dashboard, and notification features",
-          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/2a8a0e01492fe4aa429c8397d0d66bbb872a7c25",
-          "committedAt": "2026-07-08T03:17:01Z"
         }
       ],
       "error": null
