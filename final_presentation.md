@@ -83,7 +83,7 @@ The product is a digital download available on the Gumroad network. The download
 | 2026-06-21 | Week 8  | https://x.com/newman5/status/2065817949496045844 |
 | 2026-06-28 | Week 9  | https://x.com/newman5/status/2071074884898197745 |
 | 2026-07-05 | Week 10 | https://x.com/newman5/status/2073477979108221205 |
-| 2026-07-12 | Week 11 |                                                  |
+| 2026-07-12 | Week 11 | https://x.com/newman5/status/2075722018993983788 |
 | 2026-07-19 | Week 12 |                                                  |
 
 ## Slide 19: Builder Verification Summary
