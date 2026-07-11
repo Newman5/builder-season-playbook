@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-10T14:50:30Z",
+  "generatedAt": "2026-07-11T13:53:22Z",
   "weekStart": "2026-07-06T00:00:00Z",
   "weekEnd": "2026-07-12T23:59:59Z",
   "builders": [
@@ -22,17 +22,55 @@
     {
       "id": "dammy",
       "name": "Dammy",
-      "lastActivityAt": "2026-06-28T03:41:06Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-07-11T02:22:03Z",
+      "commitsThisWeek": 8,
+      "recentCommits": [
+        {
+          "repo": "Dammy7942/accordiax",
+          "message": "fix(landing): resolve mobile horizontal overflow on hero section\n\n- Add overflow-x: hidden to html and body as page-level safety net\n- Replace negative positioning on hero card shadow with CSS translate\n  so it does not expand scroll width\n- Add min-w-0 to CTA buttons so flex items can shrink on narrow screens\n- Shorten second button label to give more room on small viewports",
+          "url": "https://github.com/Dammy7942/accordiax/commit/b6bf0a901a8237992d479aec23175fda85ca1b86",
+          "committedAt": "2026-07-11T02:22:03Z"
+        },
+        {
+          "repo": "Dammy7942/accordiax",
+          "message": "fix(landing): keep hero CTA buttons side by side on mobile\n\nRemove flex-wrap and use flex-1 so both buttons share the row\nequally on small screens instead of stacking vertically.",
+          "url": "https://github.com/Dammy7942/accordiax/commit/b8aff3b53c8341892f0b3e7f59bb279d9e6378fb",
+          "committedAt": "2026-07-11T02:10:17Z"
+        },
+        {
+          "repo": "Dammy7942/accordiax",
+          "message": "fix(profile): correct useToast destructuring and ToastContainer prop names\n\nuseToast returns dismiss (not removeToast) and ToastContainer\nexpects onDismiss (not removeToast).",
+          "url": "https://github.com/Dammy7942/accordiax/commit/2281e52d3d33de49c30051780e34a3b2d85be4da",
+          "committedAt": "2026-07-11T01:50:54Z"
+        },
+        {
+          "repo": "Dammy7942/accordiax",
+          "message": "feat(admin): shared layout with auth gate, styled sub-pages, fix controlled state\n\n- Create app/admin/layout.tsx with sessionStorage password gate protecting all\n  admin sub-routes; no sub-page is reachable without authenticating first\n- Dark slate-900 header with tab nav linking Appeals, Verification, Escrow,\n  Reports; active tab highlighted with indigo-400 underline via usePathname\n- Sign-out button clears the session and returns to the login screen\n- Remove inline password gate from admin/page.tsx (now handled by layout)\n- Remove consultant verification table from admin/page.tsx and move it to\n  admin/verification/page.tsx alongside the identity document review section\n- Replace all document.getElementById calls in admin/page.tsx with a single\n  Record<string, string> state keyed by agreement ID; every textarea is now\n  a controlled input; resolving state tracks both agreement ID and verdict\n  direction for per-button loading text\n- admin/verification: two sections - Identity Verification with approve/reject\n  and Consultant Trust Status with verified toggle; styled table with badges\n- admin/escrow: add secondary Supabase profile lookup to show consultant names\n  instead of raw UUIDs; graceful fallback to UUID if not found\n- admin/reports: batch-fetch profile names for reported and reporter IDs;\n  renders names where resolved with UUID fallback; per-button acting state\n- All gray-* replaced with slate-* across all admin files",
+          "url": "https://github.com/Dammy7942/accordiax/commit/09c3273aa56e66354d8fd774cbc438ebc881aff8",
+          "committedAt": "2026-07-11T01:34:18Z"
+        },
+        {
+          "repo": "Dammy7942/accordiax",
+          "message": "feat(p4): redesign how-it-works page and ratings history page\n\nhow-it-works (P4a):\n- Replace bare gradient hero with blob-decorated hero matching landing page style\n- Add 3-step card grid with connecting line, identical visual treatment to the\n  landing page how-it-works section\n- Keep detailed 5-step timeline below the overview, improved ring colours to\n  ring-indigo-50/ring-purple-50/ring-blue-50/ring-green-50\n- Upgrade trust section cards with coloured icon backgrounds per item\n- Replace two-button CTA row with dual student/consultant cards matching the\n  landing page dual CTA section\n- Replace minimal single-row footer with full 3-column rich footer matching\n  the landing page footer\n- All slate-* throughout, no gray-*, no em dashes in public-facing text\n\nratings (P4b + P4c):\n- Full rewrite replacing bare unstyled list with structured layout\n- Sticky breadcrumb header with back link routed to the correct dashboard\n  based on the signed-in user role\n- Split into two distinct sections: Ratings you received (consultant view)\n  and Ratings you gave (student view), each with its own empty state card\n- Replace bare star/empty-star unicode characters with a proper SVG StarRating\n  component using amber-400 fill for active stars and slate-200 for inactive\n- All gray-* replaced with slate-* (P4c sweep)\n- profile-completion and role-selection confirmed already clean, no changes needed",
+          "url": "https://github.com/Dammy7942/accordiax/commit/54d8bb29ece73e42f2da78a7a8b7671160b00e78",
+          "committedAt": "2026-07-11T00:34:12Z"
+        }
+      ],
       "error": null
     },
     {
       "id": "gidhub",
       "name": "Gideon",
-      "lastActivityAt": "2026-07-04T10:43:57Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-07-11T07:27:41Z",
+      "commitsThisWeek": 1,
+      "recentCommits": [
+        {
+          "repo": "0xGIDHUB/tixano",
+          "message": "Fix wallet address display issue",
+          "url": "https://github.com/0xGIDHUB/tixano/commit/29d0c26e6270d3ad25ffa30e8ea39562d72fcc43",
+          "committedAt": "2026-07-11T07:27:41Z"
+        }
+      ],
       "error": null
     },
     {
@@ -91,9 +129,34 @@
     {
       "id": "yungslaiz",
       "name": "Blessed David",
-      "lastActivityAt": "2026-06-26T22:49:20Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-07-11T13:11:29Z",
+      "commitsThisWeek": 4,
+      "recentCommits": [
+        {
+          "repo": "YungSlaiz53/GNXT",
+          "message": "add streak migration script, implement CSV export for admin submissions, and update task navigation behavior",
+          "url": "https://github.com/YungSlaiz53/GNXT/commit/98f277b3573ffcb2f5c12954fb70fbd199c635d3",
+          "committedAt": "2026-07-11T13:11:29Z"
+        },
+        {
+          "repo": "YungSlaiz53/GNXT",
+          "message": "Social Missions\" list in the Dashboard sidebar",
+          "url": "https://github.com/YungSlaiz53/GNXT/commit/da48bccbe765d3a9224faac48e09932af1b4b776",
+          "committedAt": "2026-07-11T09:17:10Z"
+        },
+        {
+          "repo": "YungSlaiz53/GNXT",
+          "message": "chore: add targets and etags configuration to .firebaserc",
+          "url": "https://github.com/YungSlaiz53/GNXT/commit/8ca09e4231b452afc7678d3998b35f7d34eb65f5",
+          "committedAt": "2026-07-11T08:25:11Z"
+        },
+        {
+          "repo": "YungSlaiz53/GNXT",
+          "message": "points, referrals, or streaks update in Firestore, the Dashboard will automatically update to reflect the changes",
+          "url": "https://github.com/YungSlaiz53/GNXT/commit/9e4f821f0342c831307ed507435034cdfe62b0ef",
+          "committedAt": "2026-07-11T08:16:27Z"
+        }
+      ],
       "error": null
     },
     {
@@ -107,9 +170,40 @@
     {
       "id": "murmurations",
       "name": "Nori",
-      "lastActivityAt": "2026-07-02T15:39:12Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-07-10T20:51:54Z",
+      "commitsThisWeek": 8,
+      "recentCommits": [
+        {
+          "repo": "murmurations-ai/flyway",
+          "message": "Merge pull request #29 from murmurations-ai/docs/s13-status-sync\n\ndocs: sync status snapshot to S+13; accept ADR-0013",
+          "url": "https://github.com/murmurations-ai/flyway/commit/fe1c4498b50ee99cc09aacd0e397635329bb7164",
+          "committedAt": "2026-07-10T20:51:54Z"
+        },
+        {
+          "repo": "murmurations-ai/flyway",
+          "message": "docs: sync status snapshot to S+13; accept ADR-0013\n\nBring the docs in lockstep now that S+13 (exit-aware status) has landed on\nmain via #27:\n\n- ADR-0013 header Proposed -> Accepted; add it to the adr/README index\n- status.md: S+13 milestone + review-hardening rows; Tier 8 walkthrough row;\n  flyway_status gains \"effective exit state\"; ADR digest +0013; a new\n  \"exit-honor gate\" crypto-properties row; exit-aware struck from pending;\n  at-a-glance -> 13 ADRs / 8 walkthroughs / 445 tests / 12 issues, SHA\n  17f9bc1-era -> 1576181; footer refreshed\n- status.html (visual companion): same figures; intro lede notes reading the\n  exit lifecycle back; flyway_status tool row -> Tier 8; new Tier 8 card;\n  ADR-0013 list item; exit-honor crypto row; timeline extended with an S+13\n  node on the bottom track (HERE moves to S+13); pending/issues updated\n\nSVG re-validated (parses as XML; tag pairs balance). Not visually rendered\nthis session — worth a glance at Fig. 1.\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01UuLQ4vTsDQNgmrxfiQtbbB",
+          "url": "https://github.com/murmurations-ai/flyway/commit/a2c0c7330aea7697e18b032a7128687415241360",
+          "committedAt": "2026-07-10T20:51:14Z"
+        },
+        {
+          "repo": "murmurations-ai/flyway",
+          "message": "Merge pull request #27 from murmurations-ai/feat/exit-aware-status\n\nfeat: S+13 — exit-aware effective status (ADR-0013)",
+          "url": "https://github.com/murmurations-ai/flyway/commit/157618182327f4627da7e4570d2630a3b7cb1792",
+          "committedAt": "2026-07-10T18:39:16Z"
+        },
+        {
+          "repo": "murmurations-ai/flyway",
+          "message": "Merge pull request #26 from murmurations-ai/docs/accept-adr-0012\n\ndocs: accept ADR-0012 + refresh status snapshot through S+12",
+          "url": "https://github.com/murmurations-ai/flyway/commit/1e021a28e45005b62acbc42c55d8d282a91fd685",
+          "committedAt": "2026-07-10T18:39:13Z"
+        },
+        {
+          "repo": "murmurations-ai/flyway",
+          "message": "harden(core): act on security/architecture/design/QA review of S+13\n\nA four-lens review team (security, architecture, design, correctness) found\nthat the inbox-exit trust gate was an incomplete copy of flyway_check's,\nopening a replay path, plus a real correctness bug. Incorporated:\n\n- Cross-peer replay (security): honorInboxExit now enforces the on-disk\n  placement binding — an inbox exit must sit under its sender's subtree —\n  so a peer can't replay another peer's genuinely-signed exit from their own\n  delivery path.\n- Wrong-recipient replay (security/correctness/design): require env.to ==\n  our DID, and re-check the peer-exit target == recipient invariant on read.\n- Outbox authenticity (security): outbox exits are verified against our own\n  DID document + placement, not trusted implicitly by location.\n- Stale-exit-closes-future-agreement (design/correctness): a temporal guard\n  — an exit cannot close an agreement created after it (createdAt > sentAt).\n  Exit doesn't retract recognition, so re-collaboration is first-class.\n- Silent typo (design): a honored project/syndicate exit matching zero\n  agreements is surfaced as an advisory issue.\n- Robustness (correctness): validate exit sentAt; flag unknown agreement\n  state rather than echoing it; never throw on a malformed peers.yaml entry;\n  refuse an inbox exit when recognizedAt is absent.\n\n+8 status tests locking these (31 total): cross-peer + wrong-recipient\nreplay refused, temporal guard, syndicate close, zero-match advisory,\nretroactive refused, outbox non-verification, unknown state. Full suite\ngreen: core 318, mcp 23, cli 95, agent 9.\n\nADR-0013 amended: the fuller gate, the temporal/monotone-latch semantics,\nand the corrected membership reasoning (the exit target is unilateral, so\nthe co-signature is not the defense — the zero-match advisory is). Tier 8\nwalkthrough updated. Deferred (tracked): extract one shared\nverifyInboxSignal predicate so status and check provably can't drift.\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01UuLQ4vTsDQNgmrxfiQtbbB",
+          "url": "https://github.com/murmurations-ai/flyway/commit/0fdb07e8b48c37d4b3b773760c97c2f2082e6524",
+          "committedAt": "2026-07-10T18:11:44Z"
+        }
+      ],
       "error": null
     },
     {
@@ -152,32 +246,38 @@
     {
       "id": "newman5",
       "name": "Newman",
-      "lastActivityAt": "2026-07-09T15:32:47Z",
-      "commitsThisWeek": 4,
+      "lastActivityAt": "2026-07-11T03:33:20Z",
+      "commitsThisWeek": 8,
       "recentCommits": [
+        {
+          "repo": "Newman5/builder-season-playbook",
+          "message": "more changes to final-presentation",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/9702a450a6b7ba48707614ce090922fd97ca06fb",
+          "committedAt": "2026-07-11T03:33:20Z"
+        },
+        {
+          "repo": "Newman5/builder-season-playbook",
+          "message": "Merge branch 'main' of https://github.com/Newman5/builder-season-playbook",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/9fa537cf55c441787e4f1579ee0af39700a9fd79",
+          "committedAt": "2026-07-10T23:17:55Z"
+        },
+        {
+          "repo": "Newman5/builder-season-playbook",
+          "message": "adding documents",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/9cee6655dd8ba528c45d1e11f7b800e8fff1f4a4",
+          "committedAt": "2026-07-10T23:17:52Z"
+        },
+        {
+          "repo": "Newman5/builder-season-playbook",
+          "message": "Update builder activity data",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/ea58dfec5dd688bc8b1d881544f99642a16fae0f",
+          "committedAt": "2026-07-10T14:50:42Z"
+        },
         {
           "repo": "Newman5/builder-season-playbook",
           "message": "Update builder activity data",
           "url": "https://github.com/Newman5/builder-season-playbook/commit/f78d7f3cbf4d4ad57bbfe89ae464ccfdee6df095",
           "committedAt": "2026-07-09T15:32:47Z"
-        },
-        {
-          "repo": "Newman5/builder-season-playbook",
-          "message": "Update builder activity data",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/c59ea3201976acf2d43cf548410bf074c68ed5a2",
-          "committedAt": "2026-07-08T14:40:22Z"
-        },
-        {
-          "repo": "Newman5/builder-season-playbook",
-          "message": "Update builder activity data",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/18714b5fd6b80283a38903bb449bbbd6e373b9f9",
-          "committedAt": "2026-07-07T15:13:59Z"
-        },
-        {
-          "repo": "Newman5/builder-season-playbook",
-          "message": "Update builder activity data",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/44d1750191d9343b9e3ee2f8aed3f5064ccf5f0c",
-          "committedAt": "2026-07-06T15:54:14Z"
         }
       ],
       "error": null
@@ -312,38 +412,38 @@
     {
       "id": "alfreditodole",
       "name": "Alfred Itodole",
-      "lastActivityAt": "2026-07-10T11:27:59Z",
-      "commitsThisWeek": 31,
+      "lastActivityAt": "2026-07-10T20:00:18Z",
+      "commitsThisWeek": 49,
       "recentCommits": [
         {
           "repo": "sirxalfred/mosaic-cardano",
-          "message": "chore: safe codebase cleanup (docs, debug logs, terminology)",
-          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/e26797086bba4766ba42d2379a12a39c861768c9",
-          "committedAt": "2026-07-10T11:27:59Z"
+          "message": "Merge pull request #37 from sirXalfred/develop\n\nMerge branch `develop` into `main`",
+          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/4d71593f0d392e669ccf9707708f9945ccf84484",
+          "committedAt": "2026-07-10T20:00:18Z"
         },
         {
           "repo": "sirxalfred/mosaic-cardano",
-          "message": "docs: add PM foundational docs (roadmap, contributing) and improve metadata",
-          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/a9938432f1a9b542f8c6e7e8f13dcb9c95e9a841",
-          "committedAt": "2026-07-10T10:42:21Z"
+          "message": "Stop tracking tsconfig.tsbuildinfo",
+          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/61d60b64fd6d6564ec8f6554c593303b5ded5c91",
+          "committedAt": "2026-07-10T19:58:05Z"
         },
         {
           "repo": "sirxalfred/mosaic-cardano",
-          "message": "Merge pull request #34 from sirXalfred/develop\n\nMerge from `develop` into `main`: Implement RBAC, admin dashboard, and notification features",
-          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/7140c84521a7d4e2f30a95397d09a5c455f89568",
-          "committedAt": "2026-07-08T15:29:05Z"
+          "message": "Stop tracking tsconfig.tsbuildinfo",
+          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/1056afccf68cbae2db4e0cbfa63af82084369723",
+          "committedAt": "2026-07-10T19:55:31Z"
         },
         {
           "repo": "sirxalfred/mosaic-cardano",
-          "message": "Merge pull request #35 from sirXalfred/chore/develop2\n\nfeat: add MRR trend chart and improve data safety in admin dashboard",
-          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/5857c976d93be8a5bd213fdccbec98e550dd5f67",
-          "committedAt": "2026-07-08T15:21:46Z"
+          "message": "Merge pull request #36 from sirXalfred/chore/develop\n\nrefactor: enhance user experience, reduce new terms that cause friction to onboarding users",
+          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/6723c50a38307c12555383974a1d18e9d830f13c",
+          "committedAt": "2026-07-10T19:49:46Z"
         },
         {
           "repo": "sirxalfred/mosaic-cardano",
-          "message": "feat: trigger automatic notifation fo rnew users",
-          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/7352755c6d2adf9d75be512848a9bcd8c5f185c0",
-          "committedAt": "2026-07-08T15:18:35Z"
+          "message": "feat(platform): upgrade Basic subscription tier limits and streamline global navigation by moving persistent UI toggles to user settings",
+          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/cc25c1cc2ba52cec5b4b7cf595c479a6b7d01be3",
+          "committedAt": "2026-07-10T19:36:08Z"
         }
       ],
       "error": null
