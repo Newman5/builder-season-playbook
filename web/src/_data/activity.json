@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-11T13:53:22Z",
+  "generatedAt": "2026-07-12T13:55:29Z",
   "weekStart": "2026-07-06T00:00:00Z",
   "weekEnd": "2026-07-12T23:59:59Z",
   "builders": [
@@ -61,14 +61,20 @@
     {
       "id": "gidhub",
       "name": "Gideon",
-      "lastActivityAt": "2026-07-11T07:27:41Z",
-      "commitsThisWeek": 1,
+      "lastActivityAt": "2026-07-11T08:14:51Z",
+      "commitsThisWeek": 2,
       "recentCommits": [
         {
           "repo": "0xGIDHUB/tixano",
+          "message": "Added mainnet migration",
+          "url": "https://github.com/0xGIDHUB/tixano/commit/2524e13dec001dcffda176afe3eab191723f399a",
+          "committedAt": "2026-07-11T08:14:51Z"
+        },
+        {
+          "repo": "0xGIDHUB/tixano",
           "message": "Fix wallet address display issue",
-          "url": "https://github.com/0xGIDHUB/tixano/commit/29d0c26e6270d3ad25ffa30e8ea39562d72fcc43",
-          "committedAt": "2026-07-11T07:27:41Z"
+          "url": "https://github.com/0xGIDHUB/tixano/commit/e980c5028b49f47048281bc05593806cf96253ef",
+          "committedAt": "2026-07-08T12:04:36Z"
         }
       ],
       "error": null
@@ -113,9 +119,22 @@
     {
       "id": "armanabid",
       "name": "Abid",
-      "lastActivityAt": "2026-07-05T09:37:30Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-07-12T11:16:28Z",
+      "commitsThisWeek": 2,
+      "recentCommits": [
+        {
+          "repo": "ArmanAbid/ChainTask",
+          "message": "route /wallet /settings /jobs to real pages, drop ComingSoon",
+          "url": "https://github.com/ArmanAbid/ChainTask/commit/2b32cd5adad254e98c83f222a09080a58bf47c55",
+          "committedAt": "2026-07-12T11:16:28Z"
+        },
+        {
+          "repo": "ArmanAbid/ChainTask",
+          "message": "wire Wallet, Settings, My jobs pages to real chain data",
+          "url": "https://github.com/ArmanAbid/ChainTask/commit/9a35bc8efdc746b0ce48bdec084002a65bd9531c",
+          "committedAt": "2026-07-12T11:16:17Z"
+        }
+      ],
       "error": null
     },
     {
@@ -246,9 +265,15 @@
     {
       "id": "newman5",
       "name": "Newman",
-      "lastActivityAt": "2026-07-11T03:33:20Z",
-      "commitsThisWeek": 8,
+      "lastActivityAt": "2026-07-11T13:53:31Z",
+      "commitsThisWeek": 9,
       "recentCommits": [
+        {
+          "repo": "Newman5/builder-season-playbook",
+          "message": "Update builder activity data",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/bb6359c5d4c29c2eed3fd220a0bac5fde545f1f5",
+          "committedAt": "2026-07-11T13:53:31Z"
+        },
         {
           "repo": "Newman5/builder-season-playbook",
           "message": "more changes to final-presentation",
@@ -272,12 +297,6 @@
           "message": "Update builder activity data",
           "url": "https://github.com/Newman5/builder-season-playbook/commit/ea58dfec5dd688bc8b1d881544f99642a16fae0f",
           "committedAt": "2026-07-10T14:50:42Z"
-        },
-        {
-          "repo": "Newman5/builder-season-playbook",
-          "message": "Update builder activity data",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/f78d7f3cbf4d4ad57bbfe89ae464ccfdee6df095",
-          "committedAt": "2026-07-09T15:32:47Z"
         }
       ],
       "error": null
@@ -412,38 +431,38 @@
     {
       "id": "alfreditodole",
       "name": "Alfred Itodole",
-      "lastActivityAt": "2026-07-10T20:00:18Z",
-      "commitsThisWeek": 49,
+      "lastActivityAt": "2026-07-11T14:32:05Z",
+      "commitsThisWeek": 60,
       "recentCommits": [
         {
           "repo": "sirxalfred/mosaic-cardano",
-          "message": "Merge pull request #37 from sirXalfred/develop\n\nMerge branch `develop` into `main`",
-          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/4d71593f0d392e669ccf9707708f9945ccf84484",
-          "committedAt": "2026-07-10T20:00:18Z"
+          "message": "Merge pull request #39 from sirXalfred/develop\n\nMerge branch `develop` into `main`",
+          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/ae99319b06e6b1ae3f992dd68d74626b89448e47",
+          "committedAt": "2026-07-11T14:32:05Z"
         },
         {
           "repo": "sirxalfred/mosaic-cardano",
-          "message": "Stop tracking tsconfig.tsbuildinfo",
-          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/61d60b64fd6d6564ec8f6554c593303b5ded5c91",
-          "committedAt": "2026-07-10T19:58:05Z"
+          "message": "Merge pull request #38 from sirXalfred/feat/docs\n\nfeat: add documentation pages",
+          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/0c9e696a1e4b19b0e5209d62301bfe3b1a9968bf",
+          "committedAt": "2026-07-11T14:26:40Z"
         },
         {
           "repo": "sirxalfred/mosaic-cardano",
-          "message": "Stop tracking tsconfig.tsbuildinfo",
-          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/1056afccf68cbae2db4e0cbfa63af82084369723",
-          "committedAt": "2026-07-10T19:55:31Z"
+          "message": "refactor: improve global loader script robustness and disable LandingView initial opacity animation",
+          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/6255e86e12c26443b1f7f87467b3ed78261d4857",
+          "committedAt": "2026-07-11T14:23:02Z"
         },
         {
           "repo": "sirxalfred/mosaic-cardano",
-          "message": "Merge pull request #36 from sirXalfred/chore/develop\n\nrefactor: enhance user experience, reduce new terms that cause friction to onboarding users",
-          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/6723c50a38307c12555383974a1d18e9d830f13c",
-          "committedAt": "2026-07-10T19:49:46Z"
+          "message": "style: fix issue with logo color",
+          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/4d3e2c7a45c5fefa6de0bafd799b8ad403068c84",
+          "committedAt": "2026-07-11T14:04:36Z"
         },
         {
           "repo": "sirxalfred/mosaic-cardano",
-          "message": "feat(platform): upgrade Basic subscription tier limits and streamline global navigation by moving persistent UI toggles to user settings",
-          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/cc25c1cc2ba52cec5b4b7cf595c479a6b7d01be3",
-          "committedAt": "2026-07-10T19:36:08Z"
+          "message": "Merge branch 'develop' of https://github.com/sirxalfred/mosaic-cardano into feat/docs",
+          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/3b473e2edc19774644d5bad30f4910a9bd6765f9",
+          "committedAt": "2026-07-11T08:06:46Z"
         }
       ],
       "error": null
