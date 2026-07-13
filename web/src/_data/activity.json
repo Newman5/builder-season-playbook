@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-12T13:55:29Z",
-  "weekStart": "2026-07-06T00:00:00Z",
-  "weekEnd": "2026-07-12T23:59:59Z",
+  "generatedAt": "2026-07-13T15:10:49Z",
+  "weekStart": "2026-07-13T00:00:00Z",
+  "weekEnd": "2026-07-19T23:59:59Z",
   "builders": [
     {
       "id": "mhizta",
@@ -23,60 +23,16 @@
       "id": "dammy",
       "name": "Dammy",
       "lastActivityAt": "2026-07-11T02:22:03Z",
-      "commitsThisWeek": 8,
-      "recentCommits": [
-        {
-          "repo": "Dammy7942/accordiax",
-          "message": "fix(landing): resolve mobile horizontal overflow on hero section\n\n- Add overflow-x: hidden to html and body as page-level safety net\n- Replace negative positioning on hero card shadow with CSS translate\n  so it does not expand scroll width\n- Add min-w-0 to CTA buttons so flex items can shrink on narrow screens\n- Shorten second button label to give more room on small viewports",
-          "url": "https://github.com/Dammy7942/accordiax/commit/b6bf0a901a8237992d479aec23175fda85ca1b86",
-          "committedAt": "2026-07-11T02:22:03Z"
-        },
-        {
-          "repo": "Dammy7942/accordiax",
-          "message": "fix(landing): keep hero CTA buttons side by side on mobile\n\nRemove flex-wrap and use flex-1 so both buttons share the row\nequally on small screens instead of stacking vertically.",
-          "url": "https://github.com/Dammy7942/accordiax/commit/b8aff3b53c8341892f0b3e7f59bb279d9e6378fb",
-          "committedAt": "2026-07-11T02:10:17Z"
-        },
-        {
-          "repo": "Dammy7942/accordiax",
-          "message": "fix(profile): correct useToast destructuring and ToastContainer prop names\n\nuseToast returns dismiss (not removeToast) and ToastContainer\nexpects onDismiss (not removeToast).",
-          "url": "https://github.com/Dammy7942/accordiax/commit/2281e52d3d33de49c30051780e34a3b2d85be4da",
-          "committedAt": "2026-07-11T01:50:54Z"
-        },
-        {
-          "repo": "Dammy7942/accordiax",
-          "message": "feat(admin): shared layout with auth gate, styled sub-pages, fix controlled state\n\n- Create app/admin/layout.tsx with sessionStorage password gate protecting all\n  admin sub-routes; no sub-page is reachable without authenticating first\n- Dark slate-900 header with tab nav linking Appeals, Verification, Escrow,\n  Reports; active tab highlighted with indigo-400 underline via usePathname\n- Sign-out button clears the session and returns to the login screen\n- Remove inline password gate from admin/page.tsx (now handled by layout)\n- Remove consultant verification table from admin/page.tsx and move it to\n  admin/verification/page.tsx alongside the identity document review section\n- Replace all document.getElementById calls in admin/page.tsx with a single\n  Record<string, string> state keyed by agreement ID; every textarea is now\n  a controlled input; resolving state tracks both agreement ID and verdict\n  direction for per-button loading text\n- admin/verification: two sections - Identity Verification with approve/reject\n  and Consultant Trust Status with verified toggle; styled table with badges\n- admin/escrow: add secondary Supabase profile lookup to show consultant names\n  instead of raw UUIDs; graceful fallback to UUID if not found\n- admin/reports: batch-fetch profile names for reported and reporter IDs;\n  renders names where resolved with UUID fallback; per-button acting state\n- All gray-* replaced with slate-* across all admin files",
-          "url": "https://github.com/Dammy7942/accordiax/commit/09c3273aa56e66354d8fd774cbc438ebc881aff8",
-          "committedAt": "2026-07-11T01:34:18Z"
-        },
-        {
-          "repo": "Dammy7942/accordiax",
-          "message": "feat(p4): redesign how-it-works page and ratings history page\n\nhow-it-works (P4a):\n- Replace bare gradient hero with blob-decorated hero matching landing page style\n- Add 3-step card grid with connecting line, identical visual treatment to the\n  landing page how-it-works section\n- Keep detailed 5-step timeline below the overview, improved ring colours to\n  ring-indigo-50/ring-purple-50/ring-blue-50/ring-green-50\n- Upgrade trust section cards with coloured icon backgrounds per item\n- Replace two-button CTA row with dual student/consultant cards matching the\n  landing page dual CTA section\n- Replace minimal single-row footer with full 3-column rich footer matching\n  the landing page footer\n- All slate-* throughout, no gray-*, no em dashes in public-facing text\n\nratings (P4b + P4c):\n- Full rewrite replacing bare unstyled list with structured layout\n- Sticky breadcrumb header with back link routed to the correct dashboard\n  based on the signed-in user role\n- Split into two distinct sections: Ratings you received (consultant view)\n  and Ratings you gave (student view), each with its own empty state card\n- Replace bare star/empty-star unicode characters with a proper SVG StarRating\n  component using amber-400 fill for active stars and slate-200 for inactive\n- All gray-* replaced with slate-* (P4c sweep)\n- profile-completion and role-selection confirmed already clean, no changes needed",
-          "url": "https://github.com/Dammy7942/accordiax/commit/54d8bb29ece73e42f2da78a7a8b7671160b00e78",
-          "committedAt": "2026-07-11T00:34:12Z"
-        }
-      ],
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
       "id": "gidhub",
       "name": "Gideon",
-      "lastActivityAt": "2026-07-11T08:14:51Z",
-      "commitsThisWeek": 2,
-      "recentCommits": [
-        {
-          "repo": "0xGIDHUB/tixano",
-          "message": "Added mainnet migration",
-          "url": "https://github.com/0xGIDHUB/tixano/commit/2524e13dec001dcffda176afe3eab191723f399a",
-          "committedAt": "2026-07-11T08:14:51Z"
-        },
-        {
-          "repo": "0xGIDHUB/tixano",
-          "message": "Fix wallet address display issue",
-          "url": "https://github.com/0xGIDHUB/tixano/commit/e980c5028b49f47048281bc05593806cf96253ef",
-          "committedAt": "2026-07-08T12:04:36Z"
-        }
-      ],
+      "lastActivityAt": "2026-07-12T18:28:55Z",
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
@@ -91,21 +47,8 @@
       "id": "harrie",
       "name": "Harrie",
       "lastActivityAt": "2026-07-08T08:40:02Z",
-      "commitsThisWeek": 2,
-      "recentCommits": [
-        {
-          "repo": "IamHarrie-Labs/beni",
-          "message": "feat(deploy): connected wallet is now the agent - no custodial key\n\napi/deploy.js rewritten to the same build/sign/submit pattern as\napi/fee.js: the server builds an unsigned deploy tx from the user's own\nUTxOs, the browser signs it via CIP-30, the server assembles and\nsubmits. The connected wallet's own credential becomes agent_pkh, so\nevery dashboard-deployed wallet is genuinely controlled by whoever\ndeployed it - no shared AGENT_PRIVATE_KEY in Vercel signing on anyone's\nbehalf.\n\napi/fee.js: treasuryAddress() now requires BENI_TREASURY_ADDRESS\ndirectly instead of falling back to an address derived from\nAGENT_PRIVATE_KEY (that fallback no longer makes sense once deploys\naren't custodial). BENI_TREASURY_ADDRESS must be set in Vercel for fee\npayments to keep working.\n\ndashboard.jsx: DeployModal now asks for a second wallet signature\nafter the fee (fee tx, then deploy tx), and its copy no longer claims\nthe wallet deploys with a Vercel-configured key.\n\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>",
-          "url": "https://github.com/IamHarrie-Labs/beni/commit/9e3a08cc2939dc92d12a16a5ea3f624f1704d233",
-          "committedAt": "2026-07-08T08:40:02Z"
-        },
-        {
-          "repo": "IamHarrie-Labs/beni",
-          "message": "fix(security): require agent signature on every Spend (agent_pkh)\n\nThe validator only checked spending caps, never who was allowed to spend -\nanyone watching the chain could construct a valid Spend transaction and\ndrain a Beni wallet to themselves, up to the per-tx cap. Adds agent_pkh\nto the datum and requires it in tx.extra_signatories for every Spend.\n\nAlso fixed the test suite, which had never actually run: tests/ is not\na directory Aiken scans (only lib/ and validators/), so this whole test\nfile was silently skipped since day one. Moved it into validators/,\nextracted the validator body into a plain spend_logic() function so it's\ncallable from tests, and fixed two latent test bugs this exposed\n(last_window_start and window_spent were computed wrong in two cases).\nAll 13 tests now actually execute and pass.\n\nSDK (beni-sdk@0.1.2, published): GuardrailConfig.agentPkh required,\nagentSpend adds the signer key, datum schema/CBOR updated.\n\nMigration: reclaimed the real ADA from the old vulnerable mainnet\ncontract via OwnerAction and redeployed under the fixed validator.\nRedeployed the Preview testnet demo wallet the same way. Dashboard\n(api/deploy.js, api/agent-state.js) and the Telegram bot updated to\nthe new CBOR/schema and to set agent_pkh at deploy time.\n\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>",
-          "url": "https://github.com/IamHarrie-Labs/beni/commit/4dd4ea0ba3746c97ac4893e56384f9d86c78f639",
-          "committedAt": "2026-07-08T08:11:31Z"
-        }
-      ],
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
@@ -120,62 +63,31 @@
       "id": "armanabid",
       "name": "Abid",
       "lastActivityAt": "2026-07-12T11:16:28Z",
-      "commitsThisWeek": 2,
-      "recentCommits": [
-        {
-          "repo": "ArmanAbid/ChainTask",
-          "message": "route /wallet /settings /jobs to real pages, drop ComingSoon",
-          "url": "https://github.com/ArmanAbid/ChainTask/commit/2b32cd5adad254e98c83f222a09080a58bf47c55",
-          "committedAt": "2026-07-12T11:16:28Z"
-        },
-        {
-          "repo": "ArmanAbid/ChainTask",
-          "message": "wire Wallet, Settings, My jobs pages to real chain data",
-          "url": "https://github.com/ArmanAbid/ChainTask/commit/9a35bc8efdc746b0ce48bdec084002a65bd9531c",
-          "committedAt": "2026-07-12T11:16:17Z"
-        }
-      ],
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
       "id": "gamechanger",
       "name": "Adriano",
-      "lastActivityAt": "2026-07-04T07:30:16Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-07-13T12:57:31Z",
+      "commitsThisWeek": 1,
+      "recentCommits": [
+        {
+          "repo": "GameChangerFinance/NeonSoup",
+          "message": "Merge pull request #7 from GameChangerFinance/refactor/detox\n\nRefactor/detox",
+          "url": "https://github.com/GameChangerFinance/NeonSoup/commit/ce3e69a655a33a5d6e1eab0a2d9e10b878555206",
+          "committedAt": "2026-07-13T12:57:31Z"
+        }
+      ],
       "error": null
     },
     {
       "id": "yungslaiz",
       "name": "Blessed David",
       "lastActivityAt": "2026-07-11T13:11:29Z",
-      "commitsThisWeek": 4,
-      "recentCommits": [
-        {
-          "repo": "YungSlaiz53/GNXT",
-          "message": "add streak migration script, implement CSV export for admin submissions, and update task navigation behavior",
-          "url": "https://github.com/YungSlaiz53/GNXT/commit/98f277b3573ffcb2f5c12954fb70fbd199c635d3",
-          "committedAt": "2026-07-11T13:11:29Z"
-        },
-        {
-          "repo": "YungSlaiz53/GNXT",
-          "message": "Social Missions\" list in the Dashboard sidebar",
-          "url": "https://github.com/YungSlaiz53/GNXT/commit/da48bccbe765d3a9224faac48e09932af1b4b776",
-          "committedAt": "2026-07-11T09:17:10Z"
-        },
-        {
-          "repo": "YungSlaiz53/GNXT",
-          "message": "chore: add targets and etags configuration to .firebaserc",
-          "url": "https://github.com/YungSlaiz53/GNXT/commit/8ca09e4231b452afc7678d3998b35f7d34eb65f5",
-          "committedAt": "2026-07-11T08:25:11Z"
-        },
-        {
-          "repo": "YungSlaiz53/GNXT",
-          "message": "points, referrals, or streaks update in Firestore, the Dashboard will automatically update to reflect the changes",
-          "url": "https://github.com/YungSlaiz53/GNXT/commit/9e4f821f0342c831307ed507435034cdfe62b0ef",
-          "committedAt": "2026-07-11T08:16:27Z"
-        }
-      ],
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
@@ -190,39 +102,8 @@
       "id": "murmurations",
       "name": "Nori",
       "lastActivityAt": "2026-07-10T20:51:54Z",
-      "commitsThisWeek": 8,
-      "recentCommits": [
-        {
-          "repo": "murmurations-ai/flyway",
-          "message": "Merge pull request #29 from murmurations-ai/docs/s13-status-sync\n\ndocs: sync status snapshot to S+13; accept ADR-0013",
-          "url": "https://github.com/murmurations-ai/flyway/commit/fe1c4498b50ee99cc09aacd0e397635329bb7164",
-          "committedAt": "2026-07-10T20:51:54Z"
-        },
-        {
-          "repo": "murmurations-ai/flyway",
-          "message": "docs: sync status snapshot to S+13; accept ADR-0013\n\nBring the docs in lockstep now that S+13 (exit-aware status) has landed on\nmain via #27:\n\n- ADR-0013 header Proposed -> Accepted; add it to the adr/README index\n- status.md: S+13 milestone + review-hardening rows; Tier 8 walkthrough row;\n  flyway_status gains \"effective exit state\"; ADR digest +0013; a new\n  \"exit-honor gate\" crypto-properties row; exit-aware struck from pending;\n  at-a-glance -> 13 ADRs / 8 walkthroughs / 445 tests / 12 issues, SHA\n  17f9bc1-era -> 1576181; footer refreshed\n- status.html (visual companion): same figures; intro lede notes reading the\n  exit lifecycle back; flyway_status tool row -> Tier 8; new Tier 8 card;\n  ADR-0013 list item; exit-honor crypto row; timeline extended with an S+13\n  node on the bottom track (HERE moves to S+13); pending/issues updated\n\nSVG re-validated (parses as XML; tag pairs balance). Not visually rendered\nthis session — worth a glance at Fig. 1.\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01UuLQ4vTsDQNgmrxfiQtbbB",
-          "url": "https://github.com/murmurations-ai/flyway/commit/a2c0c7330aea7697e18b032a7128687415241360",
-          "committedAt": "2026-07-10T20:51:14Z"
-        },
-        {
-          "repo": "murmurations-ai/flyway",
-          "message": "Merge pull request #27 from murmurations-ai/feat/exit-aware-status\n\nfeat: S+13 — exit-aware effective status (ADR-0013)",
-          "url": "https://github.com/murmurations-ai/flyway/commit/157618182327f4627da7e4570d2630a3b7cb1792",
-          "committedAt": "2026-07-10T18:39:16Z"
-        },
-        {
-          "repo": "murmurations-ai/flyway",
-          "message": "Merge pull request #26 from murmurations-ai/docs/accept-adr-0012\n\ndocs: accept ADR-0012 + refresh status snapshot through S+12",
-          "url": "https://github.com/murmurations-ai/flyway/commit/1e021a28e45005b62acbc42c55d8d282a91fd685",
-          "committedAt": "2026-07-10T18:39:13Z"
-        },
-        {
-          "repo": "murmurations-ai/flyway",
-          "message": "harden(core): act on security/architecture/design/QA review of S+13\n\nA four-lens review team (security, architecture, design, correctness) found\nthat the inbox-exit trust gate was an incomplete copy of flyway_check's,\nopening a replay path, plus a real correctness bug. Incorporated:\n\n- Cross-peer replay (security): honorInboxExit now enforces the on-disk\n  placement binding — an inbox exit must sit under its sender's subtree —\n  so a peer can't replay another peer's genuinely-signed exit from their own\n  delivery path.\n- Wrong-recipient replay (security/correctness/design): require env.to ==\n  our DID, and re-check the peer-exit target == recipient invariant on read.\n- Outbox authenticity (security): outbox exits are verified against our own\n  DID document + placement, not trusted implicitly by location.\n- Stale-exit-closes-future-agreement (design/correctness): a temporal guard\n  — an exit cannot close an agreement created after it (createdAt > sentAt).\n  Exit doesn't retract recognition, so re-collaboration is first-class.\n- Silent typo (design): a honored project/syndicate exit matching zero\n  agreements is surfaced as an advisory issue.\n- Robustness (correctness): validate exit sentAt; flag unknown agreement\n  state rather than echoing it; never throw on a malformed peers.yaml entry;\n  refuse an inbox exit when recognizedAt is absent.\n\n+8 status tests locking these (31 total): cross-peer + wrong-recipient\nreplay refused, temporal guard, syndicate close, zero-match advisory,\nretroactive refused, outbox non-verification, unknown state. Full suite\ngreen: core 318, mcp 23, cli 95, agent 9.\n\nADR-0013 amended: the fuller gate, the temporal/monotone-latch semantics,\nand the corrected membership reasoning (the exit target is unilateral, so\nthe co-signature is not the defense — the zero-match advisory is). Tier 8\nwalkthrough updated. Deferred (tracked): extract one shared\nverifyInboxSignal predicate so status and check provably can't drift.\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01UuLQ4vTsDQNgmrxfiQtbbB",
-          "url": "https://github.com/murmurations-ai/flyway/commit/0fdb07e8b48c37d4b3b773760c97c2f2082e6524",
-          "committedAt": "2026-07-10T18:11:44Z"
-        }
-      ],
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
@@ -237,21 +118,8 @@
       "id": "trike",
       "name": "Anita",
       "lastActivityAt": "2026-07-10T14:15:33Z",
-      "commitsThisWeek": 2,
-      "recentCommits": [
-        {
-          "repo": "3rike12/3rike-Mobility_",
-          "message": "chore: remove abandoned EVM contracts, Midnight SDK, old deploy/mint scripts",
-          "url": "https://github.com/3rike12/3rike-Mobility_/commit/87acf3e98f16cb3ee5c0f833a1476b725385edf0",
-          "committedAt": "2026-07-10T14:15:33Z"
-        },
-        {
-          "repo": "3rike12/3rike-Mobility_",
-          "message": "chore: add mainnet wallet to gitignore",
-          "url": "https://github.com/3rike12/3rike-Mobility_/commit/b5f548629b662d9abe686ad64a2c0c8374fc979b",
-          "committedAt": "2026-07-10T14:13:36Z"
-        }
-      ],
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
@@ -265,40 +133,9 @@
     {
       "id": "newman5",
       "name": "Newman",
-      "lastActivityAt": "2026-07-11T13:53:31Z",
-      "commitsThisWeek": 9,
-      "recentCommits": [
-        {
-          "repo": "Newman5/builder-season-playbook",
-          "message": "Update builder activity data",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/bb6359c5d4c29c2eed3fd220a0bac5fde545f1f5",
-          "committedAt": "2026-07-11T13:53:31Z"
-        },
-        {
-          "repo": "Newman5/builder-season-playbook",
-          "message": "more changes to final-presentation",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/9702a450a6b7ba48707614ce090922fd97ca06fb",
-          "committedAt": "2026-07-11T03:33:20Z"
-        },
-        {
-          "repo": "Newman5/builder-season-playbook",
-          "message": "Merge branch 'main' of https://github.com/Newman5/builder-season-playbook",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/9fa537cf55c441787e4f1579ee0af39700a9fd79",
-          "committedAt": "2026-07-10T23:17:55Z"
-        },
-        {
-          "repo": "Newman5/builder-season-playbook",
-          "message": "adding documents",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/9cee6655dd8ba528c45d1e11f7b800e8fff1f4a4",
-          "committedAt": "2026-07-10T23:17:52Z"
-        },
-        {
-          "repo": "Newman5/builder-season-playbook",
-          "message": "Update builder activity data",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/ea58dfec5dd688bc8b1d881544f99642a16fae0f",
-          "committedAt": "2026-07-10T14:50:42Z"
-        }
-      ],
+      "lastActivityAt": "2026-07-12T13:55:40Z",
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
@@ -312,14 +149,26 @@
     {
       "id": "devfreeguy",
       "name": "Daniel",
-      "lastActivityAt": "2026-07-06T10:27:49Z",
-      "commitsThisWeek": 1,
+      "lastActivityAt": "2026-07-13T14:01:42Z",
+      "commitsThisWeek": 3,
       "recentCommits": [
         {
           "repo": "devfreeguy/skill-swap",
-          "message": "feat(public): How It Works page rendered from JSON markdown\n\nAdd a public /how-it-works page whose content lives in JSON and is\nrendered through a small, dependency-free Markdown renderer.\n\n- data/how-it-works.json: page content as structured sections, each\nbody authored in Markdown (covers the swap flow, the 2 ADA refundable\nfee, E2E messaging, and on-chain proofs).\n- lib/markdown.tsx: renderMarkdown() turns Markdown into React elements\n(headings, paragraphs, ordered/unordered lists, blockquotes, rules,\ninline bold/italic/code/links). No new dependency, no\ndangerouslySetInnerHTML — XSS-safe by construction.\n- app/how-it-works/page.tsx: server component with a hero, sticky\ntable-of-contents, and the rendered article, wrapped in the public\nheader/footer. Public route (not gated by proxy.ts).\n\nNav + footer:\n- Header/footer \"How it Works\" now links to /how-it-works; the #ledger\nand #discovery anchors are made absolute (/#…) so they resolve from\nany page.\n- Footer: social icons moved into the links column; bottom bar now holds\nonly the tagline and copyright.",
-          "url": "https://github.com/devfreeguy/skill-swap/commit/cb2bc3834e925c5813767c2a94edc97cfdeaef30",
-          "committedAt": "2026-07-06T10:27:49Z"
+          "message": "style(ui): improve light theme colors, hierarchy, and component polish",
+          "url": "https://github.com/devfreeguy/skill-swap/commit/4127ebf8ac68288989d3d57ae4325dbd020c7298",
+          "committedAt": "2026-07-13T14:01:42Z"
+        },
+        {
+          "repo": "devfreeguy/skill-swap",
+          "message": "Swapping mock data for real data",
+          "url": "https://github.com/devfreeguy/skill-swap/commit/69c8c892798a9bcfeea94570734231ae7cfc4758",
+          "committedAt": "2026-07-13T13:40:52Z"
+        },
+        {
+          "repo": "devfreeguy/skill-swap",
+          "message": "fix(dashboard): perfect-match popup shows once ever per account\n\nReplaced sessionStorage with a user-scoped localStorage key (pm_shown_<userId>) so the popup is not blocked by stale session data from a previous user or tab, and persists across browser sessions. Also fixed useEffect([router]) → useEffect([], cancelled) to prevent double-runs on navigation, and removed the redundant warm-up fetch from onboarding whose result was immediately discarded.",
+          "url": "https://github.com/devfreeguy/skill-swap/commit/594276bbb65cec1934ab219ef969f2202d75423a",
+          "committedAt": "2026-07-13T11:57:08Z"
         }
       ],
       "error": null
@@ -328,72 +177,16 @@
       "id": "haulink",
       "name": "Abdulazeez",
       "lastActivityAt": "2026-07-08T13:04:22Z",
-      "commitsThisWeek": 6,
-      "recentCommits": [
-        {
-          "repo": "FoladDTechie/Haulink",
-          "message": "Merge pull request #16 from FoladDTechie/HAUL-22-AZB\n\nHaul 22 azb",
-          "url": "https://github.com/FoladDTechie/Haulink/commit/42c8c130a3674e258a02866c4d530be3ce97f8d3",
-          "committedAt": "2026-07-08T13:04:22Z"
-        },
-        {
-          "repo": "FoladDTechie/Haulink",
-          "message": "feat: slot availability display, pre-payment validation, race condition handling",
-          "url": "https://github.com/FoladDTechie/Haulink/commit/5abe39b7c1aaec053b628455861609b9eb4dec3f",
-          "committedAt": "2026-07-08T13:02:03Z"
-        },
-        {
-          "repo": "FoladDTechie/Haulink",
-          "message": "feat: slot availability display, pre-payment validation, race condition handling",
-          "url": "https://github.com/FoladDTechie/Haulink/commit/2e144b8fb587daa4d856a8c7534fec15b2a389a5",
-          "committedAt": "2026-07-08T13:00:59Z"
-        },
-        {
-          "repo": "FoladDTechie/Haulink",
-          "message": "Merge pull request #15 from FoladDTechie/HAUL-22-AZB\n\nHaul 22 azb",
-          "url": "https://github.com/FoladDTechie/Haulink/commit/2cb3c02f70b397cdbcf0b558033e73e829b5dd8f",
-          "committedAt": "2026-07-07T15:44:12Z"
-        },
-        {
-          "repo": "FoladDTechie/Haulink",
-          "message": "fix: pickup date validation, preprod wallet block, box dimensions, phone format",
-          "url": "https://github.com/FoladDTechie/Haulink/commit/0cce28bf6f33f452b5d177f471f3043d3fe06f5e",
-          "committedAt": "2026-07-07T14:48:45Z"
-        }
-      ],
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
       "id": "opa007i",
       "name": "Opa",
-      "lastActivityAt": "2026-07-08T16:09:33Z",
-      "commitsThisWeek": 4,
-      "recentCommits": [
-        {
-          "repo": "opa1/the-quest",
-          "message": "fix: prevent lost/duplicate ADA payouts and add test coverage for tasks.ts\n\nRefunds that failed after a deadline closure were permanently unrecoverable, and neither approveWork nor processDeadlineRefund guarded against a concurrent/retried call sending a duplicate payout. Both now track payout/refund state independently of task/claim status via an atomic compare-and-swap lock, so failures are safely retryable and a payout's tx hash is persisted the instant it succeeds. Also sets up Vitest with an in-memory fake Supabase client and a full test suite for app/actions/tasks.ts to lock in this behavior.",
-          "url": "https://github.com/opa1/the-quest/commit/768f5e319730c3883ee7c1b24dbfcb497ae0f488",
-          "committedAt": "2026-07-08T16:09:33Z"
-        },
-        {
-          "repo": "opa1/the-quest",
-          "message": "refactor: use BountyCard in RecentMissions for consistency across realm and missions pages",
-          "url": "https://github.com/opa1/the-quest/commit/719bbf2a9977a1bbf5053dd56ee4908631c19a43",
-          "committedAt": "2026-07-06T22:07:48Z"
-        },
-        {
-          "repo": "opa1/the-quest",
-          "message": "feat: slot progress bars, prominent deadline display on task detail, mission cards, and landing page",
-          "url": "https://github.com/opa1/the-quest/commit/8799dda434a0f4b062e34272ada284dadee76807",
-          "committedAt": "2026-07-06T22:05:35Z"
-        },
-        {
-          "repo": "opa1/the-quest",
-          "message": "feat: multi-claimer post form UI, deadline picker, automatic ADA refund on deadline",
-          "url": "https://github.com/opa1/the-quest/commit/da290d53b326f53ae5ed275ab6961d72121a1d14",
-          "committedAt": "2026-07-06T21:58:40Z"
-        }
-      ],
+      "lastActivityAt": "2026-07-12T16:52:10Z",
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
@@ -432,39 +225,8 @@
       "id": "alfreditodole",
       "name": "Alfred Itodole",
       "lastActivityAt": "2026-07-11T14:32:05Z",
-      "commitsThisWeek": 60,
-      "recentCommits": [
-        {
-          "repo": "sirxalfred/mosaic-cardano",
-          "message": "Merge pull request #39 from sirXalfred/develop\n\nMerge branch `develop` into `main`",
-          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/ae99319b06e6b1ae3f992dd68d74626b89448e47",
-          "committedAt": "2026-07-11T14:32:05Z"
-        },
-        {
-          "repo": "sirxalfred/mosaic-cardano",
-          "message": "Merge pull request #38 from sirXalfred/feat/docs\n\nfeat: add documentation pages",
-          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/0c9e696a1e4b19b0e5209d62301bfe3b1a9968bf",
-          "committedAt": "2026-07-11T14:26:40Z"
-        },
-        {
-          "repo": "sirxalfred/mosaic-cardano",
-          "message": "refactor: improve global loader script robustness and disable LandingView initial opacity animation",
-          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/6255e86e12c26443b1f7f87467b3ed78261d4857",
-          "committedAt": "2026-07-11T14:23:02Z"
-        },
-        {
-          "repo": "sirxalfred/mosaic-cardano",
-          "message": "style: fix issue with logo color",
-          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/4d3e2c7a45c5fefa6de0bafd799b8ad403068c84",
-          "committedAt": "2026-07-11T14:04:36Z"
-        },
-        {
-          "repo": "sirxalfred/mosaic-cardano",
-          "message": "Merge branch 'develop' of https://github.com/sirxalfred/mosaic-cardano into feat/docs",
-          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/3b473e2edc19774644d5bad30f4910a9bd6765f9",
-          "committedAt": "2026-07-11T08:06:46Z"
-        }
-      ],
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     }
   ]
