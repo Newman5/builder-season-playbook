@@ -139,18 +139,17 @@ You can use the [Feedback Evidence Template](https://docs.google.com/document/d/
 video: [Flyway feedback 2026 05 27 - YouTube](https://youtu.be/EiycCnEC1ps)
 
 
-
 ### 2026-06-05 - TrikeMobility with Anita
 
-video:
+video: [Fireflies recording](https://app.fireflies.ai/view/trikeMobiity::01KTBZ4JAJWZR1CE7RGE7MXMPG)
 
 ### 2026-06-28 - Tixano with Guideon
 
-video: recorded on Zoom and with Fireflies
+video: [recorded on Zoom](https://ody.sh/dmJPjHzMO4) and [with Fireflies](https://app.fireflies.ai/view/Guideon-Tixano-feedback::01KVARYAZAF89N6WGG1PF69YMK)
 
 
 ### 2026-07-07 - Tracom Academy with Lewis
 
-video: audio only
+video: [audio only with Fireflies](https://app.fireflies.ai/view/feedback-with-Lewis-Tracom::01KWY8JS7M5CNJNYH7Y8SC0QYR)
 
 Total sessions: 4
