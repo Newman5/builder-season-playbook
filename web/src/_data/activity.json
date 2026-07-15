@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-14T14:12:46Z",
+  "generatedAt": "2026-07-15T14:08:22Z",
   "weekStart": "2026-07-13T00:00:00Z",
   "weekEnd": "2026-07-19T23:59:59Z",
   "builders": [
@@ -140,9 +140,15 @@
     {
       "id": "newman5",
       "name": "Newman",
-      "lastActivityAt": "2026-07-13T15:11:01Z",
-      "commitsThisWeek": 1,
+      "lastActivityAt": "2026-07-14T14:12:59Z",
+      "commitsThisWeek": 2,
       "recentCommits": [
+        {
+          "repo": "Newman5/builder-season-playbook",
+          "message": "Update builder activity data",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/966598f1132ebed8bd510f78f2ba8e0a2479ac27",
+          "committedAt": "2026-07-14T14:12:59Z"
+        },
         {
           "repo": "Newman5/builder-season-playbook",
           "message": "Update builder activity data",
@@ -204,9 +210,21 @@
     {
       "id": "opa007i",
       "name": "Opa",
-      "lastActivityAt": "2026-07-13T17:43:06Z",
-      "commitsThisWeek": 2,
+      "lastActivityAt": "2026-07-14T14:17:04Z",
+      "commitsThisWeek": 4,
       "recentCommits": [
+        {
+          "repo": "opa1/the-quest",
+          "message": "Merge pull request #3 from opa1/staging: fix(missions): stop hiding missions from the board by status\n\nfix(missions): stop hiding missions from the board by status",
+          "url": "https://github.com/opa1/the-quest/commit/769a651bf161034530b9622992fe4c97da5efa6a",
+          "committedAt": "2026-07-14T14:17:04Z"
+        },
+        {
+          "repo": "opa1/the-quest",
+          "message": "fix(missions): stop hiding missions from the board by status\n\nThe Missions page and Recent Missions only ever selected 'open' and 'completed' rows, but tasks.status takes five values. A mission that got claimed (all slots taken) or submitted for review silently vanished from the board, as did anything the deadline cron closed as 'cancelled'.\n\nBoth listing queries now apply no status filter at all — nothing is dropped from the board. \"Open Only\" remains the one view that filters, and it does so on request.\n\nBountyCard badges every non-open state instead of just completed: claimed -> In progress, submitted -> In review, completed -> Completed, cancelled -> Expired or Cancelled depending on whether the deadline has passed. Only genuinely closed missions are dimmed; in-flight ones keep full opacity.\n\n\"Open First\" used to work by sorting status descending, which happened to put 'open' above 'completed' alphabetically. That breaks with 'claimed' and 'submitted' in the mix and PostgREST can't express a CASE ranking, so the ordering moves into a stable STATUS_RANK sort in the store.\n\ndeadline_passed is derived in the stores rather than in BountyCard because the React compiler rejects reading the clock during render.",
+          "url": "https://github.com/opa1/the-quest/commit/37f75978ba1f84fdd976ad25298759fd9385288c",
+          "committedAt": "2026-07-14T14:14:13Z"
+        },
         {
           "repo": "opa1/the-quest",
           "message": "Wallet connect error fix\n\nfix(wallet): repair signature verification and wallet connect — verif…",
