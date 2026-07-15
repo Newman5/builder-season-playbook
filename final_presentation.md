@@ -6,11 +6,11 @@ for
 
 Newman S Lanier, Solo player
 
+submitting for the :
+
 Builder Pie
 
 Feedback Pie
-
-
 
 ## Slide 2: Project Identity
 
@@ -73,7 +73,6 @@ The product is a digital download available on the Gumroad network. The download
 ## Slides 6: Twelve Official Weekly Updates
 
 | 2026-05-03 | Week 1  | https://x.com/newman5/status/2049576957155693053 |
-| ---------- | ------- | ------------------------------------------------ |
 | 2026-05-10 | Week 2  | https://x.com/newman5/status/2068419422075642349 |
 | 2026-05-17 | Week 3  | https://x.com/newman5/status/2053245051317129259 |
 | 2026-05-24 | Week 4  | https://x.com/newman5/status/2055319299334471875 |
@@ -84,7 +83,7 @@ The product is a digital download available on the Gumroad network. The download
 | 2026-06-28 | Week 9  | https://x.com/newman5/status/2071074884898197745 |
 | 2026-07-05 | Week 10 | https://x.com/newman5/status/2073477979108221205 |
 | 2026-07-12 | Week 11 | https://x.com/newman5/status/2075722018993983788 |
-| 2026-07-19 | Week 12 |                                                  |
+| 2026-07-19 | Week 12 | https://x.com/newman5/status/2077463724399411613 |
 
 ## Slide 19: Builder Verification Summary
 
@@ -138,7 +137,6 @@ You can use the [Feedback Evidence Template](https://docs.google.com/document/d/
 
 video: [Flyway feedback 2026 05 27 - YouTube](https://youtu.be/EiycCnEC1ps)
 
-
 ### 2026-06-05 - TrikeMobility with Anita
 
 video: [Fireflies recording](https://app.fireflies.ai/view/trikeMobiity::01KTBZ4JAJWZR1CE7RGE7MXMPG)
@@ -146,7 +144,6 @@ video: [Fireflies recording](https://app.fireflies.ai/view/trikeMobiity::01KTBZ4
 ### 2026-06-28 - Tixano with Guideon
 
 video: [recorded on Zoom](https://ody.sh/dmJPjHzMO4) and [with Fireflies](https://app.fireflies.ai/view/Guideon-Tixano-feedback::01KVARYAZAF89N6WGG1PF69YMK)
-
 
 ### 2026-07-07 - Tracom Academy with Lewis
 
