@@ -62,17 +62,11 @@ Use `active: false` when you want to keep an entry in the registry without publi
 - `pies`
 - `notes`
 - `active`
-- per-builder X override fields
 - per-builder week timing overrides
 
-For X tracking, you can also add:
+For X tracking, add:
 
 - `x`
-- `x_required_hashtags`
-- `x_required_mention`
-- `x_ignore`
-
-Per-builder X rules override the defaults in `event.yml`.
 
 ## project.yml
 
@@ -131,16 +125,12 @@ Admin sync:
 - Run `npm run sync:repos` from `web/` to update selected profile fields in `config/repos.yml`.
 - The sync command prints which builders and fields changed and skips builders with missing or invalid metadata.
 
-## Builder X Update Files
+## Builder X Review
 
-The website now generates X live-search links directly from `config/event.yml` and `config/repos.yml`.
+The website links builder X handles to simple manual searches for `pieceofpie` updates.
 
-Use these fields to shape the search queries:
+Use this field to shape the search links:
 
-- `weekly_update_hashtags` in `event.yml`
-- `weekly_update_mention` in `event.yml`
-- `build_start` in `event.yml`
-- `event_duration_weeks` in `event.yml`
-- `x`, `x_required_hashtags`, and `x_required_mention` in `repos.yml`
+- `x` in `repos.yml`
 
-The dashboard and builder pages will expose per-week search URLs for manual review.
+The dashboard and builder pages expose `from:{handle} pieceofpie` search URLs for manual review.

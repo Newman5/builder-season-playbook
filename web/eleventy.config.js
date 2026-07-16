@@ -159,21 +159,18 @@ export default function (eleventyConfig) {
     };
   });
 
-  eleventyConfig.addFilter("xSearchForBuilder", (xSearch, builderId) => {
-    const records = xSearch?.builders || [];
-    return records.find((entry) => entry.id === builderId) || null;
-  });
+  eleventyConfig.addFilter("xPieceOfPieSearchUrl", (handle) => {
+    if (typeof handle !== "string" || !handle.trim()) {
+      return null;
+    }
 
-  eleventyConfig.addFilter("xSearchSummary", (builders, xSearch) => {
-    const registry = Array.isArray(builders) ? builders : [];
+    const normalizedHandle = handle.trim().replace(/^@+/, "");
+    if (!normalizedHandle) {
+      return null;
+    }
 
-    return {
-      totalBuilders: registry.length,
-      withHandles: registry.filter((entry) => !!entry.x && entry.xIgnore !== true).length,
-      weeks: xSearch?.weeks?.length || 0,
-      currentAdminWeekIndex: xSearch?.currentAdminWeekIndex || null,
-      configError: xSearch?.configError || null,
-    };
+    const query = `from:${normalizedHandle} pieceofpie`;
+    return `https://x.com/search?q=${encodeURIComponent(query)}&src=typed_query&f=live`;
   });
 
   eleventyConfig.addCollection("posts", function (collectionApi) {

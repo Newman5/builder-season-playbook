@@ -32,13 +32,12 @@ ELEVENTY_SITE_URL="https://your-site.example.com/" npm run build
 
 - `config/repos.yml` is the tracked builder registry and the source of admin-only fields.
 - Builder repos can publish a root-level `project.yml` with builder-owned project/profile metadata.
-- `config/event.yml` defines the admin week calendar, the builder update cadence, and the weekly X search rules.
+- `config/event.yml` defines the admin week calendar and the builder update cadence.
 - `./scripts/build-data.mjs` fetches root-level `project.yml` files from tracked repos and writes the cache to `src/_data/project-metadata.json`.
 - `src/_data/builders.js` reads and normalizes `config/repos.yml`, then merges fetched `project.yml` metadata into each builder with fallback to the manual registry when metadata is missing.
-- `src/_data/xSearch.js` computes admin-week windows plus per-builder update timing and X live-search links directly at Eleventy build time.
 - `./scripts/generate-activity.mjs` fetches public GitHub commit activity and writes `src/_data/activity.json`.
 - `./scripts/sync-repos.mjs` optionally writes selected fetched profile fields back into `config/repos.yml` and prints a field-level change summary.
-- Eleventy publishes the merged builder registry at `/data/builders.json`, the fetched project metadata cache at `/data/project-metadata.json`, the cached GitHub snapshot at `/data/activity.json`, and the computed X search metadata at `/data/x-search.json`.
+- Eleventy publishes the merged builder registry at `/data/builders.json`, the fetched project metadata cache at `/data/project-metadata.json`, and the cached GitHub snapshot at `/data/activity.json`.
 
 Current precedence rules:
 
@@ -56,7 +55,7 @@ Current precedence rules:
   - `builder_update_duration_weeks`
   - `default_builder_week_1_end`
 - `config/repos.yml` can override the default builder start with `first_update_week_end` on an individual builder record.
-- The dashboard keeps admin week labels on search links and shows builder-relative timing as supporting context.
+- The dashboard no longer generates weekly X search links; it links builder handles to simple `from:{handle} pieceofpie` searches.
 
 ## Tokens
 
@@ -66,5 +65,5 @@ The fetch scripts prefer `GH_ACTIVITY_TOKEN` and fall back to `GITHUB_TOKEN`.
 
 - The deploy workflow builds this directory for GitHub Pages with the repo path prefix.
 - The scheduled activity workflow refreshes the generated JSON, commits it back to `main`, and deploys GitHub Pages.
-- X update tracking is manual-search based, not live API based.
+- X update tracking is manual-search based through simple builder-handle searches, not live API based.
 - Existing post-management scripts still work from this directory because the source content remains under `src/`.

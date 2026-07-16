@@ -11,7 +11,7 @@ permalink: /data/
 <section class="hero">
   <p class="eyebrow">Raw Data</p>
   <h2 style="margin-top: 0;">Published JSON used by the site</h2>
-  <p>This page links to the normalized builder registry, fetched project metadata, the generated GitHub activity snapshot, and the computed X search metadata used for manual weekly review.</p>
+  <p>This page links to the normalized builder registry, fetched project metadata, and the generated GitHub activity snapshot.</p>
 </section>
 
 <section class="card-grid">
@@ -29,11 +29,6 @@ permalink: /data/
     <h2>Activity Snapshot</h2>
     <p>Generated GitHub activity data for the current UTC week.</p>
     <a class="button secondary" href="{{ '/data/activity.json' | withBase }}">Open activity.json</a>
-  </article>
-  <article class="card">
-    <h2>X Search Metadata</h2>
-    <p>Computed week windows and live-search URLs built from <code>config/event.yml</code> and <code>config/repos.yml</code>.</p>
-    <a class="button secondary" href="{{ '/data/x-search.json' | withBase }}">Open x-search.json</a>
   </article>
 </section>
 {% endblock %}

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-16T14:21:18Z",
+  "generatedAt": "2026-07-16T21:35:06Z",
   "weekStart": "2026-07-13T00:00:00Z",
   "weekEnd": "2026-07-19T23:59:59Z",
   "builders": [
@@ -122,9 +122,40 @@
     {
       "id": "murmurations",
       "name": "Nori",
-      "lastActivityAt": "2026-07-10T20:51:54Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-07-16T21:31:08Z",
+      "commitsThisWeek": 9,
+      "recentCommits": [
+        {
+          "repo": "murmurations-ai/flyway",
+          "message": "Merge pull request #32 from murmurations-ai/docs/final-presentation-template\n\ndocs: conform final presentation to GimbaLabs template (Builder + Feedback Pie)",
+          "url": "https://github.com/murmurations-ai/flyway/commit/44a12b6ad376815029ecd81f5db42b4d2a818838",
+          "committedAt": "2026-07-16T21:31:08Z"
+        },
+        {
+          "repo": "murmurations-ai/flyway",
+          "message": "docs(presentation): conform final report to GimbaLabs template\n\nRestructure the final-report section to the official Piece of Pi\nfinal-presentation template, presented as two tracks:\n\nBuilder Pie\n- identity strip (project, track, solo team/presenter, one-sentence)\n- who-the-user-is + payment-model panels (free, MIT — no paywall)\n- walkthrough mapping (template steps -> the signed round-trip)\n- repository confirmation (public, key folders, built-in-the-open)\n- Builder verification checklist (demo, repo, deployed, posts, public)\n\nFeedback Pie\n- recorded peer feedback on @newman5's PCPI framework\n- unlisted recording, 2026-06-04, participants, relevance\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01Prq6BNwxJ2MbKKyw6BAYhs",
+          "url": "https://github.com/murmurations-ai/flyway/commit/81efefe65bc633d73d1e5669605412c378536f39",
+          "committedAt": "2026-07-16T21:30:49Z"
+        },
+        {
+          "repo": "murmurations-ai/flyway",
+          "message": "Merge pull request #31 from murmurations-ai/feat/brand-system\n\nflyway brand system — coherent identity across site, docs, and README",
+          "url": "https://github.com/murmurations-ai/flyway/commit/c041a2858d892c21ef4a84b779ca57891f396394",
+          "committedAt": "2026-07-16T21:05:54Z"
+        },
+        {
+          "repo": "murmurations-ai/flyway",
+          "message": "style(docs): rebrand status dashboard + architecture reference\n\nRe-skin docs/status.html and docs/architecture/how-flyway-works.html onto the\nbrand system (brand.css tokens, Archivo/Plex fonts, dusk-corridor + bright-sky\nthemes, gold accents, sharp hairline geometry, theme toggle + brand.js).\nStyling only — all status data, diagrams, prose, and structure unchanged.\nDiagram canvases are intentionally kept dark in both themes to preserve the\nhardcoded SVG fills' legibility.\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01Prq6BNwxJ2MbKKyw6BAYhs",
+          "url": "https://github.com/murmurations-ai/flyway/commit/0282ab7af1f2fc661efe9d1fb0c517fcf3540a87",
+          "committedAt": "2026-07-16T21:05:15Z"
+        },
+        {
+          "repo": "murmurations-ai/flyway",
+          "message": "feat(brand): flyway visual identity — \"one open corridor, no controller\"\n\nIntroduce a distinctive brand system across the web assets and README,\nreplacing the muted default look with the corridor/open-sky identity\n(sovereign · luminous · exact).\n\n- docs/brand.css + docs/brand.js + self-hosted fonts (Archivo variable for\n  expanded display, IBM Plex Sans/Mono) — a shared, theme-aware design\n  system (dark = dusk corridor, light = bright sky looking up), golden-hour\n  amber primary with rare starling teal/violet sheen, sharp hairline\n  geometry, corridor + waypoint structural device.\n- docs/brand.js — a live canvas murmuration of three sub-flocks; when birds\n  of different flocks pass close, a gold \"recognition thread\" flashes between\n  them (the protocol's recognition primitive, shown). Theme toggle persists\n  across pages; reduced-motion renders a settled poster frame.\n- docs/presentation.html — the season deck, canonical and public on Pages\n  (Artifacts aren't shareable); docs/index.html and docs/demo.html rebuilt on\n  the system; newman-presentation.html now redirects to it.\n- README.md — brand voice, corrected tool statuses (all nine wired), 449\n  tests / 13 ADRs / 8 walkthroughs, deployed-site links, and dual\n  human + agent quickstarts. AGENTS.md added so agents pointed at the repo\n  can learn and run the protocol (skill install / MCP server / CLI).\n\nDocs-only; no protocol code changed.\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01Prq6BNwxJ2MbKKyw6BAYhs",
+          "url": "https://github.com/murmurations-ai/flyway/commit/cb0f63a55077063a40ac5c271f3f52bbd84e504b",
+          "committedAt": "2026-07-16T21:03:30Z"
+        }
+      ],
       "error": null
     },
     {
@@ -154,9 +185,15 @@
     {
       "id": "newman5",
       "name": "Newman",
-      "lastActivityAt": "2026-07-15T19:42:58Z",
-      "commitsThisWeek": 6,
+      "lastActivityAt": "2026-07-16T14:21:34Z",
+      "commitsThisWeek": 7,
       "recentCommits": [
+        {
+          "repo": "Newman5/builder-season-playbook",
+          "message": "Update builder activity data",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/7bf9e3ed44f726a651917066a0b4b1284edd2a4f",
+          "committedAt": "2026-07-16T14:21:34Z"
+        },
         {
           "repo": "Newman5/builder-season-playbook",
           "message": "adding last x update",
@@ -180,12 +217,6 @@
           "message": "Update builder activity data",
           "url": "https://github.com/Newman5/builder-season-playbook/commit/4867c3765cf2b49cb08261e57c42db5719e901e1",
           "committedAt": "2026-07-15T14:08:35Z"
-        },
-        {
-          "repo": "Newman5/builder-season-playbook",
-          "message": "Update builder activity data",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/966598f1132ebed8bd510f78f2ba8e0a2479ac27",
-          "committedAt": "2026-07-14T14:12:59Z"
         }
       ],
       "error": null
@@ -201,9 +232,15 @@
     {
       "id": "devfreeguy",
       "name": "Daniel",
-      "lastActivityAt": "2026-07-16T08:02:00Z",
-      "commitsThisWeek": 17,
+      "lastActivityAt": "2026-07-16T19:06:06Z",
+      "commitsThisWeek": 18,
       "recentCommits": [
+        {
+          "repo": "devfreeguy/skill-swap",
+          "message": "fix: auth bugs, wallet swap UX, and add Vitest test suite\n\n- Fix logout cookie not clearing (missing path: '/' on clearAuthCookie)\n- Fix /api/auth/me missing onboarded field; LoginPanel now respects it\n- Fix Twitter callback routing: onboarded check no longer includes name\n- Fix WalletConnectButton: userDisconnected ref prevents auto-retrigger\n- Make wallet address permanent on profile (remove disconnect button)\n- Fix get-shell-user to use network-aware DB instead of hardcoded preprod\n- Fix swap request modal: silent CIP-30 probe resolves CCWW race condition\n  so wallet-type users are no longer told to connect from Profile\n- Add reconnect widget in UserProfileDialog when extension genuinely offline\n- Add Vitest suite: 58 tests across jwt, cookies, skills, proxy, API routes\n- Exclude tests/ from main tsconfig; add tsconfig.test.json for Vitest alias resolution",
+          "url": "https://github.com/devfreeguy/skill-swap/commit/5748f2d19e287c55f92e79a87d017760a1c21ea6",
+          "committedAt": "2026-07-16T19:06:06Z"
+        },
         {
           "repo": "devfreeguy/skill-swap",
           "message": "fix: use 'link' mode instead of 'login' for wallet connect on profile page\n\nThe profile page was using mode='login' which triggered the full auth\nflow (connectAndAuth), redirecting to /migrating upon successful wallet\nsign-in. Changed to mode='link' which calls connectAndLink — the\ncorrect flow for attaching a wallet to an already-authenticated user.\n\nAlso added onLinked callback to re-fetch the profile so the newly linked\nwallet address appears immediately.",
@@ -227,12 +264,6 @@
           "message": "fix: resolve TypeScript errors in wallet route and useWalletAuth hook",
           "url": "https://github.com/devfreeguy/skill-swap/commit/0b88cbf413a53f768d1757b93328ab98bbbebc5a",
           "committedAt": "2026-07-16T01:57:52Z"
-        },
-        {
-          "repo": "devfreeguy/skill-swap",
-          "message": "feat: enforce account-type invariant for wallet-based auth\n\nAdd `accountType` field to user model to distinguish wallet accounts from Twitter/X and email accounts. On wallet registration, set `accountType: \"wallet\"`; on Twitter callback, set `accountType: \"x\"`.\n\nPrevent wallet login for accounts whose `accountType` is not `\"wallet\"` (e.g., an X account that shares a wallet address). Also block linking a wallet if it already belongs to an X account, consuming the nonce only after validation. This ensures each authentication flow only works with its intended account type.",
-          "url": "https://github.com/devfreeguy/skill-swap/commit/184ef59c906cb137e62c0cec9cd1d6da8a2bcc0a",
-          "committedAt": "2026-07-16T01:18:24Z"
         }
       ],
       "error": null
@@ -289,7 +320,7 @@
     {
       "id": "muhammedyuguda",
       "name": "Muhammed",
-      "lastActivityAt": "2026-07-05T17:41:39Z",
+      "lastActivityAt": null,
       "commitsThisWeek": 0,
       "recentCommits": [],
       "error": null
@@ -297,26 +328,26 @@
     {
       "id": "juanitajaramillo",
       "name": "Juanita",
-      "lastActivityAt": "2026-07-02T04:01:27Z",
+      "lastActivityAt": null,
       "commitsThisWeek": 0,
       "recentCommits": [],
-      "error": null
+      "error": "FORBIDDEN_OR_RATE_LIMITED"
     },
     {
       "id": "kamalaliyu",
       "name": "Kamal Aliyu",
-      "lastActivityAt": "2026-06-14T14:30:00Z",
+      "lastActivityAt": null,
       "commitsThisWeek": 0,
       "recentCommits": [],
-      "error": null
+      "error": "FORBIDDEN_OR_RATE_LIMITED"
     },
     {
       "id": "alfreditodole",
       "name": "Alfred Itodole",
-      "lastActivityAt": "2026-07-11T14:32:05Z",
+      "lastActivityAt": null,
       "commitsThisWeek": 0,
       "recentCommits": [],
-      "error": null
+      "error": "FORBIDDEN_OR_RATE_LIMITED"
     }
   ]
 }

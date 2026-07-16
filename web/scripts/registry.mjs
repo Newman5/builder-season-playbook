@@ -56,11 +56,6 @@ export function loadBaseBuilders() {
         x: stripAtPrefix(entry.x) || null,
         firstUpdateWeekEnd:
           entry.first_update_week_end || entry.firstUpdateWeekEnd || null,
-        xRequiredHashtags:
-          entry.x_required_hashtags || entry.xRequiredHashtags || [],
-        xRequiredMention:
-          entry.x_required_mention || entry.xRequiredMention || null,
-        xIgnore: entry.x_ignore === true,
         projectName: entry.project_name || entry.projectName || null,
         projectUrl: entry.project_url || entry.projectUrl || null,
         repoUrl,

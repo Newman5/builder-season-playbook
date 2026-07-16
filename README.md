@@ -100,7 +100,7 @@ npm run sync:repos
 npm run build
 ```
 
-`config/repos.yml` is the current manual source of truth for builders in this repo. Eleventy reads it directly and publishes the normalized registry at `/data/builders.json`. `config/event.yml` drives the computed X search links for each hackathon week. `npm run build:data` refreshes the cached GitHub snapshot in `web/src/_data/activity.json`.
+`config/repos.yml` is the current manual source of truth for builders in this repo. Eleventy reads it directly and publishes the normalized registry at `/data/builders.json`. `config/event.yml` drives the public event timing and weekly update prompt. `npm run build:data` refreshes the cached GitHub snapshot in `web/src/_data/activity.json`.
 
 The root `project.yml` is a companion format intended for cross-repo ingestion. It gives each builder repository a self-contained metadata file that an admin script can fetch through the GitHub API before normalizing it for 11ty.
 
@@ -118,13 +118,12 @@ Field ownership:
 - `project.yml` owns builder/project profile fields such as project name, tagline, builder display name, GitHub handle, X handle, repo URL, demo URL, website URL, status, and update summaries.
 - If `project.yml` is missing, the site falls back to `config/repos.yml` and the builder still renders normally.
 
-X review is now manual-search based. The dashboard generates X live-search links from the configured hashtags, mention, builder handles, and weekly date windows, so there is no X API dependency and no separate X data build step.
+X review is manual-search based. The dashboard and builder pages link each X handle to a simple `pieceofpie` search on X, so there is no X API dependency and no separate X data build step.
 
 The activity updater prefers `GH_ACTIVITY_TOKEN` and falls back to `GITHUB_TOKEN`. Phase 1 counts all public commits on each tracked repo during the current UTC week.
 
-For X weekly update tracking:
+For X update review:
 
-- add X handles and optional per-builder X rules to `config/repos.yml`
-- set `weekly_update_hashtags`, `weekly_update_mention`, `build_start`, and `event_duration_weeks` in `config/event.yml`
-- use the dashboard and builder pages to open per-week live-search links on X
+- add X handles to `config/repos.yml`
+- use the dashboard and builder pages to open `from:{handle} pieceofpie` searches on X
 - no live X API access is required
