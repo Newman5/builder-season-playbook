@@ -1,14 +1,21 @@
 {
-  "generatedAt": "2026-07-15T14:08:22Z",
+  "generatedAt": "2026-07-16T14:21:18Z",
   "weekStart": "2026-07-13T00:00:00Z",
   "weekEnd": "2026-07-19T23:59:59Z",
   "builders": [
     {
       "id": "mhizta",
       "name": "Mhizta",
-      "lastActivityAt": "2026-06-28T14:10:08Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-07-15T14:53:37Z",
+      "commitsThisWeek": 1,
+      "recentCommits": [
+        {
+          "repo": "Mhizta-gab/bookworm-ai",
+          "message": "feat: implement user dashboard, book management actions, and database models for the bookworm-ai application",
+          "url": "https://github.com/Mhizta-gab/bookworm-ai/commit/3923672771d0e0de701010fcbd08e927535c335b",
+          "committedAt": "2026-07-15T14:53:37Z"
+        }
+      ],
       "error": null
     },
     {
@@ -61,9 +68,16 @@
     {
       "id": "lewis",
       "name": "Lewis",
-      "lastActivityAt": "2026-06-01T09:17:24Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-07-16T09:02:37Z",
+      "commitsThisWeek": 1,
+      "recentCommits": [
+        {
+          "repo": "lewis-nduati/Tracom-credentials",
+          "message": "feat: migrate Tracom Credentials to Cardano mainnet",
+          "url": "https://github.com/lewis-nduati/Tracom-credentials/commit/372fd59768dabc7e9c08c54e9a799d9d1d2d4354",
+          "committedAt": "2026-07-16T09:02:37Z"
+        }
+      ],
       "error": null
     },
     {
@@ -140,20 +154,38 @@
     {
       "id": "newman5",
       "name": "Newman",
-      "lastActivityAt": "2026-07-14T14:12:59Z",
-      "commitsThisWeek": 2,
+      "lastActivityAt": "2026-07-15T19:42:58Z",
+      "commitsThisWeek": 6,
       "recentCommits": [
+        {
+          "repo": "Newman5/builder-season-playbook",
+          "message": "adding last x update",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/c0255eda610ee72938f53d9ff416a126624a3c92",
+          "committedAt": "2026-07-15T19:42:58Z"
+        },
+        {
+          "repo": "Newman5/builder-season-playbook",
+          "message": "final changes to fix styling",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/6318b198e61cc217924a57076332e98808eb41be",
+          "committedAt": "2026-07-15T18:24:58Z"
+        },
+        {
+          "repo": "Newman5/builder-season-playbook",
+          "message": "update use-this-model",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/d1941ed5af7b82ad4cb2bdf5b7dba3772cb79174",
+          "committedAt": "2026-07-15T17:52:52Z"
+        },
+        {
+          "repo": "Newman5/builder-season-playbook",
+          "message": "Update builder activity data",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/4867c3765cf2b49cb08261e57c42db5719e901e1",
+          "committedAt": "2026-07-15T14:08:35Z"
+        },
         {
           "repo": "Newman5/builder-season-playbook",
           "message": "Update builder activity data",
           "url": "https://github.com/Newman5/builder-season-playbook/commit/966598f1132ebed8bd510f78f2ba8e0a2479ac27",
           "committedAt": "2026-07-14T14:12:59Z"
-        },
-        {
-          "repo": "Newman5/builder-season-playbook",
-          "message": "Update builder activity data",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/952b8e720f604cd809f16f60e44eae3e7115e1a3",
-          "committedAt": "2026-07-13T15:11:01Z"
         }
       ],
       "error": null
@@ -169,32 +201,38 @@
     {
       "id": "devfreeguy",
       "name": "Daniel",
-      "lastActivityAt": "2026-07-14T13:04:30Z",
-      "commitsThisWeek": 4,
+      "lastActivityAt": "2026-07-16T08:02:00Z",
+      "commitsThisWeek": 17,
       "recentCommits": [
         {
           "repo": "devfreeguy/skill-swap",
-          "message": "feat(swaps): auto-anchor proof on completion + reusable deliverable modal\n\n- Extract deliverable submission into AddDeliverableModal so it works inline on the messages page without redirecting to the swap page\n- Add AnchorProofModal: undismissable CIP-30 signing dialog; closes immediately after tx submission, polling happens silently in background\n- Auto-trigger anchor modal when swap reaches COMPLETED + proof PENDING\n- Add PendingAnchorChecker (+ SSR-safe loader) mounted in the app shell to detect unanchored proofs on login/navigation and prompt the user\n- Add GET /api/proofs/pending returning PENDING/FAILED proofs for the current user\n- Fix \"View Proof (Cardano)\" always disabled in messages panel: include proof fields in messages API query; check chainStatus === \"ANCHORED\"\n- Point Cardano proof link to cardanoscan.io explorer instead of the internal swap page\n- Add withTimeout helper wrapping BrowserWallet.enable() (30 s) and wallet.signTx() (120 s) so unresponsive extensions (old Lace on Edge) surface a clear error instead of hanging indefinitely",
-          "url": "https://github.com/devfreeguy/skill-swap/commit/a9ba0e34d31b302053b2cef0c846eabbf3f4ff62",
-          "committedAt": "2026-07-14T13:04:30Z"
+          "message": "fix: use 'link' mode instead of 'login' for wallet connect on profile page\n\nThe profile page was using mode='login' which triggered the full auth\nflow (connectAndAuth), redirecting to /migrating upon successful wallet\nsign-in. Changed to mode='link' which calls connectAndLink — the\ncorrect flow for attaching a wallet to an already-authenticated user.\n\nAlso added onLinked callback to re-fetch the profile so the newly linked\nwallet address appears immediately.",
+          "url": "https://github.com/devfreeguy/skill-swap/commit/3a63da0fac6d77d5094f9b8a3feae208e07216e4",
+          "committedAt": "2026-07-16T08:02:00Z"
         },
         {
           "repo": "devfreeguy/skill-swap",
-          "message": "style(ui): improve light theme colors, hierarchy, and component polish",
-          "url": "https://github.com/devfreeguy/skill-swap/commit/4127ebf8ac68288989d3d57ae4325dbd020c7298",
-          "committedAt": "2026-07-13T14:01:42Z"
+          "message": "fix: correct wallet error normalization and remove duplicate code\n\n- Fixed parentheses in `normalizeWalletError` to ensure proper fallback to empty string\n- Removed duplicate `connect` function and redundant imports\n- Cleaned up formatting and trailing commas for consistency",
+          "url": "https://github.com/devfreeguy/skill-swap/commit/259b26c8c04efaa64e3a62233b48e4e7be89d173",
+          "committedAt": "2026-07-16T07:43:18Z"
         },
         {
           "repo": "devfreeguy/skill-swap",
-          "message": "Swapping mock data for real data",
-          "url": "https://github.com/devfreeguy/skill-swap/commit/69c8c892798a9bcfeea94570734231ae7cfc4758",
-          "committedAt": "2026-07-13T13:40:52Z"
+          "message": "Merge branch 'main' of https://github.com/devfreeguy/skill-swap",
+          "url": "https://github.com/devfreeguy/skill-swap/commit/d0b384e47a98cbb58f20657c446229ac24868f52",
+          "committedAt": "2026-07-16T01:59:53Z"
         },
         {
           "repo": "devfreeguy/skill-swap",
-          "message": "fix(dashboard): perfect-match popup shows once ever per account\n\nReplaced sessionStorage with a user-scoped localStorage key (pm_shown_<userId>) so the popup is not blocked by stale session data from a previous user or tab, and persists across browser sessions. Also fixed useEffect([router]) → useEffect([], cancelled) to prevent double-runs on navigation, and removed the redundant warm-up fetch from onboarding whose result was immediately discarded.",
-          "url": "https://github.com/devfreeguy/skill-swap/commit/594276bbb65cec1934ab219ef969f2202d75423a",
-          "committedAt": "2026-07-13T11:57:08Z"
+          "message": "fix: resolve TypeScript errors in wallet route and useWalletAuth hook",
+          "url": "https://github.com/devfreeguy/skill-swap/commit/0b88cbf413a53f768d1757b93328ab98bbbebc5a",
+          "committedAt": "2026-07-16T01:57:52Z"
+        },
+        {
+          "repo": "devfreeguy/skill-swap",
+          "message": "feat: enforce account-type invariant for wallet-based auth\n\nAdd `accountType` field to user model to distinguish wallet accounts from Twitter/X and email accounts. On wallet registration, set `accountType: \"wallet\"`; on Twitter callback, set `accountType: \"x\"`.\n\nPrevent wallet login for accounts whose `accountType` is not `\"wallet\"` (e.g., an X account that shares a wallet address). Also block linking a wallet if it already belongs to an X account, consuming the nonce only after validation. This ensures each authentication flow only works with its intended account type.",
+          "url": "https://github.com/devfreeguy/skill-swap/commit/184ef59c906cb137e62c0cec9cd1d6da8a2bcc0a",
+          "committedAt": "2026-07-16T01:18:24Z"
         }
       ],
       "error": null
