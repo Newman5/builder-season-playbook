@@ -29,12 +29,26 @@ eleventyComputed:
       {{ builder.projectName or "Project link not listed yet." }}
     {% endif %}
   </p>
+ 
 </section>
 
 <section class="split">
   <article class="table-card">
     <h2>Profile</h2>
     <ul class="clean">
+      <li><strong>Name:</strong> {{ builder.name }}
+                  <img
+              class="facepile-avatar"
+              src="{{ builder.githubAvatarUrl }}"
+              alt="{{ builder.displayName }} GitHub profile image"
+              width="48"
+              height="48"
+              loading="lazy"
+              decoding="async"
+            ></li>
+      {% if builder.displayName and builder.displayName != builder.name %}
+        <li><strong>Display name:</strong> {{ builder.displayName }}</li>
+      {% endif %}
       <li><strong>GitHub:</strong> <a href="https://github.com/{{ builder.github }}">@{{ builder.github }}</a></li>
       {% if builder.x %}
         <li><strong>X:</strong> <a href="{{ xPieceOfPieUrl }}">Search @{{ builder.x }} for pieceofpie</a></li>

@@ -69,7 +69,7 @@ permalink: /dashboard/
   <table>
     <thead>
       <tr>
-        <th>Builder</th>
+        <th><strong>Builder</strong></th>
         <th>Project</th>
         <th>Repo</th>
         <th>Commits</th>
@@ -85,7 +85,17 @@ permalink: /dashboard/
           <td data-label="Builder">
             <strong>{{ builder.name }}</strong><br>
             {% if xPieceOfPieUrl %}
-              <span class="muted"><a href="{{ xPieceOfPieUrl }}">@{{ builder.x }}</a></span>
+              <span class="muted"><a href="{{ xPieceOfPieUrl }}">@{{ builder.x }}
+              <img
+              class="facepile-avatar"
+              src="{{ builder.githubAvatarUrl }}"
+              alt="{{ builder.displayName }} GitHub profile image"
+              width="48"
+              height="48"
+              loading="lazy"
+              decoding="async"
+            >
+              </a></span>
             {% else %}
               <span class="muted">No X handle</span>
             {% endif %}

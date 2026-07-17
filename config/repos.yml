@@ -53,6 +53,7 @@ repos:
       - builders
 
   - id: pmcorcoran
+    active: false
     name: Paul Corcoran
     github: pmcorcoran
     x: Adafan430292
@@ -131,6 +132,7 @@ repos:
       - builders
 
   - id: maxalexweber
+    active: false
     name: Maximilian
     github: maxalexweber1
     x: maxalexweber
@@ -147,6 +149,7 @@ repos:
     repo_url: https://github.com/murmurations-ai/flyway
     pies:
       - builders
+      - feedback
 
   - id: blockprint
     name: BlockPrint
@@ -183,6 +186,7 @@ repos:
     repo_url: https://github.com/Newman5/builder-season-playbook
     pies:
       - builders
+      - feedback
 
   - id: juniordevforever
     name: Harsha
@@ -192,6 +196,7 @@ repos:
     repo_url: https://github.com/gulla0/Cohort15-MVP
     pies:
       - builders
+      - feedback
 
   - id: devfreeguy
     name: Daniel
@@ -231,6 +236,7 @@ repos:
       - builders
 
   - id: giorgiozanon
+    active: false
     name: Giorgio
     github: adakondacoin
     x: ZannaKonda

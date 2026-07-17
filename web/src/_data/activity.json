@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-16T21:35:06Z",
+  "generatedAt": "2026-07-17T02:40:52Z",
   "weekStart": "2026-07-13T00:00:00Z",
   "weekEnd": "2026-07-19T23:59:59Z",
   "builders": [
@@ -29,23 +29,22 @@
     {
       "id": "dammy",
       "name": "Dammy",
-      "lastActivityAt": "2026-07-11T02:22:03Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-07-17T02:21:02Z",
+      "commitsThisWeek": 1,
+      "recentCommits": [
+        {
+          "repo": "Dammy7942/accordiax",
+          "message": "feat(payouts): consultant payment request flow with bank account management\n\n- Add bank account management to /profile page (add, delete, set default)\n- Add Request Payment button to completed agreement cards on consultant dashboard\n- Payment request modal shows saved accounts and pre-fills agreed amount\n- Submitted requests become read-only (Payment requested label)\n- Add /admin/payouts page: approve, reject, mark paid with bank details visible\n- Add Payouts tab to admin nav\n- Add /api/admin/payouts GET/POST route using service role key",
+          "url": "https://github.com/Dammy7942/accordiax/commit/7101b6311ac5ca188558e708e113c90867c175ae",
+          "committedAt": "2026-07-17T02:21:02Z"
+        }
+      ],
       "error": null
     },
     {
       "id": "gidhub",
       "name": "Gideon",
       "lastActivityAt": "2026-07-12T18:28:55Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
-      "error": null
-    },
-    {
-      "id": "pmcorcoran",
-      "name": "Paul Corcoran",
-      "lastActivityAt": "2026-05-29T22:13:08Z",
       "commitsThisWeek": 0,
       "recentCommits": [],
       "error": null
@@ -112,48 +111,40 @@
       "error": null
     },
     {
-      "id": "maxalexweber",
-      "name": "Maximilian",
-      "lastActivityAt": "2026-06-05T19:13:40Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
-      "error": null
-    },
-    {
       "id": "murmurations",
       "name": "Nori",
-      "lastActivityAt": "2026-07-16T21:31:08Z",
-      "commitsThisWeek": 9,
+      "lastActivityAt": "2026-07-16T22:55:51Z",
+      "commitsThisWeek": 15,
       "recentCommits": [
         {
           "repo": "murmurations-ai/flyway",
-          "message": "Merge pull request #32 from murmurations-ai/docs/final-presentation-template\n\ndocs: conform final presentation to GimbaLabs template (Builder + Feedback Pie)",
-          "url": "https://github.com/murmurations-ai/flyway/commit/44a12b6ad376815029ecd81f5db42b4d2a818838",
-          "committedAt": "2026-07-16T21:31:08Z"
+          "message": "Merge pull request #35 from murmurations-ai/docs/refresh-architecture\n\ndocs(architecture): refresh how-flyway-works twins to current state",
+          "url": "https://github.com/murmurations-ai/flyway/commit/a1f5ef81915d61182021b909b131a0f2f1a9069d",
+          "committedAt": "2026-07-16T22:55:51Z"
         },
         {
           "repo": "murmurations-ai/flyway",
-          "message": "docs(presentation): conform final report to GimbaLabs template\n\nRestructure the final-report section to the official Piece of Pi\nfinal-presentation template, presented as two tracks:\n\nBuilder Pie\n- identity strip (project, track, solo team/presenter, one-sentence)\n- who-the-user-is + payment-model panels (free, MIT — no paywall)\n- walkthrough mapping (template steps -> the signed round-trip)\n- repository confirmation (public, key folders, built-in-the-open)\n- Builder verification checklist (demo, repo, deployed, posts, public)\n\nFeedback Pie\n- recorded peer feedback on @newman5's PCPI framework\n- unlisted recording, 2026-06-04, participants, relevance\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01Prq6BNwxJ2MbKKyw6BAYhs",
-          "url": "https://github.com/murmurations-ai/flyway/commit/81efefe65bc633d73d1e5669605412c378536f39",
-          "committedAt": "2026-07-16T21:30:49Z"
+          "message": "docs(architecture): refresh how-flyway-works twins to current state\n\nBoth the .md and .html twins understated the project — the worst kind of\nstale for a reviewer. Corrected the status/pending claims to match what\nactually shipped, and aligned metadata across both twins and the rest of\nthe site (SHA 0af2e32, 2026-07-16):\n\n- \"What's pending\" no longer calls remote transports a \"reserved seam\"\n  (v0.2a HTTPS fetch + recognize-at-a-distance and v0.2b github-pr both\n  shipped, Tiers 6-7) or exit-aware reads \"not yet modelled\" (shipped at\n  S+13 / ADR-0013, Tier 8). Only url-webhook (v0.2c) + agreement lifecycle\n  remain — those stay marked pending because they genuinely are.\n- flyway_discover description now notes HTTPS-URL directories (v0.2a),\n  not \"v0.1 reads a local directory file\" only.\n- HTML status snapshot: five -> eight walkthroughs; adds the reach +\n  exit-aware paragraph; SHA 17f9bc1 -> 0af2e32 (header, footer).\n- .md frontmatter code-sha d5ad56f -> 0af2e32, date -> 2026-07-16.\n\nStyling untouched — both twins already conform to the brand system\n(brand.css tokens, self-hosted fonts, theme-toggle). Conceptual content\nand diagrams unchanged; only stale status prose + metadata corrected.\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01Prq6BNwxJ2MbKKyw6BAYhs",
+          "url": "https://github.com/murmurations-ai/flyway/commit/ca59e69d4b6af7c03d04cc2c815307567f54b3ca",
+          "committedAt": "2026-07-16T22:23:16Z"
         },
         {
           "repo": "murmurations-ai/flyway",
-          "message": "Merge pull request #31 from murmurations-ai/feat/brand-system\n\nflyway brand system — coherent identity across site, docs, and README",
-          "url": "https://github.com/murmurations-ai/flyway/commit/c041a2858d892c21ef4a84b779ca57891f396394",
-          "committedAt": "2026-07-16T21:05:54Z"
+          "message": "Merge pull request #34 from murmurations-ai/docs/refresh-status-readme\n\ndocs: refresh status snapshot to S+14; tighten README top",
+          "url": "https://github.com/murmurations-ai/flyway/commit/20e76ef10b05d006799ad3360b5cd5cc7058f8ee",
+          "committedAt": "2026-07-16T22:12:24Z"
         },
         {
           "repo": "murmurations-ai/flyway",
-          "message": "style(docs): rebrand status dashboard + architecture reference\n\nRe-skin docs/status.html and docs/architecture/how-flyway-works.html onto the\nbrand system (brand.css tokens, Archivo/Plex fonts, dusk-corridor + bright-sky\nthemes, gold accents, sharp hairline geometry, theme toggle + brand.js).\nStyling only — all status data, diagrams, prose, and structure unchanged.\nDiagram canvases are intentionally kept dark in both themes to preserve the\nhardcoded SVG fills' legibility.\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01Prq6BNwxJ2MbKKyw6BAYhs",
-          "url": "https://github.com/murmurations-ai/flyway/commit/0282ab7af1f2fc661efe9d1fb0c517fcf3540a87",
-          "committedAt": "2026-07-16T21:05:15Z"
+          "message": "docs: refresh status snapshot to S+14; tighten README top\n\nBring the status dashboards and README in line with the current tree\n(SHA 0af2e32, 2026-07-16):\n\n- tests 445 -> 449, open issues 12 -> 9 (close #16/#17/#20, the\n  season-wrap batch), code SHA + generated-date updated across\n  status.html + status.md\n- trim the now-closed issues from the by-theme lists; note none are\n  security\n- README: replace the dense status blockquote with a clean one-line\n  current-state summary so first-time visitors get orientation, not an\n  accumulated build log\n\nNo code or protocol changes — snapshot/docs only. Timeline milestone\nSHAs (incl. S+13 1576181) intentionally unchanged.\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01Prq6BNwxJ2MbKKyw6BAYhs",
+          "url": "https://github.com/murmurations-ai/flyway/commit/521fadb7f069c8bfa585a55c12bfe5ca99576d52",
+          "committedAt": "2026-07-16T22:12:10Z"
         },
         {
           "repo": "murmurations-ai/flyway",
-          "message": "feat(brand): flyway visual identity — \"one open corridor, no controller\"\n\nIntroduce a distinctive brand system across the web assets and README,\nreplacing the muted default look with the corridor/open-sky identity\n(sovereign · luminous · exact).\n\n- docs/brand.css + docs/brand.js + self-hosted fonts (Archivo variable for\n  expanded display, IBM Plex Sans/Mono) — a shared, theme-aware design\n  system (dark = dusk corridor, light = bright sky looking up), golden-hour\n  amber primary with rare starling teal/violet sheen, sharp hairline\n  geometry, corridor + waypoint structural device.\n- docs/brand.js — a live canvas murmuration of three sub-flocks; when birds\n  of different flocks pass close, a gold \"recognition thread\" flashes between\n  them (the protocol's recognition primitive, shown). Theme toggle persists\n  across pages; reduced-motion renders a settled poster frame.\n- docs/presentation.html — the season deck, canonical and public on Pages\n  (Artifacts aren't shareable); docs/index.html and docs/demo.html rebuilt on\n  the system; newman-presentation.html now redirects to it.\n- README.md — brand voice, corrected tool statuses (all nine wired), 449\n  tests / 13 ADRs / 8 walkthroughs, deployed-site links, and dual\n  human + agent quickstarts. AGENTS.md added so agents pointed at the repo\n  can learn and run the protocol (skill install / MCP server / CLI).\n\nDocs-only; no protocol code changed.\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01Prq6BNwxJ2MbKKyw6BAYhs",
-          "url": "https://github.com/murmurations-ai/flyway/commit/cb0f63a55077063a40ac5c271f3f52bbd84e504b",
-          "committedAt": "2026-07-16T21:03:30Z"
+          "message": "Merge pull request #33 from murmurations-ai/docs/wire-week12-tweet\n\ndocs: wire the posted week-12 finale tweet",
+          "url": "https://github.com/murmurations-ai/flyway/commit/2958b13a1ad2890273dceb50f40d9046cef13b00",
+          "committedAt": "2026-07-16T21:55:24Z"
         }
       ],
       "error": null
@@ -185,9 +176,15 @@
     {
       "id": "newman5",
       "name": "Newman",
-      "lastActivityAt": "2026-07-16T14:21:34Z",
-      "commitsThisWeek": 7,
+      "lastActivityAt": "2026-07-16T21:43:15Z",
+      "commitsThisWeek": 8,
       "recentCommits": [
+        {
+          "repo": "Newman5/builder-season-playbook",
+          "message": "removing the complicated X search features.  Sticking with simple X search with single URL encoded link",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/952c078ca82aa7755e6e0cc6e152246b98baae6c",
+          "committedAt": "2026-07-16T21:43:15Z"
+        },
         {
           "repo": "Newman5/builder-season-playbook",
           "message": "Update builder activity data",
@@ -211,12 +208,6 @@
           "message": "update use-this-model",
           "url": "https://github.com/Newman5/builder-season-playbook/commit/d1941ed5af7b82ad4cb2bdf5b7dba3772cb79174",
           "committedAt": "2026-07-15T17:52:52Z"
-        },
-        {
-          "repo": "Newman5/builder-season-playbook",
-          "message": "Update builder activity data",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/4867c3765cf2b49cb08261e57c42db5719e901e1",
-          "committedAt": "2026-07-15T14:08:35Z"
         }
       ],
       "error": null
@@ -232,9 +223,27 @@
     {
       "id": "devfreeguy",
       "name": "Daniel",
-      "lastActivityAt": "2026-07-16T19:06:06Z",
-      "commitsThisWeek": 18,
+      "lastActivityAt": "2026-07-17T01:22:24Z",
+      "commitsThisWeek": 21,
       "recentCommits": [
+        {
+          "repo": "devfreeguy/skill-swap",
+          "message": "refactor(api): remove deprecated adaTxHash field from Swap model\n\nThe adaTxHash field is no longer needed as fee transactions are now tracked separately via feeTxHash and related fields. This commit removes it from the Prisma schema and the API query.",
+          "url": "https://github.com/devfreeguy/skill-swap/commit/b3d4ce1e1be6ad0796b3a81f17d8841ff3366a1b",
+          "committedAt": "2026-07-17T01:22:24Z"
+        },
+        {
+          "repo": "devfreeguy/skill-swap",
+          "message": "feat: build public reputation page with proof records and cardano explorer links",
+          "url": "https://github.com/devfreeguy/skill-swap/commit/6313d218b7dfcf020e0c5b86d0732f05a9ced411",
+          "committedAt": "2026-07-17T00:03:59Z"
+        },
+        {
+          "repo": "devfreeguy/skill-swap",
+          "message": "fix: auto-redirect new users to onboarding when no profile found on migrating page",
+          "url": "https://github.com/devfreeguy/skill-swap/commit/06bd95fa960fbba529ce2e63d4f235c05d7d298c",
+          "committedAt": "2026-07-16T23:26:27Z"
+        },
         {
           "repo": "devfreeguy/skill-swap",
           "message": "fix: auth bugs, wallet swap UX, and add Vitest test suite\n\n- Fix logout cookie not clearing (missing path: '/' on clearAuthCookie)\n- Fix /api/auth/me missing onboarded field; LoginPanel now respects it\n- Fix Twitter callback routing: onboarded check no longer includes name\n- Fix WalletConnectButton: userDisconnected ref prevents auto-retrigger\n- Make wallet address permanent on profile (remove disconnect button)\n- Fix get-shell-user to use network-aware DB instead of hardcoded preprod\n- Fix swap request modal: silent CIP-30 probe resolves CCWW race condition\n  so wallet-type users are no longer told to connect from Profile\n- Add reconnect widget in UserProfileDialog when extension genuinely offline\n- Add Vitest suite: 58 tests across jwt, cookies, skills, proxy, API routes\n- Exclude tests/ from main tsconfig; add tsconfig.test.json for Vitest alias resolution",
@@ -246,24 +255,6 @@
           "message": "fix: use 'link' mode instead of 'login' for wallet connect on profile page\n\nThe profile page was using mode='login' which triggered the full auth\nflow (connectAndAuth), redirecting to /migrating upon successful wallet\nsign-in. Changed to mode='link' which calls connectAndLink — the\ncorrect flow for attaching a wallet to an already-authenticated user.\n\nAlso added onLinked callback to re-fetch the profile so the newly linked\nwallet address appears immediately.",
           "url": "https://github.com/devfreeguy/skill-swap/commit/3a63da0fac6d77d5094f9b8a3feae208e07216e4",
           "committedAt": "2026-07-16T08:02:00Z"
-        },
-        {
-          "repo": "devfreeguy/skill-swap",
-          "message": "fix: correct wallet error normalization and remove duplicate code\n\n- Fixed parentheses in `normalizeWalletError` to ensure proper fallback to empty string\n- Removed duplicate `connect` function and redundant imports\n- Cleaned up formatting and trailing commas for consistency",
-          "url": "https://github.com/devfreeguy/skill-swap/commit/259b26c8c04efaa64e3a62233b48e4e7be89d173",
-          "committedAt": "2026-07-16T07:43:18Z"
-        },
-        {
-          "repo": "devfreeguy/skill-swap",
-          "message": "Merge branch 'main' of https://github.com/devfreeguy/skill-swap",
-          "url": "https://github.com/devfreeguy/skill-swap/commit/d0b384e47a98cbb58f20657c446229ac24868f52",
-          "committedAt": "2026-07-16T01:59:53Z"
-        },
-        {
-          "repo": "devfreeguy/skill-swap",
-          "message": "fix: resolve TypeScript errors in wallet route and useWalletAuth hook",
-          "url": "https://github.com/devfreeguy/skill-swap/commit/0b88cbf413a53f768d1757b93328ab98bbbebc5a",
-          "committedAt": "2026-07-16T01:57:52Z"
         }
       ],
       "error": null
@@ -279,48 +270,46 @@
     {
       "id": "opa007i",
       "name": "Opa",
-      "lastActivityAt": "2026-07-14T14:17:04Z",
-      "commitsThisWeek": 4,
+      "lastActivityAt": "2026-07-16T21:51:47Z",
+      "commitsThisWeek": 8,
       "recentCommits": [
+        {
+          "repo": "opa1/the-quest",
+          "message": "Merge pull request #4 from opa1/staging\n\nStaging",
+          "url": "https://github.com/opa1/the-quest/commit/2297293367a70522670776f7635c91cbb324a063",
+          "committedAt": "2026-07-16T21:51:47Z"
+        },
+        {
+          "repo": "opa1/the-quest",
+          "message": "refactor: remove claim/drop task actions, simplify submission flow\n\nEliminate the separate claim step from the task workflow. Users now submit work directly without a prior claim, and submissions are no longer reserved. Multiple users can submit for the same task until the poster approves one. Update UI components to reflect the new flow (remove `slotsRemaining`, add `submissionCount`) and adjust all tests accordingly.",
+          "url": "https://github.com/opa1/the-quest/commit/3211e5ab970bef4ba0b3a004499d60466f9db272",
+          "committedAt": "2026-07-16T21:16:06Z"
+        },
+        {
+          "repo": "opa1/the-quest",
+          "message": "feat: implement closeMission action with shared refund logic\n\nExtract refund logic from processDeadlineRefund into a reusable function closeAndRefundUnfilled, used by both deadline cron and poster's manual close. Add tests for closeMission covering unfilled slots, partial approvals, rejection of submissions, and refund safety. This ensures consistent refund handling and prevents double refunds.",
+          "url": "https://github.com/opa1/the-quest/commit/d4acbd499574e6aae73006dfac85b6eb5d475d65",
+          "committedAt": "2026-07-16T18:12:22Z"
+        },
+        {
+          "repo": "opa1/the-quest",
+          "message": "feat(docs): add How It Works page with loop, rewards, reputation\n\n- Add micromark dependencies for markdown rendering\n- Refactor link components: use GuardedLink, support external links, make href required\n- Update FeatureCard to require ctaLabel and href for consistency",
+          "url": "https://github.com/opa1/the-quest/commit/e5eade32f5b1c8535ecc6d728e38f5a01fc50162",
+          "committedAt": "2026-07-16T17:48:26Z"
+        },
         {
           "repo": "opa1/the-quest",
           "message": "Merge pull request #3 from opa1/staging: fix(missions): stop hiding missions from the board by status\n\nfix(missions): stop hiding missions from the board by status",
           "url": "https://github.com/opa1/the-quest/commit/769a651bf161034530b9622992fe4c97da5efa6a",
           "committedAt": "2026-07-14T14:17:04Z"
-        },
-        {
-          "repo": "opa1/the-quest",
-          "message": "fix(missions): stop hiding missions from the board by status\n\nThe Missions page and Recent Missions only ever selected 'open' and 'completed' rows, but tasks.status takes five values. A mission that got claimed (all slots taken) or submitted for review silently vanished from the board, as did anything the deadline cron closed as 'cancelled'.\n\nBoth listing queries now apply no status filter at all — nothing is dropped from the board. \"Open Only\" remains the one view that filters, and it does so on request.\n\nBountyCard badges every non-open state instead of just completed: claimed -> In progress, submitted -> In review, completed -> Completed, cancelled -> Expired or Cancelled depending on whether the deadline has passed. Only genuinely closed missions are dimmed; in-flight ones keep full opacity.\n\n\"Open First\" used to work by sorting status descending, which happened to put 'open' above 'completed' alphabetically. That breaks with 'claimed' and 'submitted' in the mix and PostgREST can't express a CASE ranking, so the ordering moves into a stable STATUS_RANK sort in the store.\n\ndeadline_passed is derived in the stores rather than in BountyCard because the React compiler rejects reading the clock during render.",
-          "url": "https://github.com/opa1/the-quest/commit/37f75978ba1f84fdd976ad25298759fd9385288c",
-          "committedAt": "2026-07-14T14:14:13Z"
-        },
-        {
-          "repo": "opa1/the-quest",
-          "message": "Wallet connect error fix\n\nfix(wallet): repair signature verification and wallet connect — verif…",
-          "url": "https://github.com/opa1/the-quest/commit/97dc93fa071bc5b602540372f13eaaa08a034dee",
-          "committedAt": "2026-07-13T17:43:06Z"
-        },
-        {
-          "repo": "opa1/the-quest",
-          "message": "fix(wallet): repair signature verification and wallet connect — verify.ts, verify.test.ts, next.config.mjs, the three wallet flows, WalletSettingsBlock, PostMissionFormClient, post/page.tsx",
-          "url": "https://github.com/opa1/the-quest/commit/df497a11527e466ce1d449faf3fbebaa546ea648",
-          "committedAt": "2026-07-13T17:29:43Z"
         }
       ],
       "error": null
     },
     {
-      "id": "giorgiozanon",
-      "name": "Giorgio",
-      "lastActivityAt": "2026-05-02T13:22:49Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
-      "error": null
-    },
-    {
       "id": "muhammedyuguda",
       "name": "Muhammed",
-      "lastActivityAt": null,
+      "lastActivityAt": "2026-07-05T17:41:39Z",
       "commitsThisWeek": 0,
       "recentCommits": [],
       "error": null
@@ -328,26 +317,26 @@
     {
       "id": "juanitajaramillo",
       "name": "Juanita",
-      "lastActivityAt": null,
+      "lastActivityAt": "2026-07-02T04:01:27Z",
       "commitsThisWeek": 0,
       "recentCommits": [],
-      "error": "FORBIDDEN_OR_RATE_LIMITED"
+      "error": null
     },
     {
       "id": "kamalaliyu",
       "name": "Kamal Aliyu",
-      "lastActivityAt": null,
+      "lastActivityAt": "2026-06-14T14:30:00Z",
       "commitsThisWeek": 0,
       "recentCommits": [],
-      "error": "FORBIDDEN_OR_RATE_LIMITED"
+      "error": null
     },
     {
       "id": "alfreditodole",
       "name": "Alfred Itodole",
-      "lastActivityAt": null,
+      "lastActivityAt": "2026-07-11T14:32:05Z",
       "commitsThisWeek": 0,
       "recentCommits": [],
-      "error": "FORBIDDEN_OR_RATE_LIMITED"
+      "error": null
     }
   ]
 }
