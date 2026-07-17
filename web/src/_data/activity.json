@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-17T02:40:52Z",
+  "generatedAt": "2026-07-17T14:01:34Z",
   "weekStart": "2026-07-13T00:00:00Z",
   "weekEnd": "2026-07-19T23:59:59Z",
   "builders": [
@@ -29,14 +29,38 @@
     {
       "id": "dammy",
       "name": "Dammy",
-      "lastActivityAt": "2026-07-17T02:21:02Z",
-      "commitsThisWeek": 1,
+      "lastActivityAt": "2026-07-17T03:51:41Z",
+      "commitsThisWeek": 6,
       "recentCommits": [
         {
           "repo": "Dammy7942/accordiax",
-          "message": "feat(payouts): consultant payment request flow with bank account management\n\n- Add bank account management to /profile page (add, delete, set default)\n- Add Request Payment button to completed agreement cards on consultant dashboard\n- Payment request modal shows saved accounts and pre-fills agreed amount\n- Submitted requests become read-only (Payment requested label)\n- Add /admin/payouts page: approve, reject, mark paid with bank details visible\n- Add Payouts tab to admin nav\n- Add /api/admin/payouts GET/POST route using service role key",
-          "url": "https://github.com/Dammy7942/accordiax/commit/7101b6311ac5ca188558e708e113c90867c175ae",
-          "committedAt": "2026-07-17T02:21:02Z"
+          "message": "fix consultant request payment status aware fix",
+          "url": "https://github.com/Dammy7942/accordiax/commit/7e18f6a54f40e1012cd8ffbf6519af7a068669a9",
+          "committedAt": "2026-07-17T03:51:41Z"
+        },
+        {
+          "repo": "Dammy7942/accordiax",
+          "message": "fix payout error fixed",
+          "url": "https://github.com/Dammy7942/accordiax/commit/b4bd2d029f41bb9dbc071d715a7d088cd3ee8869",
+          "committedAt": "2026-07-17T03:42:01Z"
+        },
+        {
+          "repo": "Dammy7942/accordiax",
+          "message": "fix error message applied to payout request failure",
+          "url": "https://github.com/Dammy7942/accordiax/commit/02c717b2df33dd9a3f944ff4b34ff937a5599fc6",
+          "committedAt": "2026-07-17T03:36:11Z"
+        },
+        {
+          "repo": "Dammy7942/accordiax",
+          "message": "fix(admin): payouts manual joins, escrow read-only view, inline bank account form\n\n- Rewrote /api/admin/payouts GET to use manual batch queries instead of\n  PostgREST nested joins -- payment_requests has no FK constraints so\n  the aliased join syntax returned nothing; now fetches agreements,\n  profiles, bank accounts, and emails in parallel then merges them\n\n- Repurposed admin escrow page as a read-only financial overview:\n  removed the release-payment button, added status badges (Payment held /\n  Awaiting approval / Awaiting payout), summary strip with total held and\n  per-status counts, and expanded the API query to include paid_held and\n  delivered agreements alongside completed ones; renamed nav tab to Funds\n\n- Replaced the Go to Profile link in the consultant payment request modal\n  with an inline bank account form -- consultants with no saved accounts\n  can now add one without leaving the dashboard; on save the account is\n  inserted, local state updated, and the selector shown immediately so\n  the payment request can proceed in one flow",
+          "url": "https://github.com/Dammy7942/accordiax/commit/e6f1bf9e90f2f0fd7e0257825bb2c893f357edb6",
+          "committedAt": "2026-07-17T03:12:02Z"
+        },
+        {
+          "repo": "Dammy7942/accordiax",
+          "message": "fix(admin): add disputes page so disputed agreements are visible to admin\n\nDisputed agreements (status=disputed) were invisible in the admin panel\nbecause the existing appeals page only queried status=appealed.\n\n- Add /api/admin/disputes GET route fetching status=disputed agreements\n  with student, consultant, and request details\n- Add /api/admin/resolve-dispute POST route with email notifications\n  to both parties and note that appeal is available\n- Add /admin/disputes page with Rule for Student / Rule for Consultant\n  actions and resolution notes field\n- Add Disputes as first tab in admin nav before Appeals",
+          "url": "https://github.com/Dammy7942/accordiax/commit/c7fdd668f468b825922e6b2545c4d40a7821dbc6",
+          "committedAt": "2026-07-17T02:37:16Z"
         }
       ],
       "error": null
@@ -176,9 +200,15 @@
     {
       "id": "newman5",
       "name": "Newman",
-      "lastActivityAt": "2026-07-16T21:43:15Z",
-      "commitsThisWeek": 8,
+      "lastActivityAt": "2026-07-17T02:56:11Z",
+      "commitsThisWeek": 9,
       "recentCommits": [
+        {
+          "repo": "Newman5/builder-season-playbook",
+          "message": "Adding the github avatars to profile listings",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/bd7f08c39d90df47519f43c14b0d9573aa1ec268",
+          "committedAt": "2026-07-17T02:56:11Z"
+        },
         {
           "repo": "Newman5/builder-season-playbook",
           "message": "removing the complicated X search features.  Sticking with simple X search with single URL encoded link",
@@ -202,12 +232,6 @@
           "message": "final changes to fix styling",
           "url": "https://github.com/Newman5/builder-season-playbook/commit/6318b198e61cc217924a57076332e98808eb41be",
           "committedAt": "2026-07-15T18:24:58Z"
-        },
-        {
-          "repo": "Newman5/builder-season-playbook",
-          "message": "update use-this-model",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/d1941ed5af7b82ad4cb2bdf5b7dba3772cb79174",
-          "committedAt": "2026-07-15T17:52:52Z"
         }
       ],
       "error": null
@@ -223,9 +247,27 @@
     {
       "id": "devfreeguy",
       "name": "Daniel",
-      "lastActivityAt": "2026-07-17T01:22:24Z",
-      "commitsThisWeek": 21,
+      "lastActivityAt": "2026-07-17T11:19:09Z",
+      "commitsThisWeek": 24,
       "recentCommits": [
+        {
+          "repo": "devfreeguy/skill-swap",
+          "message": "feat: make default network configurable via NEXT_PUBLIC_DEFAULT_NETWORK env var",
+          "url": "https://github.com/devfreeguy/skill-swap/commit/28223a4f08dbe3159186f2b2ebfd730c97b24fda",
+          "committedAt": "2026-07-17T11:19:09Z"
+        },
+        {
+          "repo": "devfreeguy/skill-swap",
+          "message": "fix: derive twitter oauth callback url from request origin instead of NEXTAUTH_URL",
+          "url": "https://github.com/devfreeguy/skill-swap/commit/6678e7e510518a25ed07a7f559489d36400b9739",
+          "committedAt": "2026-07-17T10:53:32Z"
+        },
+        {
+          "repo": "devfreeguy/skill-swap",
+          "message": "feat: add mainnet/preprod network toggle to sidebar\n\nAdds a Switch-based network toggle to the sidebar nav. Toggling calls\nPOST /api/network to set the x-skillswap-network cookie, then reloads\nthe page so all data re-fetches against the correct database.",
+          "url": "https://github.com/devfreeguy/skill-swap/commit/b7f4b02ef46d80eb8e91d77bf0d96d81f52899e7",
+          "committedAt": "2026-07-17T09:55:17Z"
+        },
         {
           "repo": "devfreeguy/skill-swap",
           "message": "refactor(api): remove deprecated adaTxHash field from Swap model\n\nThe adaTxHash field is no longer needed as fee transactions are now tracked separately via feeTxHash and related fields. This commit removes it from the Prisma schema and the API query.",
@@ -237,24 +279,6 @@
           "message": "feat: build public reputation page with proof records and cardano explorer links",
           "url": "https://github.com/devfreeguy/skill-swap/commit/6313d218b7dfcf020e0c5b86d0732f05a9ced411",
           "committedAt": "2026-07-17T00:03:59Z"
-        },
-        {
-          "repo": "devfreeguy/skill-swap",
-          "message": "fix: auto-redirect new users to onboarding when no profile found on migrating page",
-          "url": "https://github.com/devfreeguy/skill-swap/commit/06bd95fa960fbba529ce2e63d4f235c05d7d298c",
-          "committedAt": "2026-07-16T23:26:27Z"
-        },
-        {
-          "repo": "devfreeguy/skill-swap",
-          "message": "fix: auth bugs, wallet swap UX, and add Vitest test suite\n\n- Fix logout cookie not clearing (missing path: '/' on clearAuthCookie)\n- Fix /api/auth/me missing onboarded field; LoginPanel now respects it\n- Fix Twitter callback routing: onboarded check no longer includes name\n- Fix WalletConnectButton: userDisconnected ref prevents auto-retrigger\n- Make wallet address permanent on profile (remove disconnect button)\n- Fix get-shell-user to use network-aware DB instead of hardcoded preprod\n- Fix swap request modal: silent CIP-30 probe resolves CCWW race condition\n  so wallet-type users are no longer told to connect from Profile\n- Add reconnect widget in UserProfileDialog when extension genuinely offline\n- Add Vitest suite: 58 tests across jwt, cookies, skills, proxy, API routes\n- Exclude tests/ from main tsconfig; add tsconfig.test.json for Vitest alias resolution",
-          "url": "https://github.com/devfreeguy/skill-swap/commit/5748f2d19e287c55f92e79a87d017760a1c21ea6",
-          "committedAt": "2026-07-16T19:06:06Z"
-        },
-        {
-          "repo": "devfreeguy/skill-swap",
-          "message": "fix: use 'link' mode instead of 'login' for wallet connect on profile page\n\nThe profile page was using mode='login' which triggered the full auth\nflow (connectAndAuth), redirecting to /migrating upon successful wallet\nsign-in. Changed to mode='link' which calls connectAndLink — the\ncorrect flow for attaching a wallet to an already-authenticated user.\n\nAlso added onLinked callback to re-fetch the profile so the newly linked\nwallet address appears immediately.",
-          "url": "https://github.com/devfreeguy/skill-swap/commit/3a63da0fac6d77d5094f9b8a3feae208e07216e4",
-          "committedAt": "2026-07-16T08:02:00Z"
         }
       ],
       "error": null
@@ -262,17 +286,48 @@
     {
       "id": "haulink",
       "name": "Abdulazeez",
-      "lastActivityAt": "2026-07-08T13:04:22Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-07-17T09:37:53Z",
+      "commitsThisWeek": 3,
+      "recentCommits": [
+        {
+          "repo": "FoladDTechie/Haulink",
+          "message": "Merge pull request #17 from FoladDTechie/HAUL-22-AZB\n\nHaul 22 azb",
+          "url": "https://github.com/FoladDTechie/Haulink/commit/01b0b8aded7eca5e6e985e908d47fdc5d8780f93",
+          "committedAt": "2026-07-17T09:37:53Z"
+        },
+        {
+          "repo": "FoladDTechie/Haulink",
+          "message": "added Submission.md",
+          "url": "https://github.com/FoladDTechie/Haulink/commit/953100e11d0480af63a4124508da960122ff7e77",
+          "committedAt": "2026-07-17T09:35:02Z"
+        },
+        {
+          "repo": "FoladDTechie/Haulink",
+          "message": "added submission file",
+          "url": "https://github.com/FoladDTechie/Haulink/commit/8b55f2332aa4761ae327168ef58f34eef36778f9",
+          "committedAt": "2026-07-16T09:28:22Z"
+        }
+      ],
       "error": null
     },
     {
       "id": "opa007i",
       "name": "Opa",
-      "lastActivityAt": "2026-07-16T21:51:47Z",
-      "commitsThisWeek": 8,
+      "lastActivityAt": "2026-07-17T10:46:53Z",
+      "commitsThisWeek": 10,
       "recentCommits": [
+        {
+          "repo": "opa1/the-quest",
+          "message": "Merge pull request #5 from opa1/staging\n\nfeat(task-detail): add escrow proof display for posted missions",
+          "url": "https://github.com/opa1/the-quest/commit/d6a83572b2d81fcdf4f63d7cf03a1e5cb0b8b100",
+          "committedAt": "2026-07-17T10:46:53Z"
+        },
+        {
+          "repo": "opa1/the-quest",
+          "message": "feat(task-detail): add escrow proof display for posted missions\n\nShow the poster's escrow deposit on the task detail page so hunters can verify the bounty is actually funded. Added `deposit_tx_hash` field to the task query, created new `EscrowProof` component, and integrated it into `TaskActionPanel`. Missions predating escrow have no hash and render nothing.",
+          "url": "https://github.com/opa1/the-quest/commit/66bb560e14274e2348ed6c86b03d9ea81860065e",
+          "committedAt": "2026-07-17T10:14:46Z"
+        },
         {
           "repo": "opa1/the-quest",
           "message": "Merge pull request #4 from opa1/staging\n\nStaging",
@@ -290,18 +345,6 @@
           "message": "feat: implement closeMission action with shared refund logic\n\nExtract refund logic from processDeadlineRefund into a reusable function closeAndRefundUnfilled, used by both deadline cron and poster's manual close. Add tests for closeMission covering unfilled slots, partial approvals, rejection of submissions, and refund safety. This ensures consistent refund handling and prevents double refunds.",
           "url": "https://github.com/opa1/the-quest/commit/d4acbd499574e6aae73006dfac85b6eb5d475d65",
           "committedAt": "2026-07-16T18:12:22Z"
-        },
-        {
-          "repo": "opa1/the-quest",
-          "message": "feat(docs): add How It Works page with loop, rewards, reputation\n\n- Add micromark dependencies for markdown rendering\n- Refactor link components: use GuardedLink, support external links, make href required\n- Update FeatureCard to require ctaLabel and href for consistency",
-          "url": "https://github.com/opa1/the-quest/commit/e5eade32f5b1c8535ecc6d728e38f5a01fc50162",
-          "committedAt": "2026-07-16T17:48:26Z"
-        },
-        {
-          "repo": "opa1/the-quest",
-          "message": "Merge pull request #3 from opa1/staging: fix(missions): stop hiding missions from the board by status\n\nfix(missions): stop hiding missions from the board by status",
-          "url": "https://github.com/opa1/the-quest/commit/769a651bf161034530b9622992fe4c97da5efa6a",
-          "committedAt": "2026-07-14T14:17:04Z"
         }
       ],
       "error": null
