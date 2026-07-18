@@ -52,7 +52,7 @@ Show the user-facing problem and the product in plain language.
 
 ## Slide 4: Live Demo
 
-Show the product working live.
+[Show the product working live is here](https://ody.sh/e5waMpBGvq)
 
 Recommended flow:
 

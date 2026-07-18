@@ -152,6 +152,7 @@ repos:
       - feedback
 
   - id: blockprint
+    active: false
     name: BlockPrint
     github: BlockPrintio
     x: blockprint0
