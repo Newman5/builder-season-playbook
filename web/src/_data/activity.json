@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-17T14:01:34Z",
+  "generatedAt": "2026-07-18T13:47:20Z",
   "weekStart": "2026-07-13T00:00:00Z",
   "weekEnd": "2026-07-19T23:59:59Z",
   "builders": [
@@ -76,14 +76,38 @@
     {
       "id": "harrie",
       "name": "Harrie",
-      "lastActivityAt": "2026-07-14T13:53:14Z",
-      "commitsThisWeek": 1,
+      "lastActivityAt": "2026-07-17T16:12:20Z",
+      "commitsThisWeek": 8,
       "recentCommits": [
         {
           "repo": "IamHarrie-Labs/beni",
-          "message": "feat(mainnet+bot): fresh mainnet proof under fixed contract, /importkey\n\nLanding page FAQ now links a mainnet deploy + guarded spend performed\nunder the agent_pkh-fixed validator, replacing the links to the old\nvulnerable contract's transactions from before the fix.\n\nTelegram bot: added /importkey <privateKey> [perTxCap] [dailyCap] so\na user can register with a key they already control instead of only\nbeing offered one the bot generates. The bot still signs on their\nbehalf during use - that part is unavoidable for a chat interface with\nno wallet-extension access - but the user now always has their own\ncopy of the key from the start rather than depending on bot storage\nfor it. Best-effort deletes the message containing the raw key.\n\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>",
-          "url": "https://github.com/IamHarrie-Labs/beni/commit/4d0f5bb510be75f2540799f810366f14e55a2e0d",
-          "committedAt": "2026-07-14T13:53:14Z"
+          "message": "feat(telegram): add Redis persistence, wire up mainnet + encryption\n\nEvery user's wallet record was stored in a local JSON file with no\nRedis/KV backend configured on the live bot - Railway containers don't\npersist local disk across redeploys, so every user's custodial key was\nat risk of being wiped on the next deploy or restart, independent of\nthe plaintext-storage issue fixed earlier.\n\nAdded a Redis (REDIS_URL) backend to store.js, prioritized over the\nexisting Upstash REST option, so persistence doesn't require a new\nthird-party account - a standard Railway Redis plugin works directly.\nVerified against the actual provisioned instance via `railway run`\n(round-trip through the real database, not a mock).\n\nRailway env vars for the live bot (gregarious-vision/beni) also\nupdated: BENI_NETWORK=Mainnet, BLOCKFROST_MAINNET_KEY, and a fresh\nBENI_ENCRYPTION_KEY - the last one is required for the previous\nencryption-at-rest commit to work at all; without it every /newwallet\nor /importkey call would throw.\n\nCo-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>",
+          "url": "https://github.com/IamHarrie-Labs/beni/commit/157f533776b330ed10e0cf23cd812b328dab9134",
+          "committedAt": "2026-07-17T16:12:20Z"
+        },
+        {
+          "repo": "IamHarrie-Labs/beni",
+          "message": "feat(telegram+landing): encrypt custodial keys at rest, sharpen hero copy\n\nThe bot stored every user's custodial agent private key in plaintext,\nin either Redis or a local JSON file - its own wallet.js comment\nalready warned \"never reuse this custodial model with mainnet funds.\"\nAdded crypto.js (AES-256-GCM, key from BENI_ENCRYPTION_KEY) and wired\nit transparently into store.js's getUser/setUser, so bot.js and\nwallet.js need no changes. Legacy plaintext records pass through\nunchanged on read and get encrypted on the next write, so existing\nrecords self-heal without a migration script. Verified round-trip,\nlegacy passthrough, tamper rejection, and missing-key failure.\n\nLanding hero copy led with \"guardrails for institutional AI wallets\" -\nabstract and easy to skip past. Replaced with the concrete claim: even\na compromised AI, a leaked key, or a buggy app can't cross the limit,\nbecause it's enforced by the ledger, not a policy or a promise.\n\nCo-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>",
+          "url": "https://github.com/IamHarrie-Labs/beni/commit/487ff689a7e7599d9c0860fcf10abd0450ea6fb8",
+          "committedAt": "2026-07-17T15:13:38Z"
+        },
+        {
+          "repo": "IamHarrie-Labs/beni",
+          "message": "style(nav+footer): declutter top nav and footer, bigger logo\n\nTop nav: hide the \"Open Beni\" CTA while the hero's own CTA row is on\nscreen (redundant with it), reappearing once scrolled past. Bigger\nlogo (22px -> 28px) and taller header (70px -> 84px) for more breathing\nroom.\n\nFooter: removed both duplicate Beni wordmarks and the tagline\nparagraph, which repeated what the hero already says. Only the\nProduct/Developers/Security nav columns remain, plus the copyright\nline.\n\nCo-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>",
+          "url": "https://github.com/IamHarrie-Labs/beni/commit/9290e002afa9e36b22fa9186ec0be3053169e6ac",
+          "committedAt": "2026-07-17T13:49:33Z"
+        },
+        {
+          "repo": "IamHarrie-Labs/beni",
+          "message": "feat(mainnet): redeploy agent wallet under the FreezeWallet fix\n\nThe flagship demo wallet is redeployed on mainnet under the fixed\nvalidator (tx 56a55cd9...). The previous deployment used the pre-fix\nFreezeWallet logic and stays live only as a historical record — the\nlanding page FAQ now links both, labeled accordingly.\n\nBENI_SCRIPT_ADDRESS and BENI_THREAD_TOKEN_POLICY in Vercel production\nalso needed updating to the new deployment: they were 9 days stale,\nstill pointing at the old Preview-testnet demo wallet even after\nBENI_NETWORK was set to Mainnet, so the agent-state endpoint had\nsilently been querying mainnet Blockfrost for a testnet address.\n\nCo-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>",
+          "url": "https://github.com/IamHarrie-Labs/beni/commit/da19b705a997520870af1fd9101eb2dddc8e334f",
+          "committedAt": "2026-07-17T09:56:38Z"
+        },
+        {
+          "repo": "IamHarrie-Labs/beni",
+          "message": "fix(security): sync FreezeWallet fix into the public /api/deploy endpoint\n\napi/deploy.js is the actual production path every visitor hits when they\nconnect a wallet and deploy their own guarded agent wallet through the\ndashboard - it takes payerAddress, perTxCapLovelace, and dailyCapLovelace\nfrom the caller and sets agentPkh from their own connected wallet, so it\nwas already correctly built to serve any user's own wallet, not a single\nhardcoded one.\n\nBut it carries its own separate copy of the compiled validator bytecode,\nindependent from sdk/src/validators.ts. That copy was never updated after\nthe FreezeWallet fix, so every real user deploying through the public\ndashboard would have silently received the old, pre-fix contract with no\nerror surfaced anywhere. Synced it from the rebuilt plutus.json.\n\nAdded scripts/check-validator-bytecode-sync.mjs + a CI step that fails\nif either copy drifts from plutus.json again.\n\nCo-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>",
+          "url": "https://github.com/IamHarrie-Labs/beni/commit/79a224fd0a72d8ff4d8e1ecb80dc8a4fa20de7d5",
+          "committedAt": "2026-07-17T01:03:40Z"
         }
       ],
       "error": null
@@ -137,9 +161,21 @@
     {
       "id": "murmurations",
       "name": "Nori",
-      "lastActivityAt": "2026-07-16T22:55:51Z",
-      "commitsThisWeek": 15,
+      "lastActivityAt": "2026-07-17T20:11:48Z",
+      "commitsThisWeek": 17,
       "recentCommits": [
+        {
+          "repo": "murmurations-ai/flyway",
+          "message": "Merge pull request #36 from murmurations-ai/feat/simple-cli-and-payment\n\nfeat(cli+docs): simple flyway command, easy install, payment option",
+          "url": "https://github.com/murmurations-ai/flyway/commit/89888635b47ed20aeeacd1290a40f6f03252ea4c",
+          "committedAt": "2026-07-17T20:11:48Z"
+        },
+        {
+          "repo": "murmurations-ai/flyway",
+          "message": "feat(cli+docs): simple `flyway` command, easy install, payment option\n\nTwo things a first-time visitor needs: a CLI that isn't a mouthful, and\n(for Builder Pie) a way to pay.\n\nSimple invocation + easy install\n- `pnpm setup` — one command: install, build, and link `flyway` +\n  `flyway-mcp` onto PATH (via npm link). After it, `flyway status` works\n  from anywhere instead of `node packages/cli/dist/bin/flyway.js status`.\n- Root now depends on flyway-cli/flyway-mcp (workspace:*), so without a\n  global link you can still run `pnpm flyway <cmd>` / `pnpm flyway-mcp`\n  in-repo (node_modules/.bin is wired).\n- scripts/postbuild.mjs chmods the built bins 0755 so the global link\n  survives rebuilds (tsc --build drops the +x bit; root build now runs it).\n- README / AGENTS.md / index.html quickstarts use the short `flyway`\n  form with a `pnpm`-prefix fallback noted.\n\nPayment option (Builder Pie)\n- Buy Me a Coffee (pay-what-you-want) added to the README (top bar +\n  Support section), the presentation (support button, payment row in the\n  walkthrough, verification-checklist item), and the site footer.\n- Reconciled the old \"payment: none / not a paywall\" copy: the protocol\n  stays free & MIT; support funds the work without gating a tool.\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01Prq6BNwxJ2MbKKyw6BAYhs",
+          "url": "https://github.com/murmurations-ai/flyway/commit/5d76d38a1b71179f3d35a225140e32c1954bc971",
+          "committedAt": "2026-07-17T20:11:30Z"
+        },
         {
           "repo": "murmurations-ai/flyway",
           "message": "Merge pull request #35 from murmurations-ai/docs/refresh-architecture\n\ndocs(architecture): refresh how-flyway-works twins to current state",
@@ -157,18 +193,6 @@
           "message": "Merge pull request #34 from murmurations-ai/docs/refresh-status-readme\n\ndocs: refresh status snapshot to S+14; tighten README top",
           "url": "https://github.com/murmurations-ai/flyway/commit/20e76ef10b05d006799ad3360b5cd5cc7058f8ee",
           "committedAt": "2026-07-16T22:12:24Z"
-        },
-        {
-          "repo": "murmurations-ai/flyway",
-          "message": "docs: refresh status snapshot to S+14; tighten README top\n\nBring the status dashboards and README in line with the current tree\n(SHA 0af2e32, 2026-07-16):\n\n- tests 445 -> 449, open issues 12 -> 9 (close #16/#17/#20, the\n  season-wrap batch), code SHA + generated-date updated across\n  status.html + status.md\n- trim the now-closed issues from the by-theme lists; note none are\n  security\n- README: replace the dense status blockquote with a clean one-line\n  current-state summary so first-time visitors get orientation, not an\n  accumulated build log\n\nNo code or protocol changes — snapshot/docs only. Timeline milestone\nSHAs (incl. S+13 1576181) intentionally unchanged.\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01Prq6BNwxJ2MbKKyw6BAYhs",
-          "url": "https://github.com/murmurations-ai/flyway/commit/521fadb7f069c8bfa585a55c12bfe5ca99576d52",
-          "committedAt": "2026-07-16T22:12:10Z"
-        },
-        {
-          "repo": "murmurations-ai/flyway",
-          "message": "Merge pull request #33 from murmurations-ai/docs/wire-week12-tweet\n\ndocs: wire the posted week-12 finale tweet",
-          "url": "https://github.com/murmurations-ai/flyway/commit/2958b13a1ad2890273dceb50f40d9046cef13b00",
-          "committedAt": "2026-07-16T21:55:24Z"
         }
       ],
       "error": null
@@ -200,9 +224,15 @@
     {
       "id": "newman5",
       "name": "Newman",
-      "lastActivityAt": "2026-07-17T02:56:11Z",
-      "commitsThisWeek": 9,
+      "lastActivityAt": "2026-07-17T14:01:43Z",
+      "commitsThisWeek": 10,
       "recentCommits": [
+        {
+          "repo": "Newman5/builder-season-playbook",
+          "message": "Update builder activity data",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/e9f0c503a6ba06e53952cb7c48d6c8e41f266f78",
+          "committedAt": "2026-07-17T14:01:43Z"
+        },
         {
           "repo": "Newman5/builder-season-playbook",
           "message": "Adding the github avatars to profile listings",
@@ -226,12 +256,6 @@
           "message": "adding last x update",
           "url": "https://github.com/Newman5/builder-season-playbook/commit/c0255eda610ee72938f53d9ff416a126624a3c92",
           "committedAt": "2026-07-15T19:42:58Z"
-        },
-        {
-          "repo": "Newman5/builder-season-playbook",
-          "message": "final changes to fix styling",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/6318b198e61cc217924a57076332e98808eb41be",
-          "committedAt": "2026-07-15T18:24:58Z"
         }
       ],
       "error": null
@@ -247,38 +271,38 @@
     {
       "id": "devfreeguy",
       "name": "Daniel",
-      "lastActivityAt": "2026-07-17T11:19:09Z",
-      "commitsThisWeek": 24,
+      "lastActivityAt": "2026-07-18T11:04:37Z",
+      "commitsThisWeek": 28,
       "recentCommits": [
+        {
+          "repo": "devfreeguy/skill-swap",
+          "message": "chore: ignore docs/final-presentation-template.md",
+          "url": "https://github.com/devfreeguy/skill-swap/commit/50c7d1599b012d952f5d52c6a1d2020d0a045a4d",
+          "committedAt": "2026-07-18T11:04:37Z"
+        },
+        {
+          "repo": "devfreeguy/skill-swap",
+          "message": "fix: show fallback cards immediately in contribution ledger instead of skeletons",
+          "url": "https://github.com/devfreeguy/skill-swap/commit/d5b307aad5905cd330254510730745855856f97c",
+          "committedAt": "2026-07-18T09:52:51Z"
+        },
+        {
+          "repo": "devfreeguy/skill-swap",
+          "message": "fix: show fallback placeholder cards when no completed swaps exist",
+          "url": "https://github.com/devfreeguy/skill-swap/commit/7445f046b1e48fb340d74c009039417e57571e2a",
+          "committedAt": "2026-07-18T09:48:22Z"
+        },
+        {
+          "repo": "devfreeguy/skill-swap",
+          "message": "feat: fetch real completed swaps for contribution ledger section",
+          "url": "https://github.com/devfreeguy/skill-swap/commit/7b8252c762fcc24c53d395c97579c2a47d4f6a71",
+          "committedAt": "2026-07-18T09:05:52Z"
+        },
         {
           "repo": "devfreeguy/skill-swap",
           "message": "feat: make default network configurable via NEXT_PUBLIC_DEFAULT_NETWORK env var",
           "url": "https://github.com/devfreeguy/skill-swap/commit/28223a4f08dbe3159186f2b2ebfd730c97b24fda",
           "committedAt": "2026-07-17T11:19:09Z"
-        },
-        {
-          "repo": "devfreeguy/skill-swap",
-          "message": "fix: derive twitter oauth callback url from request origin instead of NEXTAUTH_URL",
-          "url": "https://github.com/devfreeguy/skill-swap/commit/6678e7e510518a25ed07a7f559489d36400b9739",
-          "committedAt": "2026-07-17T10:53:32Z"
-        },
-        {
-          "repo": "devfreeguy/skill-swap",
-          "message": "feat: add mainnet/preprod network toggle to sidebar\n\nAdds a Switch-based network toggle to the sidebar nav. Toggling calls\nPOST /api/network to set the x-skillswap-network cookie, then reloads\nthe page so all data re-fetches against the correct database.",
-          "url": "https://github.com/devfreeguy/skill-swap/commit/b7f4b02ef46d80eb8e91d77bf0d96d81f52899e7",
-          "committedAt": "2026-07-17T09:55:17Z"
-        },
-        {
-          "repo": "devfreeguy/skill-swap",
-          "message": "refactor(api): remove deprecated adaTxHash field from Swap model\n\nThe adaTxHash field is no longer needed as fee transactions are now tracked separately via feeTxHash and related fields. This commit removes it from the Prisma schema and the API query.",
-          "url": "https://github.com/devfreeguy/skill-swap/commit/b3d4ce1e1be6ad0796b3a81f17d8841ff3366a1b",
-          "committedAt": "2026-07-17T01:22:24Z"
-        },
-        {
-          "repo": "devfreeguy/skill-swap",
-          "message": "feat: build public reputation page with proof records and cardano explorer links",
-          "url": "https://github.com/devfreeguy/skill-swap/commit/6313d218b7dfcf020e0c5b86d0732f05a9ced411",
-          "committedAt": "2026-07-17T00:03:59Z"
         }
       ],
       "error": null
@@ -286,26 +310,38 @@
     {
       "id": "haulink",
       "name": "Abdulazeez",
-      "lastActivityAt": "2026-07-17T09:37:53Z",
-      "commitsThisWeek": 3,
+      "lastActivityAt": "2026-07-18T09:09:41Z",
+      "commitsThisWeek": 10,
       "recentCommits": [
         {
           "repo": "FoladDTechie/Haulink",
-          "message": "Merge pull request #17 from FoladDTechie/HAUL-22-AZB\n\nHaul 22 azb",
-          "url": "https://github.com/FoladDTechie/Haulink/commit/01b0b8aded7eca5e6e985e908d47fdc5d8780f93",
-          "committedAt": "2026-07-17T09:37:53Z"
+          "message": "Merge pull request #19 from FoladDTechie/HAUL-22-AZB\n\nFeat: Docs Update",
+          "url": "https://github.com/FoladDTechie/Haulink/commit/4b99364fe2caaa50f5462b1e39c9ffc025112990",
+          "committedAt": "2026-07-18T09:09:41Z"
         },
         {
           "repo": "FoladDTechie/Haulink",
-          "message": "added Submission.md",
-          "url": "https://github.com/FoladDTechie/Haulink/commit/953100e11d0480af63a4124508da960122ff7e77",
-          "committedAt": "2026-07-17T09:35:02Z"
+          "message": "docs: added presentation Video",
+          "url": "https://github.com/FoladDTechie/Haulink/commit/341e27b7133287dde2a7960cb7d252b877c8652f",
+          "committedAt": "2026-07-18T09:07:28Z"
         },
         {
           "repo": "FoladDTechie/Haulink",
-          "message": "added submission file",
-          "url": "https://github.com/FoladDTechie/Haulink/commit/8b55f2332aa4761ae327168ef58f34eef36778f9",
-          "committedAt": "2026-07-16T09:28:22Z"
+          "message": "docs: added presentation Video",
+          "url": "https://github.com/FoladDTechie/Haulink/commit/bbfd502a6691d7dc5879f0952dea733c36118b4c",
+          "committedAt": "2026-07-18T09:06:18Z"
+        },
+        {
+          "repo": "FoladDTechie/Haulink",
+          "message": "docs: added presentation Video",
+          "url": "https://github.com/FoladDTechie/Haulink/commit/5dfcce845c257c9ec0ec7290e70742fb6bea48ca",
+          "committedAt": "2026-07-18T09:04:56Z"
+        },
+        {
+          "repo": "FoladDTechie/Haulink",
+          "message": "Merge pull request #18 from FoladDTechie/HAUL-22-AZB\n\nfeat: final submission — SUBMISSION.md and verification links",
+          "url": "https://github.com/FoladDTechie/Haulink/commit/eb2c2f591f9516ab6b8ef1eea6567b0b6038bdf0",
+          "committedAt": "2026-07-17T18:03:58Z"
         }
       ],
       "error": null
@@ -313,38 +349,38 @@
     {
       "id": "opa007i",
       "name": "Opa",
-      "lastActivityAt": "2026-07-17T10:46:53Z",
-      "commitsThisWeek": 10,
+      "lastActivityAt": "2026-07-17T21:36:19Z",
+      "commitsThisWeek": 16,
       "recentCommits": [
         {
           "repo": "opa1/the-quest",
-          "message": "Merge pull request #5 from opa1/staging\n\nfeat(task-detail): add escrow proof display for posted missions",
-          "url": "https://github.com/opa1/the-quest/commit/d6a83572b2d81fcdf4f63d7cf03a1e5cb0b8b100",
-          "committedAt": "2026-07-17T10:46:53Z"
+          "message": "Merge pull request #6 from opa1/staging\n\nStaging",
+          "url": "https://github.com/opa1/the-quest/commit/f5a0ea18933d48f4f4fee7592774ac331bf605cb",
+          "committedAt": "2026-07-17T21:36:19Z"
         },
         {
           "repo": "opa1/the-quest",
-          "message": "feat(task-detail): add escrow proof display for posted missions\n\nShow the poster's escrow deposit on the task detail page so hunters can verify the bounty is actually funded. Added `deposit_tx_hash` field to the task query, created new `EscrowProof` component, and integrated it into `TaskActionPanel`. Missions predating escrow have no hash and render nothing.",
-          "url": "https://github.com/opa1/the-quest/commit/66bb560e14274e2348ed6c86b03d9ea81860065e",
-          "committedAt": "2026-07-17T10:14:46Z"
+          "message": "docs: add demo and final presentation video link\n\nReplaces the two demo-video placeholders with the recorded Odysee walkthrough (TheQuest final presentation for Piece of Pie 2026).",
+          "url": "https://github.com/opa1/the-quest/commit/6d7838f2ee4c6c684236b130f2ce4ce341194ef2",
+          "committedAt": "2026-07-17T21:25:22Z"
         },
         {
           "repo": "opa1/the-quest",
-          "message": "Merge pull request #4 from opa1/staging\n\nStaging",
-          "url": "https://github.com/opa1/the-quest/commit/2297293367a70522670776f7635c91cbb324a063",
-          "committedAt": "2026-07-16T21:51:47Z"
+          "message": "Merge branch 'staging' of github.com-opa:opa1/the-quest into staging",
+          "url": "https://github.com/opa1/the-quest/commit/d907c16fb716ef756545249c5b2a5a1fcb5f35a0",
+          "committedAt": "2026-07-17T13:08:47Z"
         },
         {
           "repo": "opa1/the-quest",
-          "message": "refactor: remove claim/drop task actions, simplify submission flow\n\nEliminate the separate claim step from the task workflow. Users now submit work directly without a prior claim, and submissions are no longer reserved. Multiple users can submit for the same task until the poster approves one. Update UI components to reflect the new flow (remove `slotsRemaining`, add `submissionCount`) and adjust all tests accordingly.",
-          "url": "https://github.com/opa1/the-quest/commit/3211e5ab970bef4ba0b3a004499d60466f9db272",
-          "committedAt": "2026-07-16T21:16:06Z"
+          "message": "docs: update final presentation with feedback evidence and link fixes\n\n- Restored Feedback Pie section with recorded session evidence (Haulink/Ayzed)\n- Removed redundant Twitter/website link markdown from table rows and inline mentions\n- Updated skypiedao's mission link to correct task URL\n- Removed TODO placeholder note about Feedback Pie",
+          "url": "https://github.com/opa1/the-quest/commit/654b0cfbada24f598a013658a554f9fea8b89000",
+          "committedAt": "2026-07-17T13:08:36Z"
         },
         {
           "repo": "opa1/the-quest",
-          "message": "feat: implement closeMission action with shared refund logic\n\nExtract refund logic from processDeadlineRefund into a reusable function closeAndRefundUnfilled, used by both deadline cron and poster's manual close. Add tests for closeMission covering unfilled slots, partial approvals, rejection of submissions, and refund safety. This ensures consistent refund handling and prevents double refunds.",
-          "url": "https://github.com/opa1/the-quest/commit/d4acbd499574e6aae73006dfac85b6eb5d475d65",
-          "committedAt": "2026-07-16T18:12:22Z"
+          "message": "Update project description to include 'gamified'",
+          "url": "https://github.com/opa1/the-quest/commit/3a8333fac8cc7a275b22c34d095f36787f20a7be",
+          "committedAt": "2026-07-17T11:48:22Z"
         }
       ],
       "error": null
@@ -376,9 +412,40 @@
     {
       "id": "alfreditodole",
       "name": "Alfred Itodole",
-      "lastActivityAt": "2026-07-11T14:32:05Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-07-18T02:54:48Z",
+      "commitsThisWeek": 16,
+      "recentCommits": [
+        {
+          "repo": "sirxalfred/mosaic-cardano",
+          "message": "Merge pull request #41 from sirXalfred/develop\n\nchore: refactor publishing features, routing updates, and performance improvements",
+          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/b58cb9136fe16b88e50b495526dd78ab4e67f2e8",
+          "committedAt": "2026-07-18T02:54:48Z"
+        },
+        {
+          "repo": "sirxalfred/mosaic-cardano",
+          "message": "fix: elevate WalletConnectModal z-index to render on top of PublishingModal",
+          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/695031f88fe253ade35344a023c9090211348bc9",
+          "committedAt": "2026-07-17T18:43:12Z"
+        },
+        {
+          "repo": "sirxalfred/mosaic-cardano",
+          "message": "fix: handle database connection errors during build-time static parameter generation",
+          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/5e723296b996cecc1e2b82899635d8b9331496e2",
+          "committedAt": "2026-07-17T02:26:36Z"
+        },
+        {
+          "repo": "sirxalfred/mosaic-cardano",
+          "message": "feat: disable redis connection retries and offline queue during build phase and add project corrections list",
+          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/e0eb082b823f89f138a93cdcdb3c98b7cb30a1a5",
+          "committedAt": "2026-07-16T18:31:55Z"
+        },
+        {
+          "repo": "sirxalfred/mosaic-cardano",
+          "message": "refactor: migrate backUrl handling to useSearchParams and remove unnecessary generateStaticParams",
+          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/cda7bc7f28b24007598bda4ef776e4aae47681a4",
+          "committedAt": "2026-07-16T18:23:35Z"
+        }
+      ],
       "error": null
     }
   ]
