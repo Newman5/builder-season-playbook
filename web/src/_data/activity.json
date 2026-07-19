@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-18T13:47:20Z",
+  "generatedAt": "2026-07-19T13:52:22Z",
   "weekStart": "2026-07-13T00:00:00Z",
   "weekEnd": "2026-07-19T23:59:59Z",
   "builders": [
@@ -76,38 +76,38 @@
     {
       "id": "harrie",
       "name": "Harrie",
-      "lastActivityAt": "2026-07-17T16:12:20Z",
-      "commitsThisWeek": 8,
+      "lastActivityAt": "2026-07-19T08:46:47Z",
+      "commitsThisWeek": 19,
       "recentCommits": [
         {
           "repo": "IamHarrie-Labs/beni",
-          "message": "feat(telegram): add Redis persistence, wire up mainnet + encryption\n\nEvery user's wallet record was stored in a local JSON file with no\nRedis/KV backend configured on the live bot - Railway containers don't\npersist local disk across redeploys, so every user's custodial key was\nat risk of being wiped on the next deploy or restart, independent of\nthe plaintext-storage issue fixed earlier.\n\nAdded a Redis (REDIS_URL) backend to store.js, prioritized over the\nexisting Upstash REST option, so persistence doesn't require a new\nthird-party account - a standard Railway Redis plugin works directly.\nVerified against the actual provisioned instance via `railway run`\n(round-trip through the real database, not a mock).\n\nRailway env vars for the live bot (gregarious-vision/beni) also\nupdated: BENI_NETWORK=Mainnet, BLOCKFROST_MAINNET_KEY, and a fresh\nBENI_ENCRYPTION_KEY - the last one is required for the previous\nencryption-at-rest commit to work at all; without it every /newwallet\nor /importkey call would throw.\n\nCo-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>",
-          "url": "https://github.com/IamHarrie-Labs/beni/commit/157f533776b330ed10e0cf23cd812b328dab9134",
-          "committedAt": "2026-07-17T16:12:20Z"
+          "message": "docs: remove unclaimed Real User Pie / Feedback Pie section from presentation\n\nCo-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>",
+          "url": "https://github.com/IamHarrie-Labs/beni/commit/e8c24e89a38ab07761986246c83079fc63fa3964",
+          "committedAt": "2026-07-19T08:46:47Z"
         },
         {
           "repo": "IamHarrie-Labs/beni",
-          "message": "feat(telegram+landing): encrypt custodial keys at rest, sharpen hero copy\n\nThe bot stored every user's custodial agent private key in plaintext,\nin either Redis or a local JSON file - its own wallet.js comment\nalready warned \"never reuse this custodial model with mainnet funds.\"\nAdded crypto.js (AES-256-GCM, key from BENI_ENCRYPTION_KEY) and wired\nit transparently into store.js's getUser/setUser, so bot.js and\nwallet.js need no changes. Legacy plaintext records pass through\nunchanged on read and get encrypted on the next write, so existing\nrecords self-heal without a migration script. Verified round-trip,\nlegacy passthrough, tamper rejection, and missing-key failure.\n\nLanding hero copy led with \"guardrails for institutional AI wallets\" -\nabstract and easy to skip past. Replaced with the concrete claim: even\na compromised AI, a leaked key, or a buggy app can't cross the limit,\nbecause it's enforced by the ledger, not a policy or a promise.\n\nCo-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>",
-          "url": "https://github.com/IamHarrie-Labs/beni/commit/487ff689a7e7599d9c0860fcf10abd0450ea6fb8",
-          "committedAt": "2026-07-17T15:13:38Z"
+          "message": "docs: final presentation writeup + README refresh for submission\n\nAdded final_presentation.md following the Piece of Pie template\nstructure - project identity, product function, live demo script,\npurchase flow, repo evidence, mainnet evidence, all 12 verified weekly\nupdates with real content pulled from each tweet, and an honest note\non Real User Pie / Feedback Pie not being claimed (no evidence for\neither).\n\nREADME was still describing the pre-mainnet, pre-bot, pre-onboarding\nstate of the project - rewrote it to match what's actually live now:\nusebeni.xyz as the primary domain, mainnet (not Preview) as the\ndefault story, the Telegram bot and MCP server (with Hermes Agent\ncompatibility) as real usage paths, and the FreezeWallet fix reflected\nin the redeemer table.\n\nCo-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>",
+          "url": "https://github.com/IamHarrie-Labs/beni/commit/77eb2e9c46ef3fa6a559c2a2a8a28f8e2e773d5c",
+          "committedAt": "2026-07-19T08:36:29Z"
         },
         {
           "repo": "IamHarrie-Labs/beni",
-          "message": "style(nav+footer): declutter top nav and footer, bigger logo\n\nTop nav: hide the \"Open Beni\" CTA while the hero's own CTA row is on\nscreen (redundant with it), reappearing once scrolled past. Bigger\nlogo (22px -> 28px) and taller header (70px -> 84px) for more breathing\nroom.\n\nFooter: removed both duplicate Beni wordmarks and the tagline\nparagraph, which repeated what the hero already says. Only the\nProduct/Developers/Security nav columns remain, plus the copyright\nline.\n\nCo-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>",
-          "url": "https://github.com/IamHarrie-Labs/beni/commit/9290e002afa9e36b22fa9186ec0be3053169e6ac",
-          "committedAt": "2026-07-17T13:49:33Z"
+          "message": "feat(mcp): support mainnet in the MCP server, not just Preview\n\nsdk/mcp-server.ts was hardcoded to Preview testnet - network:\"Preview\"\nin every makeLucid call, always reading BLOCKFROST_PREVIEW_KEY, always\nloading beni-wallet-state.json (the Preview state file). Any MCP-\nconnected agent (Claude Desktop, Hermes Agent, etc.) would only ever\nbe able to spend fake test ADA, undercutting the actual mainnet story.\n\nAdded the same BENI_NETWORK pattern used everywhere else in this repo:\nset to \"Mainnet\", it now reads BLOCKFROST_MAINNET_KEY and loads\nbeni-wallet-state.mainnet.json - the real flagship contract redeployed\nearlier this session under the FreezeWallet fix.\n\nVerified against the actual MCP protocol (not a mock): a real client\nlisting tools, calling get_status (confirms the live mainnet script\naddress and real caps), and check_limits both within and over the\nper-tx cap (confirms the guardrail rejection path with the correct\nreason string).\n\nCo-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>",
+          "url": "https://github.com/IamHarrie-Labs/beni/commit/324ef7a5c1766830e61236d74c347647794ec488",
+          "committedAt": "2026-07-18T16:35:51Z"
         },
         {
           "repo": "IamHarrie-Labs/beni",
-          "message": "feat(mainnet): redeploy agent wallet under the FreezeWallet fix\n\nThe flagship demo wallet is redeployed on mainnet under the fixed\nvalidator (tx 56a55cd9...). The previous deployment used the pre-fix\nFreezeWallet logic and stays live only as a historical record — the\nlanding page FAQ now links both, labeled accordingly.\n\nBENI_SCRIPT_ADDRESS and BENI_THREAD_TOKEN_POLICY in Vercel production\nalso needed updating to the new deployment: they were 9 days stale,\nstill pointing at the old Preview-testnet demo wallet even after\nBENI_NETWORK was set to Mainnet, so the agent-state endpoint had\nsilently been querying mainnet Blockfrost for a testnet address.\n\nCo-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>",
-          "url": "https://github.com/IamHarrie-Labs/beni/commit/da19b705a997520870af1fd9101eb2dddc8e334f",
-          "committedAt": "2026-07-17T09:56:38Z"
+          "message": "feat(dashboard): animate the assistant panel closing instead of snapping shut\n\nClosing \"Beni\" (the chat panel) used to unmount it instantly via a\n{showChat && <AssistantPanel/>} conditional - one frame it's there,\nthe next it's gone. Kept it always mounted and instead animate the\ngrid column it occupies from 360px to 0px (kept the grid at a\nconstant 3 tracks so the width itself is animatable - browsers can't\nsmoothly interpolate a grid losing a track), plus a matching opacity\nfade on the panel itself and pointer-events:none while closed so it's\nnot interactable mid-fade or once collapsed.\n\nAlso confirmed, on request: the API and Emergency freeze buttons in\nthe \"persistent header\" are intentionally identical across every\ndashboard tab (Overview, Approvals, Rules, Whitelist, Transactions,\nMonitor) - that header renders once, above the per-page conditional\ncontent, not per-page. No fix needed there.\n\nCo-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>",
+          "url": "https://github.com/IamHarrie-Labs/beni/commit/600411968a9ad293ebb7bae2b6a4401deac8c960",
+          "committedAt": "2026-07-18T14:24:37Z"
         },
         {
           "repo": "IamHarrie-Labs/beni",
-          "message": "fix(security): sync FreezeWallet fix into the public /api/deploy endpoint\n\napi/deploy.js is the actual production path every visitor hits when they\nconnect a wallet and deploy their own guarded agent wallet through the\ndashboard - it takes payerAddress, perTxCapLovelace, and dailyCapLovelace\nfrom the caller and sets agentPkh from their own connected wallet, so it\nwas already correctly built to serve any user's own wallet, not a single\nhardcoded one.\n\nBut it carries its own separate copy of the compiled validator bytecode,\nindependent from sdk/src/validators.ts. That copy was never updated after\nthe FreezeWallet fix, so every real user deploying through the public\ndashboard would have silently received the old, pre-fix contract with no\nerror surfaced anywhere. Synced it from the rebuilt plutus.json.\n\nAdded scripts/check-validator-bytecode-sync.mjs + a CI step that fails\nif either copy drifts from plutus.json again.\n\nCo-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>",
-          "url": "https://github.com/IamHarrie-Labs/beni/commit/79a224fd0a72d8ff4d8e1ecb80dc8a4fa20de7d5",
-          "committedAt": "2026-07-17T01:03:40Z"
+          "message": "feat(dashboard): first-visit guided tour\n\nA dismissible spotlight walkthrough (5 steps: workspace, getting\nstarted, balance hero, emergency freeze, ask Beni) shown once per\nbrowser on the dashboard, hand-rolled to match the existing style\n(no external tour library - this is a no-build-step CDN React app).\n\nTargets are marked with data-tour=\"...\" on the actual elements;\nDashboardTour finds them, measures position via getBoundingClientRect,\nand draws a highlighted ring + callout. Skips silently past any step\nwhose target isn't currently on screen (e.g. the getting-started\nchecklist, which disappears once a wallet is deployed) instead of\ngetting stuck. Dismissal (Skip, Got it, or the close button) persists\nvia localStorage so it only ever shows once.\n\nVerified with a test harness rendering the real Dashboard component:\nstepped through all 5 steps confirming correct target + positioning\nat each one, confirmed Skip and Got it both dismiss and persist\ncorrectly, no console errors at any point.\n\nCo-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>",
+          "url": "https://github.com/IamHarrie-Labs/beni/commit/b6fcc866ff5d552265f28357ab2d2a5164aa0ee4",
+          "committedAt": "2026-07-18T13:27:51Z"
         }
       ],
       "error": null
@@ -115,9 +115,21 @@
     {
       "id": "lewis",
       "name": "Lewis",
-      "lastActivityAt": "2026-07-16T09:02:37Z",
-      "commitsThisWeek": 1,
+      "lastActivityAt": "2026-07-19T08:32:12Z",
+      "commitsThisWeek": 3,
       "recentCommits": [
+        {
+          "repo": "lewis-nduati/Tracom-credentials",
+          "message": "Rename final-presentation to final-presentation.md",
+          "url": "https://github.com/lewis-nduati/Tracom-credentials/commit/3eacbe25c434ed9abbb20af7ef00bf1a74b7cf68",
+          "committedAt": "2026-07-19T08:32:12Z"
+        },
+        {
+          "repo": "lewis-nduati/Tracom-credentials",
+          "message": "Add final presentation for TRACOM Credentials\n\nAdded final presentation document for TRACOM Credentials project, detailing project identity, user benefits, product workflow, and development updates.",
+          "url": "https://github.com/lewis-nduati/Tracom-credentials/commit/8c11e0974ba56fc79a8c3d96048778f2671d2018",
+          "committedAt": "2026-07-19T08:31:07Z"
+        },
         {
           "repo": "lewis-nduati/Tracom-credentials",
           "message": "feat: migrate Tracom Credentials to Cardano mainnet",
@@ -130,22 +142,71 @@
     {
       "id": "armanabid",
       "name": "Abid",
-      "lastActivityAt": "2026-07-12T11:16:28Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-07-19T11:34:33Z",
+      "commitsThisWeek": 4,
+      "recentCommits": [
+        {
+          "repo": "ArmanAbid/ChainTask",
+          "message": "Update piece-of-pie-final.md",
+          "url": "https://github.com/ArmanAbid/ChainTask/commit/c6720bed612acd6f60e3b2250aa99e6235ba5a14",
+          "committedAt": "2026-07-19T11:34:33Z"
+        },
+        {
+          "repo": "ArmanAbid/ChainTask",
+          "message": "add piece of pie final presentation",
+          "url": "https://github.com/ArmanAbid/ChainTask/commit/ab3ede913f8af132b1d61150e22d666af904def1",
+          "committedAt": "2026-07-19T10:54:34Z"
+        },
+        {
+          "repo": "ArmanAbid/ChainTask",
+          "message": "final commit",
+          "url": "https://github.com/ArmanAbid/ChainTask/commit/711b902bf481ec5016c3bb76c0ec7938a69298f7",
+          "committedAt": "2026-07-19T10:04:26Z"
+        },
+        {
+          "repo": "ArmanAbid/ChainTask",
+          "message": "prep for mainnet: cleanup,  fix updateProfile, add cancelOpen",
+          "url": "https://github.com/ArmanAbid/ChainTask/commit/3ade989361d1bb33582878e76f0cb8528e659860",
+          "committedAt": "2026-07-18T19:23:03Z"
+        }
+      ],
       "error": null
     },
     {
       "id": "gamechanger",
       "name": "Adriano",
-      "lastActivityAt": "2026-07-13T12:57:31Z",
-      "commitsThisWeek": 1,
+      "lastActivityAt": "2026-07-19T05:47:16Z",
+      "commitsThisWeek": 35,
       "recentCommits": [
         {
           "repo": "GameChangerFinance/NeonSoup",
-          "message": "Merge pull request #7 from GameChangerFinance/refactor/detox\n\nRefactor/detox",
-          "url": "https://github.com/GameChangerFinance/NeonSoup/commit/ce3e69a655a33a5d6e1eab0a2d9e10b878555206",
-          "committedAt": "2026-07-13T12:57:31Z"
+          "message": "Merge pull request #10 from GameChangerFinance/feat/networks\n\nfix(neonsoup): currently we are blocking `burner` and `gift` wallet t…",
+          "url": "https://github.com/GameChangerFinance/NeonSoup/commit/8f7b3232cd912a9a62b798b14a1cad8643645830",
+          "committedAt": "2026-07-19T05:47:16Z"
+        },
+        {
+          "repo": "GameChangerFinance/NeonSoup",
+          "message": "fix(neonsoup): currently we are blocking `burner` and `gift` wallet types from opening offers to avoid locking funds while a bug fix gets implemented",
+          "url": "https://github.com/GameChangerFinance/NeonSoup/commit/ac613f6c6b4a58909ad27c5ba93912d05fb80472",
+          "committedAt": "2026-07-19T05:43:53Z"
+        },
+        {
+          "repo": "GameChangerFinance/NeonSoup",
+          "message": "Merge pull request #9 from GameChangerFinance/feat/networks\n\nfix: dummy wording",
+          "url": "https://github.com/GameChangerFinance/NeonSoup/commit/7d5bdc38e82722941466de832e12338807136fb8",
+          "committedAt": "2026-07-19T03:17:49Z"
+        },
+        {
+          "repo": "GameChangerFinance/NeonSoup",
+          "message": "fix: dummy wording",
+          "url": "https://github.com/GameChangerFinance/NeonSoup/commit/19258c6127cf6bd3fb1e656b139e86471b2a27a1",
+          "committedAt": "2026-07-19T03:16:56Z"
+        },
+        {
+          "repo": "GameChangerFinance/NeonSoup",
+          "message": "Merge pull request #8 from GameChangerFinance/feat/networks\n\nfeat: add NeonSoup frontend, network support, landing page, and wallet intent UX",
+          "url": "https://github.com/GameChangerFinance/NeonSoup/commit/e1e5bef6bc490ccc35a322eef3d1a7f15e6ca136",
+          "committedAt": "2026-07-19T03:03:35Z"
         }
       ],
       "error": null
@@ -153,9 +214,40 @@
     {
       "id": "yungslaiz",
       "name": "Blessed David",
-      "lastActivityAt": "2026-07-11T13:11:29Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-07-19T13:20:52Z",
+      "commitsThisWeek": 6,
+      "recentCommits": [
+        {
+          "repo": "YungSlaiz53/GNXT",
+          "message": "Fix spelling and formatting in final presentation\n\nCorrected spelling and formatting in the presentation.",
+          "url": "https://github.com/YungSlaiz53/GNXT/commit/8ccce8abce4ee97a3541876f590a353581e65e48",
+          "committedAt": "2026-07-19T13:20:52Z"
+        },
+        {
+          "repo": "YungSlaiz53/GNXT",
+          "message": "replaced_final_presentation",
+          "url": "https://github.com/YungSlaiz53/GNXT/commit/fd3c82b0710047eb25d22d179afdf9548b9488ef",
+          "committedAt": "2026-07-19T13:17:05Z"
+        },
+        {
+          "repo": "YungSlaiz53/GNXT",
+          "message": "Delete final_presentation.md",
+          "url": "https://github.com/YungSlaiz53/GNXT/commit/0299a9ada87a3a8821ebc9d94284d9795a1ab27f",
+          "committedAt": "2026-07-19T13:16:34Z"
+        },
+        {
+          "repo": "YungSlaiz53/GNXT",
+          "message": "Create initial presentation for NEXT.AI project\n\nAdded detailed project information and user instructions for NEXT.AI.",
+          "url": "https://github.com/YungSlaiz53/GNXT/commit/fe84224079dd3ea906e140a84a1650def5c528cf",
+          "committedAt": "2026-07-19T13:15:45Z"
+        },
+        {
+          "repo": "YungSlaiz53/GNXT",
+          "message": "added final presentation",
+          "url": "https://github.com/YungSlaiz53/GNXT/commit/08b5b2d848b95a764c997da8ba06e692a9c3bdf5",
+          "committedAt": "2026-07-19T13:14:18Z"
+        }
+      ],
       "error": null
     },
     {
@@ -198,19 +290,18 @@
       "error": null
     },
     {
-      "id": "blockprint",
-      "name": "BlockPrint",
-      "lastActivityAt": "2026-04-28T09:23:24Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
-      "error": null
-    },
-    {
       "id": "trike",
       "name": "Anita",
-      "lastActivityAt": "2026-07-10T14:15:33Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-07-18T18:35:27Z",
+      "commitsThisWeek": 1,
+      "recentCommits": [
+        {
+          "repo": "3rike12/3rike-Mobility_",
+          "message": "updates",
+          "url": "https://github.com/3rike12/3rike-Mobility_/commit/310ca29c2f3e6977ad4bd18b60c18354d23a75ae",
+          "committedAt": "2026-07-18T18:35:27Z"
+        }
+      ],
       "error": null
     },
     {
@@ -224,9 +315,21 @@
     {
       "id": "newman5",
       "name": "Newman",
-      "lastActivityAt": "2026-07-17T14:01:43Z",
-      "commitsThisWeek": 10,
+      "lastActivityAt": "2026-07-18T15:14:03Z",
+      "commitsThisWeek": 12,
       "recentCommits": [
+        {
+          "repo": "Newman5/builder-season-playbook",
+          "message": "add the ody.sh link to live demo",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/0014c3af92d265fc6478594e47d00c43a8f9c4bd",
+          "committedAt": "2026-07-18T15:14:03Z"
+        },
+        {
+          "repo": "Newman5/builder-season-playbook",
+          "message": "Update builder activity data",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/eb8b574e1b54699d8b61b63ca2f3c609fc15b90c",
+          "committedAt": "2026-07-18T13:47:28Z"
+        },
         {
           "repo": "Newman5/builder-season-playbook",
           "message": "Update builder activity data",
@@ -244,18 +347,6 @@
           "message": "removing the complicated X search features.  Sticking with simple X search with single URL encoded link",
           "url": "https://github.com/Newman5/builder-season-playbook/commit/952c078ca82aa7755e6e0cc6e152246b98baae6c",
           "committedAt": "2026-07-16T21:43:15Z"
-        },
-        {
-          "repo": "Newman5/builder-season-playbook",
-          "message": "Update builder activity data",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/7bf9e3ed44f726a651917066a0b4b1284edd2a4f",
-          "committedAt": "2026-07-16T14:21:34Z"
-        },
-        {
-          "repo": "Newman5/builder-season-playbook",
-          "message": "adding last x update",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/c0255eda610ee72938f53d9ff416a126624a3c92",
-          "committedAt": "2026-07-15T19:42:58Z"
         }
       ],
       "error": null
@@ -271,38 +362,38 @@
     {
       "id": "devfreeguy",
       "name": "Daniel",
-      "lastActivityAt": "2026-07-18T11:04:37Z",
-      "commitsThisWeek": 28,
+      "lastActivityAt": "2026-07-19T11:41:21Z",
+      "commitsThisWeek": 32,
       "recentCommits": [
+        {
+          "repo": "devfreeguy/skill-swap",
+          "message": "Tracks updated",
+          "url": "https://github.com/devfreeguy/skill-swap/commit/7a50b0e463a87fe87aa285c2f076c838bef5bbee",
+          "committedAt": "2026-07-19T11:41:21Z"
+        },
+        {
+          "repo": "devfreeguy/skill-swap",
+          "message": "User Acquisition Story updated",
+          "url": "https://github.com/devfreeguy/skill-swap/commit/b355a4206061931f33a4d6099b4b5923d3d4ec64",
+          "committedAt": "2026-07-19T11:40:27Z"
+        },
+        {
+          "repo": "devfreeguy/skill-swap",
+          "message": "docs",
+          "url": "https://github.com/devfreeguy/skill-swap/commit/e0d98fe176d2ef1dc27149b541f487aa4af9fb54",
+          "committedAt": "2026-07-19T07:33:31Z"
+        },
+        {
+          "repo": "devfreeguy/skill-swap",
+          "message": "fix: respect preprod cookie when DEFAULT_NETWORK is mainnet",
+          "url": "https://github.com/devfreeguy/skill-swap/commit/0f01a35126d6baa81c8797a6fccf311d2034be39",
+          "committedAt": "2026-07-18T20:11:38Z"
+        },
         {
           "repo": "devfreeguy/skill-swap",
           "message": "chore: ignore docs/final-presentation-template.md",
           "url": "https://github.com/devfreeguy/skill-swap/commit/50c7d1599b012d952f5d52c6a1d2020d0a045a4d",
           "committedAt": "2026-07-18T11:04:37Z"
-        },
-        {
-          "repo": "devfreeguy/skill-swap",
-          "message": "fix: show fallback cards immediately in contribution ledger instead of skeletons",
-          "url": "https://github.com/devfreeguy/skill-swap/commit/d5b307aad5905cd330254510730745855856f97c",
-          "committedAt": "2026-07-18T09:52:51Z"
-        },
-        {
-          "repo": "devfreeguy/skill-swap",
-          "message": "fix: show fallback placeholder cards when no completed swaps exist",
-          "url": "https://github.com/devfreeguy/skill-swap/commit/7445f046b1e48fb340d74c009039417e57571e2a",
-          "committedAt": "2026-07-18T09:48:22Z"
-        },
-        {
-          "repo": "devfreeguy/skill-swap",
-          "message": "feat: fetch real completed swaps for contribution ledger section",
-          "url": "https://github.com/devfreeguy/skill-swap/commit/7b8252c762fcc24c53d395c97579c2a47d4f6a71",
-          "committedAt": "2026-07-18T09:05:52Z"
-        },
-        {
-          "repo": "devfreeguy/skill-swap",
-          "message": "feat: make default network configurable via NEXT_PUBLIC_DEFAULT_NETWORK env var",
-          "url": "https://github.com/devfreeguy/skill-swap/commit/28223a4f08dbe3159186f2b2ebfd730c97b24fda",
-          "committedAt": "2026-07-17T11:19:09Z"
         }
       ],
       "error": null
@@ -388,9 +479,40 @@
     {
       "id": "muhammedyuguda",
       "name": "Muhammed",
-      "lastActivityAt": "2026-07-05T17:41:39Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-07-19T08:04:08Z",
+      "commitsThisWeek": 20,
+      "recentCommits": [
+        {
+          "repo": "Yuguda999/devmemory",
+          "message": "Merge pull request #1 from Yuguda999/hosted-saas\n\nHosted saas",
+          "url": "https://github.com/Yuguda999/devmemory/commit/8f18a5b4ce01153b506072284e3e88129357f3e5",
+          "committedAt": "2026-07-19T08:04:08Z"
+        },
+        {
+          "repo": "Yuguda999/devmemory",
+          "message": "feat(billing): implement payment modal for upgrade process",
+          "url": "https://github.com/Yuguda999/devmemory/commit/8aca6bcdf6d036d91ca73f66145feba32d6735c4",
+          "committedAt": "2026-07-19T07:59:32Z"
+        },
+        {
+          "repo": "Yuguda999/devmemory",
+          "message": "fix(npm): sync ~/.devmemory/api_key on install so a stale key can't 401 (0.3.5)\n\nKey resolution reads ~/.devmemory/api_key BEFORE config.json. `install` wrote\nthe new key only to config.json, so an old/revoked key left in the api_key file\n(e.g. from a prior install) shadowed it and every backend call returned\n`Invalid or revoked API key`. writeConfig() now also overwrites the plaintext\napi_key file whenever a key is provided, keeping both sources consistent.\n\nBump to 0.3.5. Document the stale-key-file 401 in the main and npm READMEs\n(fix: re-install, or `rm ~/.devmemory/api_key`).\n\nCo-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic.com>",
+          "url": "https://github.com/Yuguda999/devmemory/commit/edd627cceab281ede1029daf279f82e57de1314e",
+          "committedAt": "2026-07-15T16:26:55Z"
+        },
+        {
+          "repo": "Yuguda999/devmemory",
+          "message": "docs: cover `command not found` (runner + sudo-prefix) across all surfaces\n\nThe npm package README (what npmjs.com shows) was stale — rewrote it with\nrunner-vs-permanent, start/stop commands, --config-dir, and a Troubleshooting\nsection. Added the \"command not found after a global install\" case — npm's\nglobal prefix is often the root-owned /usr/local, so `npm install -g` needs\nsudo; a one-time `npm config set prefix ~/.local` fixes it sudo-free — to the\nmain README troubleshooting, the dashboard Setup page (step 4), and DEPLOY.md.\n\nCo-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic.com>",
+          "url": "https://github.com/Yuguda999/devmemory/commit/a3e2f2133f4e830ca3bd9811c87eef089389ab31",
+          "committedAt": "2026-07-15T16:06:02Z"
+        },
+        {
+          "repo": "Yuguda999/devmemory",
+          "message": "docs: pin `npx @latest` on every install command; drop stale version refs\n\nEvery `npx … install` snippet across README, DEPLOY.md, and the dashboard\nSetup page now pins `@latest`, so copy-pasting can't reuse a stale npx cache\n(the exact trap that made `--config-dir` look unsupported). Also replaced the\nnow-behind `@0.3.3` example pins with `@latest` (the factual \"requires ≥ 0.3.3\"\nnote stays), and added a permanent-command hint to the DEPLOY onboarding.\n\nCo-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic.com>",
+          "url": "https://github.com/Yuguda999/devmemory/commit/397c9682d3a48455553f4399307c27dbccb53dea",
+          "committedAt": "2026-07-15T14:43:17Z"
+        }
+      ],
       "error": null
     },
     {
@@ -412,38 +534,38 @@
     {
       "id": "alfreditodole",
       "name": "Alfred Itodole",
-      "lastActivityAt": "2026-07-18T02:54:48Z",
-      "commitsThisWeek": 16,
+      "lastActivityAt": "2026-07-19T12:04:16Z",
+      "commitsThisWeek": 21,
       "recentCommits": [
         {
           "repo": "sirxalfred/mosaic-cardano",
-          "message": "Merge pull request #41 from sirXalfred/develop\n\nchore: refactor publishing features, routing updates, and performance improvements",
-          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/b58cb9136fe16b88e50b495526dd78ab4e67f2e8",
-          "committedAt": "2026-07-18T02:54:48Z"
+          "message": "Merge branch 'develop'",
+          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/ae6687adaac0a72bc742be21e757351b533e7786",
+          "committedAt": "2026-07-19T12:04:16Z"
         },
         {
           "repo": "sirxalfred/mosaic-cardano",
-          "message": "fix: elevate WalletConnectModal z-index to render on top of PublishingModal",
-          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/695031f88fe253ade35344a023c9090211348bc9",
-          "committedAt": "2026-07-17T18:43:12Z"
+          "message": "update presentation",
+          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/2534219a2f00d650e48f407278e0727bfeb1752f",
+          "committedAt": "2026-07-19T12:04:02Z"
         },
         {
           "repo": "sirxalfred/mosaic-cardano",
-          "message": "fix: handle database connection errors during build-time static parameter generation",
-          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/5e723296b996cecc1e2b82899635d8b9331496e2",
-          "committedAt": "2026-07-17T02:26:36Z"
+          "message": "feat: add automated publishing status polling and manual refresh UI, update workspace dashboard sorting, and force dynamic rendering for settings and library pages.",
+          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/a834824bcd286d9494723814ad1fd64a2852ab76",
+          "committedAt": "2026-07-19T10:09:10Z"
         },
         {
           "repo": "sirxalfred/mosaic-cardano",
-          "message": "feat: disable redis connection retries and offline queue during build phase and add project corrections list",
-          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/e0eb082b823f89f138a93cdcdb3c98b7cb30a1a5",
-          "committedAt": "2026-07-16T18:31:55Z"
+          "message": "Merge branch 'develop'",
+          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/8a3930beaec4321216e87a785f4f2ce7747962a9",
+          "committedAt": "2026-07-19T07:27:24Z"
         },
         {
           "repo": "sirxalfred/mosaic-cardano",
-          "message": "refactor: migrate backUrl handling to useSearchParams and remove unnecessary generateStaticParams",
-          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/cda7bc7f28b24007598bda4ef776e4aae47681a4",
-          "committedAt": "2026-07-16T18:23:35Z"
+          "message": "docs: create final presentation documentation for Mosaic hackathon project",
+          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/bc9ee0a665d03c134b30024422818a730cdefac1",
+          "committedAt": "2026-07-19T07:25:48Z"
         }
       ],
       "error": null
