@@ -1,68 +1,37 @@
 {
-  "generatedAt": "2026-07-19T13:52:22Z",
-  "weekStart": "2026-07-13T00:00:00Z",
-  "weekEnd": "2026-07-19T23:59:59Z",
+  "generatedAt": "2026-07-20T14:32:26Z",
+  "weekStart": "2026-07-20T00:00:00Z",
+  "weekEnd": "2026-07-26T23:59:59Z",
   "builders": [
     {
       "id": "mhizta",
       "name": "Mhizta",
       "lastActivityAt": "2026-07-15T14:53:37Z",
-      "commitsThisWeek": 1,
-      "recentCommits": [
-        {
-          "repo": "Mhizta-gab/bookworm-ai",
-          "message": "feat: implement user dashboard, book management actions, and database models for the bookworm-ai application",
-          "url": "https://github.com/Mhizta-gab/bookworm-ai/commit/3923672771d0e0de701010fcbd08e927535c335b",
-          "committedAt": "2026-07-15T14:53:37Z"
-        }
-      ],
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
       "id": "ianonjuguna",
       "name": "Ian",
-      "lastActivityAt": "2026-07-05T14:30:02Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-07-20T00:13:23Z",
+      "commitsThisWeek": 1,
+      "recentCommits": [
+        {
+          "repo": "IanoNjuguna/bookish-worm",
+          "message": "finalise the proof of pie",
+          "url": "https://github.com/IanoNjuguna/bookish-worm/commit/f5b3c71c2a6cef6f5319925d09e3019602a68038",
+          "committedAt": "2026-07-20T00:13:23Z"
+        }
+      ],
       "error": null
     },
     {
       "id": "dammy",
       "name": "Dammy",
       "lastActivityAt": "2026-07-17T03:51:41Z",
-      "commitsThisWeek": 6,
-      "recentCommits": [
-        {
-          "repo": "Dammy7942/accordiax",
-          "message": "fix consultant request payment status aware fix",
-          "url": "https://github.com/Dammy7942/accordiax/commit/7e18f6a54f40e1012cd8ffbf6519af7a068669a9",
-          "committedAt": "2026-07-17T03:51:41Z"
-        },
-        {
-          "repo": "Dammy7942/accordiax",
-          "message": "fix payout error fixed",
-          "url": "https://github.com/Dammy7942/accordiax/commit/b4bd2d029f41bb9dbc071d715a7d088cd3ee8869",
-          "committedAt": "2026-07-17T03:42:01Z"
-        },
-        {
-          "repo": "Dammy7942/accordiax",
-          "message": "fix error message applied to payout request failure",
-          "url": "https://github.com/Dammy7942/accordiax/commit/02c717b2df33dd9a3f944ff4b34ff937a5599fc6",
-          "committedAt": "2026-07-17T03:36:11Z"
-        },
-        {
-          "repo": "Dammy7942/accordiax",
-          "message": "fix(admin): payouts manual joins, escrow read-only view, inline bank account form\n\n- Rewrote /api/admin/payouts GET to use manual batch queries instead of\n  PostgREST nested joins -- payment_requests has no FK constraints so\n  the aliased join syntax returned nothing; now fetches agreements,\n  profiles, bank accounts, and emails in parallel then merges them\n\n- Repurposed admin escrow page as a read-only financial overview:\n  removed the release-payment button, added status badges (Payment held /\n  Awaiting approval / Awaiting payout), summary strip with total held and\n  per-status counts, and expanded the API query to include paid_held and\n  delivered agreements alongside completed ones; renamed nav tab to Funds\n\n- Replaced the Go to Profile link in the consultant payment request modal\n  with an inline bank account form -- consultants with no saved accounts\n  can now add one without leaving the dashboard; on save the account is\n  inserted, local state updated, and the selector shown immediately so\n  the payment request can proceed in one flow",
-          "url": "https://github.com/Dammy7942/accordiax/commit/e6f1bf9e90f2f0fd7e0257825bb2c893f357edb6",
-          "committedAt": "2026-07-17T03:12:02Z"
-        },
-        {
-          "repo": "Dammy7942/accordiax",
-          "message": "fix(admin): add disputes page so disputed agreements are visible to admin\n\nDisputed agreements (status=disputed) were invisible in the admin panel\nbecause the existing appeals page only queried status=appealed.\n\n- Add /api/admin/disputes GET route fetching status=disputed agreements\n  with student, consultant, and request details\n- Add /api/admin/resolve-dispute POST route with email notifications\n  to both parties and note that appeal is available\n- Add /admin/disputes page with Rule for Student / Rule for Consultant\n  actions and resolution notes field\n- Add Disputes as first tab in admin nav before Appeals",
-          "url": "https://github.com/Dammy7942/accordiax/commit/c7fdd668f468b825922e6b2545c4d40a7821dbc6",
-          "committedAt": "2026-07-17T02:37:16Z"
-        }
-      ],
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
@@ -77,231 +46,56 @@
       "id": "harrie",
       "name": "Harrie",
       "lastActivityAt": "2026-07-19T08:46:47Z",
-      "commitsThisWeek": 19,
-      "recentCommits": [
-        {
-          "repo": "IamHarrie-Labs/beni",
-          "message": "docs: remove unclaimed Real User Pie / Feedback Pie section from presentation\n\nCo-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>",
-          "url": "https://github.com/IamHarrie-Labs/beni/commit/e8c24e89a38ab07761986246c83079fc63fa3964",
-          "committedAt": "2026-07-19T08:46:47Z"
-        },
-        {
-          "repo": "IamHarrie-Labs/beni",
-          "message": "docs: final presentation writeup + README refresh for submission\n\nAdded final_presentation.md following the Piece of Pie template\nstructure - project identity, product function, live demo script,\npurchase flow, repo evidence, mainnet evidence, all 12 verified weekly\nupdates with real content pulled from each tweet, and an honest note\non Real User Pie / Feedback Pie not being claimed (no evidence for\neither).\n\nREADME was still describing the pre-mainnet, pre-bot, pre-onboarding\nstate of the project - rewrote it to match what's actually live now:\nusebeni.xyz as the primary domain, mainnet (not Preview) as the\ndefault story, the Telegram bot and MCP server (with Hermes Agent\ncompatibility) as real usage paths, and the FreezeWallet fix reflected\nin the redeemer table.\n\nCo-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>",
-          "url": "https://github.com/IamHarrie-Labs/beni/commit/77eb2e9c46ef3fa6a559c2a2a8a28f8e2e773d5c",
-          "committedAt": "2026-07-19T08:36:29Z"
-        },
-        {
-          "repo": "IamHarrie-Labs/beni",
-          "message": "feat(mcp): support mainnet in the MCP server, not just Preview\n\nsdk/mcp-server.ts was hardcoded to Preview testnet - network:\"Preview\"\nin every makeLucid call, always reading BLOCKFROST_PREVIEW_KEY, always\nloading beni-wallet-state.json (the Preview state file). Any MCP-\nconnected agent (Claude Desktop, Hermes Agent, etc.) would only ever\nbe able to spend fake test ADA, undercutting the actual mainnet story.\n\nAdded the same BENI_NETWORK pattern used everywhere else in this repo:\nset to \"Mainnet\", it now reads BLOCKFROST_MAINNET_KEY and loads\nbeni-wallet-state.mainnet.json - the real flagship contract redeployed\nearlier this session under the FreezeWallet fix.\n\nVerified against the actual MCP protocol (not a mock): a real client\nlisting tools, calling get_status (confirms the live mainnet script\naddress and real caps), and check_limits both within and over the\nper-tx cap (confirms the guardrail rejection path with the correct\nreason string).\n\nCo-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>",
-          "url": "https://github.com/IamHarrie-Labs/beni/commit/324ef7a5c1766830e61236d74c347647794ec488",
-          "committedAt": "2026-07-18T16:35:51Z"
-        },
-        {
-          "repo": "IamHarrie-Labs/beni",
-          "message": "feat(dashboard): animate the assistant panel closing instead of snapping shut\n\nClosing \"Beni\" (the chat panel) used to unmount it instantly via a\n{showChat && <AssistantPanel/>} conditional - one frame it's there,\nthe next it's gone. Kept it always mounted and instead animate the\ngrid column it occupies from 360px to 0px (kept the grid at a\nconstant 3 tracks so the width itself is animatable - browsers can't\nsmoothly interpolate a grid losing a track), plus a matching opacity\nfade on the panel itself and pointer-events:none while closed so it's\nnot interactable mid-fade or once collapsed.\n\nAlso confirmed, on request: the API and Emergency freeze buttons in\nthe \"persistent header\" are intentionally identical across every\ndashboard tab (Overview, Approvals, Rules, Whitelist, Transactions,\nMonitor) - that header renders once, above the per-page conditional\ncontent, not per-page. No fix needed there.\n\nCo-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>",
-          "url": "https://github.com/IamHarrie-Labs/beni/commit/600411968a9ad293ebb7bae2b6a4401deac8c960",
-          "committedAt": "2026-07-18T14:24:37Z"
-        },
-        {
-          "repo": "IamHarrie-Labs/beni",
-          "message": "feat(dashboard): first-visit guided tour\n\nA dismissible spotlight walkthrough (5 steps: workspace, getting\nstarted, balance hero, emergency freeze, ask Beni) shown once per\nbrowser on the dashboard, hand-rolled to match the existing style\n(no external tour library - this is a no-build-step CDN React app).\n\nTargets are marked with data-tour=\"...\" on the actual elements;\nDashboardTour finds them, measures position via getBoundingClientRect,\nand draws a highlighted ring + callout. Skips silently past any step\nwhose target isn't currently on screen (e.g. the getting-started\nchecklist, which disappears once a wallet is deployed) instead of\ngetting stuck. Dismissal (Skip, Got it, or the close button) persists\nvia localStorage so it only ever shows once.\n\nVerified with a test harness rendering the real Dashboard component:\nstepped through all 5 steps confirming correct target + positioning\nat each one, confirmed Skip and Got it both dismiss and persist\ncorrectly, no console errors at any point.\n\nCo-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>",
-          "url": "https://github.com/IamHarrie-Labs/beni/commit/b6fcc866ff5d552265f28357ab2d2a5164aa0ee4",
-          "committedAt": "2026-07-18T13:27:51Z"
-        }
-      ],
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
       "id": "lewis",
       "name": "Lewis",
       "lastActivityAt": "2026-07-19T08:32:12Z",
-      "commitsThisWeek": 3,
-      "recentCommits": [
-        {
-          "repo": "lewis-nduati/Tracom-credentials",
-          "message": "Rename final-presentation to final-presentation.md",
-          "url": "https://github.com/lewis-nduati/Tracom-credentials/commit/3eacbe25c434ed9abbb20af7ef00bf1a74b7cf68",
-          "committedAt": "2026-07-19T08:32:12Z"
-        },
-        {
-          "repo": "lewis-nduati/Tracom-credentials",
-          "message": "Add final presentation for TRACOM Credentials\n\nAdded final presentation document for TRACOM Credentials project, detailing project identity, user benefits, product workflow, and development updates.",
-          "url": "https://github.com/lewis-nduati/Tracom-credentials/commit/8c11e0974ba56fc79a8c3d96048778f2671d2018",
-          "committedAt": "2026-07-19T08:31:07Z"
-        },
-        {
-          "repo": "lewis-nduati/Tracom-credentials",
-          "message": "feat: migrate Tracom Credentials to Cardano mainnet",
-          "url": "https://github.com/lewis-nduati/Tracom-credentials/commit/372fd59768dabc7e9c08c54e9a799d9d1d2d4354",
-          "committedAt": "2026-07-16T09:02:37Z"
-        }
-      ],
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
       "id": "armanabid",
       "name": "Abid",
       "lastActivityAt": "2026-07-19T11:34:33Z",
-      "commitsThisWeek": 4,
-      "recentCommits": [
-        {
-          "repo": "ArmanAbid/ChainTask",
-          "message": "Update piece-of-pie-final.md",
-          "url": "https://github.com/ArmanAbid/ChainTask/commit/c6720bed612acd6f60e3b2250aa99e6235ba5a14",
-          "committedAt": "2026-07-19T11:34:33Z"
-        },
-        {
-          "repo": "ArmanAbid/ChainTask",
-          "message": "add piece of pie final presentation",
-          "url": "https://github.com/ArmanAbid/ChainTask/commit/ab3ede913f8af132b1d61150e22d666af904def1",
-          "committedAt": "2026-07-19T10:54:34Z"
-        },
-        {
-          "repo": "ArmanAbid/ChainTask",
-          "message": "final commit",
-          "url": "https://github.com/ArmanAbid/ChainTask/commit/711b902bf481ec5016c3bb76c0ec7938a69298f7",
-          "committedAt": "2026-07-19T10:04:26Z"
-        },
-        {
-          "repo": "ArmanAbid/ChainTask",
-          "message": "prep for mainnet: cleanup,  fix updateProfile, add cancelOpen",
-          "url": "https://github.com/ArmanAbid/ChainTask/commit/3ade989361d1bb33582878e76f0cb8528e659860",
-          "committedAt": "2026-07-18T19:23:03Z"
-        }
-      ],
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
       "id": "gamechanger",
       "name": "Adriano",
       "lastActivityAt": "2026-07-19T05:47:16Z",
-      "commitsThisWeek": 35,
-      "recentCommits": [
-        {
-          "repo": "GameChangerFinance/NeonSoup",
-          "message": "Merge pull request #10 from GameChangerFinance/feat/networks\n\nfix(neonsoup): currently we are blocking `burner` and `gift` wallet t…",
-          "url": "https://github.com/GameChangerFinance/NeonSoup/commit/8f7b3232cd912a9a62b798b14a1cad8643645830",
-          "committedAt": "2026-07-19T05:47:16Z"
-        },
-        {
-          "repo": "GameChangerFinance/NeonSoup",
-          "message": "fix(neonsoup): currently we are blocking `burner` and `gift` wallet types from opening offers to avoid locking funds while a bug fix gets implemented",
-          "url": "https://github.com/GameChangerFinance/NeonSoup/commit/ac613f6c6b4a58909ad27c5ba93912d05fb80472",
-          "committedAt": "2026-07-19T05:43:53Z"
-        },
-        {
-          "repo": "GameChangerFinance/NeonSoup",
-          "message": "Merge pull request #9 from GameChangerFinance/feat/networks\n\nfix: dummy wording",
-          "url": "https://github.com/GameChangerFinance/NeonSoup/commit/7d5bdc38e82722941466de832e12338807136fb8",
-          "committedAt": "2026-07-19T03:17:49Z"
-        },
-        {
-          "repo": "GameChangerFinance/NeonSoup",
-          "message": "fix: dummy wording",
-          "url": "https://github.com/GameChangerFinance/NeonSoup/commit/19258c6127cf6bd3fb1e656b139e86471b2a27a1",
-          "committedAt": "2026-07-19T03:16:56Z"
-        },
-        {
-          "repo": "GameChangerFinance/NeonSoup",
-          "message": "Merge pull request #8 from GameChangerFinance/feat/networks\n\nfeat: add NeonSoup frontend, network support, landing page, and wallet intent UX",
-          "url": "https://github.com/GameChangerFinance/NeonSoup/commit/e1e5bef6bc490ccc35a322eef3d1a7f15e6ca136",
-          "committedAt": "2026-07-19T03:03:35Z"
-        }
-      ],
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
       "id": "yungslaiz",
       "name": "Blessed David",
-      "lastActivityAt": "2026-07-19T13:20:52Z",
-      "commitsThisWeek": 6,
-      "recentCommits": [
-        {
-          "repo": "YungSlaiz53/GNXT",
-          "message": "Fix spelling and formatting in final presentation\n\nCorrected spelling and formatting in the presentation.",
-          "url": "https://github.com/YungSlaiz53/GNXT/commit/8ccce8abce4ee97a3541876f590a353581e65e48",
-          "committedAt": "2026-07-19T13:20:52Z"
-        },
-        {
-          "repo": "YungSlaiz53/GNXT",
-          "message": "replaced_final_presentation",
-          "url": "https://github.com/YungSlaiz53/GNXT/commit/fd3c82b0710047eb25d22d179afdf9548b9488ef",
-          "committedAt": "2026-07-19T13:17:05Z"
-        },
-        {
-          "repo": "YungSlaiz53/GNXT",
-          "message": "Delete final_presentation.md",
-          "url": "https://github.com/YungSlaiz53/GNXT/commit/0299a9ada87a3a8821ebc9d94284d9795a1ab27f",
-          "committedAt": "2026-07-19T13:16:34Z"
-        },
-        {
-          "repo": "YungSlaiz53/GNXT",
-          "message": "Create initial presentation for NEXT.AI project\n\nAdded detailed project information and user instructions for NEXT.AI.",
-          "url": "https://github.com/YungSlaiz53/GNXT/commit/fe84224079dd3ea906e140a84a1650def5c528cf",
-          "committedAt": "2026-07-19T13:15:45Z"
-        },
-        {
-          "repo": "YungSlaiz53/GNXT",
-          "message": "added final presentation",
-          "url": "https://github.com/YungSlaiz53/GNXT/commit/08b5b2d848b95a764c997da8ba06e692a9c3bdf5",
-          "committedAt": "2026-07-19T13:14:18Z"
-        }
-      ],
+      "lastActivityAt": "2026-07-19T14:06:49Z",
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
       "id": "murmurations",
       "name": "Nori",
       "lastActivityAt": "2026-07-17T20:11:48Z",
-      "commitsThisWeek": 17,
-      "recentCommits": [
-        {
-          "repo": "murmurations-ai/flyway",
-          "message": "Merge pull request #36 from murmurations-ai/feat/simple-cli-and-payment\n\nfeat(cli+docs): simple flyway command, easy install, payment option",
-          "url": "https://github.com/murmurations-ai/flyway/commit/89888635b47ed20aeeacd1290a40f6f03252ea4c",
-          "committedAt": "2026-07-17T20:11:48Z"
-        },
-        {
-          "repo": "murmurations-ai/flyway",
-          "message": "feat(cli+docs): simple `flyway` command, easy install, payment option\n\nTwo things a first-time visitor needs: a CLI that isn't a mouthful, and\n(for Builder Pie) a way to pay.\n\nSimple invocation + easy install\n- `pnpm setup` — one command: install, build, and link `flyway` +\n  `flyway-mcp` onto PATH (via npm link). After it, `flyway status` works\n  from anywhere instead of `node packages/cli/dist/bin/flyway.js status`.\n- Root now depends on flyway-cli/flyway-mcp (workspace:*), so without a\n  global link you can still run `pnpm flyway <cmd>` / `pnpm flyway-mcp`\n  in-repo (node_modules/.bin is wired).\n- scripts/postbuild.mjs chmods the built bins 0755 so the global link\n  survives rebuilds (tsc --build drops the +x bit; root build now runs it).\n- README / AGENTS.md / index.html quickstarts use the short `flyway`\n  form with a `pnpm`-prefix fallback noted.\n\nPayment option (Builder Pie)\n- Buy Me a Coffee (pay-what-you-want) added to the README (top bar +\n  Support section), the presentation (support button, payment row in the\n  walkthrough, verification-checklist item), and the site footer.\n- Reconciled the old \"payment: none / not a paywall\" copy: the protocol\n  stays free & MIT; support funds the work without gating a tool.\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01Prq6BNwxJ2MbKKyw6BAYhs",
-          "url": "https://github.com/murmurations-ai/flyway/commit/5d76d38a1b71179f3d35a225140e32c1954bc971",
-          "committedAt": "2026-07-17T20:11:30Z"
-        },
-        {
-          "repo": "murmurations-ai/flyway",
-          "message": "Merge pull request #35 from murmurations-ai/docs/refresh-architecture\n\ndocs(architecture): refresh how-flyway-works twins to current state",
-          "url": "https://github.com/murmurations-ai/flyway/commit/a1f5ef81915d61182021b909b131a0f2f1a9069d",
-          "committedAt": "2026-07-16T22:55:51Z"
-        },
-        {
-          "repo": "murmurations-ai/flyway",
-          "message": "docs(architecture): refresh how-flyway-works twins to current state\n\nBoth the .md and .html twins understated the project — the worst kind of\nstale for a reviewer. Corrected the status/pending claims to match what\nactually shipped, and aligned metadata across both twins and the rest of\nthe site (SHA 0af2e32, 2026-07-16):\n\n- \"What's pending\" no longer calls remote transports a \"reserved seam\"\n  (v0.2a HTTPS fetch + recognize-at-a-distance and v0.2b github-pr both\n  shipped, Tiers 6-7) or exit-aware reads \"not yet modelled\" (shipped at\n  S+13 / ADR-0013, Tier 8). Only url-webhook (v0.2c) + agreement lifecycle\n  remain — those stay marked pending because they genuinely are.\n- flyway_discover description now notes HTTPS-URL directories (v0.2a),\n  not \"v0.1 reads a local directory file\" only.\n- HTML status snapshot: five -> eight walkthroughs; adds the reach +\n  exit-aware paragraph; SHA 17f9bc1 -> 0af2e32 (header, footer).\n- .md frontmatter code-sha d5ad56f -> 0af2e32, date -> 2026-07-16.\n\nStyling untouched — both twins already conform to the brand system\n(brand.css tokens, self-hosted fonts, theme-toggle). Conceptual content\nand diagrams unchanged; only stale status prose + metadata corrected.\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01Prq6BNwxJ2MbKKyw6BAYhs",
-          "url": "https://github.com/murmurations-ai/flyway/commit/ca59e69d4b6af7c03d04cc2c815307567f54b3ca",
-          "committedAt": "2026-07-16T22:23:16Z"
-        },
-        {
-          "repo": "murmurations-ai/flyway",
-          "message": "Merge pull request #34 from murmurations-ai/docs/refresh-status-readme\n\ndocs: refresh status snapshot to S+14; tighten README top",
-          "url": "https://github.com/murmurations-ai/flyway/commit/20e76ef10b05d006799ad3360b5cd5cc7058f8ee",
-          "committedAt": "2026-07-16T22:12:24Z"
-        }
-      ],
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
       "id": "trike",
       "name": "Anita",
       "lastActivityAt": "2026-07-18T18:35:27Z",
-      "commitsThisWeek": 1,
-      "recentCommits": [
-        {
-          "repo": "3rike12/3rike-Mobility_",
-          "message": "updates",
-          "url": "https://github.com/3rike12/3rike-Mobility_/commit/310ca29c2f3e6977ad4bd18b60c18354d23a75ae",
-          "committedAt": "2026-07-18T18:35:27Z"
-        }
-      ],
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
@@ -315,40 +109,9 @@
     {
       "id": "newman5",
       "name": "Newman",
-      "lastActivityAt": "2026-07-18T15:14:03Z",
-      "commitsThisWeek": 12,
-      "recentCommits": [
-        {
-          "repo": "Newman5/builder-season-playbook",
-          "message": "add the ody.sh link to live demo",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/0014c3af92d265fc6478594e47d00c43a8f9c4bd",
-          "committedAt": "2026-07-18T15:14:03Z"
-        },
-        {
-          "repo": "Newman5/builder-season-playbook",
-          "message": "Update builder activity data",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/eb8b574e1b54699d8b61b63ca2f3c609fc15b90c",
-          "committedAt": "2026-07-18T13:47:28Z"
-        },
-        {
-          "repo": "Newman5/builder-season-playbook",
-          "message": "Update builder activity data",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/e9f0c503a6ba06e53952cb7c48d6c8e41f266f78",
-          "committedAt": "2026-07-17T14:01:43Z"
-        },
-        {
-          "repo": "Newman5/builder-season-playbook",
-          "message": "Adding the github avatars to profile listings",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/bd7f08c39d90df47519f43c14b0d9573aa1ec268",
-          "committedAt": "2026-07-17T02:56:11Z"
-        },
-        {
-          "repo": "Newman5/builder-season-playbook",
-          "message": "removing the complicated X search features.  Sticking with simple X search with single URL encoded link",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/952c078ca82aa7755e6e0cc6e152246b98baae6c",
-          "committedAt": "2026-07-16T21:43:15Z"
-        }
-      ],
+      "lastActivityAt": "2026-07-19T13:52:30Z",
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
@@ -363,156 +126,32 @@
       "id": "devfreeguy",
       "name": "Daniel",
       "lastActivityAt": "2026-07-19T11:41:21Z",
-      "commitsThisWeek": 32,
-      "recentCommits": [
-        {
-          "repo": "devfreeguy/skill-swap",
-          "message": "Tracks updated",
-          "url": "https://github.com/devfreeguy/skill-swap/commit/7a50b0e463a87fe87aa285c2f076c838bef5bbee",
-          "committedAt": "2026-07-19T11:41:21Z"
-        },
-        {
-          "repo": "devfreeguy/skill-swap",
-          "message": "User Acquisition Story updated",
-          "url": "https://github.com/devfreeguy/skill-swap/commit/b355a4206061931f33a4d6099b4b5923d3d4ec64",
-          "committedAt": "2026-07-19T11:40:27Z"
-        },
-        {
-          "repo": "devfreeguy/skill-swap",
-          "message": "docs",
-          "url": "https://github.com/devfreeguy/skill-swap/commit/e0d98fe176d2ef1dc27149b541f487aa4af9fb54",
-          "committedAt": "2026-07-19T07:33:31Z"
-        },
-        {
-          "repo": "devfreeguy/skill-swap",
-          "message": "fix: respect preprod cookie when DEFAULT_NETWORK is mainnet",
-          "url": "https://github.com/devfreeguy/skill-swap/commit/0f01a35126d6baa81c8797a6fccf311d2034be39",
-          "committedAt": "2026-07-18T20:11:38Z"
-        },
-        {
-          "repo": "devfreeguy/skill-swap",
-          "message": "chore: ignore docs/final-presentation-template.md",
-          "url": "https://github.com/devfreeguy/skill-swap/commit/50c7d1599b012d952f5d52c6a1d2020d0a045a4d",
-          "committedAt": "2026-07-18T11:04:37Z"
-        }
-      ],
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
       "id": "haulink",
       "name": "Abdulazeez",
       "lastActivityAt": "2026-07-18T09:09:41Z",
-      "commitsThisWeek": 10,
-      "recentCommits": [
-        {
-          "repo": "FoladDTechie/Haulink",
-          "message": "Merge pull request #19 from FoladDTechie/HAUL-22-AZB\n\nFeat: Docs Update",
-          "url": "https://github.com/FoladDTechie/Haulink/commit/4b99364fe2caaa50f5462b1e39c9ffc025112990",
-          "committedAt": "2026-07-18T09:09:41Z"
-        },
-        {
-          "repo": "FoladDTechie/Haulink",
-          "message": "docs: added presentation Video",
-          "url": "https://github.com/FoladDTechie/Haulink/commit/341e27b7133287dde2a7960cb7d252b877c8652f",
-          "committedAt": "2026-07-18T09:07:28Z"
-        },
-        {
-          "repo": "FoladDTechie/Haulink",
-          "message": "docs: added presentation Video",
-          "url": "https://github.com/FoladDTechie/Haulink/commit/bbfd502a6691d7dc5879f0952dea733c36118b4c",
-          "committedAt": "2026-07-18T09:06:18Z"
-        },
-        {
-          "repo": "FoladDTechie/Haulink",
-          "message": "docs: added presentation Video",
-          "url": "https://github.com/FoladDTechie/Haulink/commit/5dfcce845c257c9ec0ec7290e70742fb6bea48ca",
-          "committedAt": "2026-07-18T09:04:56Z"
-        },
-        {
-          "repo": "FoladDTechie/Haulink",
-          "message": "Merge pull request #18 from FoladDTechie/HAUL-22-AZB\n\nfeat: final submission — SUBMISSION.md and verification links",
-          "url": "https://github.com/FoladDTechie/Haulink/commit/eb2c2f591f9516ab6b8ef1eea6567b0b6038bdf0",
-          "committedAt": "2026-07-17T18:03:58Z"
-        }
-      ],
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
       "id": "opa007i",
       "name": "Opa",
       "lastActivityAt": "2026-07-17T21:36:19Z",
-      "commitsThisWeek": 16,
-      "recentCommits": [
-        {
-          "repo": "opa1/the-quest",
-          "message": "Merge pull request #6 from opa1/staging\n\nStaging",
-          "url": "https://github.com/opa1/the-quest/commit/f5a0ea18933d48f4f4fee7592774ac331bf605cb",
-          "committedAt": "2026-07-17T21:36:19Z"
-        },
-        {
-          "repo": "opa1/the-quest",
-          "message": "docs: add demo and final presentation video link\n\nReplaces the two demo-video placeholders with the recorded Odysee walkthrough (TheQuest final presentation for Piece of Pie 2026).",
-          "url": "https://github.com/opa1/the-quest/commit/6d7838f2ee4c6c684236b130f2ce4ce341194ef2",
-          "committedAt": "2026-07-17T21:25:22Z"
-        },
-        {
-          "repo": "opa1/the-quest",
-          "message": "Merge branch 'staging' of github.com-opa:opa1/the-quest into staging",
-          "url": "https://github.com/opa1/the-quest/commit/d907c16fb716ef756545249c5b2a5a1fcb5f35a0",
-          "committedAt": "2026-07-17T13:08:47Z"
-        },
-        {
-          "repo": "opa1/the-quest",
-          "message": "docs: update final presentation with feedback evidence and link fixes\n\n- Restored Feedback Pie section with recorded session evidence (Haulink/Ayzed)\n- Removed redundant Twitter/website link markdown from table rows and inline mentions\n- Updated skypiedao's mission link to correct task URL\n- Removed TODO placeholder note about Feedback Pie",
-          "url": "https://github.com/opa1/the-quest/commit/654b0cfbada24f598a013658a554f9fea8b89000",
-          "committedAt": "2026-07-17T13:08:36Z"
-        },
-        {
-          "repo": "opa1/the-quest",
-          "message": "Update project description to include 'gamified'",
-          "url": "https://github.com/opa1/the-quest/commit/3a8333fac8cc7a275b22c34d095f36787f20a7be",
-          "committedAt": "2026-07-17T11:48:22Z"
-        }
-      ],
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
       "id": "muhammedyuguda",
       "name": "Muhammed",
       "lastActivityAt": "2026-07-19T08:04:08Z",
-      "commitsThisWeek": 20,
-      "recentCommits": [
-        {
-          "repo": "Yuguda999/devmemory",
-          "message": "Merge pull request #1 from Yuguda999/hosted-saas\n\nHosted saas",
-          "url": "https://github.com/Yuguda999/devmemory/commit/8f18a5b4ce01153b506072284e3e88129357f3e5",
-          "committedAt": "2026-07-19T08:04:08Z"
-        },
-        {
-          "repo": "Yuguda999/devmemory",
-          "message": "feat(billing): implement payment modal for upgrade process",
-          "url": "https://github.com/Yuguda999/devmemory/commit/8aca6bcdf6d036d91ca73f66145feba32d6735c4",
-          "committedAt": "2026-07-19T07:59:32Z"
-        },
-        {
-          "repo": "Yuguda999/devmemory",
-          "message": "fix(npm): sync ~/.devmemory/api_key on install so a stale key can't 401 (0.3.5)\n\nKey resolution reads ~/.devmemory/api_key BEFORE config.json. `install` wrote\nthe new key only to config.json, so an old/revoked key left in the api_key file\n(e.g. from a prior install) shadowed it and every backend call returned\n`Invalid or revoked API key`. writeConfig() now also overwrites the plaintext\napi_key file whenever a key is provided, keeping both sources consistent.\n\nBump to 0.3.5. Document the stale-key-file 401 in the main and npm READMEs\n(fix: re-install, or `rm ~/.devmemory/api_key`).\n\nCo-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic.com>",
-          "url": "https://github.com/Yuguda999/devmemory/commit/edd627cceab281ede1029daf279f82e57de1314e",
-          "committedAt": "2026-07-15T16:26:55Z"
-        },
-        {
-          "repo": "Yuguda999/devmemory",
-          "message": "docs: cover `command not found` (runner + sudo-prefix) across all surfaces\n\nThe npm package README (what npmjs.com shows) was stale — rewrote it with\nrunner-vs-permanent, start/stop commands, --config-dir, and a Troubleshooting\nsection. Added the \"command not found after a global install\" case — npm's\nglobal prefix is often the root-owned /usr/local, so `npm install -g` needs\nsudo; a one-time `npm config set prefix ~/.local` fixes it sudo-free — to the\nmain README troubleshooting, the dashboard Setup page (step 4), and DEPLOY.md.\n\nCo-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic.com>",
-          "url": "https://github.com/Yuguda999/devmemory/commit/a3e2f2133f4e830ca3bd9811c87eef089389ab31",
-          "committedAt": "2026-07-15T16:06:02Z"
-        },
-        {
-          "repo": "Yuguda999/devmemory",
-          "message": "docs: pin `npx @latest` on every install command; drop stale version refs\n\nEvery `npx … install` snippet across README, DEPLOY.md, and the dashboard\nSetup page now pins `@latest`, so copy-pasting can't reuse a stale npx cache\n(the exact trap that made `--config-dir` look unsupported). Also replaced the\nnow-behind `@0.3.3` example pins with `@latest` (the factual \"requires ≥ 0.3.3\"\nnote stays), and added a permanent-command hint to the DEPLOY onboarding.\n\nCo-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic.com>",
-          "url": "https://github.com/Yuguda999/devmemory/commit/397c9682d3a48455553f4399307c27dbccb53dea",
-          "committedAt": "2026-07-15T14:43:17Z"
-        }
-      ],
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
@@ -534,40 +173,9 @@
     {
       "id": "alfreditodole",
       "name": "Alfred Itodole",
-      "lastActivityAt": "2026-07-19T12:04:16Z",
-      "commitsThisWeek": 21,
-      "recentCommits": [
-        {
-          "repo": "sirxalfred/mosaic-cardano",
-          "message": "Merge branch 'develop'",
-          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/ae6687adaac0a72bc742be21e757351b533e7786",
-          "committedAt": "2026-07-19T12:04:16Z"
-        },
-        {
-          "repo": "sirxalfred/mosaic-cardano",
-          "message": "update presentation",
-          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/2534219a2f00d650e48f407278e0727bfeb1752f",
-          "committedAt": "2026-07-19T12:04:02Z"
-        },
-        {
-          "repo": "sirxalfred/mosaic-cardano",
-          "message": "feat: add automated publishing status polling and manual refresh UI, update workspace dashboard sorting, and force dynamic rendering for settings and library pages.",
-          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/a834824bcd286d9494723814ad1fd64a2852ab76",
-          "committedAt": "2026-07-19T10:09:10Z"
-        },
-        {
-          "repo": "sirxalfred/mosaic-cardano",
-          "message": "Merge branch 'develop'",
-          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/8a3930beaec4321216e87a785f4f2ce7747962a9",
-          "committedAt": "2026-07-19T07:27:24Z"
-        },
-        {
-          "repo": "sirxalfred/mosaic-cardano",
-          "message": "docs: create final presentation documentation for Mosaic hackathon project",
-          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/bc9ee0a665d03c134b30024422818a730cdefac1",
-          "committedAt": "2026-07-19T07:25:48Z"
-        }
-      ],
+      "lastActivityAt": "2026-07-19T20:51:09Z",
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     }
   ]
