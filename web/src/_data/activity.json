@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-20T14:32:26Z",
+  "generatedAt": "2026-07-21T14:20:27Z",
   "weekStart": "2026-07-20T00:00:00Z",
   "weekEnd": "2026-07-26T23:59:59Z",
   "builders": [
@@ -69,9 +69,22 @@
     {
       "id": "gamechanger",
       "name": "Adriano",
-      "lastActivityAt": "2026-07-19T05:47:16Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-07-20T18:11:25Z",
+      "commitsThisWeek": 2,
+      "recentCommits": [
+        {
+          "repo": "GameChangerFinance/NeonSoup",
+          "message": "Merge pull request #11 from GameChangerFinance/feat/improvements\n\nfeat(assets): add dev-only optimized asset pipeline",
+          "url": "https://github.com/GameChangerFinance/NeonSoup/commit/75d002c5d6b79dcee8176ddd2d915d98a202b01f",
+          "committedAt": "2026-07-20T18:11:25Z"
+        },
+        {
+          "repo": "GameChangerFinance/NeonSoup",
+          "message": "feat(assets): add dev-only optimized asset pipeline\n\n  - Add Sharp-based asset optimizer and verifier scripts\n  - Treat raw high-resolution files in assets/ as the source of truth\n  - Generate optimized runtime assets under src/assets/\n  - Convert transparent artwork to WebP while preserving resolution and alpha\n  - Convert theme background images to full-resolution JPGs\n  - Keep logo/icon PNG fallbacks and add WebP runtime variants\n  - Update Landing, Frontend, and DevTool asset references to optimized formats\n  - Add AVIF/JPG MIME support for local asset serving\n  - Document asset ownership and dev-only optimization policy in AGENTS.md\n  - Add generated src/assets/README.md warning against hand-editing runtime assets\n  - Fix landing typo",
+          "url": "https://github.com/GameChangerFinance/NeonSoup/commit/bf3f24ea304250e594d07d42907c575058d81279",
+          "committedAt": "2026-07-20T18:06:16Z"
+        }
+      ],
       "error": null
     },
     {
@@ -93,9 +106,40 @@
     {
       "id": "trike",
       "name": "Anita",
-      "lastActivityAt": "2026-07-18T18:35:27Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-07-21T13:30:11Z",
+      "commitsThisWeek": 5,
+      "recentCommits": [
+        {
+          "repo": "3rike12/3rike-Mobility_",
+          "message": "change",
+          "url": "https://github.com/3rike12/3rike-Mobility_/commit/2289d9359339035512f85df501262bf4d6cd843e",
+          "committedAt": "2026-07-21T13:30:11Z"
+        },
+        {
+          "repo": "3rike12/3rike-Mobility_",
+          "message": "chore: mainnet docs, gitignore, and live-mint env support\n\nREADMEs updated with mainnet deployment table. live-mint.py supports\nCARDANO_NETWORK env. Gitignore covers .env.mainnet and mainnet-wallet.json.",
+          "url": "https://github.com/3rike12/3rike-Mobility_/commit/c0d72da25353cfd376d0e02e6f0790ffe83ab48a",
+          "committedAt": "2026-07-21T13:23:24Z"
+        },
+        {
+          "repo": "3rike12/3rike-Mobility_",
+          "message": "feat: mainnet deployment — contracts, pools, and addresses\n\nuser_registry, private_investment (TRK-001/2/3), yield_vault deployed\non mainnet. deployed-addresses.json restructured with mainnet section.",
+          "url": "https://github.com/3rike12/3rike-Mobility_/commit/afa594000517286cabe4feb17b2ceb4e919f94e4",
+          "committedAt": "2026-07-21T13:23:19Z"
+        },
+        {
+          "repo": "3rike12/3rike-Mobility_",
+          "message": "feat: backend network switching — mainnet/testnet via CARDANO_NETWORK env\n\ncardano_keygen.py reads CARDANO_NETWORK env to derive mainnet vs testnet\naddresses. Backend passes the env through when calling keygen and\ncardano_tx.py. Explorer URLs and network labels are now dynamic.",
+          "url": "https://github.com/3rike12/3rike-Mobility_/commit/bbbfbd17064ea32fd3fbaca59b1b542521663e4e",
+          "committedAt": "2026-07-21T13:23:14Z"
+        },
+        {
+          "repo": "3rike12/3rike-Mobility_",
+          "message": "fix: pycardano 0.19.2 PlutusV3 bugs — bool encoding + witness CBOR keys\n\nbool fields in PlutusData serialize as CBOR booleans (f5) but Cardano\nexpects Plutus Constr (d87a80). Also witness set CBOR keys differ for\nConway era (scripts at key 10, redeemers at key 6).",
+          "url": "https://github.com/3rike12/3rike-Mobility_/commit/6315af5f6a8684f1d72d7fa4f54e45296abfa355",
+          "committedAt": "2026-07-21T13:23:08Z"
+        }
+      ],
       "error": null
     },
     {
@@ -109,9 +153,16 @@
     {
       "id": "newman5",
       "name": "Newman",
-      "lastActivityAt": "2026-07-19T13:52:30Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-07-20T14:32:38Z",
+      "commitsThisWeek": 1,
+      "recentCommits": [
+        {
+          "repo": "Newman5/builder-season-playbook",
+          "message": "Update builder activity data",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/2177a7e97e017bfd68f0adbd8fd79ccba8dabe61",
+          "committedAt": "2026-07-20T14:32:38Z"
+        }
+      ],
       "error": null
     },
     {
