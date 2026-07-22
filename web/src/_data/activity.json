@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-21T14:20:27Z",
+  "generatedAt": "2026-07-22T14:21:02Z",
   "weekStart": "2026-07-20T00:00:00Z",
   "weekEnd": "2026-07-26T23:59:59Z",
   "builders": [
@@ -14,9 +14,15 @@
     {
       "id": "ianonjuguna",
       "name": "Ian",
-      "lastActivityAt": "2026-07-20T00:13:23Z",
-      "commitsThisWeek": 1,
+      "lastActivityAt": "2026-07-22T12:57:02Z",
+      "commitsThisWeek": 2,
       "recentCommits": [
+        {
+          "repo": "IanoNjuguna/bookish-worm",
+          "message": "build files",
+          "url": "https://github.com/IanoNjuguna/bookish-worm/commit/9300351153a0a0f4d1d56636d604a55b023d0fb0",
+          "committedAt": "2026-07-22T12:57:02Z"
+        },
         {
           "repo": "IanoNjuguna/bookish-worm",
           "message": "finalise the proof of pie",
@@ -106,38 +112,38 @@
     {
       "id": "trike",
       "name": "Anita",
-      "lastActivityAt": "2026-07-21T13:30:11Z",
-      "commitsThisWeek": 5,
+      "lastActivityAt": "2026-07-21T19:16:07Z",
+      "commitsThisWeek": 22,
       "recentCommits": [
         {
           "repo": "3rike12/3rike-Mobility_",
-          "message": "change",
-          "url": "https://github.com/3rike12/3rike-Mobility_/commit/2289d9359339035512f85df501262bf4d6cd843e",
-          "committedAt": "2026-07-21T13:30:11Z"
+          "message": "investor dashboard: fix wallet address text contrast on light bg\n\n- Changed text/icon colors from white to dark green (#147025)\n- Backend now returns email_taken/phone_taken error codes\n- Frontend handles both codes with proper messages",
+          "url": "https://github.com/3rike12/3rike-Mobility_/commit/0faa4ffde3f3629649faf6599feb1837bc25b6d9",
+          "committedAt": "2026-07-21T19:16:07Z"
         },
         {
           "repo": "3rike12/3rike-Mobility_",
-          "message": "chore: mainnet docs, gitignore, and live-mint env support\n\nREADMEs updated with mainnet deployment table. live-mint.py supports\nCARDANO_NETWORK env. Gitignore covers .env.mainnet and mainnet-wallet.json.",
-          "url": "https://github.com/3rike12/3rike-Mobility_/commit/c0d72da25353cfd376d0e02e6f0790ffe83ab48a",
-          "committedAt": "2026-07-21T13:23:24Z"
+          "message": "loan page: wrap in MobileFrame to fix width mismatch",
+          "url": "https://github.com/3rike12/3rike-Mobility_/commit/bd296f867cbabee99584a68b58f23b56db5553b1",
+          "committedAt": "2026-07-21T19:03:27Z"
         },
         {
           "repo": "3rike12/3rike-Mobility_",
-          "message": "feat: mainnet deployment — contracts, pools, and addresses\n\nuser_registry, private_investment (TRK-001/2/3), yield_vault deployed\non mainnet. deployed-addresses.json restructured with mainnet section.",
-          "url": "https://github.com/3rike12/3rike-Mobility_/commit/afa594000517286cabe4feb17b2ceb4e919f94e4",
-          "committedAt": "2026-07-21T13:23:19Z"
+          "message": "investor dashboard: make wallet address white instead of faint green",
+          "url": "https://github.com/3rike12/3rike-Mobility_/commit/0eb8fbd922407214b935f51971b021d993f5a06f",
+          "committedAt": "2026-07-21T18:56:47Z"
         },
         {
           "repo": "3rike12/3rike-Mobility_",
-          "message": "feat: backend network switching — mainnet/testnet via CARDANO_NETWORK env\n\ncardano_keygen.py reads CARDANO_NETWORK env to derive mainnet vs testnet\naddresses. Backend passes the env through when calling keygen and\ncardano_tx.py. Explorer URLs and network labels are now dynamic.",
-          "url": "https://github.com/3rike12/3rike-Mobility_/commit/bbbfbd17064ea32fd3fbaca59b1b542521663e4e",
-          "committedAt": "2026-07-21T13:23:14Z"
+          "message": "receive-crypto: bump address text contrast from gray-600 to gray-900",
+          "url": "https://github.com/3rike12/3rike-Mobility_/commit/76b098a02f5510a159b73b70c53422d7df0db3e8",
+          "committedAt": "2026-07-21T18:53:31Z"
         },
         {
           "repo": "3rike12/3rike-Mobility_",
-          "message": "fix: pycardano 0.19.2 PlutusV3 bugs — bool encoding + witness CBOR keys\n\nbool fields in PlutusData serialize as CBOR booleans (f5) but Cardano\nexpects Plutus Constr (d87a80). Also witness set CBOR keys differ for\nConway era (scripts at key 10, redeemers at key 6).",
-          "url": "https://github.com/3rike12/3rike-Mobility_/commit/6315af5f6a8684f1d72d7fa4f54e45296abfa355",
-          "committedAt": "2026-07-21T13:23:08Z"
+          "message": "deposit: remove unused handleReceived handler after ReceiveCrypto simplified",
+          "url": "https://github.com/3rike12/3rike-Mobility_/commit/9281581b65c571bf0a34a585bf094cc1ad202433",
+          "committedAt": "2026-07-21T18:48:42Z"
         }
       ],
       "error": null
@@ -153,9 +159,15 @@
     {
       "id": "newman5",
       "name": "Newman",
-      "lastActivityAt": "2026-07-20T14:32:38Z",
-      "commitsThisWeek": 1,
+      "lastActivityAt": "2026-07-21T14:20:37Z",
+      "commitsThisWeek": 2,
       "recentCommits": [
+        {
+          "repo": "Newman5/builder-season-playbook",
+          "message": "Update builder activity data",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/8c210e4859842ffdb52a64173dac7f3c23690340",
+          "committedAt": "2026-07-21T14:20:37Z"
+        },
         {
           "repo": "Newman5/builder-season-playbook",
           "message": "Update builder activity data",
