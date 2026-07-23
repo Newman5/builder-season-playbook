@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-22T14:21:02Z",
+  "generatedAt": "2026-07-23T14:29:57Z",
   "weekStart": "2026-07-20T00:00:00Z",
   "weekEnd": "2026-07-26T23:59:59Z",
   "builders": [
@@ -14,20 +14,38 @@
     {
       "id": "ianonjuguna",
       "name": "Ian",
-      "lastActivityAt": "2026-07-22T12:57:02Z",
-      "commitsThisWeek": 2,
+      "lastActivityAt": "2026-07-22T23:45:17Z",
+      "commitsThisWeek": 20,
       "recentCommits": [
         {
           "repo": "IanoNjuguna/bookish-worm",
-          "message": "build files",
-          "url": "https://github.com/IanoNjuguna/bookish-worm/commit/9300351153a0a0f4d1d56636d604a55b023d0fb0",
-          "committedAt": "2026-07-22T12:57:02Z"
+          "message": "Update demo video link",
+          "url": "https://github.com/IanoNjuguna/bookish-worm/commit/402a9efa00f0efc4affdb4d88a68af86d5b71877",
+          "committedAt": "2026-07-22T23:45:17Z"
         },
         {
           "repo": "IanoNjuguna/bookish-worm",
-          "message": "finalise the proof of pie",
-          "url": "https://github.com/IanoNjuguna/bookish-worm/commit/f5b3c71c2a6cef6f5319925d09e3019602a68038",
-          "committedAt": "2026-07-20T00:13:23Z"
+          "message": "fix CORS matching and upload network error",
+          "url": "https://github.com/IanoNjuguna/bookish-worm/commit/ddba6894f16010defe439f51afcdf04af859d42a",
+          "committedAt": "2026-07-22T23:06:59Z"
+        },
+        {
+          "repo": "IanoNjuguna/bookish-worm",
+          "message": "sanitize HTML error responses",
+          "url": "https://github.com/IanoNjuguna/bookish-worm/commit/09da714ca5772f571cc0d9282dfac562ad51964c",
+          "committedAt": "2026-07-22T22:58:01Z"
+        },
+        {
+          "repo": "IanoNjuguna/bookish-worm",
+          "message": "copy notifications",
+          "url": "https://github.com/IanoNjuguna/bookish-worm/commit/5ee93dc465805e84547949a5eb6d7c65cc2a278a",
+          "committedAt": "2026-07-22T22:54:22Z"
+        },
+        {
+          "repo": "IanoNjuguna/bookish-worm",
+          "message": "fix unused import",
+          "url": "https://github.com/IanoNjuguna/bookish-worm/commit/ca64067addaf14c3f9fda307d10160801fad03d6",
+          "committedAt": "2026-07-22T22:36:09Z"
         }
       ],
       "error": null
@@ -59,9 +77,40 @@
     {
       "id": "lewis",
       "name": "Lewis",
-      "lastActivityAt": "2026-07-19T08:32:12Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-07-23T12:34:12Z",
+      "commitsThisWeek": 5,
+      "recentCommits": [
+        {
+          "repo": "lewis-nduati/Tracom-credentials",
+          "message": "refactor: improve consulting page design and messaging",
+          "url": "https://github.com/lewis-nduati/Tracom-credentials/commit/86fd428ebb6e24e03964f31d2ae538712835c899",
+          "committedAt": "2026-07-23T12:34:12Z"
+        },
+        {
+          "repo": "lewis-nduati/Tracom-credentials",
+          "message": "style: improve consulting page branding and contrast",
+          "url": "https://github.com/lewis-nduati/Tracom-credentials/commit/faeaea994306789b2b176c00a4252619057587c9",
+          "committedAt": "2026-07-22T17:49:33Z"
+        },
+        {
+          "repo": "lewis-nduati/Tracom-credentials",
+          "message": "feat: add consulting payment flow",
+          "url": "https://github.com/lewis-nduati/Tracom-credentials/commit/addf211ca8263e3614c1490914e82756d09b9421",
+          "committedAt": "2026-07-22T17:12:40Z"
+        },
+        {
+          "repo": "lewis-nduati/Tracom-credentials",
+          "message": "Update final-presentation.md",
+          "url": "https://github.com/lewis-nduati/Tracom-credentials/commit/25bd6caeb729b49ba28b496c1169c5e8defae4cd",
+          "committedAt": "2026-07-22T17:11:07Z"
+        },
+        {
+          "repo": "lewis-nduati/Tracom-credentials",
+          "message": "feat: add consulting landing page with consultation flow",
+          "url": "https://github.com/lewis-nduati/Tracom-credentials/commit/2085367fffd20186370d31585aef24db77a62065",
+          "committedAt": "2026-07-22T16:45:41Z"
+        }
+      ],
       "error": null
     },
     {
@@ -159,9 +208,15 @@
     {
       "id": "newman5",
       "name": "Newman",
-      "lastActivityAt": "2026-07-21T14:20:37Z",
-      "commitsThisWeek": 2,
+      "lastActivityAt": "2026-07-22T14:21:14Z",
+      "commitsThisWeek": 3,
       "recentCommits": [
+        {
+          "repo": "Newman5/builder-season-playbook",
+          "message": "Update builder activity data",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/c7fa223b73f7d7d413a1e65d081376984d366394",
+          "committedAt": "2026-07-22T14:21:14Z"
+        },
         {
           "repo": "Newman5/builder-season-playbook",
           "message": "Update builder activity data",
@@ -220,17 +275,61 @@
     {
       "id": "juanitajaramillo",
       "name": "Juanita",
-      "lastActivityAt": "2026-07-02T04:01:27Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-07-23T14:29:27Z",
+      "commitsThisWeek": 2,
+      "recentCommits": [
+        {
+          "repo": "JuanitaJaramill/cardano-insights-lab",
+          "message": "Add final Piece of Pie presentation and demo links",
+          "url": "https://github.com/JuanitaJaramill/cardano-insights-lab/commit/31182e3a325a25f9f76f0db4631527a6d399e679",
+          "committedAt": "2026-07-23T14:29:27Z"
+        },
+        {
+          "repo": "JuanitaJaramill/cardano-insights-lab",
+          "message": "Replace PayPal checkout with Gumroad payment link",
+          "url": "https://github.com/JuanitaJaramill/cardano-insights-lab/commit/86547e14d218bd8857ad2b93c22762e5d061ab10",
+          "committedAt": "2026-07-23T01:00:09Z"
+        }
+      ],
       "error": null
     },
     {
       "id": "kamalaliyu",
       "name": "Kamal Aliyu",
-      "lastActivityAt": "2026-06-14T14:30:00Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-07-23T13:44:42Z",
+      "commitsThisWeek": 7,
+      "recentCommits": [
+        {
+          "repo": "kamal-ogtl/cogikids",
+          "message": "docs: remove em dashes from submission",
+          "url": "https://github.com/kamal-ogtl/cogikids/commit/f4c3c0270e353dd00a901bcd6f71c2bba65ed2e6",
+          "committedAt": "2026-07-23T13:44:42Z"
+        },
+        {
+          "repo": "kamal-ogtl/cogikids",
+          "message": "docs: restructure submission with project identity, payment info, demo flow, and verification summary",
+          "url": "https://github.com/kamal-ogtl/cogikids/commit/41a30f37c64722edb0bfb5c8f88baa018d74737e",
+          "committedAt": "2026-07-23T13:41:30Z"
+        },
+        {
+          "repo": "kamal-ogtl/cogikids",
+          "message": "docs: rename Mieo to Cogi in README",
+          "url": "https://github.com/kamal-ogtl/cogikids/commit/bbbb19daec1686919790cfab9d1bc69c8cfa1ba7",
+          "committedAt": "2026-07-23T11:00:50Z"
+        },
+        {
+          "repo": "kamal-ogtl/cogikids",
+          "message": "docs: fix week 12 build-in-public link",
+          "url": "https://github.com/kamal-ogtl/cogikids/commit/0cdeee6f72b7b888c376d57c285176b0d032d916",
+          "committedAt": "2026-07-23T10:58:58Z"
+        },
+        {
+          "repo": "kamal-ogtl/cogikids",
+          "message": "Merge remote-tracking branch 'origin/main'",
+          "url": "https://github.com/kamal-ogtl/cogikids/commit/95b7ed36e7185e5255ea67672cb5be1bfa2f8018",
+          "committedAt": "2026-07-23T10:54:15Z"
+        }
+      ],
       "error": null
     },
     {
