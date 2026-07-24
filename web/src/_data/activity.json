@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-23T14:29:57Z",
+  "generatedAt": "2026-07-24T14:11:09Z",
   "weekStart": "2026-07-20T00:00:00Z",
   "weekEnd": "2026-07-26T23:59:59Z",
   "builders": [
@@ -208,9 +208,15 @@
     {
       "id": "newman5",
       "name": "Newman",
-      "lastActivityAt": "2026-07-22T14:21:14Z",
-      "commitsThisWeek": 3,
+      "lastActivityAt": "2026-07-23T14:30:08Z",
+      "commitsThisWeek": 4,
       "recentCommits": [
+        {
+          "repo": "Newman5/builder-season-playbook",
+          "message": "Update builder activity data",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/5b1dcec355faa9682f45f553f02e16fd2a45f297",
+          "committedAt": "2026-07-23T14:30:08Z"
+        },
         {
           "repo": "Newman5/builder-season-playbook",
           "message": "Update builder activity data",
@@ -275,9 +281,15 @@
     {
       "id": "juanitajaramillo",
       "name": "Juanita",
-      "lastActivityAt": "2026-07-23T14:29:27Z",
-      "commitsThisWeek": 2,
+      "lastActivityAt": "2026-07-23T14:37:28Z",
+      "commitsThisWeek": 3,
       "recentCommits": [
+        {
+          "repo": "JuanitaJaramill/cardano-insights-lab",
+          "message": "Add Week 12 final demo update",
+          "url": "https://github.com/JuanitaJaramill/cardano-insights-lab/commit/d14302e9dd3d4b2c02d7744098aec46d50503a87",
+          "committedAt": "2026-07-23T14:37:28Z"
+        },
         {
           "repo": "JuanitaJaramill/cardano-insights-lab",
           "message": "Add final Piece of Pie presentation and demo links",
