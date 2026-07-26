@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-25T14:00:41Z",
+  "generatedAt": "2026-07-26T13:55:16Z",
   "weekStart": "2026-07-20T00:00:00Z",
   "weekEnd": "2026-07-26T23:59:59Z",
   "builders": [
@@ -220,9 +220,15 @@
     {
       "id": "newman5",
       "name": "Newman",
-      "lastActivityAt": "2026-07-24T14:11:16Z",
-      "commitsThisWeek": 5,
+      "lastActivityAt": "2026-07-25T14:00:52Z",
+      "commitsThisWeek": 6,
       "recentCommits": [
+        {
+          "repo": "Newman5/builder-season-playbook",
+          "message": "Update builder activity data",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/54fa7234d0f948962f968abaa561dfe71d2e0221",
+          "committedAt": "2026-07-25T14:00:52Z"
+        },
         {
           "repo": "Newman5/builder-season-playbook",
           "message": "Update builder activity data",
@@ -246,12 +252,6 @@
           "message": "Update builder activity data",
           "url": "https://github.com/Newman5/builder-season-playbook/commit/8c210e4859842ffdb52a64173dac7f3c23690340",
           "committedAt": "2026-07-21T14:20:37Z"
-        },
-        {
-          "repo": "Newman5/builder-season-playbook",
-          "message": "Update builder activity data",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/2177a7e97e017bfd68f0adbd8fd79ccba8dabe61",
-          "committedAt": "2026-07-20T14:32:38Z"
         }
       ],
       "error": null
@@ -326,9 +326,15 @@
     {
       "id": "kamalaliyu",
       "name": "Kamal Aliyu",
-      "lastActivityAt": "2026-07-23T13:44:42Z",
-      "commitsThisWeek": 7,
+      "lastActivityAt": "2026-07-25T15:51:22Z",
+      "commitsThisWeek": 8,
       "recentCommits": [
+        {
+          "repo": "kamal-ogtl/cogikids",
+          "message": "docs: document Gemma 4 as the AI engine for Cogi Talk, lessons, and hints",
+          "url": "https://github.com/kamal-ogtl/cogikids/commit/cbf8e0fb8012413ed926cc2e42fe1e5701ede8e7",
+          "committedAt": "2026-07-25T15:51:22Z"
+        },
         {
           "repo": "kamal-ogtl/cogikids",
           "message": "docs: remove em dashes from submission",
@@ -352,12 +358,6 @@
           "message": "docs: fix week 12 build-in-public link",
           "url": "https://github.com/kamal-ogtl/cogikids/commit/0cdeee6f72b7b888c376d57c285176b0d032d916",
           "committedAt": "2026-07-23T10:58:58Z"
-        },
-        {
-          "repo": "kamal-ogtl/cogikids",
-          "message": "Merge remote-tracking branch 'origin/main'",
-          "url": "https://github.com/kamal-ogtl/cogikids/commit/95b7ed36e7185e5255ea67672cb5be1bfa2f8018",
-          "committedAt": "2026-07-23T10:54:15Z"
         }
       ],
       "error": null
@@ -365,9 +365,22 @@
     {
       "id": "alfreditodole",
       "name": "Alfred Itodole",
-      "lastActivityAt": "2026-07-19T20:51:09Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-07-25T22:24:45Z",
+      "commitsThisWeek": 2,
+      "recentCommits": [
+        {
+          "repo": "sirxalfred/mosaic-cardano",
+          "message": "Merge pull request #42 from sirXalfred/develop\n\nfeat: implement persistent react-query cache and update logout to cle…",
+          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/1099725d27441611049523617394c0a7be0569b3",
+          "committedAt": "2026-07-25T22:24:45Z"
+        },
+        {
+          "repo": "sirxalfred/mosaic-cardano",
+          "message": "feat: implement persistent react-query cache and update logout to clear client storage",
+          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/21c1febb7950f821cbefa56ccc9a3e4ccd0683f6",
+          "committedAt": "2026-07-23T12:01:27Z"
+        }
+      ],
       "error": null
     }
   ]
