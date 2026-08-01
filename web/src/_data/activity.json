@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-31T14:33:23Z",
+  "generatedAt": "2026-08-01T13:53:43Z",
   "weekStart": "2026-07-27T00:00:00Z",
   "weekEnd": "2026-08-02T23:59:59Z",
   "builders": [
@@ -102,9 +102,15 @@
     {
       "id": "newman5",
       "name": "Newman",
-      "lastActivityAt": "2026-07-30T14:30:47Z",
-      "commitsThisWeek": 4,
+      "lastActivityAt": "2026-07-31T14:33:35Z",
+      "commitsThisWeek": 5,
       "recentCommits": [
+        {
+          "repo": "Newman5/builder-season-playbook",
+          "message": "Update builder activity data",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/a4eb5080987d2856757e816fc25ceefefb1c1af3",
+          "committedAt": "2026-07-31T14:33:35Z"
+        },
         {
           "repo": "Newman5/builder-season-playbook",
           "message": "Update builder activity data",
@@ -191,9 +197,40 @@
     {
       "id": "alfreditodole",
       "name": "Alfred Itodole",
-      "lastActivityAt": "2026-07-25T22:24:45Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-07-31T18:17:33Z",
+      "commitsThisWeek": 23,
+      "recentCommits": [
+        {
+          "repo": "sirxalfred/mosaic-cardano",
+          "message": "Merge branch 'develop'",
+          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/86f7ea2f35c1ca61f568af6dfa4366f4a6dce5e7",
+          "committedAt": "2026-07-31T18:17:33Z"
+        },
+        {
+          "repo": "sirxalfred/mosaic-cardano",
+          "message": "fix: add feedback endpoitn to public",
+          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/cce16c26d0673dd247c2e08943285d58535a875a",
+          "committedAt": "2026-07-31T18:15:23Z"
+        },
+        {
+          "repo": "sirxalfred/mosaic-cardano",
+          "message": "Merge pull request #44 from sirXalfred/develop\n\nrefactor: enhance API, notifications, and streaming features with various fixes",
+          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/afb0c6a4dc8f512320ffaef9ffa0329751ce6f93",
+          "committedAt": "2026-07-31T16:42:05Z"
+        },
+        {
+          "repo": "sirxalfred/mosaic-cardano",
+          "message": "refactor: add conditional rendering logic to home page components to hide empty states when active content exists",
+          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/b9f2f534174b1ebc671d17424a28c205982b0eb0",
+          "committedAt": "2026-07-29T22:35:59Z"
+        },
+        {
+          "repo": "sirxalfred/mosaic-cardano",
+          "message": "feat(intents): parse ?modal= query params for deep-link modal opening\n\n- useParseIntent now reads ?modal= or ?modalId= from URL query params\n- Validates against MODALS enum whitelist to prevent injection\n- Strips modal params from URL bar after opening via replaceState\n- Simplify NotificationItem back to standard Link navigation",
+          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/514e8a1b0a7a097f1559b1a61411c781e73e2159",
+          "committedAt": "2026-07-29T22:08:41Z"
+        }
+      ],
       "error": null
     }
   ]
