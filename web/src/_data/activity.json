@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-08-02T13:53:06Z",
-  "weekStart": "2026-07-27T00:00:00Z",
-  "weekEnd": "2026-08-02T23:59:59Z",
+  "generatedAt": "2026-08-03T15:14:36Z",
+  "weekStart": "2026-08-03T00:00:00Z",
+  "weekEnd": "2026-08-09T23:59:59Z",
   "builders": [
     {
       "id": "mhizta",
@@ -14,9 +14,40 @@
     {
       "id": "ianonjuguna",
       "name": "Ian",
-      "lastActivityAt": "2026-07-22T23:45:17Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-08-03T14:26:54Z",
+      "commitsThisWeek": 40,
+      "recentCommits": [
+        {
+          "repo": "IanoNjuguna/bookish-worm",
+          "message": "style(ui): update signed-out disconnected state cards & auth modal to rounded-2xl aesthetics",
+          "url": "https://github.com/IanoNjuguna/bookish-worm/commit/e5bd3df15b1df82264671c2b532ef8dc2d38761a",
+          "committedAt": "2026-08-03T14:26:54Z"
+        },
+        {
+          "repo": "IanoNjuguna/bookish-worm",
+          "message": "style(ui): apply modern rounded edges across Analytics, Assets, Earnings, Studio, Uploads, and Now Playing views",
+          "url": "https://github.com/IanoNjuguna/bookish-worm/commit/371accfe1ce767be5c30c063e1e3a910cb0fccd2",
+          "committedAt": "2026-08-03T14:20:58Z"
+        },
+        {
+          "repo": "IanoNjuguna/bookish-worm",
+          "message": "style(ui): update dashboard components to modern rounded aesthetics (rounded-2xl cards/modals, rounded-xl inputs/buttons)",
+          "url": "https://github.com/IanoNjuguna/bookish-worm/commit/7b29959baa4aaf010f9d20764ba1d35e7f365f81",
+          "committedAt": "2026-08-03T13:47:42Z"
+        },
+        {
+          "repo": "IanoNjuguna/bookish-worm",
+          "message": "docs(home): update secondary sales treasury fee to 3% (Seller: 92%, Artist: 5%, doba: 3%)",
+          "url": "https://github.com/IanoNjuguna/bookish-worm/commit/147a127d55a755dae0dbf4d9bc77aa1009333751",
+          "committedAt": "2026-08-03T13:28:33Z"
+        },
+        {
+          "repo": "IanoNjuguna/bookish-worm",
+          "message": "docs(home): update revenue model to 10% platform treasury fee and 90% artist primary sales",
+          "url": "https://github.com/IanoNjuguna/bookish-worm/commit/ec093e2ce431bb09b2f20be28455ffab47de3e44",
+          "committedAt": "2026-08-03T13:25:41Z"
+        }
+      ],
       "error": null
     },
     {
@@ -102,40 +133,9 @@
     {
       "id": "newman5",
       "name": "Newman",
-      "lastActivityAt": "2026-08-01T13:53:52Z",
-      "commitsThisWeek": 6,
-      "recentCommits": [
-        {
-          "repo": "Newman5/builder-season-playbook",
-          "message": "Update builder activity data",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/2d3fb5747f0920c5b97d1c0db7c2c39324199980",
-          "committedAt": "2026-08-01T13:53:52Z"
-        },
-        {
-          "repo": "Newman5/builder-season-playbook",
-          "message": "Update builder activity data",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/a4eb5080987d2856757e816fc25ceefefb1c1af3",
-          "committedAt": "2026-07-31T14:33:35Z"
-        },
-        {
-          "repo": "Newman5/builder-season-playbook",
-          "message": "Update builder activity data",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/4fa5d0e2e7659db601f6cb902283299ccb835ac8",
-          "committedAt": "2026-07-30T14:30:47Z"
-        },
-        {
-          "repo": "Newman5/builder-season-playbook",
-          "message": "Update builder activity data",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/28db19968c0863e052f5c4fecd4c55e9a70ac4d4",
-          "committedAt": "2026-07-29T14:30:27Z"
-        },
-        {
-          "repo": "Newman5/builder-season-playbook",
-          "message": "Update builder activity data",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/249f937209a4d3a8451b59eda7e2b18507db4c1c",
-          "committedAt": "2026-07-28T14:35:41Z"
-        }
-      ],
+      "lastActivityAt": "2026-08-02T13:53:16Z",
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
@@ -198,39 +198,8 @@
       "id": "alfreditodole",
       "name": "Alfred Itodole",
       "lastActivityAt": "2026-07-31T18:17:33Z",
-      "commitsThisWeek": 23,
-      "recentCommits": [
-        {
-          "repo": "sirxalfred/mosaic-cardano",
-          "message": "Merge branch 'develop'",
-          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/86f7ea2f35c1ca61f568af6dfa4366f4a6dce5e7",
-          "committedAt": "2026-07-31T18:17:33Z"
-        },
-        {
-          "repo": "sirxalfred/mosaic-cardano",
-          "message": "fix: add feedback endpoitn to public",
-          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/cce16c26d0673dd247c2e08943285d58535a875a",
-          "committedAt": "2026-07-31T18:15:23Z"
-        },
-        {
-          "repo": "sirxalfred/mosaic-cardano",
-          "message": "Merge pull request #44 from sirXalfred/develop\n\nrefactor: enhance API, notifications, and streaming features with various fixes",
-          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/afb0c6a4dc8f512320ffaef9ffa0329751ce6f93",
-          "committedAt": "2026-07-31T16:42:05Z"
-        },
-        {
-          "repo": "sirxalfred/mosaic-cardano",
-          "message": "refactor: add conditional rendering logic to home page components to hide empty states when active content exists",
-          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/b9f2f534174b1ebc671d17424a28c205982b0eb0",
-          "committedAt": "2026-07-29T22:35:59Z"
-        },
-        {
-          "repo": "sirxalfred/mosaic-cardano",
-          "message": "feat(intents): parse ?modal= query params for deep-link modal opening\n\n- useParseIntent now reads ?modal= or ?modalId= from URL query params\n- Validates against MODALS enum whitelist to prevent injection\n- Strips modal params from URL bar after opening via replaceState\n- Simplify NotificationItem back to standard Link navigation",
-          "url": "https://github.com/sirXalfred/mosaic-cardano/commit/514e8a1b0a7a097f1559b1a61411c781e73e2159",
-          "committedAt": "2026-07-29T22:08:41Z"
-        }
-      ],
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     }
   ]
