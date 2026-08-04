@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-03T15:14:36Z",
+  "generatedAt": "2026-08-04T14:37:59Z",
   "weekStart": "2026-08-03T00:00:00Z",
   "weekEnd": "2026-08-09T23:59:59Z",
   "builders": [
@@ -14,38 +14,38 @@
     {
       "id": "ianonjuguna",
       "name": "Ian",
-      "lastActivityAt": "2026-08-03T14:26:54Z",
-      "commitsThisWeek": 40,
+      "lastActivityAt": "2026-08-04T14:31:02Z",
+      "commitsThisWeek": 65,
       "recentCommits": [
         {
           "repo": "IanoNjuguna/bookish-worm",
-          "message": "style(ui): update signed-out disconnected state cards & auth modal to rounded-2xl aesthetics",
-          "url": "https://github.com/IanoNjuguna/bookish-worm/commit/e5bd3df15b1df82264671c2b532ef8dc2d38761a",
-          "committedAt": "2026-08-03T14:26:54Z"
+          "message": "feat: add multi-color progress bar overlay and do-not-close warning during release publishing",
+          "url": "https://github.com/IanoNjuguna/bookish-worm/commit/9ba1335562029b0aad690dbadead626887110393",
+          "committedAt": "2026-08-04T14:31:02Z"
         },
         {
           "repo": "IanoNjuguna/bookish-worm",
-          "message": "style(ui): apply modern rounded edges across Analytics, Assets, Earnings, Studio, Uploads, and Now Playing views",
-          "url": "https://github.com/IanoNjuguna/bookish-worm/commit/371accfe1ce767be5c30c063e1e3a910cb0fccd2",
-          "committedAt": "2026-08-03T14:20:58Z"
+          "message": "fix: upload media assets directly to backend with proxy fallback to bypass Vercel 502 limit",
+          "url": "https://github.com/IanoNjuguna/bookish-worm/commit/2ab6213fb39ba717d1891a60fe0eef3d50f58f6e",
+          "committedAt": "2026-08-04T14:04:52Z"
         },
         {
           "repo": "IanoNjuguna/bookish-worm",
-          "message": "style(ui): update dashboard components to modern rounded aesthetics (rounded-2xl cards/modals, rounded-xl inputs/buttons)",
-          "url": "https://github.com/IanoNjuguna/bookish-worm/commit/7b29959baa4aaf010f9d20764ba1d35e7f365f81",
-          "committedAt": "2026-08-03T13:47:42Z"
+          "message": "style: set mobile navbar and drawer background to 80% opacity with backdrop blur",
+          "url": "https://github.com/IanoNjuguna/bookish-worm/commit/6e59af54efb0f093dfd26673340d22c732484c31",
+          "committedAt": "2026-08-04T13:59:12Z"
         },
         {
           "repo": "IanoNjuguna/bookish-worm",
-          "message": "docs(home): update secondary sales treasury fee to 3% (Seller: 92%, Artist: 5%, doba: 3%)",
-          "url": "https://github.com/IanoNjuguna/bookish-worm/commit/147a127d55a755dae0dbf4d9bc77aa1009333751",
-          "committedAt": "2026-08-03T13:28:33Z"
+          "message": "fix: route upload-assets through same-origin API_URL proxy to prevent CORS hangs",
+          "url": "https://github.com/IanoNjuguna/bookish-worm/commit/297f5e5bd94ba339c97cc53bd3a99ed53812f60c",
+          "committedAt": "2026-08-04T13:48:03Z"
         },
         {
           "repo": "IanoNjuguna/bookish-worm",
-          "message": "docs(home): update revenue model to 10% platform treasury fee and 90% artist primary sales",
-          "url": "https://github.com/IanoNjuguna/bookish-worm/commit/ec093e2ce431bb09b2f20be28455ffab47de3e44",
-          "committedAt": "2026-08-03T13:25:41Z"
+          "message": "refactor: purge Google Cloud Storage dependency and upload logic",
+          "url": "https://github.com/IanoNjuguna/bookish-worm/commit/1727c7c00a282fa131d4cab31450d9fc96a276ac",
+          "committedAt": "2026-08-04T13:34:02Z"
         }
       ],
       "error": null
@@ -133,9 +133,16 @@
     {
       "id": "newman5",
       "name": "Newman",
-      "lastActivityAt": "2026-08-02T13:53:16Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-08-03T15:14:45Z",
+      "commitsThisWeek": 1,
+      "recentCommits": [
+        {
+          "repo": "Newman5/builder-season-playbook",
+          "message": "Update builder activity data",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/cdb0a333df3e92326fee156a3a2c7e3bffde6705",
+          "committedAt": "2026-08-03T15:14:45Z"
+        }
+      ],
       "error": null
     },
     {
