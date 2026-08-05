@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-04T14:37:59Z",
+  "generatedAt": "2026-08-05T14:31:54Z",
   "weekStart": "2026-08-03T00:00:00Z",
   "weekEnd": "2026-08-09T23:59:59Z",
   "builders": [
@@ -14,38 +14,38 @@
     {
       "id": "ianonjuguna",
       "name": "Ian",
-      "lastActivityAt": "2026-08-04T14:31:02Z",
-      "commitsThisWeek": 65,
+      "lastActivityAt": "2026-08-05T11:59:47Z",
+      "commitsThisWeek": 107,
       "recentCommits": [
         {
           "repo": "IanoNjuguna/bookish-worm",
-          "message": "feat: add multi-color progress bar overlay and do-not-close warning during release publishing",
-          "url": "https://github.com/IanoNjuguna/bookish-worm/commit/9ba1335562029b0aad690dbadead626887110393",
-          "committedAt": "2026-08-04T14:31:02Z"
+          "message": "fix(pwa): add fallback toast if install prompt api is missing and adjust manifest icons to meet pwa standards",
+          "url": "https://github.com/IanoNjuguna/bookish-worm/commit/11ac5efc493be7755193d81ec72b9b54ba3aea67",
+          "committedAt": "2026-08-05T11:59:47Z"
         },
         {
           "repo": "IanoNjuguna/bookish-worm",
-          "message": "fix: upload media assets directly to backend with proxy fallback to bypass Vercel 502 limit",
-          "url": "https://github.com/IanoNjuguna/bookish-worm/commit/2ab6213fb39ba717d1891a60fe0eef3d50f58f6e",
-          "committedAt": "2026-08-04T14:04:52Z"
+          "message": "fix(onboarding): trigger install prompt on 'finished' status since Joyride uses close/last action for the final step instead of 'next'",
+          "url": "https://github.com/IanoNjuguna/bookish-worm/commit/cf6482103a5ca2a0be2f38308ec42a5c5f3ed8dd",
+          "committedAt": "2026-08-05T10:03:31Z"
         },
         {
           "repo": "IanoNjuguna/bookish-worm",
-          "message": "style: set mobile navbar and drawer background to 80% opacity with backdrop blur",
-          "url": "https://github.com/IanoNjuguna/bookish-worm/commit/6e59af54efb0f093dfd26673340d22c732484c31",
-          "committedAt": "2026-08-04T13:59:12Z"
+          "message": "fix(audio): keep player mounted during track transitions to prevent silent drop, and format ticker on new line below artist",
+          "url": "https://github.com/IanoNjuguna/bookish-worm/commit/e675e549ed0dc3bb30cc4fe9bb3ca409c30de40d",
+          "committedAt": "2026-08-05T09:54:50Z"
         },
         {
           "repo": "IanoNjuguna/bookish-worm",
-          "message": "fix: route upload-assets through same-origin API_URL proxy to prevent CORS hangs",
-          "url": "https://github.com/IanoNjuguna/bookish-worm/commit/297f5e5bd94ba339c97cc53bd3a99ed53812f60c",
-          "committedAt": "2026-08-04T13:48:03Z"
+          "message": "style(audio): move $ticker to album field in Media Session metadata, keeping artist field clean — lock screen now shows $TICKER · Doba",
+          "url": "https://github.com/IanoNjuguna/bookish-worm/commit/8138d3bb2997bd2a13a4840d4de329194c7bf0fe",
+          "committedAt": "2026-08-05T07:55:11Z"
         },
         {
           "repo": "IanoNjuguna/bookish-worm",
-          "message": "refactor: purge Google Cloud Storage dependency and upload logic",
-          "url": "https://github.com/IanoNjuguna/bookish-worm/commit/1727c7c00a282fa131d4cab31450d9fc96a276ac",
-          "committedAt": "2026-08-04T13:34:02Z"
+          "message": "feat(pwa): add full Progressive Web App support with manifest, service worker, multi-size icons, install prompt, and Media Session branding (Doba · Single, $ticker)",
+          "url": "https://github.com/IanoNjuguna/bookish-worm/commit/be26d2151069baf75887d8c0496d11c67f4eea88",
+          "committedAt": "2026-08-05T07:47:32Z"
         }
       ],
       "error": null
@@ -133,9 +133,15 @@
     {
       "id": "newman5",
       "name": "Newman",
-      "lastActivityAt": "2026-08-03T15:14:45Z",
-      "commitsThisWeek": 1,
+      "lastActivityAt": "2026-08-04T14:38:09Z",
+      "commitsThisWeek": 2,
       "recentCommits": [
+        {
+          "repo": "Newman5/builder-season-playbook",
+          "message": "Update builder activity data",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/79f3a5d495c39b0f2ed353482218b19666f73fa3",
+          "committedAt": "2026-08-04T14:38:09Z"
+        },
         {
           "repo": "Newman5/builder-season-playbook",
           "message": "Update builder activity data",
