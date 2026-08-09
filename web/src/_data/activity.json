@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-08T12:24:07Z",
+  "generatedAt": "2026-08-09T12:24:23Z",
   "weekStart": "2026-08-03T00:00:00Z",
   "weekEnd": "2026-08-09T23:59:59Z",
   "builders": [
@@ -85,9 +85,16 @@
     {
       "id": "armanabid",
       "name": "Abid",
-      "lastActivityAt": "2026-07-19T11:34:33Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-08-08T21:29:15Z",
+      "commitsThisWeek": 1,
+      "recentCommits": [
+        {
+          "repo": "ArmanAbid/ChainTask",
+          "message": "Delete piece-of-pie-final.md",
+          "url": "https://github.com/ArmanAbid/ChainTask/commit/e3c0d760def23fd9b403249316bf42f9e0054ba0",
+          "committedAt": "2026-08-08T21:29:15Z"
+        }
+      ],
       "error": null
     },
     {
@@ -133,9 +140,15 @@
     {
       "id": "newman5",
       "name": "Newman",
-      "lastActivityAt": "2026-08-07T12:29:02Z",
-      "commitsThisWeek": 5,
+      "lastActivityAt": "2026-08-08T12:24:16Z",
+      "commitsThisWeek": 6,
       "recentCommits": [
+        {
+          "repo": "Newman5/builder-season-playbook",
+          "message": "Update builder activity data",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/0777ce215c60758043fa1be1445622da8a42ef6a",
+          "committedAt": "2026-08-08T12:24:16Z"
+        },
         {
           "repo": "Newman5/builder-season-playbook",
           "message": "Update builder activity data",
@@ -159,12 +172,6 @@
           "message": "Update builder activity data",
           "url": "https://github.com/Newman5/builder-season-playbook/commit/79f3a5d495c39b0f2ed353482218b19666f73fa3",
           "committedAt": "2026-08-04T14:38:09Z"
-        },
-        {
-          "repo": "Newman5/builder-season-playbook",
-          "message": "Update builder activity data",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/cdb0a333df3e92326fee156a3a2c7e3bffde6705",
-          "committedAt": "2026-08-03T15:14:45Z"
         }
       ],
       "error": null
