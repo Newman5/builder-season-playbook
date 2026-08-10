@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-08-09T12:24:23Z",
-  "weekStart": "2026-08-03T00:00:00Z",
-  "weekEnd": "2026-08-09T23:59:59Z",
+  "generatedAt": "2026-08-10T12:30:52Z",
+  "weekStart": "2026-08-10T00:00:00Z",
+  "weekEnd": "2026-08-16T23:59:59Z",
   "builders": [
     {
       "id": "mhizta",
@@ -15,39 +15,8 @@
       "id": "ianonjuguna",
       "name": "Ian",
       "lastActivityAt": "2026-08-05T11:59:47Z",
-      "commitsThisWeek": 107,
-      "recentCommits": [
-        {
-          "repo": "IanoNjuguna/bookish-worm",
-          "message": "fix(pwa): add fallback toast if install prompt api is missing and adjust manifest icons to meet pwa standards",
-          "url": "https://github.com/IanoNjuguna/bookish-worm/commit/11ac5efc493be7755193d81ec72b9b54ba3aea67",
-          "committedAt": "2026-08-05T11:59:47Z"
-        },
-        {
-          "repo": "IanoNjuguna/bookish-worm",
-          "message": "fix(onboarding): trigger install prompt on 'finished' status since Joyride uses close/last action for the final step instead of 'next'",
-          "url": "https://github.com/IanoNjuguna/bookish-worm/commit/cf6482103a5ca2a0be2f38308ec42a5c5f3ed8dd",
-          "committedAt": "2026-08-05T10:03:31Z"
-        },
-        {
-          "repo": "IanoNjuguna/bookish-worm",
-          "message": "fix(audio): keep player mounted during track transitions to prevent silent drop, and format ticker on new line below artist",
-          "url": "https://github.com/IanoNjuguna/bookish-worm/commit/e675e549ed0dc3bb30cc4fe9bb3ca409c30de40d",
-          "committedAt": "2026-08-05T09:54:50Z"
-        },
-        {
-          "repo": "IanoNjuguna/bookish-worm",
-          "message": "style(audio): move $ticker to album field in Media Session metadata, keeping artist field clean — lock screen now shows $TICKER · Doba",
-          "url": "https://github.com/IanoNjuguna/bookish-worm/commit/8138d3bb2997bd2a13a4840d4de329194c7bf0fe",
-          "committedAt": "2026-08-05T07:55:11Z"
-        },
-        {
-          "repo": "IanoNjuguna/bookish-worm",
-          "message": "feat(pwa): add full Progressive Web App support with manifest, service worker, multi-size icons, install prompt, and Media Session branding (Doba · Single, $ticker)",
-          "url": "https://github.com/IanoNjuguna/bookish-worm/commit/be26d2151069baf75887d8c0496d11c67f4eea88",
-          "committedAt": "2026-08-05T07:47:32Z"
-        }
-      ],
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
@@ -86,15 +55,8 @@
       "id": "armanabid",
       "name": "Abid",
       "lastActivityAt": "2026-08-08T21:29:15Z",
-      "commitsThisWeek": 1,
-      "recentCommits": [
-        {
-          "repo": "ArmanAbid/ChainTask",
-          "message": "Delete piece-of-pie-final.md",
-          "url": "https://github.com/ArmanAbid/ChainTask/commit/e3c0d760def23fd9b403249316bf42f9e0054ba0",
-          "committedAt": "2026-08-08T21:29:15Z"
-        }
-      ],
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
@@ -140,40 +102,9 @@
     {
       "id": "newman5",
       "name": "Newman",
-      "lastActivityAt": "2026-08-08T12:24:16Z",
-      "commitsThisWeek": 6,
-      "recentCommits": [
-        {
-          "repo": "Newman5/builder-season-playbook",
-          "message": "Update builder activity data",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/0777ce215c60758043fa1be1445622da8a42ef6a",
-          "committedAt": "2026-08-08T12:24:16Z"
-        },
-        {
-          "repo": "Newman5/builder-season-playbook",
-          "message": "Update builder activity data",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/2ae2fc19e59c3998577b6a178a7aa6102d985570",
-          "committedAt": "2026-08-07T12:29:02Z"
-        },
-        {
-          "repo": "Newman5/builder-season-playbook",
-          "message": "Update builder activity data",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/287e4eb9abdece892f99b224df662c7fa2e2f142",
-          "committedAt": "2026-08-06T12:53:29Z"
-        },
-        {
-          "repo": "Newman5/builder-season-playbook",
-          "message": "Update builder activity data",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/10a854bc8bd4e4570a03203b96746b7007be5b85",
-          "committedAt": "2026-08-05T14:32:06Z"
-        },
-        {
-          "repo": "Newman5/builder-season-playbook",
-          "message": "Update builder activity data",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/79f3a5d495c39b0f2ed353482218b19666f73fa3",
-          "committedAt": "2026-08-04T14:38:09Z"
-        }
-      ],
+      "lastActivityAt": "2026-08-09T12:24:32Z",
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
