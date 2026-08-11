@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-10T12:30:52Z",
+  "generatedAt": "2026-08-11T12:28:59Z",
   "weekStart": "2026-08-10T00:00:00Z",
   "weekEnd": "2026-08-16T23:59:59Z",
   "builders": [
@@ -14,9 +14,16 @@
     {
       "id": "ianonjuguna",
       "name": "Ian",
-      "lastActivityAt": "2026-08-05T11:59:47Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-08-10T15:03:41Z",
+      "commitsThisWeek": 1,
+      "recentCommits": [
+        {
+          "repo": "IanoNjuguna/bookish-worm",
+          "message": "feat(auth): add UTXOS WaaS social auth (Google, Discord, X) for Cardano Mainnet",
+          "url": "https://github.com/IanoNjuguna/bookish-worm/commit/20603e3a48a4009c3713e19c0a90924fdcbebe43",
+          "committedAt": "2026-08-10T15:03:41Z"
+        }
+      ],
       "error": null
     },
     {
@@ -102,9 +109,16 @@
     {
       "id": "newman5",
       "name": "Newman",
-      "lastActivityAt": "2026-08-09T12:24:32Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-08-10T12:31:03Z",
+      "commitsThisWeek": 1,
+      "recentCommits": [
+        {
+          "repo": "Newman5/builder-season-playbook",
+          "message": "Update builder activity data",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/b287bf9a480d4141f4a60063050a078ffedf9a09",
+          "committedAt": "2026-08-10T12:31:03Z"
+        }
+      ],
       "error": null
     },
     {
