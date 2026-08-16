@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-15T12:23:20Z",
+  "generatedAt": "2026-08-16T12:23:45Z",
   "weekStart": "2026-08-10T00:00:00Z",
   "weekEnd": "2026-08-16T23:59:59Z",
   "builders": [
@@ -109,9 +109,15 @@
     {
       "id": "newman5",
       "name": "Newman",
-      "lastActivityAt": "2026-08-14T12:29:17Z",
-      "commitsThisWeek": 5,
+      "lastActivityAt": "2026-08-15T12:23:31Z",
+      "commitsThisWeek": 6,
       "recentCommits": [
+        {
+          "repo": "Newman5/builder-season-playbook",
+          "message": "Update builder activity data",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/73d4758cf15e15a4ed442f1c807997f40bc33c64",
+          "committedAt": "2026-08-15T12:23:31Z"
+        },
         {
           "repo": "Newman5/builder-season-playbook",
           "message": "Update builder activity data",
@@ -135,12 +141,6 @@
           "message": "Update builder activity data",
           "url": "https://github.com/Newman5/builder-season-playbook/commit/fec2928903c99bd438e4cae5e664bfc972182692",
           "committedAt": "2026-08-11T12:29:14Z"
-        },
-        {
-          "repo": "Newman5/builder-season-playbook",
-          "message": "Update builder activity data",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/b287bf9a480d4141f4a60063050a078ffedf9a09",
-          "committedAt": "2026-08-10T12:31:03Z"
         }
       ],
       "error": null
@@ -156,9 +156,21 @@
     {
       "id": "devfreeguy",
       "name": "Daniel",
-      "lastActivityAt": "2026-08-15T09:48:41Z",
-      "commitsThisWeek": 2,
+      "lastActivityAt": "2026-08-15T16:17:54Z",
+      "commitsThisWeek": 4,
       "recentCommits": [
+        {
+          "repo": "devfreeguy/skill-swap",
+          "message": "refactor(sidebar): pin explorer and network toggle above user panel\n\nExtract Explorer link and NetworkToggle from the scrollable NAV_ITEMS\nlist into a pinned section above the user panel, keeping them always\nvisible while scrolling through nav items.",
+          "url": "https://github.com/devfreeguy/skill-swap/commit/aae97f7c770ae22ff7982a22b68d42250aa53718",
+          "committedAt": "2026-08-15T16:17:54Z"
+        },
+        {
+          "repo": "devfreeguy/skill-swap",
+          "message": "feat: support comma-separated skill entry in selector\n\nAdd handleInputChange to SkillSelector that parses comma-separated input, adds each trimmed skill to the selected list (deduplicating), and keeps the remaining text after the last comma for continued typing. Replace direct setFilterText with this handler to enable bulk skill entry, improving user experience when pasting or typing multiple skills at once.",
+          "url": "https://github.com/devfreeguy/skill-swap/commit/e7dc190d6826a81d6bac0e18c783a76e83bfd1c3",
+          "committedAt": "2026-08-15T14:35:02Z"
+        },
         {
           "repo": "devfreeguy/skill-swap",
           "message": "feat: show testnet data badge in explorer when on preprod network",
