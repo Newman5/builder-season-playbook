@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-17T12:24:02Z",
+  "generatedAt": "2026-08-18T12:24:05Z",
   "weekStart": "2026-08-17T00:00:00Z",
   "weekEnd": "2026-08-23T23:59:59Z",
   "builders": [
@@ -14,9 +14,40 @@
     {
       "id": "ianonjuguna",
       "name": "Ian",
-      "lastActivityAt": "2026-08-16T21:18:05Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-08-17T21:58:25Z",
+      "commitsThisWeek": 6,
+      "recentCommits": [
+        {
+          "repo": "IanoNjuguna/bookish-worm",
+          "message": "Merge pull request #10 from IanoNjuguna/growth-hacking\n\nGrowth hacking",
+          "url": "https://github.com/IanoNjuguna/bookish-worm/commit/f694b7dea8641783f6662f711e4af969cfffbcd4",
+          "committedAt": "2026-08-17T21:58:25Z"
+        },
+        {
+          "repo": "IanoNjuguna/bookish-worm",
+          "message": "legal(home): rewrite Terms and Privacy for current product\n\nTerms: adds permissionless-protocol language, first-person voice, age\n18+, custody disclaimers, and clarifies that suspension only affects\nthe frontend, not on-chain assets.\n\nPrivacy: expands to cover social login, wallet addresses, public\nblockchain data, third-party services, user rights, and contact email.",
+          "url": "https://github.com/IanoNjuguna/bookish-worm/commit/d4fbbdb3b5063d555f3920d0e570f852c7c2482d",
+          "committedAt": "2026-08-17T21:53:32Z"
+        },
+        {
+          "repo": "IanoNjuguna/bookish-worm",
+          "message": "copy(home): refresh About, How It Works, Docs, FAQ, and Research\n\n- About: updated copy, swapped Artists/Fans order, fixed age, updated\n  Cardano heading.\n- How It Works: swapped Artists/Fans order.\n- Docs: added wallet setup guide with social login as the recommended\n  path and self-custody wallets as optional.\n- FAQ: expanded to cover pre-drops, social login, wallets, payments,\n  Cardano, resale, and free streaming.\n- Research: removed the weakest paper, reordered by relevance, replaced\n  em dashes with periods.",
+          "url": "https://github.com/IanoNjuguna/bookish-worm/commit/12d7e201225e4c7850c836f03e36fedf8650bdd1",
+          "committedAt": "2026-08-17T21:53:23Z"
+        },
+        {
+          "repo": "IanoNjuguna/bookish-worm",
+          "message": "style(home): hide scrollbars to match app behavior\n\nReplaces the reveal-on-hover scrollbar styling with the app’s always-\nhidden approach while keeping scrolling functional via wheel/touch/keyboard.",
+          "url": "https://github.com/IanoNjuguna/bookish-worm/commit/8622d81b1ee2e533b7963cdb13fd532300f33983",
+          "committedAt": "2026-08-17T21:53:10Z"
+        },
+        {
+          "repo": "IanoNjuguna/bookish-worm",
+          "message": "feat(home): add Oxford-style pre-drop dictionary entry\n\nDisplays noun and verb definitions for pre-drop on the home page in a\ndictionary-style layout. Moves the three upload/splits/earn steps to the\n/pre-drop page. Converts adjectives.json into a richer dictionary format.",
+          "url": "https://github.com/IanoNjuguna/bookish-worm/commit/580cfdd0c4df0f74714af649e1ec4e2a3d540f41",
+          "committedAt": "2026-08-17T21:53:00Z"
+        }
+      ],
       "error": null
     },
     {
@@ -86,9 +117,22 @@
     {
       "id": "trike",
       "name": "Anita",
-      "lastActivityAt": "2026-07-21T19:16:07Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-08-18T05:16:20Z",
+      "commitsThisWeek": 2,
+      "recentCommits": [
+        {
+          "repo": "3rike12/3rike-Mobility_",
+          "message": "docs: update founder pitch video link in README.md",
+          "url": "https://github.com/3rike12/3rike-Mobility_/commit/e42718c2de6ea629321aca1daa67f3ba006b5872",
+          "committedAt": "2026-08-18T05:16:20Z"
+        },
+        {
+          "repo": "3rike12/3rike-Mobility_",
+          "message": "chore: add MIT license file for 3riKE Mobility project",
+          "url": "https://github.com/3rike12/3rike-Mobility_/commit/21fb0933ff102d86dd3e6c4a81cded96af200205",
+          "committedAt": "2026-08-18T04:50:18Z"
+        }
+      ],
       "error": null
     },
     {
@@ -102,9 +146,16 @@
     {
       "id": "newman5",
       "name": "Newman",
-      "lastActivityAt": "2026-08-16T12:23:56Z",
-      "commitsThisWeek": 0,
-      "recentCommits": [],
+      "lastActivityAt": "2026-08-17T12:24:15Z",
+      "commitsThisWeek": 1,
+      "recentCommits": [
+        {
+          "repo": "Newman5/builder-season-playbook",
+          "message": "Update builder activity data",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/fb474cedc40d9cc7f19519045aa1724f503c2045",
+          "committedAt": "2026-08-17T12:24:15Z"
+        }
+      ],
       "error": null
     },
     {
