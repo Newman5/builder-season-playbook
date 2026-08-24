@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-08-23T12:23:26Z",
-  "weekStart": "2026-08-17T00:00:00Z",
-  "weekEnd": "2026-08-23T23:59:59Z",
+  "generatedAt": "2026-08-24T12:24:17Z",
+  "weekStart": "2026-08-24T00:00:00Z",
+  "weekEnd": "2026-08-30T23:59:59Z",
   "builders": [
     {
       "id": "mhizta",
@@ -15,39 +15,8 @@
       "id": "ianonjuguna",
       "name": "Ian",
       "lastActivityAt": "2026-08-17T21:58:25Z",
-      "commitsThisWeek": 6,
-      "recentCommits": [
-        {
-          "repo": "IanoNjuguna/bookish-worm",
-          "message": "Merge pull request #10 from IanoNjuguna/growth-hacking\n\nGrowth hacking",
-          "url": "https://github.com/IanoNjuguna/bookish-worm/commit/f694b7dea8641783f6662f711e4af969cfffbcd4",
-          "committedAt": "2026-08-17T21:58:25Z"
-        },
-        {
-          "repo": "IanoNjuguna/bookish-worm",
-          "message": "legal(home): rewrite Terms and Privacy for current product\n\nTerms: adds permissionless-protocol language, first-person voice, age\n18+, custody disclaimers, and clarifies that suspension only affects\nthe frontend, not on-chain assets.\n\nPrivacy: expands to cover social login, wallet addresses, public\nblockchain data, third-party services, user rights, and contact email.",
-          "url": "https://github.com/IanoNjuguna/bookish-worm/commit/d4fbbdb3b5063d555f3920d0e570f852c7c2482d",
-          "committedAt": "2026-08-17T21:53:32Z"
-        },
-        {
-          "repo": "IanoNjuguna/bookish-worm",
-          "message": "copy(home): refresh About, How It Works, Docs, FAQ, and Research\n\n- About: updated copy, swapped Artists/Fans order, fixed age, updated\n  Cardano heading.\n- How It Works: swapped Artists/Fans order.\n- Docs: added wallet setup guide with social login as the recommended\n  path and self-custody wallets as optional.\n- FAQ: expanded to cover pre-drops, social login, wallets, payments,\n  Cardano, resale, and free streaming.\n- Research: removed the weakest paper, reordered by relevance, replaced\n  em dashes with periods.",
-          "url": "https://github.com/IanoNjuguna/bookish-worm/commit/12d7e201225e4c7850c836f03e36fedf8650bdd1",
-          "committedAt": "2026-08-17T21:53:23Z"
-        },
-        {
-          "repo": "IanoNjuguna/bookish-worm",
-          "message": "style(home): hide scrollbars to match app behavior\n\nReplaces the reveal-on-hover scrollbar styling with the app’s always-\nhidden approach while keeping scrolling functional via wheel/touch/keyboard.",
-          "url": "https://github.com/IanoNjuguna/bookish-worm/commit/8622d81b1ee2e533b7963cdb13fd532300f33983",
-          "committedAt": "2026-08-17T21:53:10Z"
-        },
-        {
-          "repo": "IanoNjuguna/bookish-worm",
-          "message": "feat(home): add Oxford-style pre-drop dictionary entry\n\nDisplays noun and verb definitions for pre-drop on the home page in a\ndictionary-style layout. Moves the three upload/splits/earn steps to the\n/pre-drop page. Converts adjectives.json into a richer dictionary format.",
-          "url": "https://github.com/IanoNjuguna/bookish-worm/commit/580cfdd0c4df0f74714af649e1ec4e2a3d540f41",
-          "committedAt": "2026-08-17T21:53:00Z"
-        }
-      ],
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
@@ -118,21 +87,8 @@
       "id": "trike",
       "name": "Anita",
       "lastActivityAt": "2026-08-18T05:16:20Z",
-      "commitsThisWeek": 2,
-      "recentCommits": [
-        {
-          "repo": "3rike12/3rike-Mobility_",
-          "message": "docs: update founder pitch video link in README.md",
-          "url": "https://github.com/3rike12/3rike-Mobility_/commit/e42718c2de6ea629321aca1daa67f3ba006b5872",
-          "committedAt": "2026-08-18T05:16:20Z"
-        },
-        {
-          "repo": "3rike12/3rike-Mobility_",
-          "message": "chore: add MIT license file for 3riKE Mobility project",
-          "url": "https://github.com/3rike12/3rike-Mobility_/commit/21fb0933ff102d86dd3e6c4a81cded96af200205",
-          "committedAt": "2026-08-18T04:50:18Z"
-        }
-      ],
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
@@ -146,40 +102,9 @@
     {
       "id": "newman5",
       "name": "Newman",
-      "lastActivityAt": "2026-08-22T12:23:37Z",
-      "commitsThisWeek": 6,
-      "recentCommits": [
-        {
-          "repo": "Newman5/builder-season-playbook",
-          "message": "Update builder activity data",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/56d2c8b52d62ec1556afa7726caa999b2a575c00",
-          "committedAt": "2026-08-22T12:23:37Z"
-        },
-        {
-          "repo": "Newman5/builder-season-playbook",
-          "message": "Update builder activity data",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/d0a4e33de8a2f8c66a2b43bf1b3e0ea3bb68742e",
-          "committedAt": "2026-08-21T12:24:26Z"
-        },
-        {
-          "repo": "Newman5/builder-season-playbook",
-          "message": "Update builder activity data",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/63f02f1eb7af92739a9db2001ab3077f8a9def88",
-          "committedAt": "2026-08-20T12:24:26Z"
-        },
-        {
-          "repo": "Newman5/builder-season-playbook",
-          "message": "Update builder activity data",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/134373ab99b97d8101070f3050aa202a53c83cd3",
-          "committedAt": "2026-08-19T12:24:17Z"
-        },
-        {
-          "repo": "Newman5/builder-season-playbook",
-          "message": "Update builder activity data",
-          "url": "https://github.com/Newman5/builder-season-playbook/commit/d07a19f783638061a9c66da711a8b75fca643a40",
-          "committedAt": "2026-08-18T12:24:14Z"
-        }
-      ],
+      "lastActivityAt": "2026-08-23T12:23:34Z",
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
@@ -210,33 +135,8 @@
       "id": "opa007i",
       "name": "Opa",
       "lastActivityAt": "2026-08-20T02:00:13Z",
-      "commitsThisWeek": 4,
-      "recentCommits": [
-        {
-          "repo": "opa1/the-quest",
-          "message": "Merge pull request #8 from opa1/staging\n\ndocs: rename Appendix-A to Appendix-A-Pipeline",
-          "url": "https://github.com/opa1/the-quest/commit/9c3f2987f6c784d456f3f4e5ac4f6314abc7bb0b",
-          "committedAt": "2026-08-20T02:00:13Z"
-        },
-        {
-          "repo": "opa1/the-quest",
-          "message": "docs: rename Appendix-A to Appendix-A-Pipeline\n\nRename the appendix file to clarify that it documents the pipeline process.",
-          "url": "https://github.com/opa1/the-quest/commit/2ee8fee9a70161a4c5fa676cbda2bb78f2511c49",
-          "committedAt": "2026-08-20T01:57:29Z"
-        },
-        {
-          "repo": "opa1/the-quest",
-          "message": "Merge pull request #7 from opa1/staging\n\ndocs: add target DAO pipeline appendix",
-          "url": "https://github.com/opa1/the-quest/commit/bb557eb0b03579cf506e74b909355d1838877dff",
-          "committedAt": "2026-08-20T01:02:59Z"
-        },
-        {
-          "repo": "opa1/the-quest",
-          "message": "docs: add target DAO pipeline appendix",
-          "url": "https://github.com/opa1/the-quest/commit/3efc6a03b4e1699fd75b77a45f2e5cd24d90c66f",
-          "committedAt": "2026-08-20T00:59:49Z"
-        }
-      ],
+      "commitsThisWeek": 0,
+      "recentCommits": [],
       "error": null
     },
     {
