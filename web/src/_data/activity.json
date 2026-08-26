@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-25T12:24:28Z",
+  "generatedAt": "2026-08-26T12:24:25Z",
   "weekStart": "2026-08-24T00:00:00Z",
   "weekEnd": "2026-08-30T23:59:59Z",
   "builders": [
@@ -102,9 +102,15 @@
     {
       "id": "newman5",
       "name": "Newman",
-      "lastActivityAt": "2026-08-24T12:24:31Z",
-      "commitsThisWeek": 1,
+      "lastActivityAt": "2026-08-25T12:24:41Z",
+      "commitsThisWeek": 2,
       "recentCommits": [
+        {
+          "repo": "Newman5/builder-season-playbook",
+          "message": "Update builder activity data",
+          "url": "https://github.com/Newman5/builder-season-playbook/commit/00665964b5507359ed3ca9d9f611ba0bbc4dda46",
+          "committedAt": "2026-08-25T12:24:41Z"
+        },
         {
           "repo": "Newman5/builder-season-playbook",
           "message": "Update builder activity data",
