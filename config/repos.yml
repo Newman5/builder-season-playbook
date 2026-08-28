@@ -12,6 +12,7 @@ repos:
     repo_url: https://github.com/Mhizta-gab/bookworm-ai
     pies:
       - builders
+      - feedback
 
   - id: ianonjuguna
     name: Ian
@@ -21,7 +22,7 @@ repos:
     project_name: Doba World
     repo_url: https://github.com/IanoNjuguna/bookish-worm
     pies:
-      - builders
+      - cardano
 
   - id: dammy
     name: Dammy
@@ -50,7 +51,8 @@ repos:
     project_name: Tixano
     repo_url: https://github.com/0xGIDHUB/tixano
     pies:
-      - builders
+      - cardano
+      - real-user
 
   - id: pmcorcoran
     active: false
@@ -71,7 +73,7 @@ repos:
     project_name: Beni — AI Agent Wallet Guardrails on Cardano
     repo_url: https://github.com/IamHarrie-Labs/beni
     pies:
-      - builders
+      - cardano
 
   - id: lewis
     name: Lewis
@@ -81,7 +83,7 @@ repos:
     project_name: TRACOM-CREDENTIALS
     repo_url: https://github.com/lewis-nduati/Tracom-credentials.git
     pies:
-      - builders
+      - cardano
 
   - id: armanabid
     name: Abid
@@ -91,7 +93,7 @@ repos:
     project_name: ChainTask
     repo_url: https://github.com/ArmanAbid/ChainTask
     pies:
-      - builders
+      - cardano
 
   - id: workshopmaybe
     active: false
@@ -120,7 +122,7 @@ repos:
     project_name: NeonSoup
     repo_url: https://github.com/GameChangerFinance/NeonSoup
     pies:
-      - builders
+      - cardano
 
   - id: yungslaiz
     name: Blessed David
@@ -129,7 +131,7 @@ repos:
     project_name: Next.Ai Protocol
     repo_url: https://github.com/YungSlaiz53/GNXT
     pies:
-      - builders
+      - cardano
 
   - id: maxalexweber
     active: false
@@ -168,16 +170,16 @@ repos:
     project_name: 3rike Mobility
     repo_url: https://github.com/3rike12/3rike-Mobility_
     pies:
-      - builders
+      - cardano
 
   - id: mobrai
     name: Marcio
     github: mobr-ai
     x: mobrsys
-    project_name: Cardano Analytics Platform (CAP) powered by LLM
+    project_name: Cardano Analytics Platform (CAP)
     repo_url: https://github.com/mobr-ai/cap-pie
     pies:
-      - builders
+      - cardano
 
   - id: newman5
     name: Newman
@@ -206,7 +208,8 @@ repos:
     project_name: SkillSwap
     repo_url: https://github.com/devfreeguy/skill-swap
     pies:
-      - builders
+      - cardano
+      - real-user
 
   - id: haulink
     name: Abdulazeez
@@ -215,7 +218,7 @@ repos:
     project_name: Haulink
     repo_url: https://github.com/FoladDTechie/Haulink
     pies:
-      - builders
+      - cardano
 
   - id: opa007i
     name: Opa
@@ -224,7 +227,9 @@ repos:
     project_name: The Quest
     repo_url: https://github.com/opa1/the-quest
     pies:
-      - builders
+      - cardano
+      - feedback
+      - real-user
       
   - id: jakessevi
     active: false
@@ -254,7 +259,7 @@ repos:
     project_name: DevMemory - AI Coding Context Continuity Layer
     repo_url: https://github.com/Yuguda999/devmemory
     pies:
-      - builders
+      - cardano
 
 
   - id: juanitajaramillo
@@ -274,7 +279,7 @@ repos:
     project_name: CogiKids
     repo_url: https://github.com/kamal-ogtl/cogikids
     pies:
-      - builders
+      - cardano
 
   - id: alfreditodole
     name: Alfred Itodole
@@ -283,4 +288,4 @@ repos:
     project_name: Mosaic Cardano
     repo_url: https://github.com/sirxalfred/mosaic-cardano
     pies:
-      - builders
+      - cardano

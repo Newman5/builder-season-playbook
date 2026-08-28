@@ -101,7 +101,7 @@ function summarizeRecentCommits(repo, commits) {
   }));
 }
 
-async function fetchBuilderActivity(builder, weekStart, weekEnd) {
+export async function fetchBuilderActivity(builder, weekStart, weekEnd) {
   const repoUrl = builder.repoUrl || "";
   const repo = normalizeRepo(repoUrl);
 
@@ -181,8 +181,36 @@ export async function generateActivitySnapshot() {
   };
 }
 
+export async function generateActivitySnapshotForWindow({
+  builders = loadBuilders(),
+  windowStart,
+  windowEnd,
+}) {
+  const generatedAt = new Date().toISOString().replace(/\.\d{3}Z$/, "Z");
+  const records = [];
+
+  for (const builder of builders) {
+    records.push(await fetchBuilderActivity(builder, windowStart, windowEnd));
+  }
+
+  return {
+    generatedAt,
+    weekStart: windowStart,
+    weekEnd: windowEnd,
+    builders: records,
+  };
+}
+
 async function main() {
   const snapshot = await generateActivitySnapshot();
+  const failedRecords = snapshot.builders.filter((builder) => builder.error).length;
+  const hasOnlyFailedRecords =
+    snapshot.builders.length > 0 && failedRecords === snapshot.builders.length;
+
+  if (hasOnlyFailedRecords && fs.existsSync(OUTPUT_FILE)) {
+    return;
+  }
+
   fs.writeFileSync(OUTPUT_FILE, `${JSON.stringify(snapshot, null, 2)}\n`, "utf8");
 }
 

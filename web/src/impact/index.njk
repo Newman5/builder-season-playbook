@@ -1,0 +1,163 @@
+---
+title: Sponsor Impact Report
+permalink: /impact/
+description: Full-season Piece of Pie Hackathon impact summary for sponsors and builders.
+---
+
+{% extends "base.njk" %}
+
+{% set totals = impact.totals %}
+{% set cardano = impact.cardano %}
+{% set sponsor = impact.sponsor.primary %}
+{% set trackName = impact.sponsor.trackName %}
+
+{% block title %}Sponsor Impact Report{% endblock %}
+
+{% block content %}
+<section class="hero">
+  <p class="eyebrow">Impact Report</p>
+  <h2 style="margin-top: 0;">Piece of Pie Hackathon sponsor summary</h2>
+  <p>{{ sponsor }} supported a builder season that helped {{ trackName }} developers build publicly, ship repositories, and produce verifiable progress across the full season.</p>
+  <p class="muted">Reporting window: {{ impact.reportWindow.start | readableDate }} to {{ impact.reportWindow.end | readableDate }}. Last generated: {{ impact.generatedAt | readableDateTime }}.</p>
+  {% if totals.fullSeasonCommitCountIncomplete %}
+    <p class="muted">GitHub rate limits affected {{ totals.projectsWithActivityFetchErrors }} tracked repos during generation; commit totals are the verified counts captured so far, not a final complete total.</p>
+  {% endif %}
+</section>
+
+<section class="card-grid" style="margin-bottom: 24px;">
+  <article class="card">
+    <p class="eyebrow">Published Projects</p>
+    <p class="stat">{{ totals.publishedProjects }}</p>
+    <p class="muted" style="margin-bottom: 0;">{{ totals.registeredProjects }} registered, {{ totals.registryInactiveProjects }} inactive in the registry.</p>
+  </article>
+  <article class="card">
+    <p class="eyebrow">Active Projects</p>
+    <p class="stat">{{ totals.githubActiveProjects }}</p>
+    <p class="muted" style="margin-bottom: 0;">{{ totals.githubInactiveProjects }} inactive, {{ totals.githubUnknownProjects }} unknown because GitHub data was unavailable.</p>
+  </article>
+  <article class="card">
+    <p class="eyebrow">Full-Season Commits</p>
+    <p class="stat">{{ totals.fullSeasonCommits | numberWithCommas }}</p>
+    <p class="muted" style="margin-bottom: 0;">{% if totals.fullSeasonCommitCountIncomplete %}Verified partial count from tracked public repositories.{% else %}Counted from tracked public GitHub repositories.{% endif %}</p>
+  </article>
+  <article class="card">
+    <p class="eyebrow">Demos or Sites</p>
+    <p class="stat">{{ totals.projectsWithDemoOrWebsite }}</p>
+    <p class="muted" style="margin-bottom: 0;">Projects with a demo, website, or project link in the registry metadata.</p>
+  </article>
+</section>
+
+<section class="split" style="margin-bottom: 24px;">
+  <article class="table-card">
+    <h2>{{ sponsor }} / {{ trackName }}</h2>
+    <p>{{ trackName }} projects represent the sponsor-focused developer track for this season.</p>
+    <div class="card-grid">
+      <div>
+        <p class="eyebrow">Projects</p>
+        <p class="stat">{{ cardano.projects }}</p>
+      </div>
+      <div>
+        <p class="eyebrow">Active</p>
+        <p class="stat">{{ cardano.activeProjects }}</p>
+      </div>
+      <div>
+        <p class="eyebrow">Unknown</p>
+        <p class="stat">{{ cardano.unknownProjects }}</p>
+      </div>
+      <div>
+        <p class="eyebrow">Commits</p>
+        <p class="stat">{{ cardano.commits | numberWithCommas }}</p>
+      </div>
+      <div>
+        <p class="eyebrow">Demos or Sites</p>
+        <p class="stat">{{ cardano.projectsWithDemoOrWebsite }}</p>
+      </div>
+    </div>
+  </article>
+
+  <article class="table-card">
+    <h2>Status Definitions</h2>
+    <ul class="clean">
+      <li><strong>Program inactive:</strong> entries marked <code>active: false</code> in <code>config/repos.yml</code>.</li>
+      <li><strong>GitHub active:</strong> published projects with at least one commit during the reporting window.</li>
+      <li><strong>GitHub inactive:</strong> published projects with zero commits during the reporting window.</li>
+      <li><strong>Unknown:</strong> GitHub did not return enough data to classify the project for this generation.</li>
+    </ul>
+  </article>
+</section>
+
+<section class="table-card" style="margin-bottom: 24px;">
+  <h2>Pie Summary</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Pie</th>
+        <th>Projects</th>
+        <th>Active</th>
+        <th>Inactive</th>
+        <th>Unknown</th>
+        <th>Commits</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for pie in impact.pies %}
+        <tr>
+          <td data-label="Pie"><strong>{{ pie.name }}</strong></td>
+          <td data-label="Projects">{{ pie.projects }}</td>
+          <td data-label="Active">{{ pie.activeProjects }}</td>
+          <td data-label="Inactive">{{ pie.inactiveProjects }}</td>
+          <td data-label="Unknown">{{ pie.unknownProjects }}</td>
+          <td data-label="Commits">{{ pie.commits | numberWithCommas }}</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</section>
+
+<section class="table-card">
+  <details open>
+    <summary><h2 style="display:inline;">Project Activity</h2></summary>
+    <table>
+      <thead>
+        <tr>
+          <th>Builder</th>
+          <th>Project</th>
+          <th>Pies</th>
+          <th>Commits</th>
+          <th>Last Activity</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for project in impact.projects %}
+          <tr>
+            <td data-label="Builder"><strong>{{ project.builderName }}</strong></td>
+            <td data-label="Project">
+              {% if project.projectUrl %}
+                <a href="{{ project.projectUrl }}">{{ project.projectName }}</a>
+              {% else %}
+                {{ project.projectName }}
+              {% endif %}
+              {% if project.repoUrl %}
+                <br><span class="muted"><a href="{{ project.repoUrl }}">Repository</a></span>
+              {% endif %}
+            </td>
+            <td data-label="Pies">{{ project.pies | join(", ") }}</td>
+            <td data-label="Commits">{{ project.commits | numberWithCommas }}</td>
+            <td data-label="Last Activity">
+              {% if project.lastActivityAt %}
+                {{ project.lastActivityAt | readableDateTime }}
+              {% elseif project.error %}
+                <span class="muted">{{ project.error }}</span>
+              {% else %}
+                <span class="muted">No activity captured</span>
+              {% endif %}
+            </td>
+            <td data-label="Status">{{ project.activityStatus }}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </details>
+</section>
+{% endblock %}

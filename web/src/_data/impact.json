@@ -1,0 +1,723 @@
+{
+  "generatedAt": "2026-07-24T14:01:52Z",
+  "reportWindow": {
+    "start": "2026-04-13",
+    "end": "2026-07-19",
+    "startDateTime": "2026-04-13T00:00:00Z",
+    "endDateTime": "2026-07-19T23:59:59Z"
+  },
+  "sponsor": {
+    "primary": "Cardano Foundation",
+    "trackName": "Cardano Pie"
+  },
+  "totals": {
+    "registeredProjects": 29,
+    "publishedProjects": 21,
+    "registryInactiveProjects": 8,
+    "githubActiveProjects": 4,
+    "githubInactiveProjects": 0,
+    "githubUnknownProjects": 17,
+    "fullSeasonCommits": 201,
+    "projectsWithActivityFetchErrors": 18,
+    "projectsWithPartialCommitCounts": 1,
+    "fullSeasonCommitCountIncomplete": true,
+    "projectsWithProjectMetadata": 1,
+    "projectsWithDemoOrWebsite": 0
+  },
+  "cardano": {
+    "projects": 15,
+    "activeProjects": 2,
+    "inactiveProjects": 0,
+    "unknownProjects": 13,
+    "commits": 138,
+    "projectsWithFetchErrors": 14,
+    "projectsWithDemoOrWebsite": 0
+  },
+  "pies": [
+    {
+      "id": "cardano",
+      "name": "Cardano Pie",
+      "projects": 15,
+      "activeProjects": 2,
+      "inactiveProjects": 0,
+      "unknownProjects": 13,
+      "commits": 138,
+      "projectsWithFetchErrors": 14
+    },
+    {
+      "id": "builders",
+      "name": "Builders Pie",
+      "projects": 6,
+      "activeProjects": 2,
+      "inactiveProjects": 0,
+      "unknownProjects": 4,
+      "commits": 63,
+      "projectsWithFetchErrors": 4
+    },
+    {
+      "id": "feedback",
+      "name": "Feedback Pie",
+      "projects": 5,
+      "activeProjects": 1,
+      "inactiveProjects": 0,
+      "unknownProjects": 4,
+      "commits": 22,
+      "projectsWithFetchErrors": 4
+    },
+    {
+      "id": "real-user",
+      "name": "Real User Pie",
+      "projects": 3,
+      "activeProjects": 1,
+      "inactiveProjects": 0,
+      "unknownProjects": 2,
+      "commits": 100,
+      "projectsWithFetchErrors": 3
+    }
+  ],
+  "projects": [
+    {
+      "id": "gidhub",
+      "builderName": "Gideon",
+      "projectName": "Tixano",
+      "repoUrl": "https://github.com/0xGIDHUB/tixano",
+      "projectUrl": null,
+      "demoUrl": null,
+      "websiteUrl": null,
+      "pies": [
+        "cardano",
+        "real-user"
+      ],
+      "commits": 100,
+      "lastActivityAt": "2026-07-12T18:28:55Z",
+      "activityStatus": "active (partial)",
+      "error": "FORBIDDEN_OR_RATE_LIMITED"
+    },
+    {
+      "id": "dammy",
+      "builderName": "Dammy",
+      "projectName": "Accordiax",
+      "repoUrl": "https://github.com/Dammy7942/accordiax",
+      "projectUrl": null,
+      "demoUrl": null,
+      "websiteUrl": null,
+      "pies": [
+        "builders"
+      ],
+      "commits": 41,
+      "lastActivityAt": "2026-07-17T03:51:41Z",
+      "activityStatus": "active",
+      "error": null
+    },
+    {
+      "id": "ianonjuguna",
+      "builderName": "Ian",
+      "projectName": "Doba World",
+      "repoUrl": "https://github.com/IanoNjuguna/bookish-worm",
+      "projectUrl": null,
+      "demoUrl": null,
+      "websiteUrl": null,
+      "pies": [
+        "cardano"
+      ],
+      "commits": 38,
+      "lastActivityAt": "2026-07-19T22:23:24Z",
+      "activityStatus": "active",
+      "error": null
+    },
+    {
+      "id": "mhizta",
+      "builderName": "Mhizta",
+      "projectName": "Book-Worm AI",
+      "repoUrl": "https://github.com/Mhizta-gab/bookworm-ai",
+      "projectUrl": null,
+      "demoUrl": null,
+      "websiteUrl": null,
+      "pies": [
+        "builders",
+        "feedback"
+      ],
+      "commits": 22,
+      "lastActivityAt": "2026-07-15T14:53:37Z",
+      "activityStatus": "active",
+      "error": null
+    },
+    {
+      "id": "haulink",
+      "builderName": "Abdulazeez",
+      "projectName": "Haulink",
+      "repoUrl": "https://github.com/FoladDTechie/Haulink",
+      "projectUrl": null,
+      "demoUrl": null,
+      "websiteUrl": null,
+      "pies": [
+        "cardano"
+      ],
+      "commits": 0,
+      "lastActivityAt": null,
+      "activityStatus": "unknown",
+      "error": "FORBIDDEN_OR_RATE_LIMITED"
+    },
+    {
+      "id": "armanabid",
+      "builderName": "Abid",
+      "projectName": "ChainTask",
+      "repoUrl": "https://github.com/ArmanAbid/ChainTask",
+      "projectUrl": null,
+      "demoUrl": null,
+      "websiteUrl": null,
+      "pies": [
+        "cardano"
+      ],
+      "commits": 0,
+      "lastActivityAt": null,
+      "activityStatus": "unknown",
+      "error": "FORBIDDEN_OR_RATE_LIMITED"
+    },
+    {
+      "id": "gamechanger",
+      "builderName": "Adriano",
+      "projectName": "NeonSoup",
+      "repoUrl": "https://github.com/GameChangerFinance/NeonSoup",
+      "projectUrl": null,
+      "demoUrl": null,
+      "websiteUrl": null,
+      "pies": [
+        "cardano"
+      ],
+      "commits": 0,
+      "lastActivityAt": null,
+      "activityStatus": "unknown",
+      "error": "FORBIDDEN_OR_RATE_LIMITED"
+    },
+    {
+      "id": "alfreditodole",
+      "builderName": "Alfred Itodole",
+      "projectName": "Mosaic Cardano",
+      "repoUrl": "https://github.com/sirxalfred/mosaic-cardano",
+      "projectUrl": null,
+      "demoUrl": null,
+      "websiteUrl": null,
+      "pies": [
+        "cardano"
+      ],
+      "commits": 0,
+      "lastActivityAt": null,
+      "activityStatus": "unknown",
+      "error": "FORBIDDEN_OR_RATE_LIMITED"
+    },
+    {
+      "id": "trike",
+      "builderName": "Anita",
+      "projectName": "3rike Mobility",
+      "repoUrl": "https://github.com/3rike12/3rike-Mobility_",
+      "projectUrl": null,
+      "demoUrl": null,
+      "websiteUrl": null,
+      "pies": [
+        "cardano"
+      ],
+      "commits": 0,
+      "lastActivityAt": null,
+      "activityStatus": "unknown",
+      "error": "FORBIDDEN_OR_RATE_LIMITED"
+    },
+    {
+      "id": "yungslaiz",
+      "builderName": "Blessed David",
+      "projectName": "Next.Ai Protocol",
+      "repoUrl": "https://github.com/YungSlaiz53/GNXT",
+      "projectUrl": null,
+      "demoUrl": null,
+      "websiteUrl": null,
+      "pies": [
+        "cardano"
+      ],
+      "commits": 0,
+      "lastActivityAt": null,
+      "activityStatus": "unknown",
+      "error": "FORBIDDEN_OR_RATE_LIMITED"
+    },
+    {
+      "id": "devfreeguy",
+      "builderName": "Daniel",
+      "projectName": "SkillSwap",
+      "repoUrl": "https://github.com/devfreeguy/skill-swap",
+      "projectUrl": null,
+      "demoUrl": null,
+      "websiteUrl": null,
+      "pies": [
+        "cardano",
+        "real-user"
+      ],
+      "commits": 0,
+      "lastActivityAt": null,
+      "activityStatus": "unknown",
+      "error": "FORBIDDEN_OR_RATE_LIMITED"
+    },
+    {
+      "id": "harrie",
+      "builderName": "Harrie",
+      "projectName": "Beni — AI Agent Wallet Guardrails on Cardano",
+      "repoUrl": "https://github.com/IamHarrie-Labs/beni",
+      "projectUrl": null,
+      "demoUrl": null,
+      "websiteUrl": null,
+      "pies": [
+        "cardano"
+      ],
+      "commits": 0,
+      "lastActivityAt": null,
+      "activityStatus": "unknown",
+      "error": "FORBIDDEN_OR_RATE_LIMITED"
+    },
+    {
+      "id": "juniordevforever",
+      "builderName": "Harsha",
+      "projectName": "Cohort15",
+      "repoUrl": "https://github.com/gulla0/Cohort15-MVP",
+      "projectUrl": null,
+      "demoUrl": null,
+      "websiteUrl": null,
+      "pies": [
+        "builders",
+        "feedback"
+      ],
+      "commits": 0,
+      "lastActivityAt": null,
+      "activityStatus": "unknown",
+      "error": "FORBIDDEN_OR_RATE_LIMITED"
+    },
+    {
+      "id": "juanitajaramillo",
+      "builderName": "Juanita",
+      "projectName": "Cardano Insights Lab (CIL)",
+      "repoUrl": "https://github.com/JuanitaJaramill/cardano-insights-lab",
+      "projectUrl": null,
+      "demoUrl": null,
+      "websiteUrl": null,
+      "pies": [
+        "builders"
+      ],
+      "commits": 0,
+      "lastActivityAt": null,
+      "activityStatus": "unknown",
+      "error": "FORBIDDEN_OR_RATE_LIMITED"
+    },
+    {
+      "id": "kamalaliyu",
+      "builderName": "Kamal Aliyu",
+      "projectName": "CogiKids",
+      "repoUrl": "https://github.com/kamal-ogtl/cogikids",
+      "projectUrl": null,
+      "demoUrl": null,
+      "websiteUrl": null,
+      "pies": [
+        "cardano"
+      ],
+      "commits": 0,
+      "lastActivityAt": null,
+      "activityStatus": "unknown",
+      "error": "FORBIDDEN_OR_RATE_LIMITED"
+    },
+    {
+      "id": "lewis",
+      "builderName": "Lewis",
+      "projectName": "TRACOM-CREDENTIALS",
+      "repoUrl": "https://github.com/lewis-nduati/Tracom-credentials.git",
+      "projectUrl": null,
+      "demoUrl": null,
+      "websiteUrl": null,
+      "pies": [
+        "cardano"
+      ],
+      "commits": 0,
+      "lastActivityAt": null,
+      "activityStatus": "unknown",
+      "error": "FORBIDDEN_OR_RATE_LIMITED"
+    },
+    {
+      "id": "mobrai",
+      "builderName": "Marcio",
+      "projectName": "Cardano Analytics Platform (CAP)",
+      "repoUrl": "https://github.com/mobr-ai/cap-pie",
+      "projectUrl": null,
+      "demoUrl": null,
+      "websiteUrl": null,
+      "pies": [
+        "cardano"
+      ],
+      "commits": 0,
+      "lastActivityAt": null,
+      "activityStatus": "unknown",
+      "error": "FORBIDDEN_OR_RATE_LIMITED"
+    },
+    {
+      "id": "muhammedyuguda",
+      "builderName": "Muhammed",
+      "projectName": "DevMemory - AI Coding Context Continuity Layer",
+      "repoUrl": "https://github.com/Yuguda999/devmemory",
+      "projectUrl": null,
+      "demoUrl": null,
+      "websiteUrl": null,
+      "pies": [
+        "cardano"
+      ],
+      "commits": 0,
+      "lastActivityAt": null,
+      "activityStatus": "unknown",
+      "error": "FORBIDDEN_OR_RATE_LIMITED"
+    },
+    {
+      "id": "newman5",
+      "builderName": "Newman",
+      "projectName": "Builder Season Playbook",
+      "repoUrl": "https://github.com/Newman5/builder-season-playbook",
+      "projectUrl": null,
+      "demoUrl": null,
+      "websiteUrl": null,
+      "pies": [
+        "builders",
+        "feedback"
+      ],
+      "commits": 0,
+      "lastActivityAt": null,
+      "activityStatus": "unknown",
+      "error": "FORBIDDEN_OR_RATE_LIMITED"
+    },
+    {
+      "id": "murmurations",
+      "builderName": "Nori",
+      "projectName": "Murmurations.ai",
+      "repoUrl": "https://github.com/murmurations-ai/flyway",
+      "projectUrl": null,
+      "demoUrl": null,
+      "websiteUrl": null,
+      "pies": [
+        "builders",
+        "feedback"
+      ],
+      "commits": 0,
+      "lastActivityAt": null,
+      "activityStatus": "unknown",
+      "error": "FORBIDDEN_OR_RATE_LIMITED"
+    },
+    {
+      "id": "opa007i",
+      "builderName": "Opa",
+      "projectName": "The Quest",
+      "repoUrl": "https://github.com/opa1/the-quest",
+      "projectUrl": null,
+      "demoUrl": null,
+      "websiteUrl": null,
+      "pies": [
+        "cardano",
+        "feedback",
+        "real-user"
+      ],
+      "commits": 0,
+      "lastActivityAt": null,
+      "activityStatus": "unknown",
+      "error": "FORBIDDEN_OR_RATE_LIMITED"
+    }
+  ],
+  "activity": {
+    "generatedAt": "2026-07-24T14:01:52Z",
+    "weekStart": "2026-04-13T00:00:00Z",
+    "weekEnd": "2026-07-19T23:59:59Z",
+    "builders": [
+      {
+        "id": "mhizta",
+        "name": "Mhizta",
+        "lastActivityAt": "2026-07-15T14:53:37Z",
+        "commitsThisWeek": 22,
+        "recentCommits": [
+          {
+            "repo": "Mhizta-gab/bookworm-ai",
+            "message": "feat: implement user dashboard, book management actions, and database models for the bookworm-ai application",
+            "url": "https://github.com/Mhizta-gab/bookworm-ai/commit/3923672771d0e0de701010fcbd08e927535c335b",
+            "committedAt": "2026-07-15T14:53:37Z"
+          },
+          {
+            "repo": "Mhizta-gab/bookworm-ai",
+            "message": "feat: implement subscription system with Paystack integration and dashboard UI",
+            "url": "https://github.com/Mhizta-gab/bookworm-ai/commit/15ad277f92e7405bc5534b54742550849da80bb3",
+            "committedAt": "2026-06-28T14:10:08Z"
+          },
+          {
+            "repo": "Mhizta-gab/bookworm-ai",
+            "message": "feat: implement dashboard shell with library management, comment system, and recommendation integration",
+            "url": "https://github.com/Mhizta-gab/bookworm-ai/commit/603be78cb5158ce413c8e16b77e30f43dfc45af1",
+            "committedAt": "2026-06-24T15:56:30Z"
+          },
+          {
+            "repo": "Mhizta-gab/bookworm-ai",
+            "message": "feat: implement voice session integration with Vapi, including usage tracking, transcript summarization, and subscription limits.",
+            "url": "https://github.com/Mhizta-gab/bookworm-ai/commit/9371dc88a38264e4e574396d4abf65099cef08bb",
+            "committedAt": "2026-06-23T13:44:26Z"
+          },
+          {
+            "repo": "Mhizta-gab/bookworm-ai",
+            "message": "feat: add voice session management, subscription limits, and Vapi controls for book interaction",
+            "url": "https://github.com/Mhizta-gab/bookworm-ai/commit/7da8e3185c9e26018af72bb8c4c5e4bc3f35c25e",
+            "committedAt": "2026-06-19T21:11:48Z"
+          }
+        ],
+        "error": null
+      },
+      {
+        "id": "ianonjuguna",
+        "name": "Ian",
+        "lastActivityAt": "2026-07-19T22:23:24Z",
+        "commitsThisWeek": 38,
+        "recentCommits": [
+          {
+            "repo": "IanoNjuguna/bookish-worm",
+            "message": "ui cleanup and final polish, refer to list.txt for a list of updates",
+            "url": "https://github.com/IanoNjuguna/bookish-worm/commit/ebcd555cdc6211d27f063ada16172ebe6c14fd36",
+            "committedAt": "2026-07-19T22:23:24Z"
+          },
+          {
+            "repo": "IanoNjuguna/bookish-worm",
+            "message": "Merge pull request #7 from IanoNjuguna/hot-fix\n\nMerge pull request #6 from IanoNjuguna/main",
+            "url": "https://github.com/IanoNjuguna/bookish-worm/commit/0b49cd2bddabe21709b19b4db72e2262a5a4682b",
+            "committedAt": "2026-07-19T20:00:52Z"
+          },
+          {
+            "repo": "IanoNjuguna/bookish-worm",
+            "message": "Merge pull request #6 from IanoNjuguna/main\n\nROAD TO MAINNET",
+            "url": "https://github.com/IanoNjuguna/bookish-worm/commit/1a892e06a9818cc48ee33b7ebe238f5a9c414846",
+            "committedAt": "2026-07-19T20:00:09Z"
+          },
+          {
+            "repo": "IanoNjuguna/bookish-worm",
+            "message": "harden app for mainnet",
+            "url": "https://github.com/IanoNjuguna/bookish-worm/commit/616ad283cf2cb5f0bae561bf0a063cf07deeded1",
+            "committedAt": "2026-07-19T19:34:44Z"
+          },
+          {
+            "repo": "IanoNjuguna/bookish-worm",
+            "message": "Merge pull request #5 from IanoNjuguna/hot-fix\n\nResolve merge and harden Mainnet config",
+            "url": "https://github.com/IanoNjuguna/bookish-worm/commit/b44ed26ac5cc06440ef4b677f6858334a6a14c99",
+            "committedAt": "2026-07-19T19:46:38Z"
+          }
+        ],
+        "error": null
+      },
+      {
+        "id": "dammy",
+        "name": "Dammy",
+        "lastActivityAt": "2026-07-17T03:51:41Z",
+        "commitsThisWeek": 41,
+        "recentCommits": [
+          {
+            "repo": "Dammy7942/accordiax",
+            "message": "fix consultant request payment status aware fix",
+            "url": "https://github.com/Dammy7942/accordiax/commit/7e18f6a54f40e1012cd8ffbf6519af7a068669a9",
+            "committedAt": "2026-07-17T03:51:41Z"
+          },
+          {
+            "repo": "Dammy7942/accordiax",
+            "message": "fix payout error fixed",
+            "url": "https://github.com/Dammy7942/accordiax/commit/b4bd2d029f41bb9dbc071d715a7d088cd3ee8869",
+            "committedAt": "2026-07-17T03:42:01Z"
+          },
+          {
+            "repo": "Dammy7942/accordiax",
+            "message": "fix error message applied to payout request failure",
+            "url": "https://github.com/Dammy7942/accordiax/commit/02c717b2df33dd9a3f944ff4b34ff937a5599fc6",
+            "committedAt": "2026-07-17T03:36:11Z"
+          },
+          {
+            "repo": "Dammy7942/accordiax",
+            "message": "fix(admin): payouts manual joins, escrow read-only view, inline bank account form\n\n- Rewrote /api/admin/payouts GET to use manual batch queries instead of\n  PostgREST nested joins -- payment_requests has no FK constraints so\n  the aliased join syntax returned nothing; now fetches agreements,\n  profiles, bank accounts, and emails in parallel then merges them\n\n- Repurposed admin escrow page as a read-only financial overview:\n  removed the release-payment button, added status badges (Payment held /\n  Awaiting approval / Awaiting payout), summary strip with total held and\n  per-status counts, and expanded the API query to include paid_held and\n  delivered agreements alongside completed ones; renamed nav tab to Funds\n\n- Replaced the Go to Profile link in the consultant payment request modal\n  with an inline bank account form -- consultants with no saved accounts\n  can now add one without leaving the dashboard; on save the account is\n  inserted, local state updated, and the selector shown immediately so\n  the payment request can proceed in one flow",
+            "url": "https://github.com/Dammy7942/accordiax/commit/e6f1bf9e90f2f0fd7e0257825bb2c893f357edb6",
+            "committedAt": "2026-07-17T03:12:02Z"
+          },
+          {
+            "repo": "Dammy7942/accordiax",
+            "message": "fix(admin): add disputes page so disputed agreements are visible to admin\n\nDisputed agreements (status=disputed) were invisible in the admin panel\nbecause the existing appeals page only queried status=appealed.\n\n- Add /api/admin/disputes GET route fetching status=disputed agreements\n  with student, consultant, and request details\n- Add /api/admin/resolve-dispute POST route with email notifications\n  to both parties and note that appeal is available\n- Add /admin/disputes page with Rule for Student / Rule for Consultant\n  actions and resolution notes field\n- Add Disputes as first tab in admin nav before Appeals",
+            "url": "https://github.com/Dammy7942/accordiax/commit/c7fdd668f468b825922e6b2545c4d40a7821dbc6",
+            "committedAt": "2026-07-17T02:37:16Z"
+          }
+        ],
+        "error": null
+      },
+      {
+        "id": "gidhub",
+        "name": "Gideon",
+        "lastActivityAt": "2026-07-12T18:28:55Z",
+        "commitsThisWeek": 100,
+        "recentCommits": [
+          {
+            "repo": "0xGIDHUB/tixano",
+            "message": "Fix navbar bug",
+            "url": "https://github.com/0xGIDHUB/tixano/commit/72fbacfd97472110756a756295a210a22bdfa592",
+            "committedAt": "2026-07-12T18:28:55Z"
+          },
+          {
+            "repo": "0xGIDHUB/tixano",
+            "message": "Fixed logo render on navbar",
+            "url": "https://github.com/0xGIDHUB/tixano/commit/f3eef6e85becf98e80ba46b3c1a6372025bc2414",
+            "committedAt": "2026-07-12T16:29:04Z"
+          },
+          {
+            "repo": "0xGIDHUB/tixano",
+            "message": "URL fix",
+            "url": "https://github.com/0xGIDHUB/tixano/commit/783152fe0268c7b6f11529712f726ce5700bf453",
+            "committedAt": "2026-07-12T15:33:48Z"
+          },
+          {
+            "repo": "0xGIDHUB/tixano",
+            "message": "Added mainnet migration",
+            "url": "https://github.com/0xGIDHUB/tixano/commit/2524e13dec001dcffda176afe3eab191723f399a",
+            "committedAt": "2026-07-11T08:14:51Z"
+          },
+          {
+            "repo": "0xGIDHUB/tixano",
+            "message": "Fix wallet address display issue",
+            "url": "https://github.com/0xGIDHUB/tixano/commit/e980c5028b49f47048281bc05593806cf96253ef",
+            "committedAt": "2026-07-08T12:04:36Z"
+          }
+        ],
+        "error": "FORBIDDEN_OR_RATE_LIMITED"
+      },
+      {
+        "id": "harrie",
+        "name": "Harrie",
+        "lastActivityAt": null,
+        "commitsThisWeek": 0,
+        "recentCommits": [],
+        "error": "FORBIDDEN_OR_RATE_LIMITED"
+      },
+      {
+        "id": "lewis",
+        "name": "Lewis",
+        "lastActivityAt": null,
+        "commitsThisWeek": 0,
+        "recentCommits": [],
+        "error": "FORBIDDEN_OR_RATE_LIMITED"
+      },
+      {
+        "id": "armanabid",
+        "name": "Abid",
+        "lastActivityAt": null,
+        "commitsThisWeek": 0,
+        "recentCommits": [],
+        "error": "FORBIDDEN_OR_RATE_LIMITED"
+      },
+      {
+        "id": "gamechanger",
+        "name": "Adriano",
+        "lastActivityAt": null,
+        "commitsThisWeek": 0,
+        "recentCommits": [],
+        "error": "FORBIDDEN_OR_RATE_LIMITED"
+      },
+      {
+        "id": "yungslaiz",
+        "name": "Blessed David",
+        "lastActivityAt": null,
+        "commitsThisWeek": 0,
+        "recentCommits": [],
+        "error": "FORBIDDEN_OR_RATE_LIMITED"
+      },
+      {
+        "id": "murmurations",
+        "name": "Nori",
+        "lastActivityAt": null,
+        "commitsThisWeek": 0,
+        "recentCommits": [],
+        "error": "FORBIDDEN_OR_RATE_LIMITED"
+      },
+      {
+        "id": "trike",
+        "name": "Anita",
+        "lastActivityAt": null,
+        "commitsThisWeek": 0,
+        "recentCommits": [],
+        "error": "FORBIDDEN_OR_RATE_LIMITED"
+      },
+      {
+        "id": "mobrai",
+        "name": "Marcio",
+        "lastActivityAt": null,
+        "commitsThisWeek": 0,
+        "recentCommits": [],
+        "error": "FORBIDDEN_OR_RATE_LIMITED"
+      },
+      {
+        "id": "newman5",
+        "name": "Newman",
+        "lastActivityAt": null,
+        "commitsThisWeek": 0,
+        "recentCommits": [],
+        "error": "FORBIDDEN_OR_RATE_LIMITED"
+      },
+      {
+        "id": "juniordevforever",
+        "name": "Harsha",
+        "lastActivityAt": null,
+        "commitsThisWeek": 0,
+        "recentCommits": [],
+        "error": "FORBIDDEN_OR_RATE_LIMITED"
+      },
+      {
+        "id": "devfreeguy",
+        "name": "Daniel",
+        "lastActivityAt": null,
+        "commitsThisWeek": 0,
+        "recentCommits": [],
+        "error": "FORBIDDEN_OR_RATE_LIMITED"
+      },
+      {
+        "id": "haulink",
+        "name": "Abdulazeez",
+        "lastActivityAt": null,
+        "commitsThisWeek": 0,
+        "recentCommits": [],
+        "error": "FORBIDDEN_OR_RATE_LIMITED"
+      },
+      {
+        "id": "opa007i",
+        "name": "Opa",
+        "lastActivityAt": null,
+        "commitsThisWeek": 0,
+        "recentCommits": [],
+        "error": "FORBIDDEN_OR_RATE_LIMITED"
+      },
+      {
+        "id": "muhammedyuguda",
+        "name": "Muhammed",
+        "lastActivityAt": null,
+        "commitsThisWeek": 0,
+        "recentCommits": [],
+        "error": "FORBIDDEN_OR_RATE_LIMITED"
+      },
+      {
+        "id": "juanitajaramillo",
+        "name": "Juanita",
+        "lastActivityAt": null,
+        "commitsThisWeek": 0,
+        "recentCommits": [],
+        "error": "FORBIDDEN_OR_RATE_LIMITED"
+      },
+      {
+        "id": "kamalaliyu",
+        "name": "Kamal Aliyu",
+        "lastActivityAt": null,
+        "commitsThisWeek": 0,
+        "recentCommits": [],
+        "error": "FORBIDDEN_OR_RATE_LIMITED"
+      },
+      {
+        "id": "alfreditodole",
+        "name": "Alfred Itodole",
+        "lastActivityAt": null,
+        "commitsThisWeek": 0,
+        "recentCommits": [],
+        "error": "FORBIDDEN_OR_RATE_LIMITED"
+      }
+    ]
+  }
+}

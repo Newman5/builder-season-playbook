@@ -82,6 +82,7 @@ Key routes:
 
 - `/` landing page
 - `/dashboard/` GitHub Activity Dashboard
+- `/impact/` sponsor impact report
 - `/progress-log/` project progress log
 - `/builders/{id}/` builder detail pages
 - `/data/` published JSON links
@@ -100,7 +101,7 @@ npm run sync:repos
 npm run build
 ```
 
-`config/repos.yml` is the current manual source of truth for builders in this repo. Eleventy reads it directly and publishes the normalized registry at `/data/builders.json`. `config/event.yml` drives the public event timing and weekly update prompt. `npm run build:data` refreshes the cached GitHub snapshot in `web/src/_data/activity.json`.
+`config/repos.yml` is the current manual source of truth for builders in this repo. Eleventy reads it directly and publishes the normalized registry at `/data/builders.json`. `config/event.yml` drives the public event timing, weekly update prompt, and impact report window. `npm run build:data` refreshes the cached GitHub snapshot in `web/src/_data/activity.json`, project metadata in `web/src/_data/project-metadata.json`, and sponsor impact summary in `web/src/_data/impact.json`.
 
 The root `project.yml` is a companion format intended for cross-repo ingestion. It gives each builder repository a self-contained metadata file that an admin script can fetch through the GitHub API before normalizing it for 11ty.
 
@@ -109,8 +110,9 @@ Current data flow:
 1. `config/repos.yml` defines which builders and repos are tracked.
 2. `npm run build:data` fetches each tracked repo's root `project.yml` when present and caches the results in `web/src/_data/project-metadata.json`.
 3. The builder loader merges builder-owned profile fields from fetched `project.yml` into the manual registry with fallback to `config/repos.yml` when the file is missing or incomplete.
-4. Eleventy publishes the merged builder registry at `/data/builders.json` and uses it for dashboard and builder pages.
-5. `npm run sync:repos` lets admins write selected fields from fetched `project.yml` back into `config/repos.yml` with a per-builder change report.
+4. `npm run build:data` also generates `web/src/_data/impact.json` from the builder registry, project metadata, and full-season GitHub activity.
+5. Eleventy publishes the merged builder registry at `/data/builders.json`, the activity snapshot at `/data/activity.json`, the impact summary at `/data/impact.json`, and uses them for dashboard, builder, and impact report pages.
+6. `npm run sync:repos` lets admins write selected fields from fetched `project.yml` back into `config/repos.yml` with a per-builder change report.
 
 Field ownership:
 
@@ -121,6 +123,49 @@ Field ownership:
 X review is manual-search based. The dashboard and builder pages link each X handle to a simple `pieceofpie` search on X, so there is no X API dependency and no separate X data build step.
 
 The activity updater prefers `GH_ACTIVITY_TOKEN` and falls back to `GITHUB_TOKEN`. Phase 1 counts all public commits on each tracked repo during the current UTC week.
+
+### Impact Report
+
+The sponsor impact report lives at `/impact/` and is generated from `web/src/_data/impact.json`.
+
+The impact summary includes:
+
+- registered, published, inactive, active, inactive-by-GitHub, and unknown project counts
+- full-season commit counts across tracked public repositories
+- per-pie project and commit totals
+- Cardano Pie sponsor-track totals
+- project-level activity rows with repo links, pies, commit counts, last activity, and status
+
+The reporting window uses `adminWeek1Start` and `buildEnd` from `config/event.yml`. GitHub fetch errors are preserved in the impact data; when any repo cannot be fetched, the report marks commit totals as incomplete instead of pretending the number is final.
+
+For final sponsor reporting, run the data build with a token that can handle the full set of GitHub requests:
+
+```bash
+cd web
+GH_ACTIVITY_TOKEN=your_token npm run build:data
+```
+
+### Scheduled GitHub Activity Updates
+
+Daily activity refreshes are controlled by `.github/workflows/update-activity.yml`.
+
+To turn the daily cron job on, include the `schedule` block under `on`:
+
+```yaml
+on:
+  schedule:
+    - cron: "13 12 * * *"
+  workflow_dispatch:
+```
+
+To turn the daily cron job off, remove the `schedule` block and leave `workflow_dispatch`:
+
+```yaml
+on:
+  workflow_dispatch:
+```
+
+Keeping `workflow_dispatch` means admins can still run the workflow manually from GitHub Actions without receiving daily automated updates. The separate deploy workflow in `.github/workflows/deploy.yml` still publishes the site on pushes to `main`.
 
 For X update review:
 
